@@ -6,7 +6,7 @@ Aggiornato il 6 ottobre 2026. Repository unica https://github.com/av3rgfx/EECard
 
 L’utente ha scelto **1 · Materia e luce**, chiedendo esplicitamente la struttura aperta di Editoriale: contenuti a tutta larghezza utile, senza contenitori-card ripetuti. La scelta autorizza l’integrazione prevista nel brief. Non riproporre il confronto come ancora da approvare.
 
-La PR #3 è stata integrata il 6 ottobre alle 11:44:41 UTC. Il lavoro corrente parte da main `ed3a473164b2965168a11a538a6a0b21e6fb7844`, branch `design/visual-directions-lab`. Prima della prossima modifica verificare la PR associata al branch: riusare se aperta, partire da main aggiornato se integrata. Nessun merge richiesto.
+La PR #3 è stata integrata il 6 ottobre alle 11:44:41 UTC. Il lavoro corrente parte da main `ed3a473164b2965168a11a538a6a0b21e6fb7844`, branch `design/visual-directions-lab`, [PR #4](https://github.com/av3rgfx/EECard/pull/4) aperta e pronta alla revisione, senza merge. Prima della prossima modifica verificare la PR associata al branch: riusare se aperta, partire da main aggiornato se integrata. Nessun merge richiesto.
 
 Consegnati e conservati [i tre esempi isolati](../design/esplorazioni/README.md), ora archivio del confronto. Integrata nel prodotto la combinazione scelta:
 
@@ -17,9 +17,9 @@ Consegnati e conservati [i tre esempi isolati](../design/esplorazioni/README.md)
 
 ## Verifiche e anteprime
 
-18 E2E esistenti passati, più regressione dedicata a priorità tessera/ruoli; 24 audit aggiuntivi senza violazioni. Home verificata a390×844 e360×780: tessera, stato e gestione prima della navigazione inferiore. Incasso parziale400€ su950€: residuo550€ mantenuto anche dopo quietanza. Dettagli e limiti in [VERIFICHE.md](../design/VERIFICHE.md).
+19 E2E passati (18 esistenti più regressione priorità tessera/ruoli); 24 audit aggiuntivi senza violazioni. Home verificata a390×844 e360×780: tessera, stato e gestione prima della navigazione inferiore. Incasso parziale400€ su950€: residuo550€ mantenuto anche dopo quietanza. Dettagli e limiti in [VERIFICHE.md](../design/VERIFICHE.md).
 
-[Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Guida/asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/). Identità e pubblico del sito invariati; versione effettivamente online e commit sorgente in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md). Push GitHub e deploy Sites sono operazioni distinte.
+[Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Guida/asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/). Identità e pubblico del sito invariati; versione effettivamente online e commit sorgente in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md). Online: Sites **v4**, deploy riuscito alle 13:48:10 UTC dal commit `eea7a954c36607baffdbac82797466cdb329e435`. La chiusura documentale successiva non cambia la build. Push GitHub e deploy Sites sono operazioni distinte.
 
 ## Ripresa operativa
 

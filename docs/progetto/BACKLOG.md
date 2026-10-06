@@ -56,7 +56,7 @@ I01–I06 coprono il lavoro autorizzato sul simbolo e sull’identità visiva. R
 | V01 | Completato come proposta · 6 ottobre | Presentare 2–3 esempi ad alta fedeltà, home desktop/mobile con tessera prima, dettaglio card, processo esistente, demo animata e variante ridotta; stessa base dati, area separata dal prodotto |
 | V02 | Completato · scelta esplicita | Raccogliere conferma o modifiche dell’utente; nessuna implementazione globale prima della scelta |
 | V03 | Completato · Materia + composizione Editoriale | Integrare la direzione approvata: composizione, materiali, immagini, tipografia, gerarchie e movimento utile; preservare flussi e stati |
-| V04 | Verifiche completate, pubblicazione registrata in ANTEPRIME_WEB | QA pertinente, screenshot e stesso Sites aggiornati; documentare sorgente online, commit remoto e PR senza merge |
+| V04 | Completato · Sites v4, PR #4 senza merge | QA pertinente, screenshot e stesso Sites aggiornati; documentare sorgente online, commit remoto e PR senza merge |
 
 La posizione prioritaria della tessera è confermata. L’utente ha scelto Materia e luce con pagine aperte come Editoriale. Il nome resta aperto. V01–V04 sono il prossimo obiettivo, non N03–N06 o un’estensione del perimetro operativo.
 
@@ -70,3 +70,5 @@ V01: [tre direzioni interattive isolate](../design/esplorazioni/README.md), cias
 V03: tessera prima in home, sezioni aperte per tutte le aree, fotografie a tutta colonna, affitto leggibile in quattro passaggi reali, focus del nuovo passaggio e movimento localizzato. Corretto il collegamento agenzia alla tessera personale del proprietario: home operativa, nessuna tessera nel menu o via URL diretto. Nessuna nuova funzionalità o variazione del modello dati.
 
 V04: 18 test esistenti e regressione home/ruoli, audit24, screenshot e build delle anteprime rigenerati. [Verifiche](../design/VERIFICHE.md) e [pubblicazione](../design/ANTEPRIME_WEB.md). Residuo: feedback utente sul risultato integrato, hardware N02, naming e decisioni commerciali già aperte.
+
+Pubblicazione confermata: Sites v4 da `eea7a954c36607baffdbac82797466cdb329e435`; [PR #4](https://github.com/av3rgfx/EECard/pull/4) pronta alla revisione. Nessun merge.

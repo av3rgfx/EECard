@@ -1,5 +1,7 @@
 # Anteprime web condivisibili
 
+**Versione corrente: Sites v4**, Materia con pagine editoriali, pubblicata il 6 ottobre 2026 alle 13:48:10 UTC dal commit `eea7a954c36607baffdbac82797466cdb329e435`. [PR #4](https://github.com/av3rgfx/EECard/pull/4) aperta, senza merge. Le versioni precedenti sotto sono lo storico.
+
 Il sito ospita lo stesso prototipo dimostrativo in due viste separate:
 
 - Desktop: https://eecard-design-preview.uepacio.chatgpt.site/desktop/
@@ -80,3 +82,18 @@ Sites versione **3**, riuscita il 6 ottobre 2026 alle 11:21:23 UTC. Identità, t
 - Deployment: `appgdep_6ac4d9a3152c8191b8a214f0136bcee3`, stato `succeeded` confermato da Sites.
 
 La chiusura documentale successiva non modifica la build pubblicata. Test browser svolti sulla stessa build locale; nessuna prova su hardware fisico aggiunta dal deploy.
+
+
+## Pubblicazione verificata — Materia e pagine editoriali
+
+Sites versione **4**, `succeeded` il 6 ottobre 2026 alle 13:48:10 UTC. Stesso sito, titolo, indirizzo e accesso pubblico.
+
+- [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/).
+- Commit sorgente pubblicato: `eea7a954c36607baffdbac82797466cdb329e435`, presente anche su GitHub.
+- Versione: `appgprj_6ac4c220882c8191be87c1b262306614~appgver_54d6e42dc73881919702220ebb90293c`.
+- Deployment: `appgdep_6ac4fc0a65c081918d5c2a0704ae2971`, stato finale restituito dal servizio Sites.
+- Archivio statico SHA256: `7f7e435e0e96b0b239260a3283a67558adc8d396d412516538a713deeaad2533`; build rigenerata dal commit esatto, working tree invariato.
+
+La conferma di deploy proviene da Sites; i controlli browser sono sulla build locale corrispondente, non prove hardware. La guida e gli asset del simbolo sono invariati. Gli esempi `design-lab/` rimangono nell’archivio della repository, separati dalla demo pubblicata.
+
+Il commit documentale di chiusura successivo registra PR/deploy e non cambia gli asset online; nessun nuovo deploy necessario. Il push GitHub diretto era privo di credenziali: blob/albero/commit caricati tramite l’integrazione GitHub, albero identico verificato e clone allineato al commit remoto. Il push della stessa sorgente su Sites è stato confermato prima di salvare/pubblicare la versione.
