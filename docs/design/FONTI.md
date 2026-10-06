@@ -56,3 +56,23 @@ Riferimento licenza: https://unsplash.com/license. Non sono fotografie degli ind
 ## Versioni riproducibili
 
 Il lockfile è la fonte esatta: React/React DOM 19.3.0, Vite 7.3.7, TypeScript 5.9.3, Motion 12.43.0, Playwright 1.63.0, axe-core/playwright 4.13.0, Base UI 1.8.0, Sonner 2.0.8. Usare `npm ci` per riprodurre l’ambiente.
+
+## Evoluzione identità — fonti della seconda sessione
+
+- Immagine fornita dall’utente in chat: riferimento visivo casa/mano, scritta “quey”, albicocca/bruno. Nessuna scritta trattata come nome confermato; colori ricostruiti visivamente, non campionati dal file.
+- Sei skill Emil recuperate nuovamente dal repository ufficiale, stesso commit `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`: apple-design, mobile-native, emil-design-eng, animate, review-animations e break-ui + fix. Letti anche CATALOG.md e i valori pertinenti di STANDARDS.md. Applicate a gerarchia, target touch, ricerca/focus, verifica stati limite e movimento. Il gate animate non giustifica nuovo movimento per logo e navigazione frequente: confronto statico. Nessun componente nuovo che richieda nuove ricette.
+- Manrope esistente mantenuto; copia del subset latino nel confronto con licenza OFL. “Neo Geometric” resta un suggerimento da identificare, nessun download di font commerciale.
+- Dodici SVG di studio originali, senza ricalcare il simbolo dell’agenzia o le lettere dell’immagine.
+- Skill Sites building/hosting e cloud environment per riuso del sito e pubblicazione. Il relativo helper site-workflow non è disponibile in questo ambiente (ricerca locale e risorsa skill senza risultato): stesso ordine svolto con Git autenticato via stdin, build locale, archivio statico e API native Sites. Identità e accesso pubblico esistenti conservati.
+
+Nessuna licenza o attribuzione precedente rimossa.
+
+## Finalizzazione dopo la scelta C
+
+Scelta esplicita in chat: «Scelgo il logo C Legame. Il nome rimane ancora da confermare». Simbolo regolare conserva le geometrie originali della direzione C; master ottico originale semplificato per dimensioni piccole. Fonte condivisa in `src/brand-geometry.json`; asset in `public/brand/`, guida in MARCHIO.md. Non usati generatori di immagini o ricalchi di marchi esterni.
+
+Manrope locale e licenza OFL mantenuti, anche nella guida web. Le skill Emil già lette nella conversazione sono applicate a tipografia, contrasto, gerarchie responsive, input/touch, test di dati limite e movimento: nessuna nuova animazione per il logo; le transizioni esistenti restano sotto i 300 ms e rispettano la riduzione movimento. Animate UI e Rare UI, crediti e licenze restano invariati.
+
+## Revisione visiva di chiusura
+
+Letta e applicata in sola analisi la skill [find-animation-opportunities](https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/find-animation-opportunities/SKILL.md), stesso snapshot verificato localmente. Report con opportunità, frequenza ipotizzata, scopo, ricette e candidati scartati in [REVISIONE_VISIVA.md](REVISIONE_VISIVA.md). Nessun componente o asset nuovo, nessuna nuova dipendenza; nessuna animazione implementata in questa chiusura.

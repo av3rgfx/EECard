@@ -1,10 +1,14 @@
 # EECard — guida al design
 
-Aggiornato il 6 ottobre 2026. Design 0.1 implementato e condivisibile; resta una proposta da validare con l’utente.
+Aggiornato il 6 ottobre 2026. Identità 0.2 implementata e condivisibile; l’utente richiede ora un salto di qualità visiva. Il simbolo è scelto, l’esecuzione dell’interfaccia resta da evolvere.
 
-## Direzione da conservare
+## Identità attuale
 
-Qualità premium nel ritmo, nella tipografia e nelle interazioni, con Revolut come riferimento di qualità e un’identità EECard propria. Verde bosco, avorio, salvia e lime; Manrope Variable locale; superfici chiare e tessera scura con forme concentriche. La card esprime accesso ai servizi immobiliari, senza numerazione bancaria, saldo, circuito o simboli di registrazione del marchio.
+L’utente ha scelto **C — Legame**: due elementi aperti intrecciati, simbolo autonomo dall’agenzia ƎE/Enrico Erca. Il nome del prodotto rimane da confermare; “Legame” identifica il concept, non un naming approvato. Il frontend usa il solo simbolo, mentre EECard resta una dicitura provvisoria nel footer e nei metadati.
+
+Bruno, albicocca e avorio caldo; terracotta accessibile per le azioni; Manrope Variable locale, come famiglia geometrica coerente con il suggerimento Neo Geometric o simili. La tessera scura riprende il simbolo in un motivo ampio e statico; niente PAN, circuito o estetica bancaria. Stati successo, errore e verifica restano semanticamente distinti. La precedente proposta bosco/lime e il monogramma EE sono superati.
+
+[Asset e guida d’uso del simbolo](docs/design/MARCHIO.md) · [Guida web](https://eecard-design-preview.uepacio.chatgpt.site/marchio/) · [Archivio delle proposte](docs/design/LOGO_DIREZIONI.md).
 
 Desktop e smartphone hanno gerarchie dedicate: sidebar e informazioni affiancate sul desktop, prossima azione e navigazione inferiore sul telefono. I pannelli diventano superfici inferiori scrollabili; input, safe area e tastiera vanno verificati su hardware reale.
 
@@ -38,3 +42,11 @@ Animate UI e Rare UI sono adattati nei componenti esistenti, con attribuzioni e 
 ## Validazione ancora aperta
 
 Feedback sull’identità e sulla comprensione dei flussi; iPhone/Safari e Android/Chrome fisici; VoiceOver/TalkBack; tastiera, zoom, rotazione e continuità del movimento sul dispositivo. Dark mode e RTL non sono varianti attualmente implementate. Il backlog non assegna automaticamente queste estensioni al primo rilascio.
+
+## Prossima evoluzione richiesta — esempi prima dell’integrazione
+
+L’utente giudica la UI troppo grezza, semplice e statica. Richiede più qualità grafica, carattere, dinamismo e soluzioni visive per funzionalità e processi. La tessera deve diventare il primo contenuto dominante all’ingresso nella home; oggi su mobile segue il riepilogo. Questa priorità sostituisce la precedente proposta che poneva la prossima azione prima della tessera.
+
+[Revisione e proposte](docs/design/REVISIONE_VISIVA.md): lavorare su materiali della card, composizione, gerarchia delle superfici, art direction e visualizzazione dei processi. Presentare 2–3 esempi concreti desktop/mobile con movimento e attendere la conferma dell’utente prima di modificare il prodotto. Nessun trattamento visivo proposto è già approvato. La maggiore espressività deve conservare accessibilità, lettura dei dati e rapidità; può concentrarsi sui momenti adatti senza imporre animazioni a ogni operazione.
+
+Il design system 0.2 documenta ciò che esiste, non il risultato del prossimo redesign. [Prompt di ripresa](docs/progetto/PROMPT_DESIGN.md).

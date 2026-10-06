@@ -1,10 +1,10 @@
-# Registro delle decisioni — design 0.1
+# Registro delle decisioni — prodotto e design
 
 6 ottobre 2026. Le etichette distinguono richiesta confermata, proposta di design e ipotesi dimostrativa. Nessuna scelta nel prototipo approva il modello commerciale.
 
 | ID | Stato | Decisione / questione | Conseguenza |
 | --- | --- | --- | --- |
-| C01 | Confermato dall’utente | Repository av3rgfx/EECard, esperienza desktop e smartphone, qualità premium | Tutto il lavoro è sul branch design/eecard-premium-prototype, derivato da main dopo merge PR #1 |
+| C01 | Confermato dall’utente | Repository av3rgfx/EECard, esperienza desktop e smartphone, qualità premium | Prototipo PR #2 integrato; evoluzione sul branch design/visual-identity-evolution da main aggiornato |
 | C02 | Confermato dall’utente | Design system e prototipo frontend navigabile, dati dimostrativi | React frontend; nessun backend, pagamento o messaggio reale |
 | C03 | Confermato dal brief | Card come accesso ai servizi, distinta da carta bancaria | Nessun PAN, IBAN, CVV, saldo, circuito bancario o finto checkout |
 | C04 | Confermato dal brief | Documento, dichiarazione, verifica, quietanza distinti | Passaggi separati con testo, autore e fonte; incasso parziale mantiene residuo |
@@ -33,3 +33,38 @@ Lo stato è salvato in localStorage e condiviso fra i ruoli della stessa demo ne
 La condivisione aggiorna i permessi simulati e mostra durata/revoca; non genera URL pubblici, invia email o applica una scadenza server. Le quietanze sono facsimili senza valore. Il blocco revoca l’identificativo locale, la sostituzione ne genera uno nuovo senza riutilizzare il precedente.
 
 La verifica di un documento è formale e attribuita all’operatore demo: non certifica validità giuridica, urbanistica o tecnica. Caricamenti malware, deduplicazione, pagamenti multipli e allocazioni su più rate richiedono backend e regole successive. Il prototipo rende visibile un incasso parziale/eccedente, senza simulare riconciliazioni bancarie automatiche.
+
+## Aggiornamento — identità autonoma, prima tappa
+
+| ID | Stato | Decisione / questione | Conseguenza |
+| --- | --- | --- | --- |
+| C07 | Confermato dall’utente | EECard provvisorio; ƎE appartiene all’agenzia Enrico Erca | Prodotto con marchio autonomo e utilizzabile da altre agenzie |
+| C08 | Confermato dall’utente, completato | Presentare 2–3 direzioni, attendere scelta prima della finalizzazione | Tre simboli presentati; poi C scelto esplicitamente |
+| C09 | Confermato dall’utente | Il riferimento orienta colore e geometria, non approva scritte o nomi | “quey” non adottato; chiedere il nome prima del marchio testuale |
+| P05 | Proposta visiva | A Soglia / B Casa accolta / C Legame; albicocca e bruno | [Confronto e motivazioni](LOGO_DIREZIONI.md); A consigliata, non selezionata |
+| P06 | Proposta tipografica | Manrope locale come famiglia geometrica simile | Neo Geometric suggerito ma distribuzione/licenza non identificata |
+| A07 | Parzialmente risolto | C Legame scelto; nome ancora da confermare | Simbolo finalizzato e integrato; wordmark in attesa del nome |
+
+P01 descrive la base storica, sostituita dall’identità 0.2; non è la palette corrente. Nessun nuovo prezzo, servizio o ambito operativo introdotto.
+
+## Scelta e finalizzazione del simbolo
+
+| ID | Stato | Decisione / questione | Conseguenza |
+| --- | --- | --- | --- |
+| C10 | Confermato esplicitamente dall’utente | «Scelgo il logo C Legame. Il nome rimane ancora da confermare» | C finalizzato; “Legame” non diventa il nome del prodotto |
+| P07 | Esecuzione di design da revisionare | Palette albicocca/bruno, avorio, terracotta accessibile, Manrope locale | Implementata nelle schermate, nei pannelli, nella tessera e nelle anteprime |
+| P08 | Esecuzione di design | Master regolare e ottico 16–31 px, quattro colori, favicon SVG/PNG | [Guida e asset](MARCHIO.md); nessuna composizione con nome |
+
+P01 e l’implementazione bosco/lime sono superati. P05 resta lo storico del confronto; la scelta C sostituisce la raccomandazione iniziale A.
+
+## Chiusura — nuova priorità di qualità visiva
+
+| ID | Stato | Decisione / questione | Conseguenza |
+| --- | --- | --- | --- |
+| C11 | Confermato dall’utente | «La card deve essere la prima cosa che vedi quando accedi» | Primo contenuto dominante della home; nuova gerarchia da mostrare prima di implementare. Supera P02 solo nell’ordine tessera/riepilogo |
+| C12 | Confermato dall’utente | Grafica più accattivante, ricca, dinamica e animata; UX come soluzione visiva dei processi | Nuovo obiettivo della prossima sessione, non approvazione dell’esecuzione attuale |
+| C13 | Confermato dall’utente | Esempi prima delle modifiche, poi conferma o richieste di modifica | Preparare esempi separati; attendere scelta esplicita prima del redesign del prodotto |
+| P09 | Proposte non approvate | Materia e luce / Editoriale e architettura / Luce e profondità | Confronto ad alta fedeltà da realizzare, raccomandazione iniziale A; nessuna applicata |
+| P10 | Proposte UX/movimento | Processo affitto con fase/autore/azione, timeline assistenza, documenti più riconoscibili | Solo rappresentazioni di funzioni esistenti; ricette in REVISIONE_VISIVA.md da valutare negli esempi |
+
+Questa chiusura aggiorna documentazione, revisione e PR #3. Il frontend e Sites v3 restano invariati. Nome ancora aperto; simbolo C confermato.

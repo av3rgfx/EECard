@@ -2,6 +2,10 @@
 
 Aggiornato il 6 ottobre 2026. Questo documento orienta il lavoro di prodotto nelle sessioni successive; non costituisce un’offerta commerciale né una specifica di produzione approvata.
 
+## Identità e origine
+
+EECard è un nome provvisorio. ƎE è sigla e logo dell’agenzia Enrico Erca, dalla cui collaborazione nasce l’idea. Il prodotto deve avere un marchio autonomo, utilizzabile anche da altre agenzie. Questo conferma una direzione di identità e compatibilità, non definisce il primo cliente pagante o la copertura operativa. Nessun nome esplorato, incluso quello nel riferimento visivo, è approvato. L’utente ha scelto il simbolo C — Legame, ora finalizzato e integrato; “Legame” non è il nome del prodotto.
+
 ## Obiettivo e stato
 
 EECard propone uno spazio per gestire le relazioni legate a un immobile: documenti, locazione, evidenze di pagamento, assistenza e accesso ai servizi. La card rende riconoscibile l’accesso a questo spazio; non è una carta bancaria.
@@ -49,7 +53,11 @@ Nessun account reale, pagamento, email, upload server, prenotazione o ordine vie
 
 Il registro dettagliato con ID e provenienza è [DECISIONI.md](docs/design/DECISIONI.md): aggiornare lì lo stato quando arriva una risposta verificabile, poi allineare questa sintesi. Non promuovere una proposta a “confermata” per il solo fatto che appare nel prototipo.
 
-## Prossimo passo proposto
+## Prossima sessione confermata
+
+Evoluzione della qualità visiva e della UX del prototipo: tessera come primo contenuto dominante della home all’accesso; esempi concreti da sottoporre all’utente prima di implementare. Non aggiunge funzionalità o disponibilità di servizi. L’analisi è in [REVISIONE_VISIVA.md](docs/design/REVISIONE_VISIVA.md). Nessun redesign ancora applicato.
+
+## Validazione di prodotto proposta, fuori dal lavoro immediato
 
 Raccogliere feedback sui quattro percorsi principali con proprietario, inquilino e agenzia; identificare il beneficio iniziale da offrire e risolvere il perimetro commerciale. Solo dopo definire una prima funzionalità operativa completa con criteri di accettazione. Non sono assegnati tempi, budget o responsabili non concordati.
 

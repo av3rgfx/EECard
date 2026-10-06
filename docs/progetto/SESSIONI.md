@@ -29,3 +29,33 @@ Richiesta dell’utente: salvare tutto, aggiornare i Markdown, aggiungere docume
 Aggiunti PRODUCT.md, DESIGN.md, DEVELOPMENT.md, backlog e questo registro; riscritti il punto di ripresa e le istruzioni stale di AGENTS.md. README, decisioni e registro della versione online allineati. La PR #2 viene riutilizzata per la stessa consegna e resa pronta alla revisione; nessun merge richiesto.
 
 Questa chiusura modifica solo documentazione: controllati collegamenti locali e diff; test frontend e deployment non ripetuti. La versione online resta il commit precedente sopra indicato. Non sono state prese nuove decisioni commerciali, di design finale o architettura di produzione.
+
+## 6 ottobre 2026 — evoluzione identità, confronto e correzioni indipendenti
+
+PR #2 verificata integrata; branch `design/visual-identity-evolution` creato da main aggiornato. Nuovo contesto confermato: ƎE è il marchio dell’agenzia Enrico Erca, EECard provvisorio, prodotto autonomo per altre agenzie; nessun nome confermato.
+
+Preparati A Soglia, B Casa accolta, C Legame: 12 SVG di studio, colori/monocromia e prove 16/24/32 px, guida, contrasti, tavole e pagina confronto. Chiesta la scelta e il nome prima della finalizzazione. La nuova identità non è stata applicata per silenzio-assenso.
+
+Corrette leggibilità, gerarchia mobile, skip link che cambiava rotta, ricerca/focus, indicatore Altro, icona tessera e scansione Vite dell’HTML generato. Skill Emil recuperate e applicate; licenze conservate. Build e formattazione passate, 17 test passati, 24 scansioni axe senza violazioni; 3 viewport per confronto logo senza overflow/violazioni. Nessuna prova fisica.
+
+Documenti di prodotto/design/sviluppo, decisioni, backlog e punto di ripresa aggiornati. Questa prima tappa è reviewable; asset definitivi, favicon e nuova palette globale restano dipendenti dalla scelta dell’utente. Pubblicazione sul sito esistente e PR registrate in ANTEPRIME_WEB.md e nel punto di ripresa.
+
+Prima tappa salvata sul remoto nella [PR #3](https://github.com/av3rgfx/EECard/pull/3), aperta e non in bozza; nessun merge. Sites versione 2 pubblicata con successo dal commit `6b0f0312070308c9561fe2b448fc19edec816d60`. Il trasporto GitHub push ha restituito 401: usata l’API Git autenticata per caricare blob/albero e ricreare il medesimo commit (SHA verificato), poi creare il branch e la PR. La successiva chiusura è solo documentale, senza nuovo deploy o ripetizione dei test UI.
+
+## 6 ottobre 2026 — C Legame scelto, simbolo finalizzato e integrazione
+
+L’utente sceglie «il logo C Legame» e conferma che «il nome rimane ancora da confermare». Riutilizzati branch e PR #3 ancora aperta. Finalizzato il solo simbolo: regolare e ottico, quattro colori, favicon e guida/ZIP; fonte comune per React e SVG. “Legame” non è adottato come nome del prodotto.
+
+Integrati simbolo, palette albicocca/bruno/avorio/terracotta, superfici, card, navigazione, componenti e design system. Manrope locale mantenuto; logo precedente EE rimosso dalla UI. Stati operativi e flussi preservati. Tutti i test della nuova identità passati (18), 24 scansioni axe senza violazioni; guida, download e anteprime statiche verificati. Microtesto e margini interni card corretti dopo controllo visivo; nessuna nuova animazione. Nessuna prova hardware dichiarata.
+
+Aggiornati screenshot e documentazione corrente; confronto iniziale conservato come archivio. Anteprime aggiornate sullo stesso sito, identità e accesso conservati; commit pubblicato e versione registrati in ANTEPRIME_WEB.md. PR #3 aggiornata, senza merge. Il naming resta l’unica decisione necessaria per il futuro marchio testuale.
+
+Consegna pubblicata: Sites **v3**, stato `succeeded` alle 11:21:23 UTC, sorgente `d0bcbaecf4a208225fb0788070fc90e90fbf4551`. Lo stesso commit è sul branch GitHub della PR #3; il successivo commit documentale registra la consegna. Nessun test UI ripetuto per questa sola registrazione.
+
+## 6 ottobre 2026 — chiusura, critica visiva e preparazione della prossima iterazione
+
+L’utente richiede una qualità grafica più elevata e dinamica, soluzioni UX visive per i processi e tessera subito protagonista all’accesso. Impone esempi concreti prima di modificare il prodotto, seguiti dalla sua conferma o richiesta di modifiche. Registrati C11–C13; le tre direzioni P09 restano proposte.
+
+Esaminati screenshot esistenti e codice; misurata la home in Chromium a 390×844 e 1440×1000. La tessera mobile inizia a y 782 px: non è interamente visibile al primo accesso. Analisi e proposte in REVISIONE_VISIVA.md, skill Emil find-animation-opportunities letta e applicata in sola analisi. Aggiornati prompt, punto di ripresa, backlog, decisioni e documenti di orientamento, correggendo anche riferimenti obsoleti a PR #2 e monogramma.
+
+Nessuna modifica al frontend, agli asset o alle anteprime; nessuna nuova esecuzione della suite UI/axe. Controllati diff e collegamenti Markdown. Sites resta v3 dal commit d0bcbaecf4a208225fb0788070fc90e90fbf4551. Riutilizzata la PR #3 aperta per la medesima consegna, con commit documentale sul remoto; nessun merge. Prossimo passo: esempi ad alta fedeltà e scelta, non redesign automatico.

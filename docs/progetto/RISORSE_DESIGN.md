@@ -3,6 +3,10 @@
 Verifica: 6 ottobre 2026. Questo documento prepara la prossima sessione; non è
 un'implementazione né una scelta definitiva dello stack di produzione.
 
+## Aggiornamento di continuità
+
+La parte seguente conserva fonti e criteri del brief iniziale. Il prototipo e l’identità 0.2 esistono già; C Legame è scelto e il nome resta aperto. La richiesta più recente è una qualità visiva superiore, più dinamismo e tessera subito protagonista, con esempi da approvare prima del redesign. Prevalgono il [prompt aggiornato](PROMPT_DESIGN.md) e la [revisione visiva](../design/REVISIONE_VISIVA.md). Le frasi storiche su ciò che era ancora da progettare non riaprono la scelta del simbolo né autorizzano implementazione prima della conferma.
+
 ## Richieste confermate e proposte operative
 
 **Confermato dall'utente:** repository `av3rgfx/EECard`, piattaforma desktop e mobile,

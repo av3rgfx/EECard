@@ -1,50 +1,37 @@
 # EECard — punto di ripresa
 
-Sessione conclusa il 6 ottobre 2026. Repository unica: https://github.com/av3rgfx/EECard.
+Aggiornato il 6 ottobre 2026. Repository unica https://github.com/av3rgfx/EECard.
 
-## Stato attuale
+## Stato corrente
 
-Design system e prototipo navigabile ad alta fedeltà desktop/smartphone realizzati. Disponibili dati demo e percorsi proprietario, inquilino, agenzia e tecnico; nessuna operazione reale. Anteprime pubbliche:
+L’utente ha scelto **C — Legame** e ha lasciato il nome da confermare. Il simbolo è finalizzato e integrato nel prototipo esistente, con identità albicocca/bruno/avorio e terracotta per azioni accessibili. “Legame” è il titolo del concept, non il nome del prodotto. EECard resta provvisorio; ƎE appartiene all’agenzia Enrico Erca. Nessun wordmark realizzato.
 
-- [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/)
-- [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/)
+Branch `design/visual-identity-evolution`, da main aggiornato dopo merge PR #2. [PR #3](https://github.com/av3rgfx/EECard/pull/3) riutilizzata e pronta alla revisione, senza merge. Controllarne lo stato remoto prima di scegliere il branch in una nuova sessione.
 
-PR #1 documentale integrata il 6 ottobre. Branch del lavoro: `design/eecard-premium-prototype`, derivato da `main` aggiornato. Consegna nella [PR #2](https://github.com/av3rgfx/EECard/pull/2), non integrata al momento della chiusura. Ricontrollare il suo stato remoto prima di scegliere il branch.
+## Consegnato
 
-L’utente ha chiesto di salvare e documentare il lavoro per più sessioni e consegnarlo in PR. Non ha chiesto il merge o l’avvio del backend. La chiusura non rende definitive le proposte commerciali o di design.
+- [Guida marchio](../design/MARCHIO.md): master regolare e ottico, 8 SVG colore/mono, favicon SVG + PNG 16/32/180/512, ZIP e pagina `/marchio/` con download. Fonte unica `src/brand-geometry.json`.
+- Palette semantica e simbolo su navigazione, tessera, superfici, componenti e design system 0.2. Manrope locale mantenuto come geometrico simile al suggerimento; Neo Geometric non è stato identificato/licenziato.
+- Correzioni della prima tappa conservate: leggibilità, skip link, focus ricerca, orientamento Altro, gerarchie mobile. Iconografia di tessera/utenze coerente; microtesto della card reso più leggibile.
+- Build/format passati; 18 test E2E, audit aggiuntivo 24 schermate senza violazioni; guida 320/390/1240 senza overflow/violazioni; download verificati; anteprime e HTML autonomo collaudati. [Report aggiornato](../design/VERIFICHE.md), 22 screenshot frontend e 2 guide.
+- Prezzi, coperture e disponibilità non inventati; documento/dichiarazione/verifica/quietanza e percorsi demo conservati.
 
-## Cosa leggere, in ordine
+## Prossimo lavoro
 
-1. [AGENTS.md](../../AGENTS.md): istruzioni persistenti della repository.
-2. [PRODUCT.md](../../PRODUCT.md): obiettivo, persone, confini e questioni aperte.
-3. [DESIGN.md](../../DESIGN.md): direzione e mappa delle fonti di design.
-4. [DEVELOPMENT.md](../../DEVELOPMENT.md): codice, avvio, verifiche e pubblicazione.
-5. [BACKLOG.md](BACKLOG.md): completato e prossime attività proposte.
-6. [DECISIONI.md](../design/DECISIONI.md): distinguere conferme, proposte, demo e domande aperte.
+**Nuova priorità confermata dall’utente:** elevare nettamente la qualità grafica, percepita oggi come grezza, semplice e poco dinamica. **La tessera deve essere la prima cosa visibile entrando nella home.** Prima di modificare il prodotto presentare 2–3 esempi concreti e attendere conferma o richieste di modifica. Questa chiusura ha aggiornato solo documentazione e analisi: il redesign non è implementato.
 
-Per un cambiamento specifico leggere poi i percorsi, il design system e le verifiche collegati. Il [brief originale](PROMPT_DESIGN.md), le [risorse](RISORSE_DESIGN.md) e lo [studio v0.1 di 21 pagine](EECard-studio-v0.1.pdf) restano fonti di contesto. Non ripetere tutta l’analisi senza necessità. Il vecchio handoff pre-design è conservato nella storia Git della PR #1.
+Partire dalla [revisione visiva](../design/REVISIONE_VISIVA.md) e dal [prompt pronto da copiare](PROMPT_DESIGN.md). Proposte da confrontare: Materia e luce, Editoriale e architettura, Luce e profondità. Nessuna scelta approvata. Preparare home desktop/mobile, dettaglio tessera e un processo esistente con demo animata, stato critico e reduced motion, in un’area separata dal prodotto attuale; non bastano descrizioni o moodboard.
 
-## Ripartenza pratica
+Non chiedere nuovamente quale simbolo scegliere: C è confermato. Il nome rimane aperto. Non avviare backend, pagamenti o nuove funzioni. Dopo la conferma integrare, verificare e pubblicare sul medesimo sito. Per agenzia/tecnico preservare i ruoli esistenti senza inventare una tessera personale.
 
-- Verificare `git status` e aggiornamenti remoti. Se PR #2 è aperta, riprendere il branch di design; se integrata, partire da `main` aggiornato con un nuovo branch per il lavoro richiesto. Non modificare il branch estraneo `feat/ufp-local-foundation`.
-- Eseguire `npm ci` e `npm run dev`; aprire `http://localhost:5173`. Non dipendere dai server o dalle copie di skill in `/tmp` della sessione precedente.
-- Per riprovare i flussi usare il selettore ruolo e immobile; per azzerare lo stato usare Profilo → Ripristina tutta la demo. I dati sono nel browser, chiave `eecard-demo-v1`.
-- Chiedere o incorporare il prossimo obiettivo dell’utente. La sequenza proposta è feedback sui percorsi, prove hardware e chiarimento del primo rilascio; non avviare automaticamente tutte le voci del backlog.
+Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [MARCHIO.md](../design/MARCHIO.md), [DESIGN_SYSTEM.md](../design/DESIGN_SYSTEM.md), [DECISIONI.md](../design/DECISIONI.md), [BACKLOG.md](BACKLOG.md). `LOGO_DIREZIONI.md` e `/identita/` sono lo storico delle tre proposte, non una scelta ancora aperta.
 
-## Evidenze già disponibili
+`npm ci`, `npm run dev`. Per asset: `node scripts/build-brand-assets.mjs` (Chromium Playwright e Python 3), poi `npm run preview:shareable`. Server statico 5174 e `node scripts/verify-brand.mjs` per guida/download/anteprime. Non dipendere da file temporanei o processi di sessioni precedenti.
 
-15 test Playwright passati; audit aggiuntivo di 24 schermate senza violazioni axe; build e formattazione passate; 22 screenshot; HTML autonomo collaudato senza rete; quattro combinazioni di viewport collaudate per le anteprime web. Report datati in [VERIFICHE.md](../design/VERIFICHE.md) e [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md).
+## Pubblicazione e limiti
 
-Non ancora eseguiti: hardware iPhone/Android, Safari/WebKit, VoiceOver/TalkBack e prove con utenti. Nessuna certificazione WCAG o verifica di sicurezza del prodotto operativo. Nessun backend o CI configurati.
+[Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Guida e asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/). Stesso sito e pubblico precedenti; project ID in `.openai/hosting.json`. Versione realmente online in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md); push GitHub e deploy sono distinti.
 
-## Vincoli da non perdere
+Online: Sites **v3**, deploy riuscito il 6 ottobre 2026 alle 11:21:23 UTC dal commit `d0bcbaecf4a208225fb0788070fc90e90fbf4551`. Il commit di chiusura successivo aggiorna solo documentazione, senza nuovo deploy.
 
-Quote 50 €/15 €, periodicità, inclusioni, zona, copertura, primo cliente, budget e perimetro iniziale restano aperti. Non presentare Milano, i canoni e gli slot demo come dati commerciali reali. Pagamenti, app store, 3D e AI non sono né approvati né rinviati per decisione condivisa.
-
-Mantenere distinti caricamento documento, dichiarazione pagamento, verifica incasso e quietanza. La card è una tessera di accesso ai servizi, non una carta bancaria. La condivisione documentale e i permessi sono simulati.
-
-## Pubblicazione e chiusure future
-
-Il sito online è Sites, con identità persistita in `.openai/hosting.json`; non creare una nuova registrazione per aggiornarlo. Ultimo commit frontend pubblicato: `ae371274031ef53c1adcad8d051cc00367dd741d`. I successivi aggiornamenti solo Markdown non modificano questa versione online.
-
-A ogni chiusura aggiornare questo punto di ripresa, il backlog, il [registro sessioni](SESSIONI.md) e i documenti toccati dalle decisioni; salvare sul remoto e creare/aggiornare la PR del lavoro. Non lasciare informazioni necessarie soltanto nella chat.
+Nessun backend o servizio reale. Test solo Chromium emulato: iPhone/Android fisici, Safari/WebKit, VoiceOver/TalkBack, prove con utenti e stampa della tessera ancora da verificare. Restano aperti modello commerciale, perimetro operativo, prezzi, budget e integrazioni.

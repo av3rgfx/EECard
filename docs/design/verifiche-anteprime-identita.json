@@ -1,0 +1,39 @@
+[
+  {
+    "route": "desktop",
+    "width": 1440,
+    "innerWidth": 1440,
+    "overflow": false,
+    "errors": [],
+    "card": "La chiave del tuo spazio."
+  },
+  {
+    "route": "mobile",
+    "width": 1440,
+    "innerWidth": 390,
+    "overflow": false,
+    "errors": [],
+    "card": "La chiave del tuo spazio."
+  },
+  {
+    "route": "mobile",
+    "width": 390,
+    "innerWidth": 390,
+    "overflow": false,
+    "errors": [],
+    "card": "La chiave del tuo spazio."
+  },
+  {
+    "route": "mobile",
+    "width": 360,
+    "innerWidth": 360,
+    "overflow": false,
+    "errors": [],
+    "card": "La chiave del tuo spazio."
+  },
+  {
+    "portable": true,
+    "externalRequests": [],
+    "dialog": 1
+  }
+]

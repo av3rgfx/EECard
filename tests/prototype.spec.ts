@@ -354,3 +354,77 @@ test("incasso parziale mantiene il residuo e non chiude la rata", async ({
     page.locator(".summary-stats>div").nth(1).locator("strong"),
   ).toContainText("01");
 });
+
+test("il salto al contenuto conserva pagina e filtri, anche al reload", async ({
+  page,
+}) => {
+  await navigate(page, "documenti");
+  await page.getByLabel("Cerca documenti").fill("contratto");
+  const skip = page.getByRole("link", { name: "Vai al contenuto" });
+  await skip.focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator("main")).toBeFocused();
+  await expect(page).toHaveURL(/#\/documenti$/);
+  await expect(page.getByLabel("Cerca documenti")).toHaveValue("contratto");
+  await page.reload();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Tutto al suo posto.",
+  );
+});
+
+test("ricerca mobile e orientamento nelle sezioni del menu Altro", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await navigate(page, "documenti");
+  await page.getByLabel("Cerca documenti").fill("nessunrisultato");
+  const clear = page.getByRole("button", { name: "Cancella ricerca" });
+  const box = await clear.boundingBox();
+  expect(box!.width).toBeGreaterThanOrEqual(44);
+  expect(box!.height).toBeGreaterThanOrEqual(44);
+  await clear.click();
+  await expect(page.getByLabel("Cerca documenti")).toBeFocused();
+  await expect(page.getByLabel("Cerca documenti")).toHaveValue("");
+  await navigate(page, "affitto");
+  const more = page.getByRole("button", { name: "Altro, apri menu" });
+  await expect(more).toHaveAttribute("aria-current", "true");
+  await expect(more).toHaveAttribute("aria-expanded", "false");
+  await more.click();
+  await expect(page.getByRole("dialog")).toBeVisible();
+  // Base UI makes background controls inert while the modal is open.
+  await expect(
+    page.locator('button[aria-label="Altro, apri menu"]'),
+  ).toHaveAttribute("aria-expanded", "true");
+  await page.keyboard.press("Escape");
+  await expect(more).toBeFocused();
+  await expect(more).toHaveAttribute("aria-expanded", "false");
+});
+
+test("tessera: intestatario e identificativo restano dentro i margini", async ({
+  page,
+}) => {
+  for (const width of [320, 390, 900, 1440]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto("/?data=worst#/card");
+    await page.locator(".card-bottom strong").waitFor();
+    const bounds = await page.locator(".digital-card").evaluate((card) => {
+      const rect = card.getBoundingClientRect();
+      const css = getComputedStyle(card);
+      const name = card
+        .querySelector(".card-bottom strong")!
+        .getBoundingClientRect();
+      const id = card.querySelector(".card-id")!.getBoundingClientRect();
+      return {
+        left: rect.left + parseFloat(css.paddingLeft),
+        right: rect.right - parseFloat(css.paddingRight),
+        nameLeft: name.left,
+        nameRight: name.right,
+        idLeft: id.left,
+        idRight: id.right,
+      };
+    });
+    expect(bounds.nameLeft).toBeGreaterThanOrEqual(bounds.left - 1);
+    expect(bounds.idRight).toBeLessThanOrEqual(bounds.right + 1);
+    expect(bounds.nameRight).toBeLessThanOrEqual(bounds.idLeft);
+  }
+});

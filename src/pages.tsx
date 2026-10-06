@@ -1,5 +1,5 @@
 import { asset } from "./assets";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -7,7 +7,7 @@ import {
   FileText,
   Wrench,
   CalendarDays,
-  CreditCard,
+  ContactRound,
   ShieldCheck,
   LockKeyhole,
   KeyRound,
@@ -41,7 +41,7 @@ import {
   type Scenario,
   type Doc,
 } from "./data";
-import { Brand } from "./components/brand";
+import { Brand, BrandSymbol } from "./components/brand";
 
 export function PageHeading({
   eyebrow,
@@ -70,18 +70,15 @@ export function DigitalCard({ compact = false }: { compact?: boolean }) {
   return (
     <div
       className={`digital-card ${compact ? "compact" : ""} ${state.blocked ? "blocked" : ""}`}
-      aria-label={`EECard servizi, ${state.blocked ? "bloccata" : "attiva nella demo"}`}
+      aria-label={`Tessera servizi, ${state.blocked ? "bloccata" : "attiva nella demo"}`}
     >
       <div className="card-grain" />
       <div className="card-top">
         <Brand />
-        <span className="card-service">ACCESSO AI SERVIZI</span>
+        <span className="card-service">TESSERA SERVIZI</span>
       </div>
       <div className="card-art" aria-hidden="true">
-        <div />
-        <div />
-        <div />
-        <div />
+        <BrandSymbol />
       </div>
       <div className="card-copy">
         <span>
@@ -271,7 +268,7 @@ export function HomePage() {
         </section>
         <section className="card-widget">
           <div className="section-title">
-            <h2>La tua EECard</h2>
+            <h2>La tua tessera</h2>
             <Badge tone={state.blocked ? "danger" : "success"}>
               {state.blocked ? "Bloccata" : "Attiva · demo"}
             </Badge>
@@ -435,6 +432,7 @@ export function DocRow({ doc: d }: { doc: Doc }) {
 export function DocumentsPage() {
   const { state, docs, activeHouses, scenario } = useApp();
   const [search, setSearch] = useState("");
+  const searchInput = useRef<HTMLInputElement>(null);
   const [category, setCategory] = useState("Tutti");
   const [page, setPage] = useState(0);
   useEffect(() => setPage(0), [search, category, scenario, state.property]);
@@ -453,21 +451,33 @@ export function DocumentsPage() {
         description="Trova il documento giusto, condividilo con le persone giuste."
       />
       <div className="document-tools">
-        <label className="search-field">
+        <div className="search-field">
           <Search size={19} />
           <input
             aria-label="Cerca documenti"
+            ref={searchInput}
             placeholder="Cerca un documento…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
           {search && (
-            <button aria-label="Cancella ricerca" onClick={() => setSearch("")}>
+            <button
+              aria-label="Cancella ricerca"
+              onClick={() => {
+                setSearch("");
+                searchInput.current?.focus();
+              }}
+            >
               <X size={16} />
             </button>
           )}
-        </label>
-        <span className="muted">
+        </div>
+        <span
+          className="muted"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
           {visible.length.toLocaleString("it-IT")}{" "}
           {visible.length === 1 ? "documento" : "documenti"}
         </span>
@@ -541,7 +551,7 @@ export function RentPage() {
   return (
     <>
       <PageHeading
-        eyebrow="LA LOCazione, CON CHIAREZZA"
+        eyebrow="LA LOCAZIONE, CON CHIAREZZA"
         title="Ogni scadenza, chiara."
         description="Una prova di bonifico è il primo passo. L’incasso viene verificato separatamente."
       />
@@ -924,7 +934,7 @@ export function CardPage() {
       <PageHeading
         eyebrow="PERSONALE. RICONOSCIBILE. TUA."
         title="La chiave del tuo spazio."
-        description="La tua EECard identifica l’accesso ai servizi per la casa."
+        description="La tua tessera identifica l’accesso ai servizi per la casa."
       />
       <div className="card-page-grid">
         <div>
@@ -970,7 +980,7 @@ export function CardPage() {
             onClick={() => open("physical")}
             disabled={scenario === "ended"}
           >
-            <IconBox icon={CreditCard} />
+            <IconBox icon={ContactRound} />
             <span>
               <strong>Richiedi la card fisica</strong>
               <small>{state.physical}</small>
@@ -1198,7 +1208,7 @@ export function ProfilePage() {
           </button>
         </section>
         <section className="profile-panel">
-          <h2>Il servizio EECard</h2>
+          <h2>Il servizio</h2>
           <Badge tone="warning">Condizioni da definire</Badge>
           <p>
             Quote, periodicità, IVA, inclusioni, copertura territoriale e
@@ -1405,17 +1415,38 @@ export function DesignSystemPage() {
   return (
     <>
       <PageHeading
-        eyebrow="EECARD · DESIGN SYSTEM 0.1"
+        eyebrow="IDENTITÀ · DESIGN SYSTEM 0.2"
         title="Calma, per le cose importanti."
-        description="Un sistema visivo proposto per un prodotto quotidiano. Identità e scelte da validare."
+        description="Simbolo Legame scelto. Un’identità autonoma per i servizi della casa; nome del prodotto ancora da confermare."
       />
+      <section
+        className="brand-specimen"
+        aria-label="Simbolo Legame e varianti"
+      >
+        <div>
+          <BrandSymbol />
+          <small>Bruno su albicocca</small>
+        </div>
+        <div>
+          <BrandSymbol />
+          <small>Chiaro su bruno</small>
+        </div>
+        <div>
+          <span className="brand-small-proofs">
+            {[16, 24, 32].map((size) => (
+              <BrandSymbol key={size} small className={`symbol-${size}`} />
+            ))}
+          </span>
+          <small>Variante ottica · 16 / 24 / 32 px</small>
+        </div>
+      </section>
       <div className="palette">
         {[
-          ["Bosco", "#173f35"],
-          ["Inchiostro", "#1d2925"],
-          ["Salvia", "#e8eee5"],
-          ["Lime", "#d5ef8e"],
-          ["Avorio", "#f7f8f4"],
+          ["Bruno", "#48280f"],
+          ["Terracotta", "#93471f"],
+          ["Albicocca", "#ffa15e"],
+          ["Avorio", "#faf7f2"],
+          ["Testo", "#38271d"],
         ].map(([name, color]) => (
           <div key={name}>
             <span style={{ background: color }} />
@@ -1453,7 +1484,9 @@ export function DesignSystemPage() {
           <h2>Superfici</h2>
           <p>
             Raggi 12 / 20 / 24 px. Bordi leggeri, ombre concentrate sulle
-            superfici sovrapposte. Una sola superficie scura protagonista.
+            superfici sovrapposte. La tessera come superficie scura
+            protagonista. Albicocca solo con testo bruno; terracotta per azioni
+            con testo bianco.
           </p>
         </section>
         <section>

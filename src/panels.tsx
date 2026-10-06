@@ -6,7 +6,7 @@ import {
   Download,
   FileText,
   ShieldCheck,
-  CreditCard,
+  Plug,
   Wrench,
   CalendarDays,
   Building2,
@@ -67,7 +67,7 @@ export function Panels() {
       "La credenziale demo verrà revocata. I documenti restano accessibili dal tuo account.",
     ],
     replace: [
-      "Una nuova EECard",
+      "Una nuova tessera",
       "Il vecchio identificativo resterà revocato anche dopo la sostituzione.",
     ],
     physical: [
@@ -82,7 +82,7 @@ export function Panels() {
       "I tuoi aggiornamenti",
       "Solo comunicazioni della demo. Nessun messaggio è stato inviato.",
     ],
-    more: ["Il tuo spazio EECard", "Tutte le sezioni, a portata di mano."],
+    more: ["Il tuo spazio", "Tutte le sezioni, a portata di mano."],
     privacy: [
       "Sicurezza e privacy",
       "I dati del prototipo sono fittizi e restano nel browser.",
@@ -212,7 +212,7 @@ export function Panels() {
           [
             ["immobili", "I tuoi immobili", Building2],
             ["affitto", "Affitto e scadenze", CalendarDays],
-            ["utenze", "Utenze", CreditCard],
+            ["utenze", "Utenze", Plug],
             ["consulenze", "Consulenze", MessageCircle],
             ["profilo", "Profilo e servizio", Settings2],
             ["accesso", "Accesso e invito", LogIn],
@@ -272,8 +272,8 @@ export function Panels() {
         </p>
         <h3>Fine servizio e fine locazione</h3>
         <p>
-          La disdetta EECard non risolve il contratto di affitto. Le regole di
-          conservazione dei documenti pertinenti restano da definire.
+          La disdetta del servizio non risolve il contratto di affitto. Le
+          regole di conservazione dei documenti pertinenti restano da definire.
         </p>
         <Button
           variant="secondary"
@@ -347,7 +347,7 @@ export function Panels() {
   if (panel.kind === "revoked-help")
     content = (
       <>
-        <p>Referente dimostrativo: Elena Colombo, agenzia EECard.</p>
+        <p>Referente dimostrativo: Elena Colombo, agenzia demo.</p>
         <Notice>
           Non è presente un recapito operativo verificato. Questo pannello non
           invia una richiesta reale.
@@ -500,7 +500,7 @@ function DocumentPanel({ id }: { id: string }) {
     <>
       <div className="document-preview">
         <span className="preview-watermark">FACSIMILE · DEMO</span>
-        <div className="preview-logo">EECard / FASCICOLO</div>
+        <div className="preview-logo">FASCICOLO / DEMO</div>
         <h3>{doc.name}</h3>
         <p>
           {p.name}

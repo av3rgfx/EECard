@@ -8,7 +8,7 @@ import {
   Plug,
   Wrench,
   MessageCircle,
-  CreditCard,
+  ContactRound,
   Settings2,
   ChevronDown,
   ArrowUpRight,
@@ -52,7 +52,7 @@ const navigation: { id: Route; label: string; icon: LucideIcon }[] = [
   { id: "utenze", label: "Utenze", icon: Plug },
   { id: "assistenza", label: "Assistenza", icon: Wrench },
   { id: "consulenze", label: "Consulenze", icon: MessageCircle },
-  { id: "card", label: "La tua EECard", icon: CreditCard },
+  { id: "card", label: "La tua tessera", icon: ContactRound },
 ];
 const titles: Record<Route, string> = {
   home: "Panoramica",
@@ -62,10 +62,10 @@ const titles: Record<Route, string> = {
   utenze: "Utenze",
   assistenza: "Assistenza",
   consulenze: "Consulenze",
-  card: "La tua EECard",
+  card: "La tua tessera",
   profilo: "Profilo e servizio",
   agenzia: "Spazio agenzia",
-  accesso: "Benvenuto in EECard",
+  accesso: "Benvenuto nel tuo spazio",
   "design-system": "Design system",
 };
 function getRoute(): Route {
@@ -188,7 +188,14 @@ export default function App() {
         close: () => setPanel(null),
       }}
     >
-      <a className="skip-link" href="#main-content">
+      <a
+        className="skip-link"
+        href="#main-content"
+        onClick={(event) => {
+          event.preventDefault();
+          document.getElementById("main-content")?.focus();
+        }}
+      >
         Vai al contenuto
       </a>
       <div className="app-shell">
@@ -196,7 +203,7 @@ export default function App() {
           <a
             className="brand-link"
             href="#/home"
-            aria-label="EECard, panoramica"
+            aria-label="Panoramica del tuo spazio"
           >
             <Brand />
           </a>
@@ -274,7 +281,7 @@ export default function App() {
             <a
               className="mobile-brand"
               href="#/home"
-              aria-label="EECard, panoramica"
+              aria-label="Panoramica del tuo spazio"
             >
               <Brand />
             </a>
@@ -406,7 +413,7 @@ export default function App() {
             )}
           </main>
           <footer className="page-footer">
-            <span>EECard · La casa, connessa.</span>
+            <span>EECard · nome provvisorio</span>
             <a href="#/design-system">Design system</a>
             <span>
               Componenti{" "}
@@ -431,7 +438,7 @@ export default function App() {
                 },
                 { id: "documenti", label: "Documenti", icon: Files },
                 { id: "assistenza", label: "Assistenza", icon: Wrench },
-                { id: "card", label: "Card", icon: CreditCard },
+                { id: "card", label: "Card", icon: ContactRound },
               ]
           ).map(({ id, label, icon: Icon }) => (
             <a
@@ -446,6 +453,19 @@ export default function App() {
           <button
             onClick={() => setPanel({ kind: "more" })}
             aria-label="Altro, apri menu"
+            aria-haspopup="dialog"
+            aria-expanded={panel?.kind === "more"}
+            aria-current={
+              [
+                "immobili",
+                "affitto",
+                "utenze",
+                "consulenze",
+                "profilo",
+              ].includes(route)
+                ? "true"
+                : undefined
+            }
           >
             <Menu size={21} />
             <span>Altro</span>

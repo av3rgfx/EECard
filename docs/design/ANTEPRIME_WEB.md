@@ -43,3 +43,40 @@ Pubblicazione confermata riuscita il 6 ottobre 2026, alle 09:43:46 UTC.
 - Deployment riuscito: `appgdep_6ac4c2c10b2c8191a4fd0881090d1e80`.
 
 Le modifiche Markdown di chiusura sono successive al deploy e non cambiano gli asset pubblicati. Il branch temporaneo `gh-pages` è stato rimosso dopo il tentativo non riuscito di attivazione di Pages. Per i prossimi aggiornamenti usare la stessa identità Sites e registrare qui la nuova versione verificata.
+
+## Evoluzione identità — prima tappa
+
+Il generatore include anche `/identita/`: confronto A/B/C con prove colore, mono e 16/24/32 px. È una pagina di revisione separata; il frontend conserva il marchio e la palette precedenti finché l’utente non sceglie il simbolo. Non è la consegna del marchio definitivo.
+
+Anteprime desktop/mobile rigenerate con le correzioni indipendenti. Verifica Chromium delle quattro combinazioni precedenti ripetuta: navigazione alla card, nessun overflow ed errore JavaScript. HTML autonomo senza richieste esterne e dialogo documento funzionante. [Report della sessione](verifiche-anteprime-identita.json). Versione di pubblicazione aggiornata sotto dopo la conferma Sites.
+
+### Pubblicazione verificata della tappa di confronto
+
+Sites versione **2**, riuscita il 6 ottobre 2026 alle 10:57:26 UTC. Accesso pubblico e identità del sito conservati.
+
+- [Confronto dei simboli](https://eecard-design-preview.uepacio.chatgpt.site/identita/)
+- [Desktop aggiornato](https://eecard-design-preview.uepacio.chatgpt.site/desktop/)
+- [Mobile aggiornato](https://eecard-design-preview.uepacio.chatgpt.site/mobile/)
+- Commit sorgente pubblicato: `6b0f0312070308c9561fe2b448fc19edec816d60`.
+- Versione: `appgprj_6ac4c220882c8191be87c1b262306614~appgver_3d5268f933f08191aac4cbdce8403b96`.
+- Deployment: `appgdep_6ac4d40564708191b7cf24ea9db4e513`, stato `succeeded` verificato tramite Sites.
+
+La documentazione di chiusura successiva non cambia gli asset online. I controlli browser sono stati svolti sulla medesima build statica locale; la riuscita della pubblicazione è confermata dal servizio Sites, senza attribuirle nuove prove hardware.
+
+## Identità 0.2 — C Legame
+
+Simbolo scelto e integrato, nome ancora aperto. Le anteprime desktop/mobile e il selettore usano palette calda e favicon nuova. `/marchio/` ospita guida, varianti e download; `/brand/legame-assets.zip` contiene 8 SVG, favicon SVG/PNG e guida. `/identita/` rimane archivio del confronto, con esito C indicato.
+
+18 test del prototipo passati, 24 audit aggiuntivi senza violazioni, guida su 320/390/1240 px e dieci download verificati. Le quattro combinazioni delle anteprime statiche e l’HTML autonomo sono stati collaudati sulla build locale corrispondente. [Report](verifiche-legame.json). La versione precedente v2 resta lo storico della prima tappa; il deploy verificato dell’identità 0.2 viene registrato sotto.
+
+### Pubblicazione verificata di Legame
+
+Sites versione **3**, riuscita il 6 ottobre 2026 alle 11:21:23 UTC. Identità, titolo, indirizzo e accesso pubblico del sito conservati.
+
+- [Guida e asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/) · [ZIP](https://eecard-design-preview.uepacio.chatgpt.site/brand/legame-assets.zip).
+- [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/).
+- Commit sorgente pubblicato: `d0bcbaecf4a208225fb0788070fc90e90fbf4551`.
+- Versione: `appgprj_6ac4c220882c8191be87c1b262306614~appgver_bfc421a9d1bc8191bbe3dd7295f8e742`.
+- Deployment: `appgdep_6ac4d9a3152c8191b8a214f0136bcee3`, stato `succeeded` confermato da Sites.
+
+La chiusura documentale successiva non modifica la build pubblicata. Test browser svolti sulla stessa build locale; nessuna prova su hardware fisico aggiunta dal deploy.
