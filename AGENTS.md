@@ -63,3 +63,7 @@ online. Le modifiche solo documentali non richiedono un nuovo deploy.
 ## Identità del prodotto (richiesta del 6 ottobre 2026)
 
 EECard è provvisorio. ƎE è il marchio dell’agenzia Enrico Erca, non il marchio definitivo del prodotto. Nessun naming esplorato o presente nelle immagini di riferimento è approvato. L’utente ha scelto C — Legame il 6 ottobre 2026; il simbolo è ora finalizzato e integrato. Leggere `docs/design/MARCHIO.md` e il design system 0.2. Il nome resta da confermare: non realizzare un wordmark finché non arriva una scelta esplicita. “Legame” è il titolo del concept, non il nome del prodotto.
+
+## Prossima iterazione — vincolo esplicito dell’utente
+
+La tessera deve essere il primo contenuto dominante all’ingresso nella home. L’utente richiede una qualità grafica molto superiore, più dinamismo e soluzioni visive per funzionalità/processi. Prima di modificare il prodotto presentare esempi ad alta fedeltà desktop/mobile e demo animate in un’area separata, poi attendere conferma o richieste di modifica. Non applicare una proposta per silenzio-assenso. Leggere `docs/design/REVISIONE_VISIVA.md` e il prompt aggiornato `docs/progetto/PROMPT_DESIGN.md`. Questa richiesta non riapre la scelta del simbolo e non conferma il nome.

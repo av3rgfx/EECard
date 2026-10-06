@@ -53,7 +53,11 @@ Nessun account reale, pagamento, email, upload server, prenotazione o ordine vie
 
 Il registro dettagliato con ID e provenienza è [DECISIONI.md](docs/design/DECISIONI.md): aggiornare lì lo stato quando arriva una risposta verificabile, poi allineare questa sintesi. Non promuovere una proposta a “confermata” per il solo fatto che appare nel prototipo.
 
-## Prossimo passo proposto
+## Prossima sessione confermata
+
+Evoluzione della qualità visiva e della UX del prototipo: tessera come primo contenuto dominante della home all’accesso; esempi concreti da sottoporre all’utente prima di implementare. Non aggiunge funzionalità o disponibilità di servizi. L’analisi è in [REVISIONE_VISIVA.md](docs/design/REVISIONE_VISIVA.md). Nessun redesign ancora applicato.
+
+## Validazione di prodotto proposta, fuori dal lavoro immediato
 
 Raccogliere feedback sui quattro percorsi principali con proprietario, inquilino e agenzia; identificare il beneficio iniziale da offrire e risolvere il perimetro commerciale. Solo dopo definire una prima funzionalità operativa completa con criteri di accettazione. Non sono assegnati tempi, budget o responsabili non concordati.
 

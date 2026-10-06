@@ -4,7 +4,7 @@ Aggiornato il 6 ottobre 2026. Repository di riferimento: https://github.com/av3r
 
 ## Ripresa e avvio
 
-Leggere [AGENTS.md](AGENTS.md) e [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md). Verificare lo stato remoto della PR #2: se aperta, riprendere `design/eecard-premium-prototype`; se integrata, aggiornare `main` e creare un branch dedicato al nuovo obiettivo. Controllare prima le modifiche locali e non sovrascriverle.
+Leggere [AGENTS.md](AGENTS.md) e [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md). Verificare lo stato remoto della PR #3: se aperta, riprendere `design/visual-identity-evolution` e aggiornare quella PR; se integrata, aggiornare `main` e creare un branch dedicato al nuovo obiettivo. La PR #2 è già integrata. Controllare prima le modifiche locali e non sovrascriverle.
 
 Node.js 22.12+ o 24 LTS:
 
@@ -25,7 +25,7 @@ Server locale: `http://localhost:5173`. Non servono variabili segrete o servizi 
 | `src/data.ts` | Tipi, fixture, stato iniziale e scenari limite |
 | `src/context.tsx` | Contesto e contratti condivisi del frontend |
 | `src/components/ui.tsx` | Primitive e componenti adattati da Animate UI / Rare UI |
-| `src/components/brand.tsx` | Marchio e monogramma EECard |
+| `src/components/brand.tsx` | Simbolo C Legame senza wordmark; geometria condivisa in `brand-geometry.json` |
 | `src/tokens.css`, `src/styles.css` | Token e layout responsive |
 | `src/assets.ts`, `public/` | Risoluzione asset, fotografie, favicon e PDF demo |
 | `tests/prototype.spec.ts` | Percorsi end-to-end e verifiche di accessibilità/layout |

@@ -72,3 +72,7 @@ Nessuna licenza o attribuzione precedente rimossa.
 Scelta esplicita in chat: «Scelgo il logo C Legame. Il nome rimane ancora da confermare». Simbolo regolare conserva le geometrie originali della direzione C; master ottico originale semplificato per dimensioni piccole. Fonte condivisa in `src/brand-geometry.json`; asset in `public/brand/`, guida in MARCHIO.md. Non usati generatori di immagini o ricalchi di marchi esterni.
 
 Manrope locale e licenza OFL mantenuti, anche nella guida web. Le skill Emil già lette nella conversazione sono applicate a tipografia, contrasto, gerarchie responsive, input/touch, test di dati limite e movimento: nessuna nuova animazione per il logo; le transizioni esistenti restano sotto i 300 ms e rispettano la riduzione movimento. Animate UI e Rare UI, crediti e licenze restano invariati.
+
+## Revisione visiva di chiusura
+
+Letta e applicata in sola analisi la skill [find-animation-opportunities](https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/find-animation-opportunities/SKILL.md), stesso snapshot verificato localmente. Report con opportunità, frequenza ipotizzata, scopo, ricette e candidati scartati in [REVISIONE_VISIVA.md](REVISIONE_VISIVA.md). Nessun componente o asset nuovo, nessuna nuova dipendenza; nessuna animazione implementata in questa chiusura.

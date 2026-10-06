@@ -53,6 +53,8 @@ Test end-to-end, axe-core, dimensioni 360/390/1280/1440 px, stress a 320 px, tes
 
 Per riprendere in una nuova sessione partire dal [punto di ripresa](docs/progetto/PROSSIMA_SESSIONE.md). La base del prototipo è nella PR #2, integrata. Il simbolo Legame, l’identità calda e le correzioni di usabilità sono nella [PR #3](https://github.com/av3rgfx/EECard/pull/3), pronta alla revisione. Il naming resta aperto.
 
+- [Prompt per la prossima sessione: esempi prima del redesign](docs/progetto/PROMPT_DESIGN.md)
+- [Analisi del design e migliorie proposte](docs/design/REVISIONE_VISIVA.md)
 - [Prodotto, persone e confini](PRODUCT.md)
 - [Guida al design](DESIGN.md)
 - [Sviluppo, architettura del prototipo e manutenzione](DEVELOPMENT.md)

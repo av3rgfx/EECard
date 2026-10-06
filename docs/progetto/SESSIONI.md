@@ -51,3 +51,11 @@ Integrati simbolo, palette albicocca/bruno/avorio/terracotta, superfici, card, n
 Aggiornati screenshot e documentazione corrente; confronto iniziale conservato come archivio. Anteprime aggiornate sullo stesso sito, identità e accesso conservati; commit pubblicato e versione registrati in ANTEPRIME_WEB.md. PR #3 aggiornata, senza merge. Il naming resta l’unica decisione necessaria per il futuro marchio testuale.
 
 Consegna pubblicata: Sites **v3**, stato `succeeded` alle 11:21:23 UTC, sorgente `d0bcbaecf4a208225fb0788070fc90e90fbf4551`. Lo stesso commit è sul branch GitHub della PR #3; il successivo commit documentale registra la consegna. Nessun test UI ripetuto per questa sola registrazione.
+
+## 6 ottobre 2026 — chiusura, critica visiva e preparazione della prossima iterazione
+
+L’utente richiede una qualità grafica più elevata e dinamica, soluzioni UX visive per i processi e tessera subito protagonista all’accesso. Impone esempi concreti prima di modificare il prodotto, seguiti dalla sua conferma o richiesta di modifiche. Registrati C11–C13; le tre direzioni P09 restano proposte.
+
+Esaminati screenshot esistenti e codice; misurata la home in Chromium a 390×844 e 1440×1000. La tessera mobile inizia a y 782 px: non è interamente visibile al primo accesso. Analisi e proposte in REVISIONE_VISIVA.md, skill Emil find-animation-opportunities letta e applicata in sola analisi. Aggiornati prompt, punto di ripresa, backlog, decisioni e documenti di orientamento, correggendo anche riferimenti obsoleti a PR #2 e monogramma.
+
+Nessuna modifica al frontend, agli asset o alle anteprime; nessuna nuova esecuzione della suite UI/axe. Controllati diff e collegamenti Markdown. Sites resta v3 dal commit d0bcbaecf4a208225fb0788070fc90e90fbf4551. Riutilizzata la PR #3 aperta per la medesima consegna, con commit documentale sul remoto; nessun merge. Prossimo passo: esempi ad alta fedeltà e scelta, non redesign automatico.

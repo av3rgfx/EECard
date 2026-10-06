@@ -71,3 +71,7 @@ Il catalogo interattivo è nella rotta `#/design-system`.
 Bruno/albicocca 6,63:1; bruno/avorio 12,39:1; testo secondario/avorio 6,29:1; bianco/terracotta 6,64:1. Non usare bianco su albicocca (2,00:1) per informazioni funzionali. Il simbolo sulla tessera usa albicocca pieno su bruno. “Tessera servizi” resta visibile a 11 px anche nel widget mobile; titolare 13 px e ID demo 11 px. Blocco con testo e bordo tratteggiato, senza filtrare il colore dell’intera tessera.
 
 Non rinominati gli identificativi demo `EE · …` già salvati: sono riferimenti locali storici, non parte del simbolo o un nuovo wordmark. Nessuna migrazione dello stato richiesta dalla modifica visiva.
+
+## Evoluzione successiva, non ancora implementata
+
+L’utente richiede ora una UI più espressiva e dinamica e la tessera come primo contenuto della home. Questa versione 0.2 descrive l’implementazione corrente; non è stata aggiornata nei token per anticipare una scelta. [Revisione visiva](REVISIONE_VISIVA.md) e [prompt](../progetto/PROMPT_DESIGN.md) definiscono il confronto richiesto: esempi concreti, poi conferma, quindi integrazione e aggiornamento del sistema.

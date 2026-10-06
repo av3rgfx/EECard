@@ -49,10 +49,10 @@ Fonte dati: [src/data.ts](../../src/data.ts). Selettore in Profilo → Laborator
 
 | # | Severità | Campo / caso | Problema osservato | Correzione |
 | --- | --- | --- | --- | --- |
-| 1 | Broken | Card, nome lungo in colonna tablet | Intestatario sovrapposto al messaggio; min-height con aspect-ratio poteva allargare la card a testo 200% | Contenuto card in flusso flex, width/max-width 100%, altezza minima in rem e nome completo. [styles.css](../../src/styles.css:3952) |
-| 2 | Broken | Contrasto dei metadati | Alcuni testi secondari, stati, footer e dettagli PDF sotto 4,5:1 | Colori scuriti e fondo esplicito dei toast. [styles.css](../../src/styles.css:3751) |
+| 1 | Broken | Card, nome lungo in colonna tablet | Intestatario sovrapposto al messaggio; min-height con aspect-ratio poteva allargare la card a testo 200% | Contenuto card in flusso flex, width/max-width 100%, altezza minima in rem e nome completo. [styles.css](../../src/styles.css) |
+| 2 | Broken | Contrasto dei metadati | Alcuni testi secondari, stati, footer e dettagli PDF sotto 4,5:1 | Colori scuriti e fondo esplicito dei toast. [styles.css](../../src/styles.css) |
 | 3 | Fragile | Corpo testuale | Dimensioni in px non rispettavano l’aumento della dimensione di testo | Rem e root 100%; verifica con override 200% e viewport 720 px, non solo emulazione del deviceScaleFactor |
-| 4 | Fragile | Rata con importo parziale | Verifica generica avrebbe tolto la rata dalle priorità | Residuo esplicito e rata ancora da seguire. [pages.tsx](../../src/pages.tsx:156), [panels.tsx](../../src/panels.tsx:640) |
+| 4 | Fragile | Rata con importo parziale | Verifica generica avrebbe tolto la rata dalle priorità | Residuo esplicito e rata ancora da seguire. [pages.tsx](../../src/pages.tsx), [panels.tsx](../../src/panels.tsx) |
 
 Scelte applicate nel perimetro autorizzato: nomi e indirizzi vanno a capo, non vengono troncati; importi non si accorciano; lista estesa paginata; metadati mancanti dichiarati. Non sono rimaste decisioni bloccanti da sottoporre all’utente per queste correzioni.
 
@@ -62,9 +62,9 @@ Hanno retto: stringhe lunghe dei documenti con `overflow-wrap`, icone con dimens
 
 | Before | After | Why |
 | --- | --- | --- |
-| Target Motion `transform: none` da `scale(0.97)` interpolato a `scale(0)` nella prima implementazione | Target esplicito `scale(1)` o `translateY(0px)` | Il primo test browser ha rilevato il dialogo invisibile. Corretto e verificato nei percorsi. [ui.tsx](../../src/components/ui.tsx:128) |
+| Target Motion `transform: none` da `scale(0.97)` interpolato a `scale(0)` nella prima implementazione | Target esplicito `scale(1)` o `translateY(0px)` | Il primo test browser ha rilevato il dialogo invisibile. Corretto e verificato nei percorsi. [ui.tsx](../../src/components/ui.tsx) |
 | Sorgente Animate UI: flip prospettico, scala 0.8, blur | Scala 0.97 e opacity desktop; traslazione 24 px e opacity mobile, 220 ms | Superficie operativa calma, senza effetti di scena; un solo proprietario della transizione |
-| Sorgente Rare UI: oscillazione, cifre rotanti e badge da scala 0 | Segnale statico con geometria originale | Navigazione ad alta frequenza: segnalare le notifiche non richiede movimento. [ui.tsx](../../src/components/ui.tsx:233) |
+| Sorgente Rare UI: oscillazione, cifre rotanti e badge da scala 0 | Segnale statico con geometria originale | Navigazione ad alta frequenza: segnalare le notifiche non richiede movimento. [ui.tsx](../../src/components/ui.tsx) |
 | Colori di navigazione interpolati durante il cambio pagina | Navigazione immediata | Evita stati transitori con contrasto insufficiente e latenza nelle azioni frequenti |
 | Chiusura parent immediata nella prima bozza | Contenuto conservato durante l’uscita di AnimatePresence | Uscita lungo lo stesso percorso d’ingresso e focus ripristinato |
 | Dimensioni piccole e contrasto debole in alcuni metadati | Testo più leggibile e palette secondaria scurita | La qualità del prodotto deve restare evidente a riposo e con movimento ridotto |
@@ -159,3 +159,9 @@ Report riproducibile: [verifiche-legame.json](verifiche-legame.json), script `sc
 **Approve per il movimento nel perimetro verificato.** Tastiera/focus e reduced motion passati; nessuna nuova animazione, loop, parallax o transizione di layout introdotta. Contrasti principali: bruno/albicocca 6,63:1, testo secondario/avorio 6,29:1, bianco/terracotta 6,64:1. Non usato bianco sull’albicocca per testo funzionale (2,00:1).
 
 Limiti invariati: emulazione Chromium non sostituisce iPhone/Android fisici, Safari/WebKit, VoiceOver/TalkBack o prove con persone. Nessuna certificazione WCAG, misura FPS/GPU hardware o prova di stampa fisica dichiarata.
+
+## Chiusura documentale e misura della gerarchia — 6 ottobre 2026
+
+Non ripetuti build, suite E2E e audit axe: frontend invariato. Riesaminati screenshot già versionati; nuova osservazione Chromium della home con dati demo iniziali e font caricati, viewport 390×844 e 1440×1000. Rettangoli della tessera rispettivamente y 782–1022 e y 415–672 px. È una misura di layout a supporto della revisione, non una nuova validazione completa. Nessuna prova fisica. Dettagli e limiti in [REVISIONE_VISIVA.md](REVISIONE_VISIVA.md).
+
+Per i soli documenti: controllo dei collegamenti locali e `git diff --check`. Nessun nuovo deploy; online resta Sites v3.

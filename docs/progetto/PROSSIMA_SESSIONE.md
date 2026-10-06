@@ -18,7 +18,11 @@ Branch `design/visual-identity-evolution`, da main aggiornato dopo merge PR #2. 
 
 ## Prossimo lavoro
 
-Non chiedere nuovamente quale simbolo scegliere: C è confermato. Attendere il nome prima di comporre il marchio testuale. Raccogliere eventuale feedback su questa esecuzione visiva; proseguire entro la richiesta dell’utente senza avviare automaticamente backlog backend, pagamenti o nuove funzioni.
+**Nuova priorità confermata dall’utente:** elevare nettamente la qualità grafica, percepita oggi come grezza, semplice e poco dinamica. **La tessera deve essere la prima cosa visibile entrando nella home.** Prima di modificare il prodotto presentare 2–3 esempi concreti e attendere conferma o richieste di modifica. Questa chiusura ha aggiornato solo documentazione e analisi: il redesign non è implementato.
+
+Partire dalla [revisione visiva](../design/REVISIONE_VISIVA.md) e dal [prompt pronto da copiare](PROMPT_DESIGN.md). Proposte da confrontare: Materia e luce, Editoriale e architettura, Luce e profondità. Nessuna scelta approvata. Preparare home desktop/mobile, dettaglio tessera e un processo esistente con demo animata, stato critico e reduced motion, in un’area separata dal prodotto attuale; non bastano descrizioni o moodboard.
+
+Non chiedere nuovamente quale simbolo scegliere: C è confermato. Il nome rimane aperto. Non avviare backend, pagamenti o nuove funzioni. Dopo la conferma integrare, verificare e pubblicare sul medesimo sito. Per agenzia/tecnico preservare i ruoli esistenti senza inventare una tessera personale.
 
 Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [MARCHIO.md](../design/MARCHIO.md), [DESIGN_SYSTEM.md](../design/DESIGN_SYSTEM.md), [DECISIONI.md](../design/DECISIONI.md), [BACKLOG.md](BACKLOG.md). `LOGO_DIREZIONI.md` e `/identita/` sono lo storico delle tre proposte, non una scelta ancora aperta.
 

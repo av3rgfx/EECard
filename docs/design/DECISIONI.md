@@ -1,4 +1,4 @@
-# Registro delle decisioni — design 0.1
+# Registro delle decisioni — prodotto e design
 
 6 ottobre 2026. Le etichette distinguono richiesta confermata, proposta di design e ipotesi dimostrativa. Nessuna scelta nel prototipo approva il modello commerciale.
 
@@ -45,7 +45,7 @@ La verifica di un documento è formale e attribuita all’operatore demo: non ce
 | P06 | Proposta tipografica | Manrope locale come famiglia geometrica simile | Neo Geometric suggerito ma distribuzione/licenza non identificata |
 | A07 | Parzialmente risolto | C Legame scelto; nome ancora da confermare | Simbolo finalizzato e integrato; wordmark in attesa del nome |
 
-P01 descrive la base precedente ancora visibile, non una scelta definitiva. Nessun nuovo prezzo, servizio o ambito operativo introdotto.
+P01 descrive la base storica, sostituita dall’identità 0.2; non è la palette corrente. Nessun nuovo prezzo, servizio o ambito operativo introdotto.
 
 ## Scelta e finalizzazione del simbolo
 
@@ -56,3 +56,15 @@ P01 descrive la base precedente ancora visibile, non una scelta definitiva. Ness
 | P08 | Esecuzione di design | Master regolare e ottico 16–31 px, quattro colori, favicon SVG/PNG | [Guida e asset](MARCHIO.md); nessuna composizione con nome |
 
 P01 e l’implementazione bosco/lime sono superati. P05 resta lo storico del confronto; la scelta C sostituisce la raccomandazione iniziale A.
+
+## Chiusura — nuova priorità di qualità visiva
+
+| ID | Stato | Decisione / questione | Conseguenza |
+| --- | --- | --- | --- |
+| C11 | Confermato dall’utente | «La card deve essere la prima cosa che vedi quando accedi» | Primo contenuto dominante della home; nuova gerarchia da mostrare prima di implementare. Supera P02 solo nell’ordine tessera/riepilogo |
+| C12 | Confermato dall’utente | Grafica più accattivante, ricca, dinamica e animata; UX come soluzione visiva dei processi | Nuovo obiettivo della prossima sessione, non approvazione dell’esecuzione attuale |
+| C13 | Confermato dall’utente | Esempi prima delle modifiche, poi conferma o richieste di modifica | Preparare esempi separati; attendere scelta esplicita prima del redesign del prodotto |
+| P09 | Proposte non approvate | Materia e luce / Editoriale e architettura / Luce e profondità | Confronto ad alta fedeltà da realizzare, raccomandazione iniziale A; nessuna applicata |
+| P10 | Proposte UX/movimento | Processo affitto con fase/autore/azione, timeline assistenza, documenti più riconoscibili | Solo rappresentazioni di funzioni esistenti; ricette in REVISIONE_VISIVA.md da valutare negli esempi |
+
+Questa chiusura aggiorna documentazione, revisione e PR #3. Il frontend e Sites v3 restano invariati. Nome ancora aperto; simbolo C confermato.
