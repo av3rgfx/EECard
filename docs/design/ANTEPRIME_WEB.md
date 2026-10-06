@@ -62,3 +62,9 @@ Sites versione **2**, riuscita il 6 ottobre 2026 alle 10:57:26 UTC. Accesso pubb
 - Deployment: `appgdep_6ac4d40564708191b7cf24ea9db4e513`, stato `succeeded` verificato tramite Sites.
 
 La documentazione di chiusura successiva non cambia gli asset online. I controlli browser sono stati svolti sulla medesima build statica locale; la riuscita della pubblicazione è confermata dal servizio Sites, senza attribuirle nuove prove hardware.
+
+## Identità 0.2 — C Legame
+
+Simbolo scelto e integrato, nome ancora aperto. Le anteprime desktop/mobile e il selettore usano palette calda e favicon nuova. `/marchio/` ospita guida, varianti e download; `/brand/legame-assets.zip` contiene 8 SVG, favicon SVG/PNG e guida. `/identita/` rimane archivio del confronto, con esito C indicato.
+
+18 test del prototipo passati, 24 audit aggiuntivi senza violazioni, guida su 320/390/1240 px e dieci download verificati. Le quattro combinazioni delle anteprime statiche e l’HTML autonomo sono stati collaudati sulla build locale corrispondente. [Report](verifiche-legame.json). La versione precedente v2 resta lo storico della prima tappa; il deploy verificato dell’identità 0.2 viene registrato sotto.

@@ -1,0 +1,190 @@
+[
+  {
+    "view": "guide",
+    "width": 320,
+    "overflow": false,
+    "errors": [],
+    "violations": [],
+    "downloads": [
+      {
+        "file": "/brand/legame-assets.zip",
+        "status": 200
+      },
+      {
+        "file": "/brand/LEGGIMI.md",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-bruno.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-bruno.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-albicocca.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-albicocca.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-bianco.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-bianco.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-nero.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-nero.svg",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "view": "guide",
+    "width": 390,
+    "overflow": false,
+    "errors": [],
+    "violations": [],
+    "downloads": [
+      {
+        "file": "/brand/legame-assets.zip",
+        "status": 200
+      },
+      {
+        "file": "/brand/LEGGIMI.md",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-bruno.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-bruno.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-albicocca.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-albicocca.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-bianco.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-bianco.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-nero.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-nero.svg",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "view": "guide",
+    "width": 1240,
+    "overflow": false,
+    "errors": [],
+    "violations": [],
+    "downloads": [
+      {
+        "file": "/brand/legame-assets.zip",
+        "status": 200
+      },
+      {
+        "file": "/brand/LEGGIMI.md",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-bruno.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-bruno.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-albicocca.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-albicocca.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-bianco.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-bianco.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-regular-nero.svg",
+        "status": 200
+      },
+      {
+        "file": "/brand/legame-small-nero.svg",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "view": "desktop",
+    "width": 1440,
+    "appWidth": 1440,
+    "overflow": false,
+    "logo": true,
+    "serviceSize": 11,
+    "errors": []
+  },
+  {
+    "view": "mobile",
+    "width": 1440,
+    "appWidth": 390,
+    "overflow": false,
+    "logo": true,
+    "serviceSize": 11,
+    "errors": []
+  },
+  {
+    "view": "mobile",
+    "width": 390,
+    "appWidth": 390,
+    "overflow": false,
+    "logo": true,
+    "serviceSize": 11,
+    "errors": []
+  },
+  {
+    "view": "mobile",
+    "width": 360,
+    "appWidth": 360,
+    "overflow": false,
+    "logo": true,
+    "serviceSize": 11,
+    "errors": []
+  },
+  {
+    "view": "portable",
+    "externalRequests": [],
+    "favicon": true
+  }
+]

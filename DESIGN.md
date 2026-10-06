@@ -2,13 +2,13 @@
 
 Aggiornato il 6 ottobre 2026. Design 0.1 implementato e condivisibile; resta una proposta da validare con l’utente.
 
-## Evoluzione in corso
+## Identità attuale
 
-L’utente ha richiesto un’identità autonoma dall’agenzia ƎE/Enrico Erca. EECard resta provvisorio. [Tre direzioni di simbolo e palette calda](docs/design/LOGO_DIREZIONI.md) sono pronte per confronto; attendere la scelta prima di finalizzare o applicare il marchio. Il nome va confermato separatamente. Le correzioni di leggibilità, tastiera, ricerca e navigazione mobile sono indipendenti.
+L’utente ha scelto **C — Legame**: due elementi aperti intrecciati, simbolo autonomo dall’agenzia ƎE/Enrico Erca. Il nome del prodotto rimane da confermare; “Legame” identifica il concept, non un naming approvato. Il frontend usa il solo simbolo, mentre EECard resta una dicitura provvisoria nel footer e nei metadati.
 
-## Base visiva precedente, ancora nel prototipo
+Bruno, albicocca e avorio caldo; terracotta accessibile per le azioni; Manrope Variable locale, come famiglia geometrica coerente con il suggerimento Neo Geometric o simili. La tessera scura riprende il simbolo in un motivo ampio e statico; niente PAN, circuito o estetica bancaria. Stati successo, errore e verifica restano semanticamente distinti. La precedente proposta bosco/lime e il monogramma EE sono superati.
 
-Qualità premium nel ritmo, nella tipografia e nelle interazioni, con Revolut come riferimento di qualità e un’identità EECard propria. Verde bosco, avorio, salvia e lime; Manrope Variable locale; superfici chiare e tessera scura con forme concentriche. La card esprime accesso ai servizi immobiliari, senza numerazione bancaria, saldo, circuito o simboli di registrazione del marchio.
+[Asset e guida d’uso del simbolo](docs/design/MARCHIO.md) · [Guida web](https://eecard-design-preview.uepacio.chatgpt.site/marchio/) · [Archivio delle proposte](docs/design/LOGO_DIREZIONI.md).
 
 Desktop e smartphone hanno gerarchie dedicate: sidebar e informazioni affiancate sul desktop, prossima azione e navigazione inferiore sul telefono. I pannelli diventano superfici inferiori scrollabili; input, safe area e tastiera vanno verificati su hardware reale.
 

@@ -21,5 +21,8 @@ writeFileSync(`${output}/app/index.html`, app);
 writeFileSync(`${output}/.nojekyll`, "");
 console.log(`Anteprime condivisibili generate in ${output}/`);
 
-// Review-only identity concepts; no candidate is applied to the product yet.
+// Keep the historical comparison; selected symbol and downloads have their own guide.
 cpSync("docs/design/identita", `${output}/identita`, { recursive: true });
+
+cpSync("docs/design/marchio", `${output}/marchio`, { recursive: true });
+cpSync("public/brand", `${output}/brand`, { recursive: true });

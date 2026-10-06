@@ -4,7 +4,7 @@ Aggiornato il 6 ottobre 2026. Questo documento orienta il lavoro di prodotto nel
 
 ## Identità e origine
 
-EECard è un nome provvisorio. ƎE è sigla e logo dell’agenzia Enrico Erca, dalla cui collaborazione nasce l’idea. Il prodotto deve avere un marchio autonomo, utilizzabile anche da altre agenzie. Questo conferma una direzione di identità e compatibilità, non definisce il primo cliente pagante o la copertura operativa. Nessun nome esplorato, incluso quello nel riferimento visivo, è approvato.
+EECard è un nome provvisorio. ƎE è sigla e logo dell’agenzia Enrico Erca, dalla cui collaborazione nasce l’idea. Il prodotto deve avere un marchio autonomo, utilizzabile anche da altre agenzie. Questo conferma una direzione di identità e compatibilità, non definisce il primo cliente pagante o la copertura operativa. Nessun nome esplorato, incluso quello nel riferimento visivo, è approvato. L’utente ha scelto il simbolo C — Legame, ora finalizzato e integrato; “Legame” non è il nome del prodotto.
 
 ## Obiettivo e stato
 

@@ -82,8 +82,16 @@ Il bundle unico genera un avviso Vite di circa 527 KB: è funzionale all’antep
 
 Aggiornare punto di ripresa, backlog e registro sessioni; modificare prodotto/design/decisioni se cambia il loro contenuto. Annotare verifiche eseguite e limiti, commit remoto e versione online quando pertinente. Salvare le modifiche sul branch corretto e creare o aggiornare una sola PR per lo stesso lavoro. Non integrare in `main` senza una richiesta che includa il merge.
 
-## Evoluzione dell’identità — prima tappa
+## Evoluzione dell’identità — prima tappa (storico)
 
-Branch `design/visual-identity-evolution`, da main dopo merge PR #2. Studi SVG e tavola in `docs/design/identita/`, copiati in `/identita/` dal generatore delle anteprime. `LOGO_DIREZIONI.md` distingue studio e asset finali: la favicon attuale resta valida finché non viene scelto il simbolo.
+Branch `design/visual-identity-evolution`, da main dopo merge PR #2. Studi SVG e tavola in `docs/design/identita/`, copiati in `/identita/` dal generatore delle anteprime. Il confronto iniziale è ora archivio; simbolo C e favicon attuali sono descritti nella sezione identità 0.2 sotto.
 
 Il salto al contenuto deve mettere a fuoco `main` senza alterare l’hash usato dal router. La ricerca ripristina il focus quando si cancella il testo; Base UI rende inerti i controlli sottostanti al dialogo. Due test di regressione coprono questi comportamenti e il menu mobile. Vite esegue la scansione delle dipendenze solo da `index.html`, escludendo l’HTML autonomo generato che produceva un errore di risoluzione all’avvio.
+
+## Identità 0.2 — simbolo scelto e sorgente unica
+
+`src/brand-geometry.json` contiene master regolare/piccolo; `BrandSymbol` rende la geometria inline senza dipendere da asset remoti. `src/tokens.css` espone ruoli `brand-ink`, `brand-accent`, `brand-soft`, `action`, `focus`, `surface-soft`, `success`: rimossi forest/lime/sage. Il nome resta aperto e il componente Brand non contiene un wordmark.
+
+`node scripts/build-brand-assets.mjs` genera 8 SVG, favicon SVG/PNG, guida e ZIP in `public/brand/`; richiede Chromium Playwright e Python 3 per impacchettare lo ZIP. I vettori non contengono font. `docs/design/MARCHIO.md` è la guida sorgente; `docs/design/marchio/` è la guida web, pubblicata in `/marchio/`. L’archivio `/identita/` resta consultabile come storico.
+
+`npm run preview:shareable` copia guida e asset sul sito; l’HTML portatile incorpora la favicon come data URL. Con server statico sulla porta 5174, `node scripts/verify-brand.mjs` verifica guida, download, quattro combinazioni desktop/mobile e funzionamento offline, aggiornando `verifiche-legame.json` e due screenshot guida. La geometria e gli asset distribuiti devono essere aggiornati insieme.

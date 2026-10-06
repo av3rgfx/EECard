@@ -1,4 +1,6 @@
-# Identità autonoma — proposte da scegliere
+# Identità autonoma — archivio del confronto
+
+**Esito successivo al confronto:** l’utente ha scelto C — Legame. Simbolo finalizzato e integrato, nome ancora aperto. Per il risultato corrente usare [MARCHIO.md](MARCHIO.md); il testo sotto conserva la fase esplorativa e non descrive lo stato attuale.
 
 6 ottobre 2026. Branch `design/visual-identity-evolution`, da `main` aggiornato dopo il merge della PR #2 (`0c7bd42b52200fff654b48f169c69c4bbde08679`). Questa è la prima tappa della richiesta: confronto dei simboli e correzioni indipendenti. Nessun logo è stato scelto o finalizzato.
 

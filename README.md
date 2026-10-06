@@ -1,6 +1,6 @@
 # EECard
 
-EECard è un nome provvisorio; il prodotto evolve verso un’identità autonoma dall’agenzia Enrico Erca (ƎE). [Tre proposte di simbolo](docs/design/LOGO_DIREZIONI.md), ancora da scegliere.
+EECard è un nome provvisorio; il prodotto evolve verso un’identità autonoma dall’agenzia Enrico Erca (ƎE). Il simbolo **C — Legame** è stato scelto e integrato; il nome resta aperto. [Guida e asset](docs/design/MARCHIO.md) · [Scarica SVG e favicon](https://eecard-design-preview.uepacio.chatgpt.site/brand/legame-assets.zip).
 
 Prototipo di design desktop e smartphone per organizzare immobili, documenti, locazioni e assistenza. Tutti i dati e i servizi sono dimostrativi.
 
@@ -51,7 +51,7 @@ Test end-to-end, axe-core, dimensioni 360/390/1280/1440 px, stress a 320 px, tes
 
 ## Documentazione
 
-Per riprendere in una nuova sessione partire dal [punto di ripresa](docs/progetto/PROSSIMA_SESSIONE.md). La base del prototipo è nella PR #2, integrata. Il confronto del nuovo marchio e le correzioni indipendenti sono nella [PR #3](https://github.com/av3rgfx/EECard/pull/3), da revisionare; scelta e integrazione finale dell’identità restano aperte.
+Per riprendere in una nuova sessione partire dal [punto di ripresa](docs/progetto/PROSSIMA_SESSIONE.md). La base del prototipo è nella PR #2, integrata. Il simbolo Legame, l’identità calda e le correzioni di usabilità sono nella [PR #3](https://github.com/av3rgfx/EECard/pull/3), pronta alla revisione. Il naming resta aperto.
 
 - [Prodotto, persone e confini](PRODUCT.md)
 - [Guida al design](DESIGN.md)

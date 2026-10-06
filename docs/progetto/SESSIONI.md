@@ -41,3 +41,11 @@ Corrette leggibilità, gerarchia mobile, skip link che cambiava rotta, ricerca/f
 Documenti di prodotto/design/sviluppo, decisioni, backlog e punto di ripresa aggiornati. Questa prima tappa è reviewable; asset definitivi, favicon e nuova palette globale restano dipendenti dalla scelta dell’utente. Pubblicazione sul sito esistente e PR registrate in ANTEPRIME_WEB.md e nel punto di ripresa.
 
 Prima tappa salvata sul remoto nella [PR #3](https://github.com/av3rgfx/EECard/pull/3), aperta e non in bozza; nessun merge. Sites versione 2 pubblicata con successo dal commit `6b0f0312070308c9561fe2b448fc19edec816d60`. Il trasporto GitHub push ha restituito 401: usata l’API Git autenticata per caricare blob/albero e ricreare il medesimo commit (SHA verificato), poi creare il branch e la PR. La successiva chiusura è solo documentale, senza nuovo deploy o ripetizione dei test UI.
+
+## 6 ottobre 2026 — C Legame scelto, simbolo finalizzato e integrazione
+
+L’utente sceglie «il logo C Legame» e conferma che «il nome rimane ancora da confermare». Riutilizzati branch e PR #3 ancora aperta. Finalizzato il solo simbolo: regolare e ottico, quattro colori, favicon e guida/ZIP; fonte comune per React e SVG. “Legame” non è adottato come nome del prodotto.
+
+Integrati simbolo, palette albicocca/bruno/avorio/terracotta, superfici, card, navigazione, componenti e design system. Manrope locale mantenuto; logo precedente EE rimosso dalla UI. Stati operativi e flussi preservati. Tutti i test della nuova identità passati (18), 24 scansioni axe senza violazioni; guida, download e anteprime statiche verificati. Microtesto e margini interni card corretti dopo controllo visivo; nessuna nuova animazione. Nessuna prova hardware dichiarata.
+
+Aggiornati screenshot e documentazione corrente; confronto iniziale conservato come archivio. Anteprime aggiornate sullo stesso sito, identità e accesso conservati; commit pubblicato e versione registrati in ANTEPRIME_WEB.md. PR #3 aggiornata, senza merge. Il naming resta l’unica decisione necessaria per il futuro marchio testuale.

@@ -1,34 +1,31 @@
 # EECard — punto di ripresa
 
-Aggiornato il 6 ottobre 2026. Repository unica: https://github.com/av3rgfx/EECard.
+Aggiornato il 6 ottobre 2026. Repository unica https://github.com/av3rgfx/EECard.
 
-## Obiettivo attivo e stato
+## Stato corrente
 
-Evolvere l’identità del prodotto esistente. **EECard è provvisorio; ƎE appartiene all’agenzia Enrico Erca.** Il prodotto deve diventare autonomo e utilizzabile da altre agenzie. Nessun nome esplorato, incluso “quey” nell’immagine di riferimento, è approvato. L’utente suggerisce Neo Geometric o simili.
+L’utente ha scelto **C — Legame** e ha lasciato il nome da confermare. Il simbolo è finalizzato e integrato nel prototipo esistente, con identità albicocca/bruno/avorio e terracotta per azioni accessibili. “Legame” è il titolo del concept, non il nome del prodotto. EECard resta provvisorio; ƎE appartiene all’agenzia Enrico Erca. Nessun wordmark realizzato.
 
-PR #2 integrata il 6 ottobre alle 09:56:10 UTC, merge `0c7bd42b52200fff654b48f169c69c4bbde08679`. Lavoro sul nuovo branch `design/visual-identity-evolution`, da main aggiornato. [PR #3](https://github.com/av3rgfx/EECard/pull/3) aperta e pronta alla revisione della prima tappa. Nessun merge della nuova evoluzione richiesto.
+Branch `design/visual-identity-evolution`, da main aggiornato dopo merge PR #2. [PR #3](https://github.com/av3rgfx/EECard/pull/3) riutilizzata e pronta alla revisione, senza merge. Controllarne lo stato remoto prima di scegliere il branch in una nuova sessione.
 
-**Siamo alla scelta del simbolo**, non alla finalizzazione. Tre direzioni pronte: A Soglia (consigliata), B Casa accolta, C Legame. Le etichette descrivono i concept e non sono nomi del prodotto. Domande poste in chat: quale direzione sviluppare e quale nome usare, oppure lasciare il solo simbolo. Nessuna risposta ricevuta al momento di questo punto di ripresa; non assumere silenzio-assenso.
+## Consegnato
 
-## Cosa è pronto
+- [Guida marchio](../design/MARCHIO.md): master regolare e ottico, 8 SVG colore/mono, favicon SVG + PNG 16/32/180/512, ZIP e pagina `/marchio/` con download. Fonte unica `src/brand-geometry.json`.
+- Palette semantica e simbolo su navigazione, tessera, superfici, componenti e design system 0.2. Manrope locale mantenuto come geometrico simile al suggerimento; Neo Geometric non è stato identificato/licenziato.
+- Correzioni della prima tappa conservate: leggibilità, skip link, focus ricerca, orientamento Altro, gerarchie mobile. Iconografia di tessera/utenze coerente; microtesto della card reso più leggibile.
+- Build/format passati; 18 test E2E, audit aggiuntivo 24 schermate senza violazioni; guida 320/390/1240 senza overflow/violazioni; download verificati; anteprime e HTML autonomo collaudati. [Report aggiornato](../design/VERIFICHE.md), 22 screenshot frontend e 2 guide.
+- Prezzi, coperture e disponibilità non inventati; documento/dichiarazione/verifica/quietanza e percorsi demo conservati.
 
-- [Confronto, ragionamento e guida dei file di studio](../design/LOGO_DIREZIONI.md). 12 SVG colore/mono, tavole desktop/mobile e confronto a 16/24/32 px. Palette albicocca/bruno ricostruita visivamente con varianti accessibili; Manrope locale come base geometrica.
-- Correzioni indipendenti nel prototipo: leggibilità dei metadati, gerarchie della priorità mobile, salto al contenuto, ricerca/focus, menu Altro e icona di tessera personale. Percorsi e semantica documento/dichiarazione/verifica/quietanza conservati.
-- 17 test passati; audit aggiuntivo 24 schermate senza violazioni; tavola 320/390/1240 px senza overflow o violazioni; screenshot e HTML autonomo aggiornati. [Verifiche](../design/VERIFICHE.md).
-- Design system documentato distinguendo base ancora implementata e proposte da scegliere. Nuovo simbolo non applicato al frontend e favicon precedente conservata.
+## Prossimo lavoro
 
-## Ripresa dopo la risposta
+Non chiedere nuovamente quale simbolo scegliere: C è confermato. Attendere il nome prima di comporre il marchio testuale. Raccogliere eventuale feedback su questa esecuzione visiva; proseguire entro la richiesta dell’utente senza avviare automaticamente backlog backend, pagamenti o nuove funzioni.
 
-1. Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [LOGO_DIREZIONI.md](../design/LOGO_DIREZIONI.md), [decisioni](../design/DECISIONI.md) e [backlog](BACKLOG.md).
-2. Verificare stato remoto della PR di questo branch: riusarla se aperta; dopo eventuale merge, partire da main aggiornato su un nuovo branch. Non modificare `feat/ufp-local-foundation`.
-3. Incorporare la scelta effettiva dell’utente. Finalizzare solo il simbolo se il naming resta aperto; nessun wordmark senza nome confermato.
-4. Rifinire geometria/ottica piccola, produrre asset finali e favicon; integrare palette, tipografia, card, superfici, navigazione e componenti senza nuove funzioni.
-5. Verificare nuovamente browser, contrasti, focus, movimento ridotto, errori e contenuti lunghi; aggiornare screenshot, medesimo sito Sites, documentazione e PR senza merge.
+Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [MARCHIO.md](../design/MARCHIO.md), [DESIGN_SYSTEM.md](../design/DESIGN_SYSTEM.md), [DECISIONI.md](../design/DECISIONI.md), [BACKLOG.md](BACKLOG.md). `LOGO_DIREZIONI.md` e `/identita/` sono lo storico delle tre proposte, non una scelta ancora aperta.
 
-`npm ci`, `npm run dev`; demo su localhost:5173. Confronto locale `/docs/design/identita/`. `npm run preview:shareable` rigenera le anteprime e `/identita/`. I file temporanei e le copie skill esterne non sono prerequisiti persistenti. Recuperare le skill richieste dal riferimento documentato in FONTI.md.
+`npm ci`, `npm run dev`. Per asset: `node scripts/build-brand-assets.mjs` (Chromium Playwright e Python 3), poi `npm run preview:shareable`. Server statico 5174 e `node scripts/verify-brand.mjs` per guida/download/anteprime. Non dipendere da file temporanei o processi di sessioni precedenti.
 
-## Anteprime e limiti
+## Pubblicazione e limiti
 
-Stesso sito: [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/). Identità persistita in `.openai/hosting.json`; non creare una nuova registrazione. Versione Sites 2 pubblicata con successo (commit `6b0f0312070308c9561fe2b448fc19edec816d60`). [Confronto dei simboli](https://eecard-design-preview.uepacio.chatgpt.site/identita/). Registro della versione e dettagli in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md). Push GitHub e deploy sono operazioni distinte.
+[Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Guida e asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/). Stesso sito e pubblico precedenti; project ID in `.openai/hosting.json`. Versione realmente online in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md); push GitHub e deploy sono distinti.
 
-Nessun backend, account, pagamento, email, upload server o servizio reale. Prezzi, inclusioni, copertura, budget, primo rilascio e integrazioni restano aperti. Test eseguiti in Chromium emulato: iPhone/Android fisici, Safari/WebKit, screen reader e prove con utenti non eseguiti. Non dichiarare completa l’identità prima della scelta e dell’integrazione finale.
+Nessun backend o servizio reale. Test solo Chromium emulato: iPhone/Android fisici, Safari/WebKit, VoiceOver/TalkBack, prove con utenti e stampa della tessera ancora da verificare. Restano aperti modello commerciale, perimetro operativo, prezzi, budget e integrazioni.

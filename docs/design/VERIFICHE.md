@@ -122,3 +122,40 @@ Il primo test del menu ha erroneamente cercato il pulsante nello scope accessibi
 Prove iPhone/Android fisici, Safari/WebKit, VoiceOver/TalkBack e comprensione con utenti ancora necessarie. Zero violazioni axe non è una certificazione WCAG.
 
 Anteprime statiche aggiornate: desktop 1440 px, cornice mobile 390 px da desktop, smartphone emulati 390 e 360 px; navigazione alla card riuscita, zero errori JavaScript e nessun overflow nel prototipo. HTML autonomo aperto da file con documento/dialogo funzionante e zero richieste HTTP esterne. [Risultati](verifiche-anteprime-identita.json).
+
+## 6 ottobre 2026 — Legame integrato, identità 0.2
+
+C scelto dall’utente; nome ancora aperto. Chromium 153 / Playwright 1.63.0 su Linux, Node 24.19.0. Il report precedente resta storico: qui i controlli ripetuti sulla nuova palette e sul simbolo integrato.
+
+| Controllo | Esito osservato |
+| --- | --- |
+| Build e formattazione | Passate; avviso Vite sul bundle unico ~529 KB ancora presente |
+| Suite funzionale e accessibilità | **18 test passati** nell’ultima esecuzione completa, incluso il nuovo controllo dei margini interni della tessera |
+| Margini tessera | A 320/390/900/1440 px intestatario lungo e ID restano dentro il padding e non si sovrappongono |
+| Audit aggiuntivo | 24 scansioni / 12 schermate a 390 e 1440 px, 0 violazioni |
+| Responsive e stress | Suite con 360/390/1280/1440, stress 320, nomi lunghi, vuoti/1/1.284, testo 200% passata |
+| Semantica dei percorsi | Documento/dichiarazione/verifica/quietanza separati, incasso parziale, blocco/sostituzione, errori e permessi demo passati |
+| Guida marchio | 320/390/1240 px: nessun overflow, errore JS o violazione axe; tutti i 10 collegamenti download rispondono 200 |
+| Logo e favicon | Regolare/piccolo, chiaro/scuro/mono, prove 16/24/32 px osservate; favicon SVG e PNG 16/32/180/512 generati dalla stessa geometria |
+| Anteprime statiche | Desktop 1440, mobile da desktop con viewport 390, smartphone emulati 390/360; logo presente, nessun overflow/errore JS, navigazione card riuscita |
+| Card piccola | “Tessera servizi” visibile a 11 px, titolare 13 px, ID 11 px; corretto vecchio override a 5 px |
+| HTML autonomo | Favicon incorporata, documento/dialogo funzionanti, zero richieste HTTP esterne |
+| Screenshot | 22 schermate frontend aggiornate + 2 guide marchio; archivio del confronto preservato come storico |
+
+Report riproducibile: [verifiche-legame.json](verifiche-legame.json), script `scripts/verify-brand.mjs` con build statica su localhost:5174. [Audit aggiornato](audit-accessibilita.json). [Guida desktop](marchio/guide-1240.png) e [mobile](marchio/guide-390.png).
+
+### Revisione emil-design-eng / review-animations / break-ui + fix
+
+| Before | After | Why |
+| --- | --- | --- |
+| Monogramma EE e nome dentro il segno | Simbolo scelto Legame, autonomo, senza wordmark | Il nome resta da confermare e il prodotto si distingue dall’agenzia |
+| Bosco/lime e colori verdi di supporto | Token semantici albicocca/bruno/avorio/terracotta; successi ancora verdi | Identità calda coerente senza confondere accento e stati |
+| Motivo concentrico sulla tessera | Legame grande, statico e a basso contrasto dietro al simbolo pieno | Coerenza del marchio senza movimento o metafora bancaria |
+| Offset del vecchio footer assoluto spostavano l’ID verso il bordo nella pagina Card | `inset: auto` sul footer in flusso e test dei margini interni | Allineamento e leggibilità anche con nomi lunghi |
+| Override mobile riduceva Tessera servizi a 5 px | 11 px in tutte le viste, microtesto titolare/ID aumentato | Leggibilità della natura della card |
+| Intera card bloccata desaturata | Testo esplicito, bordo tratteggiato e motivo neutro, senza filtro sull’intera card | Stato leggibile senza alterare tutti i contrasti |
+| Navigazione istantanea e pannelli 220 ms | Conservati; nessun movimento nuovo sul logo o sulla guida | Il gate animate esclude animazione decorativa frequente |
+
+**Approve per il movimento nel perimetro verificato.** Tastiera/focus e reduced motion passati; nessuna nuova animazione, loop, parallax o transizione di layout introdotta. Contrasti principali: bruno/albicocca 6,63:1, testo secondario/avorio 6,29:1, bianco/terracotta 6,64:1. Non usato bianco sull’albicocca per testo funzionale (2,00:1).
+
+Limiti invariati: emulazione Chromium non sostituisce iPhone/Android fisici, Safari/WebKit, VoiceOver/TalkBack o prove con persone. Nessuna certificazione WCAG, misura FPS/GPU hardware o prova di stampa fisica dichiarata.

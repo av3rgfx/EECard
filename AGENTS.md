@@ -62,4 +62,4 @@ online. Le modifiche solo documentali non richiedono un nuovo deploy.
 
 ## Identità del prodotto (richiesta del 6 ottobre 2026)
 
-EECard è provvisorio. ƎE è il marchio dell’agenzia Enrico Erca, non il marchio definitivo del prodotto. Nessun naming esplorato o presente nelle immagini di riferimento è approvato. Leggere `docs/design/LOGO_DIREZIONI.md`: attendere la scelta dell’utente prima di finalizzare e applicare un simbolo; confermare separatamente il nome per il marchio testuale. Continuare intanto sulle correzioni indipendenti.
+EECard è provvisorio. ƎE è il marchio dell’agenzia Enrico Erca, non il marchio definitivo del prodotto. Nessun naming esplorato o presente nelle immagini di riferimento è approvato. L’utente ha scelto C — Legame il 6 ottobre 2026; il simbolo è ora finalizzato e integrato. Leggere `docs/design/MARCHIO.md` e il design system 0.2. Il nome resta da confermare: non realizzare un wordmark finché non arriva una scelta esplicita. “Legame” è il titolo del concept, non il nome del prodotto.

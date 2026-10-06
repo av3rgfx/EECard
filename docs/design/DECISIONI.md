@@ -39,10 +39,20 @@ La verifica di un documento è formale e attribuita all’operatore demo: non ce
 | ID | Stato | Decisione / questione | Conseguenza |
 | --- | --- | --- | --- |
 | C07 | Confermato dall’utente | EECard provvisorio; ƎE appartiene all’agenzia Enrico Erca | Prodotto con marchio autonomo e utilizzabile da altre agenzie |
-| C08 | Confermato dall’utente | Presentare 2–3 direzioni, attendere scelta prima della finalizzazione | Tre simboli proposti; nessuno applicato globalmente |
+| C08 | Confermato dall’utente, completato | Presentare 2–3 direzioni, attendere scelta prima della finalizzazione | Tre simboli presentati; poi C scelto esplicitamente |
 | C09 | Confermato dall’utente | Il riferimento orienta colore e geometria, non approva scritte o nomi | “quey” non adottato; chiedere il nome prima del marchio testuale |
 | P05 | Proposta visiva | A Soglia / B Casa accolta / C Legame; albicocca e bruno | [Confronto e motivazioni](LOGO_DIREZIONI.md); A consigliata, non selezionata |
 | P06 | Proposta tipografica | Manrope locale come famiglia geometrica simile | Neo Geometric suggerito ma distribuzione/licenza non identificata |
-| A07 | Aperto — attesa dell’utente | Scelta simbolo e nome | Asset finali, favicon e integrazione completa successivi alla scelta |
+| A07 | Parzialmente risolto | C Legame scelto; nome ancora da confermare | Simbolo finalizzato e integrato; wordmark in attesa del nome |
 
 P01 descrive la base precedente ancora visibile, non una scelta definitiva. Nessun nuovo prezzo, servizio o ambito operativo introdotto.
+
+## Scelta e finalizzazione del simbolo
+
+| ID | Stato | Decisione / questione | Conseguenza |
+| --- | --- | --- | --- |
+| C10 | Confermato esplicitamente dall’utente | «Scelgo il logo C Legame. Il nome rimane ancora da confermare» | C finalizzato; “Legame” non diventa il nome del prodotto |
+| P07 | Esecuzione di design da revisionare | Palette albicocca/bruno, avorio, terracotta accessibile, Manrope locale | Implementata nelle schermate, nei pannelli, nella tessera e nelle anteprime |
+| P08 | Esecuzione di design | Master regolare e ottico 16–31 px, quattro colori, favicon SVG/PNG | [Guida e asset](MARCHIO.md); nessuna composizione con nome |
+
+P01 e l’implementazione bosco/lime sono superati. P05 resta lo storico del confronto; la scelta C sostituisce la raccomandazione iniziale A.

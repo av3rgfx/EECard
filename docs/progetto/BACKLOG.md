@@ -38,8 +38,12 @@ Mantenere gli ID stabili; collegare commit/PR e prove quando una voce è complet
 | I01 | Completato | Rilettura contesto, PR #2 integrata, nuovo branch da main |
 | I02 | Completato come proposta | Tre direzioni SVG, varianti colore/mono, prove piccole e [guida di studio](../design/LOGO_DIREZIONI.md) |
 | I03 | Completato | Correzioni indipendenti: leggibilità, skip link, ricerca/focus, menu Altro, icona tessera; 17 test passati |
-| I04 | In attesa dell’utente | Scelta A/B/C o revisione, nome confermato oppure solo simbolo |
-| I05 | Dopo I04 | Asset definitivi, favicon, eventuale marchio testuale; palette e tipografia integrate in tutta la UI |
-| I06 | Dopo I05 | Nuova QA browser, screenshot e pubblicazione finale; aggiornare la stessa PR senza merge |
+| I04 | Scelta simbolo completata; naming aperto | Utente: C Legame, nome ancora da confermare |
+| I05 | Completato per il solo simbolo | Master regolare/ottico, varianti, favicon, guida e ZIP; nuova identità integrata in tutta la UI |
+| I06 | Completato per l’identità senza nome | Nuova QA, screenshot, anteprime sul sito esistente e PR #3 aggiornata senza merge |
 
 Le anteprime di questa prima tappa mantengono l’identità precedente nel frontend e aggiungono il confronto in `/identita/`; non sono la consegna definitiva del nuovo marchio.
+
+## Residuo dopo C Legame
+
+I01–I06 coprono il lavoro autorizzato sul simbolo e sull’identità visiva. Restano: conferma del nome e solo dopo composizione del wordmark; feedback sui dettagli esecutivi della palette/UI; verifiche hardware N02 e decisioni commerciali N03–N06 già aperte. Non riaprire il confronto A/B/C salvo nuova richiesta dell’utente. Il testo sopra sulla “prima tappa” descrive il checkpoint storico, non lo stato corrente.

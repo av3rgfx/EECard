@@ -1,8 +1,8 @@
 :root {
   color-scheme: light;
   font-family: ui-sans-serif, system-ui, sans-serif;
-  color: #173e33;
-  background: #e9ede7;
+  color: #48280f;
+  background: #f2ece4;
 }
 * {
   box-sizing: border-box;
@@ -15,7 +15,7 @@ a {
   text-underline-offset: 4px;
 }
 a:focus-visible {
-  outline: 3px solid #173e33;
+  outline: 3px solid #48280f;
   outline-offset: 4px;
 }
 .preview-bar {
@@ -26,8 +26,8 @@ a:focus-visible {
   justify-content: space-between;
   gap: 16px;
   font-size: 14px;
-  background: #f7f8f4;
-  border-bottom: 1px solid #c8d3cb;
+  background: #faf7f2;
+  border-bottom: 1px solid #d9cdc0;
 }
 .preview-bar a {
   display: inline-flex;
@@ -40,7 +40,7 @@ a:focus-visible {
 .prototype {
   display: block;
   border: 0;
-  background: #f7f8f4;
+  background: #faf7f2;
 }
 .desktop .canvas {
   overflow: auto;
@@ -62,15 +62,15 @@ a:focus-visible {
   max-height: 844px;
   border-radius: 28px;
   box-shadow:
-    0 16px 60px #173e3326,
-    0 0 0 1px #173e3326;
+    0 16px 60px #48280f26,
+    0 0 0 1px #48280f26;
 }
 .chooser {
   min-height: 100dvh;
   display: grid;
   place-items: center;
   padding: 32px;
-  background: #f7f8f4;
+  background: #faf7f2;
 }
 .chooser main {
   max-width: 620px;
@@ -96,7 +96,7 @@ p {
 .chooser nav a {
   padding: 16px 28px;
   border-radius: 14px;
-  background: #173e33;
+  background: #48280f;
   color: #fff;
   text-decoration: none;
   font-weight: 600;

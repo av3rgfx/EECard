@@ -399,3 +399,32 @@ test("ricerca mobile e orientamento nelle sezioni del menu Altro", async ({
   await expect(more).toBeFocused();
   await expect(more).toHaveAttribute("aria-expanded", "false");
 });
+
+test("tessera: intestatario e identificativo restano dentro i margini", async ({
+  page,
+}) => {
+  for (const width of [320, 390, 900, 1440]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto("/?data=worst#/card");
+    await page.locator(".card-bottom strong").waitFor();
+    const bounds = await page.locator(".digital-card").evaluate((card) => {
+      const rect = card.getBoundingClientRect();
+      const css = getComputedStyle(card);
+      const name = card
+        .querySelector(".card-bottom strong")!
+        .getBoundingClientRect();
+      const id = card.querySelector(".card-id")!.getBoundingClientRect();
+      return {
+        left: rect.left + parseFloat(css.paddingLeft),
+        right: rect.right - parseFloat(css.paddingRight),
+        nameLeft: name.left,
+        nameRight: name.right,
+        idLeft: id.left,
+        idRight: id.right,
+      };
+    });
+    expect(bounds.nameLeft).toBeGreaterThanOrEqual(bounds.left - 1);
+    expect(bounds.idRight).toBeLessThanOrEqual(bounds.right + 1);
+    expect(bounds.nameRight).toBeLessThanOrEqual(bounds.idLeft);
+  }
+});

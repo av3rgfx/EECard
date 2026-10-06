@@ -66,3 +66,9 @@ Il lockfile è la fonte esatta: React/React DOM 19.3.0, Vite 7.3.7, TypeScript 5
 - Skill Sites building/hosting e cloud environment per riuso del sito e pubblicazione. Il relativo helper site-workflow non è disponibile in questo ambiente (ricerca locale e risorsa skill senza risultato): stesso ordine svolto con Git autenticato via stdin, build locale, archivio statico e API native Sites. Identità e accesso pubblico esistenti conservati.
 
 Nessuna licenza o attribuzione precedente rimossa.
+
+## Finalizzazione dopo la scelta C
+
+Scelta esplicita in chat: «Scelgo il logo C Legame. Il nome rimane ancora da confermare». Simbolo regolare conserva le geometrie originali della direzione C; master ottico originale semplificato per dimensioni piccole. Fonte condivisa in `src/brand-geometry.json`; asset in `public/brand/`, guida in MARCHIO.md. Non usati generatori di immagini o ricalchi di marchi esterni.
+
+Manrope locale e licenza OFL mantenuti, anche nella guida web. Le skill Emil già lette nella conversazione sono applicate a tipografia, contrasto, gerarchie responsive, input/touch, test di dati limite e movimento: nessuna nuova animazione per il logo; le transizioni esistenti restano sotto i 300 ms e rispettano la riduzione movimento. Animate UI e Rare UI, crediti e licenze restano invariati.

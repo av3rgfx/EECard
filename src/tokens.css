@@ -1,19 +1,26 @@
-/* EECard 0.1 — semantic design tokens; proposed identity, not a commercial decision. */
+/* Identity 0.2 — selected symbol C; product name remains open. */
 :root {
-  --canvas: #f7f8f4;
-  --surface: #fff;
-  --ink: #1d2925;
-  --muted: #58664f;
-  --forest: #173f35;
-  --lime: #d5ef8e;
-  --sage: #e8eee5;
-  --border: #e4e8e1;
+  --canvas: #faf7f2;
+  --surface: #ffffff;
+  --surface-soft: #f2ece4;
+  --ink: #38271d;
+  --muted: #68594c;
+  --brand-ink: #48280f;
+  --brand-accent: #ffa15e;
+  --brand-soft: #f9e5d4;
+  --action: #93471f;
+  --focus: #93471f;
+  --border: #e5dcd2;
+  --border-strong: #a18c79;
+  --on-brand: #fff7ef;
+  --success: #356348;
+  --success-soft: #eaf2e9;
   --danger: #a13232;
   --warning: #895a16;
   --radius-sm: 12px;
   --radius: 20px;
   --radius-lg: 24px;
-  --shadow: 0 14px 50px #173f3514;
+  --shadow: 0 14px 50px #48280f14;
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
   --space-0-5: 2px;
