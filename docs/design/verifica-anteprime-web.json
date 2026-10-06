@@ -1,0 +1,58 @@
+[
+  {
+    "mode": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "app": {
+      "width": 1440,
+      "scroll": 1440,
+      "sidebar": "flex"
+    },
+    "navigation": "passed",
+    "javascriptErrors": 0
+  },
+  {
+    "mode": "mobile",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "app": {
+      "width": 390,
+      "scroll": 390,
+      "sidebar": "none"
+    },
+    "navigation": "passed",
+    "javascriptErrors": 0
+  },
+  {
+    "mode": "mobile",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "app": {
+      "width": 390,
+      "scroll": 390,
+      "sidebar": "none"
+    },
+    "navigation": "passed",
+    "javascriptErrors": 0
+  },
+  {
+    "mode": "mobile",
+    "viewport": {
+      "width": 360,
+      "height": 780
+    },
+    "app": {
+      "width": 360,
+      "scroll": 360,
+      "sidebar": "none"
+    },
+    "navigation": "passed",
+    "javascriptErrors": 0
+  }
+]

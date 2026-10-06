@@ -1,0 +1,125 @@
+:root {
+  color-scheme: light;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  color: #173e33;
+  background: #e9ede7;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+a:focus-visible {
+  outline: 3px solid #173e33;
+  outline-offset: 4px;
+}
+.preview-bar {
+  height: 56px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+  background: #f7f8f4;
+  border-bottom: 1px solid #c8d3cb;
+}
+.preview-bar a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.canvas {
+  height: calc(100dvh - 56px);
+}
+.prototype {
+  display: block;
+  border: 0;
+  background: #f7f8f4;
+}
+.desktop .canvas {
+  overflow: auto;
+}
+.desktop .prototype {
+  width: 100%;
+  min-width: 1280px;
+  height: 100%;
+}
+.mobile .canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.mobile .prototype {
+  width: 390px;
+  height: 100%;
+  max-height: 844px;
+  border-radius: 28px;
+  box-shadow:
+    0 16px 60px #173e3326,
+    0 0 0 1px #173e3326;
+}
+.chooser {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background: #f7f8f4;
+}
+.chooser main {
+  max-width: 620px;
+}
+.eyebrow {
+  font-size: 14px;
+  font-weight: 600;
+}
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  letter-spacing: -0.05em;
+  line-height: 1.08;
+}
+p {
+  line-height: 1.6;
+}
+.chooser nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+.chooser nav a {
+  padding: 16px 28px;
+  border-radius: 14px;
+  background: #173e33;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .preview-bar {
+    height: auto;
+    min-height: 56px;
+    padding-inline: 12px;
+    flex-wrap: wrap;
+    gap: 0 12px;
+  }
+  .mobile .preview-bar {
+    display: none;
+  }
+  .mobile .canvas {
+    padding: 0;
+    height: 100dvh;
+  }
+  .mobile .prototype {
+    width: 100%;
+    max-height: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

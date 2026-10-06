@@ -1,15 +1,72 @@
 # EECard
 
-Piattaforma di servizi immobiliari per proprietari, inquilini e agenzia.
+Prototipo di design desktop e smartphone per organizzare immobili, documenti, locazioni e assistenza. Tutti i dati e i servizi sono dimostrativi.
 
-## Documentazione di progetto
+![EECard desktop](docs/design/screenshots/desktop-proprietario-1440.png)
 
-- [Stato del progetto e passaggio di consegne](docs/progetto/PROSSIMA_SESSIONE.md)
-- [Studio preliminare v0.1 — PDF](docs/progetto/EECard-studio-v0.1.pdf)
-- [Studio preliminare v0.1 — DOCX modificabile](docs/progetto/EECard-studio-v0.1.docx)
-- [Prompt pronto per la sessione di design](docs/progetto/PROMPT_DESIGN.md)
-- [Direzione visiva, skill e risorse UI](docs/progetto/RISORSE_DESIGN.md)
+## Anteprima
 
-Lo studio contiene proposte e ipotesi da validare. Il prossimo lavoro è il design
-desktop/mobile e il relativo prototipo; questa consegna non contiene il prodotto
-implementato. Le istruzioni per chi lavora nella repository sono in [AGENTS.md](AGENTS.md).
+**Online, con link separati:** [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/). Accessibili senza account, con soli dati demo. [Dettagli e aggiornamento](docs/design/ANTEPRIME_WEB.md).
+
+**Senza installare nulla:** scarica [docs/design/anteprima.html](docs/design/anteprima.html) e aprilo in Chrome, Safari o Edge. È un file autonomo con codice, font, fotografie e facsimile incorporati. GitHub mostra il sorgente: usa Download raw file, poi apri il file scaricato.
+
+**Con server locale:**
+
+```bash
+npm ci
+npm run dev
+```
+
+Apri http://localhost:5173. Richiede Node.js 22.12+ o 24 LTS. Per la build:
+
+```bash
+npm run build
+npm run preview
+```
+
+`npm run preview:portable` rigenera l’HTML autonomo dalla build corrente. L’anteprima non richiede account, servizi esterni o chiavi API. Lo stato è salvato nel browser; Profilo → Ripristina tutta la demo riporta i dati iniziali.
+
+## Cosa provare
+
+- **Documenti:** apri il contratto, condividi con una parte autorizzata, scegli la durata, poi revoca.
+- **Affitto:** passa a Inquilino, allega una prova demo e dichiara importo/data. Passa ad Agenzia → Incassi, inserisci una fonte demo e verifica. La quietanza resta un passaggio separato.
+- **Assistenza:** crea una richiesta, prova l’errore di invio e riprova. Passa ad Agenzia, assegna il tecnico; passa a Tecnico per accettare e concludere.
+- **Card:** blocca e sostituisci. Il precedente identificativo resta revocato.
+- **Accesso:** Prova l’accesso → invito → codice demo `123456` → attivazione simulata.
+- **Profilo:** laboratorio con nomi lunghi, 0/1/1.284 documenti, caricamento, errore, revoca e fine contratto.
+
+Su mobile usa il menu **Altro** per affitto, immobili, consulenze e profilo. La persona Giulia Rossi dimostra una comproprietà su un immobile e una locazione come inquilina su un altro. L’agenzia ha un account demo distinto, senza impersonare i clienti.
+
+## Verifiche
+
+```bash
+npx playwright install chromium
+npm test
+npm run format:check
+```
+
+Test end-to-end, axe-core, dimensioni 360/390/1280/1440 px, stress a 320 px, testo al 200%, tastiera, focus, movimento ridotto, file non validi, errori recuperabili, persistenza e permessi della demo. Risultati e limiti in [VERIFICHE.md](docs/design/VERIFICHE.md). `node scripts/audit.mjs` aggiorna il report axe; `node scripts/screenshots.mjs` rigenera le schermate (server locale avviato).
+
+## Documentazione
+
+Per riprendere in una nuova sessione partire dal [punto di ripresa](docs/progetto/PROSSIMA_SESSIONE.md). Il design e le anteprime sono consegnati nella [PR #2](https://github.com/av3rgfx/EECard/pull/2); verificarne lo stato prima di scegliere il branch.
+
+- [Prodotto, persone e confini](PRODUCT.md)
+- [Guida al design](DESIGN.md)
+- [Sviluppo, architettura del prototipo e manutenzione](DEVELOPMENT.md)
+- [Backlog e priorità proposte](docs/progetto/BACKLOG.md)
+- [Registro delle sessioni](docs/progetto/SESSIONI.md)
+
+- [Mappa delle schermate e dei percorsi](docs/design/PERCORSI.md)
+- [Design system e token](docs/design/DESIGN_SYSTEM.md)
+- [Decisioni confermate, proposte e questioni aperte](docs/design/DECISIONI.md)
+- [Fonti, skill, versioni e licenze](docs/design/FONTI.md)
+- [Verifiche, correzioni e prove su telefono](docs/design/VERIFICHE.md)
+- [Studio preliminare v0.1](docs/progetto/EECard-studio-v0.1.pdf)
+- [Contesto e prossima sessione](docs/progetto/PROSSIMA_SESSIONE.md)
+
+## Confine del lavoro
+
+Frontend di presentazione, non prodotto operativo. Nessun pagamento, documento valido, ordine di card o prenotazione reale. I file non vengono caricati su un server. Prezzi, inclusioni, zona, copertura, budget e primo rilascio restano aperti. Anche pagamenti integrati, app negli store, 3D e AI restano da valutare.
+
+Componenti adattati da [Animate UI](https://animate-ui.com) e [Rare UI](https://rareui.com). Licenze e attribuzioni conservate in `docs/design/`. Il prototipo non redistribuisce un catalogo di componenti.

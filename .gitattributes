@@ -1,0 +1,4 @@
+*.pdf binary
+*.png binary
+*.jpg binary
+docs/design/anteprima.html linguist-generated=true -diff

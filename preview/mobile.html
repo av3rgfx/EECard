@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Prototipo smartphone navigabile di EECard. Dati e operazioni dimostrativi."
+    />
+    <meta name="theme-color" content="#f7f8f4" />
+    <title>EECard · Anteprima mobile</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../preview.css" />
+  </head>
+  <body class="mobile">
+    <header class="preview-bar">
+      <span><strong>EECard</strong> · Mobile · Demo</span
+      ><a href="../desktop/">Apri anteprima desktop</a>
+    </header>
+    <main class="canvas" aria-label="Anteprima mobile navigabile">
+      <iframe
+        src="../app/index.html"
+        title="EECard — prototipo smartphone"
+        class="prototype"
+      ></iframe>
+    </main>
+    <script>
+      // Su smartphone apri direttamente il prototipo: viewport, tastiera e safe area native.
+      if (matchMedia("(max-width: 600px)").matches) {
+        location.replace("../app/index.html?preview=mobile" + location.hash);
+      }
+    </script>
+  </body>
+</html>

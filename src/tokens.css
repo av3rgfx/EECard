@@ -1,0 +1,37 @@
+/* EECard 0.1 — semantic design tokens; proposed identity, not a commercial decision. */
+:root {
+  --canvas: #f7f8f4;
+  --surface: #fff;
+  --ink: #1d2925;
+  --muted: #58664f;
+  --forest: #173f35;
+  --lime: #d5ef8e;
+  --sage: #e8eee5;
+  --border: #e4e8e1;
+  --danger: #a13232;
+  --warning: #895a16;
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 24px;
+  --shadow: 0 14px 50px #173f3514;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --space-0-5: 2px;
+  --space-1: 4px;
+  --space-1-5: 6px;
+  --space-2: 8px;
+  --space-2-5: 10px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --duration-press: 100ms;
+  --duration-fast: 160ms;
+  --duration-panel: 220ms;
+  --duration-reduced: 120ms;
+}
