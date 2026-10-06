@@ -49,3 +49,16 @@ Le modifiche Markdown di chiusura sono successive al deploy e non cambiano gli a
 Il generatore include anche `/identita/`: confronto A/B/C con prove colore, mono e 16/24/32 px. È una pagina di revisione separata; il frontend conserva il marchio e la palette precedenti finché l’utente non sceglie il simbolo. Non è la consegna del marchio definitivo.
 
 Anteprime desktop/mobile rigenerate con le correzioni indipendenti. Verifica Chromium delle quattro combinazioni precedenti ripetuta: navigazione alla card, nessun overflow ed errore JavaScript. HTML autonomo senza richieste esterne e dialogo documento funzionante. [Report della sessione](verifiche-anteprime-identita.json). Versione di pubblicazione aggiornata sotto dopo la conferma Sites.
+
+### Pubblicazione verificata della tappa di confronto
+
+Sites versione **2**, riuscita il 6 ottobre 2026 alle 10:57:26 UTC. Accesso pubblico e identità del sito conservati.
+
+- [Confronto dei simboli](https://eecard-design-preview.uepacio.chatgpt.site/identita/)
+- [Desktop aggiornato](https://eecard-design-preview.uepacio.chatgpt.site/desktop/)
+- [Mobile aggiornato](https://eecard-design-preview.uepacio.chatgpt.site/mobile/)
+- Commit sorgente pubblicato: `6b0f0312070308c9561fe2b448fc19edec816d60`.
+- Versione: `appgprj_6ac4c220882c8191be87c1b262306614~appgver_3d5268f933f08191aac4cbdce8403b96`.
+- Deployment: `appgdep_6ac4d40564708191b7cf24ea9db4e513`, stato `succeeded` verificato tramite Sites.
+
+La documentazione di chiusura successiva non cambia gli asset online. I controlli browser sono stati svolti sulla medesima build statica locale; la riuscita della pubblicazione è confermata dal servizio Sites, senza attribuirle nuove prove hardware.

@@ -51,7 +51,7 @@ Test end-to-end, axe-core, dimensioni 360/390/1280/1440 px, stress a 320 px, tes
 
 ## Documentazione
 
-Per riprendere in una nuova sessione partire dal [punto di ripresa](docs/progetto/PROSSIMA_SESSIONE.md). Il design e le anteprime sono consegnati nella [PR #2](https://github.com/av3rgfx/EECard/pull/2); verificarne lo stato prima di scegliere il branch.
+Per riprendere in una nuova sessione partire dal [punto di ripresa](docs/progetto/PROSSIMA_SESSIONE.md). La base del prototipo è nella PR #2, integrata. Il confronto del nuovo marchio e le correzioni indipendenti sono nella [PR #3](https://github.com/av3rgfx/EECard/pull/3), da revisionare; scelta e integrazione finale dell’identità restano aperte.
 
 - [Prodotto, persone e confini](PRODUCT.md)
 - [Guida al design](DESIGN.md)

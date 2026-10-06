@@ -6,7 +6,7 @@ Aggiornato il 6 ottobre 2026. Repository unica: https://github.com/av3rgfx/EECar
 
 Evolvere l’identità del prodotto esistente. **EECard è provvisorio; ƎE appartiene all’agenzia Enrico Erca.** Il prodotto deve diventare autonomo e utilizzabile da altre agenzie. Nessun nome esplorato, incluso “quey” nell’immagine di riferimento, è approvato. L’utente suggerisce Neo Geometric o simili.
 
-PR #2 integrata il 6 ottobre alle 09:56:10 UTC, merge `0c7bd42b52200fff654b48f169c69c4bbde08679`. Lavoro sul nuovo branch `design/visual-identity-evolution`, da main aggiornato. Nessun merge della nuova evoluzione richiesto.
+PR #2 integrata il 6 ottobre alle 09:56:10 UTC, merge `0c7bd42b52200fff654b48f169c69c4bbde08679`. Lavoro sul nuovo branch `design/visual-identity-evolution`, da main aggiornato. [PR #3](https://github.com/av3rgfx/EECard/pull/3) aperta e pronta alla revisione della prima tappa. Nessun merge della nuova evoluzione richiesto.
 
 **Siamo alla scelta del simbolo**, non alla finalizzazione. Tre direzioni pronte: A Soglia (consigliata), B Casa accolta, C Legame. Le etichette descrivono i concept e non sono nomi del prodotto. Domande poste in chat: quale direzione sviluppare e quale nome usare, oppure lasciare il solo simbolo. Nessuna risposta ricevuta al momento di questo punto di ripresa; non assumere silenzio-assenso.
 
@@ -29,6 +29,6 @@ PR #2 integrata il 6 ottobre alle 09:56:10 UTC, merge `0c7bd42b52200fff654b48f16
 
 ## Anteprime e limiti
 
-Stesso sito: [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/). Identità persistita in `.openai/hosting.json`; non creare una nuova registrazione. Versione effettivamente pubblicata e pagina confronto in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md). Push GitHub e deploy sono operazioni distinte.
+Stesso sito: [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/). Identità persistita in `.openai/hosting.json`; non creare una nuova registrazione. Versione Sites 2 pubblicata con successo (commit `6b0f0312070308c9561fe2b448fc19edec816d60`). [Confronto dei simboli](https://eecard-design-preview.uepacio.chatgpt.site/identita/). Registro della versione e dettagli in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md). Push GitHub e deploy sono operazioni distinte.
 
 Nessun backend, account, pagamento, email, upload server o servizio reale. Prezzi, inclusioni, copertura, budget, primo rilascio e integrazioni restano aperti. Test eseguiti in Chromium emulato: iPhone/Android fisici, Safari/WebKit, screen reader e prove con utenti non eseguiti. Non dichiarare completa l’identità prima della scelta e dell’integrazione finale.
