@@ -105,3 +105,8 @@ Il salto al contenuto deve mettere a fuoco `main` senza alterare l’hash usato 
 `editorial.css`, importato dopo la base, appiattisce selettori specifici: niente reset globale di section/div o dialoghi. Token colore restano in `tokens.css`. `PaymentProgress` legge Payment senza azioni di salto fase: marker160ms, reduced120ms opacity, tastiera0, cancellazione/retarget WAAPI. Il PaymentPanel porta il focus al titolo della nuova fase quando il form precedente viene sostituito.
 
 `design-lab/` e `docs/design/esplorazioni/` conservano gli esempi richiesti come archivio di progetto; non sono importati dal frontend né pubblicati nel sito operativo. I loro controlli di confronto non diventano permessi del prodotto. Script di rigenerazione dedicati `build-design-lab.mjs` e `capture-design-lab.mjs`.
+
+
+### Densità contestuale degli immobili in home
+
+`HomePage` applica `home-properties-compact` alla sola lista quando `activeHouses.length > 1`: conta gli immobili effettivamente visibili nel ruolo/filtro corrente. Il componente `PropertyTile` e l’apertura del dettaglio sono condivisi e invariati. `PropertiesPage` non riceve il modificatore e mantiene foto ampie. Nessuna nuova preferenza persistita, animazione o modifica delle fixture. Lo script screenshot include ora anche la rotta `immobili`.

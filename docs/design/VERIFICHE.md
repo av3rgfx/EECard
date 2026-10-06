@@ -1,6 +1,20 @@
 # Verifiche del prototipo EECard
 
-## Verifica corrente — Materia con pagine editoriali, 6 ottobre 2026
+## Verifica corrente — riepilogo immobili in home, 6 ottobre 2026
+
+Intervento circoscritto alla densità della lista nella home: vista compatta quando il contesto contiene più di una casa. Con una sola casa e nella pagina «Vedi immobili» resta la vista espansa. Nessun cambiamento a permessi, azioni, animazioni o dati.
+
+- Build TypeScript/Vite e formattazione passate; avviso noto sul bundle unico invariato.
+- **6 test pertinenti passati in 15,6 s**: quattro layout/axe a 360, 390, 1280 e 1440 px, stress/dati limite/testo al 200%, tessera iniziale e ruoli. Non ripetuta la suite completa di 19 percorsi, eseguita nell’integrazione precedente.
+- Verifica visiva desktop/mobile: righe aperte con foto laterale e metadati completi. Foto di 132 px nella lista multipla; vista espansa conservata nella pagina immobili e con una casa selezionata.
+- Corretto il titolo lungo nella riga compatta a 320 px/testo 200%: andava oltre la colonna di 22 px. Wrapping mirato, nessun troncamento; verifica ripetuta dopo il fix.
+- Anteprime statiche nelle quattro configurazioni desktop/mobile e HTML autonomo offline: [report mirato](verifiche-home-compatta.json).
+- Screenshot aggiornati della home proprietario a 1440, 1280, 390 e 360 px; aggiunta la pagina immobili a 1440 e 390 px. Screenshot dei flussi non modificati conservati.
+
+Test in Chromium emulato; nessuna nuova prova fisica, Safari/WebKit o screen reader. I rapporti sotto conservano i controlli dell’integrazione precedente, senza attribuirli nuovamente a questa correzione.
+
+
+## Integrazione Materia con pagine editoriali — verifica precedente, 6 ottobre 2026
 
 Scelta esplicita integrata sul branch `design/visual-directions-lab`. I risultati sotto precedono la pubblicazione e riguardano il frontend dimostrativo in Chromium153/Playwright1.63, Node24.19. I rapporti successivi in questo documento conservano lo storico delle tappe precedenti.
 

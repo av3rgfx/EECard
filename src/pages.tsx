@@ -290,7 +290,9 @@ export function HomePage() {
           onClick={() => go("immobili")}
         />
         {activeHouses.length ? (
-          <div className="property-grid">
+          <div
+            className={`property-grid${activeHouses.length > 1 ? " home-properties-compact" : ""}`}
+          >
             {activeHouses.map((p) => (
               <PropertyTile key={p.id} property={p} />
             ))}

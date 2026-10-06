@@ -80,3 +80,12 @@ Integrate home con tessera prima nel DOM, materiali bruni, gerarchia e immagini 
 Verifiche browser, screenshot, HTML e anteprime rigenerati; test e correzioni zoom in VERIFICHE.md, motion in verifiche-materia-movimento.json. Documentazione corrente aggiornata e confronto preliminare conservato come archivio. Pubblicazione sul medesimo Sites e salvataggio remoto/PR registrati nella chiusura sotto.
 
 Chiusura verificata: 19 E2E passati in 26,9 s, 24 scansioni axe senza violazioni, 9 casi a 320 px/testo 200% senza overflow dopo fix; build/format, 22 screenshot, quattro anteprime statiche e HTML offline verificati. Sites v4 `succeeded` alle 13:48:10 UTC dal commit `eea7a954c36607baffdbac82797466cdb329e435`. [PR #4](https://github.com/av3rgfx/EECard/pull/4) aperta e pronta alla revisione, senza merge. Sorgente GitHub salvata via API Git poiché il trasporto diretto non disponeva di credenziali; verificata identità dell’albero e allineato il clone al commit remoto. Il commit successivo registra soltanto questa chiusura, senza nuovi test frontend o deploy.
+
+
+## 6 ottobre 2026 — immobili più compatti solo nella home multipla
+
+L’utente prima precisa che le card sono accettabili per oggetti come gli immobili, poi conferma di preferire la nuova esecuzione aperta. La richiesta finale è ridurre lo spazio occupato dalle case **solo in home quando sono più di una**, mantenendo una casa singola e la pagina «Vedi immobili» espanse. Nessun ripristino delle card è stato applicato.
+
+PR #4 verificata aperta: riutilizzati branch e PR esistenti. Implementato modificatore CSS locale alla home, derivato dagli immobili visibili nel contesto attuale. Fotografia laterale di dimensione contenuta, titolo/indirizzo/metadati completi; pagina immobili e funzioni invariate. Documentazione e screenshot aggiornati; esito dei controlli mirati e della pubblicazione nei rispettivi rapporti. Nessuna nuova animazione o modifica ai flussi di pagamento.
+
+Controlli mirati: 6 test layout/axe/stress/home passati (15,6 s), più verifica browser di lista multipla, singola, filtro, ruolo inquilino, stato vuoto, pagina immobili e dettaglio. Corretto un titolo lungo a 320 px/testo 200%; il controllo mirato successivo passa senza overflow. Quattro anteprime statiche e HTML offline collaudati; build e formattazione passate. Nessuna ripetizione dei test dei flussi operativi invariati.

@@ -72,3 +72,12 @@ V03: tessera prima in home, sezioni aperte per tutte le aree, fotografie a tutta
 V04: 18 test esistenti e regressione home/ruoli, audit24, screenshot e build delle anteprime rigenerati. [Verifiche](../design/VERIFICHE.md) e [pubblicazione](../design/ANTEPRIME_WEB.md). Residuo: feedback utente sul risultato integrato, hardware N02, naming e decisioni commerciali già aperte.
 
 Pubblicazione confermata: Sites v4 da `eea7a954c36607baffdbac82797466cdb329e435`; [PR #4](https://github.com/av3rgfx/EECard/pull/4) pronta alla revisione. Nessun merge.
+
+
+## Precisazione successiva — densità della home
+
+| ID | Stato | Attività / evidenza |
+| --- | --- | --- |
+| V05 | Implementato, verifica mirata | Stile aperto confermato. Immobili compatti solo in home quando il contesto visibile ne contiene più di uno; una sola casa e pagina «Vedi immobili» mantengono la vista espansa. Nessun ripristino delle card |
+
+Il primo chiarimento ammetteva le card per gli oggetti del prodotto; la richiesta successiva conferma però la preferenza per la versione aperta. Prevale quest’ultima scelta. I flussi operativi restano invariati; il riferimento al pagamento di una bolletta è un esempio di presentazione, non autorizza un nuovo flusso di pagamento.

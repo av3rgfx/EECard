@@ -2,7 +2,7 @@
 
 6 ottobre 2026. Le etichette distinguono richiesta confermata, proposta di design e ipotesi dimostrativa. Nessuna scelta nel prototipo approva il modello commerciale.
 
-**Stato attuale:** dopo i tre esempi separati, l’utente ha scelto tessera/materiali di Materia e luce e struttura delle pagine di Editoriale e architettura, con contenuti a tutta larghezza senza contenitori a scheda ripetuti. Direzione integrata nel frontend 0.3; vedere C14–C16. Le sezioni precedenti conservano la storia delle decisioni, senza riaprire una scelta già ricevuta.
+**Stato attuale:** dopo i tre esempi separati, l’utente ha scelto tessera/materiali di Materia e luce e struttura delle pagine di Editoriale e architettura. L’ultima richiesta conferma lo stile editoriale attuale e compatta soltanto gli immobili della home quando ne sono visibili più di uno; singolo risultato e pagina immobili restano espansi. Le card non sono vietate in assoluto, ma non è richiesto ripristinarle. Direzione integrata nel frontend 0.3; vedere C14–C18. Le sezioni precedenti conservano la storia delle decisioni, senza riaprire una scelta già ricevuta.
 
 | ID | Stato | Decisione / questione | Conseguenza |
 | --- | --- | --- | --- |
@@ -85,3 +85,12 @@ P09 dispone di [tre esecuzioni interattive](esplorazioni/README.md), realizzate 
 | P11 | Esecuzione della direzione approvata | Indicatore condiviso dei quattro passaggi affitto, testo della fase e feedback locale | Stati esistenti invariati; marcatori non interattivi, importi immediati, fonte/autore, residuo e quietanza separata conservati |
 
 `src/editorial.css` applica la composizione 0.3; i token esistenti governano colori semantici e movimento. Agenzia e tecnico non acquisiscono una tessera personale. Le scelte non confermano naming, prezzi, servizi, copertura, integrazioni o autorizzazioni server. Verifiche effettive in [VERIFICHE.md](VERIFICHE.md), pubblicazione e commit realmente online in [ANTEPRIME_WEB.md](ANTEPRIME_WEB.md).
+
+## Precisazione successiva — densità della home
+
+| ID | Stato | Decisione / questione | Conseguenza |
+| --- | --- | --- | --- |
+| C17 | Precisato esplicitamente dall’utente | Le card sono ammesse per oggetti consultabili; azioni, form e passaggi operativi non richiedono contenitori annidati | Precisa C15 e supera una sua interpretazione come divieto generale delle card; non introduce nuovi pagamenti o processi |
+| C18 | Ultima scelta esplicita dell’utente, implementata | Mantenere lo stile editoriale attuale; rendere più compatti solo gli immobili della home quando ne sono visibili più di uno | Nessun ripristino di card immobili. `.home-properties-compact` dipende da `activeHouses.length > 1`; immagine ridotta a sinistra, testo a fianco, nessun nuovo fondo o cornice. Un solo risultato visibile e pagina “Vedi immobili” restano espansi |
+
+C18 sostituisce l’ipotesi intermedia di ripristinare le schede immobili. Il conteggio riguarda i risultati del contesto corrente, dopo ruolo e filtro, non tutti gli immobili presenti nei dati. Tessera iniziale, flussi, permessi, dati demo e stati operativi restano invariati. La registrazione dell’implementazione non dichiara un nuovo deploy: l’esito della pubblicazione resta in ANTEPRIME_WEB.md.

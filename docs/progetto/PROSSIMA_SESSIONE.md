@@ -4,14 +4,14 @@ Aggiornato il 6 ottobre 2026. Repository unica https://github.com/av3rgfx/EECard
 
 ## Stato corrente — Materia con pagine editoriali
 
-L’utente ha scelto **1 · Materia e luce**, chiedendo esplicitamente la struttura aperta di Editoriale: contenuti a tutta larghezza utile, senza contenitori-card ripetuti. La scelta autorizza l’integrazione prevista nel brief. Non riproporre il confronto come ancora da approvare.
+L’utente ha scelto **1 · Materia e luce**, chiedendo esplicitamente la struttura aperta di Editoriale: contenuti a tutta larghezza utile, senza contenitori-card ripetuti. Ultima precisazione: lo stile aperto attuale è confermato; rendere più compatti gli immobili **solo nella home e solo quando le case visibili sono più di una**. Con una sola casa, anche selezionata dal filtro, e nella pagina «Vedi immobili» mantenere la vista espansa. Non ripristinare le card contenitore. La scelta autorizza l’integrazione prevista nel brief. Non riproporre il confronto come ancora da approvare.
 
 La PR #3 è stata integrata il 6 ottobre alle 11:44:41 UTC. Il lavoro corrente parte da main `ed3a473164b2965168a11a538a6a0b21e6fb7844`, branch `design/visual-directions-lab`, [PR #4](https://github.com/av3rgfx/EECard/pull/4) aperta e pronta alla revisione, senza merge. Prima della prossima modifica verificare la PR associata al branch: riusare se aperta, partire da main aggiornato se integrata. Nessun merge richiesto.
 
 Consegnati e conservati [i tre esempi isolati](../design/esplorazioni/README.md), ora archivio del confronto. Integrata nel prodotto la combinazione scelta:
 
 - Tessera bruna materica, C Legame invariato, primo elemento sostanziale della home; stato e gestione nello stesso gruppo. Nessuna tessera inventata per agenzia/tecnico.
-- Pagine aperte su avorio: liste, separatori, fotografie a tutta colonna e gerarchia tipografica; il dialogo mantiene una superficie propria.
+- Pagine aperte su avorio: liste, separatori e gerarchia tipografica. Home con più case: riepiloghi compatti con foto laterale. Una casa in home e pagina immobili: fotografia ampia sopra il testo. Il dialogo mantiene una superficie propria.
 - Affitto con percorso visivo condiviso fra pagina e dialogo, fase corrente, distinzione documento/dichiarazione/verifica/quietanza. Movimento solo sul marcatore cambiato; tastiera immediata, reduced motion con dissolvenza120ms.
 - Dati, permessi, residui, persistenza, licenze e flussi demo conservati. Nome ancora aperto: Legame è il titolo del concept, non un nome approvato.
 

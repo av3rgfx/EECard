@@ -814,3 +814,57 @@ main {
   padding-left: 0;
   padding-right: 0;
 }
+
+/* Home summaries stay open; a single home and the property index stay expanded. */
+.home-properties-compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 24px;
+}
+.home-properties-compact .property-tile {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+}
+.home-properties-compact .property-image {
+  width: 100%;
+  height: 132px;
+  min-height: 0;
+}
+.home-properties-compact .property-image .badge {
+  top: 8px;
+  left: 8px;
+  max-width: calc(100% - 16px);
+  padding: 3px 5px;
+  font-size: 0.625rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.home-properties-compact .property-arrow {
+  right: 8px;
+  bottom: 8px;
+}
+.home-properties-compact .property-text {
+  min-width: 0;
+  padding: 5px 0 0;
+}
+.home-properties-compact .property-text h3 {
+  overflow-wrap: anywhere;
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  margin: 0;
+}
+.home-properties-compact .property-text p {
+  font-size: 0.75rem;
+  line-height: 1.65;
+  margin: 7px 0 13px;
+}
+.home-properties-compact .property-meta {
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 5px;
+  padding-top: 10px;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}

@@ -1,6 +1,6 @@
 # EECard — guida al design
 
-Aggiornato il 6 ottobre 2026. Direzione 0.3 scelta esplicitamente dopo il confronto ad alta fedeltà: tessera e materiali di **Materia e luce**, struttura delle pagine di **Editoriale e architettura**, contenuti a tutta larghezza senza contenitori a scheda ripetuti. La direzione è integrata nel frontend; verifiche e versione effettivamente online sono registrate nei rapporti dedicati.
+Aggiornato il 6 ottobre 2026. Direzione 0.3 scelta esplicitamente dopo il confronto ad alta fedeltà: tessera e materiali di **Materia e luce**, struttura delle pagine di **Editoriale e architettura**, processi aperti a tutta larghezza. L’ultima richiesta conferma questo stile e rende più compatti solo gli immobili della home quando ne sono visibili più di uno. La direzione è integrata nel frontend; verifiche e versione effettivamente online sono registrate nei rapporti dedicati.
 
 ## Identità attuale
 
@@ -13,6 +13,8 @@ Bruno, albicocca e avorio caldo; azioni primarie brune, link e focus terracotta;
 La tessera è il primo contenuto dominante della home di proprietario e inquilino, prima del saluto e dei riepiloghi, con stato e accesso alla gestione. Desktop: oggetto a sinistra, contesto e prossima azione affiancati; smartphone: tessera intera, gestione e poi contenuti in colonna. L’agenzia apre la coda operativa e non riceve una tessera personale; il tecnico mantiene i soli incarichi. I dialoghi diventano superfici inferiori scrollabili; input, safe area e tastiera restano da verificare su hardware reale.
 
 Documenti, affitti, richieste, immobili e impostazioni occupano la colonna utile della pagina. Fotografie, numeri, titoli e separatori costruiscono la gerarchia, senza cornici ripetute intorno a ogni gruppo. Tessera, dialoghi, campi e facsimili mantengono una superficie quando serve a riconoscere un oggetto o un controllo.
+
+Le card sono ammesse come rappresentazione di oggetti consultabili; la regola riguarda soprattutto azioni, form e fasi operative, che non vanno racchiusi in contenitori annidati. L’utente ha confermato lo stile editoriale degli immobili: non è richiesto ripristinare schede bianche. In home, più immobili visibili diventano riepiloghi compatti con immagine ridotta a sinistra e testo a fianco, senza aggiungere fondi o cornici; un solo immobile resta espanso. La condizione segue il contesto filtrato, anche per l’inquilino. La pagina “Vedi immobili” mantiene sempre la presentazione espansa.
 
 ## Fonti di verità
 
@@ -49,7 +51,7 @@ Feedback sull’identità e sulla comprensione dei flussi; iPhone/Safari e Andro
 
 ## Scelta applicata e confini
 
-La richiesta di esempi prima dell’integrazione è stata soddisfatta dal laboratorio: tre proposte con gli stessi dati, home desktop/mobile, dettaglio tessera e affitto, stato critico e movimento ridotto. La successiva scelta combina Materia ed Editoriale e aggiunge il vincolo esplicito di evitare contenitori ripetuti. [Revisione iniziale](docs/design/REVISIONE_VISIVA.md) e [prompt del confronto](docs/progetto/PROMPT_DESIGN.md) restano riferimenti storici, non un nuovo blocco all’integrazione autorizzata.
+La richiesta di esempi prima dell’integrazione è stata soddisfatta dal laboratorio: tre proposte con gli stessi dati, home desktop/mobile, dettaglio tessera e affitto, stato critico e movimento ridotto. La successiva scelta combina Materia ed Editoriale e aggiunge il vincolo di evitare contenitori ripetuti, poi precisato per i processi operativi. La richiesta finale conserva lo stile corrente e modifica soltanto la densità degli immobili nella home con più risultati visibili. [Revisione iniziale](docs/design/REVISIONE_VISIVA.md) e [prompt del confronto](docs/progetto/PROMPT_DESIGN.md) restano riferimenti storici, non un nuovo blocco all’integrazione autorizzata.
 
 L’affitto presenta quattro passaggi leggibili, fase attuale e spiegazione accanto alle azioni esistenti. `PaymentProgress` rappresenta lo stato: i marcatori non sono comandi per avanzare. Documento caricato, dichiarazione, verifica con autore/fonte e quietanza restano distinti. L’importo e il residuo si aggiornano subito; il solo indicatore della nuova fase riceve un breve feedback. Dopo il cambio di stato nel pannello, il focus raggiunge il titolo della nuova fase.
 

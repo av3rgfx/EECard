@@ -1,6 +1,6 @@
 # EECard — design system 0.3
 
-6 ottobre 2026. Direzione scelta esplicitamente dall’utente dopo il confronto: tessera e materiali di **Materia e luce**, struttura di **Editoriale e architettura**, contenuti a tutta larghezza senza contenitori a scheda ripetuti. Questo documento descrive l’implementazione del frontend; verifiche e versione pubblicata sono registrate in [VERIFICHE.md](VERIFICHE.md) e [ANTEPRIME_WEB.md](ANTEPRIME_WEB.md). Il riferimento Revolut riguarda precisione e qualità, senza copiarne schermate o marca.
+6 ottobre 2026. Direzione scelta esplicitamente dall’utente dopo il confronto: tessera e materiali di **Materia e luce**, struttura di **Editoriale e architettura**, processi aperti a tutta larghezza. L’ultima richiesta mantiene lo stile corrente e compatta soltanto gli immobili della home quando ne sono visibili più di uno. Questo documento descrive l’implementazione del frontend; verifiche e versione pubblicata sono registrate in [VERIFICHE.md](VERIFICHE.md) e [ANTEPRIME_WEB.md](ANTEPRIME_WEB.md). Il riferimento Revolut riguarda precisione e qualità, senza copiarne schermate o marca.
 
 ## Identità scelta e implementazione
 
@@ -38,7 +38,9 @@ Titoli pagina fluidi 36–60 px al default, home 32–49,6 px desktop e 34 px mo
 
 ## Composizione e materiali
 
-Le sezioni occupano la larghezza utile della pagina, con margini responsive. Gerarchia affidata a spazio, scala tipografica, fotografie e separatori; niente cornice arrotondata ripetuta intorno a ogni gruppo. Documenti, attività e code restano liste compatte. Gli immobili usano foto a tutta colonna e metadati aperti; sul telefono la fotografia precede il testo.
+Le sezioni occupano la larghezza utile della pagina, con margini responsive. Gerarchia affidata a spazio, scala tipografica, fotografie e separatori. Le card non sono vietate per oggetti consultabili; azioni, form e passaggi operativi restano aperti, senza contenitori annidati. Documenti, attività e code restano liste compatte. Per gli immobili è confermato lo stile editoriale, senza ripristino di schede con fondo e cornice.
+
+La home applica `.home-properties-compact` soltanto quando `activeHouses.length > 1`: immagine da 96×132 px a sinistra, testo a fianco e metadati che possono andare a capo; la griglia affianca i riepiloghi quando c’è spazio. I contenuti lunghi aumentano l’altezza senza troncamento. Con un solo immobile visibile la presentazione resta espansa, con foto a tutta colonna sopra il testo. Il conteggio segue il filtro e il ruolo correnti. La pagina “Vedi immobili” resta sempre espansa, indipendentemente dal numero di risultati; nessuna modifica allo stato vuoto.
 
 La tessera mantiene il volume di un oggetto: fondo bruno con luce radente, grana fine, bordo luminoso e ombra di contatto. Testo, identificativo e stato restano immobili e leggibili. Dialoghi, campi, upload e facsimili conservano una superficie quando utile alla funzione. Gli avvisi usano un accento laterale e testo esplicito.
 
@@ -50,7 +52,7 @@ La tessera mantiene il volume di un oggetto: fondo bruno con luce radente, grana
 | DigitalCard | Attiva demo / bloccata; primo oggetto della home personale, intestatario completo, identificativo locale, tessera servizi |
 | Button | Primario, secondario, testo, pericoloso, disabilitato; feedback alla pressione |
 | Badge | Neutro, verifica, successo, revoca; testo oltre al colore |
-| PropertyTile | Fotografia con dimensione riservata, nome e indirizzo completi, più parti |
+| PropertyTile | Nome e indirizzo completi, più parti; riepilogo compatto solo nella home con più immobili visibili, presentazione espansa con un solo risultato e nella pagina immobili |
 | DocRow | Nome completo anche lungo, metadati, visibilità, stato e dettaglio |
 | Modal | Base UI + Animate UI adattato; focus confinato e ripristinato, Escape, pannello mobile scrollabile |
 | FileInput | File demo o selezione locale, formato/dimensione verificati, errore leggibile |
@@ -62,9 +64,9 @@ La tessera mantiene il volume di un oggetto: fondo bruno con luce radente, grana
 
 ## Desktop e smartphone
 
-Desktop: sidebar 232 px, tessera a sinistra come primo contenuto della home, saluto e prossima azione accanto; riepiloghi e azioni appartengono alla pagina aperta. Immobili affiancati; documenti e code sfruttano tutta la colonna utile. Ogni affitto è una sezione aperta: dati della rata a sinistra, sequenza e azione a destra.
+Desktop: sidebar 232 px, tessera a sinistra come primo contenuto della home, saluto e prossima azione accanto; riepiloghi e azioni appartengono alla pagina aperta. Più immobili visibili in home usano riepiloghi compatti affiancabili, con immagini ridotte; singolo risultato e pagina immobili conservano la vista espansa. Documenti e code sfruttano tutta la colonna utile. Ogni affitto è una sezione aperta: dati della rata a sinistra, sequenza e azione a destra.
 
-Smartphone: dopo header e contesto compatto, tessera intera con stato e gestione; poi saluto, prossima azione, numeri e contenuti. Affitto e immobili diventano sezioni in colonna. Tab bar proprietario/inquilino: Panoramica, Documenti, Assistenza, Card, Altro. Agenzia: Coda, Documenti, Assistenza, Altro; accesso diretto a Home mostra la coda, Card spiega il contesto operativo senza tessera personale. Il tecnico dispone solo di Incarichi e Altro; le altre rotte operative restano riservate.
+Smartphone: dopo header e contesto compatto, tessera intera con stato e gestione; poi saluto, prossima azione, numeri e contenuti. Nella home con più immobili visibili, righe editoriali con immagine a sinistra e testo a fianco; un solo risultato e pagina immobili restano espansi, con foto sopra il testo. Tab bar proprietario/inquilino: Panoramica, Documenti, Assistenza, Card, Altro. Agenzia: Coda, Documenti, Assistenza, Altro; accesso diretto a Home mostra la coda, Card spiega il contesto operativo senza tessera personale. Il tecnico dispone solo di Incarichi e Altro; le altre rotte operative restano riservate.
 
 Pannelli con `dvh`, scroll interno, overscroll contenuto, safe area, input 16 px e chiusura esplicita. Nessun gesto obbligatorio. Hover solo con puntatore fine; zoom libero. Non è una PWA installabile né una decisione contro le app native.
 
