@@ -17,9 +17,9 @@ Consegnati e conservati [i tre esempi isolati](../design/esplorazioni/README.md)
 
 ## Verifiche e anteprime
 
-19 E2E passati (18 esistenti più regressione priorità tessera/ruoli); 24 audit aggiuntivi senza violazioni. Home verificata a390×844 e360×780: tessera, stato e gestione prima della navigazione inferiore. Incasso parziale400€ su950€: residuo550€ mantenuto anche dopo quietanza. Dettagli e limiti in [VERIFICHE.md](../design/VERIFICHE.md).
+Ultima correzione della home: 6 test mirati layout/axe/stress/home passati, casi multiplo/singolo/filtro/inquilino/vuoto verificati, quattro anteprime e HTML offline collaudati. Titolo lungo corretto a 320 px/testo 200%. La precedente integrazione aveva superato 19 E2E e 24 audit aggiuntivi: suite completa non ripetuta per questa modifica circoscritta. Home verificata a390×844 e360×780: tessera, stato e gestione prima della navigazione inferiore. Incasso parziale400€ su950€: residuo550€ mantenuto anche dopo quietanza. Dettagli e limiti in [VERIFICHE.md](../design/VERIFICHE.md).
 
-[Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Guida/asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/). Identità e pubblico del sito invariati; versione effettivamente online e commit sorgente in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md). Online: Sites **v4**, deploy riuscito alle 13:48:10 UTC dal commit `eea7a954c36607baffdbac82797466cdb329e435`. La chiusura documentale successiva non cambia la build. Push GitHub e deploy Sites sono operazioni distinte.
+[Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Guida/asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/). Identità e pubblico del sito invariati; versione effettivamente online e commit sorgente in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md). Online: Sites **v5**, deploy riuscito alle 14:18:39 UTC dal commit `65ac9e092c17d9113d85106fa3d04fbb9770cab5`. La chiusura documentale successiva non cambia la build. Push GitHub e deploy Sites sono operazioni distinte.
 
 ## Ripresa operativa
 

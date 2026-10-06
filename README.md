@@ -51,7 +51,7 @@ Test end-to-end, axe-core, dimensioni 360/390/1280/1440 px, stress a 320 px, tes
 
 ## Documentazione
 
-Per riprendere in una nuova sessione partire dal [punto di ripresa](docs/progetto/PROSSIMA_SESSIONE.md). La base del prototipo è nella PR #2, integrata. Il simbolo Legame, l’identità calda e le correzioni di usabilità sono nella [PR #3](https://github.com/av3rgfx/EECard/pull/3), integrata. La direzione successiva combina Materia e luce con pagine aperte come Editoriale: tessera prima in home, riepiloghi immobili compatti quando sono più di uno, vista espansa nella pagina immobili e affitto in quattro passaggi visivi. Il lavoro corrente è nella [PR #4](https://github.com/av3rgfx/EECard/pull/4), branch `design/visual-directions-lab`, senza merge; anteprime pubblicate su Sites v4. Il naming resta aperto.
+Per riprendere in una nuova sessione partire dal [punto di ripresa](docs/progetto/PROSSIMA_SESSIONE.md). La base del prototipo è nella PR #2, integrata. Il simbolo Legame, l’identità calda e le correzioni di usabilità sono nella [PR #3](https://github.com/av3rgfx/EECard/pull/3), integrata. La direzione successiva combina Materia e luce con pagine aperte come Editoriale: tessera prima in home, riepiloghi immobili compatti quando sono più di uno, vista espansa nella pagina immobili e affitto in quattro passaggi visivi. Il lavoro corrente è nella [PR #4](https://github.com/av3rgfx/EECard/pull/4), branch `design/visual-directions-lab`, senza merge; anteprime pubblicate su Sites v5. Il naming resta aperto.
 
 - [Brief storico del confronto, ora eseguito](docs/progetto/PROMPT_DESIGN.md)
 - [Analisi del design e migliorie proposte](docs/design/REVISIONE_VISIVA.md)

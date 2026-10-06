@@ -78,6 +78,8 @@ Pubblicazione confermata: Sites v4 da `eea7a954c36607baffdbac82797466cdb329e435`
 
 | ID | Stato | Attività / evidenza |
 | --- | --- | --- |
-| V05 | Implementato, verifica mirata | Stile aperto confermato. Immobili compatti solo in home quando il contesto visibile ne contiene più di uno; una sola casa e pagina «Vedi immobili» mantengono la vista espansa. Nessun ripristino delle card |
+| V05 | Completato · Sites v5, stessa PR #4 senza merge | Stile aperto confermato. Immobili compatti solo in home quando il contesto visibile ne contiene più di uno; una sola casa e pagina «Vedi immobili» mantengono la vista espansa. Nessun ripristino delle card |
 
 Il primo chiarimento ammetteva le card per gli oggetti del prodotto; la richiesta successiva conferma però la preferenza per la versione aperta. Prevale quest’ultima scelta. I flussi operativi restano invariati; il riferimento al pagamento di una bolletta è un esempio di presentazione, non autorizza un nuovo flusso di pagamento.
+
+V05 pubblicato dal commit `65ac9e092c17d9113d85106fa3d04fbb9770cab5`; controlli mirati in [VERIFICHE.md](../design/VERIFICHE.md), sorgente e deployment in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md).
