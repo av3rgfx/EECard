@@ -59,3 +59,7 @@ Le anteprime condivisibili appartengono al sito identificato da
 `.openai/hosting.json`: conservarne l’identità e usare Sites per gli aggiornamenti.
 Il push GitHub non equivale a pubblicazione; registrare il commit effettivamente
 online. Le modifiche solo documentali non richiedono un nuovo deploy.
+
+## Identità del prodotto (richiesta del 6 ottobre 2026)
+
+EECard è provvisorio. ƎE è il marchio dell’agenzia Enrico Erca, non il marchio definitivo del prodotto. Nessun naming esplorato o presente nelle immagini di riferimento è approvato. Leggere `docs/design/LOGO_DIREZIONI.md`: attendere la scelta dell’utente prima di finalizzare e applicare un simbolo; confermare separatamente il nome per il marchio testuale. Continuare intanto sulle correzioni indipendenti.

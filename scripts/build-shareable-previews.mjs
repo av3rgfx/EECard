@@ -1,4 +1,10 @@
-import { mkdirSync, copyFileSync, writeFileSync, readFileSync } from "node:fs";
+import {
+  mkdirSync,
+  copyFileSync,
+  writeFileSync,
+  readFileSync,
+  cpSync,
+} from "node:fs";
 const output = ".output/public";
 for (const folder of ["desktop", "mobile", "app"])
   mkdirSync(`${output}/${folder}`, { recursive: true });
@@ -14,3 +20,6 @@ const app = readFileSync("docs/design/anteprima.html", "utf8").replace(
 writeFileSync(`${output}/app/index.html`, app);
 writeFileSync(`${output}/.nojekyll`, "");
 console.log(`Anteprime condivisibili generate in ${output}/`);
+
+// Review-only identity concepts; no candidate is applied to the product yet.
+cpSync("docs/design/identita", `${output}/identita`, { recursive: true });

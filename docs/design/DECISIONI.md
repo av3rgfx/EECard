@@ -4,7 +4,7 @@
 
 | ID | Stato | Decisione / questione | Conseguenza |
 | --- | --- | --- | --- |
-| C01 | Confermato dall’utente | Repository av3rgfx/EECard, esperienza desktop e smartphone, qualità premium | Tutto il lavoro è sul branch design/eecard-premium-prototype, derivato da main dopo merge PR #1 |
+| C01 | Confermato dall’utente | Repository av3rgfx/EECard, esperienza desktop e smartphone, qualità premium | Prototipo PR #2 integrato; evoluzione sul branch design/visual-identity-evolution da main aggiornato |
 | C02 | Confermato dall’utente | Design system e prototipo frontend navigabile, dati dimostrativi | React frontend; nessun backend, pagamento o messaggio reale |
 | C03 | Confermato dal brief | Card come accesso ai servizi, distinta da carta bancaria | Nessun PAN, IBAN, CVV, saldo, circuito bancario o finto checkout |
 | C04 | Confermato dal brief | Documento, dichiarazione, verifica, quietanza distinti | Passaggi separati con testo, autore e fonte; incasso parziale mantiene residuo |
@@ -33,3 +33,16 @@ Lo stato è salvato in localStorage e condiviso fra i ruoli della stessa demo ne
 La condivisione aggiorna i permessi simulati e mostra durata/revoca; non genera URL pubblici, invia email o applica una scadenza server. Le quietanze sono facsimili senza valore. Il blocco revoca l’identificativo locale, la sostituzione ne genera uno nuovo senza riutilizzare il precedente.
 
 La verifica di un documento è formale e attribuita all’operatore demo: non certifica validità giuridica, urbanistica o tecnica. Caricamenti malware, deduplicazione, pagamenti multipli e allocazioni su più rate richiedono backend e regole successive. Il prototipo rende visibile un incasso parziale/eccedente, senza simulare riconciliazioni bancarie automatiche.
+
+## Aggiornamento — identità autonoma, prima tappa
+
+| ID | Stato | Decisione / questione | Conseguenza |
+| --- | --- | --- | --- |
+| C07 | Confermato dall’utente | EECard provvisorio; ƎE appartiene all’agenzia Enrico Erca | Prodotto con marchio autonomo e utilizzabile da altre agenzie |
+| C08 | Confermato dall’utente | Presentare 2–3 direzioni, attendere scelta prima della finalizzazione | Tre simboli proposti; nessuno applicato globalmente |
+| C09 | Confermato dall’utente | Il riferimento orienta colore e geometria, non approva scritte o nomi | “quey” non adottato; chiedere il nome prima del marchio testuale |
+| P05 | Proposta visiva | A Soglia / B Casa accolta / C Legame; albicocca e bruno | [Confronto e motivazioni](LOGO_DIREZIONI.md); A consigliata, non selezionata |
+| P06 | Proposta tipografica | Manrope locale come famiglia geometrica simile | Neo Geometric suggerito ma distribuzione/licenza non identificata |
+| A07 | Aperto — attesa dell’utente | Scelta simbolo e nome | Asset finali, favicon e integrazione completa successivi alla scelta |
+
+P01 descrive la base precedente ancora visibile, non una scelta definitiva. Nessun nuovo prezzo, servizio o ambito operativo introdotto.

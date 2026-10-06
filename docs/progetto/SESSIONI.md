@@ -29,3 +29,13 @@ Richiesta dell’utente: salvare tutto, aggiornare i Markdown, aggiungere docume
 Aggiunti PRODUCT.md, DESIGN.md, DEVELOPMENT.md, backlog e questo registro; riscritti il punto di ripresa e le istruzioni stale di AGENTS.md. README, decisioni e registro della versione online allineati. La PR #2 viene riutilizzata per la stessa consegna e resa pronta alla revisione; nessun merge richiesto.
 
 Questa chiusura modifica solo documentazione: controllati collegamenti locali e diff; test frontend e deployment non ripetuti. La versione online resta il commit precedente sopra indicato. Non sono state prese nuove decisioni commerciali, di design finale o architettura di produzione.
+
+## 6 ottobre 2026 — evoluzione identità, confronto e correzioni indipendenti
+
+PR #2 verificata integrata; branch `design/visual-identity-evolution` creato da main aggiornato. Nuovo contesto confermato: ƎE è il marchio dell’agenzia Enrico Erca, EECard provvisorio, prodotto autonomo per altre agenzie; nessun nome confermato.
+
+Preparati A Soglia, B Casa accolta, C Legame: 12 SVG di studio, colori/monocromia e prove 16/24/32 px, guida, contrasti, tavole e pagina confronto. Chiesta la scelta e il nome prima della finalizzazione. La nuova identità non è stata applicata per silenzio-assenso.
+
+Corrette leggibilità, gerarchia mobile, skip link che cambiava rotta, ricerca/focus, indicatore Altro, icona tessera e scansione Vite dell’HTML generato. Skill Emil recuperate e applicate; licenze conservate. Build e formattazione passate, 17 test passati, 24 scansioni axe senza violazioni; 3 viewport per confronto logo senza overflow/violazioni. Nessuna prova fisica.
+
+Documenti di prodotto/design/sviluppo, decisioni, backlog e punto di ripresa aggiornati. Questa prima tappa è reviewable; asset definitivi, favicon e nuova palette globale restano dipendenti dalla scelta dell’utente. Pubblicazione sul sito esistente e PR registrate in ANTEPRIME_WEB.md e nel punto di ripresa.

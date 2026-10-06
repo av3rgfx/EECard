@@ -79,3 +79,46 @@ Hanno retto: stringhe lunghe dei documenti con `overflow-wrap`, icone con dimens
 - Prove di comprensione con proprietari, inquilini e operatori; sentire sul dispositivo reale velocità e continuità delle interazioni.
 
 Nessuno di questi controlli hardware è dichiarato eseguito. La viewport 390×450 è una verifica di spazio disponibile, non una prova della tastiera fisica del telefono.
+
+## 6 ottobre 2026 — evoluzione identità, prima tappa
+
+Branch `design/visual-identity-evolution`. Chromium 153 / Playwright 1.63.0, Node 24.19.0 su Linux. L’identità nuova è ancora in studio: nessun simbolo scelto.
+
+| Controllo | Esito |
+| --- | --- |
+| Build TypeScript/Vite, format:check | Passati; resta l’avviso bundle unico ~528 KB, già documentato |
+| Test Playwright | **17 passati**, ultima esecuzione 19,9 s: 15 percorsi precedenti + 2 regressioni |
+| Responsive e axe nei test | 11 schermate × 360/390/1280/1440 px; nessun overflow o violazione rilevati |
+| Audit aggiuntivo | 24 scansioni, 0 violazioni: [report aggiornato](audit-accessibilita.json) |
+| Stress | 320 px, dati lunghi, 0/1/1.284 documenti, testo al 200%, errori, revoca/fine rapporto passati |
+| Tastiera e focus | Salto al contenuto senza cambiare rotta; ricerca dopo cancellazione; dialogo confinato, Escape e ritorno al controllo passati |
+| Logo in studio | A/B/C su colore e in monocromia, 16/24/32 px; A più leggibile, B perde definizione della piccola porta. Nessun wordmark finalizzato |
+| Tavola dei simboli | 320/390/1240 px, zero overflow e zero violazioni axe: [report](identita/verifiche.json) |
+| Screenshot | 22 schermate frontend rigenerate + 2 tavole simboli |
+
+### emil-design-eng / break-ui + fix
+
+| Before | After | Why |
+| --- | --- | --- |
+| Skip link da Documenti cambiava hash in `#main-content`, poi mostrava Panoramica | Focus diretto a `main`, hash e filtri preservati (`src/App.tsx`) | Il router usa l’hash; saltare la navigazione non deve cambiare pagina |
+| Cancellazione ricerca 32×40 px, focus perso quando il pulsante spariva | 44×44 px, ref all’input e focus ripristinato; conteggio annunciato (`src/pages.tsx`, `src/styles.css`) | Target touch più agevole e continuità della ricerca |
+| Metadati di scadenze/indirizzi a 9–11 px; etichette riepilogo disallineavano i valori dopo l’aumento | Metadati/azioni 12 px, riserva di due righe per etichette e importo/azione su riga dedicata mobile | Leggibilità senza troncare i dati o ridurre il font per farli stare |
+| Nessun riferimento attivo nelle sezioni aperte da Altro | Gruppo corrente e stato aperto espliciti (`src/App.tsx`) | Orientamento mobile |
+| Icona card con banda bancaria | Tessera personale (Lucide ContactRound) | Coerenza con tessera di accesso ai servizi |
+| Vite scandiva l’HTML autonomo generato e segnalava dipendenza non risolta | Scansione limitata all’entry `index.html` | Avvio del progetto riproducibile |
+
+I dati stress già esistenti sono stati riutilizzati al loro confine originale (`src/data.ts`); non aggiunti nuovi scenari funzionali. Nomi, importi completi, liste vuote/estese e permessi demo continuano a reggere. Dark mode e RTL non introdotti.
+
+### review-animations
+
+| Before | After | Why |
+| --- | --- | --- |
+| Navigazione immediata e pannelli occasionali 220 ms, 120 ms di sola opacità in reduced motion | Conservati; nessun nuovo movimento sul confronto logo o sulla navigazione | Il gate animate non giustifica animazioni decorative o frequenti |
+
+**Approve per il perimetro modificato e le condizioni emulabili.** Nessuna modifica al motore Motion o ai percorsi di ingresso/uscita; controlli tastiera senza transizione, focus confinato e movimento ridotto verificati dai test. Nessuna misurazione GPU o prova tattile hardware dichiarata.
+
+Il primo test del menu ha erroneamente cercato il pulsante nello scope accessibile mentre Base UI lo rendeva correttamente inerte dietro al dialogo. Corretto il selettore del test; nessun indebolimento del confinamento del focus.
+
+Prove iPhone/Android fisici, Safari/WebKit, VoiceOver/TalkBack e comprensione con utenti ancora necessarie. Zero violazioni axe non è una certificazione WCAG.
+
+Anteprime statiche aggiornate: desktop 1440 px, cornice mobile 390 px da desktop, smartphone emulati 390 e 360 px; navigazione alla card riuscita, zero errori JavaScript e nessun overflow nel prototipo. HTML autonomo aperto da file con documento/dialogo funzionante e zero richieste HTTP esterne. [Risultati](verifiche-anteprime-identita.json).

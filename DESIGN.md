@@ -2,7 +2,11 @@
 
 Aggiornato il 6 ottobre 2026. Design 0.1 implementato e condivisibile; resta una proposta da validare con l’utente.
 
-## Direzione da conservare
+## Evoluzione in corso
+
+L’utente ha richiesto un’identità autonoma dall’agenzia ƎE/Enrico Erca. EECard resta provvisorio. [Tre direzioni di simbolo e palette calda](docs/design/LOGO_DIREZIONI.md) sono pronte per confronto; attendere la scelta prima di finalizzare o applicare il marchio. Il nome va confermato separatamente. Le correzioni di leggibilità, tastiera, ricerca e navigazione mobile sono indipendenti.
+
+## Base visiva precedente, ancora nel prototipo
 
 Qualità premium nel ritmo, nella tipografia e nelle interazioni, con Revolut come riferimento di qualità e un’identità EECard propria. Verde bosco, avorio, salvia e lime; Manrope Variable locale; superfici chiare e tessera scura con forme concentriche. La card esprime accesso ai servizi immobiliari, senza numerazione bancaria, saldo, circuito o simboli di registrazione del marchio.
 

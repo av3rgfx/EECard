@@ -16,7 +16,7 @@ Aggiornato il 6 ottobre 2026. Le priorità seguenti sono una proposta di sequenz
 
 | ID | Priorità proposta / stato | Attività | Criterio di completamento |
 | --- | --- | --- | --- |
-| N01 | Alta · da fare | Revisionare identità e quattro percorsi con l’utente | Feedback registrato per schermata/percorso, decisioni accettate e cambiamenti richiesti distinti |
+| N01 | Alta · confronto identità pronto, attesa scelta | Revisionare identità e quattro percorsi con l’utente | Feedback registrato per schermata/percorso, decisioni accettate e cambiamenti richiesti distinti |
 | N02 | Alta · da fare su hardware | Verificare iPhone/Safari, Android/Chrome e screen reader | Dispositivo/browser annotati; tastiera, safe area, zoom, rotazione, focus e annunci controllati; problemi riprodotti e corretti |
 | N03 | Alta · in attesa di informazioni | Chiarire quote, primo cliente, zona, beneficio iniziale, copertura e risorse | Risposte con provenienza nel [registro decisioni](../design/DECISIONI.md); nessun numero dedotto dal prototipo |
 | N04 | Dopo N01/N03 · da definire | Scegliere il perimetro del primo rilascio operativo | Percorso prioritario, esclusioni esplicite e criteri di accettazione concordati |
@@ -30,3 +30,16 @@ Pagamenti integrati, app negli store, 3D, AI, card fisica e calendario dei consu
 ## Come aggiornare
 
 Mantenere gli ID stabili; collegare commit/PR e prove quando una voce è completata. Distinguere “da fare”, “in attesa di informazioni” e “completato”. A fine sessione descrivere qui il lavoro residuo concreto, senza lasciare “completato” un controllo invalidato da modifiche successive.
+
+## Evoluzione identità — stato prima della scelta
+
+| ID | Stato | Attività / evidenza |
+| --- | --- | --- |
+| I01 | Completato | Rilettura contesto, PR #2 integrata, nuovo branch da main |
+| I02 | Completato come proposta | Tre direzioni SVG, varianti colore/mono, prove piccole e [guida di studio](../design/LOGO_DIREZIONI.md) |
+| I03 | Completato | Correzioni indipendenti: leggibilità, skip link, ricerca/focus, menu Altro, icona tessera; 17 test passati |
+| I04 | In attesa dell’utente | Scelta A/B/C o revisione, nome confermato oppure solo simbolo |
+| I05 | Dopo I04 | Asset definitivi, favicon, eventuale marchio testuale; palette e tipografia integrate in tutta la UI |
+| I06 | Dopo I05 | Nuova QA browser, screenshot e pubblicazione finale; aggiornare la stessa PR senza merge |
+
+Le anteprime di questa prima tappa mantengono l’identità precedente nel frontend e aggiungono il confronto in `/identita/`; non sono la consegna definitiva del nuovo marchio.

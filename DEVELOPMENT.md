@@ -81,3 +81,9 @@ Il bundle unico genera un avviso Vite di circa 527 KB: è funzionale all’antep
 ## Chiusura di ogni sessione
 
 Aggiornare punto di ripresa, backlog e registro sessioni; modificare prodotto/design/decisioni se cambia il loro contenuto. Annotare verifiche eseguite e limiti, commit remoto e versione online quando pertinente. Salvare le modifiche sul branch corretto e creare o aggiornare una sola PR per lo stesso lavoro. Non integrare in `main` senza una richiesta che includa il merge.
+
+## Evoluzione dell’identità — prima tappa
+
+Branch `design/visual-identity-evolution`, da main dopo merge PR #2. Studi SVG e tavola in `docs/design/identita/`, copiati in `/identita/` dal generatore delle anteprime. `LOGO_DIREZIONI.md` distingue studio e asset finali: la favicon attuale resta valida finché non viene scelto il simbolo.
+
+Il salto al contenuto deve mettere a fuoco `main` senza alterare l’hash usato dal router. La ricerca ripristina il focus quando si cancella il testo; Base UI rende inerti i controlli sottostanti al dialogo. Due test di regressione coprono questi comportamenti e il menu mobile. Vite esegue la scansione delle dipendenze solo da `index.html`, escludendo l’HTML autonomo generato che produceva un errore di risoluzione all’avvio.

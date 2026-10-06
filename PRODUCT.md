@@ -2,6 +2,10 @@
 
 Aggiornato il 6 ottobre 2026. Questo documento orienta il lavoro di prodotto nelle sessioni successive; non costituisce un’offerta commerciale né una specifica di produzione approvata.
 
+## Identità e origine
+
+EECard è un nome provvisorio. ƎE è sigla e logo dell’agenzia Enrico Erca, dalla cui collaborazione nasce l’idea. Il prodotto deve avere un marchio autonomo, utilizzabile anche da altre agenzie. Questo conferma una direzione di identità e compatibilità, non definisce il primo cliente pagante o la copertura operativa. Nessun nome esplorato, incluso quello nel riferimento visivo, è approvato.
+
 ## Obiettivo e stato
 
 EECard propone uno spazio per gestire le relazioni legate a un immobile: documenti, locazione, evidenze di pagamento, assistenza e accesso ai servizi. La card rende riconoscibile l’accesso a questo spazio; non è una carta bancaria.

@@ -1,5 +1,5 @@
 import { asset } from "./assets";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -7,7 +7,7 @@ import {
   FileText,
   Wrench,
   CalendarDays,
-  CreditCard,
+  ContactRound,
   ShieldCheck,
   LockKeyhole,
   KeyRound,
@@ -435,6 +435,7 @@ export function DocRow({ doc: d }: { doc: Doc }) {
 export function DocumentsPage() {
   const { state, docs, activeHouses, scenario } = useApp();
   const [search, setSearch] = useState("");
+  const searchInput = useRef<HTMLInputElement>(null);
   const [category, setCategory] = useState("Tutti");
   const [page, setPage] = useState(0);
   useEffect(() => setPage(0), [search, category, scenario, state.property]);
@@ -453,21 +454,33 @@ export function DocumentsPage() {
         description="Trova il documento giusto, condividilo con le persone giuste."
       />
       <div className="document-tools">
-        <label className="search-field">
+        <div className="search-field">
           <Search size={19} />
           <input
             aria-label="Cerca documenti"
+            ref={searchInput}
             placeholder="Cerca un documento…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
           {search && (
-            <button aria-label="Cancella ricerca" onClick={() => setSearch("")}>
+            <button
+              aria-label="Cancella ricerca"
+              onClick={() => {
+                setSearch("");
+                searchInput.current?.focus();
+              }}
+            >
               <X size={16} />
             </button>
           )}
-        </label>
-        <span className="muted">
+        </div>
+        <span
+          className="muted"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
           {visible.length.toLocaleString("it-IT")}{" "}
           {visible.length === 1 ? "documento" : "documenti"}
         </span>
@@ -541,7 +554,7 @@ export function RentPage() {
   return (
     <>
       <PageHeading
-        eyebrow="LA LOCazione, CON CHIAREZZA"
+        eyebrow="LA LOCAZIONE, CON CHIAREZZA"
         title="Ogni scadenza, chiara."
         description="Una prova di bonifico è il primo passo. L’incasso viene verificato separatamente."
       />
@@ -970,7 +983,7 @@ export function CardPage() {
             onClick={() => open("physical")}
             disabled={scenario === "ended"}
           >
-            <IconBox icon={CreditCard} />
+            <IconBox icon={ContactRound} />
             <span>
               <strong>Richiedi la card fisica</strong>
               <small>{state.physical}</small>

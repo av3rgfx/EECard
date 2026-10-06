@@ -1,50 +1,34 @@
 # EECard — punto di ripresa
 
-Sessione conclusa il 6 ottobre 2026. Repository unica: https://github.com/av3rgfx/EECard.
+Aggiornato il 6 ottobre 2026. Repository unica: https://github.com/av3rgfx/EECard.
 
-## Stato attuale
+## Obiettivo attivo e stato
 
-Design system e prototipo navigabile ad alta fedeltà desktop/smartphone realizzati. Disponibili dati demo e percorsi proprietario, inquilino, agenzia e tecnico; nessuna operazione reale. Anteprime pubbliche:
+Evolvere l’identità del prodotto esistente. **EECard è provvisorio; ƎE appartiene all’agenzia Enrico Erca.** Il prodotto deve diventare autonomo e utilizzabile da altre agenzie. Nessun nome esplorato, incluso “quey” nell’immagine di riferimento, è approvato. L’utente suggerisce Neo Geometric o simili.
 
-- [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/)
-- [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/)
+PR #2 integrata il 6 ottobre alle 09:56:10 UTC, merge `0c7bd42b52200fff654b48f169c69c4bbde08679`. Lavoro sul nuovo branch `design/visual-identity-evolution`, da main aggiornato. Nessun merge della nuova evoluzione richiesto.
 
-PR #1 documentale integrata il 6 ottobre. Branch del lavoro: `design/eecard-premium-prototype`, derivato da `main` aggiornato. Consegna nella [PR #2](https://github.com/av3rgfx/EECard/pull/2), non integrata al momento della chiusura. Ricontrollare il suo stato remoto prima di scegliere il branch.
+**Siamo alla scelta del simbolo**, non alla finalizzazione. Tre direzioni pronte: A Soglia (consigliata), B Casa accolta, C Legame. Le etichette descrivono i concept e non sono nomi del prodotto. Domande poste in chat: quale direzione sviluppare e quale nome usare, oppure lasciare il solo simbolo. Nessuna risposta ricevuta al momento di questo punto di ripresa; non assumere silenzio-assenso.
 
-L’utente ha chiesto di salvare e documentare il lavoro per più sessioni e consegnarlo in PR. Non ha chiesto il merge o l’avvio del backend. La chiusura non rende definitive le proposte commerciali o di design.
+## Cosa è pronto
 
-## Cosa leggere, in ordine
+- [Confronto, ragionamento e guida dei file di studio](../design/LOGO_DIREZIONI.md). 12 SVG colore/mono, tavole desktop/mobile e confronto a 16/24/32 px. Palette albicocca/bruno ricostruita visivamente con varianti accessibili; Manrope locale come base geometrica.
+- Correzioni indipendenti nel prototipo: leggibilità dei metadati, gerarchie della priorità mobile, salto al contenuto, ricerca/focus, menu Altro e icona di tessera personale. Percorsi e semantica documento/dichiarazione/verifica/quietanza conservati.
+- 17 test passati; audit aggiuntivo 24 schermate senza violazioni; tavola 320/390/1240 px senza overflow o violazioni; screenshot e HTML autonomo aggiornati. [Verifiche](../design/VERIFICHE.md).
+- Design system documentato distinguendo base ancora implementata e proposte da scegliere. Nuovo simbolo non applicato al frontend e favicon precedente conservata.
 
-1. [AGENTS.md](../../AGENTS.md): istruzioni persistenti della repository.
-2. [PRODUCT.md](../../PRODUCT.md): obiettivo, persone, confini e questioni aperte.
-3. [DESIGN.md](../../DESIGN.md): direzione e mappa delle fonti di design.
-4. [DEVELOPMENT.md](../../DEVELOPMENT.md): codice, avvio, verifiche e pubblicazione.
-5. [BACKLOG.md](BACKLOG.md): completato e prossime attività proposte.
-6. [DECISIONI.md](../design/DECISIONI.md): distinguere conferme, proposte, demo e domande aperte.
+## Ripresa dopo la risposta
 
-Per un cambiamento specifico leggere poi i percorsi, il design system e le verifiche collegati. Il [brief originale](PROMPT_DESIGN.md), le [risorse](RISORSE_DESIGN.md) e lo [studio v0.1 di 21 pagine](EECard-studio-v0.1.pdf) restano fonti di contesto. Non ripetere tutta l’analisi senza necessità. Il vecchio handoff pre-design è conservato nella storia Git della PR #1.
+1. Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [LOGO_DIREZIONI.md](../design/LOGO_DIREZIONI.md), [decisioni](../design/DECISIONI.md) e [backlog](BACKLOG.md).
+2. Verificare stato remoto della PR di questo branch: riusarla se aperta; dopo eventuale merge, partire da main aggiornato su un nuovo branch. Non modificare `feat/ufp-local-foundation`.
+3. Incorporare la scelta effettiva dell’utente. Finalizzare solo il simbolo se il naming resta aperto; nessun wordmark senza nome confermato.
+4. Rifinire geometria/ottica piccola, produrre asset finali e favicon; integrare palette, tipografia, card, superfici, navigazione e componenti senza nuove funzioni.
+5. Verificare nuovamente browser, contrasti, focus, movimento ridotto, errori e contenuti lunghi; aggiornare screenshot, medesimo sito Sites, documentazione e PR senza merge.
 
-## Ripartenza pratica
+`npm ci`, `npm run dev`; demo su localhost:5173. Confronto locale `/docs/design/identita/`. `npm run preview:shareable` rigenera le anteprime e `/identita/`. I file temporanei e le copie skill esterne non sono prerequisiti persistenti. Recuperare le skill richieste dal riferimento documentato in FONTI.md.
 
-- Verificare `git status` e aggiornamenti remoti. Se PR #2 è aperta, riprendere il branch di design; se integrata, partire da `main` aggiornato con un nuovo branch per il lavoro richiesto. Non modificare il branch estraneo `feat/ufp-local-foundation`.
-- Eseguire `npm ci` e `npm run dev`; aprire `http://localhost:5173`. Non dipendere dai server o dalle copie di skill in `/tmp` della sessione precedente.
-- Per riprovare i flussi usare il selettore ruolo e immobile; per azzerare lo stato usare Profilo → Ripristina tutta la demo. I dati sono nel browser, chiave `eecard-demo-v1`.
-- Chiedere o incorporare il prossimo obiettivo dell’utente. La sequenza proposta è feedback sui percorsi, prove hardware e chiarimento del primo rilascio; non avviare automaticamente tutte le voci del backlog.
+## Anteprime e limiti
 
-## Evidenze già disponibili
+Stesso sito: [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/). Identità persistita in `.openai/hosting.json`; non creare una nuova registrazione. Versione effettivamente pubblicata e pagina confronto in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md). Push GitHub e deploy sono operazioni distinte.
 
-15 test Playwright passati; audit aggiuntivo di 24 schermate senza violazioni axe; build e formattazione passate; 22 screenshot; HTML autonomo collaudato senza rete; quattro combinazioni di viewport collaudate per le anteprime web. Report datati in [VERIFICHE.md](../design/VERIFICHE.md) e [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md).
-
-Non ancora eseguiti: hardware iPhone/Android, Safari/WebKit, VoiceOver/TalkBack e prove con utenti. Nessuna certificazione WCAG o verifica di sicurezza del prodotto operativo. Nessun backend o CI configurati.
-
-## Vincoli da non perdere
-
-Quote 50 €/15 €, periodicità, inclusioni, zona, copertura, primo cliente, budget e perimetro iniziale restano aperti. Non presentare Milano, i canoni e gli slot demo come dati commerciali reali. Pagamenti, app store, 3D e AI non sono né approvati né rinviati per decisione condivisa.
-
-Mantenere distinti caricamento documento, dichiarazione pagamento, verifica incasso e quietanza. La card è una tessera di accesso ai servizi, non una carta bancaria. La condivisione documentale e i permessi sono simulati.
-
-## Pubblicazione e chiusure future
-
-Il sito online è Sites, con identità persistita in `.openai/hosting.json`; non creare una nuova registrazione per aggiornarlo. Ultimo commit frontend pubblicato: `ae371274031ef53c1adcad8d051cc00367dd741d`. I successivi aggiornamenti solo Markdown non modificano questa versione online.
-
-A ogni chiusura aggiornare questo punto di ripresa, il backlog, il [registro sessioni](SESSIONI.md) e i documenti toccati dalle decisioni; salvare sul remoto e creare/aggiornare la PR del lavoro. Non lasciare informazioni necessarie soltanto nella chat.
+Nessun backend, account, pagamento, email, upload server o servizio reale. Prezzi, inclusioni, copertura, budget, primo rilascio e integrazioni restano aperti. Test eseguiti in Chromium emulato: iPhone/Android fisici, Safari/WebKit, screen reader e prove con utenti non eseguiti. Non dichiarare completa l’identità prima della scelta e dell’integrazione finale.

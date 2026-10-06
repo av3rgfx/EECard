@@ -2,6 +2,12 @@
 
 Proposta da validare, 6 ottobre 2026. L’identità è propria: il riferimento Revolut riguarda precisione, gerarchia e qualità delle interazioni; nessuna schermata o marca viene copiata.
 
+## Stato dell’evoluzione
+
+Il sistema 0.1 resta la base implementata in attesa della scelta del nuovo simbolo. [Proposte di identità e contrasti](LOGO_DIREZIONI.md): albicocca/bruno, terracotta per azioni accessibili, avorio caldo, Manrope come base geometrica locale. Sono proposte, non token globali approvati. Il nome del prodotto resta aperto.
+
+Correzioni già applicate: metadati operativi e azioni da 12 px al default, etichette della tab bar da 11 px, target della cancellazione ricerca 44×44 px, focus restituito alla ricerca, salto al contenuto senza cambiare rotta. In mobile la prossima azione ha dettagli sopra e importo/azione sotto; le etichette dei tre riepiloghi riservano due righe per allineare i valori. “Altro” indica il gruppo attivo e lo stato aperto. La tessera usa un’icona personale, senza banda bancaria.
+
 ## Identità
 
 Il verde bosco dà stabilità alla navigazione e alla tessera; avorio e salvia mantengono leggere le superfici operative; il lime vive soprattutto nell’illustrazione della card. L’elemento grafico è una successione di forme concentriche, un richiamo alla casa come spazio di relazioni. Nessun simbolo bancario o indicazione di marchio registrato.

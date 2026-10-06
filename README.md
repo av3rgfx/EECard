@@ -1,5 +1,7 @@
 # EECard
 
+EECard è un nome provvisorio; il prodotto evolve verso un’identità autonoma dall’agenzia Enrico Erca (ƎE). [Tre proposte di simbolo](docs/design/LOGO_DIREZIONI.md), ancora da scegliere.
+
 Prototipo di design desktop e smartphone per organizzare immobili, documenti, locazioni e assistenza. Tutti i dati e i servizi sono dimostrativi.
 
 ![EECard desktop](docs/design/screenshots/desktop-proprietario-1440.png)
