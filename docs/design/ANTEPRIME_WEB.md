@@ -68,3 +68,15 @@ La documentazione di chiusura successiva non cambia gli asset online. I controll
 Simbolo scelto e integrato, nome ancora aperto. Le anteprime desktop/mobile e il selettore usano palette calda e favicon nuova. `/marchio/` ospita guida, varianti e download; `/brand/legame-assets.zip` contiene 8 SVG, favicon SVG/PNG e guida. `/identita/` rimane archivio del confronto, con esito C indicato.
 
 18 test del prototipo passati, 24 audit aggiuntivi senza violazioni, guida su 320/390/1240 px e dieci download verificati. Le quattro combinazioni delle anteprime statiche e l’HTML autonomo sono stati collaudati sulla build locale corrispondente. [Report](verifiche-legame.json). La versione precedente v2 resta lo storico della prima tappa; il deploy verificato dell’identità 0.2 viene registrato sotto.
+
+### Pubblicazione verificata di Legame
+
+Sites versione **3**, riuscita il 6 ottobre 2026 alle 11:21:23 UTC. Identità, titolo, indirizzo e accesso pubblico del sito conservati.
+
+- [Guida e asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/) · [ZIP](https://eecard-design-preview.uepacio.chatgpt.site/brand/legame-assets.zip).
+- [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/).
+- Commit sorgente pubblicato: `d0bcbaecf4a208225fb0788070fc90e90fbf4551`.
+- Versione: `appgprj_6ac4c220882c8191be87c1b262306614~appgver_bfc421a9d1bc8191bbe3dd7295f8e742`.
+- Deployment: `appgdep_6ac4d9a3152c8191b8a214f0136bcee3`, stato `succeeded` confermato da Sites.
+
+La chiusura documentale successiva non modifica la build pubblicata. Test browser svolti sulla stessa build locale; nessuna prova su hardware fisico aggiunta dal deploy.

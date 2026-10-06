@@ -49,3 +49,5 @@ L’utente sceglie «il logo C Legame» e conferma che «il nome rimane ancora d
 Integrati simbolo, palette albicocca/bruno/avorio/terracotta, superfici, card, navigazione, componenti e design system. Manrope locale mantenuto; logo precedente EE rimosso dalla UI. Stati operativi e flussi preservati. Tutti i test della nuova identità passati (18), 24 scansioni axe senza violazioni; guida, download e anteprime statiche verificati. Microtesto e margini interni card corretti dopo controllo visivo; nessuna nuova animazione. Nessuna prova hardware dichiarata.
 
 Aggiornati screenshot e documentazione corrente; confronto iniziale conservato come archivio. Anteprime aggiornate sullo stesso sito, identità e accesso conservati; commit pubblicato e versione registrati in ANTEPRIME_WEB.md. PR #3 aggiornata, senza merge. Il naming resta l’unica decisione necessaria per il futuro marchio testuale.
+
+Consegna pubblicata: Sites **v3**, stato `succeeded` alle 11:21:23 UTC, sorgente `d0bcbaecf4a208225fb0788070fc90e90fbf4551`. Lo stesso commit è sul branch GitHub della PR #3; il successivo commit documentale registra la consegna. Nessun test UI ripetuto per questa sola registrazione.
