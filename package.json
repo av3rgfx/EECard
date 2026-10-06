@@ -11,7 +11,8 @@
     "test:ui": "playwright test --ui",
     "preview:portable": "npm run build && node scripts/portable-preview.mjs",
     "format": "prettier --write src tests scripts *.ts *.json",
-    "format:check": "prettier --check src tests scripts *.ts *.json"
+    "format:check": "prettier --check src tests scripts *.ts *.json",
+    "preview:shareable": "npm run preview:portable && node scripts/build-shareable-previews.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.0.0",

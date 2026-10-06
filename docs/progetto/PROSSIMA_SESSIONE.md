@@ -7,6 +7,8 @@ Aggiornato il 6 ottobre 2026.
 
 Il lavoro richiesto da PROMPT_DESIGN.md è ora sul branch
 `design/eecard-premium-prototype`, creato da `main` dopo il merge della PR #1.
+Disponibili anche [anteprime web desktop e mobile](../design/ANTEPRIME_WEB.md)
+condivisibili, ospitate su Sites.
 Frontend navigabile, design system, anteprima HTML autonoma, screenshot e verifiche
 sono in repository. Partire dal [README](../../README.md) e da
 [docs/design/VERIFICHE.md](../design/VERIFICHE.md).
