@@ -2,9 +2,11 @@
 
 6 ottobre 2026. Le etichette distinguono richiesta confermata, proposta di design e ipotesi dimostrativa. Nessuna scelta nel prototipo approva il modello commerciale.
 
+**Stato attuale:** dopo i tre esempi separati, l’utente ha scelto tessera/materiali di Materia e luce e struttura delle pagine di Editoriale e architettura, con contenuti a tutta larghezza senza contenitori a scheda ripetuti. Direzione integrata nel frontend 0.3; vedere C14–C16. Le sezioni precedenti conservano la storia delle decisioni, senza riaprire una scelta già ricevuta.
+
 | ID | Stato | Decisione / questione | Conseguenza |
 | --- | --- | --- | --- |
-| C01 | Confermato dall’utente | Repository av3rgfx/EECard, esperienza desktop e smartphone, qualità premium | Prototipo PR #2 integrato; evoluzione sul branch design/visual-identity-evolution da main aggiornato |
+| C01 | Confermato dall’utente | Repository av3rgfx/EECard, esperienza desktop e smartphone, qualità premium | PR #3 integrata; confronto e integrazione 0.3 sul nuovo branch design/visual-directions-lab da main aggiornato |
 | C02 | Confermato dall’utente | Design system e prototipo frontend navigabile, dati dimostrativi | React frontend; nessun backend, pagamento o messaggio reale |
 | C03 | Confermato dal brief | Card come accesso ai servizi, distinta da carta bancaria | Nessun PAN, IBAN, CVV, saldo, circuito bancario o finto checkout |
 | C04 | Confermato dal brief | Documento, dichiarazione, verifica, quietanza distinti | Passaggi separati con testo, autore e fonte; incasso parziale mantiene residuo |
@@ -61,10 +63,25 @@ P01 e l’implementazione bosco/lime sono superati. P05 resta lo storico del con
 
 | ID | Stato | Decisione / questione | Conseguenza |
 | --- | --- | --- | --- |
-| C11 | Confermato dall’utente | «La card deve essere la prima cosa che vedi quando accedi» | Primo contenuto dominante della home; nuova gerarchia da mostrare prima di implementare. Supera P02 solo nell’ordine tessera/riepilogo |
+| C11 | Confermato dall’utente, implementato nella 0.3 | «La card deve essere la prima cosa che vedi quando accedi» | Tessera prima di saluto/riepiloghi nella home personale, con stato e gestione. Supera P02 nell’ordine tessera/riepilogo; agenzia e tecnico mantengono gli spazi operativi |
 | C12 | Confermato dall’utente | Grafica più accattivante, ricca, dinamica e animata; UX come soluzione visiva dei processi | Nuovo obiettivo della prossima sessione, non approvazione dell’esecuzione attuale |
-| C13 | Confermato dall’utente | Esempi prima delle modifiche, poi conferma o richieste di modifica | Preparare esempi separati; attendere scelta esplicita prima del redesign del prodotto |
-| P09 | Proposte non approvate | Materia e luce / Editoriale e architettura / Luce e profondità | Confronto ad alta fedeltà da realizzare, raccomandazione iniziale A; nessuna applicata |
+| C13 | Confermato dall’utente, completato | Esempi prima delle modifiche, poi conferma o richieste di modifica | Tre esempi separati realizzati; successiva scelta esplicita ricevuta, registrata in C14–C15 |
+| P09 | Confronto storico, risolto da C14–C15 | Materia e luce / Editoriale e architettura / Luce e profondità | Tre esecuzioni ad alta fedeltà; l’utente sceglie una combinazione di Materia ed Editoriale, senza selezionare Profondità |
 | P10 | Proposte UX/movimento | Processo affitto con fase/autore/azione, timeline assistenza, documenti più riconoscibili | Solo rappresentazioni di funzioni esistenti; ricette in REVISIONE_VISIVA.md da valutare negli esempi |
 
-Questa chiusura aggiorna documentazione, revisione e PR #3. Il frontend e Sites v3 restano invariati. Nome ancora aperto; simbolo C confermato.
+La chiusura precedente aggiornava solo documentazione, revisione e PR #3, lasciando allora frontend e Sites v3 invariati. Nome ancora aperto; simbolo C confermato.
+
+## Confronto concreto — passaggio completato
+
+P09 dispone di [tre esecuzioni interattive](esplorazioni/README.md), realizzate separatamente in `design-lab/`: stessi dati, home desktop/mobile, tessera, processo affitto, demo animata, stato critico e movimento ridotto. La raccomandazione iniziale era Materia e luce. L’utente ha poi espresso la scelta combinata seguente, soddisfacendo C13. La PR #3 è integrata; laboratorio e integrazione partono da main su un nuovo branch.
+
+## Scelta esplicita e integrazione 0.3
+
+| ID | Stato | Decisione / questione | Conseguenza |
+| --- | --- | --- | --- |
+| C14 | Confermato esplicitamente dall’utente | Tessera e materiali di Materia e luce + struttura delle pagine di Editoriale e architettura | Tessera bruna materica, composizione editoriale, tipografia e fotografie integrate nel frontend 0.3 |
+| C15 | Confermato esplicitamente dall’utente | Evitare contenitori a scheda ripetuti; contenuti a tutta larghezza come nel riferimento di processo fornito | Liste e sezioni sulla pagina, separate da spazio e righe; volume riservato agli oggetti e controlli che lo richiedono |
+| C16 | Autorizzato dall’utente dopo la scelta | Integrare, verificare nel browser, aggiornare documentazione e anteprime sullo stesso sito Sites, salvare sul remoto e preparare la PR senza merge | Nessun nuovo consenso richiesto per completare questi passaggi; registrare esiti e commit online nei rapporti, senza considerarli conclusi per la sola autorizzazione |
+| P11 | Esecuzione della direzione approvata | Indicatore condiviso dei quattro passaggi affitto, testo della fase e feedback locale | Stati esistenti invariati; marcatori non interattivi, importi immediati, fonte/autore, residuo e quietanza separata conservati |
+
+`src/editorial.css` applica la composizione 0.3; i token esistenti governano colori semantici e movimento. Agenzia e tecnico non acquisiscono una tessera personale. Le scelte non confermano naming, prezzi, servizi, copertura, integrazioni o autorizzazioni server. Verifiche effettive in [VERIFICHE.md](VERIFICHE.md), pubblicazione e commit realmente online in [ANTEPRIME_WEB.md](ANTEPRIME_WEB.md).

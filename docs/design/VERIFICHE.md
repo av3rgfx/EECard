@@ -1,5 +1,38 @@
 # Verifiche del prototipo EECard
 
+## Verifica corrente — Materia con pagine editoriali, 6 ottobre 2026
+
+Scelta esplicita integrata sul branch `design/visual-directions-lab`. I risultati sotto precedono la pubblicazione e riguardano il frontend dimostrativo in Chromium153/Playwright1.63, Node24.19. I rapporti successivi in questo documento conservano lo storico delle tappe precedenti.
+
+| Controllo corrente | Risultato |
+| --- | --- |
+| Build e formattazione | TypeScript/Vite e Prettier passati; bundle532.25KB,167.89KB gzip, avviso dimensionale Vite conservato |
+| Suite E2E finale | **19 test passati,26.9s**; 18 esistenti più regressione priorità tessera/ruoli |
+| Audit aggiuntivo finale | **24 scansioni,0 violazioni** WCAG A/AA rilevate da axe; [JSON](audit-accessibilita.json) |
+| Home owner/tenant390×844 | Tessera y252–472.67px; accesso gestione termina530.67px, sopra tabbar773px |
+| Home owner/tenant360×780 | Tessera y270–486px; gestione termina544px, sopra tabbar709px |
+| Ruoli | Agenzia: home operativa, nessuna tessera o intestazione Alessandro in Card; tecnico limitato alle rotte previste |
+| Pagamento parziale | Dichiarazione400€, verifica distinta e quietanza400€; residuo550€ su950€ resta visibile e rata ancora da seguire |
+| Movimento | Nessun mount, marker160ms pointer, keyboard0, reduced120ms solo opacity; interruzione/retarget e focus verificati in browser |
+| Stress | Home/affitto/card, demo/worst/revoked,320px con testo200%: nessun overflow pagina dopo correzioni; nessun taglio del contenuto operativo |
+| Anteprime statiche | Desktop1440; mobile da1440,390,360; nessun overflow o erroreJS. Guida3viewport e10download validi; HTML offline senza richieste esterne |
+| Evidenze | 22 screenshot rigenerati; [report movimento](verifiche-materia-movimento.json), [video del processo reale demo](materia-processo.webm), [report anteprime](verifiche-legame.json) |
+
+### Correzioni emerse da break-ui + fix
+
+- Home a320px/testo200%: il vecchio display flex mobile e le colonne min-content delle azioni allargavano la pagina a415px. Griglia esplicita, minmax(0,1fr), min-width0 e testo a capo mantengono la colonna a320px.
+- Affitto a320px/testo200%: importi lunghi e parola finale del titolo superavano la colonna. Wrapping senza riduzione del font: il contenuto cresce in altezza.
+- Gestione tessera a320px/testo200%: badge e titolo sulla stessa riga allargavano la pagina. Intestazione flessibile su più righe.
+- Richiamo consulenza al200%: titolo poteva essere tagliato dal contenitore; corretta la rottura delle parole. Questa ultima correzione locale è verificata dal controllo stress mirato dopo la suite completa.
+- Il controllo anteprime ha rilevato servizio tessera10px: riportato a11px, con etichette titolare/stato10px e intestatario14–18px. Controllo ripetuto e passato.
+
+Gli importi non scorrono con un contatore; la tessera e il logo non ruotano, non seguono il puntatore e non hanno loop. L’animazione rende riconoscibile una fase realmente cambiata. La riproduzione del video è una registrazione della demo, non un servizio o pagamento reale.
+
+Limiti: test emulati, nessuna certificazione WCAG, prova hardware, Safari/WebKit, screen reader o ricerca con utenti. Le misure geometriche riguardano dati standard/font caricati; con zoom e nomi lunghi è previsto scorrimento verticale. Licenze, dati e condizioni commerciali invariati.
+
+## Storico iniziale
+
+
 6 ottobre 2026. Branch `design/eecard-premium-prototype`. Ambiente Linux, Node 24.19.0, Chromium 153 via Playwright 1.63.0. Questa verifica riguarda il frontend dimostrativo, non la sicurezza o l’erogazione del servizio in produzione.
 
 ## Risultato

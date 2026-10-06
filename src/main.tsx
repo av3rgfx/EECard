@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "@fontsource-variable/manrope";
 import App from "./App";
 import "./styles.css";
+import "./editorial.css";
 window.addEventListener("keydown", () => {
   document.documentElement.dataset.input = "keyboard";
 });

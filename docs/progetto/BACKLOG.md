@@ -53,9 +53,20 @@ I01–I06 coprono il lavoro autorizzato sul simbolo e sull’identità visiva. R
 | ID | Stato | Attività / criterio |
 | --- | --- | --- |
 | V00 | Completato, sola analisi | [Revisione](../design/REVISIONE_VISIVA.md), misure home 390/1440, proposte UX/movimento, prompt e punto di ripresa aggiornati; frontend invariato |
-| V01 | Priorità confermata · da proporre | Presentare 2–3 esempi ad alta fedeltà, home desktop/mobile con tessera prima, dettaglio card, processo esistente, demo animata e variante ridotta; stessa base dati, area separata dal prodotto |
-| V02 | In attesa della presentazione e della scelta | Raccogliere conferma o modifiche dell’utente; nessuna implementazione globale prima della scelta |
-| V03 | Dopo V02 · non autorizzato prima della scelta | Integrare la direzione approvata: composizione, materiali, immagini, tipografia, gerarchie e movimento utile; preservare flussi e stati |
-| V04 | Dopo V03 | QA pertinente, screenshot e stesso Sites aggiornati; documentare sorgente online, commit remoto e PR senza merge |
+| V01 | Completato come proposta · 6 ottobre | Presentare 2–3 esempi ad alta fedeltà, home desktop/mobile con tessera prima, dettaglio card, processo esistente, demo animata e variante ridotta; stessa base dati, area separata dal prodotto |
+| V02 | Completato · scelta esplicita | Raccogliere conferma o modifiche dell’utente; nessuna implementazione globale prima della scelta |
+| V03 | Completato · Materia + composizione Editoriale | Integrare la direzione approvata: composizione, materiali, immagini, tipografia, gerarchie e movimento utile; preservare flussi e stati |
+| V04 | Verifiche completate, pubblicazione registrata in ANTEPRIME_WEB | QA pertinente, screenshot e stesso Sites aggiornati; documentare sorgente online, commit remoto e PR senza merge |
 
-La posizione prioritaria della tessera è confermata; Materia e luce, Editoriale e architettura, Luce e profondità sono solo proposte. Il nome resta aperto. V01–V04 sono il prossimo obiettivo, non N03–N06 o un’estensione del perimetro operativo.
+La posizione prioritaria della tessera è confermata. L’utente ha scelto Materia e luce con pagine aperte come Editoriale. Il nome resta aperto. V01–V04 sono il prossimo obiettivo, non N03–N06 o un’estensione del perimetro operativo.
+
+## Confronto ad alta fedeltà consegnato
+
+V01: [tre direzioni interattive isolate](../design/esplorazioni/README.md), ciascuna con home 1440/390, dettaglio tessera, affitto, movimento, stato critico e reduced motion. 27 combinazioni axe senza violazioni, controlli keyboard/errore/residuo/blocco e HTML offline passati. Scelta successiva ricevuta: **Materia e luce con contenuti editoriali senza card ripetute**. V02 completato; integrazione autorizzata ed eseguita. PR #3 integrata, nuovo branch `design/visual-directions-lab`. Prodotto integrato; stato del deploy e remoto nei registri di chiusura.
+
+
+## Integrazione della scelta
+
+V03: tessera prima in home, sezioni aperte per tutte le aree, fotografie a tutta colonna, affitto leggibile in quattro passaggi reali, focus del nuovo passaggio e movimento localizzato. Corretto il collegamento agenzia alla tessera personale del proprietario: home operativa, nessuna tessera nel menu o via URL diretto. Nessuna nuova funzionalità o variazione del modello dati.
+
+V04: 18 test esistenti e regressione home/ruoli, audit24, screenshot e build delle anteprime rigenerati. [Verifiche](../design/VERIFICHE.md) e [pubblicazione](../design/ANTEPRIME_WEB.md). Residuo: feedback utente sul risultato integrato, hardware N02, naming e decisioni commerciali già aperte.

@@ -2,36 +2,33 @@
 
 Aggiornato il 6 ottobre 2026. Repository unica https://github.com/av3rgfx/EECard.
 
-## Stato corrente
+## Stato corrente — Materia con pagine editoriali
 
-L’utente ha scelto **C — Legame** e ha lasciato il nome da confermare. Il simbolo è finalizzato e integrato nel prototipo esistente, con identità albicocca/bruno/avorio e terracotta per azioni accessibili. “Legame” è il titolo del concept, non il nome del prodotto. EECard resta provvisorio; ƎE appartiene all’agenzia Enrico Erca. Nessun wordmark realizzato.
+L’utente ha scelto **1 · Materia e luce**, chiedendo esplicitamente la struttura aperta di Editoriale: contenuti a tutta larghezza utile, senza contenitori-card ripetuti. La scelta autorizza l’integrazione prevista nel brief. Non riproporre il confronto come ancora da approvare.
 
-Branch `design/visual-identity-evolution`, da main aggiornato dopo merge PR #2. [PR #3](https://github.com/av3rgfx/EECard/pull/3) riutilizzata e pronta alla revisione, senza merge. Controllarne lo stato remoto prima di scegliere il branch in una nuova sessione.
+La PR #3 è stata integrata il 6 ottobre alle 11:44:41 UTC. Il lavoro corrente parte da main `ed3a473164b2965168a11a538a6a0b21e6fb7844`, branch `design/visual-directions-lab`. Prima della prossima modifica verificare la PR associata al branch: riusare se aperta, partire da main aggiornato se integrata. Nessun merge richiesto.
 
-## Consegnato
+Consegnati e conservati [i tre esempi isolati](../design/esplorazioni/README.md), ora archivio del confronto. Integrata nel prodotto la combinazione scelta:
 
-- [Guida marchio](../design/MARCHIO.md): master regolare e ottico, 8 SVG colore/mono, favicon SVG + PNG 16/32/180/512, ZIP e pagina `/marchio/` con download. Fonte unica `src/brand-geometry.json`.
-- Palette semantica e simbolo su navigazione, tessera, superfici, componenti e design system 0.2. Manrope locale mantenuto come geometrico simile al suggerimento; Neo Geometric non è stato identificato/licenziato.
-- Correzioni della prima tappa conservate: leggibilità, skip link, focus ricerca, orientamento Altro, gerarchie mobile. Iconografia di tessera/utenze coerente; microtesto della card reso più leggibile.
-- Build/format passati; 18 test E2E, audit aggiuntivo 24 schermate senza violazioni; guida 320/390/1240 senza overflow/violazioni; download verificati; anteprime e HTML autonomo collaudati. [Report aggiornato](../design/VERIFICHE.md), 22 screenshot frontend e 2 guide.
-- Prezzi, coperture e disponibilità non inventati; documento/dichiarazione/verifica/quietanza e percorsi demo conservati.
+- Tessera bruna materica, C Legame invariato, primo elemento sostanziale della home; stato e gestione nello stesso gruppo. Nessuna tessera inventata per agenzia/tecnico.
+- Pagine aperte su avorio: liste, separatori, fotografie a tutta colonna e gerarchia tipografica; il dialogo mantiene una superficie propria.
+- Affitto con percorso visivo condiviso fra pagina e dialogo, fase corrente, distinzione documento/dichiarazione/verifica/quietanza. Movimento solo sul marcatore cambiato; tastiera immediata, reduced motion con dissolvenza120ms.
+- Dati, permessi, residui, persistenza, licenze e flussi demo conservati. Nome ancora aperto: Legame è il titolo del concept, non un nome approvato.
 
-## Prossimo lavoro
+## Verifiche e anteprime
 
-**Nuova priorità confermata dall’utente:** elevare nettamente la qualità grafica, percepita oggi come grezza, semplice e poco dinamica. **La tessera deve essere la prima cosa visibile entrando nella home.** Prima di modificare il prodotto presentare 2–3 esempi concreti e attendere conferma o richieste di modifica. Questa chiusura ha aggiornato solo documentazione e analisi: il redesign non è implementato.
+18 E2E esistenti passati, più regressione dedicata a priorità tessera/ruoli; 24 audit aggiuntivi senza violazioni. Home verificata a390×844 e360×780: tessera, stato e gestione prima della navigazione inferiore. Incasso parziale400€ su950€: residuo550€ mantenuto anche dopo quietanza. Dettagli e limiti in [VERIFICHE.md](../design/VERIFICHE.md).
 
-Partire dalla [revisione visiva](../design/REVISIONE_VISIVA.md) e dal [prompt pronto da copiare](PROMPT_DESIGN.md). Proposte da confrontare: Materia e luce, Editoriale e architettura, Luce e profondità. Nessuna scelta approvata. Preparare home desktop/mobile, dettaglio tessera e un processo esistente con demo animata, stato critico e reduced motion, in un’area separata dal prodotto attuale; non bastano descrizioni o moodboard.
+[Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Guida/asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/). Identità e pubblico del sito invariati; versione effettivamente online e commit sorgente in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md). Push GitHub e deploy Sites sono operazioni distinte.
 
-Non chiedere nuovamente quale simbolo scegliere: C è confermato. Il nome rimane aperto. Non avviare backend, pagamenti o nuove funzioni. Dopo la conferma integrare, verificare e pubblicare sul medesimo sito. Per agenzia/tecnico preservare i ruoli esistenti senza inventare una tessera personale.
+## Ripresa operativa
 
-Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [MARCHIO.md](../design/MARCHIO.md), [DESIGN_SYSTEM.md](../design/DESIGN_SYSTEM.md), [DECISIONI.md](../design/DECISIONI.md), [BACKLOG.md](BACKLOG.md). `LOGO_DIREZIONI.md` e `/identita/` sono lo storico delle tre proposte, non una scelta ancora aperta.
+Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [DESIGN_SYSTEM.md](../design/DESIGN_SYSTEM.md), [MARCHIO.md](../design/MARCHIO.md), [DECISIONI.md](../design/DECISIONI.md) e [BACKLOG.md](BACKLOG.md). Il prompt precedente e la revisione conservano il brief storico; prevale la scelta esplicita registrata qui.
 
-`npm ci`, `npm run dev`. Per asset: `node scripts/build-brand-assets.mjs` (Chromium Playwright e Python 3), poi `npm run preview:shareable`. Server statico 5174 e `node scripts/verify-brand.mjs` per guida/download/anteprime. Non dipendere da file temporanei o processi di sessioni precedenti.
+`npm ci`, `npm run dev`. Verifiche: `npm test -- --workers=4`, `node scripts/audit.mjs`. Anteprime: `npm run preview:shareable`; server statico5174 e `node scripts/verify-brand.mjs`. Non dipendere dai processi o file temporanei della sessione precedente.
 
-## Pubblicazione e limiti
+## Lavoro aperto
 
-[Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Guida e asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/). Stesso sito e pubblico precedenti; project ID in `.openai/hosting.json`. Versione realmente online in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md); push GitHub e deploy sono distinti.
+Raccogliere feedback sul risultato integrato. Non avviare backend, servizi o nuove funzioni senza una richiesta. Restano aperti naming, modello commerciale, perimetro operativo, prezzi, budget e integrazioni. Nessuna ipotesi dello studio è diventata una promessa del prototipo.
 
-Online: Sites **v3**, deploy riuscito il 6 ottobre 2026 alle 11:21:23 UTC dal commit `d0bcbaecf4a208225fb0788070fc90e90fbf4551`. Il commit di chiusura successivo aggiorna solo documentazione, senza nuovo deploy.
-
-Nessun backend o servizio reale. Test solo Chromium emulato: iPhone/Android fisici, Safari/WebKit, VoiceOver/TalkBack, prove con utenti e stampa della tessera ancora da verificare. Restano aperti modello commerciale, perimetro operativo, prezzi, budget e integrazioni.
+Test Chromium emulati: iPhone/Android fisici, Safari/WebKit, VoiceOver/TalkBack, prove con utenti e stampa della tessera ancora da verificare.

@@ -1,29 +1,33 @@
 # EECard — guida al design
 
-Aggiornato il 6 ottobre 2026. Identità 0.2 implementata e condivisibile; l’utente richiede ora un salto di qualità visiva. Il simbolo è scelto, l’esecuzione dell’interfaccia resta da evolvere.
+Aggiornato il 6 ottobre 2026. Direzione 0.3 scelta esplicitamente dopo il confronto ad alta fedeltà: tessera e materiali di **Materia e luce**, struttura delle pagine di **Editoriale e architettura**, contenuti a tutta larghezza senza contenitori a scheda ripetuti. La direzione è integrata nel frontend; verifiche e versione effettivamente online sono registrate nei rapporti dedicati.
 
 ## Identità attuale
 
 L’utente ha scelto **C — Legame**: due elementi aperti intrecciati, simbolo autonomo dall’agenzia ƎE/Enrico Erca. Il nome del prodotto rimane da confermare; “Legame” identifica il concept, non un naming approvato. Il frontend usa il solo simbolo, mentre EECard resta una dicitura provvisoria nel footer e nei metadati.
 
-Bruno, albicocca e avorio caldo; terracotta accessibile per le azioni; Manrope Variable locale, come famiglia geometrica coerente con il suggerimento Neo Geometric o simili. La tessera scura riprende il simbolo in un motivo ampio e statico; niente PAN, circuito o estetica bancaria. Stati successo, errore e verifica restano semanticamente distinti. La precedente proposta bosco/lime e il monogramma EE sono superati.
+Bruno, albicocca e avorio caldo; azioni primarie brune, link e focus terracotta; Manrope Variable locale, come famiglia geometrica coerente con il suggerimento Neo Geometric o simili. La tessera scura usa grana fine, luce radente, bordo e ombra di contatto, con il simbolo pieno riconoscibile e un motivo decorativo statico. Stati successo, errore e verifica restano semanticamente distinti. La precedente proposta bosco/lime e il monogramma EE sono superati.
 
 [Asset e guida d’uso del simbolo](docs/design/MARCHIO.md) · [Guida web](https://eecard-design-preview.uepacio.chatgpt.site/marchio/) · [Archivio delle proposte](docs/design/LOGO_DIREZIONI.md).
 
-Desktop e smartphone hanno gerarchie dedicate: sidebar e informazioni affiancate sul desktop, prossima azione e navigazione inferiore sul telefono. I pannelli diventano superfici inferiori scrollabili; input, safe area e tastiera vanno verificati su hardware reale.
+La tessera è il primo contenuto dominante della home di proprietario e inquilino, prima del saluto e dei riepiloghi, con stato e accesso alla gestione. Desktop: oggetto a sinistra, contesto e prossima azione affiancati; smartphone: tessera intera, gestione e poi contenuti in colonna. L’agenzia apre la coda operativa e non riceve una tessera personale; il tecnico mantiene i soli incarichi. I dialoghi diventano superfici inferiori scrollabili; input, safe area e tastiera restano da verificare su hardware reale.
+
+Documenti, affitti, richieste, immobili e impostazioni occupano la colonna utile della pagina. Fotografie, numeri, titoli e separatori costruiscono la gerarchia, senza cornici ripetute intorno a ogni gruppo. Tessera, dialoghi, campi e facsimili mantengono una superficie quando serve a riconoscere un oggetto o un controllo.
 
 ## Fonti di verità
 
 | Argomento | Documento o sorgente |
 | --- | --- |
 | Token, componenti, tipografia e movimento | [DESIGN_SYSTEM.md](docs/design/DESIGN_SYSTEM.md), [tokens.css](src/tokens.css) |
-| Layout e stile applicato | [styles.css](src/styles.css) |
+| Layout e stile applicato | [styles.css](src/styles.css), [editorial.css](src/editorial.css), caricato per ultimo |
+| Sequenza visuale dell’affitto | [payment-progress.tsx](src/components/payment-progress.tsx), [payment-progress.css](src/components/payment-progress.css) |
 | Flussi, ruoli e stati | [PERCORSI.md](docs/design/PERCORSI.md) |
 | Conferme, proposte e ipotesi | [DECISIONI.md](docs/design/DECISIONI.md) |
 | Riferimenti, skill e licenze | [FONTI.md](docs/design/FONTI.md) |
 | Risultati e limiti delle verifiche | [VERIFICHE.md](docs/design/VERIFICHE.md) |
 | Anteprime condivisibili | [ANTEPRIME_WEB.md](docs/design/ANTEPRIME_WEB.md) |
-| Galleria di 22 schermate | [screenshots](docs/design/screenshots) |
+| Schermate del frontend | [screenshots](docs/design/screenshots) |
+| Confronto originale delle tre direzioni | [Laboratorio](docs/design/esplorazioni/README.md), separato dal prodotto |
 
 Il catalogo interattivo è disponibile nella rotta `#/design-system` del prototipo. Per modificare uno stato o componente, partire dal codice esistente e dai token senza creare un secondo sistema parallelo.
 
@@ -31,7 +35,7 @@ Il catalogo interattivo è disponibile nella rotta `#/design-system` del prototi
 
 - Preservare nomi e importi leggibili, gerarchie chiare, focus visibile e azioni raggiungibili senza hover o gesti obbligatori.
 - Per form e percorsi nuovi considerare vuoto, caricamento, errore con recupero, conferma e permessi pertinenti; non aggiungere funzionalità fuori richiesta.
-- Conservare movimento ridotto, navigazione immediata e animazioni brevi solo dove aiutano a comprendere l’azione. Dialoghi a 220 ms, nessuna trasformazione con reduced motion, tastiera senza animazione.
+- Conservare movimento ridotto, navigazione immediata e animazioni brevi solo dove aiutano a comprendere l’azione. Indicatore di fase affitto a 160 ms, dialoghi a 220 ms; nessuna trasformazione con reduced motion, tastiera senza animazione.
 - Verificare desktop e smartphone, contenuti lunghi, testo al 200%, tastiera e dialoghi prima di aggiornare screenshot e anteprime.
 - Distinguere verifiche automatiche, emulazione e prove fisiche. Zero violazioni axe non equivale a certificazione di accessibilità.
 
@@ -43,10 +47,10 @@ Animate UI e Rare UI sono adattati nei componenti esistenti, con attribuzioni e 
 
 Feedback sull’identità e sulla comprensione dei flussi; iPhone/Safari e Android/Chrome fisici; VoiceOver/TalkBack; tastiera, zoom, rotazione e continuità del movimento sul dispositivo. Dark mode e RTL non sono varianti attualmente implementate. Il backlog non assegna automaticamente queste estensioni al primo rilascio.
 
-## Prossima evoluzione richiesta — esempi prima dell’integrazione
+## Scelta applicata e confini
 
-L’utente giudica la UI troppo grezza, semplice e statica. Richiede più qualità grafica, carattere, dinamismo e soluzioni visive per funzionalità e processi. La tessera deve diventare il primo contenuto dominante all’ingresso nella home; oggi su mobile segue il riepilogo. Questa priorità sostituisce la precedente proposta che poneva la prossima azione prima della tessera.
+La richiesta di esempi prima dell’integrazione è stata soddisfatta dal laboratorio: tre proposte con gli stessi dati, home desktop/mobile, dettaglio tessera e affitto, stato critico e movimento ridotto. La successiva scelta combina Materia ed Editoriale e aggiunge il vincolo esplicito di evitare contenitori ripetuti. [Revisione iniziale](docs/design/REVISIONE_VISIVA.md) e [prompt del confronto](docs/progetto/PROMPT_DESIGN.md) restano riferimenti storici, non un nuovo blocco all’integrazione autorizzata.
 
-[Revisione e proposte](docs/design/REVISIONE_VISIVA.md): lavorare su materiali della card, composizione, gerarchia delle superfici, art direction e visualizzazione dei processi. Presentare 2–3 esempi concreti desktop/mobile con movimento e attendere la conferma dell’utente prima di modificare il prodotto. Nessun trattamento visivo proposto è già approvato. La maggiore espressività deve conservare accessibilità, lettura dei dati e rapidità; può concentrarsi sui momenti adatti senza imporre animazioni a ogni operazione.
+L’affitto presenta quattro passaggi leggibili, fase attuale e spiegazione accanto alle azioni esistenti. `PaymentProgress` rappresenta lo stato: i marcatori non sono comandi per avanzare. Documento caricato, dichiarazione, verifica con autore/fonte e quietanza restano distinti. L’importo e il residuo si aggiornano subito; il solo indicatore della nuova fase riceve un breve feedback. Dopo il cambio di stato nel pannello, il focus raggiunge il titolo della nuova fase.
 
-Il design system 0.2 documenta ciò che esiste, non il risultato del prossimo redesign. [Prompt di ripresa](docs/progetto/PROMPT_DESIGN.md).
+La scelta approva la direzione visiva e la sua integrazione; non conferma nome, prezzi, coperture, nuovi servizi o autorizzazioni di produzione. Il design system 0.3 descrive l’esecuzione corrente. La pubblicazione sullo stesso sito e la PR senza merge sono autorizzate; per esito e commit online consultare [ANTEPRIME_WEB.md](docs/design/ANTEPRIME_WEB.md).

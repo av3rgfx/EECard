@@ -428,3 +428,41 @@ test("tessera: intestatario e identificativo restano dentro i margini", async ({
     expect(bounds.nameRight).toBeLessThanOrEqual(bounds.idLeft);
   }
 });
+
+test("home: tessera prima dei riepiloghi, personale solo per i ruoli previsti", async ({
+  page,
+}) => {
+  for (const width of [360, 390]) {
+    await page.setViewportSize({ width, height: width === 360 ? 780 : 844 });
+    for (const userRole of ["proprietario", "inquilino"]) {
+      await navigate(page, "home");
+      await role(page, userRole);
+      await page.evaluate(() => document.fonts.ready);
+      const card = await page.locator(".digital-card").boundingBox();
+      const heading = await page
+        .getByRole("heading", { level: 1 })
+        .boundingBox();
+      const manage = await page
+        .getByRole("button", { name: "Gestisci tessera" })
+        .boundingBox();
+      const nav = await page.locator(".bottom-nav").boundingBox();
+      expect(card!.y + card!.height).toBeLessThan(heading!.y);
+      expect(manage!.y + manage!.height).toBeLessThan(nav!.y);
+    }
+  }
+  await role(page, "agenzia");
+  for (const route of ["home", "card"]) {
+    await navigate(page, route);
+    await expect(page.locator(".digital-card")).toHaveCount(0);
+    await expect(page.locator('nav a[href="#/card"]')).toHaveCount(0);
+    await expect(
+      page.getByText("Alessandro Rossi", { exact: true }),
+    ).toHaveCount(0);
+  }
+  await expect(
+    page.getByRole("button", { name: "Apri la coda operativa" }),
+  ).toBeVisible();
+  await role(page, "tecnico");
+  await navigate(page, "card");
+  await expect(page.locator(".digital-card")).toHaveCount(0);
+});

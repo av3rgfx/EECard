@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "checkedAtUtc": "2026-10-06T13:39:21.024Z",
+  "scope": "Integrazione Materia + pagine editoriali: progressione pagamento, movimento, tastiera, movimento ridotto e testo ingrandito.",
+  "provenance": {
+    "reviewer": "Codex motion_review agent",
+    "environment": "Chromium Playwright headless; emulazione viewport Linux",
+    "method": "Harness isolato per il componente; percorso effettivo su localhost:5173; script temporanei esterni alla repository. Questo report non attribuisce alla review suite eseguite da altri agenti.",
+    "filesCreated": [
+      "src/components/payment-progress.tsx",
+      "src/components/payment-progress.css",
+      "docs/design/verifiche-materia-movimento.json",
+      "docs/design/materia-processo.webm"
+    ]
+  },
+  "implementation": {
+    "api": "PaymentProgress({ payment: Payment, className?: string, label?: string })",
+    "helper": "paymentPhaseNarrative(status) -> { title, detail }",
+    "stateMapping": {
+      "pending": "Documento attuale",
+      "uploaded": "Documento completato; Dichiarazione attuale",
+      "declared": "Documento e Dichiarazione completati; Verifica attuale",
+      "verified": "Primi tre passaggi completati; Quietanza attuale",
+      "receipt": "Quattro passaggi completati"
+    },
+    "behavior": "Lista non interattiva; nessun salto di stato. Nessuna animazione iniziale; si anima solo il marcatore della fase appena cambiata. Macchina a stati, azioni, permessi e dati non modificati dal componente.",
+    "tokensSource": "src/tokens.css",
+    "inputFocus": "Gestito dal PaymentPanel sul titolo della fase, non dalla lista."
+  },
+  "beforeFindings": [
+    {
+      "id": "home-intrinsic-width",
+      "before": "Home demo/worst a 320 px e testo 200%: larghezza pagina 415 px. Overview e quick-actions conservavano dimensioni min-content.",
+      "rootFix": "Dashboard grid, min-width:0, griglia azioni minmax(0,1fr), wrapping dei testi."
+    },
+    {
+      "id": "rent-display-text",
+      "before": "Affitto 320 px testo 200%: importo e titolo della fase fuori dai 280 px disponibili; pagina 412 px demo / 516 px worst.",
+      "rootFix": "Wrapping di importi e titoli; min-width:0 nelle colonne."
+    },
+    {
+      "id": "section-headings",
+      "before": "Card 320 px testo 200%: badge nella section-title portava la pagina a 346 px; altri titoli home restavano affiancati.",
+      "rootFix": "Section-title con flex-wrap; etichette e titolare con wrapping."
+    },
+    {
+      "id": "teaser-heading-text200",
+      "before": "Home demo/worst: titolo del teaser scrollWidth290/clientWidth280 a testo200%, genitore con overflow hidden.",
+      "rootFix": "overflow-wrap:anywhere sul titolo.",
+      "recheck": "Entrambi i titoli ora scrollWidth280/clientWidth280. Solo arte decorativa intenzionalmente ritagliata."
+    }
+  ],
+  "checks": {
+    "component": {
+      "mountAnimations": 0,
+      "states": [
+        {
+          "status": "pending",
+          "steps": [
+            {
+              "state": "current",
+              "current": "step",
+              "text": "01\nDocumento\nFase attuale"
+            },
+            {
+              "state": "upcoming",
+              "current": null,
+              "text": "02\nDichiarazione\nSuccessivo"
+            },
+            {
+              "state": "upcoming",
+              "current": null,
+              "text": "03\nVerifica\nSuccessivo"
+            },
+            {
+              "state": "upcoming",
+              "current": null,
+              "text": "04\nQuietanza\nSuccessivo"
+            }
+          ],
+          "animations": []
+        },
+        {
+          "status": "uploaded",
+          "steps": [
+            {
+              "state": "done",
+              "current": null,
+              "text": "Documento\nCompletato"
+            },
+            {
+              "state": "current",
+              "current": "step",
+              "text": "02\nDichiarazione\nFase attuale"
+            },
+            {
+              "state": "upcoming",
+              "current": null,
+              "text": "03\nVerifica\nSuccessivo"
+            },
+            {
+              "state": "upcoming",
+              "current": null,
+              "text": "04\nQuietanza\nSuccessivo"
+            }
+          ],
+          "animations": [
+            {
+              "target": "payment-progress-marker",
+              "duration": 160,
+              "frames": [
+                {
+                  "offset": null,
+                  "easing": "linear",
+                  "composite": "auto",
+                  "opacity": "0.55",
+                  "transform": "scale(0.96)",
+                  "computedOffset": 0
+                },
+                {
+                  "offset": null,
+                  "easing": "linear",
+                  "composite": "auto",
+                  "opacity": "1",
+                  "transform": "scale(1)",
+                  "computedOffset": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "status": "declared",
+          "steps": [
+            {
+              "state": "done",
+              "current": null,
+              "text": "Documento\nCompletato"
+            },
+            {
+              "state": "done",
+              "current": null,
+              "text": "Dichiarazione\nCompletato"
+            },
+            {
+              "state": "current",
+              "current": "step",
+              "text": "03\nVerifica\nFase attuale"
+            },
+            {
+              "state": "upcoming",
+              "current": null,
+              "text": "04\nQuietanza\nSuccessivo"
+            }
+          ],
+          "animations": [
+            {
+              "target": "payment-progress-marker",
+              "duration": 160,
+              "frames": [
+                {
+                  "offset": null,
+                  "easing": "linear",
+                  "composite": "auto",
+                  "opacity": "0.55",
+                  "transform": "scale(0.96)",
+                  "computedOffset": 0
+                },
+                {
+                  "offset": null,
+                  "easing": "linear",
+                  "composite": "auto",
+                  "opacity": "1",
+                  "transform": "scale(1)",
+                  "computedOffset": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "status": "verified",
+          "steps": [
+            {
+              "state": "done",
+              "current": null,
+              "text": "Documento\nCompletato"
+            },
+            {
+              "state": "done",
+              "current": null,
+              "text": "Dichiarazione\nCompletato"
+            },
+            {
+              "state": "done",
+              "current": null,
+              "text": "Verifica\nCompletato"
+            },
+            {
+              "state": "current",
+              "current": "step",
+              "text": "04\nQuietanza\nFase attuale"
+            }
+          ],
+          "animations": [
+            {
+              "target": "payment-progress-marker",
+              "duration": 160,
+              "frames": [
+                {
+                  "offset": null,
+                  "easing": "linear",
+                  "composite": "auto",
+                  "opacity": "0.55",
+                  "transform": "scale(0.96)",
+                  "computedOffset": 0
+                },
+                {
+                  "offset": null,
+                  "easing": "linear",
+                  "composite": "auto",
+                  "opacity": "1",
+                  "transform": "scale(1)",
+                  "computedOffset": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "status": "receipt",
+          "steps": [
+            {
+              "state": "done",
+              "current": null,
+              "text": "Documento\nCompletato"
+            },
+            {
+              "state": "done",
+              "current": null,
+              "text": "Dichiarazione\nCompletato"
+            },
+            {
+              "state": "done",
+              "current": null,
+              "text": "Verifica\nCompletato"
+            },
+            {
+              "state": "done",
+              "current": null,
+              "text": "Quietanza\nCompletato"
+            }
+          ],
+          "animations": [
+            {
+              "target": "payment-progress-marker",
+              "duration": 160,
+              "frames": [
+                {
+                  "offset": null,
+                  "easing": "linear",
+                  "composite": "auto",
+                  "opacity": "0.735612",
+                  "transform": "matrix(0.976499, 0, 0, 0.976499, 0, 0)",
+                  "computedOffset": 0
+                },
+                {
+                  "offset": null,
+                  "easing": "linear",
+                  "composite": "auto",
+                  "opacity": "1",
+                  "transform": "scale(1)",
+                  "computedOffset": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "keyboardAnimations": 0,
+      "reducedAnimations": [
+        {
+          "duration": 120,
+          "frames": [
+            {
+              "offset": null,
+              "easing": "linear",
+              "composite": "auto",
+              "opacity": "0.65",
+              "computedOffset": 0
+            },
+            {
+              "offset": null,
+              "easing": "linear",
+              "composite": "auto",
+              "opacity": "1",
+              "computedOffset": 1
+            }
+          ]
+        }
+      ],
+      "text200": {
+        "overflow": false,
+        "width": 280
+      },
+      "axe": [],
+      "errors": []
+    },
+    "productMotionAndFlow": [
+      {
+        "name": "rent mount",
+        "animations": []
+      },
+      {
+        "name": "upload pointer",
+        "animations": [
+          {
+            "duration": 160,
+            "frames": [
+              {
+                "offset": null,
+                "easing": "linear",
+                "composite": "auto",
+                "opacity": "0.55",
+                "transform": "scale(0.96)",
+                "computedOffset": 0
+              },
+              {
+                "offset": null,
+                "easing": "linear",
+                "composite": "auto",
+                "opacity": "1",
+                "transform": "scale(1)",
+                "computedOffset": 1
+              }
+            ]
+          },
+          {
+            "duration": 160,
+            "frames": [
+              {
+                "offset": null,
+                "easing": "linear",
+                "composite": "auto",
+                "opacity": "0.55",
+                "transform": "scale(0.96)",
+                "computedOffset": 0
+              },
+              {
+                "offset": null,
+                "easing": "linear",
+                "composite": "auto",
+                "opacity": "1",
+                "transform": "scale(1)",
+                "computedOffset": 1
+              }
+            ]
+          }
+        ],
+        "focus": {
+          "tag": "H3",
+          "text": "Il documento è presente."
+        }
+      },
+      {
+        "name": "declare keyboard",
+        "animations": [],
+        "focus": {
+          "tag": "H3",
+          "text": "Dichiarato, da verificare."
+        }
+      },
+      {
+        "name": "verify reduced",
+        "animations": [
+          {
+            "duration": 120,
+            "frames": [
+              {
+                "offset": null,
+                "easing": "linear",
+                "composite": "auto",
+                "opacity": "0.65",
+                "computedOffset": 0
+              },
+              {
+                "offset": null,
+                "easing": "linear",
+                "composite": "auto",
+                "opacity": "1",
+                "computedOffset": 1
+              }
+            ]
+          },
+          {
+            "duration": 120,
+            "frames": [
+              {
+                "offset": null,
+                "easing": "linear",
+                "composite": "auto",
+                "opacity": "0.65",
+                "computedOffset": 0
+              },
+              {
+                "offset": null,
+                "easing": "linear",
+                "composite": "auto",
+                "opacity": "1",
+                "computedOffset": 1
+              }
+            ]
+          }
+        ],
+        "residual": "Incasso parziale: residuo 550,00 €. La rata non è saldata.",
+        "progress": "Documento\nCompletato\nDichiarazione\nCompletato\nVerifica\nCompletato\n04\nQuietanza\nFase attuale"
+      },
+      {
+        "name": "receipt",
+        "progress": "Documento\nCompletato\nDichiarazione\nCompletato\nVerifica\nCompletato\nQuietanza\nCompletato",
+        "residual": "Incasso parziale: residuo 550,00 €. La rata non è saldata."
+      },
+      {
+        "name": "rent axe320",
+        "violations": []
+      }
+    ],
+    "responsiveFinal": [
+      {
+        "route": "home",
+        "scenario": "demo",
+        "viewport": {
+          "width": 320,
+          "height": 780
+        },
+        "rootFontSizePercent": 200,
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflows": [
+          {
+            "tag": "DIV",
+            "className": "teaser-art",
+            "scrollWidth": 165,
+            "clientWidth": 140,
+            "text": ""
+          }
+        ],
+        "teaserHeading": {
+          "scrollWidth": 280,
+          "clientWidth": 280
+        },
+        "recheckedAtUtc": "2026-10-06T13:39:20.826Z",
+        "recheckReason": "Root added wrapping to teaser heading after prior geometry pass."
+      },
+      {
+        "route": "home",
+        "scenario": "worst",
+        "viewport": {
+          "width": 320,
+          "height": 780
+        },
+        "rootFontSizePercent": 200,
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflows": [
+          {
+            "tag": "DIV",
+            "className": "teaser-art",
+            "scrollWidth": 165,
+            "clientWidth": 140,
+            "text": ""
+          }
+        ],
+        "teaserHeading": {
+          "scrollWidth": 280,
+          "clientWidth": 280
+        },
+        "recheckedAtUtc": "2026-10-06T13:39:20.989Z",
+        "recheckReason": "Root added wrapping to teaser heading after prior geometry pass."
+      },
+      {
+        "route": "home",
+        "scenario": "revoked",
+        "viewport": {
+          "width": 320,
+          "height": 780
+        },
+        "rootFontSizePercent": 200,
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflows": []
+      },
+      {
+        "route": "affitto",
+        "scenario": "demo",
+        "viewport": {
+          "width": 320,
+          "height": 780
+        },
+        "rootFontSizePercent": 200,
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflows": []
+      },
+      {
+        "route": "affitto",
+        "scenario": "worst",
+        "viewport": {
+          "width": 320,
+          "height": 780
+        },
+        "rootFontSizePercent": 200,
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflows": []
+      },
+      {
+        "route": "affitto",
+        "scenario": "revoked",
+        "viewport": {
+          "width": 320,
+          "height": 780
+        },
+        "rootFontSizePercent": 200,
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflows": []
+      },
+      {
+        "route": "card",
+        "scenario": "demo",
+        "viewport": {
+          "width": 320,
+          "height": 780
+        },
+        "rootFontSizePercent": 200,
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflows": []
+      },
+      {
+        "route": "card",
+        "scenario": "worst",
+        "viewport": {
+          "width": 320,
+          "height": 780
+        },
+        "rootFontSizePercent": 200,
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflows": []
+      },
+      {
+        "route": "card",
+        "scenario": "revoked",
+        "viewport": {
+          "width": 320,
+          "height": 780
+        },
+        "rootFontSizePercent": 200,
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflows": []
+      }
+    ],
+    "responsiveCounts": {
+      "routes": 3,
+      "scenariosPerRoute": 3,
+      "totalCases": 9,
+      "viewport": {
+        "width": 320,
+        "height": 780
+      },
+      "rootFontSizePercent": 200,
+      "pageOverflowCases": 0
+    },
+    "targetedTypecheck": {
+      "command": "npx tsc --noEmit --jsx react-jsx --lib ES2022,DOM --skipLibCheck --moduleResolution bundler --module ESNext --target ES2022 src/components/payment-progress.tsx",
+      "result": "passed"
+    },
+    "format": {
+      "command": "npx prettier --write src/components/payment-progress.tsx src/components/payment-progress.css",
+      "result": "passed; files unchanged"
+    },
+    "runtimeErrors": []
+  },
+  "video": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "roles": [
+      "inquilino",
+      "proprietario"
+    ],
+    "tenantCannotVerify": true,
+    "payment": {
+      "status": "receipt",
+      "file": "bonifico-ottobre-demo.pdf",
+      "amount": 400,
+      "date": "2026-10-06",
+      "source": "Estratto conto demo, movimento DEMO-104",
+      "author": "Alessandro Rossi · beneficiario demo"
+    },
+    "residual": 550,
+    "finalRole": "proprietario",
+    "realOperations": false,
+    "sourceReference": "Existing tests/prototype.spec.ts uses DEMO-104; existing attached demo PDF; user-approved demonstration amount 400 EUR.",
+    "path": "docs/design/materia-processo.webm",
+    "durationSeconds": 21.36,
+    "bytes": 1649044,
+    "codec": "VP8",
+    "inspection": "Metadati verificati con ffprobe; fotogramma intermedio e finale ispezionati. Non sono state aggiunte animazioni per la registrazione."
+  },
+  "remainingFindings": [],
+  "limits": [
+    "Chromium emulato, nessuna prova su iPhone/Android fisici.",
+    "Safari/WebKit e VoiceOver/TalkBack non eseguiti in questa review.",
+    "Testo 200% ottenuto con font-size root; non equivale a zoom browser al 200%.",
+    "La scansione axe del componente e quella della pagina Affitto non certificano l’intero prodotto.",
+    "La review non aggiunge prove utente né verifiche su servizi reali."
+  ],
+  "sourceSha256": {
+    "src/components/payment-progress.tsx": "0ea7e619565f6806c9de635f08b90304e3f1946ea2b92b8e609617ef0399b0cf",
+    "src/components/payment-progress.css": "b33088bb1c6657e9204f49a6a099b8ea68be6749191545532ae116979c0efafe",
+    "src/pages.tsx": "80f799ede8b6fb659aede69a3433ceda223bd02b4a9f7aefaa5ef67af8de0204",
+    "src/panels.tsx": "b3992a0c99ffe7e3c754850a69921a30227acc8dd946b50339216713df9d5337",
+    "src/editorial.css": "22f494d496f4ffcd86675655732378751b5b74fab4636865bc2ea04e3f90160a",
+    "src/tokens.css": "4bf48d948e5b1788b3ae77725232b2981d09ca3a0642905fa2f8399815f85966"
+  },
+  "verdict": "Approve. Nessuna regressione bloccante osservata nel movimento, nella progressione del pagamento o nei nove casi responsive verificati."
+}

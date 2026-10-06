@@ -1,4 +1,6 @@
-# Prompt per la prossima sessione di design
+# Prompt di design — brief storico eseguito
+
+**Esito successivo:** confronto consegnato e scelta esplicita ricevuta: Materia con pagine aperte come Editoriale. La fase di approvazione qui sotto è soddisfatta, non va riaperta. Per riprendere usare [PROSSIMA_SESSIONE.md](PROSSIMA_SESSIONE.md) e il feedback corrente; mantenere le skill e i vincoli del brief.
 
 Aggiornato il 6 ottobre 2026 dopo la scelta C Legame e la revisione visiva. Sostituisce il brief iniziale di costruzione del prototipo: il prodotto esiste e va evoluto. Copiare il blocco seguente.
 

@@ -1,4 +1,8 @@
 import { asset } from "./assets";
+import {
+  PaymentProgress,
+  paymentPhaseNarrative,
+} from "./components/payment-progress";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
@@ -81,11 +85,7 @@ export function DigitalCard({ compact = false }: { compact?: boolean }) {
         <BrandSymbol />
       </div>
       <div className="card-copy">
-        <span>
-          La casa,
-          <br />
-          connessa.
-        </span>
+        <span>Il tuo spazio casa.</span>
       </div>
       <div className="card-bottom">
         <div>
@@ -165,26 +165,69 @@ export function HomePage() {
   const first = pending[0];
   return (
     <>
-      <PageHeading
-        eyebrow="BENVENUTO NEL TUO SPAZIO"
-        title={
-          tenant
-            ? "Bentornata, Sofia."
-            : scenario === "worst"
-              ? "Bentornata, Aleksandra."
-              : "Bentornato, Alessandro."
-        }
-        description={
-          tenant
-            ? "La tua casa, tutto a portata di mano."
-            : "Prenditi cura di casa. Al resto, diamo un posto."
-        }
-      />
       <div className="dashboard-top">
+        <section className="card-widget">
+          <div className="section-title">
+            <h2>La tua tessera</h2>
+            <Badge tone={state.blocked ? "danger" : "success"}>
+              {state.blocked ? "Bloccata" : "Attiva · demo"}
+            </Badge>
+          </div>
+          <DigitalCard compact />
+          <button className="card-manage" onClick={() => go("card")}>
+            <span>Gestisci tessera</span>
+            <ArrowUpRight size={18} />
+          </button>
+        </section>
         <section className="overview-panel">
+          <PageHeading
+            eyebrow="BENVENUTO NEL TUO SPAZIO"
+            title={
+              tenant
+                ? "Bentornata, Sofia."
+                : scenario === "worst"
+                  ? "Bentornata, Aleksandra."
+                  : "Bentornato, Alessandro."
+            }
+            description={
+              tenant
+                ? "La tua casa, tutto a portata di mano."
+                : "Prenditi cura di casa. Al resto, diamo un posto."
+            }
+          />
+
           <div className="section-title">
             <h2>Uno sguardo a oggi</h2>
             <span className="subtle">Ottobre 2026</span>
+          </div>
+          <div className="priority-card">
+            <span className="priority-icon">
+              <CalendarDays size={24} strokeWidth={1.5} />
+            </span>
+            <div>
+              <span className="eyebrow">LA PROSSIMA COSA DA FARE</span>
+              <h3>
+                {first
+                  ? tenant
+                    ? "Il tuo affitto di ottobre"
+                    : "Un affitto da aggiornare"
+                  : "Tutto al suo posto"}
+              </h3>
+              <p>
+                {first
+                  ? `${first.name} · Scadenza 10 ottobre`
+                  : "Nessuna scadenza da verificare negli immobili selezionati."}
+              </p>
+            </div>
+            {first && (
+              <div className="priority-amount">
+                <strong>{money(first.rent)}</strong>
+                <button className="text-button" onClick={() => go("affitto")}>
+                  {tenant ? "Aggiungi prova" : "Vedi scadenza"}
+                  <ArrowRight size={16} />
+                </button>
+              </div>
+            )}
           </div>
           <div className="summary-stats">
             <div>
@@ -221,35 +264,6 @@ export function HomePage() {
               </small>
             </div>
           </div>
-          <div className="priority-card">
-            <span className="priority-icon">
-              <CalendarDays size={24} strokeWidth={1.5} />
-            </span>
-            <div>
-              <span className="eyebrow">LA PROSSIMA COSA DA FARE</span>
-              <h3>
-                {first
-                  ? tenant
-                    ? "Il tuo affitto di ottobre"
-                    : "Un affitto da aggiornare"
-                  : "Tutto al suo posto"}
-              </h3>
-              <p>
-                {first
-                  ? `${first.name} · Scadenza 10 ottobre`
-                  : "Nessuna scadenza da verificare negli immobili selezionati."}
-              </p>
-            </div>
-            {first && (
-              <div className="priority-amount">
-                <strong>{money(first.rent)}</strong>
-                <button className="text-button" onClick={() => go("affitto")}>
-                  {tenant ? "Aggiungi prova" : "Vedi scadenza"}
-                  <ArrowRight size={16} />
-                </button>
-              </div>
-            )}
-          </div>
           <div className="quick-actions">
             <button onClick={() => go("documenti")}>
               <FilesIcon />
@@ -265,19 +279,6 @@ export function HomePage() {
               <Plus size={17} />
             </button>
           </div>
-        </section>
-        <section className="card-widget">
-          <div className="section-title">
-            <h2>La tua tessera</h2>
-            <Badge tone={state.blocked ? "danger" : "success"}>
-              {state.blocked ? "Bloccata" : "Attiva · demo"}
-            </Badge>
-          </div>
-          <DigitalCard compact />
-          <button className="card-manage" onClick={() => go("card")}>
-            <span>Uno spazio, tutti i tuoi servizi</span>
-            <ArrowUpRight size={18} />
-          </button>
         </section>
       </div>
       <section className="properties-section">
@@ -561,88 +562,62 @@ export function RentPage() {
           const done = ["verified", "receipt"].includes(payment.status);
           return (
             <section className="rent-card" key={p.id}>
-              <div className="section-title">
-                <span className="eyebrow">OTTOBRE 2026</span>
-                <Badge tone={done ? "success" : "warning"}>
-                  {done &&
+              <div className="rent-ledger">
+                <div className="section-title">
+                  <span className="eyebrow">OTTOBRE 2026</span>
+                  <Badge tone={done ? "success" : "warning"}>
+                    {done &&
+                    payment.amount !== undefined &&
+                    payment.amount < p.rent
+                      ? "Incasso parziale verificato"
+                      : paymentLabel[payment.status]}
+                  </Badge>
+                </div>
+                <h2>{p.name}</h2>
+                <p>{p.address}</p>
+                <div className="rent-amount">{money(p.rent)}</div>
+                <div className="rent-meta">
+                  <span>Canone dimostrativo</span>
+                  <strong>10 ottobre 2026</strong>
+                </div>
+              </div>
+              <div className="rent-process">
+                <PaymentProgress payment={payment} />
+                <div className="rent-phase">
+                  <h3>{paymentPhaseNarrative(payment.status).title}.</h3>
+                  <p>{paymentPhaseNarrative(payment.status).detail}</p>
+                </div>
+                {done &&
                   payment.amount !== undefined &&
-                  payment.amount < p.rent
-                    ? "Incasso parziale verificato"
-                    : paymentLabel[payment.status]}
-                </Badge>
-              </div>
-              <h2>{p.name}</h2>
-              <p>{p.address}</p>
-              <div className="rent-amount">{money(p.rent)}</div>
-              <div className="rent-meta">
-                <span>Canone dimostrativo</span>
-                <strong>10 ottobre 2026</strong>
-              </div>
-              <div className="evidence-steps">
-                {["Prova", "Dichiarazione", "Verifica", "Quietanza"].map(
-                  (s, i) => (
-                    <span
-                      key={s}
-                      className={
-                        [
-                          "pending",
-                          "uploaded",
-                          "declared",
-                          "verified",
-                          "receipt",
-                        ].indexOf(payment.status) > i
-                          ? "complete"
-                          : ""
-                      }
-                    >
-                      <i>
-                        {[
-                          "pending",
-                          "uploaded",
-                          "declared",
-                          "verified",
-                          "receipt",
-                        ].indexOf(payment.status) > i ? (
-                          <Check size={12} />
-                        ) : (
-                          i + 1
-                        )}
-                      </i>
-                      {s}
-                    </span>
-                  ),
+                  payment.amount < p.rent && (
+                    <Notice>
+                      Residuo da ricevere: {money(p.rent - payment.amount)}. La
+                      rata non è saldata.
+                    </Notice>
+                  )}
+                {payment.source && (
+                  <p className="verification-note">
+                    Fonte: {payment.source}
+                    <br />
+                    Verificato da {payment.author}
+                  </p>
                 )}
+                <Button
+                  variant={done ? "secondary" : "primary"}
+                  onClick={() => open("payment", p.id)}
+                  disabled={scenario === "ended"}
+                >
+                  {payment.status === "pending"
+                    ? "Aggiungi prova di bonifico"
+                    : payment.status === "uploaded"
+                      ? "Completa dichiarazione"
+                      : payment.status === "declared" &&
+                          state.role !== "inquilino"
+                        ? "Verifica incasso"
+                        : "Vedi dettaglio"}
+                  <ArrowUpRight size={17} />
+                </Button>
               </div>
-              {done &&
-                payment.amount !== undefined &&
-                payment.amount < p.rent && (
-                  <Notice>
-                    Residuo da ricevere: {money(p.rent - payment.amount)}. La
-                    rata non è saldata.
-                  </Notice>
-                )}
-              {payment.source && (
-                <p className="verification-note">
-                  Fonte: {payment.source}
-                  <br />
-                  Verificato da {payment.author}
-                </p>
-              )}
-              <Button
-                variant={done ? "secondary" : "primary"}
-                onClick={() => open("payment", p.id)}
-                disabled={scenario === "ended"}
-              >
-                {payment.status === "pending"
-                  ? "Aggiungi prova di bonifico"
-                  : payment.status === "uploaded"
-                    ? "Completa dichiarazione"
-                    : payment.status === "declared" &&
-                        state.role !== "inquilino"
-                      ? "Verifica incasso"
-                      : "Vedi dettaglio"}
-                <ArrowUpRight size={17} />
-              </Button>
             </section>
           );
         })}
@@ -928,7 +903,16 @@ export function ConsultationPage() {
   );
 }
 export function CardPage() {
-  const { state, open, scenario } = useApp();
+  const { state, open, scenario, go } = useApp();
+  if (state.role === "agenzia")
+    return (
+      <Empty
+        title="Il tuo spazio è operativo"
+        description="La tessera personale è riservata a proprietari e inquilini. Come agenzia, gestisci le attività dalla coda operativa."
+        action="Apri la coda operativa"
+        onClick={() => go("agenzia")}
+      />
+    );
   return (
     <>
       <PageHeading
@@ -1415,7 +1399,7 @@ export function DesignSystemPage() {
   return (
     <>
       <PageHeading
-        eyebrow="IDENTITÀ · DESIGN SYSTEM 0.2"
+        eyebrow="IDENTITÀ · DESIGN SYSTEM 0.3"
         title="Calma, per le cose importanti."
         description="Simbolo Legame scelto. Un’identità autonoma per i servizi della casa; nome del prodotto ancora da confermare."
       />
@@ -1445,7 +1429,7 @@ export function DesignSystemPage() {
           ["Bruno", "#48280f"],
           ["Terracotta", "#93471f"],
           ["Albicocca", "#ffa15e"],
-          ["Avorio", "#faf7f2"],
+          ["Avorio", "#f9f6f0"],
           ["Testo", "#38271d"],
         ].map(([name, color]) => (
           <div key={name}>
@@ -1460,7 +1444,7 @@ export function DesignSystemPage() {
         <h1 className="type-display">La casa, connessa.</h1>
         <h2>Gerarchie chiare, spazi per respirare.</h2>
         <p>
-          Corpo 14–16 px, titoli 24–40 px, scala fluida e cifre tabulari per
+          Corpo 14–16 px, titoli 24–60 px, scala fluida e cifre tabulari per
           importi. Il carattere è servito localmente.
         </p>
         <div className="button-row">
@@ -1483,17 +1467,17 @@ export function DesignSystemPage() {
         <section>
           <h2>Superfici</h2>
           <p>
-            Raggi 12 / 20 / 24 px. Bordi leggeri, ombre concentrate sulle
-            superfici sovrapposte. La tessera come superficie scura
-            protagonista. Albicocca solo con testo bruno; terracotta per azioni
-            con testo bianco.
+            Tessera materica su avorio. Contenuti aperti, fotografie a tutta
+            colonna e separatori editoriali. Volume riservato alla tessera e ai
+            dialoghi; azioni brune, link terracotta e simbolo albicocca.
           </p>
         </section>
         <section>
           <h2>Movimento</h2>
           <p>
-            Pressione 100 ms, pannelli 220 ms. Solo transform e opacity.
-            Tastiera istantanea, movimento ridotto senza traslazione.
+            Pressione 100 ms, fase affitto 160 ms, pannelli 220 ms. Solo
+            transform e opacity. Tastiera istantanea, movimento ridotto senza
+            traslazione.
           </p>
         </section>
         <section>

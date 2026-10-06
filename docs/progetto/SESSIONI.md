@@ -59,3 +59,22 @@ L’utente richiede una qualità grafica più elevata e dinamica, soluzioni UX v
 Esaminati screenshot esistenti e codice; misurata la home in Chromium a 390×844 e 1440×1000. La tessera mobile inizia a y 782 px: non è interamente visibile al primo accesso. Analisi e proposte in REVISIONE_VISIVA.md, skill Emil find-animation-opportunities letta e applicata in sola analisi. Aggiornati prompt, punto di ripresa, backlog, decisioni e documenti di orientamento, correggendo anche riferimenti obsoleti a PR #2 e monogramma.
 
 Nessuna modifica al frontend, agli asset o alle anteprime; nessuna nuova esecuzione della suite UI/axe. Controllati diff e collegamenti Markdown. Sites resta v3 dal commit d0bcbaecf4a208225fb0788070fc90e90fbf4551. Riutilizzata la PR #3 aperta per la medesima consegna, con commit documentale sul remoto; nessun merge. Prossimo passo: esempi ad alta fedeltà e scelta, non redesign automatico.
+
+## 6 ottobre 2026 — tre direzioni concrete prima dell’integrazione
+
+Verificata PR #3 integrata alle 11:44:41 UTC, clone aggiornato di main `ed3a473`, nuovo branch `design/visual-directions-lab`. Riletti documenti richiesti e recuperate skill Emil dallo snapshot ufficiale `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`. Misurata la home originale a 390: tessera y782,20–1022,20 px.
+
+Realizzato `design-lab/`, senza modifiche al frontend corrente: tre composizioni Materia e luce / Editoriale e architettura / Luce e profondità. Stessi dati e simbolo, home desktop/mobile, dettaglio tessera, blocco e sostituzione, nome lungo, processo affitto con quattro eventi, attori espliciti, fonte obbligatoria, errore/riprova, parziale/residuo e quietanza. Demo animata interruptible, controllo manuale e preferenza OS reduced motion. Raccomandata Materia e luce, scelta non ancora ricevuta.
+
+Typecheck/build del laboratorio, 27 combinazioni axe senza violazioni, controlli geometrici e interazioni, 18 screenshot e anteprima HTML autonoma offline. Corrette leggibilità, layout 320/testo200%, focus e retarget del movimento. [Consegna, skill e limiti](../design/esplorazioni/README.md). Chromium emulato, nessuna prova fisica. Suite del prodotto non ripetuta perché invariato.
+
+Attesa della scelta richiesta dall’utente: nessuna integrazione, pubblicazione Sites, push remoto o PR anticipati. Sites resta v3. Il lavoro è salvato nel checkout condiviso; la consegna interattiva è un HTML autonomo apribile nel browser.
+
+
+## 6 ottobre 2026 — scelta Materia e pagine aperte, integrazione
+
+L’utente sceglie l’opzione1 Materia, rifiutando l’eccesso di card contenitore e indicando la composizione di Editoriale nello screenshot del processo. Questo soddisfa il gate esplicito degli esempi e autorizza la fase successiva già richiesta. Branch corrente `design/visual-directions-lab`, dopo PR #3 integrata; nessun merge eseguito.
+
+Integrate home con tessera prima nel DOM, materiali bruni, gerarchia e immagini più ampie; sezioni e liste aperte in tutte le aree. Affitto con componente condivisa derivata dai cinque stati esistenti, fase e prossima azione, focus dopo sostituzione del form; movimento locale160ms, reduced120ms opacity, tastiera0. L’agenzia non vede più la tessera personale del proprietario via Home/Card; tecnico e altri permessi conservati. Nessuna modifica a fixture/persistenza, prezzi, servizi o licenze.
+
+Verifiche browser, screenshot, HTML e anteprime rigenerati; test e correzioni zoom in VERIFICHE.md, motion in verifiche-materia-movimento.json. Documentazione corrente aggiornata e confronto preliminare conservato come archivio. Pubblicazione sul medesimo Sites e salvataggio remoto/PR registrati nella chiusura sotto.

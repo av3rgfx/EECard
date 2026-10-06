@@ -4,7 +4,7 @@ Aggiornato il 6 ottobre 2026. Repository di riferimento: https://github.com/av3r
 
 ## Ripresa e avvio
 
-Leggere [AGENTS.md](AGENTS.md) e [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md). Verificare lo stato remoto della PR #3: se aperta, riprendere `design/visual-identity-evolution` e aggiornare quella PR; se integrata, aggiornare `main` e creare un branch dedicato al nuovo obiettivo. La PR #2 è già integrata. Controllare prima le modifiche locali e non sovrascriverle.
+Leggere [AGENTS.md](AGENTS.md) e [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md). PR #3 integrata. Il lavoro corrente è su `design/visual-directions-lab`, da main `ed3a473`. Verificare la PR del branch corrente: se aperta riutilizzarla; dopo merge partire da main aggiornato e nuovo branch. Controllare prima le modifiche locali e non sovrascriverle.
 
 Node.js 22.12+ o 24 LTS:
 
@@ -26,7 +26,8 @@ Server locale: `http://localhost:5173`. Non servono variabili segrete o servizi 
 | `src/context.tsx` | Contesto e contratti condivisi del frontend |
 | `src/components/ui.tsx` | Primitive e componenti adattati da Animate UI / Rare UI |
 | `src/components/brand.tsx` | Simbolo C Legame senza wordmark; geometria condivisa in `brand-geometry.json` |
-| `src/tokens.css`, `src/styles.css` | Token e layout responsive |
+| `src/tokens.css`, `src/styles.css`, `src/editorial.css` | Token, base responsive e composizione approvata0.3 |
+| `src/components/payment-progress.tsx` / `.css` | Indicatore derivato dagli stati Payment esistenti, quattro passaggi, movimento locale |
 | `src/assets.ts`, `public/` | Risoluzione asset, fotografie, favicon e PDF demo |
 | `tests/prototype.spec.ts` | Percorsi end-to-end e verifiche di accessibilità/layout |
 | `scripts/` | Anteprima autonoma, sito condivisibile, audit e screenshot |
@@ -95,3 +96,12 @@ Il salto al contenuto deve mettere a fuoco `main` senza alterare l’hash usato 
 `node scripts/build-brand-assets.mjs` genera 8 SVG, favicon SVG/PNG, guida e ZIP in `public/brand/`; richiede Chromium Playwright e Python 3 per impacchettare lo ZIP. I vettori non contengono font. `docs/design/MARCHIO.md` è la guida sorgente; `docs/design/marchio/` è la guida web, pubblicata in `/marchio/`. L’archivio `/identita/` resta consultabile come storico.
 
 `npm run preview:shareable` copia guida e asset sul sito; l’HTML portatile incorpora la favicon come data URL. Con server statico sulla porta 5174, `node scripts/verify-brand.mjs` verifica guida, download, quattro combinazioni desktop/mobile e funzionamento offline, aggiornando `verifiche-legame.json` e due screenshot guida. La geometria e gli asset distribuiti devono essere aggiornati insieme.
+
+
+## Direzione0.3 — Materia e composizione editoriale
+
+`HomePage` pone la tessera prima nel DOM per proprietario/inquilino. `App` esclude home personale e tessera dal menu agenzia; home mostra la coda e CardPage gestisce l’URL diretto. Il guard tecnico resta invariato. Nessuna migrazione del localStorage o modifica delle fixture.
+
+`editorial.css`, importato dopo la base, appiattisce selettori specifici: niente reset globale di section/div o dialoghi. Token colore restano in `tokens.css`. `PaymentProgress` legge Payment senza azioni di salto fase: marker160ms, reduced120ms opacity, tastiera0, cancellazione/retarget WAAPI. Il PaymentPanel porta il focus al titolo della nuova fase quando il form precedente viene sostituito.
+
+`design-lab/` e `docs/design/esplorazioni/` conservano gli esempi richiesti come archivio di progetto; non sono importati dal frontend né pubblicati nel sito operativo. I loro controlli di confronto non diventano permessi del prodotto. Script di rigenerazione dedicati `build-design-lab.mjs` e `capture-design-lab.mjs`.
