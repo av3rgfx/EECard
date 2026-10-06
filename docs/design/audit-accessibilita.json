@@ -1,0 +1,122 @@
+[
+  {
+    "width": 390,
+    "route": "home",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "immobili",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "documenti",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "affitto",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "utenze",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "assistenza",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "consulenze",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "card",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "profilo",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "accesso",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "design-system",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "agenzia",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "home",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "immobili",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "documenti",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "affitto",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "utenze",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "assistenza",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "consulenze",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "card",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "profilo",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "accesso",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "design-system",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "agenzia",
+    "violations": []
+  }
+]

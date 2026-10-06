@@ -2,6 +2,25 @@
 
 Aggiornato il 6 ottobre 2026.
 
+
+## Aggiornamento: prototipo di design realizzato
+
+Il lavoro richiesto da PROMPT_DESIGN.md è ora sul branch
+`design/eecard-premium-prototype`, creato da `main` dopo il merge della PR #1.
+Frontend navigabile, design system, anteprima HTML autonoma, screenshot e verifiche
+sono in repository. Partire dal [README](../../README.md) e da
+[docs/design/VERIFICHE.md](../design/VERIFICHE.md).
+
+Per proseguire: recuperare il branch di design se la relativa PR non è integrata;
+altrimenti aggiornare main. Raccogliere feedback sull’identità e sui percorsi,
+provare iPhone/Android fisici e risolvere le decisioni commerciali aperte nel
+[registro](../design/DECISIONI.md). Non scambiare le simulazioni con funzionalità
+operative: autenticazione, autorizzazioni server, file, pagamenti e servizi reali
+richiedono implementazione successiva.
+
+Le sezioni seguenti conservano il contesto storico del passaggio di documentazione
+PR #1. Le frasi “design non ancora realizzato” descrivono quello stato precedente.
+
 ## Richiesta dell'utente
 
 Nella prossima sessione iniziare il design della piattaforma per desktop e mobile.

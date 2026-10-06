@@ -1,0 +1,23 @@
+> eecard-design-prototype@0.1.0 test
+> playwright test --workers=4
+
+
+Running 15 tests using 4 workers
+
+  ✓   4 [chromium] › tests/prototype.spec.ts:6:1 › condivisione documento, permessi e revoca (2.9s)
+  ✓   2 [chromium] › tests/prototype.spec.ts:127:1 › blocco persistente e sostituzione senza riattivare la vecchia card (4.0s)
+  ✓   3 [chromium] › tests/prototype.spec.ts:32:1 › bonifico: caricamento, dichiarazione, verifica e quietanza separati (4.9s)
+  ✓   6 [chromium] › tests/prototype.spec.ts:164:1 › file non valido rifiutato, senza stato di successo (2.0s)
+  ✓   1 [chromium] › tests/prototype.spec.ts:74:1 › richiesta con errore recuperabile, assegnazione, tecnico e conclusione (6.7s)
+  ✓   5 [chromium] › tests/prototype.spec.ts:149:1 › invito scaduto, OTP errato e attivazione simulata (3.0s)
+  ✓   7 [chromium] › tests/prototype.spec.ts:181:3 › layout 360, schermate e accessibilità (11.9s)
+  ✓  11 [chromium] › tests/prototype.spec.ts:218:1 › focus confinato, Escape, ritorno al controllo e movimento ridotto (1.8s)
+  ✓   9 [chromium] › tests/prototype.spec.ts:181:3 › layout 1280, schermate e accessibilità (12.8s)
+  ✓  10 [chromium] › tests/prototype.spec.ts:181:3 › layout 1440, schermate e accessibilità (12.7s)
+  ✓   8 [chromium] › tests/prototype.spec.ts:181:3 › layout 390, schermate e accessibilità (13.7s)
+  ✓  13 [chromium] › tests/prototype.spec.ts:266:1 › revoca nasconde contenuti, fine contratto limita azioni e errore riprovabile (2.9s)
+  ✓  15 [chromium] › tests/prototype.spec.ts:328:1 › incasso parziale mantiene il residuo e non chiude la rata (3.0s)
+  ✓  12 [chromium] › tests/prototype.spec.ts:239:1 › stress 320px, liste 0/1/1284, dati lunghi e testo al 200% (4.3s)
+  ✓  14 [chromium] › tests/prototype.spec.ts:284:1 › mobile: documento, pannello scrollabile e controllo formale agenzia (6.8s)
+
+  15 passed (28.2s)
