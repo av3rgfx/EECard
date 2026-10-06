@@ -1,0 +1,13 @@
+﻿Campo;Domanda / istruzione;Risposta da compilare;Come verificarlo / note
+postazione;Su quale PC si userà?;;Computer di magazzino (già indicato).
+sistema_operativo;Quale sistema e versione ci sono sul PC?;;Da leggere sul PC. Lo studio mostra Windows, ma configurazione attuale da confermare.
+python;Si può installare Python?;;Sì (già indicato).
+accesso;Da quel PC apri ARS con il tuo accesso ordinario?;;"Indica sì/no e rete aziendale o altro accesso autorizzato; niente password."
+browser;Quale browser e versione usi?;;"Chrome nello studio; da verificare ora."
+ambiente_prova;Esiste un ambiente di prova separato dalla produzione?;;"Se ignoto: DA VERIFICARE; non assumere che esista."
+responsabile;Chi autorizza l’automazione e assiste il gestionale?;;Nome/ruolo o DA VERIFICARE. Non necessario per compilare il resto.
+permessi;Sono consentiti strumenti di automazione del browser?;;Da verificare con il referente.
+nativo;Esiste una funzione per importare ricezioni confermate da file/API?;;"Indica manuale o funzione, se nota; Importa documento osservato riguarda gli ordini interni."
+gestionale;Quale gestionale è collegato ad ARS e quale versione/moduli?;;Se non noto lascia DA VERIFICARE.
+manutenzione;Chi potrà assistere questa prima versione sul PC?;;Referente tecnico, se disponibile.
+uso_scheda;Ti è pratico compilare questa scheda e controllare un riepilogo locale?;;"Indica difficoltà concrete; per ora nessuna interfaccia nuova complessa."

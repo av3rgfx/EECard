@@ -1,0 +1,29 @@
+﻿Campo;Domanda / istruzione;Risposta da compilare;Come verificarlo / note
+line_id;Come distingui questa riga nella scheda?;;"Etichetta locale, es. L1; non è ID del gestionale. Duplica il foglio e usa L2, L3..."
+source;In quale pagina e posizione della bolla si trova?;;Nome documento/foto, pagina, posizione.
+description;Qual è la descrizione e quali dimensioni distinguono l’articolo?;;"Serve per il controllo umano; il programma non abbina per somiglianza."
+supplier_code;Qual è il codice articolo del fornitore?;;"Trascrivere esattamente. Se assente, segnalarlo; non usare codice doganale."
+internal_code;Qual è il codice interno verificato in ARS?;;"Da anagrafica/ordine; non creare prefissi o rimuovere punti a intuito."
+mapping_evidence;Dove è verificata la corrispondenza tra i due codici?;;Anagrafica o riga precisa. Se discordanti: blocco e ufficio.
+order_paper;Quali riferimenti ordine sono stampati sulla bolla?;;"Conservare anche quelli del fornitore; non confonderli con ordine interno."
+order_type;Qual è il tipo/causale dell’ordine interno?;;OF, OT o altro solo se letto nel gestionale.
+order_year;Qual è l’anno dell’ordine interno?;;Anno effettivo, non dedotto dalla data odierna.
+order_number;Qual è il numero dell’ordine interno corretto?;;Se più candidati, annotali e fermare la riga.
+row_ref;Quale riferimento stabile identifica la riga d’ordine?;;ID/numero riga realmente disponibile. Se non noto: DA VERIFICARE, non usare la posizione dello schermo.
+repeated;Il codice compare anche su altre righe/ordini?;;Indica quali e perché questa è la riga corretta.
+document.value;Qual è la quantità stampata sulla bolla per questa riga?;;Conservare anche se diversa dal fisico. Non ripartire una singola riga tra ordini senza verifica: caso da progettare.
+document.unit;Qual è l’unità stampata sulla bolla?;;Esattamente come scritta: Coppia, TO, KG, NR ecc.
+physical.value;Quanta merce hai controllato fisicamente e accettato?;;"Conteggio/peso confermato da te; zero ricevuto = non caricare e annotare."
+physical.unit;In quale unità hai confermato la quantità fisica?;;Non assumere che coincida con la bolla o col gestionale.
+physical_operator;Chi ha eseguito il controllo fisico e quando?;;Nome/ruolo e data/ora. Le spunte sulla foto da sole non sono conferma.
+difference_reason;Ci sono differenze, danni o quantità non accettate?;;"Quantità e motivo; la quantità da registrare deve seguire l’accettato."
+remaining;Qual è il residuo della precisa riga d’ordine, letto ora?;;Quantità prima di questo arrivo, non totale originario ordinato.
+unit;Qual è l’unità della riga nel gestionale?;;"Da lettura attuale; Coppia↔NR non equivale automaticamente a ×2 o ×1."
+version;Quale versione/timestamp o altro riferimento rende controllabile la lettura?;;"Indica ciò che esiste davvero; se manca lascia DA VERIFICARE, non inventarlo."
+captured_at;Quando e dove hai letto ordine, residuo e unità?;;"Data/ora, pagina/documento; includere eventuale paginazione."
+conversion_needed;Serve una conversione?;;SÌ/NO/DA VERIFICARE. Nella V1 solo TO→KG ×1000 esplicito.
+conversion;Quali sono unità iniziale/finale e fattore esatto?;;Es. TO → KG ×1000. Non basarsi su somiglianza o indicazioni AI.
+conversion_approval;Chi ha approvato la regola e dove è documentata?;;"Nome/ruolo e riferimento; equivalenze commerciali restano da verificare."
+record_expected;Quale quantità e unità ti aspetti di registrare?;;Valore di controllo umano. Il programma la calcola dal fisico e dalla conversione approvata.
+residual_expected;Quale residuo deve rimanere dopo questa ricezione?;;Considerare tutte le righe della scheda collegate alla stessa riga ordine.
+anomaly;Resta qualche dubbio che deve bloccare la riga?;;Codice discordante, riga assente, pagine mancanti, ordine ambiguo, unità non chiarita.

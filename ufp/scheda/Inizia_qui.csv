@@ -1,0 +1,11 @@
+﻿Campo;Domanda / istruzione;Risposta da compilare;Come verificarlo / note
+Scopo;Che cosa devo compilare?;"Questa scheda raccoglie dati e domande per la prima prova; non carica nulla nel gestionale.";
+Ordine;In quale ordine compilo?;Postazione, Testata, Riga 1 (duplicala per ogni riga), Riepilogo. Prova reale si completa più avanti.;
+Dati ignoti;Che cosa scrivo se non conosco una risposta?;"Scrivi DA VERIFICARE; non inventare codici, equivalenze o ID.";
+Nessun arrivo nuovo;Posso lasciare vuota la parte della merce?;"Sì. La scheda è predisposta per un nuovo arrivo; non reinserire i DDT storici dei video.";
+Fonti;Che cosa distingue bolla, controllo fisico e gestionale?;"La bolla dichiara la spedizione; tu confermi la merce ricevuta; il gestionale indica ordine, riga, residuo e unità da registrare.";
+Righe;Come gestisco articoli ripetuti?;"Una scheda distinta per ciascuna riga da abbinare. Conserva ordine e riga; non accorpare per codice.";
+Quantità;Come scrivo numeri, codici e date?;"Codici come testo, con zeri e suffissi; quantità decimali col punto senza migliaia; date YYYY-MM-DD. Le celle sono testo.";
+Conferma;Compilare equivale ad autorizzare il gestionale?;"No. Riepilogo e approvazione locale riguardano dati esatti; una prova reale richiede un caso definitivo e tua autorizzazione separata.";
+Uso informatico;Il programma importa direttamente questo Excel?;"No: è la scheda guidata da restituire/trascrivere nei modelli JSON. Import Excel non implementato; la V1 evita conversioni implicite.";
+Riservatezza;Devo scrivere password o chiavi?;No. Tieni il file nella cartella aziendale autorizzata. Non inserire credenziali.;

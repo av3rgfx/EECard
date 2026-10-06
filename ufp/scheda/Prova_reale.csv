@@ -1,0 +1,13 @@
+﻿Campo;Domanda / istruzione;Risposta da compilare;Come verificarlo / note
+case;Quale nuovo arrivo di poche righe useremo?;;Non scegliere una bolla storica già caricata. Completeremo il caso prima di chiedere autorizzazione.
+environment;In quale ambiente e con quale accesso autorizzato?;;"Prova separata se disponibile; non si presume esistente."
+expected;Quali operazioni esatte e quali risultati attendiamo?;;"DDT, righe, quantità/UM, residui, una sola lista sospesa; riportare piano e impronta."
+before;Quali ID/stati/documenti esistono prima?;;"DDT e liste pertinenti, ordini e residui; lettura completa e aggiornata."
+after_ddt;Quale ID DDT e quali righe/esiti risultano dopo il primo passaggio?;;Rilettura completa: non usare il clic o il ritorno alla home come prova.
+after_libero;Quale ID lista, stato e righe risultano dopo Sospendi?;;Un errore qui non autorizza a ricaricare il DDT.
+handheld_where;In quale schermata del palmare deve apparire la lista?;;Indicare dispositivo/app, percorso e operatore assegnatario.
+handheld_when;Quando compare e servono aggiornamento/assegnazione/altri passaggi?;;Descrivere il comportamento atteso, da verificare sul dispositivo.
+handheld_effect;La presenza sul palmare indica solo lavoro da fare o anche merce movimentata/disponibile?;;Chiarire il significato operativo e quando avviene il movimento definitivo.
+handheld_proof;Sul dispositivo sono stati confrontati ID lista, articoli, quantità e unità?;;"Solo dopo controllo effettivo: dispositivo, data/ora, verificatore ed esito; altrimenti NON VERIFICATO."
+failure;Chi interviene se il risultato è incerto o sbagliato?;;Referente autorizzato e procedura manuale. Nessun annullamento automatico presunto.
+authorization;Autorizzazione alla scrittura reale;;Da chiedere separatamente dopo consegna del caso concreto e dei controlli. Compilare questo file non la concede.

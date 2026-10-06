@@ -1,0 +1,24 @@
+name: UFP local tests
+on:
+  push:
+    paths: ['ufp/**', '.github/workflows/ufp-tests.yml']
+  pull_request:
+    paths: ['ufp/**', '.github/workflows/ufp-tests.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run offline logic and CLI tests
+        working-directory: ufp
+        env:
+          PYTHONUTF8: '1'
+        run: python -m unittest discover -s tests -v

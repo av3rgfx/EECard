@@ -1,0 +1,18 @@
+﻿Campo;Domanda / istruzione;Risposta da compilare;Come verificarlo / note
+company;Quale azienda/archivio di ARS stai usando?;;Identificativo effettivamente disponibile, non inventarlo.
+supplier_name;Qual è il nome completo del fornitore?;;Da bolla e confronto con anagrafica.
+supplier_id;Qual è il codice/ID del fornitore nel gestionale?;;Non confonderlo con codice cliente stampato sulla bolla.
+number;Qual è il numero COMPLETO della bolla?;;Includi /00, /BC, lettere e zeri.
+number_in_ars;ARS usa esattamente lo stesso numero?;;Se cambia, descrivi la regola e chi l’ha confermata. V1 non elimina suffissi.
+date;Qual è la data della bolla?;;"YYYY-MM-DD; non data di registrazione o trasporto se diversa."
+source;Quale file/foto o documento identifica la fonte?;;Nome foto/documento e pagine, senza collegamenti con credenziali.
+pages;Quante pagine ha e quante ne hai ricevute?;;"Es. 1 di 1; se manca una pagina, segnalarlo."
+complete;Hai tutte le pagine necessarie e tutte le righe da trattare?;;"SÌ solo dopo verifica; righe non arrivate possono essere escluse con nota esplicita."
+series;Qual è serie/tipo DDT usata nel gestionale?;;"DDTFO osservato nello studio; non assumerlo senza verifica."
+warehouse;Qual è il magazzino destinatario?;;"000 osservato nello studio; controlla il caso corrente."
+location;Qual è l’ubicazione validata dal gestionale?;;"CHECK osservata; testo digitato non basta se la ricerca non lo acquisisce."
+packages;Che cosa indica il campo colli e quale valore devi inserire?;;Descrivi valore e regola UFP, non copiare automaticamente dalla foto.
+carrier;Che cosa indica Vettore in ARS e quale valore devi inserire?;;"Chiarire LPA/trasportatore; nessuna sostituzione automatica."
+other_header;Quali altri campi obbligatori ci sono?;;"Date/ora trasporto, causali, porto ecc.; riportare regole e valori da verificare."
+existing_ddt;Il documento esiste già in ARS, anche sospeso?;;"Controllare fornitore, numero, data, serie, magazzino e tutte le righe; annotare ID/stato o ricerca fatta."
+existing_list;C’è già una lista Libero relativa al DDT?;;"Annotare ID/stato e come l’hai cercata; registro locale non basta."

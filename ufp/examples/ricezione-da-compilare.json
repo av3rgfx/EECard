@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "header": {
+    "company": "",
+    "supplier_id": "",
+    "supplier_name": "",
+    "number": "",
+    "date": "",
+    "series": "",
+    "warehouse": "",
+    "location": "",
+    "complete": false,
+    "source": "",
+    "packages": "",
+    "carrier": ""
+  },
+  "lines": [
+    {
+      "line_id": "",
+      "order_type": "",
+      "order_year": "",
+      "order_number": "",
+      "row_ref": "",
+      "supplier_code": "",
+      "internal_code": "",
+      "document": {
+        "value": "",
+        "unit": ""
+      },
+      "physical": {
+        "value": "",
+        "unit": ""
+      },
+      "source": ""
+    }
+  ]
+}

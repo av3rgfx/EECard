@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "header": {
+    "company": "SIM-COMPANY",
+    "supplier_id": "SIM-SUPPLIER",
+    "supplier_name": "Fornitore demo — ESEMPIO SIMULATO",
+    "number": "SIM-001",
+    "date": "2026-10-05",
+    "series": "DDTFO",
+    "warehouse": "000",
+    "location": "CHECK",
+    "complete": true,
+    "source": "Scenario didattico ispirato allo studio Fornitore demo; NON è il DDT storico",
+    "packages": "1",
+    "carrier": "SIMULATO"
+  },
+  "lines": [
+    {
+      "line_id": "L1",
+      "order_type": "OF",
+      "order_year": "2026",
+      "order_number": "SIM-ORDER-001",
+      "row_ref": "SIM-R1",
+      "supplier_code": "ART-DEMO-001",
+      "internal_code": "INT-DEMO-001",
+      "document": {
+        "value": "6",
+        "unit": "NR"
+      },
+      "physical": {
+        "value": "6",
+        "unit": "NR"
+      },
+      "source": "DATI SINTETICI: conteggio fisico e NR non osservati sulla foto"
+    }
+  ]
+}

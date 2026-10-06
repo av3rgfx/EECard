@@ -1,0 +1,16 @@
+UFP — RIEPILOGO LOCALE (nessuna scrittura ARS)
+Fornitore: Fornitore demo — ESEMPIO SIMULATO [SIM-SUPPLIER] — DDT SIM-001 del 2026-10-05
+Azienda SIM-COMPANY | serie DDTFO | magazzino 000 | ubicazione CHECK
+Colli: 1 | Vettore: SIMULATO
+Fonte: Scenario didattico ispirato allo studio Fornitore demo; NON è il DDT storico
+Documento completo: True
+Snapshot ordini: SIMULATO: ordini e ID inventati, non estratti da ARS | 2026-10-05T00:00:00+00:00
+Riga L1: OF/2026/SIM-ORDER-001 / riga SIM-R1
+  Fornitore ART-DEMO-001 -> interno INT-DEMO-001; residuo letto 10 NR
+  Bolla: 6 NR | Fisico: 6 NR | Da registrare: 6 NR
+  Fonte riga: DATI SINTETICI: conteggio fisico e NR non osservati sulla foto
+Esito: PRONTO PER CONFERMA LOCALE
+Impronta dati esatti: a5a81e0833f4f69d740b8cca025ab8b4a072745c6c406bc08abb387e3c783ec2
+Palmare: NON VERIFICATO
+
+Esempio pubblico anonimizzato; nessuna esecuzione ARS.

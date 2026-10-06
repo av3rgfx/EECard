@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "header": {
+    "company": "SIM-COMPANY",
+    "supplier_id": "SIM-SUPPLIER",
+    "supplier_name": "Fornitore metalli demo — ESEMPIO SIMULATO",
+    "number": "SIM-001",
+    "date": "2026-10-05",
+    "series": "DDTFO",
+    "warehouse": "000",
+    "location": "CHECK",
+    "complete": true,
+    "source": "Scenario su quantità 0.072 TO da FONTE-PRIVATA-B; ordini/codici/controllo fisico sono simulati",
+    "packages": "1",
+    "carrier": "SIMULATO"
+  },
+  "lines": [
+    {
+      "line_id": "L1",
+      "order_type": "OF",
+      "order_year": "2026",
+      "order_number": "SIM-ORDER-001",
+      "row_ref": "SIM-R1",
+      "supplier_code": "ART-DEMO-001",
+      "internal_code": "INT-DEMO-001",
+      "document": {
+        "value": "0.072",
+        "unit": "TO"
+      },
+      "physical": {
+        "value": "0.072",
+        "unit": "TO"
+      },
+      "source": "DATI SINTETICI: conteggio fisico e NR non osservati sulla foto",
+      "conversion": {
+        "from": "TO",
+        "to": "KG",
+        "factor": "1000",
+        "approved_by": "OPERATORE SIMULATO",
+        "evidence": "Regola didattica, da approvare per uso reale"
+      }
+    }
+  ]
+}

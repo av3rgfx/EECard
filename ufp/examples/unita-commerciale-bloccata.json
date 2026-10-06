@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "header": {
+    "company": "SIM-COMPANY",
+    "supplier_id": "SIM-SUPPLIER",
+    "supplier_name": "Fornitore demo — ESEMPIO SIMULATO",
+    "number": "DEMO-UNIT-001",
+    "date": "2026-10-02",
+    "series": "DDTFO",
+    "warehouse": "000",
+    "location": "CHECK",
+    "complete": true,
+    "source": "FONTE-PRIVATA-A.HEIC e studio V2; solo riferimento storico, NON ricaricare",
+    "packages": "1",
+    "carrier": "DA VERIFICARE"
+  },
+  "lines": [
+    {
+      "line_id": "L1",
+      "order_type": "OF",
+      "order_year": "2026",
+      "order_number": "SIM-ORDER-001",
+      "row_ref": "SIM-R1",
+      "supplier_code": "ART-DEMO-001",
+      "internal_code": "INT-DEMO-001",
+      "document": {
+        "value": "6",
+        "unit": "Coppia"
+      },
+      "physical": {
+        "value": "6",
+        "unit": "Coppia"
+      },
+      "source": "FONTE-PRIVATA-A: 6 Coppia; fisico qui ipotizzato SOLO per dimostrare il blocco UM; non è conferma umana"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+test_approval_required_and_wrong_token (test_ufp.LogicTests.test_approval_required_and_wrong_token) ... ok
+test_audit_preserves_attempt_and_verified (test_ufp.LogicTests.test_audit_preserves_attempt_and_verified) ... ok
+test_changed_orders_stop_before_write (test_ufp.LogicTests.test_changed_orders_stop_before_write) ... ok
+test_cli_end_to_end_and_replay (test_ufp.LogicTests.test_cli_end_to_end_and_replay) ... ok
+test_conversion_exact (test_ufp.LogicTests.test_conversion_exact) ... ok
+test_conversion_wrong_or_unapproved (test_ufp.LogicTests.test_conversion_wrong_or_unapproved) ... ok
+test_cumulative_overdelivery (test_ufp.LogicTests.test_cumulative_overdelivery) ... ok
+test_discordant_supplier_code (test_ufp.LogicTests.test_discordant_supplier_code) ... ok
+test_document_differs_physical (test_ufp.LogicTests.test_document_differs_physical) ... ok
+test_document_incomplete_and_missing_order (test_ufp.LogicTests.test_document_incomplete_and_missing_order) ... ok
+test_duplicate_document_changed_payload (test_ufp.LogicTests.test_duplicate_document_changed_payload) ... ok
+test_duplicate_document_from_new_journal (test_ufp.LogicTests.test_duplicate_document_from_new_journal) ... ok
+test_duplicate_ids_and_unknown_fields (test_ufp.LogicTests.test_duplicate_ids_and_unknown_fields) ... ok
+test_extra_remote_line_blocks (test_ufp.LogicTests.test_extra_remote_line_blocks) ... ok
+test_full_delivery (test_ufp.LogicTests.test_full_delivery) ... ok
+test_historical_hafele_unit_block (test_ufp.LogicTests.test_historical_hafele_unit_block) ... ok
+test_input_invalid_quantities (test_ufp.LogicTests.test_input_invalid_quantities) ... ok
+test_interruptions_before_after_every_operation (test_ufp.LogicTests.test_interruptions_before_after_every_operation) ... ok
+test_libero_failure_no_repeated_initial_load (test_ufp.LogicTests.test_libero_failure_no_repeated_initial_load) ... ok
+test_lock_prevents_concurrent_execution (test_ufp.LogicTests.test_lock_prevents_concurrent_execution) ... ok
+test_missing_row_ref_unique (test_ufp.LogicTests.test_missing_row_ref_unique) ... ok
+test_no_local_only_proof (test_ufp.LogicTests.test_no_local_only_proof) ... ok
+test_non_simulator_rejected (test_ufp.LogicTests.test_non_simulator_rejected) ... ok
+test_ordinary_and_partial (test_ufp.LogicTests.test_ordinary_and_partial) ... ok
+test_partial_ddt_row_crash_multiple_rows (test_ufp.LogicTests.test_partial_ddt_row_crash_multiple_rows) ... ok
+test_partial_documents_successive (test_ufp.LogicTests.test_partial_documents_successive) ... ok
+test_repeated_article_different_orders (test_ufp.LogicTests.test_repeated_article_different_orders) ... ok
+test_repeated_article_same_order_ambiguous (test_ufp.LogicTests.test_repeated_article_same_order_ambiguous) ... ok
+test_session_and_unexpected_screen (test_ufp.LogicTests.test_session_and_unexpected_screen) ... ok
+test_tampering_and_reconfirmation (test_ufp.LogicTests.test_tampering_and_reconfirmation) ... ok
+test_uncertain_blocks_until_server_evidence (test_ufp.LogicTests.test_uncertain_blocks_until_server_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 1.284s
+
+OK

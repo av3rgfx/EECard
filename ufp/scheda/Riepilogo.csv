@@ -1,0 +1,14 @@
+﻿Campo;Domanda / istruzione;Risposta da compilare;Come verificarlo / note
+operator;Chi sta verificando questo riepilogo e in quale data/ora?;;Una sola persona responsabile per la prima prova.
+document;Fornitore, numero completo, data, serie e magazzino sono corretti?;;Rispondere SÌ/NO/DA VERIFICARE con eventuali note.
+physical;Hai controllato fisicamente tutte le quantità accettate?;;La conferma non può provenire dalla sola foto.
+orders;Ogni riga è associata all’ordine e alla riga corretti?;;Controllare ripetizioni, anni, tipi e residui.
+codes;I codici coincidono con le corrispondenze verificate?;;Nessuna correzione automatica di discordanti.
+units;Quantità bolla, fisico, da registrare e unità sono distinte e corrette?;;Verificare conversioni esplicite e differenze motivate.
+all_rows;Sono incluse tutte e sole le righe accettate?;;"Elencare qui righe non arrivate, escluse o bloccate; nessuna omissione silenziosa."
+location;Magazzino e ubicazione risultano selezionati e validi?;;Non basta vedere CHECK come testo libero.
+header;Le regole dei campi colli, vettore e altre date sono chiarite?;;Se no, impediscono la prova reale.
+duplicates;Hai controllato DDT e liste già presenti nel gestionale?;;Indicare riferimenti e risultato, non basarsi sul registro locale.
+digest;Qual è l’impronta completa del piano che hai rivisto?;;"Sarà stampata dal programma dopo la trascrizione nei JSON; non inventarla."
+changes;È cambiato qualche dato dopo questa verifica?;;Se SÌ, nuova preparazione e conferma. Non riutilizzare la vecchia impronta.
+open_issues;Quali domande restano senza risposta?;;"Elenco concreto; nessuna approvazione implicita."

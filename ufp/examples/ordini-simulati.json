@@ -1,0 +1,18 @@
+{
+  "source": "SIMULATO: ordini e ID inventati, non estratti da ARS",
+  "captured_at": "2026-10-05T00:00:00+00:00",
+  "rows": [
+    {
+      "supplier_id": "SIM-SUPPLIER",
+      "order_type": "OF",
+      "order_year": "2026",
+      "order_number": "SIM-ORDER-001",
+      "row_ref": "SIM-R1",
+      "supplier_code": "ART-DEMO-001",
+      "internal_code": "INT-DEMO-001",
+      "unit": "NR",
+      "remaining": "10",
+      "version": "SIM-V1"
+    }
+  ]
+}
