@@ -49,6 +49,14 @@ Test end-to-end, axe-core, dimensioni 360/390/1280/1440 px, stress a 320 px, tes
 
 ## Documentazione
 
+Per riprendere in una nuova sessione partire dal [punto di ripresa](docs/progetto/PROSSIMA_SESSIONE.md). Il design e le anteprime sono consegnati nella [PR #2](https://github.com/av3rgfx/EECard/pull/2); verificarne lo stato prima di scegliere il branch.
+
+- [Prodotto, persone e confini](PRODUCT.md)
+- [Guida al design](DESIGN.md)
+- [Sviluppo, architettura del prototipo e manutenzione](DEVELOPMENT.md)
+- [Backlog e priorità proposte](docs/progetto/BACKLOG.md)
+- [Registro delle sessioni](docs/progetto/SESSIONI.md)
+
 - [Mappa delle schermate e dei percorsi](docs/design/PERCORSI.md)
 - [Design system e token](docs/design/DESIGN_SYSTEM.md)
 - [Decisioni confermate, proposte e questioni aperte](docs/design/DECISIONI.md)

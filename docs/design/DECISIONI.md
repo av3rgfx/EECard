@@ -8,6 +8,8 @@
 | C02 | Confermato dall’utente | Design system e prototipo frontend navigabile, dati dimostrativi | React frontend; nessun backend, pagamento o messaggio reale |
 | C03 | Confermato dal brief | Card come accesso ai servizi, distinta da carta bancaria | Nessun PAN, IBAN, CVV, saldo, circuito bancario o finto checkout |
 | C04 | Confermato dal brief | Documento, dichiarazione, verifica, quietanza distinti | Passaggi separati con testo, autore e fonte; incasso parziale mantiene residuo |
+| C05 | Confermato dall’utente | Anteprime condivisibili desktop e mobile separate | Due percorsi pubblici sul medesimo sito; sorgenti in EECard |
+| C06 | Confermato dall’utente | Chiusura sessione, documentazione persistente e consegna in PR | Punto di ripresa, prodotto/design/sviluppo e backlog aggiornati; nessun merge implicito |
 | P01 | Proposta visiva | Bosco, avorio, salvia e lime; Manrope Variable | Identità calma, domestica e precisa; card scura come elemento riconoscibile |
 | P02 | Proposta UX | Sidebar desktop, tab bar mobile, pannelli inferiori | Gerarchia mobile diversa: prossima azione prima dei riepiloghi; niente hover obbligatorio |
 | P03 | Proposta tecnica del prototipo | Vite + React + TypeScript; Base UI, Motion, Sonner | Stack leggero da avviare e compatibile con i componenti selezionati. Non decide l’architettura di produzione |

@@ -31,3 +31,15 @@ GitHub Pages non è stato attivato: l’integrazione GitHub disponibile non auto
 ## Verifiche
 
 Smoke test Chromium delle due pagine: desktop 1440×1000; vista mobile da desktop 1440×1000; smartphone 390×844 e 360×780. Verificati il viewport interno, l’assenza di overflow nel prototipo, la navigazione alla card e l’assenza di errori JavaScript. Restano validi i limiti delle [verifiche del prototipo](VERIFICHE.md), in particolare i test su dispositivi fisici ancora da eseguire.
+
+
+## Versione online alla chiusura della sessione
+
+Pubblicazione confermata riuscita il 6 ottobre 2026, alle 09:43:46 UTC.
+
+- Commit sorgente pubblicato: `ae371274031ef53c1adcad8d051cc00367dd741d`.
+- Project ID: `appgprj_6ac4c220882c8191be87c1b262306614` (già nel manifest).
+- Versione Sites: 1, `appgprj_6ac4c220882c8191be87c1b262306614~appgver_30e0c7801d408191b2e2c922da3eede0`.
+- Deployment riuscito: `appgdep_6ac4c2c10b2c8191a4fd0881090d1e80`.
+
+Le modifiche Markdown di chiusura sono successive al deploy e non cambiano gli asset pubblicati. Il branch temporaneo `gh-pages` è stato rimosso dopo il tentativo non riuscito di attivazione di Pages. Per i prossimi aggiornamenti usare la stessa identità Sites e registrare qui la nuova versione verificata.
