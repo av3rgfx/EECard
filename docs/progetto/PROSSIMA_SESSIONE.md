@@ -29,6 +29,8 @@ Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [DESIGN_SYSTEM.md](../
 
 ## Lavoro aperto
 
-Raccogliere feedback sul risultato integrato. Non avviare backend, servizi o nuove funzioni senza una richiesta. Restano aperti naming, modello commerciale, perimetro operativo, prezzi, budget e integrazioni. Nessuna ipotesi dello studio è diventata una promessa del prototipo.
+Sessione conclusa su richiesta dell’utente. Codice, elaborati, screenshot e documentazione sono salvati nel branch della PR #4, aperta e pronta alla revisione. Nessuna modifica di prodotto aggiuntiva richiesta: riprendere dal prossimo obiettivo dell’utente senza riaprire il confronto già risolto. Non avviare backend, servizi o nuove funzioni senza una richiesta. Restano aperti naming, modello commerciale, perimetro operativo, prezzi, budget e integrazioni. Nessuna ipotesi dello studio è diventata una promessa del prototipo.
 
 Test Chromium emulati: iPhone/Android fisici, Safari/WebKit, VoiceOver/TalkBack, prove con utenti e stampa della tessera ancora da verificare.
+
+Chiusura solo documentale: controllati coerenza, collegamenti e diff. Test frontend e deploy non ripetuti; Sites v5 e il commit sorgente online sopra indicato restano invariati.

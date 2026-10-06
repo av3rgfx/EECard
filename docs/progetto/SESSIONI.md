@@ -91,3 +91,10 @@ PR #4 verificata aperta: riutilizzati branch e PR esistenti. Implementato modifi
 Controlli mirati: 6 test layout/axe/stress/home passati (15,6 s), più verifica browser di lista multipla, singola, filtro, ruolo inquilino, stato vuoto, pagina immobili e dettaglio. Corretto un titolo lungo a 320 px/testo 200%; il controllo mirato successivo passa senza overflow. Quattro anteprime statiche e HTML offline collaudati; build e formattazione passate. Nessuna ripetizione dei test dei flussi operativi invariati.
 
 Pubblicazione confermata: Sites **v5**, `succeeded` alle 14:18:39 UTC, sorgente `65ac9e092c17d9113d85106fa3d04fbb9770cab5`. Stesso sito e pubblico, PR #4 aggiornata senza merge. Il successivo commit documentale registra il deploy e lascia invariata la build; nessuna nuova esecuzione dei test per la sola registrazione.
+
+
+## 6 ottobre 2026 — chiusura della sessione e consegna PR
+
+L’utente conclude la sessione e chiede di salvare tutto, aggiornare i Markdown e preparare una PR. Verificati checkout pulito e corrispondenza con il remoto; la PR #4 risulta già aperta, non in bozza e pronta alla revisione. Riutilizzata per la stessa consegna, senza creare duplicati e senza merge.
+
+Allineati punto di ripresa e backlog alla conclusione: rimosse le istruzioni obsolete di procedere con V01–V04, già completati. Decisioni, design system, rapporti, screenshot e artefatti risultano già aggiornati alle ultime richieste. Nessuna nuova modifica al prodotto; controlli documentali e diff, senza ripetere test frontend o pubblicazione. Sites resta v5 dal commit `65ac9e092c17d9113d85106fa3d04fbb9770cab5`.
