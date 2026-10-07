@@ -1,5 +1,52 @@
 # Verifiche del prototipo EECard
 
+## Verifica corrente — riepilogo immobili in home, 6 ottobre 2026
+
+Intervento circoscritto alla densità della lista nella home: vista compatta quando il contesto contiene più di una casa. Con una sola casa e nella pagina «Vedi immobili» resta la vista espansa. Nessun cambiamento a permessi, azioni, animazioni o dati.
+
+- Build TypeScript/Vite e formattazione passate; avviso noto sul bundle unico invariato.
+- **6 test pertinenti passati in 15,6 s**: quattro layout/axe a 360, 390, 1280 e 1440 px, stress/dati limite/testo al 200%, tessera iniziale e ruoli. Non ripetuta la suite completa di 19 percorsi, eseguita nell’integrazione precedente.
+- Verifica visiva desktop/mobile: righe aperte con foto laterale e metadati completi. Foto di 132 px nella lista multipla; vista espansa conservata nella pagina immobili e con una casa selezionata.
+- Corretto il titolo lungo nella riga compatta a 320 px/testo 200%: andava oltre la colonna di 22 px. Wrapping mirato, nessun troncamento; verifica ripetuta dopo il fix.
+- Anteprime statiche nelle quattro configurazioni desktop/mobile e HTML autonomo offline: [report mirato](verifiche-home-compatta.json).
+- Screenshot aggiornati della home proprietario a 1440, 1280, 390 e 360 px; aggiunta la pagina immobili a 1440 e 390 px. Screenshot dei flussi non modificati conservati.
+
+Test in Chromium emulato; nessuna nuova prova fisica, Safari/WebKit o screen reader. I rapporti sotto conservano i controlli dell’integrazione precedente, senza attribuirli nuovamente a questa correzione.
+
+
+## Integrazione Materia con pagine editoriali — verifica precedente, 6 ottobre 2026
+
+Scelta esplicita integrata sul branch `design/visual-directions-lab`. I risultati sotto precedono la pubblicazione e riguardano il frontend dimostrativo in Chromium153/Playwright1.63, Node24.19. I rapporti successivi in questo documento conservano lo storico delle tappe precedenti.
+
+| Controllo corrente | Risultato |
+| --- | --- |
+| Build e formattazione | TypeScript/Vite e Prettier passati; bundle532.25KB,167.89KB gzip, avviso dimensionale Vite conservato |
+| Suite E2E finale | **19 test passati,26.9s**; 18 esistenti più regressione priorità tessera/ruoli |
+| Audit aggiuntivo finale | **24 scansioni,0 violazioni** WCAG A/AA rilevate da axe; [JSON](audit-accessibilita.json) |
+| Home owner/tenant390×844 | Tessera y252–472.67px; accesso gestione termina530.67px, sopra tabbar773px |
+| Home owner/tenant360×780 | Tessera y270–486px; gestione termina544px, sopra tabbar709px |
+| Ruoli | Agenzia: home operativa, nessuna tessera o intestazione Alessandro in Card; tecnico limitato alle rotte previste |
+| Pagamento parziale | Dichiarazione400€, verifica distinta e quietanza400€; residuo550€ su950€ resta visibile e rata ancora da seguire |
+| Movimento | Nessun mount, marker160ms pointer, keyboard0, reduced120ms solo opacity; interruzione/retarget e focus verificati in browser |
+| Stress | Home/affitto/card, demo/worst/revoked,320px con testo200%: nessun overflow pagina dopo correzioni; nessun taglio del contenuto operativo |
+| Anteprime statiche | Desktop1440; mobile da1440,390,360; nessun overflow o erroreJS. Guida3viewport e10download validi; HTML offline senza richieste esterne |
+| Evidenze | 22 screenshot rigenerati; [report movimento](verifiche-materia-movimento.json), [video del processo reale demo](materia-processo.webm), [report anteprime](verifiche-legame.json) |
+
+### Correzioni emerse da break-ui + fix
+
+- Home a320px/testo200%: il vecchio display flex mobile e le colonne min-content delle azioni allargavano la pagina a415px. Griglia esplicita, minmax(0,1fr), min-width0 e testo a capo mantengono la colonna a320px.
+- Affitto a320px/testo200%: importi lunghi e parola finale del titolo superavano la colonna. Wrapping senza riduzione del font: il contenuto cresce in altezza.
+- Gestione tessera a320px/testo200%: badge e titolo sulla stessa riga allargavano la pagina. Intestazione flessibile su più righe.
+- Richiamo consulenza al200%: titolo poteva essere tagliato dal contenitore; corretta la rottura delle parole. Questa ultima correzione locale è verificata dal controllo stress mirato dopo la suite completa.
+- Il controllo anteprime ha rilevato servizio tessera10px: riportato a11px, con etichette titolare/stato10px e intestatario14–18px. Controllo ripetuto e passato.
+
+Gli importi non scorrono con un contatore; la tessera e il logo non ruotano, non seguono il puntatore e non hanno loop. L’animazione rende riconoscibile una fase realmente cambiata. La riproduzione del video è una registrazione della demo, non un servizio o pagamento reale.
+
+Limiti: test emulati, nessuna certificazione WCAG, prova hardware, Safari/WebKit, screen reader o ricerca con utenti. Le misure geometriche riguardano dati standard/font caricati; con zoom e nomi lunghi è previsto scorrimento verticale. Licenze, dati e condizioni commerciali invariati.
+
+## Storico iniziale
+
+
 6 ottobre 2026. Branch `design/eecard-premium-prototype`. Ambiente Linux, Node 24.19.0, Chromium 153 via Playwright 1.63.0. Questa verifica riguarda il frontend dimostrativo, non la sicurezza o l’erogazione del servizio in produzione.
 
 ## Risultato

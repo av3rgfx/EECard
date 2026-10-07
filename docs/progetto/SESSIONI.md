@@ -59,3 +59,42 @@ L’utente richiede una qualità grafica più elevata e dinamica, soluzioni UX v
 Esaminati screenshot esistenti e codice; misurata la home in Chromium a 390×844 e 1440×1000. La tessera mobile inizia a y 782 px: non è interamente visibile al primo accesso. Analisi e proposte in REVISIONE_VISIVA.md, skill Emil find-animation-opportunities letta e applicata in sola analisi. Aggiornati prompt, punto di ripresa, backlog, decisioni e documenti di orientamento, correggendo anche riferimenti obsoleti a PR #2 e monogramma.
 
 Nessuna modifica al frontend, agli asset o alle anteprime; nessuna nuova esecuzione della suite UI/axe. Controllati diff e collegamenti Markdown. Sites resta v3 dal commit d0bcbaecf4a208225fb0788070fc90e90fbf4551. Riutilizzata la PR #3 aperta per la medesima consegna, con commit documentale sul remoto; nessun merge. Prossimo passo: esempi ad alta fedeltà e scelta, non redesign automatico.
+
+## 6 ottobre 2026 — tre direzioni concrete prima dell’integrazione
+
+Verificata PR #3 integrata alle 11:44:41 UTC, clone aggiornato di main `ed3a473`, nuovo branch `design/visual-directions-lab`. Riletti documenti richiesti e recuperate skill Emil dallo snapshot ufficiale `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`. Misurata la home originale a 390: tessera y782,20–1022,20 px.
+
+Realizzato `design-lab/`, senza modifiche al frontend corrente: tre composizioni Materia e luce / Editoriale e architettura / Luce e profondità. Stessi dati e simbolo, home desktop/mobile, dettaglio tessera, blocco e sostituzione, nome lungo, processo affitto con quattro eventi, attori espliciti, fonte obbligatoria, errore/riprova, parziale/residuo e quietanza. Demo animata interruptible, controllo manuale e preferenza OS reduced motion. Raccomandata Materia e luce, scelta non ancora ricevuta.
+
+Typecheck/build del laboratorio, 27 combinazioni axe senza violazioni, controlli geometrici e interazioni, 18 screenshot e anteprima HTML autonoma offline. Corrette leggibilità, layout 320/testo200%, focus e retarget del movimento. [Consegna, skill e limiti](../design/esplorazioni/README.md). Chromium emulato, nessuna prova fisica. Suite del prodotto non ripetuta perché invariato.
+
+Attesa della scelta richiesta dall’utente: nessuna integrazione, pubblicazione Sites, push remoto o PR anticipati. Sites resta v3. Il lavoro è salvato nel checkout condiviso; la consegna interattiva è un HTML autonomo apribile nel browser.
+
+
+## 6 ottobre 2026 — scelta Materia e pagine aperte, integrazione
+
+L’utente sceglie l’opzione1 Materia, rifiutando l’eccesso di card contenitore e indicando la composizione di Editoriale nello screenshot del processo. Questo soddisfa il gate esplicito degli esempi e autorizza la fase successiva già richiesta. Branch corrente `design/visual-directions-lab`, dopo PR #3 integrata; nessun merge eseguito.
+
+Integrate home con tessera prima nel DOM, materiali bruni, gerarchia e immagini più ampie; sezioni e liste aperte in tutte le aree. Affitto con componente condivisa derivata dai cinque stati esistenti, fase e prossima azione, focus dopo sostituzione del form; movimento locale160ms, reduced120ms opacity, tastiera0. L’agenzia non vede più la tessera personale del proprietario via Home/Card; tecnico e altri permessi conservati. Nessuna modifica a fixture/persistenza, prezzi, servizi o licenze.
+
+Verifiche browser, screenshot, HTML e anteprime rigenerati; test e correzioni zoom in VERIFICHE.md, motion in verifiche-materia-movimento.json. Documentazione corrente aggiornata e confronto preliminare conservato come archivio. Pubblicazione sul medesimo Sites e salvataggio remoto/PR registrati nella chiusura sotto.
+
+Chiusura verificata: 19 E2E passati in 26,9 s, 24 scansioni axe senza violazioni, 9 casi a 320 px/testo 200% senza overflow dopo fix; build/format, 22 screenshot, quattro anteprime statiche e HTML offline verificati. Sites v4 `succeeded` alle 13:48:10 UTC dal commit `eea7a954c36607baffdbac82797466cdb329e435`. [PR #4](https://github.com/av3rgfx/EECard/pull/4) aperta e pronta alla revisione, senza merge. Sorgente GitHub salvata via API Git poiché il trasporto diretto non disponeva di credenziali; verificata identità dell’albero e allineato il clone al commit remoto. Il commit successivo registra soltanto questa chiusura, senza nuovi test frontend o deploy.
+
+
+## 6 ottobre 2026 — immobili più compatti solo nella home multipla
+
+L’utente prima precisa che le card sono accettabili per oggetti come gli immobili, poi conferma di preferire la nuova esecuzione aperta. La richiesta finale è ridurre lo spazio occupato dalle case **solo in home quando sono più di una**, mantenendo una casa singola e la pagina «Vedi immobili» espanse. Nessun ripristino delle card è stato applicato.
+
+PR #4 verificata aperta: riutilizzati branch e PR esistenti. Implementato modificatore CSS locale alla home, derivato dagli immobili visibili nel contesto attuale. Fotografia laterale di dimensione contenuta, titolo/indirizzo/metadati completi; pagina immobili e funzioni invariate. Documentazione e screenshot aggiornati; esito dei controlli mirati e della pubblicazione nei rispettivi rapporti. Nessuna nuova animazione o modifica ai flussi di pagamento.
+
+Controlli mirati: 6 test layout/axe/stress/home passati (15,6 s), più verifica browser di lista multipla, singola, filtro, ruolo inquilino, stato vuoto, pagina immobili e dettaglio. Corretto un titolo lungo a 320 px/testo 200%; il controllo mirato successivo passa senza overflow. Quattro anteprime statiche e HTML offline collaudati; build e formattazione passate. Nessuna ripetizione dei test dei flussi operativi invariati.
+
+Pubblicazione confermata: Sites **v5**, `succeeded` alle 14:18:39 UTC, sorgente `65ac9e092c17d9113d85106fa3d04fbb9770cab5`. Stesso sito e pubblico, PR #4 aggiornata senza merge. Il successivo commit documentale registra il deploy e lascia invariata la build; nessuna nuova esecuzione dei test per la sola registrazione.
+
+
+## 6 ottobre 2026 — chiusura della sessione e consegna PR
+
+L’utente conclude la sessione e chiede di salvare tutto, aggiornare i Markdown e preparare una PR. Verificati checkout pulito e corrispondenza con il remoto; la PR #4 risulta già aperta, non in bozza e pronta alla revisione. Riutilizzata per la stessa consegna, senza creare duplicati e senza merge.
+
+Allineati punto di ripresa e backlog alla conclusione: rimosse le istruzioni obsolete di procedere con V01–V04, già completati. Decisioni, design system, rapporti, screenshot e artefatti risultano già aggiornati alle ultime richieste. Nessuna nuova modifica al prodotto; controlli documentali e diff, senza ripetere test frontend o pubblicazione. Sites resta v5 dal commit `65ac9e092c17d9113d85106fa3d04fbb9770cab5`.

@@ -55,7 +55,7 @@ Il registro dettagliato con ID e provenienza è [DECISIONI.md](docs/design/DECIS
 
 ## Prossima sessione confermata
 
-Evoluzione della qualità visiva e della UX del prototipo: tessera come primo contenuto dominante della home all’accesso; esempi concreti da sottoporre all’utente prima di implementare. Non aggiunge funzionalità o disponibilità di servizi. L’analisi è in [REVISIONE_VISIVA.md](docs/design/REVISIONE_VISIVA.md). Nessun redesign ancora applicato.
+Evoluzione della qualità visiva e della UX del prototipo: confronto ad alta fedeltà consegnato e scelta esplicita ricevuta. Integrati tessera e materiali di Materia e luce con pagine aperte come Editoriale. La tessera personale precede saluto e riepiloghi per proprietario/inquilino; agenzia e tecnico mantengono il proprio contesto operativo. La home usa riepiloghi compatti degli immobili quando ne sono visibili più di uno; con una sola casa e nella pagina immobili la vista resta espansa. Il percorso affitto rende visibili gli stati esistenti, senza aggiungere funzionalità o disponibilità di servizi. Decisioni e verifiche in [DESIGN.md](DESIGN.md).
 
 ## Validazione di prodotto proposta, fuori dal lavoro immediato
 

@@ -1,0 +1,743 @@
+{
+  "testedAt": "2026-10-06T12:03:00.126439+00:00",
+  "browser": "Chromium Playwright emulation",
+  "axeTags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21aa"
+  ],
+  "auditCases": 27,
+  "auditViolations": 0,
+  "baseCases": [
+    {
+      "width": 390,
+      "v": 1,
+      "view": "home",
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "card": {
+          "top": 244.5,
+          "bottom": 457.90625,
+          "width": 350
+        },
+        "manage": {
+          "top": 482.796875,
+          "bottom": 534.1875
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "v": 1,
+      "view": "card",
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "card": {
+          "top": 436.8125,
+          "bottom": 650.21875,
+          "width": 350
+        },
+        "manage": {
+          "top": 0,
+          "bottom": 0
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "v": 1,
+      "view": "affitto",
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "card": null,
+        "manage": null
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "v": 2,
+      "view": "home",
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "card": {
+          "top": 244.5,
+          "bottom": 457.90625,
+          "width": 350
+        },
+        "manage": {
+          "top": 484.796875,
+          "bottom": 536.1875
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "v": 2,
+      "view": "card",
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "card": {
+          "top": 436.8125,
+          "bottom": 650.21875,
+          "width": 350
+        },
+        "manage": {
+          "top": 0,
+          "bottom": 0
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "v": 2,
+      "view": "affitto",
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "card": null,
+        "manage": null
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "v": 3,
+      "view": "home",
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "card": {
+          "top": 240.5,
+          "bottom": 453.90625,
+          "width": 350
+        },
+        "manage": {
+          "top": 478.796875,
+          "bottom": 530.1875
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "v": 3,
+      "view": "card",
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "card": {
+          "top": 436.8125,
+          "bottom": 650.21875,
+          "width": 350
+        },
+        "manage": {
+          "top": 0,
+          "bottom": 0
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "v": 3,
+      "view": "affitto",
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "card": null,
+        "manage": null
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "v": 1,
+      "view": "home",
+      "geometry": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "card": {
+          "top": 228,
+          "bottom": 624.046875,
+          "width": 653.484375
+        },
+        "manage": {
+          "top": 652.4375,
+          "bottom": 692.4375
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "v": 1,
+      "view": "card",
+      "geometry": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "card": {
+          "top": 441.34375,
+          "bottom": 772.71875,
+          "width": 546.78125
+        },
+        "manage": {
+          "top": 0,
+          "bottom": 0
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "v": 1,
+      "view": "affitto",
+      "geometry": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "card": null,
+        "manage": null
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "v": 2,
+      "view": "home",
+      "geometry": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "card": {
+          "top": 212,
+          "bottom": 527.140625,
+          "width": 520
+        },
+        "manage": {
+          "top": 549.53125,
+          "bottom": 589.53125
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "v": 2,
+      "view": "card",
+      "geometry": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "card": {
+          "top": 425.34375,
+          "bottom": 706.546875,
+          "width": 464
+        },
+        "manage": {
+          "top": 0,
+          "bottom": 0
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "v": 2,
+      "view": "affitto",
+      "geometry": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "card": null,
+        "manage": null
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "v": 3,
+      "view": "home",
+      "geometry": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "card": {
+          "top": 248,
+          "bottom": 635.59375,
+          "width": 639.53125
+        },
+        "manage": {
+          "top": 663.59375,
+          "bottom": 703.59375
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "v": 3,
+      "view": "card",
+      "geometry": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "card": {
+          "top": 441.34375,
+          "bottom": 772.71875,
+          "width": 546.78125
+        },
+        "manage": {
+          "top": 0,
+          "bottom": 0
+        }
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "v": 3,
+      "view": "affitto",
+      "geometry": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "card": null,
+        "manage": null
+      },
+      "violations": []
+    }
+  ],
+  "extraCases": [
+    {
+      "v": 1,
+      "state": "critical/long",
+      "violations": []
+    },
+    {
+      "v": 1,
+      "state": "verified",
+      "violations": []
+    },
+    {
+      "v": 1,
+      "state": "notes",
+      "violations": []
+    },
+    {
+      "v": 2,
+      "state": "critical/long",
+      "violations": []
+    },
+    {
+      "v": 2,
+      "state": "verified",
+      "violations": []
+    },
+    {
+      "v": 2,
+      "state": "notes",
+      "violations": []
+    },
+    {
+      "v": 3,
+      "state": "critical/long",
+      "violations": []
+    },
+    {
+      "v": 3,
+      "state": "verified",
+      "violations": []
+    },
+    {
+      "v": 3,
+      "state": "notes",
+      "violations": []
+    }
+  ],
+  "interactions": [
+    {
+      "name": "pointer phase",
+      "animations": [
+        {
+          "target": "phase-panel",
+          "duration": 160,
+          "frames": [
+            {
+              "offset": null,
+              "easing": "linear",
+              "composite": "auto",
+              "opacity": "0.5",
+              "transform": "translateY(6px)",
+              "computedOffset": 0
+            },
+            {
+              "offset": null,
+              "easing": "linear",
+              "composite": "auto",
+              "opacity": "1",
+              "transform": "translateY(0px)",
+              "computedOffset": 1
+            }
+          ]
+        }
+      ],
+      "title": "Dichiarato. Da verificare."
+    },
+    {
+      "name": "verify focus",
+      "focus": "source"
+    },
+    {
+      "name": "empty source",
+      "invalid": "true",
+      "alert": "Inserisci una fonte prima di confermare. Nessun incasso è stato verificato.",
+      "title": "Verifica l’accredito."
+    },
+    {
+      "name": "source enter",
+      "title": "Ricevuti 400,00 €.",
+      "focus": "phase-panel"
+    },
+    {
+      "name": "partial verified",
+      "ledger": "Casa Tortona\nSITUAZIONE DELLA RATA\n400,00 €\nincasso verificato\nCanone\n950,00 €\nResiduo\n550,00 €\nQuietanza\nNon rilasciata\nRata ancora aperta\n\nIl documento allegato, la dichiarazione, l’incasso e la quietanza restano eventi separati."
+    },
+    {
+      "name": "keyboard quietanza",
+      "animations": [],
+      "title": "Una quietanza, distinta.",
+      "ledger": "Casa Tortona\nSITUAZIONE DELLA RATA\n400,00 €\nincasso verificato\nCanone\n950,00 €\nResiduo\n550,00 €\nQuietanza\nRilasciata · demo\nRata ancora aperta\n\nIl documento allegato, la dichiarazione, l’incasso e la quietanza restano eventi separati."
+    },
+    {
+      "name": "error",
+      "alert": "Dichiarazione non salvata.\n\nIl file e i dati sono conservati. Puoi riprovare.\n\nRiprova"
+    },
+    {
+      "name": "error recovery",
+      "title": "Dichiarato. Da verificare."
+    },
+    {
+      "name": "critical long name",
+      "overflow": {
+        "scroll": 390,
+        "width": 390
+      },
+      "card": "Tessera servizi\nIl tuo spazio, connesso.\nC / 01\nIntestatario\nAleksandra Wiśniewska-Kowalczyk\nEE · 2048\nIdentificativo revocato"
+    },
+    {
+      "name": "critical axe",
+      "violations": []
+    },
+    {
+      "name": "replacement",
+      "card": "Tessera servizi\nIl tuo spazio, connesso.\nC / 01\nIntestatario\nAleksandra Wiśniewska-Kowalczyk\nEE · 2049",
+      "status": "Nuovo identificativo EE · 2049 attivo. Il precedente EE · 2048 resta revocato."
+    },
+    {
+      "name": "manual reduced phase",
+      "animations": [
+        {
+          "target": "phase-panel",
+          "duration": 120,
+          "frames": [
+            {
+              "offset": null,
+              "easing": "linear",
+              "composite": "auto",
+              "opacity": "0.65",
+              "computedOffset": 0
+            },
+            {
+              "offset": null,
+              "easing": "linear",
+              "composite": "auto",
+              "opacity": "1",
+              "computedOffset": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "manual reduced replay",
+      "title": "Il file è presente.",
+      "animations": []
+    },
+    {
+      "name": "system reduced",
+      "checked": true,
+      "disabled": true
+    },
+    {
+      "name": "system reduced phase",
+      "animations": [
+        {
+          "target": "phase-panel",
+          "duration": 120,
+          "frames": [
+            {
+              "offset": null,
+              "easing": "linear",
+              "composite": "auto",
+              "opacity": "0.65",
+              "computedOffset": 0
+            },
+            {
+              "offset": null,
+              "easing": "linear",
+              "composite": "auto",
+              "opacity": "1",
+              "computedOffset": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "variant keyboard focus",
+      "focus": {
+        "tag": "MAIN",
+        "id": "content",
+        "text": "La tua tessera Attiva · demoTessera serviziIl tuo spazio, connesso.C / 01Intesta"
+      },
+      "animations": []
+    },
+    {
+      "name": "small critical geometry",
+      "width": 320,
+      "v": 1,
+      "geometry": {
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "cardTop": 244.5,
+        "cardBottom": 457.296875
+      }
+    },
+    {
+      "name": "text 200%",
+      "width": 320,
+      "v": 1,
+      "geometry": {
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflow": []
+      }
+    },
+    {
+      "name": "small critical geometry",
+      "width": 320,
+      "v": 2,
+      "geometry": {
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "cardTop": 244.5,
+        "cardBottom": 457.296875
+      }
+    },
+    {
+      "name": "text 200%",
+      "width": 320,
+      "v": 2,
+      "geometry": {
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflow": []
+      }
+    },
+    {
+      "name": "small critical geometry",
+      "width": 320,
+      "v": 3,
+      "geometry": {
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "cardTop": 240.5,
+        "cardBottom": 453.296875
+      }
+    },
+    {
+      "name": "text 200%",
+      "width": 320,
+      "v": 3,
+      "geometry": {
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "overflow": []
+      }
+    },
+    {
+      "name": "small critical geometry",
+      "width": 360,
+      "v": 1,
+      "geometry": {
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "cardTop": 244.5,
+        "cardBottom": 457.296875
+      }
+    },
+    {
+      "name": "text 200%",
+      "width": 360,
+      "v": 1,
+      "geometry": {
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "overflow": []
+      }
+    },
+    {
+      "name": "small critical geometry",
+      "width": 360,
+      "v": 2,
+      "geometry": {
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "cardTop": 244.5,
+        "cardBottom": 457.296875
+      }
+    },
+    {
+      "name": "text 200%",
+      "width": 360,
+      "v": 2,
+      "geometry": {
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "overflow": []
+      }
+    },
+    {
+      "name": "small critical geometry",
+      "width": 360,
+      "v": 3,
+      "geometry": {
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "cardTop": 240.5,
+        "cardBottom": 453.296875
+      }
+    },
+    {
+      "name": "text 200%",
+      "width": 360,
+      "v": 3,
+      "geometry": {
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "overflow": []
+      }
+    },
+    {
+      "name": "small critical geometry",
+      "width": 390,
+      "v": 1,
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "cardTop": 244.5,
+        "cardBottom": 457.90625
+      }
+    },
+    {
+      "name": "text 200%",
+      "width": 390,
+      "v": 1,
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "overflow": []
+      }
+    },
+    {
+      "name": "small critical geometry",
+      "width": 390,
+      "v": 2,
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "cardTop": 244.5,
+        "cardBottom": 457.90625
+      }
+    },
+    {
+      "name": "text 200%",
+      "width": 390,
+      "v": 2,
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "overflow": []
+      }
+    },
+    {
+      "name": "small critical geometry",
+      "width": 390,
+      "v": 3,
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "cardTop": 240.5,
+        "cardBottom": 453.90625
+      }
+    },
+    {
+      "name": "text 200%",
+      "width": 390,
+      "v": 3,
+      "geometry": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "overflow": []
+      }
+    }
+  ],
+  "motion": {
+    "retarget": {
+      "before": {
+        "opacity": "0.850119",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.79857)"
+      },
+      "frames": [
+        {
+          "offset": null,
+          "easing": "linear",
+          "composite": "auto",
+          "opacity": "0.850119",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.79857)",
+          "computedOffset": 0
+        },
+        {
+          "offset": null,
+          "easing": "linear",
+          "composite": "auto",
+          "opacity": "1",
+          "transform": "translateY(0px)",
+          "computedOffset": 1
+        }
+      ],
+      "duration": 160
+    },
+    "autoplay": {
+      "title": "Una quietanza, distinta.",
+      "playing": 0,
+      "liveAnimations": 0
+    }
+  },
+  "limits": [
+    "No physical phones",
+    "No Safari/WebKit",
+    "No VoiceOver/TalkBack",
+    "Text 200% is CSS root font-size scaling, not browser zoom",
+    "No production integration"
+  ],
+  "sourceSha256": {
+    "design-lab/main.tsx": "b2ad93bf071dc8717790339d4e725a27510847f428d7188903f15c6cdd6b6ab3",
+    "design-lab/styles.css": "7b349a18fc91828d9360122a092068e69e59a4490ae90bda45395929e27c2308",
+    "design-lab/picker.css": "34cb82968dc6476e24ed4b877c4885f1026733a8d81c4a600f49a08af0b5545b"
+  },
+  "postReviewVisualCleanup": "Rimossi la seconda frase della didascalia della tessera e il chevron che andava a capo sul telefono. Nessuna modifica a movimento, permessi o processi. Typecheck/build e 18 screenshot ripetuti dopo questa pulizia."
+}

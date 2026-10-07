@@ -1,5 +1,9 @@
 import { asset } from "./assets";
-import { useState, useRef, type FormEvent } from "react";
+import {
+  PaymentProgress,
+  paymentPhaseNarrative,
+} from "./components/payment-progress";
+import { useState, useRef, useEffect, type FormEvent } from "react";
 import {
   ArrowRight,
   Check,
@@ -641,6 +645,12 @@ function PaymentPanel({ id }: { id: string }) {
   const { state, setState, houses, scenario } = useApp();
   const p = houses.find((p) => p.id === id);
   const pay = state.payments[id] || { status: "pending" };
+  const phaseHeading = useRef<HTMLHeadingElement>(null);
+  const previousPhase = useRef(pay.status);
+  useEffect(() => {
+    if (previousPhase.current !== pay.status) phaseHeading.current?.focus();
+    previousPhase.current = pay.status;
+  }, [pay.status]);
   const [file, setFile] = useState("");
   const [amount, setAmount] = useState(String(p?.rent || 0));
   const [date, setDate] = useState("2026-10-06");
@@ -725,6 +735,13 @@ function PaymentPanel({ id }: { id: string }) {
         >
           {paymentLabel[pay.status]}
         </Badge>
+      </div>
+      <PaymentProgress payment={pay} />
+      <div className="rent-phase payment-phase">
+        <h3 ref={phaseHeading} tabIndex={-1}>
+          {paymentPhaseNarrative(pay.status).title}.
+        </h3>
+        <p>{paymentPhaseNarrative(pay.status).detail}</p>
       </div>
       {pay.file && (
         <div className="attached-file">

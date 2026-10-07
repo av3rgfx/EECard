@@ -1,0 +1,81 @@
+.payment-progress {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.5rem, 2vw, 1rem);
+  inline-size: 100%;
+  margin: 1.75rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.payment-progress-step {
+  min-inline-size: 0;
+  padding-block-start: 0.875rem;
+  border-block-start: 2px solid var(--border);
+  color: var(--muted);
+}
+
+.payment-progress-step[data-state="done"] {
+  border-color: var(--success);
+}
+
+.payment-progress-step[data-state="current"] {
+  border-color: var(--action);
+  color: var(--ink);
+}
+
+.payment-progress-marker {
+  display: grid;
+  place-items: center;
+  inline-size: min(2.125rem, 100%);
+  aspect-ratio: 1;
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.payment-progress-step[data-state="done"] .payment-progress-marker {
+  background: var(--success-soft);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.payment-progress-step[data-state="current"] .payment-progress-marker {
+  background: var(--brand-ink);
+  border-color: var(--brand-ink);
+  color: var(--on-brand);
+}
+
+.payment-progress-title,
+.payment-progress-state {
+  display: block;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.payment-progress-title {
+  margin-block-start: 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.payment-progress-state {
+  margin-block-start: 0.25rem;
+  color: var(--muted);
+  font-size: 0.6875rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .payment-progress {
+    gap: 0.5rem;
+  }
+
+  .payment-progress-title {
+    font-size: 0.75rem;
+  }
+}

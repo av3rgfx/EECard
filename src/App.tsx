@@ -154,7 +154,7 @@ export default function App() {
     "card",
   ].includes(route);
   const pages: Record<Route, React.ReactNode> = {
-    home: <HomePage />,
+    home: state.role === "agenzia" ? <AgencyPage /> : <HomePage />,
     immobili: <PropertiesPage />,
     documenti: <DocumentsPage />,
     affitto: <RentPage />,
@@ -170,7 +170,9 @@ export default function App() {
   const navItems =
     state.role === "tecnico"
       ? navigation.filter((n) => n.id === "assistenza")
-      : navigation;
+      : navigation.filter(
+          (n) => state.role !== "agenzia" || !["home", "card"].includes(n.id),
+        );
   return (
     <Context.Provider
       value={{
@@ -440,16 +442,18 @@ export default function App() {
                 { id: "assistenza", label: "Assistenza", icon: Wrench },
                 { id: "card", label: "Card", icon: ContactRound },
               ]
-          ).map(({ id, label, icon: Icon }) => (
-            <a
-              key={id}
-              href={`#/${id}`}
-              aria-current={route === id ? "page" : undefined}
-            >
-              <Icon size={21} strokeWidth={1.7} />
-              <span>{label}</span>
-            </a>
-          ))}
+          )
+            .filter(({ id }) => state.role !== "agenzia" || id !== "card")
+            .map(({ id, label, icon: Icon }) => (
+              <a
+                key={id}
+                href={`#/${id}`}
+                aria-current={route === id ? "page" : undefined}
+              >
+                <Icon size={21} strokeWidth={1.7} />
+                <span>{label}</span>
+              </a>
+            ))}
           <button
             onClick={() => setPanel({ kind: "more" })}
             aria-label="Altro, apri menu"

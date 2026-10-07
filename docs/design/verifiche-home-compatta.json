@@ -1,0 +1,106 @@
+{
+  "testedAt": "2026-10-06T14:12:32.532Z",
+  "browser": "Chromium emulated",
+  "checks": [
+    {
+      "route": "desktop",
+      "width": 1440,
+      "count": 3,
+      "compactPhotoHeight": 132,
+      "expandedPhotoHeight": 220,
+      "singleFilteredPhotoHeight": 220,
+      "detail": "Casa Tortona",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "mobile",
+      "width": 1440,
+      "count": 3,
+      "compactPhotoHeight": 132,
+      "expandedPhotoHeight": 230,
+      "singleFilteredPhotoHeight": 230,
+      "detail": "Casa Tortona",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "mobile",
+      "width": 390,
+      "count": 3,
+      "compactPhotoHeight": 132,
+      "expandedPhotoHeight": 230,
+      "singleFilteredPhotoHeight": 230,
+      "detail": "Casa Tortona",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "mobile",
+      "width": 360,
+      "count": 3,
+      "compactPhotoHeight": 132,
+      "expandedPhotoHeight": 230,
+      "singleFilteredPhotoHeight": 230,
+      "detail": "Casa Tortona",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "portable",
+      "externalRequests": []
+    }
+  ],
+  "stressAfterFix": {
+    "testedAt": "2026-10-06T14:15:24.752Z",
+    "fix": "Titolo lungo compatto: overflow-wrap anywhere",
+    "results": [
+      {
+        "scenario": "demo",
+        "textScale": 200,
+        "width": 320,
+        "scroll": 320,
+        "titles": [
+          {
+            "text": "Casa Tortona",
+            "client": 168,
+            "scroll": 168
+          },
+          {
+            "text": "Casa Brera",
+            "client": 168,
+            "scroll": 168
+          },
+          {
+            "text": "Studio Navigli",
+            "client": 168,
+            "scroll": 168
+          }
+        ]
+      },
+      {
+        "scenario": "worst",
+        "textScale": 200,
+        "width": 320,
+        "scroll": 320,
+        "titles": [
+          {
+            "text": "Residenza Aleksandra Wiśniewska-Kowalczyk",
+            "client": 168,
+            "scroll": 168
+          },
+          {
+            "text": "Casa di 王秀英",
+            "client": 168,
+            "scroll": 168
+          },
+          {
+            "text": "Studio di Jo",
+            "client": 168,
+            "scroll": 168
+          }
+        ]
+      }
+    ]
+  }
+}

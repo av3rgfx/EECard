@@ -1,0 +1,870 @@
+/* Visual direction 0.3: Materia object, open editorial pages.
+   Approved 6 October 2026. Only objects and controls keep their own surface. */
+body {
+  background: var(--canvas);
+}
+main {
+  padding-bottom: 64px;
+}
+.page-heading {
+  margin: 12px 0 40px;
+}
+.page-heading h1 {
+  font-size: clamp(2.25rem, 3.5vw, 3.75rem);
+  letter-spacing: -0.055em;
+  line-height: 1.08;
+  max-width: 18ch;
+  font-weight: 550;
+}
+.page-heading p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  max-width: 60ch;
+}
+.eyebrow {
+  letter-spacing: 0.12em;
+}
+.section-title h2 {
+  font-size: 1.25rem;
+  letter-spacing: -0.035em;
+}
+.dashboard-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 48px;
+  margin: 18px 0 64px;
+}
+.overview-panel,
+.priority-card,
+.activity-list,
+.consultation-teaser,
+.document-list,
+.rent-card,
+.panel-section,
+.utility-card,
+.ticket-row,
+.assistance-note,
+.card-controls,
+.agency-stats > div,
+.agency-queue,
+.profile-panel,
+.prototype-lab,
+.access-form,
+.invite-summary,
+.empty,
+.info-strip,
+.booking-confirm {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.overview-panel {
+  display: block;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.overview-panel .page-heading {
+  margin: 0 0 24px;
+}
+.overview-panel .page-heading h1 {
+  font-size: clamp(2rem, 3vw, 3.1rem);
+}
+.overview-panel .page-heading p {
+  margin-bottom: 0;
+}
+.overview-panel > .section-title {
+  display: none;
+}
+.priority-card {
+  border-top: 2px solid var(--brand-ink);
+  border-bottom: 1px solid var(--border);
+  padding-top: 22px;
+  padding-bottom: 22px;
+  gap: 16px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.priority-icon {
+  display: none;
+}
+.priority-card h3 {
+  font-size: 1.25rem;
+  letter-spacing: -0.035em;
+}
+.priority-card p {
+  font-size: 0.8125rem;
+}
+.priority-amount {
+  margin-left: auto;
+}
+.priority-amount strong {
+  font-size: 1.5rem;
+}
+.summary-stats {
+  padding: 26px 0 18px;
+  margin: 0;
+  gap: 16px;
+}
+.summary-stats > div {
+  border: 0;
+  padding: 0;
+}
+.summary-stats strong {
+  font-size: 2.25rem;
+  font-weight: 450;
+  letter-spacing: -0.06em;
+}
+.summary-stats span {
+  font-size: 0.6875rem;
+}
+.summary-stats small {
+  display: none;
+}
+.quick-actions {
+  border-top: 1px solid var(--border);
+  margin-top: 8px;
+  padding-top: 8px;
+  gap: 20px;
+}
+.quick-actions > button {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 12px 0;
+  gap: 10px;
+}
+.card-widget .section-title {
+  margin-bottom: 16px;
+}
+.card-widget .section-title h2 {
+  font-size: 0.8125rem;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+.card-widget .digital-card {
+  width: 100%;
+}
+.digital-card,
+.card-page-grid .digital-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  aspect-ratio: 1.586;
+  min-height: 16rem;
+  padding: clamp(22px, 4.8cqw, 30px);
+  border-radius: 22px;
+  border: 1px solid #b9976d88;
+  background:
+    radial-gradient(ellipse at 0% 0%, #906340 0%, transparent 54%),
+    linear-gradient(128deg, #5d3e29, #2e1c12 62%, #402615);
+  box-shadow:
+    inset 0 1px 0 #fce2bb55,
+    inset 0 -1px 0 #170d0880,
+    0 2px 3px #321d1726,
+    0 22px 36px -18px #4027166b;
+}
+.digital-card .card-top {
+  flex-direction: row-reverse;
+}
+.digital-card .card-service {
+  letter-spacing: 0.16em;
+  font-size: 0.6875rem;
+  font-weight: 550;
+}
+.digital-card .brand-symbol {
+  width: 46px;
+  height: 46px;
+}
+.digital-card .card-copy {
+  margin: 20px 0 30px;
+}
+.digital-card .card-copy > span {
+  font-size: clamp(1.125rem, 5cqw, 1.625rem);
+  letter-spacing: -0.045em;
+  font-weight: 400;
+  color: #f3dfcc;
+}
+.digital-card .card-art {
+  top: 10%;
+  right: -5%;
+  height: 100%;
+  width: 65%;
+  opacity: 0.1;
+}
+.digital-card .card-bottom,
+.card-page-grid .card-bottom {
+  position: relative;
+  inset: auto;
+  margin-top: auto;
+  gap: 16px;
+  align-items: flex-end;
+}
+.digital-card .card-bottom > div {
+  flex: 1;
+  max-width: none;
+}
+.digital-card .card-bottom strong {
+  font-size: clamp(0.875rem, 3.8cqw, 1.125rem);
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+  font-weight: 550;
+}
+.digital-card .card-bottom small {
+  font-size: 0.625rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 7px;
+}
+.digital-card .card-id {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+}
+.digital-card .card-id span {
+  font-size: 0.625rem;
+  margin-top: 7px;
+}
+.digital-card.blocked {
+  border: 1px dashed #dbc4aa;
+}
+.card-manage {
+  margin-top: 18px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  font-size: 0.8125rem;
+  color: var(--brand-ink);
+}
+.properties-section {
+  margin: 0 0 52px;
+}
+.property-grid {
+  gap: 30px;
+}
+.property-tile {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+.property-image {
+  border-radius: 3px;
+  height: 220px;
+  overflow: hidden;
+}
+.property-image img {
+  object-position: 50% 58%;
+}
+.property-text {
+  padding: 18px 0 0;
+}
+.property-text h3 {
+  font-size: 1.25rem;
+  letter-spacing: -0.035em;
+}
+.property-text p {
+  font-size: 0.8125rem;
+  margin: 8px 0 18px;
+}
+.property-meta {
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.dashboard-bottom {
+  gap: 48px;
+}
+.activity-list,
+.document-list,
+.agency-queue {
+  border-top: 2px solid var(--brand-ink);
+  overflow: visible;
+}
+.activity-row,
+.document-row,
+.agency-row {
+  padding-left: 0;
+  padding-right: 0;
+}
+.activity-row {
+  min-height: 92px;
+}
+.consultation-teaser {
+  border-top: 2px solid var(--brand-ink);
+  padding-top: 28px;
+}
+.consultation-teaser h2 {
+  overflow-wrap: anywhere;
+  font-size: 2.25rem;
+  letter-spacing: -0.05em;
+}
+.teaser-art {
+  opacity: 0.24;
+}
+.button {
+  border-radius: 6px;
+}
+.button.primary {
+  background: var(--brand-ink);
+}
+.button.secondary {
+  background: transparent;
+}
+.filter-tabs button {
+  border-radius: 4px;
+}
+.icon-box {
+  border-radius: 3px;
+}
+.notice {
+  border-radius: 0;
+  border-left: 2px solid #b9906b;
+  padding: 12px 16px;
+  background: #f0e8dc;
+  font-size: 0.8125rem;
+}
+.notice.error {
+  border-left-color: var(--danger);
+}
+.info-strip {
+  border-top: 1px solid var(--border);
+  padding-top: 26px;
+}
+.empty {
+  border-top: 1px solid var(--border);
+  min-height: 240px;
+}
+.document-row {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.pdf-icon {
+  border-radius: 2px;
+  border: 1px solid #cbbba9;
+  background: transparent;
+  height: 54px;
+}
+.rent-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 42px;
+}
+.rent-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: 36px;
+  padding-top: 28px;
+  padding-bottom: 32px;
+  border-top: 2px solid var(--brand-ink);
+}
+.rent-ledger,
+.rent-process {
+  min-width: 0;
+}
+.rent-ledger h2 {
+  margin: 22px 0 8px;
+  font-size: 1.625rem;
+  letter-spacing: -0.04em;
+}
+.rent-ledger > p {
+  font-size: 0.8125rem;
+}
+.rent-amount {
+  font-size: 3.25rem;
+  margin: 30px 0 8px;
+}
+.rent-meta {
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.75rem;
+}
+.rent-card .section-title {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.rent-card .button {
+  width: auto;
+  margin-top: 24px;
+  min-height: 48px;
+}
+.rent-phase {
+  margin: 28px 0 0;
+}
+.rent-phase h3 {
+  font-size: 1.625rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  margin-bottom: 12px;
+}
+.rent-phase p {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  max-width: 55ch;
+}
+.verification-note {
+  font-size: 0.8125rem !important;
+  line-height: 1.8;
+  padding-left: 16px;
+  border-left: 2px solid #b9906b;
+}
+.panel-section {
+  margin-top: 48px;
+  border-top: 1px solid var(--border);
+  padding-top: 28px;
+}
+.explanation-grid h3 {
+  font-size: 0.875rem;
+}
+.explanation-grid p {
+  font-size: 0.8125rem;
+}
+.utilities-grid {
+  gap: 44px;
+}
+.utility-card {
+  border-top: 2px solid var(--brand-ink);
+  padding-top: 28px;
+}
+.ticket-list {
+  gap: 32px;
+}
+.ticket-row {
+  border-top: 2px solid var(--brand-ink);
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+.ticket-row h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.04em;
+}
+.ticket-bottom {
+  font-size: 0.75rem;
+}
+.assistance-note {
+  border-top: 1px solid var(--border);
+  padding-top: 28px;
+}
+.consultation-photo {
+  border-radius: 3px;
+}
+.booking-confirm {
+  border-top: 2px solid var(--brand-ink);
+  padding-top: 24px;
+}
+.card-controls {
+  padding-top: 0;
+}
+.card-controls > .section-title {
+  border-top: 2px solid var(--brand-ink);
+  padding-top: 22px;
+}
+.card-page-grid {
+  gap: 56px;
+}
+.card-caption {
+  justify-content: flex-start;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+.setting-row {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.setting-row strong {
+  font-size: 0.875rem;
+}
+.setting-row small {
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+.agency-stats > div {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+.profile-panel,
+.prototype-lab,
+.access-form {
+  border-top: 2px solid var(--brand-ink);
+  padding-top: 28px;
+}
+.contract-summary,
+.inset-form,
+.payment-summary,
+.attached-file,
+.verification-block,
+.ticket-description {
+  background: transparent;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.attached-file,
+.verification-block {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.payment-summary {
+  padding-top: 0;
+}
+.timeline {
+  margin-top: 24px;
+}
+.timeline li {
+  padding-bottom: 24px;
+}
+.timeline li:first-child strong {
+  color: var(--brand-ink);
+}
+@media (hover: hover) and (pointer: fine) {
+  .property-tile:hover {
+    box-shadow: none;
+    transform: none;
+  }
+  .property-tile:hover .property-text h3 {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .ticket-row:hover,
+  .activity-row:hover,
+  .document-row:hover,
+  .agency-row:hover {
+    background: #eee5d755;
+  }
+  .button.primary:hover {
+    background: #6a3b20;
+  }
+}
+@media (max-width: 1100px) {
+  .dashboard-top {
+    gap: 28px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .priority-amount {
+    margin-left: 0;
+    text-align: left;
+  }
+  .quick-actions {
+    flex-wrap: wrap;
+  }
+  .card-page-grid {
+    gap: 32px;
+  }
+}
+@media (max-width: 900px) {
+  .dashboard-top {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+  .card-widget {
+    max-width: 560px;
+    width: 100%;
+  }
+  .card-page-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .rent-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .rent-meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+@media (max-width: 700px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 32px;
+  }
+  .demo-context {
+    padding: 6px 0;
+    gap: 4px;
+    font-size: 0.625rem;
+    align-items: center;
+  }
+  .demo-context > span {
+    line-height: 1.4;
+  }
+  .demo-context button {
+    min-width: 70px;
+    min-height: 44px;
+    font-size: 0.625rem;
+  }
+  .context-row {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+  }
+  .page-heading {
+    margin-top: 14px;
+    margin-bottom: 32px;
+  }
+  .page-heading h1 {
+    font-size: 2.25rem;
+  }
+  .page-heading p {
+    font-size: 0.875rem;
+  }
+  .dashboard-top {
+    margin-top: 8px;
+    margin-bottom: 40px;
+    gap: 36px;
+  }
+  .card-widget .section-title {
+    margin-bottom: 14px;
+  }
+  .digital-card,
+  .card-page-grid .digital-card {
+    min-height: 13.5rem;
+    padding: 22px;
+    border-radius: 19px;
+  }
+  .digital-card .card-copy {
+    margin: 18px 0 26px;
+  }
+  .digital-card .brand-symbol {
+    width: 40px;
+    height: 40px;
+  }
+  .card-manage {
+    margin-top: 14px;
+  }
+  .overview-panel .page-heading h1 {
+    font-size: 2.125rem;
+  }
+  .priority-card {
+    padding: 22px 0;
+  }
+  .priority-amount {
+    margin-left: auto;
+  }
+  .summary-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 24px 0 16px;
+    gap: 12px;
+  }
+  .summary-stats strong {
+    font-size: 2rem;
+  }
+  .summary-stats span {
+    font-size: 0.625rem;
+  }
+  .quick-actions {
+    gap: 12px;
+  }
+  .quick-actions > button {
+    font-size: 0.75rem;
+  }
+  .property-grid {
+    gap: 30px;
+  }
+  .property-image {
+    height: 230px;
+  }
+  .property-text {
+    padding: 16px 0 0;
+  }
+  .properties-section {
+    margin-bottom: 40px;
+  }
+  .dashboard-bottom {
+    gap: 40px;
+  }
+  .activity-row,
+  .document-row,
+  .agency-row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .consultation-teaser,
+  .panel-section,
+  .utility-card,
+  .assistance-note,
+  .profile-panel,
+  .prototype-lab,
+  .access-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .rent-card {
+    padding: 24px 0 30px;
+    gap: 28px;
+  }
+  .rent-amount {
+    font-size: 3rem;
+    margin-top: 22px;
+  }
+  .rent-ledger h2 {
+    font-size: 1.5rem;
+  }
+  .rent-phase h3 {
+    font-size: 1.75rem;
+  }
+  .explanation-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+  .explanation-grid > div {
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+  }
+  .utilities-grid {
+    gap: 32px;
+  }
+  .ticket-row {
+    padding: 24px 0 12px;
+  }
+  .card-controls {
+    padding: 0;
+  }
+  .card-page-grid {
+    gap: 26px;
+  }
+  .card-caption {
+    font-size: 0.6875rem;
+  }
+  .contract-summary,
+  .inset-form,
+  .payment-summary,
+  .attached-file,
+  .verification-block,
+  .ticket-description {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (prefers-contrast: more) {
+  :root {
+    --border: #9e8774;
+  }
+  .digital-card {
+    border-color: var(--brand-accent);
+  }
+}
+
+@media (max-width: 700px) {
+  .property-tile,
+  .property-grid.full .property-tile {
+    display: block;
+  }
+  .property-image,
+  .property-grid.full .property-image {
+    width: 100%;
+    height: 230px;
+  }
+}
+.payment-phase {
+  margin-bottom: 24px;
+}
+.payment-phase h3:focus {
+  outline: none;
+}
+
+/* Text enlargement must increase height, never widen the reading column. */
+.overview-panel,
+.card-controls,
+.page-heading > div,
+.priority-card > div,
+.summary-stats > div {
+  min-width: 0;
+}
+.page-heading h1,
+.rent-phase h3,
+.rent-amount,
+.priority-amount strong,
+.summary-stats span {
+  overflow-wrap: anywhere;
+}
+.card-controls .section-title {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.date-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.section-title {
+  flex-wrap: wrap;
+}
+.quick-actions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.quick-actions > button,
+.quick-actions > button > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.digital-card .card-bottom small {
+  overflow-wrap: anywhere;
+}
+
+.support-mini {
+  background: transparent;
+  border-radius: 0;
+  border-top: 1px solid var(--border);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Home summaries stay open; a single home and the property index stay expanded. */
+.home-properties-compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 24px;
+}
+.home-properties-compact .property-tile {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+}
+.home-properties-compact .property-image {
+  width: 100%;
+  height: 132px;
+  min-height: 0;
+}
+.home-properties-compact .property-image .badge {
+  top: 8px;
+  left: 8px;
+  max-width: calc(100% - 16px);
+  padding: 3px 5px;
+  font-size: 0.625rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.home-properties-compact .property-arrow {
+  right: 8px;
+  bottom: 8px;
+}
+.home-properties-compact .property-text {
+  min-width: 0;
+  padding: 5px 0 0;
+}
+.home-properties-compact .property-text h3 {
+  overflow-wrap: anywhere;
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  margin: 0;
+}
+.home-properties-compact .property-text p {
+  font-size: 0.75rem;
+  line-height: 1.65;
+  margin: 7px 0 13px;
+}
+.home-properties-compact .property-meta {
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 5px;
+  padding-top: 10px;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}

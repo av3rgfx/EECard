@@ -76,3 +76,12 @@ Manrope locale e licenza OFL mantenuti, anche nella guida web. Le skill Emil gi�
 ## Revisione visiva di chiusura
 
 Letta e applicata in sola analisi la skill [find-animation-opportunities](https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/find-animation-opportunities/SKILL.md), stesso snapshot verificato localmente. Report con opportunità, frequenza ipotizzata, scopo, ricette e candidati scartati in [REVISIONE_VISIVA.md](REVISIONE_VISIVA.md). Nessun componente o asset nuovo, nessuna nuova dipendenza; nessuna animazione implementata in questa chiusura.
+
+
+## Materia con pagine editoriali — direzione scelta
+
+Fonte della scelta: feedback esplicito dell’utente con due screenshot del confronto. Materia per tessera/materiali; contenuti a tutta larghezza e senza card ripetute come Editoriale. Esempi originali e licenza MIT dello snapshot Emil conservati in `design-lab/` e [esplorazioni](esplorazioni/README.md).
+
+Skill Emil lette/applicate dallo stesso snapshot `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`: apple-design (composizione e gerarchie), mobile-native (tessera subito, target e larghezze), emil-design-eng (type/layout/focus), prototype (confronto isolato), find-animation-opportunities, animate e review-animations (marcatore dello stato reale), break-ui + fix (dati esistenti, zoom200%, errori, overflow). Nessuna libreria aggiunta; WAAPI per il solo marcatore affitto, token condivisi. Fotografie locali illustrative e Manrope OFL invariati. Logo C non deformato né animato.
+
+Sites building/hosting per aggiornare il sito esistente e cloud-environment-runtime per l’ambiente. Helper site-workflow ancora assente dalla macchina: sincronizzata la sorgente remota esistente con Git, verificata build statica locale, push del commit esatto e API native save/deploy, pubblico conservato. Nessun nuovo sito o cambio di licenza.

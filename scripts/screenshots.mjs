@@ -17,6 +17,7 @@ for (const width of [1440, 1280, 390, 360]) {
   });
   if ([1440, 390].includes(width)) {
     for (const route of [
+      "immobili",
       "documenti",
       "affitto",
       "assistenza",

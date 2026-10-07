@@ -1,0 +1,110 @@
+[
+  {
+    "v": 1,
+    "view": "home",
+    "width": 1440,
+    "file": "docs/design/esplorazioni/screenshots/1-home-desktop.png"
+  },
+  {
+    "v": 1,
+    "view": "home",
+    "width": 390,
+    "file": "docs/design/esplorazioni/screenshots/1-home-mobile.png"
+  },
+  {
+    "v": 1,
+    "view": "card",
+    "width": 1440,
+    "file": "docs/design/esplorazioni/screenshots/1-tessera.png"
+  },
+  {
+    "v": 1,
+    "view": "card",
+    "width": 390,
+    "file": "docs/design/esplorazioni/screenshots/1-tessera-critica.png"
+  },
+  {
+    "v": 1,
+    "view": "affitto",
+    "width": 1440,
+    "file": "docs/design/esplorazioni/screenshots/1-affitto.png"
+  },
+  {
+    "v": 1,
+    "view": "affitto",
+    "width": 390,
+    "file": "docs/design/esplorazioni/screenshots/1-affitto-ridotto.png"
+  },
+  {
+    "v": 2,
+    "view": "home",
+    "width": 1440,
+    "file": "docs/design/esplorazioni/screenshots/2-home-desktop.png"
+  },
+  {
+    "v": 2,
+    "view": "home",
+    "width": 390,
+    "file": "docs/design/esplorazioni/screenshots/2-home-mobile.png"
+  },
+  {
+    "v": 2,
+    "view": "card",
+    "width": 1440,
+    "file": "docs/design/esplorazioni/screenshots/2-tessera.png"
+  },
+  {
+    "v": 2,
+    "view": "card",
+    "width": 390,
+    "file": "docs/design/esplorazioni/screenshots/2-tessera-critica.png"
+  },
+  {
+    "v": 2,
+    "view": "affitto",
+    "width": 1440,
+    "file": "docs/design/esplorazioni/screenshots/2-affitto.png"
+  },
+  {
+    "v": 2,
+    "view": "affitto",
+    "width": 390,
+    "file": "docs/design/esplorazioni/screenshots/2-affitto-ridotto.png"
+  },
+  {
+    "v": 3,
+    "view": "home",
+    "width": 1440,
+    "file": "docs/design/esplorazioni/screenshots/3-home-desktop.png"
+  },
+  {
+    "v": 3,
+    "view": "home",
+    "width": 390,
+    "file": "docs/design/esplorazioni/screenshots/3-home-mobile.png"
+  },
+  {
+    "v": 3,
+    "view": "card",
+    "width": 1440,
+    "file": "docs/design/esplorazioni/screenshots/3-tessera.png"
+  },
+  {
+    "v": 3,
+    "view": "card",
+    "width": 390,
+    "file": "docs/design/esplorazioni/screenshots/3-tessera-critica.png"
+  },
+  {
+    "v": 3,
+    "view": "affitto",
+    "width": 1440,
+    "file": "docs/design/esplorazioni/screenshots/3-affitto.png"
+  },
+  {
+    "v": 3,
+    "view": "affitto",
+    "width": 390,
+    "file": "docs/design/esplorazioni/screenshots/3-affitto-ridotto.png"
+  }
+]

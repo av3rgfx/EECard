@@ -1,5 +1,7 @@
 # Revisione visiva e direzione della prossima sessione
 
+**Aggiornamento successivo:** l’utente ha scelto Materia e luce con la struttura aperta di Editoriale, senza card contenitore ripetute. Integrazione completata nel frontend0.3. Questo documento conserva la diagnosi iniziale; la scelta e i risultati attuali sono in [DECISIONI.md](DECISIONI.md), [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) e [VERIFICHE.md](VERIFICHE.md).
+
 6 ottobre 2026. Base esaminata: identità 0.2, commit `7f652e4c3b12a9940aaef7bf5ac8d717061c9b5a`; build online Sites v3 dal commit `d0bcbaecf4a208225fb0788070fc90e90fbf4551`. Questa è un’analisi con proposte, non un redesign implementato o approvato.
 
 ## Richiesta confermata
