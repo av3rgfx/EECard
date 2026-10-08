@@ -1,10 +1,10 @@
 # EECard — sviluppo e manutenzione
 
-Aggiornato il 6 ottobre 2026. Repository di riferimento: https://github.com/av3rgfx/EECard. Stack del prototipo: React, TypeScript e Vite; le versioni riproducibili sono in `package-lock.json`.
+Aggiornato l'8 ottobre 2026. Repository di riferimento: https://github.com/av3rgfx/EECard. Stack del prototipo: React, TypeScript e Vite; le versioni riproducibili sono in `package-lock.json`.
 
 ## Ripresa e avvio
 
-Leggere [AGENTS.md](AGENTS.md) e [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md). PR #3 integrata. Il lavoro corrente è su `design/visual-directions-lab`, da main `ed3a473`. Verificare la PR del branch corrente: se aperta riutilizzarla; dopo merge partire da main aggiornato e nuovo branch. Controllare prima le modifiche locali e non sovrascriverle.
+Leggere [AGENTS.md](AGENTS.md) e [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md). PR #4 integrata il 7 ottobre alle 22:13:57 UTC, main `4b77c0bd41d733c7a7680ad3d63d9a496424db64`. L'analisi della nuova conversazione parte da quella base sul branch documentale `docs/discussione-2026-10-07`. Verificare la PR del branch corrente: se aperta riutilizzarla; dopo merge partire da main aggiornato e nuovo branch. Controllare prima le modifiche locali e non sovrascriverle.
 
 Node.js 22.12+ o 24 LTS:
 
@@ -110,3 +110,21 @@ Il salto al contenuto deve mettere a fuoco `main` senza alterare l’hash usato 
 ### Densità contestuale degli immobili in home
 
 `HomePage` applica `home-properties-compact` alla sola lista quando `activeHouses.length > 1`: conta gli immobili effettivamente visibili nel ruolo/filtro corrente. Il componente `PropertyTile` e l’apertura del dettaglio sono condivisi e invariati. `PropertiesPage` non riceve il modificatore e mantiene foto ampie. Nessuna nuova preferenza persistita, animazione o modifica delle fixture. Lo script screenshot include ora anche la rotta `immobili`.
+
+## Nuovo studio funzionale - 8 ottobre
+
+[EA01-EA30](docs/progetto/discussione-2026-10-07/ANALISI_CONVERSAZIONE.md) sono input
+per la progettazione, non modifiche al codice. La mappa logica proposta nel
+rapporto considera persone/agenzie, relazioni temporali, adesioni e credenziali,
+file/versioni, contratti e bozze, dispositivi, lavori e assistente.
+
+Il ruolo selezionato e il record di pagamento per immobile della demo non
+modellano account verificati o tutti i periodi della locazione. Il solo nome
+del file non è un archivio. Lettore, wallet, firma e AI sono assenti: prima di
+renderli operativi vanno definiti risultati, permessi, dipendenze e criteri.
+Le verifiche ufficiali mirate sui wallet non equivalgono a una prova hardware.
+Non è stato scelto un backend, un provider o uno standard NFC.
+
+La consegna è documentale: verificare collegamenti, coerenza, integrità dei file
+e diff. Frontend, dati, asset e sito restano invariati; non attribuire nuovi test
+UI o un deploy a questo aggiornamento.

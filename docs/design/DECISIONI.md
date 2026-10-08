@@ -1,6 +1,6 @@
 # Registro delle decisioni — prodotto e design
 
-6 ottobre 2026. Le etichette distinguono richiesta confermata, proposta di design e ipotesi dimostrativa. Nessuna scelta nel prototipo approva il modello commerciale.
+Aggiornato l'8 ottobre 2026. Le etichette distinguono richiesta confermata, proposta di design e ipotesi dimostrativa. Nessuna scelta nel prototipo approva il modello commerciale.
 
 **Stato attuale:** dopo i tre esempi separati, l’utente ha scelto tessera/materiali di Materia e luce e struttura delle pagine di Editoriale e architettura. L’ultima richiesta conferma lo stile editoriale attuale e compatta soltanto gli immobili della home quando ne sono visibili più di uno; singolo risultato e pagina immobili restano espansi. Le card non sono vietate in assoluto, ma non è richiesto ripristinarle. Direzione integrata nel frontend 0.3; vedere C14–C18. Le sezioni precedenti conservano la storia delle decisioni, senza riaprire una scelta già ricevuta.
 
@@ -94,3 +94,21 @@ P09 dispone di [tre esecuzioni interattive](esplorazioni/README.md), realizzate 
 | C18 | Ultima scelta esplicita dell’utente, implementata | Mantenere lo stile editoriale attuale; rendere più compatti solo gli immobili della home quando ne sono visibili più di uno | Nessun ripristino di card immobili. `.home-properties-compact` dipende da `activeHouses.length > 1`; immagine ridotta a sinistra, testo a fianco, nessun nuovo fondo o cornice. Un solo risultato visibile e pagina “Vedi immobili” restano espansi |
 
 C18 sostituisce l’ipotesi intermedia di ripristinare le schede immobili. Il conteggio riguarda i risultati del contesto corrente, dopo ruolo e filtro, non tutti gli immobili presenti nei dati. Tessera iniziale, flussi, permessi, dati demo e stati operativi restano invariati. La registrazione dell’implementazione non dichiara un nuovo deploy: l’esito della pubblicazione resta in ANTEPRIME_WEB.md.
+
+## Conversazione del 7 ottobre - nuovi input analizzati l'8 ottobre
+
+| ID | Stato | Contenuto / conseguenza |
+| --- | --- | --- |
+| C19 | Richiesta esplicita dell'utente | Analizzare audio completo e repository, schematizzare nuove idee/migliorie e preparare file/prompt per una nuova sessione. Autorizza analisi e documentazione, non l'implementazione automatica di tutte le idee |
+| EA01-EA30 | Fonti discusse, con novità/precisazioni/riprese | [Catalogo integrativo](../progetto/discussione-2026-10-07/ANALISI_CONVERSAZIONE.md): intervalli, differenze, proposte e punti aperti. Non promuovere il catalogo a specifica approvata |
+| A08 | Aperto | Quote clienti e offerta partner: prezzo/unità/periodo/inclusioni. Importo a 23:17 instabile; 600 euro annui riferiti ad alcuni clienti già gestiti, non a EECard |
+| A09 | Aperto | Terminale al banco, destinatari dei due schermi, wallet/contactless, tipo di firma e compatibilità; nessun componente/provider scelto |
+| A10 | Aperto | Domotica, assistente Jarvis e bozze contrattuali: scopo, dati, responsabilità, dipendenze e eventuale progetto preesistente |
+| A11 | Nuovo spunto da chiarire | Bianco/rosso molto tecnologico nell'audio; tonalità e ambito aperti. Non sostituisce automaticamente C10/C14-C18 né il design system 0.3 |
+
+Il nuovo input sulle funzioni domestiche del proprietario conserva la
+riservatezza delle bollette dell'inquilino (EA20/EA22). Il marchio di sistema
+insieme alla card personalizzata dei partner è una proposta da definire, senza
+un naming approvato o una nuova scelta del simbolo. I 30/60 giorni riferiti a
+documenti comunali e i dieci giorni nel confronto B2B sono esempi del dialogo,
+non regole generali o stime di sviluppo.

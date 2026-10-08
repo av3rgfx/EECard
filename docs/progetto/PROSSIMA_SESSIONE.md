@@ -1,36 +1,100 @@
-# EECard — punto di ripresa
+# EECard - punto di ripresa
 
-Aggiornato il 6 ottobre 2026. Repository unica https://github.com/av3rgfx/EECard.
+Aggiornato l'8 ottobre 2026. Repository unica https://github.com/av3rgfx/EECard.
 
-## Stato corrente — Materia con pagine editoriali
+## Obiettivo corrente
 
-L’utente ha scelto **1 · Materia e luce**, chiedendo esplicitamente la struttura aperta di Editoriale: contenuti a tutta larghezza utile, senza contenitori-card ripetuti. Ultima precisazione: lo stile aperto attuale è confermato; rendere più compatti gli immobili **solo nella home e solo quando le case visibili sono più di una**. Con una sola casa, anche selezionata dal filtro, e nella pagina «Vedi immobili» mantenere la vista espansa. Non ripristinare le card contenitore. La scelta autorizza l’integrazione prevista nel brief. Non riproporre il confronto come ancora da approvare.
+L'utente ha fornito la registrazione della nuova conversazione dei fondatori del
+7 ottobre (28:25) e ha chiesto analisi completa, confronto con il repository,
+schema delle idee/migliorie, file e prompt per continuare studio e progettazione.
 
-La PR #3 è stata integrata il 6 ottobre alle 11:44:41 UTC. Il lavoro corrente parte da main `ed3a473164b2965168a11a538a6a0b21e6fb7844`, branch `design/visual-directions-lab`, [PR #4](https://github.com/av3rgfx/EECard/pull/4) aperta e pronta alla revisione, senza merge. Prima della prossima modifica verificare la PR associata al branch: riusare se aperta, partire da main aggiornato se integrata. Nessun merge richiesto.
+La consegna è [discussione-2026-10-07/](discussione-2026-10-07/README.md):
 
-Consegnati e conservati [i tre esempi isolati](../design/esplorazioni/README.md), ora archivio del confronto. Integrata nel prodotto la combinazione scelta:
+- [Analisi EA01-EA30](discussione-2026-10-07/ANALISI_CONVERSAZIONE.md): intervalli,
+  differenze dalla base, implicazioni, questioni aperte e sequenza proposta.
+- [Contesto verificato](discussione-2026-10-07/CONTESTO_REPOSITORY.md): snapshot,
+  codice, decisioni già ricevute e confini del prototipo.
+- [Prompt completo](discussione-2026-10-07/PROMPT_NUOVA_SESSIONE.md): da usare
+  insieme ai documenti e, se serve il riascolto, all'audio originale.
 
-- Tessera bruna materica, C Legame invariato, primo elemento sostanziale della home; stato e gestione nello stesso gruppo. Nessuna tessera inventata per agenzia/tecnico.
-- Pagine aperte su avorio: liste, separatori e gerarchia tipografica. Home con più case: riepiloghi compatti con foto laterale. Una casa in home e pagina immobili: fotografia ampia sopra il testo. Il dialogo mantiene una superficie propria.
-- Affitto con percorso visivo condiviso fra pagina e dialogo, fase corrente, distinzione documento/dichiarazione/verifica/quietanza. Movimento solo sul marcatore cambiato; tastiera immediata, reduced motion con dissolvenza120ms.
-- Dati, permessi, residui, persistenza, licenze e flussi demo conservati. Nome ancora aperto: Legame è il titolo del concept, non un nome approvato.
+La trascrizione è automatica e i passaggi ambigui non sono risolti per deduzione.
+La repository pubblica contiene sintesi anonime, non audio o trascrizione integrale.
 
-## Verifiche e anteprime
+## Stato remoto e continuità
 
-Ultima correzione della home: 6 test mirati layout/axe/stress/home passati, casi multiplo/singolo/filtro/inquilino/vuoto verificati, quattro anteprime e HTML offline collaudati. Titolo lungo corretto a 320 px/testo 200%. La precedente integrazione aveva superato 19 E2E e 24 audit aggiuntivi: suite completa non ripetuta per questa modifica circoscritta. Home verificata a390×844 e360×780: tessera, stato e gestione prima della navigazione inferiore. Incasso parziale400€ su950€: residuo550€ mantenuto anche dopo quietanza. Dettagli e limiti in [VERIFICHE.md](../design/VERIFICHE.md).
+La PR #4 è integrata il 7 ottobre alle 22:13:57 UTC (8 ottobre alle 00:13:57 in
+Italia). Base analizzata: main `4b77c0bd41d733c7a7680ad3d63d9a496424db64`.
+La nuova analisi documentale parte da quella base sul branch
+`docs/discussione-2026-10-07`, con la relativa PR senza merge implicito.
+Controllare il remoto: riusare la PR se aperta; dopo merge partire da main
+aggiornato e da un nuovo branch. I riferimenti precedenti a PR #4 aperta sono
+checkpoint storici.
 
-[Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Guida/asset](https://eecard-design-preview.uepacio.chatgpt.site/marchio/). Identità e pubblico del sito invariati; versione effettivamente online e commit sorgente in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md). Online: Sites **v5**, deploy riuscito alle 14:18:39 UTC dal commit `65ac9e092c17d9113d85106fa3d04fbb9770cab5`. La chiusura documentale successiva non cambia la build. Push GitHub e deploy Sites sono operazioni distinte.
+## Principali nuovi input
 
-## Ripresa operativa
+Attivazione al contratto e riuso dei dati; fascicolo recuperabile dal lettore al
+banco anche con personale diverso; mini terminale con due schermi e possibile
+firma con penna; wallet/contactless; iscrizione online e spedizione fisica a
+pagamento; offerta per altre agenzie con card personalizzate e brand del sistema.
 
-Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [DESIGN_SYSTEM.md](../design/DESIGN_SYSTEM.md), [MARCHIO.md](../design/MARCHIO.md), [DECISIONI.md](../design/DECISIONI.md) e [BACKLOG.md](BACKLOG.md). Il prompt precedente e la revisione conservano il brief storico; prevale la scelta esplicita registrata qui.
+Funzioni domestiche anche per il proprietario nella propria casa, preservando
+la riservatezza delle bollette dell'inquilino; QR/importo prioritari in bolletta;
+domotica esplorativa; documenti tecnici/edilizi storici e cronologia lavori;
+migrazione di clienti già gestiti; assistente con contesto e bozze contrattuali.
 
-`npm ci`, `npm run dev`. Verifiche: `npm test -- --workers=4`, `node scripts/audit.mjs`. Anteprime: `npm run preview:shareable`; server statico5174 e `node scripts/verify-brand.mjs`. Non dipendere dai processi o file temporanei della sessione precedente.
+Spunto molto tecnologico con fondo bianco/rosso, da chiarire rispetto alla 0.3.
+Nessuna di queste idee è stata trasformata automaticamente in una funzione,
+un listino o un perimetro del primo rilascio. Tutti i punti hanno ID nel rapporto.
 
-## Lavoro aperto
+## Decisioni da conservare
 
-Sessione conclusa su richiesta dell’utente. Codice, elaborati, screenshot e documentazione sono salvati nel branch della PR #4, aperta e pronta alla revisione. Nessuna modifica di prodotto aggiuntiva richiesta: riprendere dal prossimo obiettivo dell’utente senza riaprire il confronto già risolto. Non avviare backend, servizi o nuove funzioni senza una richiesta. Restano aperti naming, modello commerciale, perimetro operativo, prezzi, budget e integrazioni. Nessuna ipotesi dello studio è diventata una promessa del prototipo.
+EECard provvisorio; C - Legame scelto, nome ancora aperto. Direzione 0.3:
+tessera/materiali di Materia e luce, pagine aperte di Editoriale e architettura,
+bruno/albicocca/avorio. Tessera prima nella home personale, aree operative per
+agenzia/tecnico. Immobili compatti solo in home con più risultati effettivamente
+visibili; una sola casa e pagina immobili sempre espanse.
 
-Test Chromium emulati: iPhone/Android fisici, Safari/WebKit, VoiceOver/TalkBack, prove con utenti e stampa della tessera ancora da verificare.
+Documento caricato, dichiarazione, incasso verificato e quietanza distinti.
+Il parziale mantiene il residuo. Card di accesso, non bancaria. Permessi per
+relazione/immobile/contratto/incarico; proprietario senza accesso automatico alle
+bollette personali dell'inquilino. Le fixture e i filtri della demo non sono
+autenticazione, autorizzazioni o archivio di produzione.
 
-Chiusura solo documentale: controllati coerenza, collegamenti e diff. Test frontend e deploy non ripetuti; Sites v5 e il commit sorgente online sopra indicato restano invariati.
+## Questioni aperte e prossime azioni
+
+Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, BACKLOG.md,
+DECISIONI.md e i tre documenti della nuova analisi. Riprendere da S02-S08:
+chiarire beneficio/primo pagante, offerte e quote; proporre perimetro, percorsi,
+dati e criteri; valutare dipendenze wallet/lettore/firma/AI e variante visiva.
+
+I precedenti 50/15 euro non sono un listino. A 23:17 circa il nuovo audio è
+instabile fra 65 e 60-50 euro; i 600 euro annui si riferiscono ad alcuni clienti
+già gestiti, non al prezzo EECard. Jarvis potrebbe riferirsi a un progetto o
+assistente da chiarire. Budget, territorio, risorse, copertura, primo rilascio e
+ordine locale/B2B rimangono aperti. Non assumere rinvii approvati per pagamenti,
+app, 3D, AI o totem. Le prove wallet da fonti ufficiali non sono prove hardware.
+
+Lo studio v0.1 resta intatto. Non ripetere tutta l'analisi di mercato e il design
+senza una ragione. Prima di codice operativo definire il comportamento richiesto;
+procedere sugli interventi effettivamente richiesti e autorizzati nella sessione.
+
+## Prototipo, verifiche e anteprime
+
+Il frontend rimane React/TypeScript/Vite, dati demo e localStorage, senza backend,
+account reali, caricamento server, pagamenti, NFC/wallet, firma, domotica o AI.
+Per avvio e test pertinenti seguire DEVELOPMENT.md. La richiesta corrente non
+ha modificato frontend, asset, fixture, design system o screenshot.
+
+Ultima versione pubblicata documentata: Sites v5, 6 ottobre alle 14:18:39 UTC,
+sorgente `65ac9e092c17d9113d85106fa3d04fbb9770cab5`. [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/)
+- [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/).
+Questa consegna non esegue un deploy e non verifica di nuovo il sito live.
+
+I controlli della precedente modifica UI erano 6 test mirati, casi home e quattro
+anteprime/HTML; la precedente integrazione aveva 19 E2E e 24 audit aggiuntivi.
+Sono evidenze datate in VERIFICHE.md, non test ripetuti in questa sessione.
+Prove fisiche iPhone/Android, Safari/WebKit e screen reader restano aperte.
+
+Chiusura documentale: verificare coerenza, collegamenti e diff, artefatti del
+passaggio e stato del salvataggio remoto. Non attribuire nuovi test frontend
+alla sola analisi. Registro delle sessioni e backlog conservano la storia.

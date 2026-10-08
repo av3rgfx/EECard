@@ -1,6 +1,6 @@
 # EECard — prodotto
 
-Aggiornato il 6 ottobre 2026. Questo documento orienta il lavoro di prodotto nelle sessioni successive; non costituisce un’offerta commerciale né una specifica di produzione approvata.
+Aggiornato l'8 ottobre 2026. Questo documento orienta il lavoro di prodotto nelle sessioni successive; non costituisce un’offerta commerciale né una specifica di produzione approvata.
 
 ## Identità e origine
 
@@ -53,9 +53,34 @@ Nessun account reale, pagamento, email, upload server, prenotazione o ordine vie
 
 Il registro dettagliato con ID e provenienza è [DECISIONI.md](docs/design/DECISIONI.md): aggiornare lì lo stato quando arriva una risposta verificabile, poi allineare questa sintesi. Non promuovere una proposta a “confermata” per il solo fatto che appare nel prototipo.
 
-## Prossima sessione confermata
+## Design completato e conservato
 
 Evoluzione della qualità visiva e della UX del prototipo: confronto ad alta fedeltà consegnato e scelta esplicita ricevuta. Integrati tessera e materiali di Materia e luce con pagine aperte come Editoriale. La tessera personale precede saluto e riepiloghi per proprietario/inquilino; agenzia e tecnico mantengono il proprio contesto operativo. La home usa riepiloghi compatti degli immobili quando ne sono visibili più di uno; con una sola casa e nella pagina immobili la vista resta espansa. Il percorso affitto rende visibili gli stati esistenti, senza aggiungere funzionalità o disponibilità di servizi. Decisioni e verifiche in [DESIGN.md](DESIGN.md).
+
+## Nuovo studio richiesto - conversazione del 7 ottobre
+
+L'utente chiede di analizzare l'intera nuova registrazione, confrontarla con la
+repository e preparare file/prompt per continuare progettazione e sviluppo.
+Il [rapporto integrativo](docs/progetto/discussione-2026-10-07/ANALISI_CONVERSAZIONE.md)
+censisce EA01-EA30, distinguendo novità, precisazioni e riprese dello studio v0.1.
+
+Nuovi input: attivazione al contratto e riuso dei dati dell'agenzia; lettore e
+terminale al banco con due schermi e possibile firma; wallet/contactless;
+offerta per altre agenzie con card personalizzate e brand del sistema; funzioni
+domestiche del proprietario; bollette con QR/importo prioritari; domotica;
+documenti storici e cronologia lavori; migrazione di clienti già gestiti;
+assistente con contesto e preparazione di bozze contrattuali.
+
+Queste idee non sono implementate né tutte approvate per il primo rilascio.
+Il proprietario che usa le funzioni domestiche non acquisisce le bollette del
+suo inquilino. L'assistente Jarvis è un riferimento da chiarire, non un naming
+confermato. I 600 euro annui dell'esempio riguardano alcuni clienti già gestiti;
+le altre cifre, quote, unità, periodicità e inclusioni restano da confermare.
+
+Il nuovo spunto grafico bianco/rosso viene registrato come da valutare rispetto
+alla direzione 0.3. Nessun marchio, servizio o scelta visiva è stato cambiato.
+Prossimo passo: validare il brief incrementale e proporre offerte, percorsi e
+perimetro operativo, conservando le ipotesi come tali.
 
 ## Validazione di prodotto proposta, fuori dal lavoro immediato
 

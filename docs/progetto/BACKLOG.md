@@ -1,6 +1,6 @@
 # Backlog di continuità EECard
 
-Aggiornato il 6 ottobre 2026. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessun responsabile, costo o data è stato assegnato.
+Aggiornato l'8 ottobre 2026. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessun responsabile, costo o data è stato assegnato. PR #4 integrata; nuovo lavoro documentale nel branch `docs/discussione-2026-10-07`.
 
 ## Completato nella sessione
 
@@ -16,7 +16,7 @@ Aggiornato il 6 ottobre 2026. Le priorità seguenti sono una proposta di sequenz
 
 | ID | Priorità proposta / stato | Attività | Criterio di completamento |
 | --- | --- | --- | --- |
-| N01 | Consegna completata · ulteriori feedback su richiesta | Riprendere dal design integrato alla prossima richiesta; V01–V05 completati | Scelta Materia/editoriale e densità condizionale della home registrate; eventuali nuove richieste distinte dal lavoro concluso |
+| N01 | Design completato · nuova analisi documentale | V01–V05 restano completati; nuova richiesta analizzata in EA01-EA30, senza modifiche al frontend | Scelte esistenti conservate e nuovi input distinti; riprendere dai punti S01-S08 sotto |
 | N02 | Alta · da fare su hardware | Verificare iPhone/Safari, Android/Chrome e screen reader | Dispositivo/browser annotati; tastiera, safe area, zoom, rotazione, focus e annunci controllati; problemi riprodotti e corretti |
 | N03 | Alta · in attesa di informazioni | Chiarire quote, primo cliente, zona, beneficio iniziale, copertura e risorse | Risposte con provenienza nel [registro decisioni](../design/DECISIONI.md); nessun numero dedotto dal prototipo |
 | N04 | Dopo N01/N03 · da definire | Scegliere il perimetro del primo rilascio operativo | Percorso prioritario, esclusioni esplicite e criteri di accettazione concordati |
@@ -84,4 +84,27 @@ Il primo chiarimento ammetteva le card per gli oggetti del prodotto; la richiest
 
 V05 pubblicato dal commit `65ac9e092c17d9113d85106fa3d04fbb9770cab5`; controlli mirati in [VERIFICHE.md](../design/VERIFICHE.md), sorgente e deployment in [ANTEPRIME_WEB.md](../design/ANTEPRIME_WEB.md).
 
-Sessione conclusa su richiesta dell’utente: nessuna modifica di prodotto aggiuntiva pendente. PR #4 pronta alla revisione, senza merge; riprendere dal nuovo obiettivo dell’utente.
+Checkpoint del 6 ottobre: sessione allora conclusa con PR #4 pronta alla revisione,
+senza merge eseguito dall'assistente. Il remoto è stato verificato l'8 ottobre:
+PR #4 integrata. Il nuovo obiettivo è l'analisi della conversazione e lo studio
+incrementale registrati sotto.
+
+## Conversazione del 7 ottobre - studio incrementale
+
+Fonti e conseguenze: [EA01-EA30](discussione-2026-10-07/ANALISI_CONVERSAZIONE.md).
+Le righe seguenti organizzano il lavoro proposto, non approvano funzioni o date.
+
+| ID | Stato | Attività | Criterio di completamento |
+| --- | --- | --- | --- |
+| S01 | Analisi completata | Confronto audio completo/repository, catalogo, contesto e prompt | 30 punti con intervalli, distinzione novità/riprese, cifre incerte e regole conservate |
+| S02 | Da chiarire · prima delle specifiche finali | Beneficio, primo pagante, quote, unità, periodicità, copertura e risorse | Risposte attribuite; distinguere 600 euro annui dei clienti già gestiti dal listino EECard |
+| S03 | Proposto | Definire offerte clienti/agenzie e card personalizzate | Inclusioni, setup/design, software, supporto, card e hardware distinti; nessun ricavo previsto senza evidenza |
+| S04 | Proposto | Specificare attivazione al contratto e ritorno al banco | Parti, dati, permessi, card revocata, operatore e riepilogo del secondo schermo definiti |
+| S05 | Proposto · dipende dallo scopo scelto | Verificare wallet/contactless, terminale e firma | Componenti compatibili e prove effettive; pass salvato distinto da lettura NFC; tipo di firma deciso |
+| S06 | Proposto | Estendere modello domestico/fascicolo e cronologia lavori | Casa propria e locata, bollette private, metadati storici e provenienza; domotica delimitata per caso d'uso |
+| S07 | Proposto · Jarvis da chiarire | Specificare assistente e bozze contrattuali | Eventuale progetto esistente, dati consentiti, template/versioni, controllo umano e responsabilità |
+| S08 | Nuovo spunto da confrontare | Valutare bianco/rosso tecnologico rispetto alla 0.3 | Esempio circoscritto, tonalità e ambito chiariti; nessun cambio automatico di simbolo/palette |
+
+N03-N06 restano aperti. La prossima sessione deve usare la nuova analisi senza
+rifare da zero il design concluso o trasformare le ipotesi dello studio v0.1 in
+decisioni. Nessun nuovo test UI o deploy è attribuito alla consegna documentale.
