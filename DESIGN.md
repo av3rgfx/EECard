@@ -71,3 +71,20 @@ terminale o le varianti partner. Conservare simbolo, naming aperto, flussi,
 semantica della tessera, accessibilità e composizione già scelti finché non
 arriva una nuova scelta applicabile. Questa sessione non modifica frontend,
 design system, screenshot o anteprime e non ripete i relativi controlli.
+
+
+## Specifiche funzionali e confronto EA30 — ripresa dell'8 ottobre
+
+I nuovi [percorsi PF01–PF06](docs/progetto/specifiche-2026-10-08/PERCORSI.md)
+specificano comportamenti, stati e permessi per le prossime interfacce.
+Mantengono la 0.3 come base: non introducono una seconda UI né nuove schermate
+operative nella demo. Importo/creditore/scadenza e alternative al QR sono
+specificati per la bolletta; il riepilogo al banco è distinto dal desktop
+operatore, con destinatari ancora da chiarire.
+
+Il [confronto EA30](docs/progetto/specifiche-2026-10-08/REQUISITI_DECISIONI.md)
+mette a confronto ambito, identità, composizione e criteri di verifica della 0.3
+con lo spunto bianco/rosso. È un confronto documentale: nessuna tonalità è scelta,
+nessuna nuova tavola è presentata come testata. Un eventuale campione visivo userà
+gli stessi contenuti e il simbolo C–Legame; per cambiare la direzione serve una
+scelta esplicita. Le varianti fisiche/partner non cambiano automaticamente l'app.

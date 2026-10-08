@@ -57,33 +57,50 @@ Il registro dettagliato con ID e provenienza è [DECISIONI.md](docs/design/DECIS
 
 Evoluzione della qualità visiva e della UX del prototipo: confronto ad alta fedeltà consegnato e scelta esplicita ricevuta. Integrati tessera e materiali di Materia e luce con pagine aperte come Editoriale. La tessera personale precede saluto e riepiloghi per proprietario/inquilino; agenzia e tecnico mantengono il proprio contesto operativo. La home usa riepiloghi compatti degli immobili quando ne sono visibili più di uno; con una sola casa e nella pagina immobili la vista resta espansa. Il percorso affitto rende visibili gli stati esistenti, senza aggiungere funzionalità o disponibilità di servizi. Decisioni e verifiche in [DESIGN.md](DESIGN.md).
 
-## Nuovo studio richiesto - conversazione del 7 ottobre
+## Specifiche funzionali incrementali — 8 ottobre
 
-L'utente chiede di analizzare l'intera nuova registrazione, confrontarla con la
-repository e preparare file/prompt per continuare progettazione e sviluppo.
-Il [rapporto integrativo](docs/progetto/discussione-2026-10-07/ANALISI_CONVERSAZIONE.md)
-censisce EA01-EA30, distinguendo novità, precisazioni e riprese dello studio v0.1.
+La [consegna funzionale](docs/progetto/specifiche-2026-10-08/README.md) aggiorna
+lo studio a partire dagli EA01–EA30, senza ripetere l'analisi della registrazione.
+Contiene requisiti tracciati, due schede di offerta, sei percorsi con criteri,
+modello logico, alternative di rilascio, backlog con dipendenze e prove tecniche.
+Sono specifiche per revisione; il frontend resta dimostrativo.
 
-Nuovi input: attivazione al contratto e riuso dei dati dell'agenzia; lettore e
-terminale al banco con due schermi e possibile firma; wallet/contactless;
-offerta per altre agenzie con card personalizzate e brand del sistema; funzioni
-domestiche del proprietario; bollette con QR/importo prioritari; domotica;
-documenti storici e cronologia lavori; migrazione di clienti già gestiti;
-assistente con contesto e preparazione di bozze contrattuali.
+La proposta R1 privilegia attivazione al contratto, fascicolo e continuità al banco
+per i clienti dell'agenzia iniziale, con isolamento fra agenzie fin dall'inizio.
+Il primo pagante non è ancora scelto: lancio B2B o terminale completo richiedono
+le dipendenze descritte in [OFFERTE_RILASCIO.md](docs/progetto/specifiche-2026-10-08/OFFERTE_RILASCIO.md).
+Le esclusioni da R1 sono proposte motivate, non rinvii approvati di app,
+pagamenti, 3D, AI o totem. Nessun prezzo o ricavo è assunto.
 
-Queste idee non sono implementate né tutte approvate per il primo rilascio.
-Il proprietario che usa le funzioni domestiche non acquisisce le bollette del
-suo inquilino. L'assistente Jarvis è un riferimento da chiarire, non un naming
-confermato. I 600 euro annui dell'esempio riguardano alcuni clienti già gestiti;
-le altre cifre, quote, unità, periodicità e inclusioni restano da confermare.
+L'offerta clienti distingue benefici per proprietario e inquilino, account,
+adesione e card; l'offerta agenzie separa software, servizio locale, setup/design,
+supporto e hardware. Il proprietario nella propria casa può avere le funzioni
+domestiche in base all'intestazione/delega; non acquisisce le bollette del suo
+inquilino. L'acquisto del pacchetto non assegna autorizzazioni sui dati altrui.
 
-Il nuovo spunto grafico bianco/rosso viene registrato come da valutare rispetto
-alla direzione 0.3. Nessun marchio, servizio o scelta visiva è stato cambiato.
-Prossimo passo: validare il brief incrementale e proporre offerte, percorsi e
-perimetro operativo, conservando le ipotesi come tali.
+I [percorsi PF01–PF06](docs/progetto/specifiche-2026-10-08/PERCORSI.md) definiscono
+attivazione, ritorno al banco, casa propria/locata, bolletta, documento storico e
+bozza contrattuale. Card presentata, bolletta visualizzata e bozza generata non
+sono rispettivamente autenticazione, pagamento o contratto stipulato.
 
-## Validazione di prodotto proposta, fuori dal lavoro immediato
+I 600 euro annui riguardano alcuni clienti già gestiti, non il listino EECard;
+le cifre ambigue restano aperte. Jarvis, destinatari dei due schermi e tipo di
+firma richiedono chiarimenti. Fonti ufficiali e protocolli di prova sono in
+[FATTIBILITA.md](docs/progetto/specifiche-2026-10-08/FATTIBILITA.md): nessun test
+hardware o integrazione è stato eseguito.
 
-Raccogliere feedback sui quattro percorsi principali con proprietario, inquilino e agenzia; identificare il beneficio iniziale da offrire e risolvere il perimetro commerciale. Solo dopo definire una prima funzionalità operativa completa con criteri di accettazione. Non sono assegnati tempi, budget o responsabili non concordati.
+EA30 resta un confronto circoscritto di criteri con la 0.3; simbolo, palette e
+frontend non cambiano. Le proposte IF e le decisioni aperte DA sono nel
+[registro incrementale](docs/progetto/specifiche-2026-10-08/REQUISITI_DECISIONI.md).
 
-Riferimenti: [studio v0.1](docs/progetto/EECard-studio-v0.1.pdf), [brief](docs/progetto/PROMPT_DESIGN.md), [backlog](docs/progetto/BACKLOG.md), [ripresa](docs/progetto/PROSSIMA_SESSIONE.md).
+## Prossima validazione proposta
+
+Revisionare il beneficio R1 e svolgere la prova PF01 → PF02 → PF05 con due
+operatori e fascicoli sintetici: misurare tempo di preparazione, recupero,
+correzioni e costo operativo. Soglie, scenari e limiti sono nell'offerta.
+Un test del flusso non dimostra disponibilità a pagare; la prova commerciale
+richiede condizioni e prezzo espliciti, ancora da definire.
+
+Riferimenti: [studio v0.1](docs/progetto/EECard-studio-v0.1.pdf),
+[EA01–EA30](docs/progetto/discussione-2026-10-07/ANALISI_CONVERSAZIONE.md),
+[backlog](docs/progetto/BACKLOG.md), [ripresa](docs/progetto/PROSSIMA_SESSIONE.md).

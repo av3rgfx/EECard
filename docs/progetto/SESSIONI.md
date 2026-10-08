@@ -134,3 +134,39 @@ Chiusura: collegamenti locali e diff verificati, tutti i 30 ID presenti nel
 rapporto; PDF di 10 pagine controllato visivamente. Il pacchetto per la nuova
 sessione comprende analisi, contesto, prompt e trascrizione automatica separata.
 Il salvataggio remoto è verificato confrontando l'albero Git con i file locali.
+
+
+## 8 ottobre 2026 — ripresa funzionale e preparazione dello sviluppo
+
+Richiesta: partire dalla consegna EA01–EA30, aggiornare requisiti e decisioni,
+definire offerte senza prezzi, sei percorsi, rilascio motivato, dati, backlog e
+fattibilità mirata. Risposta e documentazione in italiano; nessun servizio reale.
+
+Verificato remoto prima del branch: PR #5 integrata alle 19:32:22 UTC, main
+`a8e0ca7a0641685462ac209c1570ef421631c121`. Creato
+`docs/specifiche-funzionali-2026-10-08`. Letti istruzioni, intera consegna del
+7 ottobre, documenti correnti, sezioni pertinenti dello studio e sorgenti.
+Nessun riascolto dell'audio, non allegato a questa sessione.
+
+Prodotti [specifiche incrementali](specifiche-2026-10-08/README.md): registro
+RF01–RF30/EA, proposte IF e decisioni DA, offerte clienti e agenzie, percorsi
+PF01–PF06 con criteri, modello logico, proposta R1 con alternative e backlog
+BF01–BF18. R1 raccomanda fascicolo/attivazione/continuità al banco, senza
+attribuire ai fondatori la scelta del primo pagante o le esclusioni proposte.
+
+Ricerca mirata su fonti primarie per wallet/contactless, terminale, firma e AI;
+protocolli FT01–FT08, senza integrazioni o collaudi effettivi. Il contenuto AgID
+non accessibile (403) è indicato come non verificato; i livelli di firma sono
+riportati dalle norme consultate. Non scelti hardware, firma o provider.
+
+Poste due domande raggruppate su beneficio e Jarvis/schermi/atti; nessuna risposta
+registrata durante la preparazione. Le ipotesi non diventano conferme. Prezzi,
+quote, 600 euro riferiti a clienti già gestiti e cifre ambigue conservati aperti;
+C–Legame e 0.3 invariati. EA30 ha un confronto di criteri, nessun redesign.
+
+Aggiornati AGENTS, README, prodotto, design, sviluppo, decisioni, backlog e
+punto di ripresa. Studio v0.1 e fonte EA conservati; solo Markdown modificati.
+Verifiche e consegna remota in
+[VERIFICHE.md](specifiche-2026-10-08/VERIFICHE.md). Nessun test UI, prova fisica,
+servizio o deploy attribuito a questa sessione; Sites v5 resta l'ultima
+pubblicazione documentata. Nessun merge eseguito.
