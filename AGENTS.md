@@ -31,6 +31,11 @@ Le specifiche sono revisionabili: R1 e le alternative non sono ancora un
 perimetro commerciale approvato. Il branch corrente va sempre verificato sul
 remoto secondo la regola di continuità sotto.
 
+Il passo successivo autorizzato è preparato in
+`docs/progetto/prova-agenzia-2026-10-08/`: protocollo, set sintetici, materiali
+e rapporto della revisione simulata. Gli strumenti Python locali generano
+modelli vuoti: non sostituire le misure umane con esiti AI. BF16 resta aperto.
+
 Non pubblicare l'audio, la trascrizione integrale o i dati personali degli esempi
 nella repository pubblica. I documenti del nuovo studio usano sintesi anonime.
 Il riferimento ai clienti già gestiti a 600 euro annui non è un listino EECard;

@@ -65,6 +65,11 @@ requisiti EA, offerte senza prezzi, sei percorsi, proposta di rilascio, modello
 logico e backlog con dipendenze. Wallet/terminale/firma/AI hanno fonti e prove
 da eseguire; nessuna integrazione è attivata. Studio v0.1 e frontend invariati.
 
+Il [kit della prova in agenzia](docs/progetto/prova-agenzia-2026-10-08/README.md)
+rende eseguibile il passo successivo: 24 scenari sintetici, materiali operatore
+e facilitatore, 48 esecuzioni pianificate e strumenti Python locali. Le misure
+umane restano da raccogliere; la revisione simulata non dimostra risparmi.
+
 - [Brief storico del confronto, ora eseguito](docs/progetto/PROMPT_DESIGN.md)
 - [Analisi del design e migliorie proposte](docs/design/REVISIONE_VISIVA.md)
 - [Prodotto, persone e confini](PRODUCT.md)

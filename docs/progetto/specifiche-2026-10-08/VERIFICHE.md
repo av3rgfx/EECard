@@ -4,6 +4,11 @@
 controlli svolti e prove future: i criteri PF/MD/BF/FT sono specifiche, non
 test di prodotto già superati.
 
+Questo è il checkpoint delle specifiche ai commit `7d43ae8`/`dc1a536`.
+Il successivo kit BF02 aggiunge dati e strumenti locali; i suoi controlli sono
+registrati separatamente in [ESITO_SIMULAZIONE.md](../prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
+I conteggi sotto non sono il totale della PR dopo quell'aggiunta.
+
 ## Base e fonti
 
 - Stato remoto PR #5 letto prima di scegliere il branch: integrata alle

@@ -130,3 +130,15 @@ PR #5 verificata integrata alle 19:32:22 UTC; nuovo branch documentale da main
 [prove tecniche](../progetto/specifiche-2026-10-08/FATTIBILITA.md).
 C10/C14–C18 restano la direzione visiva: il confronto di criteri EA30 non è una
 nuova tavola visiva né una scelta dell'utente. Nessuna modifica al prototipo.
+
+
+## Proseguimento — preparazione della prova
+
+| ID | Stato | Contenuto / conseguenza |
+| --- | --- | --- |
+| C22 | Autorizzazione dell'utente: «ok bene procedi» | Avanzare sulla prova proposta di attivazione, banco e recupero storico; preparati kit BF02 e revisione simulata. R1 è il perimetro di lavoro della prova; prezzi, primo pagante, Jarvis, schermi e firma non sono risolti da questa risposta |
+| P12 | Esecuzione progettuale della prova | Due set equivalenti di dodici casi, due operatori controbilanciati, facilitatore, modelli di misura vuoti; verifica AI separata dalle osservazioni umane e dai test server |
+
+[Kit](../progetto/prova-agenzia-2026-10-08/README.md) e
+[rapporto](../progetto/prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
+La PR #6 è ancora aperta e viene aggiornata; nessun merge o cambio visivo.

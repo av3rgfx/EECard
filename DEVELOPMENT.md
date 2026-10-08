@@ -139,6 +139,24 @@ prove in [FATTIBILITA.md](docs/progetto/specifiche-2026-10-08/FATTIBILITA.md).
 La documentazione di piattaforma non dimostra compatibilità hardware o validità
 di un processo di firma EECard. Jarvis e i destinatari degli schermi sono aperti.
 
-Questa consegna modifica solo Markdown: controlli documentali in
+La prima consegna delle specifiche modificava solo Markdown: controlli documentali in
 [VERIFICHE.md](docs/progetto/specifiche-2026-10-08/VERIFICHE.md). Nessun nuovo test
 UI, migrazione, backend o deploy; studio v0.1 e sorgenti del prototipo invariati.
+
+
+## Kit locale della prova in agenzia
+
+[BF02](docs/progetto/prova-agenzia-2026-10-08/README.md) usa due set JSON isolati
+dalle fixture dell'app, pacchetti Markdown e modelli CSV. Lo strumento
+`scripts/prova-agenzia.py` usa solo Python standard; non invia dati o chiama
+servizi. `validate` controlla coerenza e riferimenti; `prepare --output DIR`
+genera copie per la prova; `analyze --measurements FILE` riepiloga misure
+osservate senza trasformare dati mancanti in zero. I test mirati si eseguono con
+`python3 scripts/test-prova-agenzia.py`.
+
+Le evidenze di autorizzazione nei casi sono materiale per una simulazione umana,
+non policy applicate da un server. I risultati del kit non sostituiscono PT-AC01,
+MD-AC01 o gli altri criteri di sicurezza. Frontend, localStorage e pubblicazione
+Sites non cambiano. Osservazioni e costi effettivi si raccolgono fuori repository;
+qui restano modelli non eseguiti e dati sintetici. Rapporto della nuova attività:
+[ESITO_SIMULAZIONE.md](docs/progetto/prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).

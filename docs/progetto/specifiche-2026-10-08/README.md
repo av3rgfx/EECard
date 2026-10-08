@@ -72,3 +72,11 @@ La prossima attività concreta è la revisione del beneficio R1 e una prova guid
 PF01 → PF02 → PF05 con due operatori e fascicoli sintetici, secondo il protocollo
 in OFFERTE_RILASCIO. Le risposte su Jarvis, schermi e firma modificano soltanto i
 rami dipendenti; le specifiche del fascicolo possono avanzare indipendentemente.
+
+
+## Avanzamento successivo autorizzato
+
+L'utente ha chiesto di procedere con la prova proposta. Il
+[kit BF02](../prova-agenzia-2026-10-08/README.md) contiene dati equivalenti,
+istruzioni e schede di misura; [esiti e limiti](../prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md)
+distinguono revisione simulata e prova ancora da svolgere con operatori reali.

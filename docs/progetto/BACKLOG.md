@@ -124,7 +124,7 @@ ID N/S storici senza crearne una versione concorrente.
 
 | Ordine proposto | Attività concreta | Dipendenza / risultato verificabile |
 | --- | --- | --- |
-| Subito, in parallelo | BF01 scelta beneficio e BF02 set sintetici | R1/alternativa motivata; due set equivalenti di dodici scenari e scheda tempi/errori/costi |
+| Preparazione disponibile | BF01 beneficio per la prova e BF02 kit sintetico | Beneficio fascicolo/banco adottato per l'esercizio; due set e schede consegnati. Primo pagante e scelta commerciale ancora aperti |
 | Dopo revisione perimetro | BF03 contratti di servizio e matrice permessi | PF e modello tradotti in azioni/oggetti con casi ammessi e negati; nessun dato reale |
 | Fondazioni e nucleo R1 | BF04–BF09 identità, archivio, attivazione, banco, contesti e ricerca | Prove server tra agenzie, revoca, storico, fine rapporto e retry; non basta un filtro UI |
 | Rami condizionati | BF10 bolletta, BF11 wallet, BF12 terminale, BF13 firma, BF14 bozza/AI, BF15 partner | Entrano nella sequenza critica se essenziali al beneficio; schermi, atti, Jarvis e costi aperti |
@@ -136,3 +136,22 @@ misure prima/dopo e fascicoli sintetici; il protocollo estende poi il confronto
 ai casi PF03/PF04/PF06. Una prova di comprensione non sostituisce test server,
 collaudo hardware o validazione di disponibilità a pagare. Nessun rinvio di
 pagamenti, app, 3D, AI o totem è registrato come scelta dei fondatori.
+
+
+## Proseguimento autorizzato — kit della prova BF02
+
+L'utente ha risposto «ok bene procedi» alla proposta di prova guidata.
+[Kit e protocollo](prova-agenzia-2026-10-08/README.md): set A/B con dodici scenari
+equivalenti, materiali per due operatori e facilitatore, schema di 48 esecuzioni,
+misure/costi vuoti e strumenti locali. [Esito della revisione simulata](prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
+
+- BF02: preparazione consegnata, controlli nel rapporto del kit.
+- BF01: beneficio fascicolo/banco adottato per la prova; scelta commerciale del
+  primo pagante, catalogo, prezzo e risorse ancora da completare.
+- BF16: preparato, misure con operatori reali ancora da raccogliere. La revisione
+  con assistenti AI non equivale alla prova comparativa e non chiude le soglie.
+- BF03–BF15/BF17–BF18: stati operativi invariati; nessun backend, hardware o
+  lancio è realizzato dalla generazione dei materiali.
+
+Il prossimo risultato è un registro osservato della prova, con risposte,
+fallimenti, tempi e costi mancanti dichiarati, senza dati personali nella PR.

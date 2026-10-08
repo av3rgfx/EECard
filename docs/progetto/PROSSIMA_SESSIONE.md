@@ -1,12 +1,20 @@
 # EECard — punto di ripresa
 
-Aggiornato l'8 ottobre 2026 dopo la ripresa funzionale. Repository unica:
+Aggiornato l'8 ottobre 2026 dopo la preparazione della prova in agenzia. Repository unica:
 https://github.com/av3rgfx/EECard.
 
 ## Obiettivo e risultato corrente
 
 L'utente ha chiesto di proseguire studio e preparazione dello sviluppo partendo
 dalla consegna EA01–EA30, senza rifare l'analisi né attivare servizi reali.
+Dopo la consegna delle specifiche, l'utente ha risposto «ok bene procedi» alla
+proposta di provare attivazione → banco → recupero storico. È stato preparato il
+[kit BF02](prova-agenzia-2026-10-08/README.md): due set equivalenti, materiali
+operatore/facilitatore, schede per 48 esecuzioni e strumenti locali di controllo.
+R1 è il perimetro della prova; non sono dedotti prezzi o lancio operativo.
+Esiti e limiti della revisione simulata sono in
+[ESITO_SIMULAZIONE.md](prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
+
 La [specifica incrementale](specifiche-2026-10-08/README.md) contiene:
 
 - [30 requisiti RF collegati agli EA, proposte IF e decisioni aperte DA](specifiche-2026-10-08/REQUISITI_DECISIONI.md).
@@ -25,12 +33,14 @@ hardware completo restano concrete opzioni con dipendenze diverse.
 
 La [PR #5](https://github.com/av3rgfx/EECard/pull/5) è integrata l'8 ottobre 2026
 alle 19:32:22 UTC. Base verificata: main
-`a8e0ca7a0641685462ac209c1570ef421631c121`. Questa ripresa usa il nuovo branch
+`a8e0ca7a0641685462ac209c1570ef421631c121`. La ripresa usa il branch
 `docs/specifiche-funzionali-2026-10-08`. Nessun merge eseguito nella sessione.
 Consegna nella [PR #6](https://github.com/av3rgfx/EECard/pull/6), aperta e non in
 bozza, senza merge; commit degli elaborati `7d43ae82e9f91b13f13dfc0aaea9a92a641ceb0c`.
-Il commit successivo registra la chiusura. Per i controlli effettivi consultare
-il rapporto di verifica della consegna.
+Il checkpoint `dc1a536` registra la prima chiusura. La PR #6 è stata verificata
+ancora aperta prima di preparare il kit: riutilizzati lo stesso branch e PR.
+Per l'HEAD aggiornato e le verifiche del kit consultare il nuovo rapporto di
+simulazione e la PR; i conteggi della prima consegna sono storici.
 
 Prima di riprendere controllare il remoto: se la PR di questa consegna è ancora
 aperta, riutilizzarla; dopo il merge partire dal main aggiornato e da un nuovo
@@ -69,29 +79,37 @@ sono eventi separati. Nessun account universale “proprietario amministratore�
 ## Decisioni aperte e prossima attività concreta
 
 Sono state poste due domande raggruppate: beneficio/primo pagante; natura di
-Jarvis, destinatari degli schermi e documenti da firmare. Nessuna risposta è
-registrata in questa consegna: IF01 e IF04 restano ipotesi, non assensi impliciti.
-Prima di una nuova sessione verificare eventuali risposte successive dell'utente.
+Jarvis, destinatari degli schermi e documenti da firmare. La prima consegna
+non registrava risposte: IF01 e IF04 erano ipotesi, non assensi impliciti.
+Il successivo «ok bene procedi» autorizza l'avanzamento della prova proposta.
+Non specifica primo pagante, prezzi, schermi, firma o Jarvis: questi dettagli
+restano aperti; non occorre richiederli per eseguire i casi indipendenti.
 
 Quote, unità, IVA e inclusioni restano aperte. I 600 euro annui riguardano alcuni
 clienti già gestiti; 50/15 e le cifre instabili del nuovo audio non sono listini.
 Territorio, volume, team, budget, copertura e responsabilità devono essere definiti
 per il lancio. Nessun rinvio di pagamenti, app, 3D, AI o totem è già approvato.
 
-**Prossima attività:** revisionare il beneficio R1 e organizzare la prova
-PF01 → PF02 → PF05 con due operatori e fascicoli sintetici. Usare scenari,
-misure prima/dopo e costo operativo descritti in OFFERTE_RILASCIO; registrare
-l'esito senza confonderlo con vendite o disponibilità a pagare. Dopo la scelta,
-tradurre il percorso in contratti API e prove di autorizzazione con due agenzie
-sintetiche, prima di dati reali o integrazioni operative.
+**Prossima attività:** usare il [protocollo](prova-agenzia-2026-10-08/PROTOCOLLO.md)
+con due operatori reali e un facilitatore, iniziando dai casi PF01/PF02/PF05.
+Il kit estende il controllo a dodici scenari, con 48 esecuzioni controbilanciate.
+Compilare una copia esterna di `misure.csv`: i modelli nel repository restano
+non eseguiti. La revisione con assistenti AI non fornisce tempi umani, costi,
+vendite o prove delle autorizzazioni di un backend. BF16 resta aperto.
+
+Comandi e materiali sono nel README del kit. Dopo la prova decidere quali
+correzioni di processo e contratti di servizio BF03 preparare; prima dei dati
+reali servono comunque autorizzazioni server e condizioni operative. Le scelte
+su listino/hardware non bloccano la simulazione documentale.
 
 ## Prototipo, verifiche e anteprime
 
 Frontend React/TypeScript/Vite, fixture e localStorage; nessun backend, account,
 archivio server, pagamento, NFC/wallet, firma, domotica o AI operativo.
-Questa sessione modifica solo documentazione. Verifiche: coerenza, tracciabilità,
-link locali, diff e identità del salvataggio remoto nel rapporto di consegna.
-Nessun nuovo test UI, collaudo hardware o deploy.
+Le specifiche iniziali modificavano solo Markdown. Il kit successivo aggiunge
+dati sintetici JSON, pacchetti Markdown, modelli CSV e strumenti Python locali
+con verifiche mirate. Non cambia il frontend: nessun nuovo test UI, collaudo
+hardware o deploy. Per risultati effettivi leggere ESITO_SIMULAZIONE del kit.
 
 Ultima versione pubblicata documentata: Sites v5, 6 ottobre alle 14:18:39 UTC,
 sorgente `65ac9e092c17d9113d85106fa3d04fbb9770cab5`.

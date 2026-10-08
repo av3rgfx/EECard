@@ -181,3 +181,37 @@ Revisione indipendente applicata: storico legittimo distinto da permessi
 operativi scaduti, identificazione banco inizialmente non confermata e
 visualizzazione documento distinta dalla persistenza nella sessione schermo.
 Il commit di chiusura aggiorna solo metadati e collegamenti della consegna.
+
+## 8 ottobre 2026 — kit della prova in agenzia
+
+L'utente risponde «ok bene procedi» alla proposta di prova guidata del nucleo
+attivazione → banco → recupero storico. Verificata PR #6 ancora aperta e base
+remota `dc1a536`, riutilizzati branch e PR secondo AGENTS; nessun merge.
+
+Preparato [kit BF02](prova-agenzia-2026-10-08/README.md): due set da dodici casi,
+144 evidenze sintetiche, quattro pacchetti per operatori, chiave facilitatore,
+modelli per 48 esecuzioni e cinque categorie di costo. Aggiunti strumenti
+Python locali di validazione, generazione senza sovrascrittura e analisi con
+separazione di dati mancanti, fallimenti, aiuti e sottogruppi di percorso.
+
+Revisione simulata con due letture AI separate e controllo indipendente degli
+strumenti. Corretti indizi involontari in ordine/titoli, ambito della copia
+in S05 e referente in S11; chiarita la sequenza online/offline in S06.
+Rilettura mirata dei casi B modificati. Dettagli, limiti e comandi in
+[ESITO_SIMULAZIONE.md](prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
+Le letture AI non sono prove con operatori: nessun tempo o risparmio inventato.
+
+Validazione di 24 casi/dodici coppie e 18 test dello strumento passati. Modelli
+con 48 righe `non_eseguita`, nessuna osservazione e nessun costo; generazione
+deterministica verificata. Aggiornati continuità, decisioni, prodotto, sviluppo
+e backlog. BF02 preparato, BF16 aperto. R1 è il perimetro della prova;
+prezzi, primo pagante, hardware, firma e Jarvis restano aperti.
+
+Nessuna modifica a frontend, fixture, asset o hosting; nessun nuovo test UI,
+deploy o integrazione. Prossimo risultato: osservazioni reali del protocollo
+con due operatori e facilitatore, senza dati personali nella repository.
+
+Chiusura dei controlli della continuazione rispetto a `dc1a536`: 26 file,
+19 Markdown e 285 collegamenti locali/ancore validi; diff senza errori.
+Ricontrollati anche 30 RF/EA, sei PF, 54 criteri, 18 BF senza cicli e otto FT.
+PR #6 ancora aperta, non in bozza, verificata prima del salvataggio remoto.

@@ -104,3 +104,13 @@ richiede condizioni e prezzo espliciti, ancora da definire.
 Riferimenti: [studio v0.1](docs/progetto/EECard-studio-v0.1.pdf),
 [EA01–EA30](docs/progetto/discussione-2026-10-07/ANALISI_CONVERSAZIONE.md),
 [backlog](docs/progetto/BACKLOG.md), [ripresa](docs/progetto/PROSSIMA_SESSIONE.md).
+
+
+## Prova del beneficio — avanzamento autorizzato
+
+Il successivo «ok bene procedi» avvia la preparazione della prova raccomandata.
+Il [kit BF02](docs/progetto/prova-agenzia-2026-10-08/README.md) rende disponibili
+due set sintetici, istruzioni e schede di misura. Confronta la ricostruzione
+della pratica con un fascicolo organizzato; non attribuisce all'agenzia un modo
+di lavorare non osservato. La revisione simulata verifica la coerenza del kit,
+mentre benefici di tempo/costo e disponibilità a pagare restano da misurare.

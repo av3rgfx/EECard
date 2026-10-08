@@ -206,8 +206,10 @@ dimensionamento o calendario già assegnato a questo R1.
 
 ## 5. Backlog eseguibile e dipendenze
 
-Tutte le voci seguenti sono **proposte da eseguire**; la presente consegna ne
-prepara le specifiche, non dichiara realizzati server o prove. «Responsabile»
+La tabella seguente è il backlog di implementazione proposto. Nel successivo
+proseguimento autorizzato è stato preparato il [kit BF02](../prova-agenzia-2026-10-08/README.md);
+BF16 resta da svolgere con operatori reali. Gli altri stati operativi restano
+aperti: le specifiche non dichiarano realizzati server o prove. «Responsabile»
 indica il ruolo suggerito, senza assegnare persone o date. Prima di sviluppo
 operativo fissare il perimetro; intanto BF01/BF02 e gli approfondimenti tecnici
 indipendenti possono avanzare con dati sintetici e ipotesi esplicite.
