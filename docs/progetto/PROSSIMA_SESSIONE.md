@@ -41,6 +41,9 @@ Il checkpoint `dc1a536` registra la prima chiusura. La PR #6 è stata verificata
 ancora aperta prima di preparare il kit: riutilizzati lo stesso branch e PR.
 Per l'HEAD aggiornato e le verifiche del kit consultare il nuovo rapporto di
 simulazione e la PR; i conteggi della prima consegna sono storici.
+Elaborati del kit salvati nel commit `bb2222c352fff0c69b6c4a8f63f5684cfa9ade01`,
+verificato uguale sul branch remoto e sulla PR #6 ancora aperta. La chiusura
+successiva registra questi metadati, senza cambiare scenari o strumenti.
 
 Prima di riprendere controllare il remoto: se la PR di questa consegna è ancora
 aperta, riutilizzarla; dopo il merge partire dal main aggiornato e da un nuovo

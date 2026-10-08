@@ -5,6 +5,9 @@ procedi». PR #6 verificata ancora aperta prima del lavoro; stesso branch
 `docs/specifiche-funzionali-2026-10-08`, base della continuazione `dc1a536`.
 Nessun merge. La [PR #6](https://github.com/av3rgfx/EECard/pull/6) raccoglie
 specifiche e kit; il suo HEAD indica il checkpoint remoto corrente.
+Commit degli elaborati: `bb2222c352fff0c69b6c4a8f63f5684cfa9ade01`, verificato
+sul remoto e come HEAD della PR ancora aperta, non in bozza. Il successivo
+commit di chiusura aggiorna soltanto i riferimenti della consegna.
 
 ## Risultato disponibile
 

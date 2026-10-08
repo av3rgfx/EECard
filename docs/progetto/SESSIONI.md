@@ -215,3 +215,6 @@ Chiusura dei controlli della continuazione rispetto a `dc1a536`: 26 file,
 19 Markdown e 285 collegamenti locali/ancore validi; diff senza errori.
 Ricontrollati anche 30 RF/EA, sei PF, 54 criteri, 18 BF senza cicli e otto FT.
 PR #6 ancora aperta, non in bozza, verificata prima del salvataggio remoto.
+Commit del kit `bb2222c352fff0c69b6c4a8f63f5684cfa9ade01` salvato e verificato
+uguale sul branch remoto e sulla PR. Nessun merge o deploy; la chiusura
+successiva contiene soltanto questi metadati.
