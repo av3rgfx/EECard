@@ -10,7 +10,8 @@ come fonte: non ripete l'analisi della registrazione.
 La [PR #5](https://github.com/av3rgfx/EECard/pull/5) è integrata il
 2026-10-08 alle 19:32:22 UTC. Base letta e clonata: `main`
 `a8e0ca7a0641685462ac209c1570ef421631c121`. Nuovo branch:
-`docs/specifiche-funzionali-2026-10-08`. Nessun merge eseguito in questa sessione.
+`docs/specifiche-funzionali-2026-10-08`, consegna nella
+[PR #6](https://github.com/av3rgfx/EECard/pull/6). Nessun merge eseguito in questa sessione.
 
 Il progetto dispone di studio, design 0.3 e prototipo React/TypeScript/Vite.
 Non dispone di account, autorizzazioni server, archivio o integrazioni operative.

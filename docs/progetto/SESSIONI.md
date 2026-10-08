@@ -170,3 +170,14 @@ Verifiche e consegna remota in
 [VERIFICHE.md](specifiche-2026-10-08/VERIFICHE.md). Nessun test UI, prova fisica,
 servizio o deploy attribuito a questa sessione; Sites v5 resta l'ultima
 pubblicazione documentata. Nessun merge eseguito.
+
+
+Chiusura remota della ripresa: [PR #6](https://github.com/av3rgfx/EECard/pull/6)
+aperta e non in bozza, senza merge; commit elaborati
+`7d43ae82e9f91b13f13dfc0aaea9a92a641ceb0c` verificato sul remoto. Controllati
+16 Markdown, 171 collegamenti locali/ancore, 30 RF/EA, 6 PF, 54 criteri AC,
+18 BF senza cicli espliciti e 8 FT; diff pulito e fonti/sorgenti invariati.
+Revisione indipendente applicata: storico legittimo distinto da permessi
+operativi scaduti, identificazione banco inizialmente non confermata e
+visualizzazione documento distinta dalla persistenza nella sessione schermo.
+Il commit di chiusura aggiorna solo metadati e collegamenti della consegna.

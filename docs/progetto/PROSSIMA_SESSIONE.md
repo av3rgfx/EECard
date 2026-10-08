@@ -27,7 +27,10 @@ La [PR #5](https://github.com/av3rgfx/EECard/pull/5) è integrata l'8 ottobre 20
 alle 19:32:22 UTC. Base verificata: main
 `a8e0ca7a0641685462ac209c1570ef421631c121`. Questa ripresa usa il nuovo branch
 `docs/specifiche-funzionali-2026-10-08`. Nessun merge eseguito nella sessione.
-Per PR e salvataggio effettivo consultare il rapporto di verifica della consegna.
+Consegna nella [PR #6](https://github.com/av3rgfx/EECard/pull/6), aperta e non in
+bozza, senza merge; commit degli elaborati `7d43ae82e9f91b13f13dfc0aaea9a92a641ceb0c`.
+Il commit successivo registra la chiusura. Per i controlli effettivi consultare
+il rapporto di verifica della consegna.
 
 Prima di riprendere controllare il remoto: se la PR di questa consegna è ancora
 aperta, riutilizzarla; dopo il merge partire dal main aggiornato e da un nuovo

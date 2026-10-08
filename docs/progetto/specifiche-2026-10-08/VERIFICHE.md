@@ -53,8 +53,17 @@ viene verificata dopo il salvataggio. I comandi non richiedono build o servizi.
 ## Salvataggio remoto
 
 Branch di consegna: `docs/specifiche-funzionali-2026-10-08`, base `main`.
-Riferimento alla PR e verifica dell'HEAD saranno registrati alla chiusura;
-nessun merge autorizzato o eseguito.
+[PR #6](https://github.com/av3rgfx/EECard/pull/6) aperta, non in bozza, senza merge.
+Commit degli elaborati `7d43ae82e9f91b13f13dfc0aaea9a92a641ceb0c`, salvato
+con push e riscontrato come HEAD remoto della PR. Il successivo commit
+registra soltanto questa chiusura e i collegamenti alla PR; non modifica il
+prodotto o le specifiche funzionali. L'HEAD finale è consultabile nella PR.
+
+Per riprodurre il controllo del salvataggio, dopo `git fetch origin` confrontare
+`git rev-parse HEAD` e
+`git rev-parse origin/docs/specifiche-funzionali-2026-10-08`, verificare
+`git status --short` vuoto e `git diff --check a8e0ca7..HEAD` senza errori.
+La base remota main resta distinta dal branch della consegna.
 
 ## Confini delle verifiche
 
