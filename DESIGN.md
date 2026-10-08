@@ -1,6 +1,6 @@
 # EECard — guida al design
 
-Aggiornato il 6 ottobre 2026. Direzione 0.3 scelta esplicitamente dopo il confronto ad alta fedeltà: tessera e materiali di **Materia e luce**, struttura delle pagine di **Editoriale e architettura**, processi aperti a tutta larghezza. L’ultima richiesta conferma questo stile e rende più compatti solo gli immobili della home quando ne sono visibili più di uno. La direzione è integrata nel frontend; verifiche e versione effettivamente online sono registrate nei rapporti dedicati.
+Aggiornato l'8 ottobre 2026. Direzione 0.3 scelta esplicitamente dopo il confronto ad alta fedeltà: tessera e materiali di **Materia e luce**, struttura delle pagine di **Editoriale e architettura**, processi aperti a tutta larghezza. L’ultima scelta visiva esplicita dell'utente conferma questo stile e rende più compatti solo gli immobili della home quando ne sono visibili più di uno. La direzione è integrata nel frontend; verifiche e versione effettivamente online sono registrate nei rapporti dedicati.
 
 ## Identità attuale
 
@@ -56,3 +56,18 @@ La richiesta di esempi prima dell’integrazione è stata soddisfatta dal labora
 L’affitto presenta quattro passaggi leggibili, fase attuale e spiegazione accanto alle azioni esistenti. `PaymentProgress` rappresenta lo stato: i marcatori non sono comandi per avanzare. Documento caricato, dichiarazione, verifica con autore/fonte e quietanza restano distinti. L’importo e il residuo si aggiornano subito; il solo indicatore della nuova fase riceve un breve feedback. Dopo il cambio di stato nel pannello, il focus raggiunge il titolo della nuova fase.
 
 La scelta approva la direzione visiva e la sua integrazione; non conferma nome, prezzi, coperture, nuovi servizi o autorizzazioni di produzione. Il design system 0.3 descrive l’esecuzione corrente. La pubblicazione sullo stesso sito e la PR senza merge sono autorizzate; per esito e commit online consultare [ANTEPRIME_WEB.md](docs/design/ANTEPRIME_WEB.md).
+
+## Nuovi input dell'audio - analisi dell'8 ottobre
+
+[EA11, EA17, EA20-EA21 ed EA30](docs/progetto/discussione-2026-10-07/ANALISI_CONVERSAZIONE.md)
+propongono riepilogo sul secondo schermo, card dei partner personalizzate,
+funzioni domestiche anche per il proprietario, bollette con QR/importo subito
+visibili e uno stile molto tecnologico con fondo bianco e rosso. La tonalità
+del rosso è poco chiara; lo spunto non approva una sostituzione della palette.
+
+Per la prossima progettazione mostrare, quando pertinente, una variante
+circoscritta accanto alla 0.3 e chiarire se riguarda tutto il prodotto, il
+terminale o le varianti partner. Conservare simbolo, naming aperto, flussi,
+semantica della tessera, accessibilità e composizione già scelti finché non
+arriva una nuova scelta applicabile. Questa sessione non modifica frontend,
+design system, screenshot o anteprime e non ripete i relativi controlli.

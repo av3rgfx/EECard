@@ -1,6 +1,6 @@
 # Anteprime web condivisibili
 
-**Versione corrente: Sites v5**, home con più immobili compatta, pubblicata il 6 ottobre 2026 alle 14:18:39 UTC dal commit `65ac9e092c17d9113d85106fa3d04fbb9770cab5`. [PR #4](https://github.com/av3rgfx/EECard/pull/4) aperta, senza merge. Le versioni precedenti sotto sono lo storico.
+**Ultima versione pubblicata documentata: Sites v5**, home con più immobili compatta, pubblicata il 6 ottobre 2026 alle 14:18:39 UTC dal commit `65ac9e092c17d9113d85106fa3d04fbb9770cab5`. [PR #4](https://github.com/av3rgfx/EECard/pull/4) integrata il 7 ottobre alle 22:13:57 UTC, stato verificato l'8 ottobre. L'analisi documentale della nuova conversazione non modifica la build e non esegue un nuovo deploy. Le versioni precedenti sotto sono lo storico.
 
 Il sito ospita lo stesso prototipo dimostrativo in due viste separate:
 

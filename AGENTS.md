@@ -17,6 +17,19 @@ Leggere poi `PRODUCT.md`, `DESIGN.md`, `DEVELOPMENT.md` e
 Lo studio preliminare completo è in `docs/progetto/EECard-studio-v0.1.pdf`,
 con una copia modificabile DOCX. Non è ancora una specifica finale approvata.
 
+La conversazione del 7 ottobre è analizzata in
+`docs/progetto/discussione-2026-10-07/ANALISI_CONVERSAZIONE.md` (30 punti EA01-EA30),
+con contesto verificato e prompt. Leggere questi file per proseguire il nuovo
+studio. Sono input e proposte, non approvazioni automatiche del primo rilascio.
+La PR #4 risulta integrata: verificata l'8 ottobre; i checkpoint che la descrivono
+aperta sono storici. Dopo il merge ripartire dal main aggiornato.
+
+Non pubblicare l'audio, la trascrizione integrale o i dati personali degli esempi
+nella repository pubblica. I documenti del nuovo studio usano sintesi anonime.
+Il riferimento ai clienti già gestiti a 600 euro annui non è un listino EECard;
+le cifre della card restano instabili. Jarvis e lo spunto bianco/rosso sono da
+chiarire: non cambiano automaticamente naming e identità 0.3 già scelti.
+
 Il design desktop/mobile e il prototipo navigabile sono stati realizzati e le
 anteprime sono pubblicate. Il prossimo obiettivo va ricavato dalla richiesta
 corrente dell’utente e dal punto di ripresa, senza ricominciare il design da zero. Distinguere progetto funzionale, design dell'interfaccia, prototipo e
