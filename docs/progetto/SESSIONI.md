@@ -123,7 +123,14 @@ nessun componente scelto o prova hardware eseguita.
 Allineati prodotto, design, sviluppo, decisioni, backlog e punto di ripresa.
 Studio v0.1 conservato, naming/perimetro/prezzi aperti, scelte visive 0.3
 conservate. Audio e trascrizione integrale non pubblicati nella repository.
-Consegna documentale, con PR del nuovo branch senza merge; nessuna modifica
+Consegna documentale nella [PR #5](https://github.com/av3rgfx/EECard/pull/5),
+aperta e non in bozza, con 14 file Markdown sul nuovo branch e senza merge;
+nessuna modifica
 a frontend, dati, asset o sito. Verifiche documentali e degli artefatti di
 consegna; nessun nuovo test UI o deploy. Sites v5 resta l'ultima versione
 documentata dal commit sopra indicato.
+
+Chiusura: collegamenti locali e diff verificati, tutti i 30 ID presenti nel
+rapporto; PDF di 10 pagine controllato visivamente. Il pacchetto per la nuova
+sessione comprende analisi, contesto, prompt e trascrizione automatica separata.
+Il salvataggio remoto è verificato confrontando l'albero Git con i file locali.

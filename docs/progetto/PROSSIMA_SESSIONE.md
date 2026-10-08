@@ -25,7 +25,9 @@ La repository pubblica contiene sintesi anonime, non audio o trascrizione integr
 La PR #4 è integrata il 7 ottobre alle 22:13:57 UTC (8 ottobre alle 00:13:57 in
 Italia). Base analizzata: main `4b77c0bd41d733c7a7680ad3d63d9a496424db64`.
 La nuova analisi documentale parte da quella base sul branch
-`docs/discussione-2026-10-07`, con la relativa PR senza merge implicito.
+`docs/discussione-2026-10-07`, salvato nella
+[PR #5](https://github.com/av3rgfx/EECard/pull/5), aperta e non in bozza,
+senza merge. Verificati 14 file Markdown, senza modifiche al frontend.
 Controllare il remoto: riusare la PR se aperta; dopo merge partire da main
 aggiornato e da un nuovo branch. I riferimenti precedenti a PR #4 aperta sono
 checkpoint storici.

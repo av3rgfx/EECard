@@ -18,7 +18,9 @@ instabili e i dettagli mancanti restano evidenziati. Il prototipo non è modific
 
 La PR #4 è già integrata. Questa analisi parte da main
 `4b77c0bd41d733c7a7680ad3d63d9a496424db64` su un nuovo branch documentale,
-`docs/discussione-2026-10-07`, senza merge implicito. Nessun nuovo deploy.
+`docs/discussione-2026-10-07`, nella
+[PR #5](https://github.com/av3rgfx/EECard/pull/5), aperta senza merge.
+Nessun nuovo deploy.
 
 L'audio e la trascrizione integrale automatica non sono pubblicati nella
 repository. Per riprendere senza accesso ai nuovi documenti remoti si può usare

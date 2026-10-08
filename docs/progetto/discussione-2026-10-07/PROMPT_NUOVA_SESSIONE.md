@@ -8,7 +8,8 @@ con scelte e risultati concreti per continuare lo sviluppo del prodotto.
 Repository unica: https://github.com/av3rgfx/EECard.
 Il passaggio di consegne dell'8 ottobre si trova in
 `docs/progetto/discussione-2026-10-07/`, nel branch
-`docs/discussione-2026-10-07` o nella relativa PR, se non è ancora in main.
+`docs/discussione-2026-10-07` o nella [PR #5](https://github.com/av3rgfx/EECard/pull/5),
+se non è ancora in main.
 Verifica lo stato remoto prima di scegliere il branch di lavoro. La base letta
 per questa analisi era main al commit
 `4b77c0bd41d733c7a7680ad3d63d9a496424db64`.
