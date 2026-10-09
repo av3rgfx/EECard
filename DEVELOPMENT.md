@@ -1,14 +1,15 @@
 # EECard — sviluppo e manutenzione
 
-Aggiornato l'8 ottobre 2026. Repository di riferimento: https://github.com/av3rgfx/EECard. Stack del prototipo: React, TypeScript e Vite; le versioni riproducibili sono in `package-lock.json`.
+Aggiornato il 9 ottobre 2026. Repository di riferimento: https://github.com/av3rgfx/EECard. Stack del prototipo: React, TypeScript e Vite; le versioni riproducibili sono in `package-lock.json`.
 
 ## Ripresa e avvio
 
 Leggere [AGENTS.md](AGENTS.md), [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md)
 e il [prompt di ripresa](docs/progetto/PROMPT_NUOVA_SESSIONE.md). La PR #6 con
-specifiche e kit è integrata il 9 ottobre alle 08:18:43 UTC. La chiusura documentale
-parte da main `3532eab28cb76009979b1ebdca1022095cccf146` sul branch
-`docs/chiusura-sessione-2026-10-09`. Verificare la PR della consegna corrente:
+specifiche e kit è integrata il 9 ottobre alle 08:18:43 UTC; la PR #7 di chiusura
+alle 23:19:16 UTC. La ripresa BF16 parte da main
+`c77dfd482e683baeeb0ec825ac5d5755c56fa1bb` sul nuovo branch
+`docs/bf16-raccolta-2026-10-09`. Verificare la PR della consegna corrente:
 se aperta riutilizzarla; dopo merge partire da main aggiornato e nuovo branch.
 Controllare prima le modifiche locali e non sovrascriverle.
 
@@ -166,3 +167,27 @@ MD-AC01 o gli altri criteri di sicurezza. Frontend, localStorage e pubblicazione
 Sites non cambiano. Osservazioni e costi effettivi si raccolgono fuori repository;
 qui restano modelli non eseguiti e dati sintetici. Rapporto della nuova attività:
 [ESITO_SIMULAZIONE.md](docs/progetto/prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
+
+## Approfondimento preliminare BF03 — ripresa BF16
+
+I [contratti preliminari](docs/progetto/validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md)
+traducono PF01/PF02/PF05 in precondizioni, letture/comandi, casi ammessi/negati
+e prove future su due agenzie sintetiche. Sono un allegato revisionabile alle
+specifiche: BF03 resta aperto, dipendente da BF01 per l'ambito operativo e
+da riesaminare con le osservazioni BF16. Nessuna API o autorizzazione server
+è implementata; provider, conservazione e modalità di verifica restano da scegliere.
+
+La [guida alla raccolta](docs/progetto/validazione-bf16-2026-10-09/RACCOLTA.md)
+usa copie dei materiali già pronti, distingue le analisi automatiche da quelle
+manuali e conserva i denominatori nelle prove parziali. Il kit BF02, i suoi
+modelli e strumenti restano invariati. Controlli nuovi e storici sono distinti
+nel [rapporto della ripresa](docs/progetto/validazione-bf16-2026-10-09/README.md).
+
+L'[allegato storico/uscita](docs/progetto/validazione-bf16-2026-10-09/STORICO_USCITA.md)
+specifica come revisionare conservazione, titoli di lettura e consegna per
+categoria/evento. Include revoca, correzione, copie consegnate e ripristino
+come verifiche future. Nessun termine legale, ruolo privacy o provider è
+scelto; la fine di un titolo non revoca titoli autonomi ancora efficaci.
+Le copie esterne predisposte per la raccolta sono byte-identiche al kit;
+cartelle per ruolo/fase e manifest servono alla distribuzione e alla provenienza,
+non sono autorizzazioni server. Non dipendere dal percorso temporaneo della sessione.
