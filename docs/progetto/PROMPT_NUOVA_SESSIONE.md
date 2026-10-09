@@ -33,9 +33,10 @@ Leggi nell'ordine:
 4. README, PROTOCOLLO ed ESITO_SIMULAZIONE in
    `docs/progetto/prova-agenzia-2026-10-08/`; poi set, materiali e strumenti
    pertinenti al lavoro. Le chiavi non devono essere mostrate agli operatori.
-5. Leggi `docs/progetto/validazione-bf16-2026-10-09/README.md`, `RACCOLTA.md`
-   e `CONTRATTI_PRELIMINARI.md`: guida sul kit esistente e proposta preliminare
-   BF03. Non duplicare questi elaborati se non ci sono nuove evidenze.
+5. Leggi `docs/progetto/validazione-bf16-2026-10-09/README.md`, `RACCOLTA.md`,
+   `CONTRATTI_PRELIMINARI.md` e `STORICO_USCITA.md`: guida sul kit esistente,
+   contratti preliminari BF03 e matrice di conservazione/accesso/consegna.
+   Non duplicare questi elaborati se non ci sono nuove evidenze.
 6. Usa `docs/progetto/discussione-2026-10-07/` per provenienza EA01–EA30 e
    timestamp; consulta studio v0.1 e sorgenti pertinenti prima di modificare
    un percorso. Non ripetere l'intera analisi già completata.
@@ -51,6 +52,15 @@ vuoto (48 pianificate, 0 osservate), oltre ai controlli documentali. Non ha
 rifatto BF02, eseguito le 48 prove o raccolto tempi/costi. Le osservazioni
 possono esistere altrove: cercarle nei materiali forniti senza presumere che
 l'assenza nella repository significhi che nessuno abbia svolto la prova.
+Il seguito «procedi» ha predisposto sette copie esterne byte-identiche dei
+materiali per operatore/fase, con manifest SHA-256; analizzata la copia vuota
+(48/0), senza nuovi `validate` o test del kit. Il percorso locale può non essere
+più disponibile: riusare la copia privata se presente, altrimenti copiare i
+materiali originali in una nuova cartella esterna senza sovrascrivere raccolte.
+La tranche iniziale S01–S04 della fase 1 per entrambi copre già PF01/PF02/PF05;
+proseguire S05–S12 prima della fase 2, senza anticipare S10. Da una sola fase
+non ricavare confronti appaiati. Processo corrente e partecipanti non sono
+ancora stati descritti: chiederli solo se continuano a mancare, senza inventarli.
 
 Riparti dalla validazione di attivazione → ritorno al banco → recupero storico.
 BF16 richiede due operatori reali e un facilitatore; la revisione AI del kit
@@ -68,6 +78,10 @@ dell'agenzia prima di attribuirgli risultati.
   le dipendenze: BF03 e il perimetro operativo non sono approvati dalla chiusura.
   L'allegato preliminare BF03 esiste già: revisionarlo con evidenze o chiarimenti,
   senza dichiarare implementate API, autorizzazioni o prove future.
+  La matrice storico/uscita distingue conservazione, lettura e consegna:
+  documento antico non equivale a rapporto concluso, e la politica ancora
+  aperta non revoca titoli autonomi validi. Durate e responsabilità restano
+  da definire; non trasformare una proposta in politica operativa approvata.
 
 Nelle raccolte parziali conservare le 48 righe pianificate e indicare i casi
 non eseguiti. Verificare manualmente i risultati per PF01, PF02, PF05,

@@ -21,6 +21,9 @@ Esiti e limiti della revisione simulata sono in
 La [ripresa BF16](validazione-bf16-2026-10-09/README.md) aggiunge una
 [guida alla raccolta](validazione-bf16-2026-10-09/RACCOLTA.md) e un
 [approfondimento preliminare BF03](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md).
+Il successivo «procedi» aggiunge copie esterne dei sette materiali per
+operatore/fase e una [matrice su storico e uscita](validazione-bf16-2026-10-09/STORICO_USCITA.md),
+sempre come proposta. Copie pronte, prova umana non avviata in questa sessione.
 Nei materiali consultati non sono disponibili osservazioni umane: modello
 ancora vuoto, nessun risultato BF16 ricavato dai controlli documentali.
 Il kit BF02 non è stato rifatto. I contratti restano proposte subordinate al
@@ -50,7 +53,8 @@ indipendenti. Il vecchio branch `docs/chiusura-sessione-2026-10-09` non è
 riutilizzato. Nessun merge eseguito dall'assistente.
 Consegna corrente nella [PR #8](https://github.com/av3rgfx/EECard/pull/8),
 aperta e non in bozza. Elaborati al commit `7cff9ff`, verificato sul remoto;
-il successivo commit registra i riferimenti della PR. Controlli nel
+`f013564` registra i riferimenti della PR. La continuazione su copie esterne
+e storico/uscita aggiorna la stessa consegna. Controlli nel
 [rapporto BF16](validazione-bf16-2026-10-09/README.md). Verificare lo stato
 della PR prima di riprendere, riutilizzandola se aperta per la stessa consegna.
 
@@ -79,7 +83,8 @@ superati e non devono guidare il checkout.
    preparazione del facilitatore, senza mostrarli agli operatori della prova.
 5. Ripresa BF16: [rapporto](validazione-bf16-2026-10-09/README.md),
    [raccolta](validazione-bf16-2026-10-09/RACCOLTA.md) e
-   [contratti preliminari](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md).
+   [contratti preliminari](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md) e
+   [storico/uscita](validazione-bf16-2026-10-09/STORICO_USCITA.md).
 6. [Cartella della conversazione](discussione-2026-10-07/README.md) per origine
    e timestamp degli EA; studio v0.1 §§3, 6, 8, 11–13 e sorgenti pertinenti
    prima di progettare o implementare ulteriori cambiamenti. Il prompt in
@@ -126,6 +131,12 @@ OP02 e copie dei materiali già pronti fuori repository. Ripartire da
 attivazione PF01, ritorno PF02 e recupero storico PF05 mantenendo assegnazioni
 e ordine registrati; una raccolta limitata a questi percorsi è parziale
 rispetto alle 48 esecuzioni del protocollo. Non mostrare chiavi/JSON agli operatori.
+L'avvio suggerito nella guida è la tranche S01–S04 della fase 1 per entrambi:
+include già PF01/PF02/PF05, poi si prosegue S05–S12 prima della fase 2. Non
+saltare direttamente a S10; una sola fase non offre coppie complete per operatore.
+Sono pronte copie esterne vuote verificate, senza dipendenza permanente dal
+percorso locale della sessione. Prima dei tempi restano necessari metodo corrente,
+partecipanti disponibili, condizioni e soglie registrati; nulla è dedotto da «procedi».
 
 Se arrivano osservazioni, verificare commit/versione, eventuali adattamenti e
 completezza prima dell'analisi. Conservare risposte, fallimenti, aiuti,
@@ -143,7 +154,8 @@ La revisione AI non dimostra autorizzazioni server.
 
 L'[allegato BF03](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md) permette
 una revisione documentale indipendente di azioni, oggetti, permessi, revoche,
-retry e versioni. Non chiude BF03: l'ambito operativo dipende da BF01,
+retry e versioni; la [matrice di storico/uscita](validazione-bf16-2026-10-09/STORICO_USCITA.md)
+distingue conservazione, lettura e consegna per categoria/evento. Non chiude BF03: l'ambito operativo dipende da BF01,
 le correzioni di processo dai riscontri BF16; storico/conservazione, verifica
 delle persone e scelte tecniche richiedono definizioni esplicite. Prima dei
 dati reali servono comunque implementazioni e condizioni operative verificate.
@@ -170,7 +182,10 @@ Non pubblicare audio, trascrizione integrale, dati personali o documenti reali.
 ## Verifiche della ripresa
 
 Questa ripresa modifica solo Markdown. Eseguiti controllo strutturale `validate`
-e analisi del modello vuoto; nessuna rigenerazione del kit o misura umana.
+e analisi del modello vuoto nella prima consegna; nel seguito confrontate le
+sette copie esterne byte per byte e tramite SHA-256, verificata distribuzione
+per fase e analizzato il CSV esterno (48 pianificate, 0 osservate). Nessuna
+rigenerazione del kit o misura umana.
 I 18 test del kit passati l'8 ottobre e le verifiche frontend precedenti restano
 storici: non sono stati rieseguiti. Collegamenti, coerenza, diff e consegna remota
 sono nel [rapporto BF16](validazione-bf16-2026-10-09/README.md) e nel

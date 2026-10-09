@@ -177,10 +177,21 @@ consultati non ci sono osservazioni reali: il modello resta a 48 righe
 | --- | --- | --- |
 | BF02 | Kit consegnato, riutilizzato senza rigenerare set o materiali | Nessuna nuova preparazione integrale richiesta |
 | BF16 | [Guida alla raccolta](validazione-bf16-2026-10-09/RACCOLTA.md), controllo del modello e limiti dell'analizzatore; resta aperto | Processo corrente osservato, versione/condizioni della prova, risposte e misure dei due operatori; separare PF01, PF02, PF05 ed estensioni |
-| BF03 | [Approfondimento preliminare](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md) di comandi/letture, permessi e prove future; resta aperto | Revisione BF01 per l'ambito operativo, riscontri BF16 e politica di accesso storico/conservazione; successiva scelta tecnica |
+| BF03 | [Approfondimento preliminare](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md) di comandi/letture, permessi e prove future, con [matrice storico/uscita](validazione-bf16-2026-10-09/STORICO_USCITA.md); resta aperto | Revisione BF01 per l'ambito operativo, riscontri BF16 e politica di accesso storico/conservazione; successiva scelta tecnica |
 | BF01/BF17/BF18 | Stati invariati: beneficio per la prova distinto da primo pagante e lancio | Catalogo, condizioni, risorse, implementazioni verificate e autorizzazione esplicita del pilota |
 
 BF04–BF15 non sono implementati da questi documenti. Il primo passo umano è
 osservare e descrivere il metodo corrente con il facilitatore, poi raccogliere
 i casi del protocollo senza cambiare a posteriori assegnazioni, soglie o
 denominatori. Una prova parziale resta tale; gli esiti AI non riempiono i vuoti.
+
+Il successivo «procedi» prosegue sulla PR #8 aperta, da `f013564`: predisposte
+sette copie esterne dei materiali, identiche e distinte per destinatario/fase.
+La guida propone S01–S04 della fase 1 come avvio contiguo, poi S05–S12 e fase 2;
+nessuna nuova prova ridotta o esecuzione umana. Metodo corrente e disponibilità
+di due operatori/facilitatore restano da raccogliere. BF16 è aperto.
+
+L'allegato storico/uscita distingue conservare, leggere e consegnare per
+categoria/evento, preservando i titoli autonomi ancora validi. BF03/BF17
+attendono politica e condizioni esplicite: nessuna durata legale o responsabilità
+è assegnata dalla matrice. Kit, frontend e servizi restano invariati.

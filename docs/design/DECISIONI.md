@@ -150,7 +150,7 @@ di prodotto o cambi visivi. Il merge non equivale a validazione della prova BF16
 | ID | Stato | Contenuto / conseguenza |
 | --- | --- | --- |
 | C23 | Richiesta esplicita dell'utente | Verificare PR #7, seguire il prompt corrente, ripartire da BF16 senza rifare BF02, analizzare osservazioni disponibili o guidarne la raccolta e proseguire gli approfondimenti documentali indipendenti; consegna nel repository, nessun servizio reale o merge |
-| P13 | Proposta tecnica preliminare, non approvazione BF03 | [Contratti PF01/PF02/PF05](../progetto/validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md), matrice permessi e prove future da revisionare con BF01 e riscontri BF16; nessuna API o scelta di provider implementata |
+| P13 | Proposta tecnica preliminare, non approvazione BF03 | [Contratti PF01/PF02/PF05](../progetto/validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md), matrice permessi, [storico/uscita](../progetto/validazione-bf16-2026-10-09/STORICO_USCITA.md) e prove future da revisionare con BF01 e riscontri BF16; nessuna API o scelta di provider implementata |
 
 [Rapporto della ripresa](../progetto/validazione-bf16-2026-10-09/README.md):
 PR #7 integrata alle 23:19:16 UTC, main `c77dfd4`, nuovo branch dedicato.
@@ -159,3 +159,9 @@ di indicarne lo stato non riceve qui una risposta utilizzabile come misura.
 BF16 resta aperto. DA01–DA07 e A01–A11 conservano i rispettivi stati; C23
 non risolve prezzi, pagante, risorse, Jarvis, schermi o firma. Identità, direzione
 0.3, riservatezza, quattro eventi economici e residuo parziale restano invariati.
+
+Il successivo «procedi» prosegue C23 sulla stessa PR #8. Le copie esterne
+pronte e l'approfondimento di P13 non forniscono osservazioni umane, non
+assegnano termini di conservazione o responsabilità e non chiudono BF03/BF16.
+La distinzione conservazione/accesso/consegna approfondisce i vincoli esistenti;
+nessun nuovo permesso reale o modifica alla direzione 0.3.

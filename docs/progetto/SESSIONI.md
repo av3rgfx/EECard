@@ -294,3 +294,49 @@ non in bozza, base main e branch `docs/bf16-raccolta-2026-10-09`.
 Commit elaborati `7cff9ff34fc3e619edf1187af6bdf4728c04aff1`, verificato uguale
 al branch remoto e all'HEAD della PR. Il successivo commit aggiunge soltanto
 riferimenti remoti a rapporto, punto di ripresa, prompt e registro. Nessun merge.
+
+## 9 ottobre 2026 — proseguimento della raccolta e politica storico/uscita
+
+L'utente risponde «procedi». PR #8 verificata aperta, non in bozza, HEAD
+`f01356437923cc569e5f8ac12b689eb66b7a6c3c`; checkout pulito e allineato al remoto,
+main ancora `c77dfd4`. Riutilizzati branch e PR, nessun merge. Nessun nuovo
+commento/review nella PR o issue con osservazioni; chiesti processo corrente
+anonimo e disponibilità dei due operatori/facilitatore, senza risposta
+utilizzabile alla consegna. Il seguito non sostituisce la prova umana BF16.
+
+Predisposte fuori repository sette copie dei materiali BF02 già pronti,
+separate per operatore/fase e facilitatore, con istruzioni locali di avvio e
+manifest SHA-256 riferito al checkout `f013564`. Nessun set o pacchetto
+rigenerato. Verificate identità byte per byte e hash; una sola copia del
+pacchetto previsto per ogni cartella operatore/fase, chiave e CSV solo al
+facilitatore. `analyze` sul CSV esterno: 48 pianificate, 0 osservate; cinque
+categorie di costo identiche al modello vuoto. Nessun tempo inventato.
+
+Precisato in [RACCOLTA](validazione-bf16-2026-10-09/RACCOLTA.md) l'avvio
+contiguo S01–S04 della fase 1 per entrambi, poi S05–S12 e fase 2. I primi
+quattro casi comprendono PF01/PF02/PF05: non serve anticipare S10. Nessun
+confronto appaiato o conclusione BF16 dopo la sola prima fase. Restano da
+definire con i partecipanti metodo corrente, supporto, limite e soglie.
+
+Aggiunto [STORICO_USCITA](validazione-bf16-2026-10-09/STORICO_USCITA.md) come
+approfondimento P13/BF03: matrice categoria/evento, conservazione distinta
+da lettura e consegna, titoli autonomi ancora validi, revoca/correzione e
+copie già consegnate. Nessun termine legale, titolare privacy o responsabile
+assegnato. BF03/BF17 restano aperti; le osservazioni BF16 non definiscono
+da sole le condizioni operative. Aggiornati sviluppo e continuità.
+
+In questo seguito non ripetuti `validate`, test Python o test frontend:
+kit, strumenti, sorgenti, specifiche principali, fonti storiche e hosting
+restano invariati. Controlli pertinenti: copie e analisi della copia vuota,
+coerenza e link dei Markdown, diff e revisione indipendente. Nessun servizio,
+invito, pagamento, firma, dato cliente reale o deploy.
+
+Verificati 9 Markdown del seguito e 120 collegamenti locali/ancore; il totale
+della PR rispetto a main è 12 Markdown e 156 collegamenti. `git diff --check`
+pulito, criteri richiamati presenti e percorsi invariati confermati. Revisione
+indipendente applicata: il cambio agenzia non autorizza da solo i vecchi link,
+ma non vieta un canale di consegna esplicitamente autorizzato; il criterio di
+diniego dopo fine titolo esclude anche la presenza di altro titolo autonomo valido.
+
+Salvataggio sulla stessa PR #8, senza merge; il commit del seguito è registrato
+dopo la verifica del remoto.

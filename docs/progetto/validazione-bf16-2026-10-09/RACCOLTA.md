@@ -61,6 +61,38 @@ somministrazione restano distinte dai percorsi da valutare:
 | Contesti PF03 | S07–S08 | Separati dal beneficio principale; S08 verifica anche PF04/PF05 |
 | Estensioni e controllo | S09, S11, S12 | PF04, PF06 e significati finanziari separati; nessun ampliamento implicito di R1 |
 
+## Avvio della prima fase
+
+Dopo la descrizione del metodo corrente e l'esercitazione fuori campione,
+si può iniziare con **S01–S04 della fase 1 per entrambi gli operatori**:
+otto esecuzioni della pianificazione esistente. S01–S02 riguardano PF01;
+S03–S04 includono già ritorno al banco e recupero storico PF02/PF05.
+Questa è una prima tranche contigua, non una nuova prova ridotta o una misura
+già raccolta. Il facilitatore presenta un caso alla volta dal pacchetto assegnato.
+
+Proseguire poi con S05–S12 della stessa fase, quindi con la fase 2 prevista
+per ciascun operatore. S10 resta il caso dedicato al documento storico: non
+anticiparlo saltando i casi intermedi e non passare subito alla fase 2 per
+creare coppie più comode. Registrare pause e interruzioni. Dopo la sola fase 1
+non ci sono ancora coppie complete dello stesso operatore per confrontare
+le condizioni. Le altre righe restano `non_eseguita` fino a osservazione effettiva.
+
+Prima di cronometrare servono facilitatore e due operatori reali nelle condizioni
+del protocollo, metodo corrente descritto, supporto e ricerca comuni, limite
+per caso e soglie registrate preventivamente. L'assenza di costi o prezzi non
+impedisce di osservare i compiti: il risultato economico resta non calcolabile.
+Se chi conduce usa questa conversazione, la tiene fuori vista degli operatori
+insieme alla chiave; si condividono soltanto i materiali della fase in corso.
+
+Nel proseguimento del 9 ottobre sono state predisposte fuori repository sette
+copie identiche dei materiali, separate per destinatario/fase, con un manifest
+dei digest SHA-256 iniziali. È una preparazione tecnica: nessun operatore,
+cronometro o raccolta è stato avviato. Il percorso locale è comunicato nella
+consegna della sessione; può non sopravvivere a un cambio ambiente. Le copie
+compilate vanno conservate nel luogo riservato concordato, senza dipendere da
+quel percorso o sovrascrivere raccolte precedenti. Per ricreare una copia vuota
+in un altro ambiente basta copiare i sette materiali: non rigenerare il kit.
+
 ## Durante la raccolta, anche se parziale
 
 Leggere l'istruzione del protocollo; cronometrare dalla consegna del compito

@@ -182,3 +182,12 @@ usa copie dei materiali già pronti, distingue le analisi automatiche da quelle
 manuali e conserva i denominatori nelle prove parziali. Il kit BF02, i suoi
 modelli e strumenti restano invariati. Controlli nuovi e storici sono distinti
 nel [rapporto della ripresa](docs/progetto/validazione-bf16-2026-10-09/README.md).
+
+L'[allegato storico/uscita](docs/progetto/validazione-bf16-2026-10-09/STORICO_USCITA.md)
+specifica come revisionare conservazione, titoli di lettura e consegna per
+categoria/evento. Include revoca, correzione, copie consegnate e ripristino
+come verifiche future. Nessun termine legale, ruolo privacy o provider è
+scelto; la fine di un titolo non revoca titoli autonomi ancora efficaci.
+Le copie esterne predisposte per la raccolta sono byte-identiche al kit;
+cartelle per ruolo/fase e manifest servono alla distribuzione e alla provenienza,
+non sono autorizzazioni server. Non dipendere dal percorso temporaneo della sessione.

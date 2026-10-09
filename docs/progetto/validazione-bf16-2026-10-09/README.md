@@ -2,13 +2,16 @@
 
 9 ottobre 2026. **BF16 resta aperto:** nei materiali disponibili non sono
 presenti osservazioni umane da analizzare. Il kit BF02 è già pronto ed è
-conservato integralmente; la ripresa aggiunge una guida alla raccolta e un
-approfondimento preliminare BF03 indipendente dalle misure mancanti.
+conservato integralmente; la ripresa aggiunge una guida alla raccolta e
+approfondimenti preliminari BF03 indipendenti dalle misure mancanti.
+Il successivo «procedi» avanza la preparazione esterna e la proposta di
+storico/uscita sulla stessa PR #8, senza avviare una prova umana.
 
 | Elaborato | Risultato e limite |
 | --- | --- |
 | [RACCOLTA.md](RACCOLTA.md) | Passaggi per il facilitatore, copie esterne, dati parziali, lettura dei risultati e limiti dell'analizzatore; usa il protocollo esistente |
 | [CONTRATTI_PRELIMINARI.md](CONTRATTI_PRELIMINARI.md) | Comandi/letture PF01/PF02/PF05, matrice ammesso/negato e criteri futuri; proposta revisionabile, BF03 non completato |
+| [STORICO_USCITA.md](STORICO_USCITA.md) | Matrice preliminare per categorie ed eventi: conservazione, lettura e consegna distinte; titoli e regole mancanti espliciti |
 | [Kit BF02](../prova-agenzia-2026-10-08/README.md) | Set A/B, materiali e modelli già consegnati; nessuna rigenerazione o nuova simulazione AI |
 | [Specifiche](../specifiche-2026-10-08/README.md) | Fonte di requisiti EA/RF, percorsi PF, modello MD, dipendenze BF e decisioni DA; questo allegato non le sostituisce |
 
@@ -73,7 +76,7 @@ Permessi per rapporto/agenzia/oggetto, bollette private, revoca, fine rapporto
 e fine adesione restano distinti. Upload, dichiarazione, verifica di incasso
 e quietanza non si fondono; un parziale mantiene il residuo.
 
-## Verifiche di questa ripresa
+## Verifiche della prima consegna — checkpoint f013564
 
 Comandi eseguiti dalla radice della repository:
 
@@ -114,6 +117,49 @@ invito, ordine, pagamento, firma o dato cliente reale attivato/pubblicato.
 L'ultima versione online documentata resta Sites v5, sorgente
 `65ac9e092c17d9113d85106fa3d04fbb9770cab5`; live non ricollaudato.
 
+## Proseguimento dopo «procedi» — preparazione della prima fase
+
+PR #8 verificata ancora aperta, non in bozza, HEAD `f013564`; branch remoto
+allineato, albero pulito e main ancora `c77dfd4`. Riutilizzati branch e PR
+secondo AGENTS. Nessun nuovo commento/review o issue con osservazioni.
+Il «procedi» autorizza il proseguimento già proposto, non fornisce misure
+né risolve decisioni commerciali, responsabilità o politica di conservazione.
+
+Predisposte fuori repository sette copie dei materiali BF02 già pronti:
+un pacchetto per operatore/fase e chiave/misure/costi per il facilitatore.
+Le copie sono identiche byte per byte ai sorgenti; un manifest esterno registra
+commit `f013564` e SHA-256 iniziali. Non sono nuovi set o pacchetti rigenerati;
+la separazione in cartelle serve alla distribuzione, non dimostra isolamento
+software. Le cartelle e i file locali possono non sopravvivere a un altro ambiente.
+
+Controllata la distribuzione: una sola copia del pacchetto previsto in ogni
+cartella operatore/fase, chiave e CSV solo al facilitatore. `analyze` sulla
+copia di `misure.csv` conferma 48 pianificate e 0 osservate; `costi.csv` resta
+identico alle cinque categorie vuote. Nessun dato personale o costo individuale
+è copiato nella repository. `validate` e i test del kit non sono ripetuti in
+questo seguito: sorgenti e dati della prova sono invariati.
+
+La guida precisa un avvio contiguo S01–S04 della fase 1 per entrambi, poi
+S05–S12 e seconda fase: PF01/PF02/PF05 compaiono già nei primi quattro casi.
+La tranche iniziale è parziale e non produce ancora coppie complete per
+operatore. Non viene anticipato S10, né cambiato l'ordine per ottenere confronti.
+Richiesti descrizione anonima del processo corrente e disponibilità dei
+partecipanti; in assenza di risposta la prova rimane **non avviata**.
+
+L'[allegato su storico/uscita](STORICO_USCITA.md) approfondisce il punto rimasto
+aperto in BF03 senza assegnare durate legali, titolari privacy o responsabili.
+Conservare un file non concede lettura, e poterlo leggere non permette di
+consegnarlo a terzi; documento antico e rapporto concluso restano concetti
+diversi. Titoli autonomi ancora validi non vengono revocati dal solo fatto
+che la politica successiva al rapporto deve essere completata.
+
+Controllati 9 Markdown del seguito e 120 collegamenti locali/ancore, diff pulito
+e criteri richiamati presenti. Totale cumulativo della PR: 12 Markdown e 156
+collegamenti. Revisione indipendente applicata sui titoli autonomi validi e
+sui canali di consegna esplicitamente autorizzati: non si deducono permessi
+dal cambio di agenzia, né si vieta una consegna legittima. Il salvataggio è nel
+[registro di sessione](../SESSIONI.md). Nessun servizio reale, backend o deploy.
+
 ## Prossima azione e consegna
 
 Il facilitatore osserva il metodo corrente, registra le condizioni e usa i
@@ -127,8 +173,9 @@ Consegna nella [PR #8](https://github.com/av3rgfx/EECard/pull/8), verificata
 aperta e non in bozza, base main `c77dfd4`, branch
 `docs/bf16-raccolta-2026-10-09`. Commit degli elaborati
 `7cff9ff34fc3e619edf1187af6bdf4728c04aff1`, verificato uguale sul remoto e come
-HEAD della PR. Il successivo commit registra soltanto questi riferimenti;
-l'HEAD finale è consultabile nella PR. Nessun merge.
+HEAD della PR al primo salvataggio; `f013564` ne registra i riferimenti.
+La continuazione descritta sopra aggiorna la stessa PR; l'HEAD corrente è
+consultabile nella PR. Nessun merge.
 Dopo `git fetch origin`, confrontare `git rev-parse HEAD` con
 `git rev-parse origin/docs/bf16-raccolta-2026-10-09` e verificare che
 `git status --short` sia vuoto.
