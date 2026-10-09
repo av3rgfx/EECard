@@ -123,7 +123,14 @@ controllare versione/copertura, analizzare separatamente PF01/PF02/PF05,
 conservare fallimenti e mancanti, poi motivare correzioni e revisione BF03.
 Una raccolta parziale non chiude BF16 o le sue soglie generali.
 
-Branch di consegna: `docs/bf16-raccolta-2026-10-09`, base main `c77dfd4`.
-I riferimenti remoti finali vengono registrati dopo commit e apertura della PR.
+Consegna nella [PR #8](https://github.com/av3rgfx/EECard/pull/8), verificata
+aperta e non in bozza, base main `c77dfd4`, branch
+`docs/bf16-raccolta-2026-10-09`. Commit degli elaborati
+`7cff9ff34fc3e619edf1187af6bdf4728c04aff1`, verificato uguale sul remoto e come
+HEAD della PR. Il successivo commit registra soltanto questi riferimenti;
+l'HEAD finale è consultabile nella PR. Nessun merge.
+Dopo `git fetch origin`, confrontare `git rev-parse HEAD` con
+`git rev-parse origin/docs/bf16-raccolta-2026-10-09` e verificare che
+`git status --short` sia vuoto.
 Per riprendere seguire [PROSSIMA_SESSIONE](../PROSSIMA_SESSIONE.md) e il
 [prompt corrente](../PROMPT_NUOVA_SESSIONE.md), verificando prima lo stato remoto.

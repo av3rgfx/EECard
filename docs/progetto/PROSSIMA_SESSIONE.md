@@ -48,9 +48,11 @@ La [PR #7](https://github.com/av3rgfx/EECard/pull/7), chiusura documentale,
 creato `docs/bf16-raccolta-2026-10-09` per raccolta BF16 e approfondimenti
 indipendenti. Il vecchio branch `docs/chiusura-sessione-2026-10-09` non è
 riutilizzato. Nessun merge eseguito dall'assistente.
-La consegna corrente e i controlli sono nel
-[rapporto BF16](validazione-bf16-2026-10-09/README.md); verificare la sua PR
-prima di riprendere, riutilizzandola se aperta per la stessa consegna.
+Consegna corrente nella [PR #8](https://github.com/av3rgfx/EECard/pull/8),
+aperta e non in bozza. Elaborati al commit `7cff9ff`, verificato sul remoto;
+il successivo commit registra i riferimenti della PR. Controlli nel
+[rapporto BF16](validazione-bf16-2026-10-09/README.md). Verificare lo stato
+della PR prima di riprendere, riutilizzandola se aperta per la stessa consegna.
 
 La [PR #6](https://github.com/av3rgfx/EECard/pull/6), specifiche e kit,
 era già integrata il 9 ottobre alle 08:18:43 UTC in `3532eab`.

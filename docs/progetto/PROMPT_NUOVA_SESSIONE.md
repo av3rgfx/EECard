@@ -11,8 +11,9 @@ Riprendiamo EECard dal lavoro esistente. Rispondi in italiano.
 Repository unica: https://github.com/av3rgfx/EECard.
 La PR #7 di chiusura è integrata il 9 ottobre 2026 alle 23:19:16 UTC;
 la ripresa BF16 parte da main `c77dfd482e683baeeb0ec825ac5d5755c56fa1bb`
-sul branch `docs/bf16-raccolta-2026-10-09`. La consegna corrente, la sua PR e
-le verifiche sono in `docs/progetto/validazione-bf16-2026-10-09/README.md`
+sul branch `docs/bf16-raccolta-2026-10-09`. La consegna corrente è nella
+PR #8: https://github.com/av3rgfx/EECard/pull/8, aperta alla consegna.
+Le verifiche sono in `docs/progetto/validazione-bf16-2026-10-09/README.md`
 e `docs/progetto/PROSSIMA_SESSIONE.md`. PR #6 (specifiche/kit) già integrata
 il 9 ottobre alle 08:18:43 UTC.
 

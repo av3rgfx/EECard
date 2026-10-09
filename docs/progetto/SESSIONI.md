@@ -289,4 +289,8 @@ separata la sessione personale dell'attore dalla sessione operatore, richiesta
 solo per operazioni d'agenzia; precisato che lo storico del precedente
 intestatario è negato senza titolo specifico, preservando le deleghe valide.
 
-Consegna remota sul nuovo branch; commit e PR vengono registrati dopo il salvataggio.
+Consegna nella [PR #8](https://github.com/av3rgfx/EECard/pull/8), aperta e
+non in bozza, base main e branch `docs/bf16-raccolta-2026-10-09`.
+Commit elaborati `7cff9ff34fc3e619edf1187af6bdf4728c04aff1`, verificato uguale
+al branch remoto e all'HEAD della PR. Il successivo commit aggiunge soltanto
+riferimenti remoti a rapporto, punto di ripresa, prompt e registro. Nessun merge.
