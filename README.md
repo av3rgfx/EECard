@@ -70,6 +70,11 @@ rende eseguibile il passo successivo: 24 scenari sintetici, materiali operatore
 e facilitatore, 48 esecuzioni pianificate e strumenti Python locali. Le misure
 umane restano da raccogliere; la revisione simulata non dimostra risparmi.
 
+Specifiche e kit sono integrati nella [PR #6](https://github.com/av3rgfx/EECard/pull/6)
+dal 9 ottobre. Per riprendere usare il
+[prompt aggiornato](docs/progetto/PROMPT_NUOVA_SESSIONE.md) e verificare lo stato
+remoto indicato nel punto di ripresa.
+
 - [Brief storico del confronto, ora eseguito](docs/progetto/PROMPT_DESIGN.md)
 - [Analisi del design e migliorie proposte](docs/design/REVISIONE_VISIVA.md)
 - [Prodotto, persone e confini](PRODUCT.md)

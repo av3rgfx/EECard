@@ -36,6 +36,12 @@ Il passo successivo autorizzato è preparato in
 e rapporto della revisione simulata. Gli strumenti Python locali generano
 modelli vuoti: non sostituire le misure umane con esiti AI. BF16 resta aperto.
 
+La PR #6 (specifiche e kit) è integrata il 9 ottobre 2026 alle 08:18:43 UTC.
+La chiusura della sessione parte da main `3532eab` sul branch
+`docs/chiusura-sessione-2026-10-09`. Il prompt aggiornato per la ripresa è
+`docs/progetto/PROMPT_NUOVA_SESSIONE.md`; stato della consegna e attività
+residue sono in PROSSIMA_SESSIONE. Verificare sempre il remoto prima del checkout.
+
 Non pubblicare l'audio, la trascrizione integrale o i dati personali degli esempi
 nella repository pubblica. I documenti del nuovo studio usano sintesi anonime.
 Il riferimento ai clienti già gestiti a 600 euro annui non è un listino EECard;

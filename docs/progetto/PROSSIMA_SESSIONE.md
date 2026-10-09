@@ -1,7 +1,10 @@
 # EECard — punto di ripresa
 
-Aggiornato l'8 ottobre 2026 dopo la preparazione della prova in agenzia. Repository unica:
+Aggiornato il 9 ottobre 2026 alla chiusura della sessione. Repository unica:
 https://github.com/av3rgfx/EECard.
+
+Il [prompt riutilizzabile](PROMPT_NUOVA_SESSIONE.md) avvia la prossima sessione
+da questo stato. La chiusura non autorizza nuovi servizi o un rilascio operativo.
 
 ## Obiettivo e risultato corrente
 
@@ -31,34 +34,34 @@ hardware completo restano concrete opzioni con dipendenze diverse.
 
 ## Stato remoto e branch
 
-La [PR #5](https://github.com/av3rgfx/EECard/pull/5) è integrata l'8 ottobre 2026
-alle 19:32:22 UTC. Base verificata: main
-`a8e0ca7a0641685462ac209c1570ef421631c121`. La ripresa usa il branch
-`docs/specifiche-funzionali-2026-10-08`. Nessun merge eseguito nella sessione.
-Consegna nella [PR #6](https://github.com/av3rgfx/EECard/pull/6), aperta e non in
-bozza, senza merge; commit degli elaborati `7d43ae82e9f91b13f13dfc0aaea9a92a641ceb0c`.
-Il checkpoint `dc1a536` registra la prima chiusura. La PR #6 è stata verificata
-ancora aperta prima di preparare il kit: riutilizzati lo stesso branch e PR.
-Per l'HEAD aggiornato e le verifiche del kit consultare il nuovo rapporto di
-simulazione e la PR; i conteggi della prima consegna sono storici.
-Elaborati del kit salvati nel commit `bb2222c352fff0c69b6c4a8f63f5684cfa9ade01`,
-verificato uguale sul branch remoto e sulla PR #6 ancora aperta. La chiusura
-successiva registra questi metadati, senza cambiare scenari o strumenti.
+La [PR #6](https://github.com/av3rgfx/EECard/pull/6), contenente specifiche e kit,
+è **integrata il 9 ottobre 2026 alle 08:18:43 UTC**. Main verificato dopo fetch:
+`3532eab28cb76009979b1ebdca1022095cccf146`. Da questa base è stato creato il branch
+`docs/chiusura-sessione-2026-10-09` per la sola consegna di continuità e prompt.
+Nessun merge eseguito dall'assistente nella chiusura.
+
+Checkpoint conservati: specifiche `7d43ae8`, kit `bb2222c`, metadati finali
+`ca848e0` (ultimo HEAD della PR #6). La PR #5 era già integrata l'8 ottobre
+alle 19:32:22 UTC. I rapporti datati dell'8 ottobre che descrivono PR #6 aperta
+sono evidenze storiche, non istruzioni per riutilizzare oggi il vecchio branch.
 
 Prima di riprendere controllare il remoto: se la PR di questa consegna è ancora
 aperta, riutilizzarla; dopo il merge partire dal main aggiornato e da un nuovo
-branch. I riferimenti a PR #4/#5 aperte nei registri storici descrivono checkpoint
+branch. I riferimenti a PR #4/#5/#6 aperte nei registri storici descrivono checkpoint
 superati e non devono guidare il checkout.
 
 ## Ordine di lettura
 
 1. AGENTS.md e questo file.
-2. [Cartella della conversazione](discussione-2026-10-07/README.md), inclusi analisi,
-   contesto e PROMPT_NUOVA_SESSIONE.md, per origine e timestamp degli EA.
-3. PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [BACKLOG.md](BACKLOG.md) e
+2. PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [BACKLOG.md](BACKLOG.md) e
    [DECISIONI.md](../design/DECISIONI.md).
-4. Nuove specifiche sopra; studio v0.1 §§3, 6, 8, 11–13 e sorgenti pertinenti
-   prima di progettare o implementare ulteriori cambiamenti.
+3. Tutti gli elaborati delle specifiche funzionali elencati sopra.
+4. Kit BF02: README, PROTOCOLLO ed ESITO_SIMULAZIONE; set e chiave solo per la
+   preparazione del facilitatore, senza mostrarli agli operatori della prova.
+5. [Cartella della conversazione](discussione-2026-10-07/README.md) per origine
+   e timestamp degli EA; studio v0.1 §§3, 6, 8, 11–13 e sorgenti pertinenti
+   prima di progettare o implementare ulteriori cambiamenti. Il prompt in
+   quella cartella è storico; quello corrente è collegato in apertura.
 
 La registrazione non è stata riascoltata in questa ripresa: non era allegata.
 Sono state usate le sintesi della consegna, senza risolvere cifre o parole ambigue.
@@ -105,6 +108,12 @@ correzioni di processo e contratti di servizio BF03 preparare; prima dei dati
 reali servono comunque autorizzazioni server e condizioni operative. Le scelte
 su listino/hardware non bloccano la simulazione documentale.
 
+Se nella prossima sessione sono disponibili osservazioni effettive, analizzarle
+senza pubblicare dati personali o costi individuali. Altrimenti guidare la
+raccolta e mantenere BF16 aperto; non rifare il kit o usare risposte AI come
+misure. Gli approfondimenti documentali indipendenti possono proseguire con
+ipotesi esplicite, senza dichiarare BF03 approvato o avviare un backend reale.
+
 ## Prototipo, verifiche e anteprime
 
 Frontend React/TypeScript/Vite, fixture e localStorage; nessun backend, account,
@@ -122,3 +131,9 @@ La versione live non è stata ricollaudata in questa ripresa. Le prove frontend
 precedenti restano datate in VERIFICHE.md del design; non sono state rieseguite.
 
 Non pubblicare audio, trascrizione integrale, dati personali o documenti reali.
+
+## Verifiche della chiusura
+
+Questa chiusura modifica solo Markdown. I 18 test del kit passati l'8 ottobre
+e le verifiche frontend precedenti restano storici: non sono stati rieseguiti.
+Controlli della consegna corrente e PR sono nel [registro di sessione](SESSIONI.md).

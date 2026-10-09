@@ -1,6 +1,6 @@
 # Backlog di continuità EECard
 
-Aggiornato l'8 ottobre 2026. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessuna persona, costo o data è stata assegnata; BF propone ruoli responsabili. PR #5 integrata; specifiche sul nuovo branch `docs/specifiche-funzionali-2026-10-08`.
+Aggiornato il 9 ottobre 2026 alla chiusura della sessione. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessuna persona, costo o data è stata assegnata; BF propone ruoli responsabili. PR #6 integrata: specifiche e kit sono in main `3532eab`. Chiusura documentale sul branch `docs/chiusura-sessione-2026-10-09`.
 
 ## Completato nella sessione
 
@@ -16,7 +16,7 @@ Aggiornato l'8 ottobre 2026. Le priorità seguenti sono una proposta di sequenza
 
 | ID | Priorità proposta / stato | Attività | Criterio di completamento |
 | --- | --- | --- | --- |
-| N01 | Design conservato · specifiche preparate | V01–V05 restano completati; RF01–RF30, PF01–PF06, modello e backlog BF consegnati, senza modifiche al frontend | Riprendere dalla revisione R1 e BF01/BF02 sotto |
+| N01 | Design conservato · specifiche e kit preparati | V01–V05 restano completati; RF01–RF30, PF01–PF06, modello, backlog BF e kit BF02 consegnati, senza modifiche al frontend | Riprendere dalla prova BF16; BF01 commerciale ancora aperto |
 | N02 | Alta · da fare su hardware | Verificare iPhone/Safari, Android/Chrome e screen reader | Dispositivo/browser annotati; tastiera, safe area, zoom, rotazione, focus e annunci controllati; problemi riprodotti e corretti |
 | N03 | Alta · in attesa di informazioni | Chiarire quote, primo cliente, zona, beneficio iniziale, copertura e risorse | Risposte con provenienza nel [registro decisioni](../design/DECISIONI.md); nessun numero dedotto dal prototipo |
 | N04 | Dopo N01/N03 · da definire | Scegliere il perimetro del primo rilascio operativo | Percorso prioritario, esclusioni esplicite e criteri di accettazione concordati |
@@ -155,3 +155,13 @@ misure/costi vuoti e strumenti locali. [Esito della revisione simulata](prova-ag
 
 Il prossimo risultato è un registro osservato della prova, con risposte,
 fallimenti, tempi e costi mancanti dichiarati, senza dati personali nella PR.
+
+## Chiusura del 9 ottobre e istruzioni di ripresa
+
+La PR #6 è integrata. [Prompt della prossima sessione](PROMPT_NUOVA_SESSIONE.md)
+e [stato corrente](PROSSIMA_SESSIONE.md) evitano di ripetere la preparazione già
+conclusa. BF02 resta consegnato, BF16 attende operatori e osservazioni effettive.
+BF03 non è approvato o completato dalla chiusura: contratti di servizio e matrice
+permessi vanno preparati secondo le dipendenze del backlog, come proposte.
+In assenza di misure non inventare una prova né ricreare i set: guidare la
+raccolta e proseguire solo approfondimenti documentali indipendenti.
