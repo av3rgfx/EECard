@@ -242,3 +242,7 @@ Controllati otto Markdown modificati/nuovi e 96 collegamenti locali/ancore;
 `git diff --check` senza errori. Revisione indipendente della continuità:
 allineato l'ordine di lettura fra prompt e punto di ripresa. Dati, strumenti
 e sorgenti restano identici al main di partenza.
+
+Consegna nella [PR #7](https://github.com/av3rgfx/EECard/pull/7), creata aperta
+e non in bozza, da main `3532eab`. Commit degli elaborati `84c876e`, salvato
+sul remoto; il commit successivo aggiunge i riferimenti della PR. Nessun merge.

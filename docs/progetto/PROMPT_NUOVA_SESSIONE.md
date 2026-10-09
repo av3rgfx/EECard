@@ -11,8 +11,9 @@ Riprendiamo EECard dal lavoro esistente. Rispondi in italiano.
 Repository unica: https://github.com/av3rgfx/EECard.
 La PR #6 con specifiche e kit della prova risultava integrata il 9 ottobre
 2026 alle 08:18:43 UTC, in main `3532eab`. La successiva chiusura documentale
-è sul branch `docs/chiusura-sessione-2026-10-09`; la sua PR è indicata in
-`docs/progetto/PROSSIMA_SESSIONE.md`.
+è sul branch `docs/chiusura-sessione-2026-10-09`, nella PR #7:
+https://github.com/av3rgfx/EECard/pull/7. Lo stato è riepilogato in
+`docs/progetto/PROSSIMA_SESSIONE.md` e va verificato sul remoto.
 
 Verifica prima lo stato remoto. Se la PR della chiusura è aperta, leggi anche
 i suoi documenti e riutilizzala per la stessa consegna; se è integrata, parti

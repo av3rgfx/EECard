@@ -39,6 +39,9 @@ La [PR #6](https://github.com/av3rgfx/EECard/pull/6), contenente specifiche e ki
 `3532eab28cb76009979b1ebdca1022095cccf146`. Da questa base è stato creato il branch
 `docs/chiusura-sessione-2026-10-09` per la sola consegna di continuità e prompt.
 Nessun merge eseguito dall'assistente nella chiusura.
+Consegna nella [PR #7](https://github.com/av3rgfx/EECard/pull/7), aperta e non
+in bozza. Elaborati al commit `84c876e`; il successivo commit di chiusura
+registra il collegamento alla PR. Verificare il suo stato prima di riprendere.
 
 Checkpoint conservati: specifiche `7d43ae8`, kit `bb2222c`, metadati finali
 `ca848e0` (ultimo HEAD della PR #6). La PR #5 era già integrata l'8 ottobre
