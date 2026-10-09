@@ -112,3 +112,33 @@ insieme alla card personalizzata dei partner è una proposta da definire, senza
 un naming approvato o una nuova scelta del simbolo. I 30/60 giorni riferiti a
 documenti comunali e i dieci giorni nel confronto B2B sono esempi del dialogo,
 non regole generali o stime di sviluppo.
+
+
+## Ripresa funzionale dell'8 ottobre — specifiche per revisione
+
+| ID | Stato | Contenuto / conseguenza |
+| --- | --- | --- |
+| C20 | Richiesta esplicita dell'utente | Proseguire specifiche e preparazione dello sviluppo, offerte senza prezzi, sei percorsi, primo rilascio proposto, dati, backlog e fattibilità. Autorizza consegna verificabile nel repository, non attivazioni operative o merge |
+| C21 | Vincoli ribaditi dall'utente | Conservare naming provvisorio, C–Legame, 0.3, riservatezza e quattro significati dei pagamenti; cifre ambigue, Jarvis, schermi e firma aperti |
+| RF01–RF30 | Specificati, stato V/P/A per riga | [Registro con collegamento EA](../progetto/specifiche-2026-10-08/REQUISITI_DECISIONI.md). Copertura documentale non equivale ad approvazione o implementazione |
+| IF01–IF06 | Proposte e vincoli distinti nel registro | R1 centrato sul fascicolo/banco, identità e adesione separate, card come selettore, schermo condiviso circoscritto e bozze revisionabili; nessuna scelta hardware/provider |
+| DA01–DA07 | Aperte | Primo beneficio, condizioni commerciali, destinatari schermi, documenti/tipo firma, Jarvis, risorse e ambito EA30; non risolte per deduzione |
+
+PR #5 verificata integrata alle 19:32:22 UTC; nuovo branch documentale da main
+`a8e0ca7`. [Elaborati](../progetto/specifiche-2026-10-08/README.md),
+[backlog dipendenze](../progetto/specifiche-2026-10-08/OFFERTE_RILASCIO.md) e
+[prove tecniche](../progetto/specifiche-2026-10-08/FATTIBILITA.md).
+C10/C14–C18 restano la direzione visiva: il confronto di criteri EA30 non è una
+nuova tavola visiva né una scelta dell'utente. Nessuna modifica al prototipo.
+
+
+## Proseguimento — preparazione della prova
+
+| ID | Stato | Contenuto / conseguenza |
+| --- | --- | --- |
+| C22 | Autorizzazione dell'utente: «ok bene procedi» | Avanzare sulla prova proposta di attivazione, banco e recupero storico; preparati kit BF02 e revisione simulata. R1 è il perimetro di lavoro della prova; prezzi, primo pagante, Jarvis, schermi e firma non sono risolti da questa risposta |
+| P12 | Esecuzione progettuale della prova | Due set equivalenti di dodici casi, due operatori controbilanciati, facilitatore, modelli di misura vuoti; verifica AI separata dalle osservazioni umane e dai test server |
+
+[Kit](../progetto/prova-agenzia-2026-10-08/README.md) e
+[rapporto](../progetto/prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
+La PR #6 è ancora aperta e viene aggiornata; nessun merge o cambio visivo.

@@ -59,6 +59,17 @@ L'8 ottobre è stata analizzata la nuova conversazione dei fondatori del 7 ottob
 senza nuove funzioni o deploy. Terminale al banco, wallet, partner, domotica e
 assistente sono input da progettare; prezzi e perimetro restano aperti.
 
+La [PR #5](https://github.com/av3rgfx/EECard/pull/5) è ora integrata. La ripresa
+successiva produce [specifiche funzionali incrementali](docs/progetto/specifiche-2026-10-08/README.md):
+requisiti EA, offerte senza prezzi, sei percorsi, proposta di rilascio, modello
+logico e backlog con dipendenze. Wallet/terminale/firma/AI hanno fonti e prove
+da eseguire; nessuna integrazione è attivata. Studio v0.1 e frontend invariati.
+
+Il [kit della prova in agenzia](docs/progetto/prova-agenzia-2026-10-08/README.md)
+rende eseguibile il passo successivo: 24 scenari sintetici, materiali operatore
+e facilitatore, 48 esecuzioni pianificate e strumenti Python locali. Le misure
+umane restano da raccogliere; la revisione simulata non dimostra risparmi.
+
 - [Brief storico del confronto, ora eseguito](docs/progetto/PROMPT_DESIGN.md)
 - [Analisi del design e migliorie proposte](docs/design/REVISIONE_VISIVA.md)
 - [Prodotto, persone e confini](PRODUCT.md)

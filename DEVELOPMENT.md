@@ -4,7 +4,7 @@ Aggiornato l'8 ottobre 2026. Repository di riferimento: https://github.com/av3rg
 
 ## Ripresa e avvio
 
-Leggere [AGENTS.md](AGENTS.md) e [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md). PR #4 integrata il 7 ottobre alle 22:13:57 UTC, main `4b77c0bd41d733c7a7680ad3d63d9a496424db64`. L'analisi della nuova conversazione parte da quella base sul branch documentale `docs/discussione-2026-10-07`. Verificare la PR del branch corrente: se aperta riutilizzarla; dopo merge partire da main aggiornato e nuovo branch. Controllare prima le modifiche locali e non sovrascriverle.
+Leggere [AGENTS.md](AGENTS.md) e [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md). PR #5 integrata l'8 ottobre alle 19:32:22 UTC. Le specifiche funzionali partono da main `a8e0ca7a0641685462ac209c1570ef421631c121` sul nuovo branch `docs/specifiche-funzionali-2026-10-08`. Verificare la PR del branch corrente: se aperta riutilizzarla; dopo merge partire da main aggiornato e nuovo branch. Controllare prima le modifiche locali e non sovrascriverle.
 
 Node.js 22.12+ o 24 LTS:
 
@@ -111,20 +111,52 @@ Il salto al contenuto deve mettere a fuoco `main` senza alterare l’hash usato 
 
 `HomePage` applica `home-properties-compact` alla sola lista quando `activeHouses.length > 1`: conta gli immobili effettivamente visibili nel ruolo/filtro corrente. Il componente `PropertyTile` e l’apertura del dettaglio sono condivisi e invariati. `PropertiesPage` non riceve il modificatore e mantiene foto ampie. Nessuna nuova preferenza persistita, animazione o modifica delle fixture. Lo script screenshot include ora anche la rotta `immobili`.
 
-## Nuovo studio funzionale - 8 ottobre
+## Preparazione dello sviluppo — specifiche dell'8 ottobre
 
-[EA01-EA30](docs/progetto/discussione-2026-10-07/ANALISI_CONVERSAZIONE.md) sono input
-per la progettazione, non modifiche al codice. La mappa logica proposta nel
-rapporto considera persone/agenzie, relazioni temporali, adesioni e credenziali,
-file/versioni, contratti e bozze, dispositivi, lavori e assistente.
+La [consegna funzionale](docs/progetto/specifiche-2026-10-08/README.md) contiene
+il [modello logico](docs/progetto/specifiche-2026-10-08/MODELLO_DATI.md), i
+[percorsi PF01–PF06](docs/progetto/specifiche-2026-10-08/PERCORSI.md) e il
+[backlog BF con dipendenze](docs/progetto/specifiche-2026-10-08/OFFERTE_RILASCIO.md).
+È una proposta implementabile dopo la scelta del perimetro; non introduce schema
+fisico, provider o architettura di produzione già approvati.
 
-Il ruolo selezionato e il record di pagamento per immobile della demo non
-modellano account verificati o tutti i periodi della locazione. Il solo nome
-del file non è un archivio. Lettore, wallet, firma e AI sono assenti: prima di
-renderli operativi vanno definiti risultati, permessi, dipendenze e criteri.
-Le verifiche ufficiali mirate sui wallet non equivalgono a una prova hardware.
-Non è stato scelto un backend, un provider o uno standard NFC.
+Differenze necessarie dalle fixture: identità e agenzie separate, relazioni
+personali con validità temporale, contratti e periodi, documenti/versioni privati,
+intestazioni delle utenze, dichiarazioni/verifiche/quietanze e allocazioni distinte,
+credenziali personali revocabili e audit attribuito. L'ID card non concede accesso.
+La ricerca, gli indici AI e il secondo schermo seguono le stesse autorizzazioni
+server dei documenti. Una sostituzione card non riattiva quella revocata.
 
-La consegna è documentale: verificare collegamenti, coerenza, integrità dei file
-e diff. Frontend, dati, asset e sito restano invariati; non attribuire nuovi test
-UI o un deploy a questo aggiornamento.
+Prima attività tecnica proposta dopo la revisione del beneficio: trasformare il
+percorso PF01 → PF02 → PF05 in contratti di comando/lettura e prove di accesso
+con due agenzie sintetiche, includendo revoca, retry, versioni e fine rapporto.
+La prova di servizio descritta nell'offerta può precedere questa implementazione.
+Non migrare dati reali dentro localStorage e non considerare il cambio di ruolo
+un sistema di autenticazione. Conservare una demo indipendente.
+
+Wallet/pass, contactless, due schermi, firma e AI hanno un registro di fonti e
+prove in [FATTIBILITA.md](docs/progetto/specifiche-2026-10-08/FATTIBILITA.md).
+La documentazione di piattaforma non dimostra compatibilità hardware o validità
+di un processo di firma EECard. Jarvis e i destinatari degli schermi sono aperti.
+
+La prima consegna delle specifiche modificava solo Markdown: controlli documentali in
+[VERIFICHE.md](docs/progetto/specifiche-2026-10-08/VERIFICHE.md). Nessun nuovo test
+UI, migrazione, backend o deploy; studio v0.1 e sorgenti del prototipo invariati.
+
+
+## Kit locale della prova in agenzia
+
+[BF02](docs/progetto/prova-agenzia-2026-10-08/README.md) usa due set JSON isolati
+dalle fixture dell'app, pacchetti Markdown e modelli CSV. Lo strumento
+`scripts/prova-agenzia.py` usa solo Python standard; non invia dati o chiama
+servizi. `validate` controlla coerenza e riferimenti; `prepare --output DIR`
+genera copie per la prova; `analyze --measurements FILE` riepiloga misure
+osservate senza trasformare dati mancanti in zero. I test mirati si eseguono con
+`python3 scripts/test-prova-agenzia.py`.
+
+Le evidenze di autorizzazione nei casi sono materiale per una simulazione umana,
+non policy applicate da un server. I risultati del kit non sostituiscono PT-AC01,
+MD-AC01 o gli altri criteri di sicurezza. Frontend, localStorage e pubblicazione
+Sites non cambiano. Osservazioni e costi effettivi si raccolgono fuori repository;
+qui restano modelli non eseguiti e dati sintetici. Rapporto della nuova attività:
+[ESITO_SIMULAZIONE.md](docs/progetto/prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).

@@ -134,3 +134,87 @@ Chiusura: collegamenti locali e diff verificati, tutti i 30 ID presenti nel
 rapporto; PDF di 10 pagine controllato visivamente. Il pacchetto per la nuova
 sessione comprende analisi, contesto, prompt e trascrizione automatica separata.
 Il salvataggio remoto è verificato confrontando l'albero Git con i file locali.
+
+
+## 8 ottobre 2026 — ripresa funzionale e preparazione dello sviluppo
+
+Richiesta: partire dalla consegna EA01–EA30, aggiornare requisiti e decisioni,
+definire offerte senza prezzi, sei percorsi, rilascio motivato, dati, backlog e
+fattibilità mirata. Risposta e documentazione in italiano; nessun servizio reale.
+
+Verificato remoto prima del branch: PR #5 integrata alle 19:32:22 UTC, main
+`a8e0ca7a0641685462ac209c1570ef421631c121`. Creato
+`docs/specifiche-funzionali-2026-10-08`. Letti istruzioni, intera consegna del
+7 ottobre, documenti correnti, sezioni pertinenti dello studio e sorgenti.
+Nessun riascolto dell'audio, non allegato a questa sessione.
+
+Prodotti [specifiche incrementali](specifiche-2026-10-08/README.md): registro
+RF01–RF30/EA, proposte IF e decisioni DA, offerte clienti e agenzie, percorsi
+PF01–PF06 con criteri, modello logico, proposta R1 con alternative e backlog
+BF01–BF18. R1 raccomanda fascicolo/attivazione/continuità al banco, senza
+attribuire ai fondatori la scelta del primo pagante o le esclusioni proposte.
+
+Ricerca mirata su fonti primarie per wallet/contactless, terminale, firma e AI;
+protocolli FT01–FT08, senza integrazioni o collaudi effettivi. Il contenuto AgID
+non accessibile (403) è indicato come non verificato; i livelli di firma sono
+riportati dalle norme consultate. Non scelti hardware, firma o provider.
+
+Poste due domande raggruppate su beneficio e Jarvis/schermi/atti; nessuna risposta
+registrata durante la preparazione. Le ipotesi non diventano conferme. Prezzi,
+quote, 600 euro riferiti a clienti già gestiti e cifre ambigue conservati aperti;
+C–Legame e 0.3 invariati. EA30 ha un confronto di criteri, nessun redesign.
+
+Aggiornati AGENTS, README, prodotto, design, sviluppo, decisioni, backlog e
+punto di ripresa. Studio v0.1 e fonte EA conservati; solo Markdown modificati.
+Verifiche e consegna remota in
+[VERIFICHE.md](specifiche-2026-10-08/VERIFICHE.md). Nessun test UI, prova fisica,
+servizio o deploy attribuito a questa sessione; Sites v5 resta l'ultima
+pubblicazione documentata. Nessun merge eseguito.
+
+
+Chiusura remota della ripresa: [PR #6](https://github.com/av3rgfx/EECard/pull/6)
+aperta e non in bozza, senza merge; commit elaborati
+`7d43ae82e9f91b13f13dfc0aaea9a92a641ceb0c` verificato sul remoto. Controllati
+16 Markdown, 171 collegamenti locali/ancore, 30 RF/EA, 6 PF, 54 criteri AC,
+18 BF senza cicli espliciti e 8 FT; diff pulito e fonti/sorgenti invariati.
+Revisione indipendente applicata: storico legittimo distinto da permessi
+operativi scaduti, identificazione banco inizialmente non confermata e
+visualizzazione documento distinta dalla persistenza nella sessione schermo.
+Il commit di chiusura aggiorna solo metadati e collegamenti della consegna.
+
+## 8 ottobre 2026 — kit della prova in agenzia
+
+L'utente risponde «ok bene procedi» alla proposta di prova guidata del nucleo
+attivazione → banco → recupero storico. Verificata PR #6 ancora aperta e base
+remota `dc1a536`, riutilizzati branch e PR secondo AGENTS; nessun merge.
+
+Preparato [kit BF02](prova-agenzia-2026-10-08/README.md): due set da dodici casi,
+144 evidenze sintetiche, quattro pacchetti per operatori, chiave facilitatore,
+modelli per 48 esecuzioni e cinque categorie di costo. Aggiunti strumenti
+Python locali di validazione, generazione senza sovrascrittura e analisi con
+separazione di dati mancanti, fallimenti, aiuti e sottogruppi di percorso.
+
+Revisione simulata con due letture AI separate e controllo indipendente degli
+strumenti. Corretti indizi involontari in ordine/titoli, ambito della copia
+in S05 e referente in S11; chiarita la sequenza online/offline in S06.
+Rilettura mirata dei casi B modificati. Dettagli, limiti e comandi in
+[ESITO_SIMULAZIONE.md](prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
+Le letture AI non sono prove con operatori: nessun tempo o risparmio inventato.
+
+Validazione di 24 casi/dodici coppie e 18 test dello strumento passati. Modelli
+con 48 righe `non_eseguita`, nessuna osservazione e nessun costo; generazione
+deterministica verificata. Aggiornati continuità, decisioni, prodotto, sviluppo
+e backlog. BF02 preparato, BF16 aperto. R1 è il perimetro della prova;
+prezzi, primo pagante, hardware, firma e Jarvis restano aperti.
+
+Nessuna modifica a frontend, fixture, asset o hosting; nessun nuovo test UI,
+deploy o integrazione. Prossimo risultato: osservazioni reali del protocollo
+con due operatori e facilitatore, senza dati personali nella repository.
+
+Chiusura dei controlli della continuazione rispetto a `dc1a536`: 26 file,
+19 Markdown e 285 collegamenti locali/ancore validi; diff senza errori.
+Ricontrollati anche 30 RF/EA, sei PF, 54 criteri, 18 BF senza cicli e otto FT.
+PR #6 ancora aperta, non in bozza, verificata prima del salvataggio remoto.
+Commit del kit `bb2222c352fff0c69b6c4a8f63f5684cfa9ade01` salvato e verificato
+uguale sul branch remoto e sulla PR. Nessun merge o deploy; la chiusura
+successiva contiene soltanto questi metadati.

@@ -1,6 +1,6 @@
 # Backlog di continuità EECard
 
-Aggiornato l'8 ottobre 2026. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessun responsabile, costo o data è stato assegnato. PR #4 integrata; nuovo lavoro documentale nel branch `docs/discussione-2026-10-07`.
+Aggiornato l'8 ottobre 2026. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessuna persona, costo o data è stata assegnata; BF propone ruoli responsabili. PR #5 integrata; specifiche sul nuovo branch `docs/specifiche-funzionali-2026-10-08`.
 
 ## Completato nella sessione
 
@@ -16,11 +16,11 @@ Aggiornato l'8 ottobre 2026. Le priorità seguenti sono una proposta di sequenza
 
 | ID | Priorità proposta / stato | Attività | Criterio di completamento |
 | --- | --- | --- | --- |
-| N01 | Design completato · nuova analisi documentale | V01–V05 restano completati; nuova richiesta analizzata in EA01-EA30, senza modifiche al frontend | Scelte esistenti conservate e nuovi input distinti; riprendere dai punti S01-S08 sotto |
+| N01 | Design conservato · specifiche preparate | V01–V05 restano completati; RF01–RF30, PF01–PF06, modello e backlog BF consegnati, senza modifiche al frontend | Riprendere dalla revisione R1 e BF01/BF02 sotto |
 | N02 | Alta · da fare su hardware | Verificare iPhone/Safari, Android/Chrome e screen reader | Dispositivo/browser annotati; tastiera, safe area, zoom, rotazione, focus e annunci controllati; problemi riprodotti e corretti |
 | N03 | Alta · in attesa di informazioni | Chiarire quote, primo cliente, zona, beneficio iniziale, copertura e risorse | Risposte con provenienza nel [registro decisioni](../design/DECISIONI.md); nessun numero dedotto dal prototipo |
 | N04 | Dopo N01/N03 · da definire | Scegliere il perimetro del primo rilascio operativo | Percorso prioritario, esclusioni esplicite e criteri di accettazione concordati |
-| N05 | Dopo N04 · da progettare | Definire architettura, dati e autorizzazioni reali | Contratti e stati per il percorso scelto; deleghe per immobile, revoca e conservazione chiarite |
+| N05 | Modello logico proposto; architettura da definire dopo N04 | Tradurre modello e criteri PF in contratti di servizio e scelte tecniche | BF03: matrice azione/oggetto, relazioni temporali, revoca e conservazione; nessun provider scelto |
 | N06 | Dopo N05 · da implementare | Realizzare la prima funzionalità operativa completa | UI, server, dati, errori e test integrati secondo il perimetro scelto; demo separata dai dati reali |
 | N07 | Quando cambia il frontend | Aggiornare QA, screenshot e anteprime | Report coerenti col commit e deploy verificato sul sito esistente |
 | N08 | Con architettura reale · da valutare | Prestazioni, bundle e automatizzazione dei controlli | Misure e scelta motivata; nessuna CI o suddivisione del bundle aggiunta solo per supposizione |
@@ -98,13 +98,60 @@ Le righe seguenti organizzano il lavoro proposto, non approvano funzioni o date.
 | --- | --- | --- | --- |
 | S01 | Analisi completata | Confronto audio completo/repository, catalogo, contesto e prompt | 30 punti con intervalli, distinzione novità/riprese, cifre incerte e regole conservate |
 | S02 | Da chiarire · prima delle specifiche finali | Beneficio, primo pagante, quote, unità, periodicità, copertura e risorse | Risposte attribuite; distinguere 600 euro annui dei clienti già gestiti dal listino EECard |
-| S03 | Proposto | Definire offerte clienti/agenzie e card personalizzate | Inclusioni, setup/design, software, supporto, card e hardware distinti; nessun ricavo previsto senza evidenza |
-| S04 | Proposto | Specificare attivazione al contratto e ritorno al banco | Parti, dati, permessi, card revocata, operatore e riepilogo del secondo schermo definiti |
-| S05 | Proposto · dipende dallo scopo scelto | Verificare wallet/contactless, terminale e firma | Componenti compatibili e prove effettive; pass salvato distinto da lettura NFC; tipo di firma deciso |
-| S06 | Proposto | Estendere modello domestico/fascicolo e cronologia lavori | Casa propria e locata, bollette private, metadati storici e provenienza; domotica delimitata per caso d'uso |
-| S07 | Proposto · Jarvis da chiarire | Specificare assistente e bozze contrattuali | Eventuale progetto esistente, dati consentiti, template/versioni, controllo umano e responsabilità |
-| S08 | Nuovo spunto da confrontare | Valutare bianco/rosso tecnologico rispetto alla 0.3 | Esempio circoscritto, tonalità e ambito chiariti; nessun cambio automatico di simbolo/palette |
+| S03 | Specifiche preparate; condizioni aperte | Definire offerte clienti/agenzie e card personalizzate | Inclusioni, setup/design, software, supporto, card e hardware distinti; nessun ricavo previsto senza evidenza |
+| S04 | PF01/PF02 specificati; da collaudare | Specificare attivazione al contratto e ritorno al banco | Parti, dati, permessi, card revocata, operatore e riepilogo del secondo schermo definiti |
+| S05 | Fonti verificate; FT01–FT06 da eseguire | Verificare wallet/contactless, terminale e firma | Componenti compatibili e prove effettive; pass salvato distinto da lettura NFC; tipo di firma deciso |
+| S06 | PF03–PF05 e modello proposti | Estendere modello domestico/fascicolo e cronologia lavori | Casa propria e locata, bollette private, metadati storici e provenienza; domotica delimitata per caso d'uso |
+| S07 | PF06 specificato; Jarvis aperto, FT07–FT08 da eseguire | Specificare assistente e bozze contrattuali | Eventuale progetto esistente, dati consentiti, template/versioni, controllo umano e responsabilità |
+| S08 | Confronto di criteri; ambito/tonalità aperti | Valutare bianco/rosso tecnologico rispetto alla 0.3 | Esempio circoscritto, tonalità e ambito chiariti; nessun cambio automatico di simbolo/palette |
 
 N03-N06 restano aperti. La prossima sessione deve usare la nuova analisi senza
 rifare da zero il design concluso o trasformare le ipotesi dello studio v0.1 in
 decisioni. Nessun nuovo test UI o deploy è attribuito alla consegna documentale.
+
+
+## Consegna funzionale dell'8 ottobre e residuo eseguibile
+
+[Indice della specifica](specifiche-2026-10-08/README.md). Completati come
+elaborati: RF01–RF30 tracciati agli EA, due offerte senza prezzi, sei percorsi PF
+con criteri, modello logico e otto protocolli tecnici FT. Il registro distingue
+vincoli, proposte IF e decisioni DA. Nessuna voce di implementazione BF è data
+per completata dalla sola scrittura della specifica.
+
+Il [backlog BF01–BF18](specifiche-2026-10-08/OFFERTE_RILASCIO.md) è la sequenza
+operativa proposta con dipendenze, ruoli e criteri osservabili. Mantiene gli
+ID N/S storici senza crearne una versione concorrente.
+
+| Ordine proposto | Attività concreta | Dipendenza / risultato verificabile |
+| --- | --- | --- |
+| Preparazione disponibile | BF01 beneficio per la prova e BF02 kit sintetico | Beneficio fascicolo/banco adottato per l'esercizio; due set e schede consegnati. Primo pagante e scelta commerciale ancora aperti |
+| Dopo revisione perimetro | BF03 contratti di servizio e matrice permessi | PF e modello tradotti in azioni/oggetti con casi ammessi e negati; nessun dato reale |
+| Fondazioni e nucleo R1 | BF04–BF09 identità, archivio, attivazione, banco, contesti e ricerca | Prove server tra agenzie, revoca, storico, fine rapporto e retry; non basta un filtro UI |
+| Rami condizionati | BF10 bolletta, BF11 wallet, BF12 terminale, BF13 firma, BF14 bozza/AI, BF15 partner | Entrano nella sequenza critica se essenziali al beneficio; schermi, atti, Jarvis e costi aperti |
+| Validazione | BF16 prova comparativa, BF17 condizioni operative | Misure reali della prova e nessun difetto critico; catalogo/copertura/risorse espliciti |
+| Solo dopo scelta di lancio | BF18 pilota operativo | Servizi e dati reali autorizzati, ambiente separato e responsabili definiti |
+
+Prossimo risultato richiesto: prova guidata PF01 → PF02 → PF05 con due operatori,
+misure prima/dopo e fascicoli sintetici; il protocollo estende poi il confronto
+ai casi PF03/PF04/PF06. Una prova di comprensione non sostituisce test server,
+collaudo hardware o validazione di disponibilità a pagare. Nessun rinvio di
+pagamenti, app, 3D, AI o totem è registrato come scelta dei fondatori.
+
+
+## Proseguimento autorizzato — kit della prova BF02
+
+L'utente ha risposto «ok bene procedi» alla proposta di prova guidata.
+[Kit e protocollo](prova-agenzia-2026-10-08/README.md): set A/B con dodici scenari
+equivalenti, materiali per due operatori e facilitatore, schema di 48 esecuzioni,
+misure/costi vuoti e strumenti locali. [Esito della revisione simulata](prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
+
+- BF02: preparazione consegnata, controlli nel rapporto del kit.
+- BF01: beneficio fascicolo/banco adottato per la prova; scelta commerciale del
+  primo pagante, catalogo, prezzo e risorse ancora da completare.
+- BF16: preparato, misure con operatori reali ancora da raccogliere. La revisione
+  con assistenti AI non equivale alla prova comparativa e non chiude le soglie.
+- BF03–BF15/BF17–BF18: stati operativi invariati; nessun backend, hardware o
+  lancio è realizzato dalla generazione dei materiali.
+
+Il prossimo risultato è un registro osservato della prova, con risposte,
+fallimenti, tempi e costi mancanti dichiarati, senza dati personali nella PR.

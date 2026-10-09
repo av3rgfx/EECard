@@ -1,102 +1,124 @@
-# EECard - punto di ripresa
+# EECard — punto di ripresa
 
-Aggiornato l'8 ottobre 2026. Repository unica https://github.com/av3rgfx/EECard.
+Aggiornato l'8 ottobre 2026 dopo la preparazione della prova in agenzia. Repository unica:
+https://github.com/av3rgfx/EECard.
 
-## Obiettivo corrente
+## Obiettivo e risultato corrente
 
-L'utente ha fornito la registrazione della nuova conversazione dei fondatori del
-7 ottobre (28:25) e ha chiesto analisi completa, confronto con il repository,
-schema delle idee/migliorie, file e prompt per continuare studio e progettazione.
+L'utente ha chiesto di proseguire studio e preparazione dello sviluppo partendo
+dalla consegna EA01–EA30, senza rifare l'analisi né attivare servizi reali.
+Dopo la consegna delle specifiche, l'utente ha risposto «ok bene procedi» alla
+proposta di provare attivazione → banco → recupero storico. È stato preparato il
+[kit BF02](prova-agenzia-2026-10-08/README.md): due set equivalenti, materiali
+operatore/facilitatore, schede per 48 esecuzioni e strumenti locali di controllo.
+R1 è il perimetro della prova; non sono dedotti prezzi o lancio operativo.
+Esiti e limiti della revisione simulata sono in
+[ESITO_SIMULAZIONE.md](prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
 
-La consegna è [discussione-2026-10-07/](discussione-2026-10-07/README.md):
+La [specifica incrementale](specifiche-2026-10-08/README.md) contiene:
 
-- [Analisi EA01-EA30](discussione-2026-10-07/ANALISI_CONVERSAZIONE.md): intervalli,
-  differenze dalla base, implicazioni, questioni aperte e sequenza proposta.
-- [Contesto verificato](discussione-2026-10-07/CONTESTO_REPOSITORY.md): snapshot,
-  codice, decisioni già ricevute e confini del prototipo.
-- [Prompt completo](discussione-2026-10-07/PROMPT_NUOVA_SESSIONE.md): da usare
-  insieme ai documenti e, se serve il riascolto, all'audio originale.
+- [30 requisiti RF collegati agli EA, proposte IF e decisioni aperte DA](specifiche-2026-10-08/REQUISITI_DECISIONI.md).
+- [Offerte clienti/agenzie, proposta R1, alternative, backlog BF e prova in agenzia](specifiche-2026-10-08/OFFERTE_RILASCIO.md).
+- [Sei percorsi PF con criteri di accettazione](specifiche-2026-10-08/PERCORSI.md): attivazione, banco, casa propria/locata, bolletta, documento storico, bozza contrattuale.
+- [Modello logico dei dati e degli accessi](specifiche-2026-10-08/MODELLO_DATI.md).
+- [Fattibilità documentata e prove wallet, terminale, firma e AI](specifiche-2026-10-08/FATTIBILITA.md).
+- [Verifiche della consegna](specifiche-2026-10-08/VERIFICHE.md).
 
-La trascrizione è automatica e i passaggi ambigui non sono risolti per deduzione.
-La repository pubblica contiene sintesi anonime, non audio o trascrizione integrale.
+Le specifiche sono proposte revisionabili. Il primo rilascio raccomandato parte
+da fascicolo e continuità al banco per i clienti dell'agenzia; primo pagante,
+perimetro commerciale, risorse e tempi non sono approvati. Le alternative B2B e
+hardware completo restano concrete opzioni con dipendenze diverse.
 
-## Stato remoto e continuità
+## Stato remoto e branch
 
-La PR #4 è integrata il 7 ottobre alle 22:13:57 UTC (8 ottobre alle 00:13:57 in
-Italia). Base analizzata: main `4b77c0bd41d733c7a7680ad3d63d9a496424db64`.
-La nuova analisi documentale parte da quella base sul branch
-`docs/discussione-2026-10-07`, salvato nella
-[PR #5](https://github.com/av3rgfx/EECard/pull/5), aperta e non in bozza,
-senza merge. Verificati 14 file Markdown, senza modifiche al frontend.
-Controllare il remoto: riusare la PR se aperta; dopo merge partire da main
-aggiornato e da un nuovo branch. I riferimenti precedenti a PR #4 aperta sono
-checkpoint storici.
+La [PR #5](https://github.com/av3rgfx/EECard/pull/5) è integrata l'8 ottobre 2026
+alle 19:32:22 UTC. Base verificata: main
+`a8e0ca7a0641685462ac209c1570ef421631c121`. La ripresa usa il branch
+`docs/specifiche-funzionali-2026-10-08`. Nessun merge eseguito nella sessione.
+Consegna nella [PR #6](https://github.com/av3rgfx/EECard/pull/6), aperta e non in
+bozza, senza merge; commit degli elaborati `7d43ae82e9f91b13f13dfc0aaea9a92a641ceb0c`.
+Il checkpoint `dc1a536` registra la prima chiusura. La PR #6 è stata verificata
+ancora aperta prima di preparare il kit: riutilizzati lo stesso branch e PR.
+Per l'HEAD aggiornato e le verifiche del kit consultare il nuovo rapporto di
+simulazione e la PR; i conteggi della prima consegna sono storici.
+Elaborati del kit salvati nel commit `bb2222c352fff0c69b6c4a8f63f5684cfa9ade01`,
+verificato uguale sul branch remoto e sulla PR #6 ancora aperta. La chiusura
+successiva registra questi metadati, senza cambiare scenari o strumenti.
 
-## Principali nuovi input
+Prima di riprendere controllare il remoto: se la PR di questa consegna è ancora
+aperta, riutilizzarla; dopo il merge partire dal main aggiornato e da un nuovo
+branch. I riferimenti a PR #4/#5 aperte nei registri storici descrivono checkpoint
+superati e non devono guidare il checkout.
 
-Attivazione al contratto e riuso dei dati; fascicolo recuperabile dal lettore al
-banco anche con personale diverso; mini terminale con due schermi e possibile
-firma con penna; wallet/contactless; iscrizione online e spedizione fisica a
-pagamento; offerta per altre agenzie con card personalizzate e brand del sistema.
+## Ordine di lettura
 
-Funzioni domestiche anche per il proprietario nella propria casa, preservando
-la riservatezza delle bollette dell'inquilino; QR/importo prioritari in bolletta;
-domotica esplorativa; documenti tecnici/edilizi storici e cronologia lavori;
-migrazione di clienti già gestiti; assistente con contesto e bozze contrattuali.
+1. AGENTS.md e questo file.
+2. [Cartella della conversazione](discussione-2026-10-07/README.md), inclusi analisi,
+   contesto e PROMPT_NUOVA_SESSIONE.md, per origine e timestamp degli EA.
+3. PRODUCT.md, DESIGN.md, DEVELOPMENT.md, [BACKLOG.md](BACKLOG.md) e
+   [DECISIONI.md](../design/DECISIONI.md).
+4. Nuove specifiche sopra; studio v0.1 §§3, 6, 8, 11–13 e sorgenti pertinenti
+   prima di progettare o implementare ulteriori cambiamenti.
 
-Spunto molto tecnologico con fondo bianco/rosso, da chiarire rispetto alla 0.3.
-Nessuna di queste idee è stata trasformata automaticamente in una funzione,
-un listino o un perimetro del primo rilascio. Tutti i punti hanno ID nel rapporto.
+La registrazione non è stata riascoltata in questa ripresa: non era allegata.
+Sono state usate le sintesi della consegna, senza risolvere cifre o parole ambigue.
+Lo studio v0.1 PDF/DOCX e l'analisi originaria restano intatti come fonti storiche.
 
 ## Decisioni da conservare
 
-EECard provvisorio; C - Legame scelto, nome ancora aperto. Direzione 0.3:
-tessera/materiali di Materia e luce, pagine aperte di Editoriale e architettura,
-bruno/albicocca/avorio. Tessera prima nella home personale, aree operative per
-agenzia/tecnico. Immobili compatti solo in home con più risultati effettivamente
-visibili; una sola casa e pagina immobili sempre espanse.
+EECard provvisorio; C–Legame è il simbolo scelto, non il nome del prodotto.
+Direzione 0.3: tessera/materiali di Materia e luce, composizione aperta di Editoriale
+e architettura, bruno/albicocca/avorio. Tessera dominante nella home personale;
+agenzia con coda operativa e tecnico con incarichi. Compattare gli immobili solo
+in home con più risultati effettivamente visibili; singolo risultato e pagina
+immobili espansi. EA30 confronta criteri per bianco/rosso, non cambia palette.
 
-Documento caricato, dichiarazione, incasso verificato e quietanza distinti.
-Il parziale mantiene il residuo. Card di accesso, non bancaria. Permessi per
-relazione/immobile/contratto/incarico; proprietario senza accesso automatico alle
-bollette personali dell'inquilino. Le fixture e i filtri della demo non sono
-autenticazione, autorizzazioni o archivio di produzione.
+Documento caricato, pagamento dichiarato, incasso verificato e quietanza sono
+eventi distinti; il parziale mantiene il residuo. Permessi per rapporto, immobile,
+contratto, intestazione, delega e incarico. Piano commerciale e card non danno
+accesso alle bollette dell'inquilino. Fine rapporto, fine adesione e revoca card
+sono eventi separati. Nessun account universale “proprietario amministratore”.
 
-## Questioni aperte e prossime azioni
+## Decisioni aperte e prossima attività concreta
 
-Leggere AGENTS.md, PRODUCT.md, DESIGN.md, DEVELOPMENT.md, BACKLOG.md,
-DECISIONI.md e i tre documenti della nuova analisi. Riprendere da S02-S08:
-chiarire beneficio/primo pagante, offerte e quote; proporre perimetro, percorsi,
-dati e criteri; valutare dipendenze wallet/lettore/firma/AI e variante visiva.
+Sono state poste due domande raggruppate: beneficio/primo pagante; natura di
+Jarvis, destinatari degli schermi e documenti da firmare. La prima consegna
+non registrava risposte: IF01 e IF04 erano ipotesi, non assensi impliciti.
+Il successivo «ok bene procedi» autorizza l'avanzamento della prova proposta.
+Non specifica primo pagante, prezzi, schermi, firma o Jarvis: questi dettagli
+restano aperti; non occorre richiederli per eseguire i casi indipendenti.
 
-I precedenti 50/15 euro non sono un listino. A 23:17 circa il nuovo audio è
-instabile fra 65 e 60-50 euro; i 600 euro annui si riferiscono ad alcuni clienti
-già gestiti, non al prezzo EECard. Jarvis potrebbe riferirsi a un progetto o
-assistente da chiarire. Budget, territorio, risorse, copertura, primo rilascio e
-ordine locale/B2B rimangono aperti. Non assumere rinvii approvati per pagamenti,
-app, 3D, AI o totem. Le prove wallet da fonti ufficiali non sono prove hardware.
+Quote, unità, IVA e inclusioni restano aperte. I 600 euro annui riguardano alcuni
+clienti già gestiti; 50/15 e le cifre instabili del nuovo audio non sono listini.
+Territorio, volume, team, budget, copertura e responsabilità devono essere definiti
+per il lancio. Nessun rinvio di pagamenti, app, 3D, AI o totem è già approvato.
 
-Lo studio v0.1 resta intatto. Non ripetere tutta l'analisi di mercato e il design
-senza una ragione. Prima di codice operativo definire il comportamento richiesto;
-procedere sugli interventi effettivamente richiesti e autorizzati nella sessione.
+**Prossima attività:** usare il [protocollo](prova-agenzia-2026-10-08/PROTOCOLLO.md)
+con due operatori reali e un facilitatore, iniziando dai casi PF01/PF02/PF05.
+Il kit estende il controllo a dodici scenari, con 48 esecuzioni controbilanciate.
+Compilare una copia esterna di `misure.csv`: i modelli nel repository restano
+non eseguiti. La revisione con assistenti AI non fornisce tempi umani, costi,
+vendite o prove delle autorizzazioni di un backend. BF16 resta aperto.
+
+Comandi e materiali sono nel README del kit. Dopo la prova decidere quali
+correzioni di processo e contratti di servizio BF03 preparare; prima dei dati
+reali servono comunque autorizzazioni server e condizioni operative. Le scelte
+su listino/hardware non bloccano la simulazione documentale.
 
 ## Prototipo, verifiche e anteprime
 
-Il frontend rimane React/TypeScript/Vite, dati demo e localStorage, senza backend,
-account reali, caricamento server, pagamenti, NFC/wallet, firma, domotica o AI.
-Per avvio e test pertinenti seguire DEVELOPMENT.md. La richiesta corrente non
-ha modificato frontend, asset, fixture, design system o screenshot.
+Frontend React/TypeScript/Vite, fixture e localStorage; nessun backend, account,
+archivio server, pagamento, NFC/wallet, firma, domotica o AI operativo.
+Le specifiche iniziali modificavano solo Markdown. Il kit successivo aggiunge
+dati sintetici JSON, pacchetti Markdown, modelli CSV e strumenti Python locali
+con verifiche mirate. Non cambia il frontend: nessun nuovo test UI, collaudo
+hardware o deploy. Per risultati effettivi leggere ESITO_SIMULAZIONE del kit.
 
 Ultima versione pubblicata documentata: Sites v5, 6 ottobre alle 14:18:39 UTC,
-sorgente `65ac9e092c17d9113d85106fa3d04fbb9770cab5`. [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/)
-- [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/).
-Questa consegna non esegue un deploy e non verifica di nuovo il sito live.
+sorgente `65ac9e092c17d9113d85106fa3d04fbb9770cab5`.
+[Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) ·
+[Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/).
+La versione live non è stata ricollaudata in questa ripresa. Le prove frontend
+precedenti restano datate in VERIFICHE.md del design; non sono state rieseguite.
 
-I controlli della precedente modifica UI erano 6 test mirati, casi home e quattro
-anteprime/HTML; la precedente integrazione aveva 19 E2E e 24 audit aggiuntivi.
-Sono evidenze datate in VERIFICHE.md, non test ripetuti in questa sessione.
-Prove fisiche iPhone/Android, Safari/WebKit e screen reader restano aperte.
-
-Chiusura documentale: verificare coerenza, collegamenti e diff, artefatti del
-passaggio e stato del salvataggio remoto. Non attribuire nuovi test frontend
-alla sola analisi. Registro delle sessioni e backlog conservano la storia.
+Non pubblicare audio, trascrizione integrale, dati personali o documenti reali.
