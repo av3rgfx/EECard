@@ -141,4 +141,6 @@ nuova tavola visiva né una scelta dell'utente. Nessuna modifica al prototipo.
 
 [Kit](../progetto/prova-agenzia-2026-10-08/README.md) e
 [rapporto](../progetto/prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
-La PR #6 è ancora aperta e viene aggiornata; nessun merge o cambio visivo.
+All'8 ottobre la PR #6 era aperta e veniva aggiornata. Verificata integrata
+il 9 ottobre alle 08:18:43 UTC; la chiusura della sessione non aggiunge decisioni
+di prodotto o cambi visivi. Il merge non equivale a validazione della prova BF16.

@@ -218,3 +218,31 @@ PR #6 ancora aperta, non in bozza, verificata prima del salvataggio remoto.
 Commit del kit `bb2222c352fff0c69b6c4a8f63f5684cfa9ade01` salvato e verificato
 uguale sul branch remoto e sulla PR. Nessun merge o deploy; la chiusura
 successiva contiene soltanto questi metadati.
+
+## 9 ottobre 2026 — chiusura e prompt della prossima sessione
+
+L'utente conclude la sessione e chiede salvataggio, aggiornamento Markdown,
+prompt per la ripresa e PR. Verificato remoto prima del branch: PR #6 integrata
+il 9 ottobre alle 08:18:43 UTC, main `3532eab28cb76009979b1ebdca1022095cccf146`.
+Checkout pulito; creato da origin/main `docs/chiusura-sessione-2026-10-09`.
+Nessun merge eseguito dall'assistente.
+
+Preparato [prompt corrente](PROMPT_NUOVA_SESSIONE.md); aggiornati AGENTS,
+README, sviluppo, decisioni, backlog e punto di ripresa allo stato integrato.
+I registri dell'8 ottobre restano checkpoint storici. Il prompt distingue
+analisi di eventuali osservazioni effettive e preparazione della raccolta
+quando mancano: BF02 consegnato, BF16 aperto, BF03 non approvato implicitamente.
+Conservati vincoli, decisioni aperte e direzione visiva.
+
+Solo Markdown: nessuna modifica a frontend, dati del kit, strumenti, asset
+o hosting. Nessun nuovo test UI, test del kit o deploy; i 18 test del kit
+passati l'8 ottobre non sono attribuiti a questa chiusura.
+
+Controllati otto Markdown modificati/nuovi e 96 collegamenti locali/ancore;
+`git diff --check` senza errori. Revisione indipendente della continuità:
+allineato l'ordine di lettura fra prompt e punto di ripresa. Dati, strumenti
+e sorgenti restano identici al main di partenza.
+
+Consegna nella [PR #7](https://github.com/av3rgfx/EECard/pull/7), creata aperta
+e non in bozza, da main `3532eab`. Commit degli elaborati `84c876e`, salvato
+sul remoto; il commit successivo aggiunge i riferimenti della PR. Nessun merge.

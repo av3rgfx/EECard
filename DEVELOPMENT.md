@@ -4,7 +4,13 @@ Aggiornato l'8 ottobre 2026. Repository di riferimento: https://github.com/av3rg
 
 ## Ripresa e avvio
 
-Leggere [AGENTS.md](AGENTS.md) e [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md). PR #5 integrata l'8 ottobre alle 19:32:22 UTC. Le specifiche funzionali partono da main `a8e0ca7a0641685462ac209c1570ef421631c121` sul nuovo branch `docs/specifiche-funzionali-2026-10-08`. Verificare la PR del branch corrente: se aperta riutilizzarla; dopo merge partire da main aggiornato e nuovo branch. Controllare prima le modifiche locali e non sovrascriverle.
+Leggere [AGENTS.md](AGENTS.md), [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md)
+e il [prompt di ripresa](docs/progetto/PROMPT_NUOVA_SESSIONE.md). La PR #6 con
+specifiche e kit è integrata il 9 ottobre alle 08:18:43 UTC. La chiusura documentale
+parte da main `3532eab28cb76009979b1ebdca1022095cccf146` sul branch
+`docs/chiusura-sessione-2026-10-09`. Verificare la PR della consegna corrente:
+se aperta riutilizzarla; dopo merge partire da main aggiornato e nuovo branch.
+Controllare prima le modifiche locali e non sovrascriverle.
 
 Node.js 22.12+ o 24 LTS:
 
