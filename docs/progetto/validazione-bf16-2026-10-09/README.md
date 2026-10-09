@@ -144,7 +144,8 @@ S05–S12 e seconda fase: PF01/PF02/PF05 compaiono già nei primi quattro casi.
 La tranche iniziale è parziale e non produce ancora coppie complete per
 operatore. Non viene anticipato S10, né cambiato l'ordine per ottenere confronti.
 Richiesti descrizione anonima del processo corrente e disponibilità dei
-partecipanti; in assenza di risposta la prova rimane **non avviata**.
+partecipanti; in assenza di risposta la prova rimane **non avviata in questa
+sessione**.
 
 L'[allegato su storico/uscita](STORICO_USCITA.md) approfondisce il punto rimasto
 aperto in BF03 senza assegnare durate legali, titolari privacy o responsabili.
@@ -174,8 +175,10 @@ aperta e non in bozza, base main `c77dfd4`, branch
 `docs/bf16-raccolta-2026-10-09`. Commit degli elaborati
 `7cff9ff34fc3e619edf1187af6bdf4728c04aff1`, verificato uguale sul remoto e come
 HEAD della PR al primo salvataggio; `f013564` ne registra i riferimenti.
-La continuazione descritta sopra aggiorna la stessa PR; l'HEAD corrente è
-consultabile nella PR. Nessun merge.
+La continuazione descritta sopra è al commit
+`dd74a2282c21f9e36806b2389f05d917f28c5d87`, verificato su checkout, branch remoto
+e stessa PR aperta. Il successivo commit registra solo i riferimenti finali;
+l'HEAD corrente è consultabile nella PR. Nessun merge.
 Dopo `git fetch origin`, confrontare `git rev-parse HEAD` con
 `git rev-parse origin/docs/bf16-raccolta-2026-10-09` e verificare che
 `git status --short` sia vuoto.

@@ -54,7 +54,8 @@ riutilizzato. Nessun merge eseguito dall'assistente.
 Consegna corrente nella [PR #8](https://github.com/av3rgfx/EECard/pull/8),
 aperta e non in bozza. Elaborati al commit `7cff9ff`, verificato sul remoto;
 `f013564` registra i riferimenti della PR. La continuazione su copie esterne
-e storico/uscita aggiorna la stessa consegna. Controlli nel
+e storico/uscita è al commit `dd74a22`, verificato sul remoto e nella stessa
+PR aperta; il successivo commit registra soltanto questi riferimenti. Controlli nel
 [rapporto BF16](validazione-bf16-2026-10-09/README.md). Verificare lo stato
 della PR prima di riprendere, riutilizzandola se aperta per la stessa consegna.
 

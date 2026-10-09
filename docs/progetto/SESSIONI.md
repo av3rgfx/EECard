@@ -338,5 +338,9 @@ indipendente applicata: il cambio agenzia non autorizza da solo i vecchi link,
 ma non vieta un canale di consegna esplicitamente autorizzato; il criterio di
 diniego dopo fine titolo esclude anche la presenza di altro titolo autonomo valido.
 
-Salvataggio sulla stessa PR #8, senza merge; il commit del seguito è registrato
-dopo la verifica del remoto.
+Salvato il seguito al commit `dd74a2282c21f9e36806b2389f05d917f28c5d87`,
+verificato uguale su checkout, branch remoto e PR #8 aperta, non in bozza.
+Titolo e descrizione della stessa PR aggiornati al perimetro completo;
+il commit successivo registra soltanto questi riferimenti. Nessun merge.
+Le copie locali esterne sono di preparazione, non artefatti pubblicati nella PR;
+le istruzioni persistenti restano nel repository.
