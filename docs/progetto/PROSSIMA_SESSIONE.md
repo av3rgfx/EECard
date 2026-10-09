@@ -1,10 +1,10 @@
 # EECard — punto di ripresa
 
-Aggiornato il 9 ottobre 2026 alla chiusura della sessione. Repository unica:
+Aggiornato il 9 ottobre 2026 alla ripresa BF16. Repository unica:
 https://github.com/av3rgfx/EECard.
 
 Il [prompt riutilizzabile](PROMPT_NUOVA_SESSIONE.md) avvia la prossima sessione
-da questo stato. La chiusura non autorizza nuovi servizi o un rilascio operativo.
+da questo stato. La ripresa non autorizza nuovi servizi o un rilascio operativo.
 
 ## Obiettivo e risultato corrente
 
@@ -17,6 +17,14 @@ operatore/facilitatore, schede per 48 esecuzioni e strumenti locali di controllo
 R1 è il perimetro della prova; non sono dedotti prezzi o lancio operativo.
 Esiti e limiti della revisione simulata sono in
 [ESITO_SIMULAZIONE.md](prova-agenzia-2026-10-08/ESITO_SIMULAZIONE.md).
+
+La [ripresa BF16](validazione-bf16-2026-10-09/README.md) aggiunge una
+[guida alla raccolta](validazione-bf16-2026-10-09/RACCOLTA.md) e un
+[approfondimento preliminare BF03](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md).
+Nei materiali consultati non sono disponibili osservazioni umane: modello
+ancora vuoto, nessun risultato BF16 ricavato dai controlli documentali.
+Il kit BF02 non è stato rifatto. I contratti restano proposte subordinate al
+perimetro BF01 e da riesaminare con BF16, senza backend o servizi reali.
 
 La [specifica incrementale](specifiche-2026-10-08/README.md) contiene:
 
@@ -34,14 +42,20 @@ hardware completo restano concrete opzioni con dipendenze diverse.
 
 ## Stato remoto e branch
 
-La [PR #6](https://github.com/av3rgfx/EECard/pull/6), contenente specifiche e kit,
-è **integrata il 9 ottobre 2026 alle 08:18:43 UTC**. Main verificato dopo fetch:
-`3532eab28cb76009979b1ebdca1022095cccf146`. Da questa base è stato creato il branch
-`docs/chiusura-sessione-2026-10-09` per la sola consegna di continuità e prompt.
-Nessun merge eseguito dall'assistente nella chiusura.
-Consegna nella [PR #7](https://github.com/av3rgfx/EECard/pull/7), aperta e non
-in bozza. Elaborati al commit `84c876e`; il successivo commit di chiusura
-registra il collegamento alla PR. Verificare il suo stato prima di riprendere.
+La [PR #7](https://github.com/av3rgfx/EECard/pull/7), chiusura documentale,
+è **integrata il 9 ottobre 2026 alle 23:19:16 UTC**. Main verificato e clonato:
+`c77dfd482e683baeeb0ec825ac5d5755c56fa1bb`. Da questa base pulita è stato
+creato `docs/bf16-raccolta-2026-10-09` per raccolta BF16 e approfondimenti
+indipendenti. Il vecchio branch `docs/chiusura-sessione-2026-10-09` non è
+riutilizzato. Nessun merge eseguito dall'assistente.
+La consegna corrente e i controlli sono nel
+[rapporto BF16](validazione-bf16-2026-10-09/README.md); verificare la sua PR
+prima di riprendere, riutilizzandola se aperta per la stessa consegna.
+
+La [PR #6](https://github.com/av3rgfx/EECard/pull/6), specifiche e kit,
+era già integrata il 9 ottobre alle 08:18:43 UTC in `3532eab`.
+Checkpoint della chiusura PR #7: elaborati `84c876e`, HEAD `f53eb12`,
+merge `c77dfd4`. Questi riferimenti documentano la provenienza.
 
 Checkpoint conservati: specifiche `7d43ae8`, kit `bb2222c`, metadati finali
 `ca848e0` (ultimo HEAD della PR #6). La PR #5 era già integrata l'8 ottobre
@@ -61,7 +75,10 @@ superati e non devono guidare il checkout.
 3. Tutti gli elaborati delle specifiche funzionali elencati sopra.
 4. Kit BF02: README, PROTOCOLLO ed ESITO_SIMULAZIONE; set e chiave solo per la
    preparazione del facilitatore, senza mostrarli agli operatori della prova.
-5. [Cartella della conversazione](discussione-2026-10-07/README.md) per origine
+5. Ripresa BF16: [rapporto](validazione-bf16-2026-10-09/README.md),
+   [raccolta](validazione-bf16-2026-10-09/RACCOLTA.md) e
+   [contratti preliminari](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md).
+6. [Cartella della conversazione](discussione-2026-10-07/README.md) per origine
    e timestamp degli EA; studio v0.1 §§3, 6, 8, 11–13 e sorgenti pertinenti
    prima di progettare o implementare ulteriori cambiamenti. Il prompt in
    quella cartella è storico; quello corrente è collegato in apertura.
@@ -99,23 +116,36 @@ clienti già gestiti; 50/15 e le cifre instabili del nuovo audio non sono listin
 Territorio, volume, team, budget, copertura e responsabilità devono essere definiti
 per il lancio. Nessun rinvio di pagamenti, app, 3D, AI o totem è già approvato.
 
-**Prossima attività:** usare il [protocollo](prova-agenzia-2026-10-08/PROTOCOLLO.md)
-con due operatori reali e un facilitatore, iniziando dai casi PF01/PF02/PF05.
-Il kit estende il controllo a dodici scenari, con 48 esecuzioni controbilanciate.
-Compilare una copia esterna di `misure.csv`: i modelli nel repository restano
-non eseguiti. La revisione con assistenti AI non fornisce tempi umani, costi,
-vendite o prove delle autorizzazioni di un backend. BF16 resta aperto.
+**Prossima attività:** il facilitatore osserva e descrive il processo corrente
+reale, registra versione del kit, supporto, ordine, limite per caso e soglie
+proposte concordate prima delle misure. Usa la [guida](validazione-bf16-2026-10-09/RACCOLTA.md)
+e il [protocollo esistente](prova-agenzia-2026-10-08/PROTOCOLLO.md) con OP01,
+OP02 e copie dei materiali già pronti fuori repository. Ripartire da
+attivazione PF01, ritorno PF02 e recupero storico PF05 mantenendo assegnazioni
+e ordine registrati; una raccolta limitata a questi percorsi è parziale
+rispetto alle 48 esecuzioni del protocollo. Non mostrare chiavi/JSON agli operatori.
 
-Comandi e materiali sono nel README del kit. Dopo la prova decidere quali
-correzioni di processo e contratti di servizio BF03 preparare; prima dei dati
-reali servono comunque autorizzazioni server e condizioni operative. Le scelte
-su listino/hardware non bloccano la simulazione documentale.
+Se arrivano osservazioni, verificare commit/versione, eventuali adattamenti e
+completezza prima dell'analisi. Conservare risposte, fallimenti, aiuti,
+abbandoni ed esclusioni; vuoto non equivale a zero. Lasciare tutte le 48 righe
+pianificate nelle copie CSV, con `non_eseguita` per i casi non osservati.
+L'analizzatore descrive i dati ma non calcola costi né separa PF02 da PF05:
+la guida indica le verifiche manuali e il contenuto della sintesi anonima.
+Non pubblicare risposte grezze o costi individuali nel repository.
 
-Se nella prossima sessione sono disponibili osservazioni effettive, analizzarle
-senza pubblicare dati personali o costi individuali. Altrimenti guidare la
-raccolta e mantenere BF16 aperto; non rifare il kit o usare risposte AI come
-misure. Gli approfondimenti documentali indipendenti possono proseguire con
-ipotesi esplicite, senza dichiarare BF03 approvato o avviare un backend reale.
+Il controllo di questa ripresa trova 48 pianificate e 0 osservate nel modello;
+non è una prova che l'agenzia non abbia raccolto dati altrove. Nessuna risposta
+con osservazioni è disponibile nella sessione alla consegna. BF16 resta aperto:
+non sono stimabili tempi umani, risparmi, costi o disponibilità a pagare.
+La revisione AI non dimostra autorizzazioni server.
+
+L'[allegato BF03](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md) permette
+una revisione documentale indipendente di azioni, oggetti, permessi, revoche,
+retry e versioni. Non chiude BF03: l'ambito operativo dipende da BF01,
+le correzioni di processo dai riscontri BF16; storico/conservazione, verifica
+delle persone e scelte tecniche richiedono definizioni esplicite. Prima dei
+dati reali servono comunque implementazioni e condizioni operative verificate.
+Le decisioni su listino/hardware non bloccano la simulazione documentale.
 
 ## Prototipo, verifiche e anteprime
 
@@ -135,8 +165,11 @@ precedenti restano datate in VERIFICHE.md del design; non sono state rieseguite.
 
 Non pubblicare audio, trascrizione integrale, dati personali o documenti reali.
 
-## Verifiche della chiusura
+## Verifiche della ripresa
 
-Questa chiusura modifica solo Markdown. I 18 test del kit passati l'8 ottobre
-e le verifiche frontend precedenti restano storici: non sono stati rieseguiti.
-Controlli della consegna corrente e PR sono nel [registro di sessione](SESSIONI.md).
+Questa ripresa modifica solo Markdown. Eseguiti controllo strutturale `validate`
+e analisi del modello vuoto; nessuna rigenerazione del kit o misura umana.
+I 18 test del kit passati l'8 ottobre e le verifiche frontend precedenti restano
+storici: non sono stati rieseguiti. Collegamenti, coerenza, diff e consegna remota
+sono nel [rapporto BF16](validazione-bf16-2026-10-09/README.md) e nel
+[registro di sessione](SESSIONI.md).

@@ -1,6 +1,6 @@
 # Backlog di continuità EECard
 
-Aggiornato il 9 ottobre 2026 alla chiusura della sessione. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessuna persona, costo o data è stata assegnata; BF propone ruoli responsabili. PR #6 integrata: specifiche e kit sono in main `3532eab`. Chiusura documentale sul branch `docs/chiusura-sessione-2026-10-09`.
+Aggiornato il 9 ottobre 2026 alla ripresa BF16. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessuna persona, costo o data è stata assegnata; BF propone ruoli responsabili. PR #7 integrata alle 23:19:16 UTC; ripresa da main `c77dfd4` sul branch `docs/bf16-raccolta-2026-10-09`.
 
 ## Completato nella sessione
 
@@ -20,7 +20,7 @@ Aggiornato il 9 ottobre 2026 alla chiusura della sessione. Le priorità seguenti
 | N02 | Alta · da fare su hardware | Verificare iPhone/Safari, Android/Chrome e screen reader | Dispositivo/browser annotati; tastiera, safe area, zoom, rotazione, focus e annunci controllati; problemi riprodotti e corretti |
 | N03 | Alta · in attesa di informazioni | Chiarire quote, primo cliente, zona, beneficio iniziale, copertura e risorse | Risposte con provenienza nel [registro decisioni](../design/DECISIONI.md); nessun numero dedotto dal prototipo |
 | N04 | Dopo N01/N03 · da definire | Scegliere il perimetro del primo rilascio operativo | Percorso prioritario, esclusioni esplicite e criteri di accettazione concordati |
-| N05 | Modello logico proposto; architettura da definire dopo N04 | Tradurre modello e criteri PF in contratti di servizio e scelte tecniche | BF03: matrice azione/oggetto, relazioni temporali, revoca e conservazione; nessun provider scelto |
+| N05 | Modello e approfondimento BF03 preliminari; aperto dopo N04 | Revisionare i contratti PF01/PF02/PF05 e completare il perimetro tecnico | [Allegato BF03](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md): matrice azione/oggetto e prove future; nessuna architettura approvata o implementazione |
 | N06 | Dopo N05 · da implementare | Realizzare la prima funzionalità operativa completa | UI, server, dati, errori e test integrati secondo il perimetro scelto; demo separata dai dati reali |
 | N07 | Quando cambia il frontend | Aggiornare QA, screenshot e anteprime | Report coerenti col commit e deploy verificato sul sito esistente |
 | N08 | Con architettura reale · da valutare | Prestazioni, bundle e automatizzazione dei controlli | Misure e scelta motivata; nessuna CI o suddivisione del bundle aggiunta solo per supposizione |
@@ -165,3 +165,22 @@ BF03 non è approvato o completato dalla chiusura: contratti di servizio e matri
 permessi vanno preparati secondo le dipendenze del backlog, come proposte.
 In assenza di misure non inventare una prova né ricreare i set: guidare la
 raccolta e proseguire solo approfondimenti documentali indipendenti.
+
+## Ripresa BF16 del 9 ottobre — raccolta e contratti preliminari
+
+[Rapporto e verifiche](validazione-bf16-2026-10-09/README.md). PR #7 verificata
+integrata prima del checkout; nuovo branch da main, nessun merge. Nei materiali
+consultati non ci sono osservazioni reali: il modello resta a 48 righe
+`non_eseguita`. Non si deduce che l'agenzia non abbia svolto attività altrove.
+
+| Voce | Avanzamento documentale | Prossima evidenza necessaria |
+| --- | --- | --- |
+| BF02 | Kit consegnato, riutilizzato senza rigenerare set o materiali | Nessuna nuova preparazione integrale richiesta |
+| BF16 | [Guida alla raccolta](validazione-bf16-2026-10-09/RACCOLTA.md), controllo del modello e limiti dell'analizzatore; resta aperto | Processo corrente osservato, versione/condizioni della prova, risposte e misure dei due operatori; separare PF01, PF02, PF05 ed estensioni |
+| BF03 | [Approfondimento preliminare](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md) di comandi/letture, permessi e prove future; resta aperto | Revisione BF01 per l'ambito operativo, riscontri BF16 e politica di accesso storico/conservazione; successiva scelta tecnica |
+| BF01/BF17/BF18 | Stati invariati: beneficio per la prova distinto da primo pagante e lancio | Catalogo, condizioni, risorse, implementazioni verificate e autorizzazione esplicita del pilota |
+
+BF04–BF15 non sono implementati da questi documenti. Il primo passo umano è
+osservare e descrivere il metodo corrente con il facilitatore, poi raccogliere
+i casi del protocollo senza cambiare a posteriori assegnazioni, soglie o
+denominatori. Una prova parziale resta tale; gli esiti AI non riempiono i vuoti.

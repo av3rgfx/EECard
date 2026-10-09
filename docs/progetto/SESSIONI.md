@@ -246,3 +246,47 @@ e sorgenti restano identici al main di partenza.
 Consegna nella [PR #7](https://github.com/av3rgfx/EECard/pull/7), creata aperta
 e non in bozza, da main `3532eab`. Commit degli elaborati `84c876e`, salvato
 sul remoto; il commit successivo aggiunge i riferimenti della PR. Nessun merge.
+
+## 9 ottobre 2026 — ripresa BF16, raccolta e contratti preliminari
+
+Richiesta: verificare la consegna precedente, ripartire da attivazione → banco
+→ recupero storico senza rifare BF02; analizzare eventuali osservazioni reali,
+altrimenti guidare la raccolta e avanzare negli approfondimenti documentali.
+Verificata PR #7 integrata alle 23:19:16 UTC prima del checkout. Main clonato
+al merge `c77dfd482e683baeeb0ec825ac5d5755c56fa1bb`, albero pulito; creato
+`docs/bf16-raccolta-2026-10-09`. Nessun merge eseguito dall'assistente.
+
+[Rapporto](validazione-bf16-2026-10-09/README.md),
+[guida per il facilitatore](validazione-bf16-2026-10-09/RACCOLTA.md) e
+[contratti preliminari BF03](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md).
+La guida usa copie dei materiali esistenti fuori repository e precisa raccolte
+parziali, separazione percorsi e limiti dello strumento. L'allegato BF03 dettaglia
+precondizioni/esiti, matrice azione–oggetto, revoca, retry, versioni e prove future
+su due agenzie sintetiche; non approva architettura o perimetro operativo.
+
+Nessuna osservazione umana disponibile nei materiali consultati: modello
+con 48 `non_eseguita` e costi vuoti; nessun commento/review nelle PR #6/#7,
+nessuna issue presente o allegato alla sessione. Chiesto lo stato della raccolta,
+nessuna risposta utilizzabile come misura alla consegna. Non si conclude che
+prove non siano state svolte altrove. BF16 rimane aperto; BF03 resta proposta
+subordinata a BF01 per l'ambito operativo e da revisionare coi riscontri BF16.
+
+Aggiornati AGENTS, README, sviluppo, decisioni, backlog, punto di ripresa e
+prompt. Conservate DA aperte, identità 0.3 e invarianti di accesso e pagamenti.
+Nessun nuovo prezzo, responsabile assegnato, tempo stimato o servizio attivato.
+
+Controlli nuovi: lettura CLI/sorgente, `validate` del kit esistente e `analyze`
+sul modello (48 pianificate, 0 osservate, nessuna misura stimabile). I 18 test
+Python dell'8 ottobre restano storici e non sono rieseguiti. Nessuna rigenerazione
+di BF02, nuovo test UI/build/audit, collaudo hardware, firma, AI o deploy.
+Solo Markdown: sorgenti, kit, strumenti, specifiche, studio PDF/DOCX, fonti EA,
+prodotto/design e hosting invariati rispetto a main `c77dfd4`. Sites v5 rimane
+l'ultima pubblicazione documentata, sorgente `65ac9e0`; live non ricollaudato.
+
+Controllati 11 Markdown e 142 collegamenti locali/ancore validi; riferimenti
+PF/PT/MD risolti e `git diff --check` pulito. Revisione indipendente applicata:
+separata la sessione personale dell'attore dalla sessione operatore, richiesta
+solo per operazioni d'agenzia; precisato che lo storico del precedente
+intestatario è negato senza titolo specifico, preservando le deleghe valide.
+
+Consegna remota sul nuovo branch; commit e PR vengono registrati dopo il salvataggio.
