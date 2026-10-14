@@ -230,3 +230,7 @@ sono comprensibili senza leggere un copione, poi provare percorso completo e
 casi negati usando BF02 invariato. N02 hardware/screen reader e questioni
 commerciali/operative rimangono aperti. Il giudizio dell'utente sulla 0.4 è
 feedback qualitativo, non una misura comparativa.
+
+N12 consegnato nella [PR #12](https://github.com/av3rgfx/EECard/pull/12),
+Sites v8 da `448f372`. Verificati 61 test e 60 viste; nessun merge. N10/BF16 e
+N02 restano aperti. Nessuna approvazione di servizi operativi o sicurezza server.

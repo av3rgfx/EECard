@@ -86,3 +86,17 @@ La build conserva un bundle unico oltre la soglia di avviso Vite di 500 kB,
 anche per mantenere l'anteprima HTML autonoma; non è una scelta di architettura
 per produzione. BF02 invariato, BF16 aperto. Stato remoto e pubblicazione sono
 registrati solo dopo il riscontro effettivo del servizio Sites.
+
+## Chiusura verificata
+
+Sorgente frontend `448f3721760ec3289920f092fa919240b50be2d4`, pubblicata sul
+branch GitHub `design/experience-0.5` e sul repository sorgente del sito esistente.
+Build rigenerata dal commit esatto con albero invariato prima del confezionamento.
+Sites v8 `succeeded` il 14 ottobre alle 20:01:30 UTC, deployment
+`appgdep_6acfdf8827ac819199a43403ab6816b8`. Root e `/app/` recuperati via HTTPS
+e confrontati identici alla build statica; non viene dichiarata una nuova
+prova browser live o su hardware. [Dettagli](../../design/ANTEPRIME_WEB.md).
+
+[PR #12](https://github.com/av3rgfx/EECard/pull/12), aperta e non in bozza, base
+main `0481bb1`, nessun merge. Il successivo commit registra solo la chiusura: gli
+asset online restano quelli del commit sopra. BF16 aperto e kit BF02 invariato.

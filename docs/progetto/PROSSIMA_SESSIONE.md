@@ -74,3 +74,16 @@ Raccogliere osservazioni, ordinare correzioni N11/N12 e riesaminare BF01/BF03/BF
 Verificare telefoni fisici, Safari/iOS, Android e screen reader: Chromium/axe
 non sostituiscono questi controlli. Prezzi, copertura, conservazione, risorse,
 responsabilità e architettura operativa restano aperti.
+
+## Riferimenti remoti della consegna
+
+[PR #12](https://github.com/av3rgfx/EECard/pull/12), aperta e non in bozza,
+branch `design/experience-0.5`, base main `0481bb1`, nessun merge.
+Frontend online al commit `448f3721760ec3289920f092fa919240b50be2d4`, Sites v8
+`succeeded` alle 20:01:30 UTC. [Apri la piattaforma](https://eecard-design-preview.uepacio.chatgpt.site/).
+La chiusura successiva è soltanto documentale e non cambia la sorgente online.
+
+Esiti osservati: 61 test passati, 60 viste senza anomalie axe/layout/immagini/JS
+o richieste esterne, 52 screenshot, build statica e autonoma, formattazione e
+audit npm (0 vulnerabilità). Root e `/app/` live identici alla build.
+Resta l'avviso Vite sul bundle unico e restano aperte le verifiche fisiche e BF16.

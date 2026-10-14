@@ -441,3 +441,12 @@ archivio, utenze, affitto, richieste e bozze. Strumenti tecnici in un pannello,
 root pubblica diretta al prodotto, vecchi link compatibili. Conservati C–Legame,
 0.3, policy, titoli autonomi e quattro significati economici.
 [Rapporto](experience-2026-10-14/VERIFICHE.md); BF02 invariato e BF16 aperto.
+
+Consegna nella [PR #12](https://github.com/av3rgfx/EECard/pull/12), aperta e non
+in bozza senza merge. Sorgente iniziale `8f1f39f`, rifinitura contesti/indicazioni
+di avanzamento `448f3721760ec3289920f092fa919240b50be2d4`. Sites v8 riuscita
+alle 20:01:30 UTC; root e `/app/` confrontati identici alla build di questa
+sorgente. Il commit successivo è la sola registrazione della chiusura.
+61 test passati, 60 viste audit senza anomalie, 52 screenshot; HTML autonomo,
+root statica e vecchio ingresso provati. Build/formattazione/audit npm riusciti.
+Nessuna misura umana comparativa aggiunta, BF02 invariato e BF16 aperto.
