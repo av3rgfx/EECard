@@ -10,14 +10,17 @@ NFC/wallet, AI o archivi reali.
 ## Contesto obbligatorio
 
 Lavora nella repository https://github.com/av3rgfx/EECard e rispondi in italiano.
-Prima di scegliere il branch, verifica la PR più recente indicata in
-`docs/progetto/PROSSIMA_SESSIONE.md`: se è aperta e riguarda questa stessa
-implementazione, riusala; se è integrata, aggiorna `main` e crea un nuovo branch
-dedicato secondo `AGENTS.md`. Non effettuare merge.
+Questa implementazione segue il piano consegnato nella PR #9. Prima di scegliere
+il branch, verifica la PR più recente indicata in
+`docs/progetto/PROSSIMA_SESSIONE.md`. La sequenza prevista è: PR #9 integrata,
+`main` aggiornato e nuovo branch dedicato alla demo 0.4 secondo `AGENTS.md`.
+Non riutilizzare il branch documentale della PR #9 per il codice e non
+effettuare merge.
 
 Leggi, nell'ordine:
 
 1. `AGENTS.md`, `docs/progetto/PROSSIMA_SESSIONE.md` e
+   `docs/progetto/AVVIO_PROSSIMA_SESSIONE.md`, poi
    `docs/progetto/demo-funzionale-2026-10-14/README.md`;
 2. `PRODUCT.md`, `DESIGN.md`, `DEVELOPMENT.md`,
    `docs/progetto/BACKLOG.md` e `docs/design/DECISIONI.md`;

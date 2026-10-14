@@ -2,16 +2,17 @@
 
 Aggiornato il 14 ottobre 2026. Per la prossima implementazione usare il prompt
 obiettivo completo in [PROMPT_DEMO_FUNZIONALE.md](PROMPT_DEMO_FUNZIONALE.md),
-che inizia con `/goal`.
+che inizia con `/goal`. Le istruzioni pratiche sono in
+[AVVIO_PROSSIMA_SESSIONE.md](AVVIO_PROSSIMA_SESSIONE.md).
 
 ---
 
 Riprendiamo EECard dal lavoro esistente. Rispondi in italiano.
 
-Repository unica: https://github.com/av3rgfx/EECard. Verifica prima lo stato
-remoto della PR indicata in `docs/progetto/PROSSIMA_SESSIONE.md`. Se è aperta e
-riguarda la stessa consegna, riutilizzala; se è integrata, aggiorna main e crea
-un nuovo branch dedicato secondo `AGENTS.md`. Non effettuare merge.
+Repository unica: https://github.com/av3rgfx/EECard. Il piano è nella PR #9:
+integrala prima di iniziare questa implementazione. Verifica comunque lo stato
+remoto, aggiorna main e crea un nuovo branch dedicato secondo `AGENTS.md`.
+Non riutilizzare il branch documentale della PR #9 e non effettuare merge.
 
 Leggi `AGENTS.md`, `docs/progetto/PROSSIMA_SESSIONE.md` e
 `docs/progetto/demo-funzionale-2026-10-14/README.md`, poi esegui integralmente

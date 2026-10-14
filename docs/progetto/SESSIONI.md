@@ -383,3 +383,9 @@ main, titolo “Progetta la demo funzionale 0.4 e prepara il prompt /goal”.
 Controlli: diff pulito, prima riga `/goal` e 132 collegamenti locali validi.
 Nessun test UI/build o deploy perché la modifica è esclusivamente documentale.
 Il commit successivo registra soltanto questi riferimenti; nessun merge.
+
+Su richiesta dell'utente è stata aggiunta una
+[procedura di avvio](AVVIO_PROSSIMA_SESSIONE.md): integrare la PR #9, aprire una
+nuova sessione e incollare l'intero prompt a partire da `/goal`. Precisato che
+la futura implementazione deve partire da main aggiornato su un branch distinto
+e terminare con una nuova PR; la PR #9 resta la consegna documentale del piano.

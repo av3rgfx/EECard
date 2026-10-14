@@ -12,7 +12,9 @@ la prova della demo, salvo quelle che bloccano materialmente l'implementazione.
 
 Il risultato progettato è la demo 0.4 descritta nel
 [piano](demo-funzionale-2026-10-14/README.md). Il prompt eseguibile parte con
-`/goal` ed è in [PROMPT_DEMO_FUNZIONALE.md](PROMPT_DEMO_FUNZIONALE.md).
+`/goal` ed è in [PROMPT_DEMO_FUNZIONALE.md](PROMPT_DEMO_FUNZIONALE.md). I tre
+passaggi richiesti all'utente sono riepilogati in
+[AVVIO_PROSSIMA_SESSIONE.md](AVVIO_PROSSIMA_SESSIONE.md).
 
 ## Stato remoto e branch
 
@@ -103,8 +105,10 @@ sicurezza server o fattibilità hardware.
 
 ## Prossima attività concreta
 
-Usare [PROMPT_DEMO_FUNZIONALE.md](PROMPT_DEMO_FUNZIONALE.md) per implementare la
-demo 0.4. Procedere prima con modello e fixture di due agenzie, quindi percorso
+Integrare prima la PR #9, aprire una nuova sessione e incollare l'intero
+[PROMPT_DEMO_FUNZIONALE.md](PROMPT_DEMO_FUNZIONALE.md), inclusa la riga
+iniziale `/goal`. La nuova sessione aggiorna main e crea un branch distinto per
+implementare la demo 0.4. Procedere prima con modello e fixture di due agenzie, quindi percorso
 riuscito PF01 → PF02 → PF05, dinieghi/errori, estensioni PF03/PF04/PF06 e
 modalità prova. Eseguire i controlli realmente pertinenti, aggiornare artefatti e
 continuità, pubblicare sul sito Sites esistente solo nel lavoro di
