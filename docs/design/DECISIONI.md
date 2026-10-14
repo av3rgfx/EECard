@@ -213,3 +213,21 @@ chiude BF16. La comprensibilità va ancora osservata con persone reali.
 [Piano](../progetto/PIANO_ANALISI_AUDIO.md). Le fonti non sono ancora disponibili:
 C27 approva il lavoro di analisi e preparazione, non specifiche decisioni del
 confronto, servizi reali o modifiche al naming. BF16 rimane aperto.
+
+## Audio, appunto e primo incremento — 15 ottobre 2026
+
+| ID | Stato | Decisione / conseguenza |
+| --- | --- | --- |
+| C28 | Richiesta esplicita corrente | Elaborare privatamente i due audio, analisi anonima, studio/piano e primo intervento locale verificato; PR senza merge e nessun servizio reale |
+| C29 | Risposta esplicita dell'utente nella sessione, USR01 | Annual report per cliente e agenzia, con viste separate. Non definisce ancora contenuto/metriche/periodo |
+| P17 | Esecuzione locale autorizzata da C28 | IN01 prova disattivazione del rinnovo con periodo sintetico, conferma, persistenza verificata e reset; nessuna regola commerciale definitiva |
+| A12 | Aperto, divergenza della fonte | NA03/NA09: disdetta senza preavviso nel primo passaggio, ipotesi di termine anticipato nel secondo. Non adottare una presunta regola legale dalla conversazione |
+| A13 | Aperto | Livelli/extra, formula cambio piano, downgrade, rimborsi, contenuto report e disponibilità fisica; nessun listino dedotto |
+| A14 | Proposta da studiare | Chiamate AI proattive (NA14), diverse da ricerca/bozze: destinatario, stato affidabile del dovuto, titolo, canali, limiti e responsabilità prima di ogni attivazione |
+
+[Analisi tracciabile](../progetto/discussione-2026-10-15/ANALISI.md),
+[studio](../progetto/discussione-2026-10-15/STUDIO_PROGETTUALE.md) e
+[piano](../progetto/discussione-2026-10-15/PIANO_INCREMENTALE.md). NA01–NA16 sono
+candidati locali, non RF approvati. EA/RF/PF storici conservati, BF02 invariato,
+BF16 aperto. Le fonti sono ora disponibili e trattate privatamente: il precedente
+paragrafo C27 descrive la preparazione, non l'esito della nuova sessione.

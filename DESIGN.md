@@ -116,3 +116,19 @@ e profondità. Nessuna nuova scelta di simbolo o wordmark.
 [screenshot](docs/design/screenshots/experience-0.5),
 [verifiche](docs/progetto/experience-2026-10-14/VERIFICHE.md). Non dichiarare
 convalidata la facilità d'uso dalla sola esecuzione dei test automatici.
+
+## Incremento rinnovo — 15 ottobre
+
+La home personale di Cliente 01 aggiunge «Gestisci abbonamento», distinta da
+«Gestisci tessera». Il dialogo mostra periodo/data di fine sintetici, conseguenze
+e disattivazione del rinnovo con conferma; annullo/Escape non cambia lo stato.
+Focus sul nuovo passaggio e stato annunciato; errore di salvataggio recuperabile.
+Testo al 200% mantiene i pulsanti entro il dialogo. C–Legame, palette, font e
+composizione esistenti conservati. Nessun nuovo sistema di componenti o movimento.
+
+[Studio UX](docs/progetto/discussione-2026-10-15/STUDIO_PROGETTUALE.md) e
+[verifiche](docs/progetto/discussione-2026-10-15/VERIFICHE.md). Applicate le parti
+pertinenti di `apple-design` e `mobile-native`, snapshot Emil
+`e8a175de22ae1e49370fc144c1f3bb9aeedf988d`, già referenziato in RISORSE_DESIGN.
+La simulazione non adotta preavvisi o condizioni di vendita; hardware e screen
+reader restano da verificare. Il sito pubblico non viene aggiornato da questa PR.

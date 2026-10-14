@@ -163,3 +163,11 @@ sulle build locali; il controllo live sopra è un confronto dei file serviti.
 [Rapporto](../progetto/experience-2026-10-14/VERIFICHE.md) e
 [PR #12](https://github.com/av3rgfx/EECard/pull/12), aperta senza merge.
 Il commit documentale di chiusura non modifica gli asset online.
+
+## 15 ottobre 2026 — solo anteprima locale del rinnovo
+
+Rigenerato `docs/design/anteprima.html` per IN01 (gestione rinnovo Cliente 01),
+con smoke locale senza richieste HTTP esterne. [Verifiche e screenshot](../progetto/discussione-2026-10-15/VERIFICHE.md).
+Nessun deploy in questa sessione: il sito pubblico conserva Sites v8 e il commit
+`448f3721760ec3289920f092fa919240b50be2d4`. Il nuovo branch/PR non identifica
+una nuova sorgente online; manifest, identità e accesso Sites invariati.

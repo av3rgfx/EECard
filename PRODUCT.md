@@ -157,3 +157,20 @@ stesso contesto locale. I controlli di prova sono in un pannello dedicato.
 [verifiche e limiti](docs/progetto/experience-2026-10-14/VERIFICHE.md).
 Nessun servizio reale: è una demo applicativa, non l'approvazione del prodotto
 operativo. BF16 rimane aperto e BF02 non è rigenerato.
+
+## Nuovi audio e appunto — studio del 15 ottobre
+
+L'[analisi NA01–NA16](docs/progetto/discussione-2026-10-15/ANALISI.md) precisa
+livelli/extra, cambio con conguaglio, disdetta, supporto fisico, acquisizione
+bollette e chiamate AI. Le proposte restano revisionabili: preavviso e pro rata
+sono contraddittori o incompleti. Nessun listino, copertura o data di lancio.
+L'utente conferma report annuale cliente e agenzia **con viste separate**;
+contenuto, periodo, fonti e metriche proposti nello
+[studio](docs/progetto/discussione-2026-10-15/STUDIO_PROGETTUALE.md).
+
+Primo incremento locale IN01: Cliente 01 gestisce il rinnovo dimostrativo dalla
+home personale. Conferma dopo riepilogo, salvataggio verificato, periodo
+sintetico conservato; non termina locazione/adesione né revoca card o documenti.
+È una prova della UX di uscita, non la definizione di condizioni commerciali.
+[Sequenza e accettazione](docs/progetto/discussione-2026-10-15/PIANO_INCREMENTALE.md).
+Fonti grezze e trascrizioni restano private. Nessun servizio reale; BF16 aperto.

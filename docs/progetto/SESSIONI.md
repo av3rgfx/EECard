@@ -465,3 +465,48 @@ secondo AGENTS.md, senza merge. Modifiche esclusivamente documentali: nessun
 nuovo deploy o test applicativo; gli esiti 0.5 precedenti rimangono storici.
 Controlli della chiusura: prompt inferiore a 4.000 caratteri, collegamenti locali
 dei documenti modificati e diff senza errori di whitespace.
+
+## 15 ottobre 2026 — due audio, studio e gestione rinnovo locale
+
+Ripresa dalla PR #12 verificata integrata (main `24eb129`), nuovo branch
+`feat/studio-audio-incremento-locale`. Elaborati realmente i due allegati in
+locale: due passaggi completi, controlli mirati e diarizzazione provvisoria;
+trascrizioni con timestamp, incertezze e lacune consegnate privatamente. Nessuna
+fonte grezza, appunto originale o vicenda personale nella repository.
+
+[Analisi NA01–NA16 e studio](discussione-2026-10-15/README.md): livelli/extra,
+conguaglio ambiguo, divergenza sul preavviso, supporto fisico, bollettini e
+chiamate AI proattive. L'utente conferma report annuali cliente/agenzia con viste
+separate. Piano IN01–IN10 con dipendenze e accettazione; ricerca ufficiale sui
+canali bollette, senza attivare integrazioni o assumere un provider.
+
+IN01: «Gestisci abbonamento» per Cliente 01, disattivazione rinnovo dimostrativa,
+conferma/annullo, stato persistente solo dopo salvataggio riuscito, retry e reset.
+Conservati periodo sintetico, card, locazione, documenti, grants e ledger separati.
+Nessun prezzo, addebito, comunicazione esterna o cessazione programmata.
+
+[Verifiche](discussione-2026-10-15/VERIFICHE.md): nuovo controllo zoom ha rilevato
+e fatto correggere overflow; suite 66/69, tre timeout ripetuti separatamente
+3/3; build/anteprima portatile, formattazione e screenshot desktop/mobile.
+Tutti i 69 controlli coperti, senza presentare la prima suite come interamente
+verde. Audio e test CPU eseguiti nello stesso ambiente; prove fisiche restano aperte.
+
+Aggiornati prodotto, design, sviluppo, decisioni, backlog, istruzioni, prompt
+entro 4.000 caratteri e punto di ripresa. Nessun deploy: online resta la 0.5
+Sites v8 da `448f372`. BF02 intatto, BF16 aperto. Consegna nella [PR #13](https://github.com/av3rgfx/EECard/pull/13), aperta e pronta
+alla revisione, senza merge. Implementazione `3ce9a6b`; chiusura successiva solo
+documentale, senza nuovi test o deploy.
+
+## Chiusura della sessione audio — preparazione della ripresa
+
+Su richiesta dell'utente, ricontrollata la PR #13: ancora aperta, nessun merge.
+Riutilizzata per la chiusura della medesima consegna secondo AGENTS.md. Resa
+esplicita la sequenza consigliata IN03 → IN04 → IN05; i due destinatari dei report
+restano confermati, metriche e condizioni commerciali rimangono da definire.
+Aggiornati punto di ripresa, backlog e prompt `/goal`, che richiede di implementare
+IN03 senza ripetere l'analisi audio o la gestione rinnovo IN01.
+
+Modifiche esclusivamente documentali. Controllati limite di 4.000 caratteri del
+prompt, riferimenti locali e whitespace; nessuna nuova esecuzione dei test
+applicativi, nessun servizio reale o deploy. Gli esiti precedenti restano nel
+rapporto di verifica della consegna, con i relativi limiti.

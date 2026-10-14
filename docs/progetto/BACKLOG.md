@@ -246,3 +246,30 @@ N02 restano aperti. Nessuna approvazione di servizi operativi o sicurezza server
   verifiche pertinenti e PR senza merge. Integrazioni reali escluse dal mandato.
 
 [Piano e limiti](PIANO_ANALISI_AUDIO.md). BF02 invariato, BF16 aperto.
+
+## Esito audio/appunto e IN01 — 15 ottobre 2026
+
+La preparazione N13–N15 sopra è storica. Stato corrente:
+
+| ID | Stato corrente | Risultato / residuo |
+| --- | --- | --- |
+| N13 | Elaborazione locale completa, revisione umana aperta | Due trascrizioni automatiche private con timestamp, voci provvisorie, lacune e controlli; passaggi incerti non promossi a fatti |
+| N14 | Studio consegnato | [NA01–NA16, UX, dati, alternative, fattibilità e piano](discussione-2026-10-15/README.md); annual report con due viste confermato, termini/pro rata aperti |
+| N15 | Primo incremento locale IN01 | Gestione rinnovo di esempio, persistenza verificata, annullo/reset e dinieghi; [verifiche](discussione-2026-10-15/VERIFICHE.md). Nessun servizio reale |
+| N16 | Proposto, prossimo incremento | IN03 acquisizione da facsimile e IN04 avviso; metadati strutturati, originale/conferma, duplicati e permessi prima dell'OCR/pagamento |
+| N17 | Destinatari confermati, sviluppo proposto | IN05 report annuali cliente/agenzia separati; definire periodo, fonti, copertura e metriche; nessun totale da dati mancanti |
+| N18 | Studio, nessuna attivazione | IN06 promemoria/chiamate AI: stato affidabile del dovuto, destinatari/canali/titoli e responsabilità; anteprima sintetica prima di integrazioni |
+
+N10/BF16 e N02 restano aperti. BF02 intatto; IN01 non chiude BF03/BF17 o le
+condizioni di uscita commerciale. N07 aggiornato con verifica e anteprima locale;
+il sito pubblico resta alla 0.5 già registrata. Priorità/dipendenze/accettazione
+sono nel [piano IN01–IN10](discussione-2026-10-15/PIANO_INCREMENTALE.md).
+
+Consegna N13–N15 nella [PR #13](https://github.com/av3rgfx/EECard/pull/13),
+aperta senza merge; implementazione `3ce9a6b`, seguito di chiusura documentale.
+
+Chiusura della sessione: prossimo intervento consigliato **N16/IN03**; IN04
+segue l'acquisizione verificata, N17/IN05 segue la definizione delle fonti e
+della copertura. Nessuno di questi incrementi è implementato nella chiusura
+documentale. Dubbi commerciali e revisione dei passaggi audio incerti restano
+aperti in parallelo; il [prompt corrente](PROMPT_NUOVA_SESSIONE.md) prepara IN03.

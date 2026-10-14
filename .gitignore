@@ -8,3 +8,10 @@ playwright-report/
 .output/
 __pycache__/
 *.pyc
+# Raw discussion sources and private transcription deliveries stay outside Git.
+*.m4a
+*.wav
+*.mp3
+trascrizioni-private/
+TRASCRIZIONI_PRIVATE*
+AUDIO??*.srt
