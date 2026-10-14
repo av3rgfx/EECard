@@ -234,3 +234,15 @@ feedback qualitativo, non una misura comparativa.
 N12 consegnato nella [PR #12](https://github.com/av3rgfx/EECard/pull/12),
 Sites v8 da `448f372`. Verificati 61 test e 60 viste; nessun merge. N10/BF16 e
 N02 restano aperti. Nessuna approvazione di servizi operativi o sicurezza server.
+
+## Ripresa richiesta — due audio e appunto (14 ottobre 2026)
+
+- N13 — Da fare: ricevere e verificare due audio e appunto; trascrizione integrale
+  privata con timestamp e controllo copertura. Fonti non ancora disponibili.
+- N14 — Da fare, dipende da N13: analisi anonima tracciabile, confronto col progetto
+  e codice 0.5, studio UX/funzionale/tecnico e piano incrementale con criteri di
+  accettazione. Separare decisioni, proposte e dubbi; nessun requisito inventato.
+- N15 — Da fare, dipende da N14: primo incremento locale chiaro e reversibile,
+  verifiche pertinenti e PR senza merge. Integrazioni reali escluse dal mandato.
+
+[Piano e limiti](PIANO_ANALISI_AUDIO.md). BF02 invariato, BF16 aperto.

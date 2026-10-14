@@ -450,3 +450,18 @@ sorgente. Il commit successivo è la sola registrazione della chiusura.
 61 test passati, 60 viste audit senza anomalie, 52 screenshot; HTML autonomo,
 root statica e vecchio ingresso provati. Build/formattazione/audit npm riusciti.
 Nessuna misura umana comparativa aggiunta, BF02 invariato e BF16 aperto.
+
+## 14 ottobre 2026 — chiusura e preparazione analisi audio
+
+Richiesta dell'utente: nella prossima sessione trascrivere due audio e analizzare
+un appunto del confronto col collega, aggiornare lo studio progettuale e creare
+un piano di sviluppo per nuove funzioni/scelte. Preparati prompt `/goal`, piano
+di lavoro, istruzioni di avvio e continuità. Fonti non ancora allegate, nessuna
+trascrizione o decisione ricavata ora. Materiali integrali fuori repository;
+nel progetto solo sintesi anonime e riferimenti verificabili.
+
+PR #12 verificata aperta, riutilizzata per la chiusura della stessa consegna
+secondo AGENTS.md, senza merge. Modifiche esclusivamente documentali: nessun
+nuovo deploy o test applicativo; gli esiti 0.5 precedenti rimangono storici.
+Controlli della chiusura: prompt inferiore a 4.000 caratteri, collegamenti locali
+dei documenti modificati e diff senza errori di whitespace.

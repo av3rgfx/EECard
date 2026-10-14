@@ -145,3 +145,13 @@ conservato a `/#/laboratorio`. Leggere `docs/progetto/experience-2026-10-14/` e
 la continuità per stato remoto e pubblicazione. Conservare la distinzione tra
 spazio agenzia e personale, i dettagli progressivi e i controlli tecnici separati
 dal lavoro quotidiano. I vincoli su dati sintetici, servizi reali e merge restano.
+
+## Prossima sessione — audio e appunto
+
+La richiesta di chiusura del 14 ottobre prepara due nuovi audio e un appunto,
+non ancora allegati. Priorità corrente: trascrizione privata, analisi anonima,
+studio progettuale, piano incrementale e primo intervento locale chiaro. Leggere
+`docs/progetto/PIANO_ANALISI_AUDIO.md` e usare il prompt corrente
+`docs/progetto/PROMPT_NUOVA_SESSIONE.md`, entro 4.000 caratteri. Non rieseguire
+il vecchio prompt di implementazione 0.4. BF16 resta aperto; nessuna fonte grezza
+o trascrizione integrale nella repository pubblica.

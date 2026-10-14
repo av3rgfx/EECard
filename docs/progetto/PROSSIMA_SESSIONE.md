@@ -2,7 +2,17 @@
 
 Aggiornato il 14 ottobre 2026. Repository: https://github.com/av3rgfx/EECard.
 
-## Consegna corrente: esperienza 0.5
+## Obiettivo della prossima sessione: audio, appunto e piano di sviluppo
+
+L'utente chiude la sessione e richiede di analizzare nella prossima due audio del
+confronto con il collega, insieme a un piccolo appunto. Fonti non ancora allegate:
+nessuna nuova analisi o trascrizione eseguita. Usare il
+[prompt corrente](PROMPT_NUOVA_SESSIONE.md) e il [piano](PIANO_ANALISI_AUDIO.md):
+trascrizione privata completa, sintesi anonima tracciabile, confronto con progetto
+e codice, studio progettuale, piano incrementale e primo intervento locale chiaro.
+Questo è il prossimo lavoro; la prova BF16 resta aperta e segue il proprio protocollo.
+
+## Consegna completata: esperienza 0.5
 
 L'utente ha segnalato che la 0.4 era grezza e non comprensibile al primo impatto.
 La revisione realizza una piattaforma dimostrativa orientata al lavoro, con
@@ -60,7 +70,7 @@ telemetria o archivio reale. Il banco continuo è predisposto per Cliente 01 /
 Alfa; Beta dispone dei propri documenti e non apre Alfa. Pratica a due parti,
 nessuna creazione arbitraria di nuovi contratti/clienti. Non usare dati reali.
 
-## Prossimi passi
+## Verifiche di prodotto ancora aperte (dopo la nuova analisi)
 
 Provare la comprensione del nuovo ingresso senza prima spiegare sigle o copione:
 cosa pensa di poter fare la persona, quale azione sceglie e dove si blocca.
@@ -87,3 +97,7 @@ Esiti osservati: 61 test passati, 60 viste senza anomalie axe/layout/immagini/JS
 o richieste esterne, 52 screenshot, build statica e autonoma, formattazione e
 audit npm (0 vulnerabilità). Root e `/app/` live identici alla build.
 Resta l'avviso Vite sul bundle unico e restano aperte le verifiche fisiche e BF16.
+
+Chiusura del 14 ottobre: aggiornati prompt e continuità per audio/appunto nella
+stessa PR #12 ancora aperta. Solo documentazione; nessun nuovo test applicativo
+o deploy. I risultati sopra sono quelli della consegna 0.5, non ripetuti ora.

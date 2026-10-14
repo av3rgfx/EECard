@@ -53,6 +53,14 @@ npm run format:check
 
 Test end-to-end, axe-core, dimensioni 360/390/1280/1440 px, stress a 320 px, testo al 200%, tastiera, focus, movimento ridotto, file non validi, errori recuperabili, persistenza e permessi della demo. Risultati e limiti in [VERIFICHE.md](docs/design/VERIFICHE.md). `node scripts/audit.mjs` aggiorna il report axe; `node scripts/screenshots.mjs` rigenera le schermate (server locale avviato).
 
+## Prossima sessione
+
+Analisi di due nuovi audio e un appunto del confronto progettuale:
+[prompt da incollare](docs/progetto/PROMPT_NUOVA_SESSIONE.md) ·
+[piano e risultati attesi](docs/progetto/PIANO_ANALISI_AUDIO.md) ·
+[istruzioni di avvio](docs/progetto/AVVIO_PROSSIMA_SESSIONE.md).
+Le fonti saranno allegate nella prossima sessione; non sono ancora state analizzate.
+
 ## Documentazione
 
 Per riprendere in una nuova sessione partire dal [punto di ripresa](docs/progetto/PROSSIMA_SESSIONE.md). La base del prototipo è nella PR #2, integrata. Il simbolo Legame, l’identità calda e le correzioni di usabilità sono nella [PR #3](https://github.com/av3rgfx/EECard/pull/3), integrata. La direzione successiva combina Materia e luce con pagine aperte come Editoriale: tessera prima in home, riepiloghi immobili compatti quando sono più di uno, vista espansa nella pagina immobili e affitto in quattro passaggi visivi. La [PR #4](https://github.com/av3rgfx/EECard/pull/4) è stata integrata il 7 ottobre alle 22:13:57 UTC; le anteprime documentate sono Sites v5. Il naming resta aperto.

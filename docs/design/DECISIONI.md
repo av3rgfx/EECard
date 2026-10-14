@@ -203,3 +203,13 @@ server. C–Legame, nome provvisorio e direzione 0.3 conservati. BF16 aperto.
 Nessuna autorizzazione aggiuntiva a servizi reali, dati personali, merge, cambio
 di naming o marchio. Il feedback qualitativo è registrato come tale e non
 chiude BF16. La comprensibilità va ancora osservata con persone reali.
+
+## Preparazione della prossima discussione
+
+| ID | Stato | Decisione / conseguenza |
+| --- | --- | --- |
+| C27 | Richiesta esplicita dell'utente | Prossima sessione dedicata a due audio e un appunto: trascrizione, analisi, studio progettuale e piano per nuove funzioni; poi iniziare un incremento locale chiaro |
+
+[Piano](../progetto/PIANO_ANALISI_AUDIO.md). Le fonti non sono ancora disponibili:
+C27 approva il lavoro di analisi e preparazione, non specifiche decisioni del
+confronto, servizi reali o modifiche al naming. BF16 rimane aperto.

@@ -1,15 +1,15 @@
-# Avvio dopo la revisione 0.5
+# Avvio della prossima sessione
 
-1. Verificare lo stato remoto della consegna indicata in
-   [PROSSIMA_SESSIONE](PROSSIMA_SESSIONE.md), poi seguire AGENTS per branch/PR.
-2. Leggere [esperienza 0.5](experience-2026-10-14/README.md) e
-   [verifiche](experience-2026-10-14/VERIFICHE.md).
-3. Aprire la root del sito esistente o avviare `npm ci`, `npm run dev`.
-   L'ingresso applicativo è `/#/spazio/overview`; i vecchi link `/#/prova` restano validi.
-4. Provare comprensione del primo impatto e azioni quotidiane prima di spiegare
-   il modello tecnico; poi percorso completo, diniego, recupero e reset.
-5. Riutilizzare BF02 senza rigenerarlo e indicare versione/supporto nella raccolta.
+1. Aprire una nuova sessione sul progetto EECard e allegare i due audio e il
+   piccolo appunto della discussione. Indicare l'ordine, se noto; eventuali
+   chiarimenti sui parlanti possono usare etichette anonime.
+2. Incollare integralmente il [prompt corrente](PROMPT_NUOVA_SESSIONE.md),
+   che inizia con `/goal` e rimane sotto 4.000 caratteri.
+3. Seguire il [piano di analisi](PIANO_ANALISI_AUDIO.md): trascrizioni private,
+   analisi con fonti, studio delle modifiche e piano di sviluppo; poi primo
+   incremento compatibile con la demo locale.
 
-Il laboratorio 0.4 è consultabile a `/#/laboratorio`, come strumento tecnico
-secondario. I risultati automatici non chiudono BF16 e non autorizzano servizi
-reali, trattamento di dati personali o merge.
+Prima del checkout verificare PR e branch remoti secondo AGENTS.md. La PR #12
+è aperta alla chiusura del 14 ottobre: non presumere lo stesso stato nella nuova
+sessione. Nessun merge. Non rilanciare il vecchio prompt della demo 0.4.
+Audio e appunto non sono stati ricevuti né analizzati durante questa preparazione.
