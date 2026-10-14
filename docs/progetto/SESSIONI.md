@@ -496,3 +496,17 @@ entro 4.000 caratteri e punto di ripresa. Nessun deploy: online resta la 0.5
 Sites v8 da `448f372`. BF02 intatto, BF16 aperto. Consegna nella [PR #13](https://github.com/av3rgfx/EECard/pull/13), aperta e pronta
 alla revisione, senza merge. Implementazione `3ce9a6b`; chiusura successiva solo
 documentale, senza nuovi test o deploy.
+
+## Chiusura della sessione audio — preparazione della ripresa
+
+Su richiesta dell'utente, ricontrollata la PR #13: ancora aperta, nessun merge.
+Riutilizzata per la chiusura della medesima consegna secondo AGENTS.md. Resa
+esplicita la sequenza consigliata IN03 → IN04 → IN05; i due destinatari dei report
+restano confermati, metriche e condizioni commerciali rimangono da definire.
+Aggiornati punto di ripresa, backlog e prompt `/goal`, che richiede di implementare
+IN03 senza ripetere l'analisi audio o la gestione rinnovo IN01.
+
+Modifiche esclusivamente documentali. Controllati limite di 4.000 caratteri del
+prompt, riferimenti locali e whitespace; nessuna nuova esecuzione dei test
+applicativi, nessun servizio reale o deploy. Gli esiti precedenti restano nel
+rapporto di verifica della consegna, con i relativi limiti.

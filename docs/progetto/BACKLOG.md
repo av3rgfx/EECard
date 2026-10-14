@@ -267,3 +267,9 @@ sono nel [piano IN01–IN10](discussione-2026-10-15/PIANO_INCREMENTALE.md).
 
 Consegna N13–N15 nella [PR #13](https://github.com/av3rgfx/EECard/pull/13),
 aperta senza merge; implementazione `3ce9a6b`, seguito di chiusura documentale.
+
+Chiusura della sessione: prossimo intervento consigliato **N16/IN03**; IN04
+segue l'acquisizione verificata, N17/IN05 segue la definizione delle fonti e
+della copertura. Nessuno di questi incrementi è implementato nella chiusura
+documentale. Dubbi commerciali e revisione dei passaggi audio incerti restano
+aperti in parallelo; il [prompt corrente](PROMPT_NUOVA_SESSIONE.md) prepara IN03.

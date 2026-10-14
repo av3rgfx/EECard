@@ -65,14 +65,20 @@ proprietario o un catalogo generale. Nessuna autenticazione/server reale.
 
 ## Prossimo lavoro consigliato
 
-1. Rivedere i passaggi privati incerti su cifre, scadenze e voci prima di fissare
-   condizioni. Chiarire preavviso, durata/unità, pro rata/downgrade e catalogo.
-2. Eseguire IN03 (importazione guidata da facsimile) e IN04 (avviso), oppure IN05
-   (prima sezione report) secondo il beneficio scelto. Criteri e dipendenze nel
-   piano; i due report non autorizzano aggregazioni di dati privati fuori titolo.
-3. Le chiamate AI restano IN06, solo anteprime senza invii finché non sono
+1. In assenza di nuove priorità, implementare **IN03**: importazione guidata di
+   una bolletta da facsimile sintetico incluso, confronto originale/dati,
+   conferma, duplicato/rettifica, permessi e recuperi. Usare criteri e dipendenze
+   del piano; nessun OCR, upload o pagamento reale. Questo è il prossimo
+   intervento consigliato, non una nuova decisione commerciale dell'utente.
+2. Dopo IN03, affrontare IN04 (mostrare l'avviso), poi IN05 (report cliente e
+   agenzia separati). Per i report definire fonti, periodo, copertura e metriche:
+   le due viste non autorizzano aggregazioni di dati privati fuori titolo.
+3. In parallelo, chiarire preavviso, durata/unità, pro rata/downgrade e catalogo;
+   rivedere i passaggi privati incerti prima di fissare condizioni. Questi dubbi
+   non bloccano l'importazione locale di un facsimile.
+4. Le chiamate AI restano IN06, solo anteprime senza invii finché non sono
    definiti stato del dovuto, destinatario, titolo, preferenze e responsabilità.
-4. Prova umana N10/BF16: usare BF02 esistente, annotare nuovo supporto/commit,
+5. Prova umana N10/BF16: usare BF02 esistente, annotare nuovo supporto/commit,
    osservare comprensione al primo impatto, percorso completo, diniego e recupero.
    Note individuali fuori repo; sintesi anonime autorizzate. Non ricreare il kit.
 
@@ -81,3 +87,11 @@ o risparmio misurato. Restano N02 (telefoni fisici/Safari/Android/screen reader)
 BF01/BF03/BF17, prezzi, primo pagante, risorse, conservazione e architettura reale.
 Le proposte non rinviano automaticamente pagamenti, app, hardware o AI dal primo
 rilascio: se essenziali al beneficio, le dipendenze vanno affrontate esplicitamente.
+
+## Chiusura richiesta e avvio successivo
+
+Confermata sul remoto la PR #13 aperta; riutilizzata per questa chiusura della
+stessa consegna. Aggiornati priorità consigliate, backlog, registro sessioni e
+[prompt da incollare](PROMPT_NUOVA_SESSIONE.md). IN03 non è stato avviato in questa
+chiusura: il prossimo prompt ne richiede l'implementazione locale. Solo modifiche
+documentali, senza ripetere test applicativi, attivare servizi o pubblicare il sito.
