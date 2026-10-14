@@ -161,4 +161,6 @@ funzionano; mobile e desktop restano usabili; servizi reali non sono necessari;
 test e limiti sono documentati sul commit consegnato.
 
 Il prompt eseguibile per realizzare questa consegna è
-[PROMPT_DEMO_FUNZIONALE.md](../PROMPT_DEMO_FUNZIONALE.md).
+[PROMPT_DEMO_FUNZIONALE.md](../PROMPT_DEMO_FUNZIONALE.md). Il testo da
+incollare resta intenzionalmente entro 4.000 caratteri e rimanda a questo piano
+per i dettagli, evitando duplicazioni.
