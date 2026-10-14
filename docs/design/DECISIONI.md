@@ -191,3 +191,15 @@ e [`PROMPT_DEMO_FUNZIONALE.md`](../progetto/PROMPT_DEMO_FUNZIONALE.md).
 [Implementazione e limiti](../progetto/demo-funzionale-2026-10-14/IMPLEMENTAZIONE.md).
 C25 non approva condizioni commerciali, titoli legali, retention o architettura
 server. C–Legame, nome provvisorio e direzione 0.3 conservati. BF16 aperto.
+
+## Feedback ed esecuzione 0.5
+
+| ID | Stato | Decisione / conseguenza |
+| --- | --- | --- |
+| C26 | Richiesta esplicita dell'utente | La demo è giudicata grezza e non comprensibile al primo impatto; richiesta un'esperienza completa e funzionante con qualità visiva superiore e UX semplice, intuitiva e funzionale |
+| P16 | Esecuzione locale di C26 | Nuova shell agenzia/personale, prossima attività, pratica guidata, banco e archivio con dettagli progressivi; controlli tecnici in strumenti dedicati |
+
+[Implementazione e limiti](../progetto/experience-2026-10-14/README.md).
+Nessuna autorizzazione aggiuntiva a servizi reali, dati personali, merge, cambio
+di naming o marchio. Il feedback qualitativo è registrato come tale e non
+chiude BF16. La comprensibilità va ancora osservata con persone reali.

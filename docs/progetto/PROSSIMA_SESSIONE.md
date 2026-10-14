@@ -1,80 +1,76 @@
 # EECard — punto di ripresa
 
-Aggiornato il 14 ottobre 2026. Repository unica: https://github.com/av3rgfx/EECard.
+Aggiornato il 14 ottobre 2026. Repository: https://github.com/av3rgfx/EECard.
 
-## Consegna corrente
+## Consegna corrente: esperienza 0.5
 
-Implementata la demo funzionale locale 0.4 sul branch `feat/demo-funzionale-0.4`.
-Prima del lavoro verificata PR #10 integrata alle 10:51:34 UTC, merge
-`3b28e0a8f57a9dcae0bae987a65393a12bfeaef6`; main aggiornato e nuovo branch.
-Nessun merge effettuato dall'assistente. I riferimenti di salvataggio e
-pubblicazione effettivi vengono registrati nel rapporto di chiusura.
+L'utente ha segnalato che la 0.4 era grezza e non comprensibile al primo impatto.
+La revisione realizza una piattaforma dimostrativa orientata al lavoro, con
+spazio agenzia e personale distinti. La PR #11 è stata verificata integrata
+alle 18:40:00 UTC; aggiornato main a `0481bb172b26c548c432e2a6bd234e8d4c1a86ae`
+e creato il branch `design/experience-0.5`. Nessun merge dell'assistente.
 
-Leggere [implementazione e limiti](demo-funzionale-2026-10-14/IMPLEMENTAZIONE.md),
-[verifiche](demo-funzionale-2026-10-14/VERIFICHE.md) e
-[copione](demo-funzionale-2026-10-14/COPIONE.md). Ingresso locale `/#/prova`:
-PF01 → PF02 → PF05, PF03/PF04/PF06, due agenzie sintetiche, scenari, reset,
-registro e note anonime locali. Il prototipo/design 0.3 è conservato.
+Leggere [esperienza, scelte e limiti](experience-2026-10-14/README.md),
+[verifiche](experience-2026-10-14/VERIFICHE.md) e
+[pubblicazione](../design/ANTEPRIME_WEB.md). I riferimenti remoti di questa
+consegna vengono riportati nella chiusura dopo la verifica effettiva.
 
-Prima di riprendere verificare la PR più recente sul remoto: se aperta,
-riutilizzarla per questa consegna; dopo il merge partire da main aggiornato e
-nuovo branch dedicato. Non riutilizzare i branch documentali integrati.
-Non integrare in main senza richiesta esplicita.
+Prima di scegliere il branch di un seguito controllare la PR più recente:
+se aperta, riutilizzarla per questa consegna; dopo il merge aggiornare main e
+creare un nuovo branch. Non riutilizzare i branch integrati, non effettuare merge.
 
-## Come provare
+## Come entrare e provare
 
-`npm ci`, `npm run dev`, aprire `http://localhost:5173/#/prova`. Il codice
-sintetico al banco è `DEMO-ALFA-01`. Preparare prima la pratica o scegliere un
-caso predisposto; confermare persona, scopo e contesto prima della consultazione.
-Visite e vista condivisa non sono ripristinate alla ricarica.
-«Ripristina scenario» azzera lo stato 0.4, incluse note e versioni aggiunte;
-schema 0.3 rilevato e conservato separatamente senza importazione.
+`npm ci`, `npm run dev`, aprire `http://localhost:5173/`. La root e
+`/#/spazio/overview` mostrano lo spazio applicativo; `/#/prova` conserva i link
+già condivisi. Sullo stesso Sites la root apre il prodotto; `/app/` è conservato,
+`/desktop/` e `/mobile/` restano anteprime; il selettore è in `/anteprime/`.
 
-## Vincoli e limiti
+1. «Completa la pratica»: dati/persona, documenti, accessi, riepilogo.
+2. «Accogli al banco»: tessera di esempio o codice `DEMO-ALFA-01`, conferma
+   persona, motivo e casa/contratto. Poi ricerca e apertura del fascicolo.
+3. Cercare impianto/documento intorno al 2019, confrontare fonti/versioni,
+   mostrare la selezione al cliente e terminare l'incontro.
+4. «Vista cliente»: tessera, documenti, case, utenze, richiesta e dichiarazione.
+   Tornare all'agenzia per vedere la richiesta e registrare un riscontro parziale.
+5. «Strumenti della demo»: scenari, attore, reset, note anonime e registro locale.
 
-C–Legame, nome provvisorio e direzione 0.3 conservati. Policy locali per agenzia,
-attore, rapporto, immobile, contratto, intestazione, delega, incarico, scopo e
-periodo. Card e ruolo globale non bastano. Proprietario senza bollette private
-del conduttore; tecnico solo incarico. Fine rapporto, adesione e revoca card
-separate; titoli autonomi valutati indipendentemente.
+Il laboratorio tecnico 0.4 rimane `/#/laboratorio`; le rotte 0.3 sono conservate
+come archivio. Non riproporli come ingresso principale della piattaforma.
 
-Documento caricato, pagamento dichiarato, incasso verificato e quietanza
-restano distinti; residuo parziale conservato nel percorso 0.3 e nell'esempio
-100/40/60. Inviti, adesione, wallet, firma, schermo cliente e suggerimenti sono
-simulazioni/fixture. Nessun servizio o archivio reale, telemetria, pagamento,
-AI, dato personale o merge autorizzato da questa demo.
+## Stato, vincoli e limiti
 
-Il percorso continuo è predisposto per Alfa; Beta ha un proprio documento
-leggibile e non apre Alfa. La pratica ha due parti e non riproduce tutti i casi
-BF02. Il browser contiene le fixture: nessuna sicurezza server dimostrata.
-Hardware, screen reader, condizioni commerciali, conservazione e responsabilità
-restano aperti. Il template è solo un facsimile deterministico.
+Il modello 0.4 e la chiave `eecard-functional-v4` sono conservati. Le visite e
+la vista condivisa non vengono ripristinate alla ricarica. La chiave
+`eecard-workspace-v1` aggiunge richieste, stati economici, eventi e fixture card
+proprietario; incompatibilità/corruzione produce reset con avviso. Il reset
+scenario azzera entrambe le parti dello spazio, non il prototipo 0.3.
 
-## Prossima attività concreta
+C–Legame, nome provvisorio, direzione Materia/Editoriale e font locale conservati.
+Permessi per agenzia, attore, rapporto, immobile, contratto, intestazione,
+delega, incarico, scopo e tempo. La card non concede dati; proprietario senza
+bollette private del conduttore; tecnico solo incarico. Fine rapporto, adesione,
+revoca card e titolo autonomo rimangono separati. Evidenza, dichiarazione,
+incasso verificato e quietanza restano eventi distinti; il parziale conserva
+il residuo. Le due card personali di esempio hanno blocchi distinti.
 
-Far provare la demo con dati sintetici secondo il copione. Usare il kit BF02
-esistente senza rigenerarlo, annotare supporto/commit e adattamenti, raccogliere
-compiti, blocchi, aiuti e riscontri anonimi reali fuori repository. La modalità
-note non sostituisce il registro comparativo. BF16 rimane aperto finché non
-esistono osservazioni umane; non dedurre risparmio, prezzi o lancio dai test.
-Successivamente ordinare correzioni/priorità N11 e riesaminare BF01/BF03/BF17.
+Tutto avviene con fixture sintetiche nel browser: nessuna sicurezza server,
+account reale, invito, pagamento, incasso bancario, NFC/wallet, firma, AI,
+telemetria o archivio reale. Il banco continuo è predisposto per Cliente 01 /
+Alfa; Beta dispone dei propri documenti e non apre Alfa. Pratica a due parti,
+nessuna creazione arbitraria di nuovi contratti/clienti. Non usare dati reali.
 
-## Verifiche osservate
+## Prossimi passi
 
-41 test passati, build e formattazione riuscite, audit npm senza vulnerabilità,
-28 viste demo e 24 scansioni 0.3 senza violazioni axe, screenshot alle larghezze
-360/390/1280/1440. [Rapporto](demo-funzionale-2026-10-14/VERIFICHE.md).
-Nessuna misura umana o collaudo hardware. Anteprima autonoma e stesso Sites
-sono aggiornati nella consegna di implementazione: usare il registro sotto e
-[ANTEPRIME_WEB](../design/ANTEPRIME_WEB.md) per lo stato effettivamente online.
+Provare la comprensione del nuovo ingresso senza prima spiegare sigle o copione:
+cosa pensa di poter fare la persona, quale azione sceglie e dove si blocca.
+Poi percorso completo, un diniego e un recupero. Usare BF02 esistente senza
+rigenerarlo, annotando nuovo supporto/commit e adattamenti prima della raccolta.
+Conservare osservazioni individuali fuori repository e pubblicare solo sintesi
+anonime autorizzate. BF16 rimane aperto: il feedback qualitativo dell'utente
+non è una prova comparativa con operatori o una misura di risparmio.
 
-## Riferimenti remoti verificati di chiusura
-
-[PR #11](https://github.com/av3rgfx/EECard/pull/11), aperta e non in bozza,
-branch `feat/demo-funzionale-0.4`, base main `3b28e0a`.
-Sorgente demo pubblicata: `7adeb69ca74cc17105580c17eab90c05f02efb76`;
-Sites v6 `succeeded` alle 11:17:47 UTC.
-[Anteprima](https://eecard-design-preview.uepacio.chatgpt.site/app/#/prova),
-HTML live confrontato identico alla build locale.
-Il commit documentale successivo registra soltanto questi riferimenti: non
-cambia gli asset online. Nessun merge; HEAD corrente consultabile nella PR.
+Raccogliere osservazioni, ordinare correzioni N11/N12 e riesaminare BF01/BF03/BF17.
+Verificare telefoni fisici, Safari/iOS, Android e screen reader: Chromium/axe
+non sostituiscono questi controlli. Prezzi, copertura, conservazione, risorse,
+responsabilità e architettura operativa restano aperti.

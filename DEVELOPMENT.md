@@ -227,3 +227,24 @@ Con server avviato, `node scripts/verify-demo.mjs` genera audit e screenshot 0.4
 Per una build statica impostare `EECARD_DEMO_URL` al suo `app/#/prova`.
 [Dettagli e limiti](docs/progetto/demo-funzionale-2026-10-14/IMPLEMENTAZIONE.md),
 [verifiche osservate](docs/progetto/demo-funzionale-2026-10-14/VERIFICHE.md).
+
+## Interfaccia operativa 0.5
+
+`src/workspace/Experience.tsx` e `workspace.css` presentano il prodotto.
+`src/workspace/service.ts` centralizza richieste, registro economico e fixture
+card proprietario, con titoli locali e persistenza `eecard-workspace-v1`.
+Le letture/esportazioni della libreria e del profilo personale usano i comandi
+centralizzati del modello 0.4 (`file`); la condivisione al banco conserva le
+precondizioni di visita/persona/scopo. Il blocco personale della card non
+termina il rapporto. Nessun server, servizio o integrazione reale aggiunto.
+
+Ingresso `/#/spazio/overview`, con pagine hash per pratiche, pratica, banco,
+documenti, persone, immobili, utenze, affitto, assistenza e bozze. `/#/prova`
+è compatibile con i link precedenti e apre il nuovo spazio; il laboratorio
+tecnico 0.4 è ora `/#/laboratorio`. Le rotte 0.3 sono conservate.
+
+La root Sites serve direttamente l'app; il selettore anteprime è `/anteprime/`,
+con `/desktop/`, `/mobile/`, `/app/` conservati. L'HTML autonomo incorpora il
+medesimo codice. `workspace-qa.mjs` e `workspace-static-qa.mjs` verificano le
+nuove viste; i rapporti storici non sono attribuiti alla 0.5.
+[Dettagli](docs/progetto/experience-2026-10-14/README.md).

@@ -101,3 +101,18 @@ esplicitamente selezionata e torna neutro a chiusura.
 [Screenshot 0.4](docs/design/screenshots/demo-0.4) e
 [rapporto](docs/progetto/demo-funzionale-2026-10-14/VERIFICHE.md) distinguono
 Chromium/axe dalle prove fisiche ancora aperte. Naming e design 0.3 conservati.
+
+## Esperienza 0.5 — chiarezza del lavoro e qualità dell'esecuzione
+
+Il riscontro ricevuto sulla comprensione della 0.4 richiede un intervento sulla
+gerarchia e sui percorsi. C–Legame, Manrope, palette e Materia/Editoriale restano
+il riferimento; la nuova shell distingue agenzia e spazio personale. La home
+agenzia propone una prossima attività concreta; la tessera domina quella personale.
+Liste/processi aperti, fotografia e tipografia organizzano il contenuto; i dettagli
+tecnici si aprono soltanto quando pertinenti. Dialoghi e card mantengono materiale
+e profondità. Nessuna nuova scelta di simbolo o wordmark.
+
+[Scelte e percorso](docs/progetto/experience-2026-10-14/README.md),
+[screenshot](docs/design/screenshots/experience-0.5),
+[verifiche](docs/progetto/experience-2026-10-14/VERIFICHE.md). Non dichiarare
+convalidata la facilità d'uso dalla sola esecuzione dei test automatici.

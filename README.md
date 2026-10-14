@@ -2,9 +2,13 @@
 
 EECard è un nome provvisorio; il prodotto evolve verso un’identità autonoma dall’agenzia Enrico Erca (ƎE). Il simbolo **C — Legame** è stato scelto e integrato; il nome resta aperto. [Guida e asset](docs/design/MARCHIO.md) · [Scarica SVG e favicon](https://eecard-design-preview.uepacio.chatgpt.site/brand/legame-assets.zip).
 
-Prototipo di design desktop e smartphone per organizzare immobili, documenti, locazioni e assistenza. Tutti i dati e i servizi sono dimostrativi.
+Demo applicativa 0.5 per gestire pratiche in agenzia e ritrovare documenti, scadenze e richieste nel proprio spazio casa. Tutti i dati e le operazioni sono sintetici e locali.
 
-![Demo funzionale 0.4 desktop](docs/design/screenshots/demo-0.4/pf01-1440.png)
+**[Apri la piattaforma](https://eecard-design-preview.uepacio.chatgpt.site/)** · [Percorso e scelte UX](docs/progetto/experience-2026-10-14/README.md).
+
+Dalla panoramica scegli **Completa la pratica**. Dopo l’attivazione di esempio, prova **Accogli al banco** e passa a **Vista cliente** per vedere il suo spazio. Gli scenari e il reset sono in **Strumenti della demo**.
+
+![Spazio agenzia 0.5](docs/design/screenshots/experience-0.5/agenzia-1440.png)
 
 ## Anteprima
 
@@ -19,7 +23,7 @@ npm ci
 npm run dev
 ```
 
-Apri http://localhost:5173/#/prova per la demo 0.4 oppure la home per il prototipo 0.3. Richiede Node.js 22.12+ o 24 LTS. Per la build:
+Apri http://localhost:5173/ per il nuovo spazio 0.5; `/#/laboratorio` conserva la prova tecnica 0.4 e `/#/home` il prototipo 0.3. Richiede Node.js 22.12+ o 24 LTS. Per la build:
 
 ```bash
 npm run build
@@ -111,7 +115,7 @@ Frontend di presentazione, non prodotto operativo. Nessun pagamento, documento v
 
 Componenti adattati da [Animate UI](https://animate-ui.com) e [Rare UI](https://rareui.com). Licenze e attribuzioni conservate in `docs/design/`. Il prototipo non redistribuisce un catalogo di componenti.
 
-## Demo funzionale 0.4
+## Demo funzionale 0.4 — riferimento storico
 
 Apri [Prova il percorso](https://eecard-design-preview.uepacio.chatgpt.site/app/#/prova)
 o `http://localhost:5173/#/prova`: pratica PF01, ritorno al banco PF02, recupero

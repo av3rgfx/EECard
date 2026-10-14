@@ -217,3 +217,16 @@ N07 aggiornato per questa consegna: screenshot, HTML autonomo e stesso Sites v6
 dal commit `7adeb69`; [PR #11](https://github.com/av3rgfx/EECard/pull/11)
 aperta senza merge. N09 non chiude BF04–BF15 operativi: policy nel browser,
 fixture e facsimili restano separati da servizi e dati reali.
+
+## Revisione 0.5 dopo il feedback dell'utente
+
+N12: realizzata la revisione dell'esperienza — home orientata al lavoro, pratica
+guidata, banco, archivio e spazio personale. Richieste, affitto, utenze e bozze
+restano operazioni locali con policy centralizzate.
+[Scelte](experience-2026-10-14/README.md) e [verifiche](experience-2026-10-14/VERIFICHE.md).
+
+N10/BF16 resta aperto: verificare con persone reali se scopo e prossima azione
+sono comprensibili senza leggere un copione, poi provare percorso completo e
+casi negati usando BF02 invariato. N02 hardware/screen reader e questioni
+commerciali/operative rimangono aperti. Il giudizio dell'utente sulla 0.4 è
+feedback qualitativo, non una misura comparativa.

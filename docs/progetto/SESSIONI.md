@@ -429,3 +429,15 @@ La chiusura documentale successiva non richiede deploy e non altera i sorgenti
 0.4 verificati. Report: 41 test passati, ulteriori 22 test demo dopo guard memoria,
 28+24 viste senza violazioni axe, 22 screenshot, build statica/offline,
 formattazione e audit npm. BF02 invariato, BF16 aperto.
+
+## 14 ottobre 2026 — revisione dell'esperienza 0.5
+
+L'utente ha segnalato scarsa chiarezza e qualità percepita della demo. PR #11
+verificata integrata alle 18:40:00 UTC; main aggiornato `0481bb1`, nuovo branch
+`design/experience-0.5`. Nessun merge eseguito dall'assistente.
+
+Nuova esperienza operativa e personale, quattro passi di pratica, banco,
+archivio, utenze, affitto, richieste e bozze. Strumenti tecnici in un pannello,
+root pubblica diretta al prodotto, vecchi link compatibili. Conservati C–Legame,
+0.3, policy, titoli autonomi e quattro significati economici.
+[Rapporto](experience-2026-10-14/VERIFICHE.md); BF02 invariato e BF16 aperto.

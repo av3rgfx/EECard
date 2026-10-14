@@ -1,7 +1,8 @@
 import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
 import { mkdirSync, writeFileSync } from "node:fs";
-const base = process.env.EECARD_DEMO_URL || "http://127.0.0.1:5173/#/prova";
+const base =
+  process.env.EECARD_DEMO_URL || "http://127.0.0.1:5173/#/laboratorio";
 const browser = await chromium.launch();
 const report = { support: base, synthetic: true, checks: [] };
 mkdirSync("docs/design/screenshots/demo-0.4", { recursive: true });

@@ -501,6 +501,14 @@ export function readVersion(
     : null;
 }
 export type Command =
+  | {
+      type: "file";
+      id: string;
+      version: number;
+      action: "read" | "export";
+      purpose: Purpose;
+    }
+  | { type: "blockOwnCard" }
   | { type: "inspect"; id: string; version: number }
   | {
       type:
@@ -549,9 +557,9 @@ export function execute(previous: State, c: Command): Result {
       sequence: s.events.length + 1,
       actor: previous.actor,
       agency: previous.agency,
-      action: c.type === "document" ? c.action : c.type,
+      action: c.type === "document" || c.type === "file" ? c.action : c.type,
       object:
-        c.type === "document" &&
+        (c.type === "document" || c.type === "file") &&
         s.documents.some((d) => d.id === c.id && d.agency === s.agency)
           ? c.id
           : "contesto-demo",
@@ -658,6 +666,30 @@ export function execute(previous: State, c: Command): Result {
     return finish(
       true,
       "Visita aperta: solo dati minimi e documenti autorizzati.",
+    );
+  }
+  if (c.type === "file") {
+    const d = s.documents.find((d) => d.id === c.id);
+    if (!d || !allowed(s, c.action, d, { purpose: c.purpose }))
+      return finish(false, "Documento o azione non disponibili.");
+    const v = readVersion(s, c.id, c.version, { purpose: c.purpose });
+    if (!v) return finish(false, "Versione non disponibile.");
+    return finish(
+      true,
+      c.action === "read"
+        ? "Documento aperto nel contesto autorizzato."
+        : "Facsimile esportato solo in locale.",
+      v,
+    );
+  }
+  if (c.type === "blockOwnCard") {
+    if (s.actor !== "person-alfa" || s.agency !== "alfa" || !s.practice.account)
+      return finish(false, "Credenziale non disponibile.");
+    s.practice.card = "revocata";
+    s.session = null;
+    return finish(
+      true,
+      "Tessera bloccata. Il rapporto e i tuoi documenti non sono cancellati.",
     );
   }
   if (c.type === "inspect") {

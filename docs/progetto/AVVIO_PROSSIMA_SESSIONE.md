@@ -1,18 +1,15 @@
-# Avvio dopo la demo 0.4
+# Avvio dopo la revisione 0.5
 
-La demo è implementata; non occorre reinviare il prompt di implementazione.
+1. Verificare lo stato remoto della consegna indicata in
+   [PROSSIMA_SESSIONE](PROSSIMA_SESSIONE.md), poi seguire AGENTS per branch/PR.
+2. Leggere [esperienza 0.5](experience-2026-10-14/README.md) e
+   [verifiche](experience-2026-10-14/VERIFICHE.md).
+3. Aprire la root del sito esistente o avviare `npm ci`, `npm run dev`.
+   L'ingresso applicativo è `/#/spazio/overview`; i vecchi link `/#/prova` restano validi.
+4. Provare comprensione del primo impatto e azioni quotidiane prima di spiegare
+   il modello tecnico; poi percorso completo, diniego, recupero e reset.
+5. Riutilizzare BF02 senza rigenerarlo e indicare versione/supporto nella raccolta.
 
-1. Verificare la PR indicata in [PROSSIMA_SESSIONE](PROSSIMA_SESSIONE.md).
-   Riutilizzare il branch aperto per le correzioni della stessa consegna;
-   dopo il merge aggiornare main e creare un nuovo branch secondo AGENTS.
-2. Leggere [implementazione](demo-funzionale-2026-10-14/IMPLEMENTAZIONE.md),
-   [verifiche](demo-funzionale-2026-10-14/VERIFICHE.md) e
-   [copione](demo-funzionale-2026-10-14/COPIONE.md).
-3. Avviare `npm ci`, `npm run dev`, aprire `/#/prova`, oppure utilizzare
-   l'anteprima esistente registrata in [ANTEPRIME_WEB](../design/ANTEPRIME_WEB.md).
-4. Far provare il percorso agli operatori usando soltanto dati sintetici,
-   con kit BF02 invariato e versione del supporto annotata. Raccogliere
-   osservazioni anonime reali fuori repository, poi motivare le priorità.
-
-BF16 resta aperto. Nessun prezzo, servizio reale, lancio o merge deriva dal
-completamento del frontend. Conservare naming, C–Legame e design 0.3.
+Il laboratorio 0.4 è consultabile a `/#/laboratorio`, come strumento tecnico
+secondario. I risultati automatici non chiudono BF16 e non autorizzano servizi
+reali, trattamento di dati personali o merge.
