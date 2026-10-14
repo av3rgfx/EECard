@@ -113,6 +113,7 @@ for (const width of [360, 390, 1280, 1440]) {
       .getByRole("button", { name: "Strumenti della prova", exact: true })
       .click();
     await page.getByLabel("Scenario della prova").selectOption("other");
+    await capture("panoramica-beta");
     await go("documents");
     await capture("agenzia-beta");
     await page

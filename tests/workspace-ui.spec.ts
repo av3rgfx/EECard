@@ -346,3 +346,18 @@ test("ricerca globale indipendente dai filtri della libreria", async ({
     .click();
   await expect(page.locator(".ws-paper")).toContainText("Locazione sintetica");
 });
+
+test("anche panoramica e intestazioni rispettano il contesto Beta", async ({
+  page,
+}) => {
+  await seed(page, "other");
+  await start(page);
+  await expect(page.locator("main")).not.toContainText("Casa Luce");
+  await expect(page.locator("main")).not.toContainText("Cliente 01");
+  await expect(page.getByText("Contesto Beta", { exact: true })).toBeVisible();
+  await navigate(page, "practice");
+  await expect(page.locator("main")).not.toContainText("CASA LUCE");
+  await navigate(page, "rent");
+  await expect(page.locator("main")).not.toContainText("CASA LUCE");
+  await expect(page.locator(".ws-rent-summary")).toHaveCount(0);
+});

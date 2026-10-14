@@ -797,7 +797,7 @@ export function Experience() {
               {view === "overview" && operator && (
                 <>
                   {header(
-                    "BUON LAVORO, OPERATORE 02",
+                    `BUON LAVORO, ${labels[s.actor].toUpperCase()}`,
                     "La giornata, sotto controllo.",
                     "Pratiche, persone e documenti: tutto il lavoro dell’agenzia, nello stesso spazio.",
                     <Action onClick={() => go("desk")}>
@@ -853,9 +853,11 @@ export function Experience() {
                             : "Da completare"}
                       </Status>
                       <h2>
-                        {ready
-                          ? "Il cliente torna.\nTu sai già da dove ripartire."
-                          : "Una casa, due persone.\nMetti tutto in relazione."}
+                        {s.agency === "beta"
+                          ? "Il tuo archivio.\nNel suo contesto."
+                          : ready
+                            ? "Il cliente torna.\nTu sai già da dove ripartire."
+                            : "Una casa, due persone.\nMetti tutto in relazione."}
                       </h2>
                       <p>
                         {s.agency === "beta"
@@ -896,8 +898,14 @@ export function Experience() {
                       />
                       <div className="ws-photo-label">
                         <span>IL FASCICOLO</span>
-                        <strong>Casa Luce</strong>
-                        <small>Unità A01 · locazione</small>
+                        <strong>
+                          {s.agency === "beta" ? "Contesto Beta" : "Casa Luce"}
+                        </strong>
+                        <small>
+                          {s.agency === "beta"
+                            ? "Unità B01 · mandato Beta"
+                            : "Unità A01 · locazione"}
+                        </small>
                       </div>
                       <div className="ws-photo-counter">
                         <FolderOpen size={18} />
@@ -932,7 +940,15 @@ export function Experience() {
                             <span>
                               {ready
                                 ? "Controlli completati · accessi predisposti"
-                                : "Una data da chiarire · un allegato da aggiungere"}
+                                : !s.practice.corrected
+                                  ? "Una data da chiarire · controlla le fonti"
+                                  : !s.practice.supplied
+                                    ? "Un allegato da aggiungere al fascicolo"
+                                    : !s.practice.verified
+                                      ? "Dati completi · verifica il rapporto"
+                                      : !s.practice.invitations.length
+                                        ? "Accessi personali da preparare"
+                                        : "Accessi predisposti · attivazione da confermare"}
                             </span>
                           </span>
                           <ChevronRight size={20} />
@@ -1165,7 +1181,9 @@ export function Experience() {
               {view === "practice" && (
                 <>
                   {header(
-                    "LOCAZIONE · CASA LUCE",
+                    canPrepare
+                      ? "LOCAZIONE · CASA LUCE"
+                      : "PRATICA DI LOCAZIONE",
                     "Un buon inizio, per tutti.",
                     "Prepara il fascicolo e l’accesso personale delle parti. Ogni passaggio mantiene una fonte verificabile.",
                   )}{" "}
@@ -2169,7 +2187,9 @@ export function Experience() {
               {view === "rent" && (
                 <>
                   {header(
-                    "CASA LUCE · CONTRATTO A01",
+                    canOperate(s)
+                      ? "CASA LUCE · CONTRATTO A01"
+                      : "AFFITTO E SCADENZE",
                     "Un importo, uno stato chiaro.",
                     "Evidenza, dichiarazione, riscontro e quietanza restano passaggi distinti. Nessun denaro viene movimentato.",
                   )}{" "}

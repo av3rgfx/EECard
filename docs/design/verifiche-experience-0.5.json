@@ -238,6 +238,15 @@
     },
     {
       "width": 390,
+      "state": "panoramica-beta",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
       "state": "agenzia-beta",
       "overflow": false,
       "brokenImages": [],
@@ -491,6 +500,15 @@
     {
       "width": 1440,
       "state": "bozza",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "panoramica-beta",
       "overflow": false,
       "brokenImages": [],
       "violations": [],

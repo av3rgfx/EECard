@@ -10,11 +10,11 @@ Risultati osservati sul contenuto di questa consegna:
 | Controllo | Esito |
 | --- | --- |
 | TypeScript + Vite | Build riuscita; avviso per bundle unico oltre 500 kB |
-| Playwright, 2 worker | 60 test passati: 41 regressioni 0.3/0.4, 6 modello workspace, 13 UI workspace |
+| Playwright, 2 worker | 61 test passati: 41 regressioni 0.3/0.4, 6 modello workspace, 14 UI workspace |
 | Formattazione | `npm run format:check` riuscito |
 | Audit dipendenze | 0 vulnerabilità riportate da `npm audit --json` |
-| Audit workspace | 58 viste a 360/390/1280/1440 px: 0 violazioni axe WCAG A/AA/2.1 AA, overflow, immagini mancanti, errori JS e richieste esterne al supporto locale |
-| Screenshot | 50 schermate dei percorsi e dei casi negati; ispezionate panoramica agenzia desktop e personale mobile |
+| Audit workspace | 60 viste a 360/390/1280/1440 px: 0 violazioni axe WCAG A/AA/2.1 AA, overflow, immagini mancanti, errori JS e richieste esterne al supporto locale |
+| Screenshot | 52 schermate dei percorsi e dei casi negati; ispezionate panoramica agenzia desktop e personale mobile |
 | Anteprime | HTML autonomo da 1,41 MB e build condivisibile rigenerati |
 | Build statica e offline | Percorso pratica → banco → documento → chiusura → spazio cliente riuscito sulla root statica, su `/app/#/prova` e nel file autonomo; nessun errore JS o richiesta esterna |
 | BF02 | Nessun cambiamento o rigenerazione del kit esistente |
@@ -65,6 +65,8 @@ rotta di archivio, senza riscrivere i loro rapporti precedenti.
   dai filtri della libreria.
 - Stato delle richieste corretto dopo l'aggiunta degli eventi al registro;
   ricarica dei test predisposta senza reinizializzare lo stato persistito.
+- Riepiloghi e intestazioni Beta circoscritti al proprio contesto, oltre ai
+  controlli sul recupero dei documenti; aggiunta una regressione specifica.
 - Guard TypeScript/import e passaggio dalla shell legacy corretti prima della
   build finale. I primi tentativi falliti non sono conteggiati come successi.
 
