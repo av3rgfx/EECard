@@ -409,3 +409,14 @@ Elaborati salvati al commit
 Aperta la [PR #10](https://github.com/av3rgfx/EECard/pull/10), non in bozza e
 mergeable, con base main. Il commit successivo registra soltanto questi
 riferimenti; nessun merge.
+
+## 14 ottobre 2026 — implementazione demo funzionale 0.4
+
+Verificata PR #10 integrata alle 10:51:34 UTC, aggiornato main `3b28e0a`,
+creato `feat/demo-funzionale-0.4`. Letti AGENTS, continuità, piano, backlog,
+specifiche, BF16 e documenti prodotto/design/sviluppo. Nessun merge.
+
+Implementati percorso continuo, policy e fixture di due agenzie, scenari,
+reset, persistenza versionata, registro locale, note e PF03/PF04/PF06.
+Kit BF02 invariato, nessuna osservazione umana aggiunta, BF16 aperto.
+Esiti e limiti nel [rapporto](demo-funzionale-2026-10-14/VERIFICHE.md).

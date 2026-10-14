@@ -128,3 +128,11 @@ La tessera è il primo contenuto dominante della home di proprietario e inquilin
 L’esecuzione 0.3 è in `src/editorial.css`, applicata dopo gli stili esistenti; i token di base e movimento restano in `src/tokens.css`. Il percorso visuale dell’affitto è una vista degli stati esistenti, senza scorciatoie per saltare verifiche. Preservare permessi, residui, quietanza separata, blocco e sostituzione, recupero dagli errori, licenze e dati demo. Consultare `DESIGN.md`, `docs/design/DESIGN_SYSTEM.md` e `docs/design/DECISIONI.md` per lo stato corrente; `REVISIONE_VISIVA.md` e il prompt precedente documentano l’origine del confronto. Simbolo e naming non sono riaperti dalla scelta visiva.
 
 L’utente ha autorizzato verifica, aggiornamento delle anteprime sul medesimo sito Sites, salvataggio remoto e preparazione della PR senza merge. Lo stato effettivo di verifiche e pubblicazione va letto nei relativi rapporti e nel punto di ripresa, senza dedurlo dalla sola implementazione.
+
+## Demo funzionale 0.4 — consegna del 14 ottobre
+
+Il nuovo ingresso è `/#/prova`, con modello e policy locali in `src/demo/`.
+Leggere implementazione, copione e rapporto in `docs/progetto/demo-funzionale-2026-10-14/`.
+Schema 4 distinto dal prototipo 0.3; visite al banco non persistite. BF02 non
+rigenerato, BF16 ancora aperto. Per branch/PR e commit online usare il punto di
+ripresa aggiornato; non riavviare il piano già implementato o attivare servizi reali.

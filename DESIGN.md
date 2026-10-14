@@ -88,3 +88,16 @@ con lo spunto bianco/rosso. È un confronto documentale: nessuna tonalità è sc
 nessuna nuova tavola è presentata come testata. Un eventuale campione visivo userà
 gli stessi contenuti e il simbolo C–Legame; per cambiare la direzione serve una
 scelta esplicita. Le varianti fisiche/partner non cambiano automaticamente l'app.
+
+## Percorso funzionale 0.4 nella direzione 0.3
+
+Nuovo ingresso «Prova il percorso», composizione aperta, separatori, tipografia
+e token esistenti. `src/demo/demo.css` delimita gli adattamenti al percorso;
+non modifica il simbolo o la densità delle home. Fasi navigabili, contesto e
+simulazione visibili, esiti annunciati, focus sul titolo dopo il cambio fase.
+Bolletta e documento sono facsimili; il riepilogo cliente è una vista locale
+esplicitamente selezionata e torna neutro a chiusura.
+
+[Screenshot 0.4](docs/design/screenshots/demo-0.4) e
+[rapporto](docs/progetto/demo-funzionale-2026-10-14/VERIFICHE.md) distinguono
+Chromium/axe dalle prove fisiche ancora aperte. Naming e design 0.3 conservati.

@@ -4,7 +4,7 @@ EECard è un nome provvisorio; il prodotto evolve verso un’identità autonoma 
 
 Prototipo di design desktop e smartphone per organizzare immobili, documenti, locazioni e assistenza. Tutti i dati e i servizi sono dimostrativi.
 
-![EECard desktop](docs/design/screenshots/desktop-proprietario-1440.png)
+![Demo funzionale 0.4 desktop](docs/design/screenshots/demo-0.4/pf01-1440.png)
 
 ## Anteprima
 
@@ -19,7 +19,7 @@ npm ci
 npm run dev
 ```
 
-Apri http://localhost:5173. Richiede Node.js 22.12+ o 24 LTS. Per la build:
+Apri http://localhost:5173/#/prova per la demo 0.4 oppure la home per il prototipo 0.3. Richiede Node.js 22.12+ o 24 LTS. Per la build:
 
 ```bash
 npm run build
@@ -110,3 +110,18 @@ invariato e sarà riusato dopo la demo per raccogliere osservazioni umane.
 Frontend di presentazione, non prodotto operativo. Nessun pagamento, documento valido, ordine di card o prenotazione reale. I file non vengono caricati su un server. Prezzi, inclusioni, zona, copertura, budget e primo rilascio restano aperti. Anche pagamenti integrati, app negli store, 3D e AI restano da valutare.
 
 Componenti adattati da [Animate UI](https://animate-ui.com) e [Rare UI](https://rareui.com). Licenze e attribuzioni conservate in `docs/design/`. Il prototipo non redistribuisce un catalogo di componenti.
+
+## Demo funzionale 0.4
+
+Apri [Prova il percorso](https://eecard-design-preview.uepacio.chatgpt.site/app/#/prova)
+o `http://localhost:5173/#/prova`: pratica PF01, ritorno al banco PF02, recupero
+storico PF05 e PF03/PF04/PF06 esplorabili con soli dati sintetici. Sette scenari,
+reset, registro locale e note anonime esportabili nel browser.
+
+Il codice demo è `DEMO-ALFA-01`. Prima prepara/attiva la pratica oppure scegli
+uno scenario già predisposto. La card non concede accesso: conferma persona,
+scopo e contesto. Le visite non vengono ripristinate alla ricarica. Schema 0.3
+conservato separatamente; stato incompatibile 0.4 ripristinato esplicitamente.
+[Copione](docs/progetto/demo-funzionale-2026-10-14/COPIONE.md) ·
+[Implementazione e limiti](docs/progetto/demo-funzionale-2026-10-14/IMPLEMENTAZIONE.md).
+BF02 invariato e BF16 aperto; nessun servizio reale o merge.

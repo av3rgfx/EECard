@@ -24,7 +24,7 @@ Aggiornato il 14 ottobre 2026 con la strategia demo-prima. Le priorità seguenti
 | N06 | Dopo N05 · da implementare | Realizzare la prima funzionalità operativa completa | UI, server, dati, errori e test integrati secondo il perimetro scelto; demo separata dai dati reali |
 | N07 | Quando cambia il frontend | Aggiornare QA, screenshot e anteprime | Report coerenti col commit e deploy verificato sul sito esistente |
 | N08 | Con architettura reale · da valutare | Prestazioni, bundle e automatizzazione dei controlli | Misure e scelta motivata; nessuna CI o suddivisione del bundle aggiunta solo per supposizione |
-| N09 | Alta · prossima implementazione autorizzata | Realizzare la demo funzionale 0.4 secondo il [piano](demo-funzionale-2026-10-14/README.md) e il [prompt `/goal`](PROMPT_DEMO_FUNZIONALE.md) | PF01 → PF02 → PF05 continuo, due agenzie sintetiche, permessi, storico/versioni, revoche, errori, reset e modalità prova; nessun servizio reale |
+| N09 | Completato come demo locale 0.4 | Realizzare la demo funzionale 0.4 secondo il [piano](demo-funzionale-2026-10-14/README.md) e il [prompt `/goal`](PROMPT_DEMO_FUNZIONALE.md) | PF01 → PF02 → PF05 continuo, due agenzie sintetiche, permessi, storico/versioni, revoche, errori, reset e modalità prova; nessun servizio reale |
 | N10 | Dopo N09 · prova umana BF16 | Far provare la demo agli operatori e raccogliere osservazioni anonime prima delle domande di approfondimento | Versione demo, compiti, esiti, blocchi, aiuti e proposte registrati; vuoto non equivale a zero, kit BF02 non rigenerato |
 | N11 | Dopo N10 · revisione del perimetro | Ordinare correzioni e aggiunte emerse dalla prova e riesaminare BF01/BF03/BF17 | Decisioni attribuite, problemi separati da preferenze, nessun prezzo o lancio dedotto dalla sola demo |
 
@@ -198,3 +198,17 @@ L'allegato storico/uscita distingue conservare, leggere e consegnare per
 categoria/evento, preservando i titoli autonomi ancora validi. BF03/BF17
 attendono politica e condizioni esplicite: nessuna durata legale o responsabilità
 è assegnata dalla matrice. Kit, frontend e servizi restano invariati.
+
+## Consegna demo 0.4 — 14 ottobre 2026
+
+N09 completato nel perimetro della demo: percorso PF01 → PF02 → PF05, due
+agenzie sintetiche, policy centralizzata, dinieghi, errori, versioni, modalità
+prova, reset e note locali; PF03/PF04/PF06 esplorabili.
+[Implementazione](demo-funzionale-2026-10-14/IMPLEMENTAZIONE.md),
+[verifiche](demo-funzionale-2026-10-14/VERIFICHE.md),
+[copione](demo-funzionale-2026-10-14/COPIONE.md).
+
+N10/BF16 resta aperto: usare il kit BF02 invariato con supporto/versione demo
+annotati, raccogliendo osservazioni anonime reali. N11 segue quei riscontri.
+N02 resta aperto per hardware/screen reader. N05/BF03 e condizioni BF17 non
+sono completati da policy nel browser. Nessun servizio operativo o merge.

@@ -180,3 +180,14 @@ hardware. Il kit BF02 non viene rifatto e BF16 richiede ancora osservazioni
 umane. Piano e prompt sono in
 [`demo-funzionale-2026-10-14`](../progetto/demo-funzionale-2026-10-14/README.md)
 e [`PROMPT_DEMO_FUNZIONALE.md`](../progetto/PROMPT_DEMO_FUNZIONALE.md).
+
+## Esecuzione autorizzata della demo 0.4
+
+| ID | Stato | Decisione / conseguenza |
+| --- | --- | --- |
+| C25 | Richiesta esplicita dell'utente, implementata come demo | Percorso locale PF01 → PF02 → PF05, estensioni sintetiche, due agenzie, scenari, reset, note, QA, aggiornamento dello stesso Sites e PR senza merge |
+| P15 | Scelta implementativa circoscritta alla demo | Policy centralizzata nel browser, fixture con data civile UTC e intervalli inizio incluso/fine esclusa, schema 4 distinto dal prototipo 0.3, visite non persistite |
+
+[Implementazione e limiti](../progetto/demo-funzionale-2026-10-14/IMPLEMENTAZIONE.md).
+C25 non approva condizioni commerciali, titoli legali, retention o architettura
+server. C–Legame, nome provvisorio e direzione 0.3 conservati. BF16 aperto.

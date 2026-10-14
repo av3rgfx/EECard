@@ -131,3 +131,16 @@ prezzi, primo pagante, copertura, responsabilità, conservazione, destinatari
 degli schermi, firma, Jarvis o hardware. BF16 resta aperto finché la demo non
 viene provata da persone reali e le osservazioni non sono raccolte senza dati
 personali nella repository.
+
+## Demo 0.4 implementata — 14 ottobre
+
+La rotta `/#/prova` rende percorribile PF01 → PF02 → PF05 con Alfa/Beta sintetiche,
+fonti e correzioni, sessione al banco, storico/versioni e titoli distinti.
+PF03/PF04/PF06 sono estensioni locali; inviti, account, adesione e card restano
+simulati. Condivisione ed esportazione richiedono azioni proprie. Fine rapporto,
+fine adesione e revoca card restano separate; i titoli autonomi si rivalutano.
+
+[Implementazione](docs/progetto/demo-funzionale-2026-10-14/IMPLEMENTAZIONE.md) e
+[copione](docs/progetto/demo-funzionale-2026-10-14/COPIONE.md) descrivono ciò che
+è effettivamente disponibile e i limiti. La prova umana BF16 è il prossimo passo;
+BF02 non è rigenerato. Nessuna misura di risparmio, costo o domanda è disponibile.
