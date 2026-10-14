@@ -409,3 +409,23 @@ Elaborati salvati al commit
 Aperta la [PR #10](https://github.com/av3rgfx/EECard/pull/10), non in bozza e
 mergeable, con base main. Il commit successivo registra soltanto questi
 riferimenti; nessun merge.
+
+## 14 ottobre 2026 — implementazione demo funzionale 0.4
+
+Verificata PR #10 integrata alle 10:51:34 UTC, aggiornato main `3b28e0a`,
+creato `feat/demo-funzionale-0.4`. Letti AGENTS, continuità, piano, backlog,
+specifiche, BF16 e documenti prodotto/design/sviluppo. Nessun merge.
+
+Implementati percorso continuo, policy e fixture di due agenzie, scenari,
+reset, persistenza versionata, registro locale, note e PF03/PF04/PF06.
+Kit BF02 invariato, nessuna osservazione umana aggiunta, BF16 aperto.
+Esiti e limiti nel [rapporto](demo-funzionale-2026-10-14/VERIFICHE.md).
+
+Sorgente demo `7adeb69ca74cc17105580c17eab90c05f02efb76` salvata sul branch
+remoto e sul repository sorgente Sites. [PR #11](https://github.com/av3rgfx/EECard/pull/11)
+aperta, non in bozza, base main `3b28e0a`, nessun merge. Sites v6 riuscita
+alle 11:17:47 UTC; byte di `/app/` identici alla build del commit.
+La chiusura documentale successiva non richiede deploy e non altera i sorgenti
+0.4 verificati. Report: 41 test passati, ulteriori 22 test demo dopo guard memoria,
+28+24 viste senza violazioni axe, 22 screenshot, build statica/offline,
+formattazione e audit npm. BF02 invariato, BF16 aperto.

@@ -1,0 +1,230 @@
+{
+  "support": "http://127.0.0.1:5173/#/prova",
+  "synthetic": true,
+  "checks": [
+    {
+      "width": 360,
+      "state": "pf01",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "pf02",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "pf05",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "estensioni",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "pf01",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "pf02",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "pf05",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "estensioni",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "incomplete",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "revoked",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "ended",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "other",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "reader",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "service",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "pf01",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "pf02",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "pf05",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "estensioni",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "pf01",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "pf02",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "pf05",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "estensioni",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "incomplete",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "revoked",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "ended",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "other",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "reader",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "service",
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    }
+  ]
+}

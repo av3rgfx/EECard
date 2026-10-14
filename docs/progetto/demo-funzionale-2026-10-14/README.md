@@ -164,3 +164,10 @@ Il prompt eseguibile per realizzare questa consegna è
 [PROMPT_DEMO_FUNZIONALE.md](../PROMPT_DEMO_FUNZIONALE.md). Il testo da
 incollare resta intenzionalmente entro 4.000 caratteri e rimanda a questo piano
 per i dettagli, evitando duplicazioni.
+
+## Implementazione consegnata
+
+Il piano è ora eseguito nel perimetro locale 0.4: [implementazione e limiti](IMPLEMENTAZIONE.md),
+[copione per la prova](COPIONE.md), [verifiche osservate](VERIFICHE.md).
+Gli obiettivi e i criteri sopra descrivono il piano originario; questi rapporti
+indicano ciò che è disponibile. BF02 invariato; BF16 aperto.

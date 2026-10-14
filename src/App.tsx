@@ -1,3 +1,4 @@
+import { DemoPage } from "./demo/DemoPage";
 import { Brand } from "./components/brand";
 import { useEffect, useState } from "react";
 import {
@@ -55,6 +56,7 @@ const navigation: { id: Route; label: string; icon: LucideIcon }[] = [
   { id: "card", label: "La tua tessera", icon: ContactRound },
 ];
 const titles: Record<Route, string> = {
+  prova: "Prova il percorso · 0.4",
   home: "Panoramica",
   immobili: "I tuoi immobili",
   documenti: "Documenti",
@@ -141,6 +143,7 @@ export default function App() {
   }
   const restricted =
     state.role === "tecnico" &&
+    route !== "prova" &&
     !["assistenza", "profilo", "accesso"].includes(route);
   const operational = [
     "immobili",
@@ -154,6 +157,7 @@ export default function App() {
     "card",
   ].includes(route);
   const pages: Record<Route, React.ReactNode> = {
+    prova: <DemoPage />,
     home: state.role === "agenzia" ? <AgencyPage /> : <HomePage />,
     immobili: <PropertiesPage />,
     documenti: <DocumentsPage />,
@@ -211,6 +215,13 @@ export default function App() {
           </a>
           <span className="sidebar-kicker">IL TUO SPAZIO CASA</span>
           <nav aria-label="Navigazione principale">
+            <a
+              href="#/prova"
+              aria-current={route === "prova" ? "page" : undefined}
+            >
+              <LayoutDashboard size={19} />
+              Prova il percorso · 0.4
+            </a>
             {state.role === "agenzia" && (
               <a
                 href="#/agenzia"
@@ -323,8 +334,8 @@ export default function App() {
                 <span className="tiny-dot" />
                 Prototipo interattivo · dati e operazioni simulati
               </span>
-              <button onClick={() => go("accesso")}>
-                Prova l’accesso <ArrowUpRight size={13} />
+              <button onClick={() => go("prova")}>
+                Prova il percorso <ArrowUpRight size={13} />
               </button>
             </div>
             {scenario !== "demo" && (
@@ -337,7 +348,7 @@ export default function App() {
                 </button>
               </div>
             )}
-            {!["accesso", "design-system"].includes(route) &&
+            {!["accesso", "design-system", "prova"].includes(route) &&
               state.role !== "tecnico" && (
                 <div className="context-row">
                   <label className="property-picker">

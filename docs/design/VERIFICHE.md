@@ -212,3 +212,10 @@ Limiti invariati: emulazione Chromium non sostituisce iPhone/Android fisici, Saf
 Non ripetuti build, suite E2E e audit axe: frontend invariato. Riesaminati screenshot già versionati; nuova osservazione Chromium della home con dati demo iniziali e font caricati, viewport 390×844 e 1440×1000. Rettangoli della tessera rispettivamente y 782–1022 e y 415–672 px. È una misura di layout a supporto della revisione, non una nuova validazione completa. Nessuna prova fisica. Dettagli e limiti in [REVISIONE_VISIVA.md](REVISIONE_VISIVA.md).
 
 Per i soli documenti: controllo dei collegamenti locali e `git diff --check`. Nessun nuovo deploy; online resta Sites v3.
+
+## Demo 0.4 — 14 ottobre 2026
+
+Il [rapporto dedicato](../progetto/demo-funzionale-2026-10-14/VERIFICHE.md)
+registra test del modello e del browser, build, formattazione, audit, screenshot
+e limiti. [Audit 0.4](verifiche-demo-0.4.json). Le prove automatiche non sono
+osservazioni BF16; hardware e screen reader rimangono da verificare.

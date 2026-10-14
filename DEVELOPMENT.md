@@ -209,3 +209,21 @@ email, pagamenti, lettori, wallet, firme o modelli AI. I controlli di permesso
 non possono dipendere soltanto dalla visibilità dei componenti: coprire casi
 ammessi e negati con test. BF02 resta invariato e BF16 non è chiuso dal solo
 completamento del frontend.
+
+## Demo 0.4 disponibile
+
+Tredicesima rotta `/#/prova`: `src/demo/model.ts` contiene fixture, policy,
+comandi, ricerca/versioni e schema; `src/demo/DemoPage.tsx` presenta i compiti;
+`src/demo/demo.css` adatta la composizione esistente.
+
+Chiave `eecard-functional-v4`, schema 4: validazione/reset espliciti; schema
+0.3 non importato e mantenuto per la demo precedente. Visite e condivisioni
+non sono persistite. Il registro usa date/sequenze sintetiche, non misure umane.
+Le regole sono applicate da letture e comandi del modello; non sono ACL server.
+
+`tests/demo-model.spec.ts` verifica permessi e transizioni senza UI;
+`tests/demo-ui.spec.ts` verifica percorso, reset, tastiera, persistenza e layout.
+Con server avviato, `node scripts/verify-demo.mjs` genera audit e screenshot 0.4.
+Per una build statica impostare `EECARD_DEMO_URL` al suo `app/#/prova`.
+[Dettagli e limiti](docs/progetto/demo-funzionale-2026-10-14/IMPLEMENTAZIONE.md),
+[verifiche osservate](docs/progetto/demo-funzionale-2026-10-14/VERIFICHE.md).

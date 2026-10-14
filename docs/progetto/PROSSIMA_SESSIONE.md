@@ -1,138 +1,80 @@
 # EECard — punto di ripresa
 
-Aggiornato il 14 ottobre 2026. Repository unica:
-https://github.com/av3rgfx/EECard.
+Aggiornato il 14 ottobre 2026. Repository unica: https://github.com/av3rgfx/EECard.
 
-## Obiettivo corrente
+## Consegna corrente
 
-L'utente ha scelto un metodo demo-prima: costruire una demo funzionante e il
-più completa possibile, farla provare e usare il riscontro concreto per capire
-cosa manca, cosa serve e cosa aggiungere. Le domande di approfondimento seguono
-la prova della demo, salvo quelle che bloccano materialmente l'implementazione.
+Implementata la demo funzionale locale 0.4 sul branch `feat/demo-funzionale-0.4`.
+Prima del lavoro verificata PR #10 integrata alle 10:51:34 UTC, merge
+`3b28e0a8f57a9dcae0bae987a65393a12bfeaef6`; main aggiornato e nuovo branch.
+Nessun merge effettuato dall'assistente. I riferimenti di salvataggio e
+pubblicazione effettivi vengono registrati nel rapporto di chiusura.
 
-Il risultato progettato è la demo 0.4 descritta nel
-[piano](demo-funzionale-2026-10-14/README.md). Il prompt eseguibile parte con
-`/goal` ed è in [PROMPT_DEMO_FUNZIONALE.md](PROMPT_DEMO_FUNZIONALE.md). I tre
-passaggi richiesti all'utente sono riepilogati in
-[AVVIO_PROSSIMA_SESSIONE.md](AVVIO_PROSSIMA_SESSIONE.md).
+Leggere [implementazione e limiti](demo-funzionale-2026-10-14/IMPLEMENTAZIONE.md),
+[verifiche](demo-funzionale-2026-10-14/VERIFICHE.md) e
+[copione](demo-funzionale-2026-10-14/COPIONE.md). Ingresso locale `/#/prova`:
+PF01 → PF02 → PF05, PF03/PF04/PF06, due agenzie sintetiche, scenari, reset,
+registro e note anonime locali. Il prototipo/design 0.3 è conservato.
 
-## Stato remoto e branch
+Prima di riprendere verificare la PR più recente sul remoto: se aperta,
+riutilizzarla per questa consegna; dopo il merge partire da main aggiornato e
+nuovo branch dedicato. Non riutilizzare i branch documentali integrati.
+Non integrare in main senza richiesta esplicita.
 
-La [PR #8](https://github.com/av3rgfx/EECard/pull/8) è stata integrata il
-14 ottobre 2026 alle 06:49:01 UTC, merge
-`adacdab4fa41d85de670e4e5b952fe1b3ea1d24d`. Il piano demo parte da quel main
-aggiornato sul branch `docs/piano-demo-funzionale-2026-10-14`. Nessun merge è
-stato eseguito dall'assistente.
+## Come provare
 
-La [PR #9](https://github.com/av3rgfx/EECard/pull/9) del piano è integrata il
-14 ottobre 2026 alle 10:33:11 UTC, merge
-`46c73150bc5b21ec87cfeead0c80a6b4d0a2856d`. La riduzione del prompt entro
-4.000 caratteri parte da quel main aggiornato sul nuovo branch
-`docs/prompt-goal-4000-2026-10-14`. Nessun merge eseguito dall'assistente.
+`npm ci`, `npm run dev`, aprire `http://localhost:5173/#/prova`. Il codice
+sintetico al banco è `DEMO-ALFA-01`. Preparare prima la pratica o scegliere un
+caso predisposto; confermare persona, scopo e contesto prima della consultazione.
+Visite e vista condivisa non sono ripristinate alla ricarica.
+«Ripristina scenario» azzera lo stato 0.4, incluse note e versioni aggiunte;
+schema 0.3 rilevato e conservato separatamente senza importazione.
 
-La consegna corrente è nella
-[PR #10](https://github.com/av3rgfx/EECard/pull/10), aperta e non in bozza, con
-base `main`. Il prompt compatto e gli aggiornamenti di continuità sono al commit
-`e586f3bddabaab4ee9c989d3b068d1351ffcc523`; il commit successivo registra
-soltanto i riferimenti remoti. Nessun merge.
+## Vincoli e limiti
 
-Prima di riprendere verificare la consegna più recente sul remoto. Se la PR è
-aperta e il lavoro riguarda il medesimo piano, riutilizzarla; dopo il merge
-aggiornare main e creare un nuovo branch dedicato all'implementazione. Non
-riutilizzare i branch delle PR #7/#8 integrate e non effettuare merge senza una
-richiesta esplicita.
+C–Legame, nome provvisorio e direzione 0.3 conservati. Policy locali per agenzia,
+attore, rapporto, immobile, contratto, intestazione, delega, incarico, scopo e
+periodo. Card e ruolo globale non bastano. Proprietario senza bollette private
+del conduttore; tecnico solo incarico. Fine rapporto, adesione e revoca card
+separate; titoli autonomi valutati indipendentemente.
 
-## Cosa è stato studiato e deciso
+Documento caricato, pagamento dichiarato, incasso verificato e quietanza
+restano distinti; residuo parziale conservato nel percorso 0.3 e nell'esempio
+100/40/60. Inviti, adesione, wallet, firma, schermo cliente e suggerimenti sono
+simulazioni/fixture. Nessun servizio o archivio reale, telemetria, pagamento,
+AI, dato personale o merge autorizzato da questa demo.
 
-Il frontend 0.3 è una base visiva ampia e funzionante: dodici rotte, quattro
-ruoli dimostrativi, localStorage, scenari limite, documenti, affitto, utenze,
-assistenza, card e invito. Mancano però un unico percorso osservabile e alcuni
-oggetti necessari a testare il beneficio principale:
-
-- preparazione operatore di una pratica con parti, fonti, conflitti e mancanti;
-- sessione al banco con persona, scopo, contesto, dinieghi e chiusura;
-- ricerca storica con date incerte, provenienza, versioni e lavori;
-- permessi derivati da relazioni e periodi, con due agenzie isolate;
-- modalità prova con compiti, scenari deterministici, reset e note locali.
-
-La demo 0.4 deve quindi unire PF01 attivazione → PF02 ritorno al banco → PF05
-recupero storico. PF03 casa propria/locata, PF04 bolletta e PF06 bozza
-contrattuale diventano estensioni sintetiche esplorabili. Wallet, contactless,
-secondo schermo, firma e assistenza AI restano rappresentazioni locali
-esplicitamente simulate.
-
-“Il più completa possibile” descrive la completezza del percorso dimostrativo:
-stati riusciti, dinieghi, errori, retry e confini. Non autorizza un backend o
-servizi reali e non trasforma la demo in architettura di produzione.
-
-## Vincoli conservati
-
-- EECard resta provvisorio; C–Legame è il simbolo scelto, non il nome.
-- Direzione 0.3 invariata: Materia e luce per tessera/materiali, composizione
-  Editoriale, bruno/albicocca/avorio. Nessun nuovo redesign.
-- La tessera domina la home personale; agenzia e tecnico mantengono coda e
-  incarichi senza tessera personale.
-- I permessi dipendono da agenzia, rapporto, immobile, contratto,
-  intestazione, delega, incarico, scopo e tempo. Il proprietario non vede le
-  bollette personali dell'inquilino.
-- Documento caricato, pagamento dichiarato, incasso verificato e quietanza
-  sono eventi distinti; il parziale conserva il residuo.
-- Fine rapporto, fine adesione e revoca card sono eventi diversi. Una card
-  seleziona una persona, ma non concede accesso da sola.
-- Prezzi, primo pagante, inclusioni, territorio, copertura, risorse, tempi,
-  conservazione, responsabilità, schermi, firma, Jarvis e hardware restano
-  aperti. I 600 euro annui riguardano clienti già gestiti, non EECard.
-- Nessun dato personale, audio, trascrizione integrale o documento reale nella
-  repository pubblica.
-
-## BF02 e BF16
-
-Il kit BF02 è pronto e non va rifatto. La ripresa precedente ha trovato 48 casi
-pianificati e zero osservati nel modello disponibile; questo non esclude che
-possano esistere raccolte esterne. Non inventare misure, tempi o costi.
-
-BF16 resta aperto. Con la nuova sequenza, la prova umana avviene dopo la demo
-0.4 e registra la versione esatta del supporto usato. Il kit può essere
-riutilizzato e adattato soltanto per indicare il supporto osservato. La prova di
-comprensione della demo non dimostra da sola risparmio, disponibilità a pagare,
-sicurezza server o fattibilità hardware.
-
-## Ordine di lettura
-
-1. `AGENTS.md` e questo file.
-2. [Piano demo 0.4](demo-funzionale-2026-10-14/README.md) e
-   [prompt `/goal`](PROMPT_DEMO_FUNZIONALE.md).
-3. `PRODUCT.md`, `DESIGN.md`, `DEVELOPMENT.md`, [BACKLOG.md](BACKLOG.md) e
-   [registro decisioni](../design/DECISIONI.md).
-4. Tutti gli elaborati in `specifiche-2026-10-08/`.
-5. README, protocollo ed esito del kit `prova-agenzia-2026-10-08/` e tutti gli
-   approfondimenti in `validazione-bf16-2026-10-09/`.
-6. Fonti EA01–EA30 e studio v0.1 quando una scelta richiede la provenienza.
+Il percorso continuo è predisposto per Alfa; Beta ha un proprio documento
+leggibile e non apre Alfa. La pratica ha due parti e non riproduce tutti i casi
+BF02. Il browser contiene le fixture: nessuna sicurezza server dimostrata.
+Hardware, screen reader, condizioni commerciali, conservazione e responsabilità
+restano aperti. Il template è solo un facsimile deterministico.
 
 ## Prossima attività concreta
 
-Integrare prima la consegna corrente del prompt compatto, aprire una nuova sessione e incollare l'intero
-[PROMPT_DEMO_FUNZIONALE.md](PROMPT_DEMO_FUNZIONALE.md), inclusa la riga
-iniziale `/goal`. La nuova sessione aggiorna main e crea un branch distinto per
-implementare la demo 0.4. Procedere prima con modello e fixture di due agenzie, quindi percorso
-riuscito PF01 → PF02 → PF05, dinieghi/errori, estensioni PF03/PF04/PF06 e
-modalità prova. Eseguire i controlli realmente pertinenti, aggiornare artefatti e
-continuità, pubblicare sul sito Sites esistente solo nel lavoro di
-implementazione e creare una PR senza merge.
+Far provare la demo con dati sintetici secondo il copione. Usare il kit BF02
+esistente senza rigenerarlo, annotare supporto/commit e adattamenti, raccogliere
+compiti, blocchi, aiuti e riscontri anonimi reali fuori repository. La modalità
+note non sostituisce il registro comparativo. BF16 rimane aperto finché non
+esistono osservazioni umane; non dedurre risparmio, prezzi o lancio dai test.
+Successivamente ordinare correzioni/priorità N11 e riesaminare BF01/BF03/BF17.
 
-Dopo la demo, farla provare con dati sintetici, raccogliere osservazioni anonime
-e aggiornare le priorità. Conservare BF16 aperto fino a quando esistono dati
-umani completi e verificabili.
+## Verifiche osservate
 
-## Verifiche di questa consegna
+41 test passati, build e formattazione riuscite, audit npm senza vulnerabilità,
+28 viste demo e 24 scansioni 0.3 senza violazioni axe, screenshot alle larghezze
+360/390/1280/1440. [Rapporto](demo-funzionale-2026-10-14/VERIFICHE.md).
+Nessuna misura umana o collaudo hardware. Anteprima autonoma e stesso Sites
+sono aggiornati nella consegna di implementazione: usare il registro sotto e
+[ANTEPRIME_WEB](../design/ANTEPRIME_WEB.md) per lo stato effettivamente online.
 
-La consegna corrente modifica soltanto documentazione: piano, prompt e
-continuità. Non implementa il frontend 0.4, non rigenera BF02, non esegue prove
-umane e non pubblica una nuova anteprima. Registrare qui commit, PR e controlli
-documentali effettivi dopo la loro esecuzione.
+## Riferimenti remoti verificati di chiusura
 
-Il prompt originario misurava 8.267 caratteri; la versione compatta misura 3.719,
-con 281 caratteri di margine. Verificati conteggio Unicode complessivo, prima
-riga `/goal`, collegamenti locali e `git diff --check`. Nessun test UI/build,
-audit, screenshot o deploy è richiesto per questa sola riduzione documentale:
-frontend e Sites invariati.
+[PR #11](https://github.com/av3rgfx/EECard/pull/11), aperta e non in bozza,
+branch `feat/demo-funzionale-0.4`, base main `3b28e0a`.
+Sorgente demo pubblicata: `7adeb69ca74cc17105580c17eab90c05f02efb76`;
+Sites v6 `succeeded` alle 11:17:47 UTC.
+[Anteprima](https://eecard-design-preview.uepacio.chatgpt.site/app/#/prova),
+HTML live confrontato identico alla build locale.
+Il commit documentale successivo registra soltanto questi riferimenti: non
+cambia gli asset online. Nessun merge; HEAD corrente consultabile nella PR.
