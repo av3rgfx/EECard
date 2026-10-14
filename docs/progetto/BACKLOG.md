@@ -212,3 +212,8 @@ N10/BF16 resta aperto: usare il kit BF02 invariato con supporto/versione demo
 annotati, raccogliendo osservazioni anonime reali. N11 segue quei riscontri.
 N02 resta aperto per hardware/screen reader. N05/BF03 e condizioni BF17 non
 sono completati da policy nel browser. Nessun servizio operativo o merge.
+
+N07 aggiornato per questa consegna: screenshot, HTML autonomo e stesso Sites v6
+dal commit `7adeb69`; [PR #11](https://github.com/av3rgfx/EECard/pull/11)
+aperta senza merge. N09 non chiude BF04–BF15 operativi: policy nel browser,
+fixture e facsimili restano separati da servizi e dati reali.

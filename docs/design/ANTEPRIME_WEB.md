@@ -109,3 +109,31 @@ Sites versione **5**, `succeeded` il 6 ottobre 2026 alle 14:18:39 UTC. Stesso si
 - Archivio statico SHA256: `4fee73b98f1da6dc2b400578db7ca9f1e0917208230302987c67e929f4a0a2ee`, build rigenerata dal commit esatto senza differenze nel working tree.
 
 [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/) · [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/) · [Report mirato](verifiche-home-compatta.json). La chiusura documentale successiva non cambia gli asset pubblicati e non richiede un nuovo deploy. I controlli browser sono stati eseguiti sulla corrispondente build locale.
+
+## Demo funzionale 0.4 — pubblicazione verificata
+
+Sites **v6**, stato `succeeded` restituito il 14 ottobre 2026 alle
+11:17:47 UTC. Conservati project ID, indirizzo e accesso pubblico; nessun
+nuovo sito, invito o cambiamento di pubblico.
+
+- [Prova il percorso](https://eecard-design-preview.uepacio.chatgpt.site/app/#/prova)
+  · [Desktop](https://eecard-design-preview.uepacio.chatgpt.site/desktop/)
+  · [Mobile](https://eecard-design-preview.uepacio.chatgpt.site/mobile/).
+- Sorgente effettivamente online: `7adeb69ca74cc17105580c17eab90c05f02efb76`,
+  salvata su GitHub e repository sorgente Sites prima del salvataggio versione.
+- Versione: `appgprj_6ac4c220882c8191be87c1b262306614~appgver_e355fe4380008191ba353807cb7fce5f`.
+- Deployment: `appgdep_6acf64ca7cb881919fbb2b119e520fd6`.
+- Archivio locale gzip SHA256:
+  `782b2e1e410fb4148e10865c3512e1006426481a51ae925d1abccdcd44986c49`;
+  archivio normalizzato conservato da Sites:
+  `8169277aadb66769668788308efb70876f6609ee9be4181be3128225db9d4b52`.
+- Build rigenerata dal commit esatto, albero invariato. Recuperato `/app/` via
+  HTTPS dopo il deploy: 1.360.444 byte, identico alla build locale, SHA256
+  `7d50fc72a7402924d2fb029125cea8e75ed1330af45d63dfdf04f4f7158655ee`.
+
+[Verifiche e limiti](../progetto/demo-funzionale-2026-10-14/VERIFICHE.md).
+Il percorso completo è stato verificato sulle build statica e autonoma locali;
+il riscontro live sopra è un confronto dei byte serviti, non un ulteriore
+collaudo browser/hardware. [PR #11](https://github.com/av3rgfx/EECard/pull/11)
+aperta senza merge. Il commit documentale di chiusura successivo non modifica
+gli asset pubblicati e non richiede un nuovo deploy.

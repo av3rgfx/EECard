@@ -93,3 +93,26 @@ le regole centralizzate non rendono localStorage un archivio privato.
 Nessun test di tempi/costi degli operatori, nessuna prova comparativa umana,
 nessuna firma, pagamento, servizio AI o account reale. BF16 rimane aperto.
 [Limiti funzionali](IMPLEMENTAZIONE.md), [copione / riuso BF02](COPIONE.md).
+
+## Chiusura remota e anteprime
+
+Sorgente `7adeb69ca74cc17105580c17eab90c05f02efb76` pubblicata sul branch
+GitHub `feat/demo-funzionale-0.4`, poi sul repository sorgente del Sites esistente.
+Rigenerata la build da questo commit con `git diff --exit-code` pulito prima
+del confezionamento. Sites v6, deployment
+`appgdep_6acf64ca7cb881919fbb2b119e520fd6`, stato `succeeded` il
+14 ottobre 2026 alle 11:17:47 UTC.
+
+[Anteprima 0.4](https://eecard-design-preview.uepacio.chatgpt.site/app/#/prova).
+Il successivo recupero HTTPS di `/app/` coincide byte per byte con la build
+locale (1.360.444 byte, SHA256
+`7d50fc72a7402924d2fb029125cea8e75ed1330af45d63dfdf04f4f7158655ee`).
+Build statica/HTML autonomo già collaudati localmente; non viene dichiarata
+una nuova prova browser live o hardware. Identità e pubblico del sito conservati.
+[Dettagli pubblicazione](../../design/ANTEPRIME_WEB.md).
+
+[PR #11](https://github.com/av3rgfx/EECard/pull/11), aperta e non in bozza,
+base main `3b28e0a`, nessun merge. Il commit successivo registra soltanto
+PR/pubblicazione e continuità: gli asset online restano quelli di `7adeb69`.
+L'HEAD corrente del branch è verificabile nella PR, separatamente dalla sorgente
+online. Nessuna misura umana, costo o tempo operativo registrato. BF16 aperto.

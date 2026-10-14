@@ -67,3 +67,14 @@ Successivamente ordinare correzioni/priorità N11 e riesaminare BF01/BF03/BF17.
 Nessuna misura umana o collaudo hardware. Anteprima autonoma e stesso Sites
 sono aggiornati nella consegna di implementazione: usare il registro sotto e
 [ANTEPRIME_WEB](../design/ANTEPRIME_WEB.md) per lo stato effettivamente online.
+
+## Riferimenti remoti verificati di chiusura
+
+[PR #11](https://github.com/av3rgfx/EECard/pull/11), aperta e non in bozza,
+branch `feat/demo-funzionale-0.4`, base main `3b28e0a`.
+Sorgente demo pubblicata: `7adeb69ca74cc17105580c17eab90c05f02efb76`;
+Sites v6 `succeeded` alle 11:17:47 UTC.
+[Anteprima](https://eecard-design-preview.uepacio.chatgpt.site/app/#/prova),
+HTML live confrontato identico alla build locale.
+Il commit documentale successivo registra soltanto questi riferimenti: non
+cambia gli asset online. Nessun merge; HEAD corrente consultabile nella PR.
