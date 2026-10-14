@@ -380,7 +380,7 @@ Elaborati salvati al commit
 `68d0519c2983589a8dfb96df7ebed50e065de0ca` e pubblicati sul branch remoto.
 Aperta la [PR #9](https://github.com/av3rgfx/EECard/pull/9), non in bozza, base
 main, titolo “Progetta la demo funzionale 0.4 e prepara il prompt /goal”.
-Controlli: diff pulito, prima riga `/goal` e 132 collegamenti locali validi.
+Controlli: diff pulito, prima riga `/goal` e 137 collegamenti locali validi.
 Nessun test UI/build o deploy perché la modifica è esclusivamente documentale.
 Il commit successivo registra soltanto questi riferimenti; nessun merge.
 

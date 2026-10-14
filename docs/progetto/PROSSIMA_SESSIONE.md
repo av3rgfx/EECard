@@ -126,5 +126,5 @@ umane e non pubblica una nuova anteprima. Registrare qui commit, PR e controlli
 documentali effettivi dopo la loro esecuzione.
 
 Controlli eseguiti: `git diff --check`, prima riga del prompt uguale a `/goal`
-e 132 collegamenti locali risolti. Nessun test UI/build, audit, screenshot o
+e 137 collegamenti locali risolti. Nessun test UI/build, audit, screenshot o
 deploy: il frontend e Sites sono invariati.
