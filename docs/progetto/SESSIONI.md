@@ -375,3 +375,11 @@ Aggiornati AGENTS, README, prodotto, sviluppo, backlog, decisioni, punto di
 ripresa e prompt breve della prossima sessione. Questa consegna è solo
 documentale: nessuna modifica al frontend, rigenerazione del kit, prova umana,
 attivazione di servizi o pubblicazione Sites.
+
+Elaborati salvati al commit
+`68d0519c2983589a8dfb96df7ebed50e065de0ca` e pubblicati sul branch remoto.
+Aperta la [PR #9](https://github.com/av3rgfx/EECard/pull/9), non in bozza, base
+main, titolo “Progetta la demo funzionale 0.4 e prepara il prompt /goal”.
+Controlli: diff pulito, prima riga `/goal` e 132 collegamenti locali validi.
+Nessun test UI/build o deploy perché la modifica è esclusivamente documentale.
+Il commit successivo registra soltanto questi riferimenti; nessun merge.

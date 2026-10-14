@@ -55,6 +55,9 @@ implementazione parte con `/goal` in
 `docs/progetto/PROMPT_DEMO_FUNZIONALE.md`. BF02 non va rifatto e BF16 resta
 aperto finché non esistono osservazioni umane. Questa decisione non approva
 servizi reali, prezzi, lancio, hardware o architettura di produzione.
+La consegna del piano è nella PR #9, branch
+`docs/piano-demo-funzionale-2026-10-14`; verificarne sempre lo stato remoto
+prima di riutilizzarla o iniziare l'implementazione.
 
 Non pubblicare l'audio, la trascrizione integrale o i dati personali degli esempi
 nella repository pubblica. I documenti del nuovo studio usano sintesi anonime.

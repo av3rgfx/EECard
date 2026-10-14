@@ -22,6 +22,12 @@ La [PR #8](https://github.com/av3rgfx/EECard/pull/8) è stata integrata il
 aggiornato sul branch `docs/piano-demo-funzionale-2026-10-14`. Nessun merge è
 stato eseguito dall'assistente.
 
+La consegna corrente è nella
+[PR #9](https://github.com/av3rgfx/EECard/pull/9), aperta e non in bozza, con
+base `main` e lo stesso branch. Il commit degli elaborati è
+`68d0519c2983589a8dfb96df7ebed50e065de0ca`; il commit successivo registra i
+riferimenti remoti. Nessun merge.
+
 Prima di riprendere verificare la consegna più recente sul remoto. Se la PR è
 aperta e il lavoro riguarda il medesimo piano, riutilizzarla; dopo il merge
 aggiornare main e creare un nuovo branch dedicato all'implementazione. Non
@@ -114,3 +120,7 @@ La consegna corrente modifica soltanto documentazione: piano, prompt e
 continuità. Non implementa il frontend 0.4, non rigenera BF02, non esegue prove
 umane e non pubblica una nuova anteprima. Registrare qui commit, PR e controlli
 documentali effettivi dopo la loro esecuzione.
+
+Controlli eseguiti: `git diff --check`, prima riga del prompt uguale a `/goal`
+e 132 collegamenti locali risolti. Nessun test UI/build, audit, screenshot o
+deploy: il frontend e Sites sono invariati.
