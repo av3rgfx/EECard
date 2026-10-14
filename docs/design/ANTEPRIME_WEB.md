@@ -137,3 +137,29 @@ il riscontro live sopra è un confronto dei byte serviti, non un ulteriore
 collaudo browser/hardware. [PR #11](https://github.com/av3rgfx/EECard/pull/11)
 aperta senza merge. Il commit documentale di chiusura successivo non modifica
 gli asset pubblicati e non richiede un nuovo deploy.
+
+
+## Esperienza applicativa 0.5 — Sites v8
+
+Pubblicazione `succeeded` il 14 ottobre 2026 alle 20:01:30 UTC, stesso sito e
+accesso pubblico. La root apre direttamente la piattaforma; `/app/#/prova`
+conserva i link già condivisi. Il selettore è in `/anteprime/`; desktop/mobile
+e guida del marchio rimangono disponibili.
+
+- [Piattaforma](https://eecard-design-preview.uepacio.chatgpt.site/).
+- Sorgente online: `448f3721760ec3289920f092fa919240b50be2d4`, presente su
+  GitHub e sul repository sorgente Sites prima del salvataggio versione.
+- Versione: `appgprj_6ac4c220882c8191be87c1b262306614~appgver_222e1e7ea5188191baa2a0dc8792f618`.
+- Deployment: `appgdep_6acfdf8827ac819199a43403ab6816b8`.
+- Archivio locale gzip SHA256: `253c6f9ff7621581cb27f3abd3dade867b7ea519ea3a0a9518d6cfd23cf58e91`.
+  Archivio normalizzato Sites: `acb51dc2c73f8036fe445239c55dbfdaf3740c2cf7d4b94f9d0e1bcb4e268999`.
+- Recupero HTTPS dopo il deploy: root e `/app/` identici byte per byte alla build.
+  Root: 1,482,219 byte, SHA256 `fbf2bba42e6fc2f597ad4e297766785328d6e428fdc42f804af65194904c7b1d`.
+  App: 1,482,220 byte, SHA256 `1335db8c742fb6b512a63ce671131dbd60f26ad0e6c6e47b21baa7f5fae68b1a`.
+
+La v8 comprende la rifinitura dei riepiloghi e delle intestazioni per il contesto
+Beta; sostituisce la v7 iniziale della stessa revisione. I controlli browser sono
+sulle build locali; il controllo live sopra è un confronto dei file serviti.
+[Rapporto](../progetto/experience-2026-10-14/VERIFICHE.md) e
+[PR #12](https://github.com/av3rgfx/EECard/pull/12), aperta senza merge.
+Il commit documentale di chiusura non modifica gli asset online.

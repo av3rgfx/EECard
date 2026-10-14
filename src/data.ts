@@ -1,5 +1,7 @@
 export type Role = "proprietario" | "inquilino" | "agenzia" | "tecnico";
 export type Route =
+  | "spazio"
+  | "laboratorio"
   | "prova"
   | "home"
   | "immobili"

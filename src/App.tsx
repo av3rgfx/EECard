@@ -1,3 +1,4 @@
+import { Experience } from "./workspace/Experience";
 import { DemoPage } from "./demo/DemoPage";
 import { Brand } from "./components/brand";
 import { useEffect, useState } from "react";
@@ -56,6 +57,8 @@ const navigation: { id: Route; label: string; icon: LucideIcon }[] = [
   { id: "card", label: "La tua tessera", icon: ContactRound },
 ];
 const titles: Record<Route, string> = {
+  spazio: "Il tuo spazio casa",
+  laboratorio: "Laboratorio tecnico 0.4",
   prova: "Prova il percorso · 0.4",
   home: "Panoramica",
   immobili: "I tuoi immobili",
@@ -71,7 +74,8 @@ const titles: Record<Route, string> = {
   "design-system": "Design system",
 };
 function getRoute(): Route {
-  const key = location.hash.replace("#/", "") || "home";
+  const key = location.hash.replace("#/", "") || "spazio";
+  if (key.startsWith("spazio/")) return "spazio";
   return key in titles ? (key as Route) : "home";
 }
 export default function App() {
@@ -143,7 +147,7 @@ export default function App() {
   }
   const restricted =
     state.role === "tecnico" &&
-    route !== "prova" &&
+    route !== "laboratorio" &&
     !["assistenza", "profilo", "accesso"].includes(route);
   const operational = [
     "immobili",
@@ -157,7 +161,9 @@ export default function App() {
     "card",
   ].includes(route);
   const pages: Record<Route, React.ReactNode> = {
-    prova: <DemoPage />,
+    spazio: <Experience />,
+    laboratorio: <DemoPage />,
+    prova: <Experience />,
     home: state.role === "agenzia" ? <AgencyPage /> : <HomePage />,
     immobili: <PropertiesPage />,
     documenti: <DocumentsPage />,
@@ -177,6 +183,7 @@ export default function App() {
       : navigation.filter(
           (n) => state.role !== "agenzia" || !["home", "card"].includes(n.id),
         );
+  if (route === "spazio" || route === "prova") return <Experience />;
   return (
     <Context.Provider
       value={{
@@ -215,10 +222,7 @@ export default function App() {
           </a>
           <span className="sidebar-kicker">IL TUO SPAZIO CASA</span>
           <nav aria-label="Navigazione principale">
-            <a
-              href="#/prova"
-              aria-current={route === "prova" ? "page" : undefined}
-            >
+            <a href="#/prova" aria-current={undefined}>
               <LayoutDashboard size={19} />
               Prova il percorso · 0.4
             </a>

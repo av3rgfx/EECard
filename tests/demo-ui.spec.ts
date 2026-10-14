@@ -1,7 +1,7 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 async function start(page: Page) {
-  await page.goto("/#/prova");
+  await page.goto("/#/laboratorio");
 }
 async function activate(page: Page) {
   for (const name of [

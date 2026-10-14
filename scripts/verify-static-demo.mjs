@@ -4,8 +4,8 @@ import { pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 const browser = await chromium.launch();
 const supports = [
-  "http://127.0.0.1:5175/app/#/prova",
-  `${pathToFileURL(resolve("docs/design/anteprima.html"))}#/prova`,
+  "http://127.0.0.1:5175/app/#/laboratorio",
+  `${pathToFileURL(resolve("docs/design/anteprima.html"))}#/laboratorio`,
 ];
 const results = [];
 for (const support of supports) {

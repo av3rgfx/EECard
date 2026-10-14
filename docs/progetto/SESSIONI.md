@@ -429,3 +429,39 @@ La chiusura documentale successiva non richiede deploy e non altera i sorgenti
 0.4 verificati. Report: 41 test passati, ulteriori 22 test demo dopo guard memoria,
 28+24 viste senza violazioni axe, 22 screenshot, build statica/offline,
 formattazione e audit npm. BF02 invariato, BF16 aperto.
+
+## 14 ottobre 2026 — revisione dell'esperienza 0.5
+
+L'utente ha segnalato scarsa chiarezza e qualità percepita della demo. PR #11
+verificata integrata alle 18:40:00 UTC; main aggiornato `0481bb1`, nuovo branch
+`design/experience-0.5`. Nessun merge eseguito dall'assistente.
+
+Nuova esperienza operativa e personale, quattro passi di pratica, banco,
+archivio, utenze, affitto, richieste e bozze. Strumenti tecnici in un pannello,
+root pubblica diretta al prodotto, vecchi link compatibili. Conservati C–Legame,
+0.3, policy, titoli autonomi e quattro significati economici.
+[Rapporto](experience-2026-10-14/VERIFICHE.md); BF02 invariato e BF16 aperto.
+
+Consegna nella [PR #12](https://github.com/av3rgfx/EECard/pull/12), aperta e non
+in bozza senza merge. Sorgente iniziale `8f1f39f`, rifinitura contesti/indicazioni
+di avanzamento `448f3721760ec3289920f092fa919240b50be2d4`. Sites v8 riuscita
+alle 20:01:30 UTC; root e `/app/` confrontati identici alla build di questa
+sorgente. Il commit successivo è la sola registrazione della chiusura.
+61 test passati, 60 viste audit senza anomalie, 52 screenshot; HTML autonomo,
+root statica e vecchio ingresso provati. Build/formattazione/audit npm riusciti.
+Nessuna misura umana comparativa aggiunta, BF02 invariato e BF16 aperto.
+
+## 14 ottobre 2026 — chiusura e preparazione analisi audio
+
+Richiesta dell'utente: nella prossima sessione trascrivere due audio e analizzare
+un appunto del confronto col collega, aggiornare lo studio progettuale e creare
+un piano di sviluppo per nuove funzioni/scelte. Preparati prompt `/goal`, piano
+di lavoro, istruzioni di avvio e continuità. Fonti non ancora allegate, nessuna
+trascrizione o decisione ricavata ora. Materiali integrali fuori repository;
+nel progetto solo sintesi anonime e riferimenti verificabili.
+
+PR #12 verificata aperta, riutilizzata per la chiusura della stessa consegna
+secondo AGENTS.md, senza merge. Modifiche esclusivamente documentali: nessun
+nuovo deploy o test applicativo; gli esiti 0.5 precedenti rimangono storici.
+Controlli della chiusura: prompt inferiore a 4.000 caratteri, collegamenti locali
+dei documenti modificati e diff senza errori di whitespace.

@@ -144,3 +144,16 @@ fine adesione e revoca card restano separate; i titoli autonomi si rivalutano.
 [copione](docs/progetto/demo-funzionale-2026-10-14/COPIONE.md) descrivono ciò che
 è effettivamente disponibile e i limiti. La prova umana BF16 è il prossimo passo;
 BF02 non è rigenerato. Nessuna misura di risparmio, costo o domanda è disponibile.
+
+## Revisione dell'esperienza 0.5
+
+Il feedback dell'utente rileva che la pagina 0.4 era grezza e poco comprensibile
+al primo impatto. La 0.5 porta il lavoro in primo piano: panoramica agenzia,
+pratica in quattro passi, banco, ricerca documenti e spazio personale con
+tessera dominante. Affitto, utenze, richieste e bozze sono navigabili nello
+stesso contesto locale. I controlli di prova sono in un pannello dedicato.
+
+[Esperienza e scelte UX](docs/progetto/experience-2026-10-14/README.md),
+[verifiche e limiti](docs/progetto/experience-2026-10-14/VERIFICHE.md).
+Nessun servizio reale: è una demo applicativa, non l'approvazione del prodotto
+operativo. BF16 rimane aperto e BF02 non è rigenerato.

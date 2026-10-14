@@ -1,0 +1,26 @@
+[
+  {
+    "support": "http://127.0.0.1:5175/",
+    "version": "2",
+    "closed": true,
+    "personal": true,
+    "errors": [],
+    "externalRequests": []
+  },
+  {
+    "support": "http://127.0.0.1:5175/app/#/prova",
+    "version": "2",
+    "closed": true,
+    "personal": true,
+    "errors": [],
+    "externalRequests": []
+  },
+  {
+    "support": "file:///workspace/EECard/docs/design/anteprima.html#/spazio/overview",
+    "version": "2",
+    "closed": true,
+    "personal": true,
+    "errors": [],
+    "externalRequests": []
+  }
+]

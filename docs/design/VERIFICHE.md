@@ -219,3 +219,11 @@ Il [rapporto dedicato](../progetto/demo-funzionale-2026-10-14/VERIFICHE.md)
 registra test del modello e del browser, build, formattazione, audit, screenshot
 e limiti. [Audit 0.4](verifiche-demo-0.4.json). Le prove automatiche non sono
 osservazioni BF16; hardware e screen reader rimangono da verificare.
+
+## Esperienza 0.5 — 14 ottobre 2026
+
+La nuova shell e i percorsi sono verificati nel [rapporto 0.5](../progetto/experience-2026-10-14/VERIFICHE.md).
+[Audit dedicato](verifiche-experience-0.5.json) e
+[screenshot](screenshots/experience-0.5). La navigazione mobile e i pannelli
+sono stati corretti per sovrapposizioni/focus; la verifica resta in emulazione.
+I rapporti 0.3/0.4 sopra rimangono storici e non certificano il nuovo frontend.

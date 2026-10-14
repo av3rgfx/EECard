@@ -1,0 +1,546 @@
+{
+  "version": "0.5",
+  "support": "http://127.0.0.1:5173",
+  "checks": [
+    {
+      "width": 360,
+      "state": "agenzia",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "pratica",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "fonti",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "attivazione",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "banco",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "documenti",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "documento",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "revisioni",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "personale",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "utenze",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "richiesta",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "richiesta-salvata",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 360,
+      "state": "bozza",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "agenzia",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "pratica",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "fonti",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "attivazione",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "banco",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "documenti",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "documento",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "revisioni",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "personale",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "utenze",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "richiesta",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "richiesta-salvata",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "bozza",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "panoramica-beta",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "agenzia-beta",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "card-revocata",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "state": "servizio-indisponibile",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "agenzia",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "pratica",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "fonti",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "attivazione",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "banco",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "documenti",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "documento",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "revisioni",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "personale",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "utenze",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "richiesta",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "richiesta-salvata",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1280,
+      "state": "bozza",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "agenzia",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "pratica",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "fonti",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "attivazione",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "banco",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "documenti",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "documento",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "revisioni",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "personale",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "utenze",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "richiesta",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "richiesta-salvata",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "bozza",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "panoramica-beta",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "agenzia-beta",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "card-revocata",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "state": "servizio-indisponibile",
+      "overflow": false,
+      "brokenImages": [],
+      "violations": [],
+      "errors": [],
+      "externalRequests": []
+    }
+  ]
+}

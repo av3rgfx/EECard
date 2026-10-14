@@ -217,3 +217,32 @@ N07 aggiornato per questa consegna: screenshot, HTML autonomo e stesso Sites v6
 dal commit `7adeb69`; [PR #11](https://github.com/av3rgfx/EECard/pull/11)
 aperta senza merge. N09 non chiude BF04–BF15 operativi: policy nel browser,
 fixture e facsimili restano separati da servizi e dati reali.
+
+## Revisione 0.5 dopo il feedback dell'utente
+
+N12: realizzata la revisione dell'esperienza — home orientata al lavoro, pratica
+guidata, banco, archivio e spazio personale. Richieste, affitto, utenze e bozze
+restano operazioni locali con policy centralizzate.
+[Scelte](experience-2026-10-14/README.md) e [verifiche](experience-2026-10-14/VERIFICHE.md).
+
+N10/BF16 resta aperto: verificare con persone reali se scopo e prossima azione
+sono comprensibili senza leggere un copione, poi provare percorso completo e
+casi negati usando BF02 invariato. N02 hardware/screen reader e questioni
+commerciali/operative rimangono aperti. Il giudizio dell'utente sulla 0.4 è
+feedback qualitativo, non una misura comparativa.
+
+N12 consegnato nella [PR #12](https://github.com/av3rgfx/EECard/pull/12),
+Sites v8 da `448f372`. Verificati 61 test e 60 viste; nessun merge. N10/BF16 e
+N02 restano aperti. Nessuna approvazione di servizi operativi o sicurezza server.
+
+## Ripresa richiesta — due audio e appunto (14 ottobre 2026)
+
+- N13 — Da fare: ricevere e verificare due audio e appunto; trascrizione integrale
+  privata con timestamp e controllo copertura. Fonti non ancora disponibili.
+- N14 — Da fare, dipende da N13: analisi anonima tracciabile, confronto col progetto
+  e codice 0.5, studio UX/funzionale/tecnico e piano incrementale con criteri di
+  accettazione. Separare decisioni, proposte e dubbi; nessun requisito inventato.
+- N15 — Da fare, dipende da N14: primo incremento locale chiaro e reversibile,
+  verifiche pertinenti e PR senza merge. Integrazioni reali escluse dal mandato.
+
+[Piano e limiti](PIANO_ANALISI_AUDIO.md). BF02 invariato, BF16 aperto.
