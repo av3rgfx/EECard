@@ -85,7 +85,7 @@ La [PR #8](https://github.com/av3rgfx/EECard/pull/8) è integrata. La strategia
 successiva è demo-prima: il [piano della demo funzionale 0.4](docs/progetto/demo-funzionale-2026-10-14/README.md)
 riunisce attivazione, ritorno al banco e recupero storico in una prova concreta
 con dati sintetici. Il [prompt `/goal`](docs/progetto/PROMPT_DEMO_FUNZIONALE.md)
-prepara l'implementazione senza attivare servizi reali. Il kit BF02 resta
+entro 4.000 caratteri prepara l'implementazione senza attivare servizi reali. Il kit BF02 resta
 invariato e sarà riusato dopo la demo per raccogliere osservazioni umane.
 [Istruzioni di avvio della prossima sessione](docs/progetto/AVVIO_PROSSIMA_SESSIONE.md).
 

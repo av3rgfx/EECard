@@ -389,3 +389,17 @@ Su richiesta dell'utente è stata aggiunta una
 nuova sessione e incollare l'intero prompt a partire da `/goal`. Precisato che
 la futura implementazione deve partire da main aggiornato su un branch distinto
 e terminare con una nuova PR; la PR #9 resta la consegna documentale del piano.
+
+## 14 ottobre 2026 — prompt `/goal` entro 4.000 caratteri
+
+L'utente segnala il limite massimo di 4.000 caratteri per il prompt obiettivo.
+Verificata la PR #9 integrata alle 10:33:11 UTC, merge `46c7315`; aggiornato main
+e creato `docs/prompt-goal-4000-2026-10-14`, senza riutilizzare il branch del
+piano e senza merge.
+
+Il prompt precedente misurava 8.267 caratteri; il nuovo ne misura 3.719, con 281
+di margine. È stato riformulato come launcher
+operativo: conserva obiettivo, vincoli, percorso PF01/PF02/PF05, estensioni,
+permessi, verifiche e consegna, mentre rimanda al piano e alle specifiche già
+integrate per il dettaglio. Aggiornate le istruzioni di avvio e la continuità;
+frontend, kit BF02, prove umane e Sites restano invariati.

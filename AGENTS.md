@@ -55,9 +55,11 @@ implementazione parte con `/goal` in
 `docs/progetto/PROMPT_DEMO_FUNZIONALE.md`. BF02 non va rifatto e BF16 resta
 aperto finché non esistono osservazioni umane. Questa decisione non approva
 servizi reali, prezzi, lancio, hardware o architettura di produzione.
-La consegna del piano è nella PR #9, branch
-`docs/piano-demo-funzionale-2026-10-14`; verificarne sempre lo stato remoto
-prima di riutilizzarla o iniziare l'implementazione.
+La PR #9 del piano è integrata il 14 ottobre 2026 alle 10:33:11 UTC, merge
+`46c7315`. Il prompt `/goal` deve rimanere entro 4.000 caratteri complessivi:
+conservare i dettagli nel piano e nelle specifiche collegate, senza duplicarli
+nel testo da incollare. Verificare sempre la consegna corrente sul remoto prima
+di scegliere il branch dell'implementazione.
 
 Non pubblicare l'audio, la trascrizione integrale o i dati personali degli esempi
 nella repository pubblica. I documenti del nuovo studio usano sintesi anonime.

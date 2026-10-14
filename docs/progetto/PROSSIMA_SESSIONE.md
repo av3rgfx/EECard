@@ -24,11 +24,11 @@ La [PR #8](https://github.com/av3rgfx/EECard/pull/8) è stata integrata il
 aggiornato sul branch `docs/piano-demo-funzionale-2026-10-14`. Nessun merge è
 stato eseguito dall'assistente.
 
-La consegna corrente è nella
-[PR #9](https://github.com/av3rgfx/EECard/pull/9), aperta e non in bozza, con
-base `main` e lo stesso branch. Il commit degli elaborati è
-`68d0519c2983589a8dfb96df7ebed50e065de0ca`; il commit successivo registra i
-riferimenti remoti. Nessun merge.
+La [PR #9](https://github.com/av3rgfx/EECard/pull/9) del piano è integrata il
+14 ottobre 2026 alle 10:33:11 UTC, merge
+`46c73150bc5b21ec87cfeead0c80a6b4d0a2856d`. La riduzione del prompt entro
+4.000 caratteri parte da quel main aggiornato sul nuovo branch
+`docs/prompt-goal-4000-2026-10-14`. Nessun merge eseguito dall'assistente.
 
 Prima di riprendere verificare la consegna più recente sul remoto. Se la PR è
 aperta e il lavoro riguarda il medesimo piano, riutilizzarla; dopo il merge
@@ -105,7 +105,7 @@ sicurezza server o fattibilità hardware.
 
 ## Prossima attività concreta
 
-Integrare prima la PR #9, aprire una nuova sessione e incollare l'intero
+Integrare prima la consegna corrente del prompt compatto, aprire una nuova sessione e incollare l'intero
 [PROMPT_DEMO_FUNZIONALE.md](PROMPT_DEMO_FUNZIONALE.md), inclusa la riga
 iniziale `/goal`. La nuova sessione aggiorna main e crea un branch distinto per
 implementare la demo 0.4. Procedere prima con modello e fixture di due agenzie, quindi percorso
@@ -125,6 +125,8 @@ continuità. Non implementa il frontend 0.4, non rigenera BF02, non esegue prove
 umane e non pubblica una nuova anteprima. Registrare qui commit, PR e controlli
 documentali effettivi dopo la loro esecuzione.
 
-Controlli eseguiti: `git diff --check`, prima riga del prompt uguale a `/goal`
-e 137 collegamenti locali risolti. Nessun test UI/build, audit, screenshot o
-deploy: il frontend e Sites sono invariati.
+Il prompt originario misurava 8.267 caratteri; la versione compatta misura 3.719,
+con 281 caratteri di margine. Verificati conteggio Unicode complessivo, prima
+riga `/goal`, collegamenti locali e `git diff --check`. Nessun test UI/build,
+audit, screenshot o deploy è richiesto per questa sola riduzione documentale:
+frontend e Sites invariati.
