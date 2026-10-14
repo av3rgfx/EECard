@@ -246,3 +246,101 @@ e sorgenti restano identici al main di partenza.
 Consegna nella [PR #7](https://github.com/av3rgfx/EECard/pull/7), creata aperta
 e non in bozza, da main `3532eab`. Commit degli elaborati `84c876e`, salvato
 sul remoto; il commit successivo aggiunge i riferimenti della PR. Nessun merge.
+
+## 9 ottobre 2026 — ripresa BF16, raccolta e contratti preliminari
+
+Richiesta: verificare la consegna precedente, ripartire da attivazione → banco
+→ recupero storico senza rifare BF02; analizzare eventuali osservazioni reali,
+altrimenti guidare la raccolta e avanzare negli approfondimenti documentali.
+Verificata PR #7 integrata alle 23:19:16 UTC prima del checkout. Main clonato
+al merge `c77dfd482e683baeeb0ec825ac5d5755c56fa1bb`, albero pulito; creato
+`docs/bf16-raccolta-2026-10-09`. Nessun merge eseguito dall'assistente.
+
+[Rapporto](validazione-bf16-2026-10-09/README.md),
+[guida per il facilitatore](validazione-bf16-2026-10-09/RACCOLTA.md) e
+[contratti preliminari BF03](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md).
+La guida usa copie dei materiali esistenti fuori repository e precisa raccolte
+parziali, separazione percorsi e limiti dello strumento. L'allegato BF03 dettaglia
+precondizioni/esiti, matrice azione–oggetto, revoca, retry, versioni e prove future
+su due agenzie sintetiche; non approva architettura o perimetro operativo.
+
+Nessuna osservazione umana disponibile nei materiali consultati: modello
+con 48 `non_eseguita` e costi vuoti; nessun commento/review nelle PR #6/#7,
+nessuna issue presente o allegato alla sessione. Chiesto lo stato della raccolta,
+nessuna risposta utilizzabile come misura alla consegna. Non si conclude che
+prove non siano state svolte altrove. BF16 rimane aperto; BF03 resta proposta
+subordinata a BF01 per l'ambito operativo e da revisionare coi riscontri BF16.
+
+Aggiornati AGENTS, README, sviluppo, decisioni, backlog, punto di ripresa e
+prompt. Conservate DA aperte, identità 0.3 e invarianti di accesso e pagamenti.
+Nessun nuovo prezzo, responsabile assegnato, tempo stimato o servizio attivato.
+
+Controlli nuovi: lettura CLI/sorgente, `validate` del kit esistente e `analyze`
+sul modello (48 pianificate, 0 osservate, nessuna misura stimabile). I 18 test
+Python dell'8 ottobre restano storici e non sono rieseguiti. Nessuna rigenerazione
+di BF02, nuovo test UI/build/audit, collaudo hardware, firma, AI o deploy.
+Solo Markdown: sorgenti, kit, strumenti, specifiche, studio PDF/DOCX, fonti EA,
+prodotto/design e hosting invariati rispetto a main `c77dfd4`. Sites v5 rimane
+l'ultima pubblicazione documentata, sorgente `65ac9e0`; live non ricollaudato.
+
+Controllati 11 Markdown e 142 collegamenti locali/ancore validi; riferimenti
+PF/PT/MD risolti e `git diff --check` pulito. Revisione indipendente applicata:
+separata la sessione personale dell'attore dalla sessione operatore, richiesta
+solo per operazioni d'agenzia; precisato che lo storico del precedente
+intestatario è negato senza titolo specifico, preservando le deleghe valide.
+
+Consegna nella [PR #8](https://github.com/av3rgfx/EECard/pull/8), aperta e
+non in bozza, base main e branch `docs/bf16-raccolta-2026-10-09`.
+Commit elaborati `7cff9ff34fc3e619edf1187af6bdf4728c04aff1`, verificato uguale
+al branch remoto e all'HEAD della PR. Il successivo commit aggiunge soltanto
+riferimenti remoti a rapporto, punto di ripresa, prompt e registro. Nessun merge.
+
+## 9 ottobre 2026 — proseguimento della raccolta e politica storico/uscita
+
+L'utente risponde «procedi». PR #8 verificata aperta, non in bozza, HEAD
+`f01356437923cc569e5f8ac12b689eb66b7a6c3c`; checkout pulito e allineato al remoto,
+main ancora `c77dfd4`. Riutilizzati branch e PR, nessun merge. Nessun nuovo
+commento/review nella PR o issue con osservazioni; chiesti processo corrente
+anonimo e disponibilità dei due operatori/facilitatore, senza risposta
+utilizzabile alla consegna. Il seguito non sostituisce la prova umana BF16.
+
+Predisposte fuori repository sette copie dei materiali BF02 già pronti,
+separate per operatore/fase e facilitatore, con istruzioni locali di avvio e
+manifest SHA-256 riferito al checkout `f013564`. Nessun set o pacchetto
+rigenerato. Verificate identità byte per byte e hash; una sola copia del
+pacchetto previsto per ogni cartella operatore/fase, chiave e CSV solo al
+facilitatore. `analyze` sul CSV esterno: 48 pianificate, 0 osservate; cinque
+categorie di costo identiche al modello vuoto. Nessun tempo inventato.
+
+Precisato in [RACCOLTA](validazione-bf16-2026-10-09/RACCOLTA.md) l'avvio
+contiguo S01–S04 della fase 1 per entrambi, poi S05–S12 e fase 2. I primi
+quattro casi comprendono PF01/PF02/PF05: non serve anticipare S10. Nessun
+confronto appaiato o conclusione BF16 dopo la sola prima fase. Restano da
+definire con i partecipanti metodo corrente, supporto, limite e soglie.
+
+Aggiunto [STORICO_USCITA](validazione-bf16-2026-10-09/STORICO_USCITA.md) come
+approfondimento P13/BF03: matrice categoria/evento, conservazione distinta
+da lettura e consegna, titoli autonomi ancora validi, revoca/correzione e
+copie già consegnate. Nessun termine legale, titolare privacy o responsabile
+assegnato. BF03/BF17 restano aperti; le osservazioni BF16 non definiscono
+da sole le condizioni operative. Aggiornati sviluppo e continuità.
+
+In questo seguito non ripetuti `validate`, test Python o test frontend:
+kit, strumenti, sorgenti, specifiche principali, fonti storiche e hosting
+restano invariati. Controlli pertinenti: copie e analisi della copia vuota,
+coerenza e link dei Markdown, diff e revisione indipendente. Nessun servizio,
+invito, pagamento, firma, dato cliente reale o deploy.
+
+Verificati 9 Markdown del seguito e 120 collegamenti locali/ancore; il totale
+della PR rispetto a main è 12 Markdown e 156 collegamenti. `git diff --check`
+pulito, criteri richiamati presenti e percorsi invariati confermati. Revisione
+indipendente applicata: il cambio agenzia non autorizza da solo i vecchi link,
+ma non vieta un canale di consegna esplicitamente autorizzato; il criterio di
+diniego dopo fine titolo esclude anche la presenza di altro titolo autonomo valido.
+
+Salvato il seguito al commit `dd74a2282c21f9e36806b2389f05d917f28c5d87`,
+verificato uguale su checkout, branch remoto e PR #8 aperta, non in bozza.
+Titolo e descrizione della stessa PR aggiornati al perimetro completo;
+il commit successivo registra soltanto questi riferimenti. Nessun merge.
+Le copie locali esterne sono di preparazione, non artefatti pubblicati nella PR;
+le istruzioni persistenti restano nel repository.

@@ -75,6 +75,12 @@ dal 9 ottobre. Per riprendere usare il
 [prompt aggiornato](docs/progetto/PROMPT_NUOVA_SESSIONE.md) e verificare lo stato
 remoto indicato nel punto di ripresa.
 
+La [PR #7](https://github.com/av3rgfx/EECard/pull/7) di chiusura è integrata.
+La [ripresa BF16](docs/progetto/validazione-bf16-2026-10-09/README.md) guida la
+raccolta con due operatori usando il kit già pronto e approfondisce i contratti
+PF01/PF02/PF05 come proposta BF03. Nessuna osservazione umana è disponibile
+nei materiali consultati: BF16 e le decisioni operative restano aperti.
+
 - [Brief storico del confronto, ora eseguito](docs/progetto/PROMPT_DESIGN.md)
 - [Analisi del design e migliorie proposte](docs/design/REVISIONE_VISIVA.md)
 - [Prodotto, persone e confini](PRODUCT.md)

@@ -1,6 +1,6 @@
 # Registro delle decisioni — prodotto e design
 
-Aggiornato l'8 ottobre 2026. Le etichette distinguono richiesta confermata, proposta di design e ipotesi dimostrativa. Nessuna scelta nel prototipo approva il modello commerciale.
+Aggiornato il 9 ottobre 2026. Le etichette distinguono richiesta confermata, proposta di design e ipotesi dimostrativa. Nessuna scelta nel prototipo approva il modello commerciale.
 
 **Stato attuale:** dopo i tre esempi separati, l’utente ha scelto tessera/materiali di Materia e luce e struttura delle pagine di Editoriale e architettura. L’ultima richiesta conferma lo stile editoriale attuale e compatta soltanto gli immobili della home quando ne sono visibili più di uno; singolo risultato e pagina immobili restano espansi. Le card non sono vietate in assoluto, ma non è richiesto ripristinarle. Direzione integrata nel frontend 0.3; vedere C14–C18. Le sezioni precedenti conservano la storia delle decisioni, senza riaprire una scelta già ricevuta.
 
@@ -144,3 +144,24 @@ nuova tavola visiva né una scelta dell'utente. Nessuna modifica al prototipo.
 All'8 ottobre la PR #6 era aperta e veniva aggiornata. Verificata integrata
 il 9 ottobre alle 08:18:43 UTC; la chiusura della sessione non aggiunge decisioni
 di prodotto o cambi visivi. Il merge non equivale a validazione della prova BF16.
+
+## Ripresa BF16 del 9 ottobre — ambito autorizzato e stato
+
+| ID | Stato | Contenuto / conseguenza |
+| --- | --- | --- |
+| C23 | Richiesta esplicita dell'utente | Verificare PR #7, seguire il prompt corrente, ripartire da BF16 senza rifare BF02, analizzare osservazioni disponibili o guidarne la raccolta e proseguire gli approfondimenti documentali indipendenti; consegna nel repository, nessun servizio reale o merge |
+| P13 | Proposta tecnica preliminare, non approvazione BF03 | [Contratti PF01/PF02/PF05](../progetto/validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md), matrice permessi, [storico/uscita](../progetto/validazione-bf16-2026-10-09/STORICO_USCITA.md) e prove future da revisionare con BF01 e riscontri BF16; nessuna API o scelta di provider implementata |
+
+[Rapporto della ripresa](../progetto/validazione-bf16-2026-10-09/README.md):
+PR #7 integrata alle 23:19:16 UTC, main `c77dfd4`, nuovo branch dedicato.
+Nessuna osservazione reale disponibile nei materiali consultati; la richiesta
+di indicarne lo stato non riceve qui una risposta utilizzabile come misura.
+BF16 resta aperto. DA01–DA07 e A01–A11 conservano i rispettivi stati; C23
+non risolve prezzi, pagante, risorse, Jarvis, schermi o firma. Identità, direzione
+0.3, riservatezza, quattro eventi economici e residuo parziale restano invariati.
+
+Il successivo «procedi» prosegue C23 sulla stessa PR #8. Le copie esterne
+pronte e l'approfondimento di P13 non forniscono osservazioni umane, non
+assegnano termini di conservazione o responsabilità e non chiudono BF03/BF16.
+La distinzione conservazione/accesso/consegna approfondisce i vincoli esistenti;
+nessun nuovo permesso reale o modifica alla direzione 0.3.

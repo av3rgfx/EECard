@@ -1,6 +1,6 @@
 # Prompt per riprendere EECard
 
-Preparato il 9 ottobre 2026. Copiare il testo sotto nella prossima sessione.
+Aggiornato il 9 ottobre 2026 dopo la ripresa BF16. Copiare il testo sotto nella prossima sessione.
 Questo è il prompt corrente; quello in `discussione-2026-10-07/` documenta
 la precedente ripresa dalla conversazione EA01–EA30.
 
@@ -9,17 +9,19 @@ la precedente ripresa dalla conversazione EA01–EA30.
 Riprendiamo EECard dal lavoro esistente. Rispondi in italiano.
 
 Repository unica: https://github.com/av3rgfx/EECard.
-La PR #6 con specifiche e kit della prova risultava integrata il 9 ottobre
-2026 alle 08:18:43 UTC, in main `3532eab`. La successiva chiusura documentale
-è sul branch `docs/chiusura-sessione-2026-10-09`, nella PR #7:
-https://github.com/av3rgfx/EECard/pull/7. Lo stato è riepilogato in
-`docs/progetto/PROSSIMA_SESSIONE.md` e va verificato sul remoto.
+La PR #7 di chiusura è integrata il 9 ottobre 2026 alle 23:19:16 UTC;
+la ripresa BF16 parte da main `c77dfd482e683baeeb0ec825ac5d5755c56fa1bb`
+sul branch `docs/bf16-raccolta-2026-10-09`. La consegna corrente è nella
+PR #8: https://github.com/av3rgfx/EECard/pull/8, aperta alla consegna.
+Le verifiche sono in `docs/progetto/validazione-bf16-2026-10-09/README.md`
+e `docs/progetto/PROSSIMA_SESSIONE.md`. PR #6 (specifiche/kit) già integrata
+il 9 ottobre alle 08:18:43 UTC.
 
-Verifica prima lo stato remoto. Se la PR della chiusura è aperta, leggi anche
-i suoi documenti e riutilizzala per la stessa consegna; se è integrata, parti
-dal main aggiornato e scegli il branch secondo AGENTS.md. Non riutilizzare
-il vecchio branch della PR #6 perché un rapporto storico la descrive aperta.
-Non effettuare merge senza mia richiesta.
+Verifica prima lo stato remoto della consegna corrente. Se la PR è aperta,
+leggi i suoi documenti e riutilizzala per la stessa consegna; se è integrata,
+parti dal main aggiornato e scegli un nuovo branch secondo AGENTS.md.
+Non riutilizzare i branch delle PR #6/#7 perché un rapporto storico le descrive
+aperte. Non effettuare merge senza mia richiesta.
 
 Leggi nell'ordine:
 
@@ -31,7 +33,11 @@ Leggi nell'ordine:
 4. README, PROTOCOLLO ed ESITO_SIMULAZIONE in
    `docs/progetto/prova-agenzia-2026-10-08/`; poi set, materiali e strumenti
    pertinenti al lavoro. Le chiavi non devono essere mostrate agli operatori.
-5. Usa `docs/progetto/discussione-2026-10-07/` per provenienza EA01–EA30 e
+5. Leggi `docs/progetto/validazione-bf16-2026-10-09/README.md`, `RACCOLTA.md`,
+   `CONTRATTI_PRELIMINARI.md` e `STORICO_USCITA.md`: guida sul kit esistente,
+   contratti preliminari BF03 e matrice di conservazione/accesso/consegna.
+   Non duplicare questi elaborati se non ci sono nuove evidenze.
+6. Usa `docs/progetto/discussione-2026-10-07/` per provenienza EA01–EA30 e
    timestamp; consulta studio v0.1 e sorgenti pertinenti prima di modificare
    un percorso. Non ripetere l'intera analisi già completata.
 
@@ -41,6 +47,20 @@ e otto prove FT. Il kit BF02 è già preparato: due set di dodici scenari,
 144 evidenze sintetiche, pacchetti operatore/facilitatore e 48 esecuzioni
 pianificate. I modelli di misure e costi sono vuoti. I 18 test dello strumento
 sono passati l'8 ottobre; non presentarli come rieseguiti senza averli eseguiti.
+La ripresa del 9 ottobre ha eseguito solo `validate` e analisi del modello
+vuoto (48 pianificate, 0 osservate), oltre ai controlli documentali. Non ha
+rifatto BF02, eseguito le 48 prove o raccolto tempi/costi. Le osservazioni
+possono esistere altrove: cercarle nei materiali forniti senza presumere che
+l'assenza nella repository significhi che nessuno abbia svolto la prova.
+Il seguito «procedi» ha predisposto sette copie esterne byte-identiche dei
+materiali per operatore/fase, con manifest SHA-256; analizzata la copia vuota
+(48/0), senza nuovi `validate` o test del kit. Il percorso locale può non essere
+più disponibile: riusare la copia privata se presente, altrimenti copiare i
+materiali originali in una nuova cartella esterna senza sovrascrivere raccolte.
+La tranche iniziale S01–S04 della fase 1 per entrambi copre già PF01/PF02/PF05;
+proseguire S05–S12 prima della fase 2, senza anticipare S10. Da una sola fase
+non ricavare confronti appaiati. Processo corrente e partecipanti non sono
+ancora stati descritti: chiederli solo se continuano a mancare, senza inventarli.
 
 Riparti dalla validazione di attivazione → ritorno al banco → recupero storico.
 BF16 richiede due operatori reali e un facilitatore; la revisione AI del kit
@@ -56,6 +76,18 @@ dell'agenzia prima di attribuirgli risultati.
   protocollo già pronto. Non ricreare i set e non inventare misure. Continua
   gli approfondimenti documentali indipendenti previsti dal backlog, indicando
   le dipendenze: BF03 e il perimetro operativo non sono approvati dalla chiusura.
+  L'allegato preliminare BF03 esiste già: revisionarlo con evidenze o chiarimenti,
+  senza dichiarare implementate API, autorizzazioni o prove future.
+  La matrice storico/uscita distingue conservazione, lettura e consegna:
+  documento antico non equivale a rapporto concluso, e la politica ancora
+  aperta non revoca titoli autonomi validi. Durate e responsabilità restano
+  da definire; non trasformare una proposta in politica operativa approvata.
+
+Nelle raccolte parziali conservare le 48 righe pianificate e indicare i casi
+non eseguiti. Verificare manualmente i risultati per PF01, PF02, PF05,
+contesti ed estensioni: l'analizzatore accorpa il recupero, non misura i costi
+e non convalida la correttezza semantica. Usare le indicazioni di RACCOLTA.md;
+non promuovere una statistica parziale a soglia BF16 superata.
 
 Conserva EECard come nome provvisorio, C–Legame e direzione visiva 0.3.
 Bianco/rosso è uno spunto da confrontare, non un redesign approvato. R1 è il
