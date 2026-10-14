@@ -1,6 +1,6 @@
 # EECard — prodotto
 
-Aggiornato l'8 ottobre 2026. Questo documento orienta il lavoro di prodotto nelle sessioni successive; non costituisce un’offerta commerciale né una specifica di produzione approvata.
+Aggiornato il 14 ottobre 2026. Questo documento orienta il lavoro di prodotto nelle sessioni successive; non costituisce un’offerta commerciale né una specifica di produzione approvata.
 
 ## Identità e origine
 
@@ -114,3 +114,20 @@ due set sintetici, istruzioni e schede di misura. Confronta la ricostruzione
 della pratica con un fascicolo organizzato; non attribuisce all'agenzia un modo
 di lavorare non osservato. La revisione simulata verifica la coerenza del kit,
 mentre benefici di tempo/costo e disponibilità a pagare restano da misurare.
+
+## Strategia demo-prima — 14 ottobre 2026
+
+L'utente ha scelto di costruire una demo funzionante prima delle interviste di
+chiarimento. La demo 0.4 deve rendere concreta la sequenza PF01 attivazione →
+PF02 ritorno al banco → PF05 recupero storico, così operatori e portatori di
+interesse possono indicare su un caso osservabile cosa manca, cosa serve e cosa
+eliminare o aggiungere. PF03, PF04 e PF06 sono estensioni sintetiche dello stesso
+fascicolo, non servizi attivati.
+
+Il [piano](docs/progetto/demo-funzionale-2026-10-14/README.md) definisce il
+perimetro e il [prompt `/goal`](docs/progetto/PROMPT_DEMO_FUNZIONALE.md) guida
+l'implementazione. Questa scelta ordina il lavoro di apprendimento; non risolve
+prezzi, primo pagante, copertura, responsabilità, conservazione, destinatari
+degli schermi, firma, Jarvis o hardware. BF16 resta aperto finché la demo non
+viene provata da persone reali e le osservazioni non sono raccolte senza dati
+personali nella repository.
