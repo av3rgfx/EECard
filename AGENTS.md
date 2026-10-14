@@ -46,6 +46,16 @@ nei materiali consultati né approvazione operativa. Il prompt corrente è
 `docs/progetto/PROMPT_NUOVA_SESSIONE.md`; stato della consegna e attività
 residue sono in PROSSIMA_SESSIONE. Verificare sempre il remoto prima del checkout.
 
+La PR #8 è integrata il 14 ottobre 2026 alle 06:49:01 UTC, merge `adacdab`.
+La richiesta successiva cambia l'ordine della validazione: realizzare prima una
+demo funzionale 0.4, poi usarla con gli operatori per far emergere lacune e
+priorità. Piano e perimetro sono in
+`docs/progetto/demo-funzionale-2026-10-14/README.md`; il prompt di
+implementazione parte con `/goal` in
+`docs/progetto/PROMPT_DEMO_FUNZIONALE.md`. BF02 non va rifatto e BF16 resta
+aperto finché non esistono osservazioni umane. Questa decisione non approva
+servizi reali, prezzi, lancio, hardware o architettura di produzione.
+
 Non pubblicare l'audio, la trascrizione integrale o i dati personali degli esempi
 nella repository pubblica. I documenti del nuovo studio usano sintesi anonime.
 Il riferimento ai clienti già gestiti a 600 euro annui non è un listino EECard;

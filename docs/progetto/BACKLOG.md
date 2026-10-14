@@ -1,6 +1,6 @@
 # Backlog di continuità EECard
 
-Aggiornato il 9 ottobre 2026 alla ripresa BF16. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessuna persona, costo o data è stata assegnata; BF propone ruoli responsabili. PR #7 integrata alle 23:19:16 UTC; ripresa da main `c77dfd4` sul branch `docs/bf16-raccolta-2026-10-09`.
+Aggiornato il 14 ottobre 2026 con la strategia demo-prima. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessuna persona, costo o data è stata assegnata; BF propone ruoli responsabili. PR #8 integrata alle 06:49:01 UTC; piano demo da main `adacdab` sul branch `docs/piano-demo-funzionale-2026-10-14`.
 
 ## Completato nella sessione
 
@@ -16,7 +16,7 @@ Aggiornato il 9 ottobre 2026 alla ripresa BF16. Le priorità seguenti sono una p
 
 | ID | Priorità proposta / stato | Attività | Criterio di completamento |
 | --- | --- | --- | --- |
-| N01 | Design conservato · specifiche e kit preparati | V01–V05 restano completati; RF01–RF30, PF01–PF06, modello, backlog BF e kit BF02 consegnati, senza modifiche al frontend | Riprendere dalla prova BF16; BF01 commerciale ancora aperto |
+| N01 | Design conservato · specifiche, kit e piano demo preparati | V01–V05 restano completati; RF01–RF30, PF01–PF06, modello, backlog BF, kit BF02 e piano demo 0.4 consegnati | Implementare la demo prima della prova BF16; BF01 commerciale resta aperto |
 | N02 | Alta · da fare su hardware | Verificare iPhone/Safari, Android/Chrome e screen reader | Dispositivo/browser annotati; tastiera, safe area, zoom, rotazione, focus e annunci controllati; problemi riprodotti e corretti |
 | N03 | Alta · in attesa di informazioni | Chiarire quote, primo cliente, zona, beneficio iniziale, copertura e risorse | Risposte con provenienza nel [registro decisioni](../design/DECISIONI.md); nessun numero dedotto dal prototipo |
 | N04 | Dopo N01/N03 · da definire | Scegliere il perimetro del primo rilascio operativo | Percorso prioritario, esclusioni esplicite e criteri di accettazione concordati |
@@ -24,6 +24,9 @@ Aggiornato il 9 ottobre 2026 alla ripresa BF16. Le priorità seguenti sono una p
 | N06 | Dopo N05 · da implementare | Realizzare la prima funzionalità operativa completa | UI, server, dati, errori e test integrati secondo il perimetro scelto; demo separata dai dati reali |
 | N07 | Quando cambia il frontend | Aggiornare QA, screenshot e anteprime | Report coerenti col commit e deploy verificato sul sito esistente |
 | N08 | Con architettura reale · da valutare | Prestazioni, bundle e automatizzazione dei controlli | Misure e scelta motivata; nessuna CI o suddivisione del bundle aggiunta solo per supposizione |
+| N09 | Alta · prossima implementazione autorizzata | Realizzare la demo funzionale 0.4 secondo il [piano](demo-funzionale-2026-10-14/README.md) e il [prompt `/goal`](PROMPT_DEMO_FUNZIONALE.md) | PF01 → PF02 → PF05 continuo, due agenzie sintetiche, permessi, storico/versioni, revoche, errori, reset e modalità prova; nessun servizio reale |
+| N10 | Dopo N09 · prova umana BF16 | Far provare la demo agli operatori e raccogliere osservazioni anonime prima delle domande di approfondimento | Versione demo, compiti, esiti, blocchi, aiuti e proposte registrati; vuoto non equivale a zero, kit BF02 non rigenerato |
+| N11 | Dopo N10 · revisione del perimetro | Ordinare correzioni e aggiunte emerse dalla prova e riesaminare BF01/BF03/BF17 | Decisioni attribuite, problemi separati da preferenze, nessun prezzo o lancio dedotto dalla sola demo |
 
 Pagamenti integrati, app negli store, 3D, AI, card fisica e calendario dei consulenti restano questioni aperte: non sono automaticamente esclusi, promessi o pianificati.
 

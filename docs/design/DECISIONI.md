@@ -1,6 +1,6 @@
 # Registro delle decisioni — prodotto e design
 
-Aggiornato il 9 ottobre 2026. Le etichette distinguono richiesta confermata, proposta di design e ipotesi dimostrativa. Nessuna scelta nel prototipo approva il modello commerciale.
+Aggiornato il 14 ottobre 2026. Le etichette distinguono richiesta confermata, proposta di design e ipotesi dimostrativa. Nessuna scelta nel prototipo approva il modello commerciale.
 
 **Stato attuale:** dopo i tre esempi separati, l’utente ha scelto tessera/materiali di Materia e luce e struttura delle pagine di Editoriale e architettura. L’ultima richiesta conferma lo stile editoriale attuale e compatta soltanto gli immobili della home quando ne sono visibili più di uno; singolo risultato e pagina immobili restano espansi. Le card non sono vietate in assoluto, ma non è richiesto ripristinarle. Direzione integrata nel frontend 0.3; vedere C14–C18. Le sezioni precedenti conservano la storia delle decisioni, senza riaprire una scelta già ricevuta.
 
@@ -165,3 +165,18 @@ pronte e l'approfondimento di P13 non forniscono osservazioni umane, non
 assegnano termini di conservazione o responsabilità e non chiudono BF03/BF16.
 La distinzione conservazione/accesso/consegna approfondisce i vincoli esistenti;
 nessun nuovo permesso reale o modifica alla direzione 0.3.
+
+## Strategia demo-prima — 14 ottobre 2026
+
+| ID | Stato | Decisione / questione | Conseguenza |
+| --- | --- | --- | --- |
+| C24 | Confermato esplicitamente dall'utente | Creare prima una demo funzionante e il più completa possibile, farla testare e usare il riscontro concreto per capire cosa manca, cosa serve e cosa aggiungere | La prossima implementazione unisce PF01 → PF02 → PF05 in una storia osservabile e rende PF03/PF04/PF06 esplorabili con dati sintetici; interviste e BF16 seguono la demo |
+| P14 | Perimetro proposto per eseguire C24 | “Completa” significa coprire percorsi, stati, confini e recuperi utili alla prova, mantenendo servizi e integrazioni come simulazioni esplicite | Due agenzie sintetiche, sessione al banco, storico/versioni, dinieghi, errori, reset e note locali; nessun backend o servizio reale |
+
+C24 cambia la sequenza della validazione, non trasforma le ipotesi funzionali in
+requisiti di produzione. Restano aperti A01–A11 e DA01–DA07, compresi prezzi,
+primo pagante, territorio, risorse, schermi, firma, Jarvis, conservazione e
+hardware. Il kit BF02 non viene rifatto e BF16 richiede ancora osservazioni
+umane. Piano e prompt sono in
+[`demo-funzionale-2026-10-14`](../progetto/demo-funzionale-2026-10-14/README.md)
+e [`PROMPT_DEMO_FUNZIONALE.md`](../progetto/PROMPT_DEMO_FUNZIONALE.md).

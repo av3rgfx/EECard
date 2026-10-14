@@ -344,3 +344,34 @@ Titolo e descrizione della stessa PR aggiornati al perimetro completo;
 il commit successivo registra soltanto questi riferimenti. Nessun merge.
 Le copie locali esterne sono di preparazione, non artefatti pubblicati nella PR;
 le istruzioni persistenti restano nel repository.
+
+## 14 ottobre 2026 — strategia demo-prima e piano 0.4
+
+La PR #8 è stata verificata integrata alle 06:49:01 UTC, merge `adacdab`.
+Aggiornato main e creato il nuovo branch
+`docs/piano-demo-funzionale-2026-10-14`, senza riutilizzare il branch integrato
+e senza eseguire merge.
+
+L'utente cambia esplicitamente l'ordine del lavoro: prima una demo funzionante e
+il più completa possibile, poi la prova e le domande guidate da ciò che manca,
+serve o può essere aggiunto. Registrata C24. La scelta non approva R1 come
+rilascio, prezzi, servizi, hardware o architettura di produzione.
+
+Lo studio del frontend rileva una base 0.3 ampia e curata, ma una storia
+PF01/PF02/PF05 ancora frammentata. Preparato il
+[piano della demo 0.4](demo-funzionale-2026-10-14/README.md): pratica operatore,
+sessione al banco, ricerca storica, due agenzie sintetiche, permessi per
+relazione, dinieghi/errori e modalità prova locale. PF03/PF04/PF06 restano
+estensioni sintetiche; card, wallet, schermo cliente, firma e AI sono soltanto
+simulazioni dichiarate.
+
+Creato il [prompt obiettivo](PROMPT_DEMO_FUNZIONALE.md), con prima riga `/goal`,
+per implementare e verificare la demo mantenendo C–Legame, design 0.3, privacy,
+separazione dei quattro eventi economici e assenza di servizi reali. BF02 resta
+invariato. BF16 rimane aperto e sarà ripreso dopo la demo con osservazioni umane,
+senza inventare misure.
+
+Aggiornati AGENTS, README, prodotto, sviluppo, backlog, decisioni, punto di
+ripresa e prompt breve della prossima sessione. Questa consegna è solo
+documentale: nessuna modifica al frontend, rigenerazione del kit, prova umana,
+attivazione di servizi o pubblicazione Sites.

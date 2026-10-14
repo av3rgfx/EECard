@@ -1,16 +1,15 @@
 # EECard — sviluppo e manutenzione
 
-Aggiornato il 9 ottobre 2026. Repository di riferimento: https://github.com/av3rgfx/EECard. Stack del prototipo: React, TypeScript e Vite; le versioni riproducibili sono in `package-lock.json`.
+Aggiornato il 14 ottobre 2026. Repository di riferimento: https://github.com/av3rgfx/EECard. Stack del prototipo: React, TypeScript e Vite; le versioni riproducibili sono in `package-lock.json`.
 
 ## Ripresa e avvio
 
 Leggere [AGENTS.md](AGENTS.md), [PROSSIMA_SESSIONE.md](docs/progetto/PROSSIMA_SESSIONE.md)
-e il [prompt di ripresa](docs/progetto/PROMPT_NUOVA_SESSIONE.md). La PR #6 con
-specifiche e kit è integrata il 9 ottobre alle 08:18:43 UTC; la PR #7 di chiusura
-alle 23:19:16 UTC. La ripresa BF16 parte da main
-`c77dfd482e683baeeb0ec825ac5d5755c56fa1bb` sul nuovo branch
-`docs/bf16-raccolta-2026-10-09`. Verificare la PR della consegna corrente:
-se aperta riutilizzarla; dopo merge partire da main aggiornato e nuovo branch.
+e il [prompt di ripresa](docs/progetto/PROMPT_NUOVA_SESSIONE.md). La PR #8 è
+integrata il 14 ottobre alle 06:49:01 UTC, merge `adacdab`. Il piano demo parte
+da quel main aggiornato sul branch `docs/piano-demo-funzionale-2026-10-14`.
+Verificare la PR della consegna corrente: se aperta riutilizzarla per lo stesso
+lavoro; dopo il merge partire da main aggiornato e da un nuovo branch.
 Controllare prima le modifiche locali e non sovrascriverle.
 
 Node.js 22.12+ o 24 LTS:
@@ -191,3 +190,22 @@ scelto; la fine di un titolo non revoca titoli autonomi ancora efficaci.
 Le copie esterne predisposte per la raccolta sono byte-identiche al kit;
 cartelle per ruolo/fase e manifest servono alla distribuzione e alla provenienza,
 non sono autorizzazioni server. Non dipendere dal percorso temporaneo della sessione.
+
+## Prossima implementazione — demo funzionale 0.4
+
+La decisione del 14 ottobre anticipa una demo completa alle interviste di
+chiarimento. Il [piano tecnico-funzionale](docs/progetto/demo-funzionale-2026-10-14/README.md)
+e il [prompt `/goal`](docs/progetto/PROMPT_DEMO_FUNZIONALE.md) sono il punto di
+partenza dell'implementazione. La priorità è una storia continua PF01 → PF02 →
+PF05, con due agenzie sintetiche, relazioni temporali, documenti/versioni,
+provenienze, credenziali revocabili, sessioni al banco e controlli di accesso
+centralizzati. PF03/PF04/PF06 devono restare estensioni locali esplicitamente
+simulate.
+
+L'evoluzione del localStorage richiede una nuova versione di schema e un reset o
+una migrazione espliciti. La modalità prova deve offrire scenari deterministici,
+reset e note esportate solo in locale. Non aggiungere dipendenze da backend,
+email, pagamenti, lettori, wallet, firme o modelli AI. I controlli di permesso
+non possono dipendere soltanto dalla visibilità dei componenti: coprire casi
+ammessi e negati con test. BF02 resta invariato e BF16 non è chiuso dal solo
+completamento del frontend.
