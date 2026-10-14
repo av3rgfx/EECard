@@ -60,6 +60,9 @@ La PR #9 del piano è integrata il 14 ottobre 2026 alle 10:33:11 UTC, merge
 conservare i dettagli nel piano e nelle specifiche collegate, senza duplicarli
 nel testo da incollare. Verificare sempre la consegna corrente sul remoto prima
 di scegliere il branch dell'implementazione.
+La riduzione del prompt è consegnata nella PR #10 sul branch
+`docs/prompt-goal-4000-2026-10-14`; se aperta, riutilizzarla solo per questa
+consegna documentale. Dopo il merge partire dal main aggiornato per la demo.
 
 Non pubblicare l'audio, la trascrizione integrale o i dati personali degli esempi
 nella repository pubblica. I documenti del nuovo studio usano sintesi anonime.

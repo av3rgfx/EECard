@@ -30,6 +30,12 @@ La [PR #9](https://github.com/av3rgfx/EECard/pull/9) del piano è integrata il
 4.000 caratteri parte da quel main aggiornato sul nuovo branch
 `docs/prompt-goal-4000-2026-10-14`. Nessun merge eseguito dall'assistente.
 
+La consegna corrente è nella
+[PR #10](https://github.com/av3rgfx/EECard/pull/10), aperta e non in bozza, con
+base `main`. Il prompt compatto e gli aggiornamenti di continuità sono al commit
+`e586f3bddabaab4ee9c989d3b068d1351ffcc523`; il commit successivo registra
+soltanto i riferimenti remoti. Nessun merge.
+
 Prima di riprendere verificare la consegna più recente sul remoto. Se la PR è
 aperta e il lavoro riguarda il medesimo piano, riutilizzarla; dopo il merge
 aggiornare main e creare un nuovo branch dedicato all'implementazione. Non

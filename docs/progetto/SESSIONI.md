@@ -403,3 +403,9 @@ operativo: conserva obiettivo, vincoli, percorso PF01/PF02/PF05, estensioni,
 permessi, verifiche e consegna, mentre rimanda al piano e alle specifiche già
 integrate per il dettaglio. Aggiornate le istruzioni di avvio e la continuità;
 frontend, kit BF02, prove umane e Sites restano invariati.
+
+Elaborati salvati al commit
+`e586f3bddabaab4ee9c989d3b068d1351ffcc523` e pubblicati sul branch remoto.
+Aperta la [PR #10](https://github.com/av3rgfx/EECard/pull/10), non in bozza e
+mergeable, con base main. Il commit successivo registra soltanto questi
+riferimenti; nessun merge.
