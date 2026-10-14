@@ -90,5 +90,9 @@ Nessun deploy: il sito conserva Sites v8, sorgente online
 con primo intervento locale e PR, non aggiornamento implicito del servizio pubblico.
 La PR registra codice/documentazione; l'HTML portatile è locale, senza hosting.
 
-Il branch e il collegamento della PR vengono registrati qui dopo la creazione.
-Nessun merge e nessun servizio reale autorizzati da questa consegna.
+[PR #13](https://github.com/av3rgfx/EECard/pull/13) creata e verificata aperta,
+non in bozza, base main; implementazione verificata e pubblicata su GitHub al
+commit `3ce9a6b3e4f1fb8f3f22dc6e03ad35f526b7ed43`. Branch
+`feat/studio-audio-incremento-locale`. La chiusura aggiunge soltanto riferimenti
+documentali: nessun nuovo test attribuito a quella modifica. Nessun merge,
+nessuna attivazione reale e nessun deploy.

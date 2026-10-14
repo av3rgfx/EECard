@@ -493,5 +493,6 @@ verde. Audio e test CPU eseguiti nello stesso ambiente; prove fisiche restano ap
 
 Aggiornati prodotto, design, sviluppo, decisioni, backlog, istruzioni, prompt
 entro 4.000 caratteri e punto di ripresa. Nessun deploy: online resta la 0.5
-Sites v8 da `448f372`. BF02 intatto, BF16 aperto. Consegna in PR senza merge;
-riferimento remoto nel rapporto di verifica dopo creazione.
+Sites v8 da `448f372`. BF02 intatto, BF16 aperto. Consegna nella [PR #13](https://github.com/av3rgfx/EECard/pull/13), aperta e pronta
+alla revisione, senza merge. Implementazione `3ce9a6b`; chiusura successiva solo
+documentale, senza nuovi test o deploy.

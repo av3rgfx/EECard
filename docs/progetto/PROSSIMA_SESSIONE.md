@@ -34,8 +34,10 @@ conservato. È una prova di UX, non approvazione delle condizioni del servizio.
 
 PR #12 verificata integrata il 14 ottobre alle 20:48:12 UTC; main di partenza
 `24eb129e35675ff8f684bc308b8202cc7735a43a`.
-Branch corrente `feat/studio-audio-incremento-locale`; PR di questa consegna
-registrata nel rapporto delle verifiche dopo la creazione. Nessun merge.
+Branch corrente `feat/studio-audio-incremento-locale`;
+[PR #13](https://github.com/av3rgfx/EECard/pull/13) aperta, pronta alla revisione,
+implementazione al commit `3ce9a6b3e4f1fb8f3f22dc6e03ad35f526b7ed43`.
+La chiusura successiva aggiorna solo riferimenti documentali. Nessun merge.
 Prima del prossimo checkout controllare il remoto: riutilizzare la PR aperta
 solo per la stessa consegna; dopo merge ripartire dal main aggiornato.
 

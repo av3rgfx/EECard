@@ -264,3 +264,6 @@ N10/BF16 e N02 restano aperti. BF02 intatto; IN01 non chiude BF03/BF17 o le
 condizioni di uscita commerciale. N07 aggiornato con verifica e anteprima locale;
 il sito pubblico resta alla 0.5 già registrata. Priorità/dipendenze/accettazione
 sono nel [piano IN01–IN10](discussione-2026-10-15/PIANO_INCREMENTALE.md).
+
+Consegna N13–N15 nella [PR #13](https://github.com/av3rgfx/EECard/pull/13),
+aperta senza merge; implementazione `3ce9a6b`, seguito di chiusura documentale.
