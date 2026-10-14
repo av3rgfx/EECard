@@ -1,103 +1,81 @@
 # EECard — punto di ripresa
 
-Aggiornato il 14 ottobre 2026. Repository: https://github.com/av3rgfx/EECard.
+Aggiornato il 15 ottobre 2026. Repository: https://github.com/av3rgfx/EECard.
 
-## Obiettivo della prossima sessione: audio, appunto e piano di sviluppo
+## Consegna corrente: studio dei due audio e primo incremento locale
 
-L'utente chiude la sessione e richiede di analizzare nella prossima due audio del
-confronto con il collega, insieme a un piccolo appunto. Fonti non ancora allegate:
-nessuna nuova analisi o trascrizione eseguita. Usare il
-[prompt corrente](PROMPT_NUOVA_SESSIONE.md) e il [piano](PIANO_ANALISI_AUDIO.md):
-trascrizione privata completa, sintesi anonima tracciabile, confronto con progetto
-e codice, studio progettuale, piano incrementale e primo intervento locale chiaro.
-Questo è il prossimo lavoro; la prova BF16 resta aperta e segue il proprio protocollo.
+Leggere [inventario/limiti](discussione-2026-10-15/README.md),
+[analisi NA01–NA16](discussione-2026-10-15/ANALISI.md),
+[studio progettuale](discussione-2026-10-15/STUDIO_PROGETTUALE.md),
+[piano incrementale](discussione-2026-10-15/PIANO_INCREMENTALE.md),
+[fattibilità bollette](discussione-2026-10-15/FATTIBILITA_BOLLETTE.md) e
+[verifiche](discussione-2026-10-15/VERIFICHE.md).
 
-## Consegna completata: esperienza 0.5
+I due allegati sono ora stati elaborati localmente; le trascrizioni automatiche
+integrali di lavoro, con timestamp, voci provvisorie e incertezze, restano fuori
+repository. Non ripubblicarle. Per riascolti futuri serviranno le fonti private:
+non assumere che i percorsi temporanei o i modelli ASR sopravvivano alla sessione.
+Non dedurre identità dei parlanti né cronologia dai nomi dei file.
 
-L'utente ha segnalato che la 0.4 era grezza e non comprensibile al primo impatto.
-La revisione realizza una piattaforma dimostrativa orientata al lavoro, con
-spazio agenzia e personale distinti. La PR #11 è stata verificata integrata
-alle 18:40:00 UTC; aggiornato main a `0481bb172b26c548c432e2a6bd234e8d4c1a86ae`
-e creato il branch `design/experience-0.5`. Nessun merge dell'assistente.
+Emersi: livelli/extra, upgrade con conguaglio ancora ambiguo, disdetta,
+supporto sul posto, scansione bollettini, avviso/QR e chiamate AI proattive.
+Contraddizione esplicita sul preavviso di disdetta: nessuna regola legale o
+commerciale adottata. L'utente ha confermato annual report **cliente e agenzia,
+con viste separate** (C29/USR01); contenuti, periodo e metriche da definire.
 
-Leggere [esperienza, scelte e limiti](experience-2026-10-14/README.md),
-[verifiche](experience-2026-10-14/VERIFICHE.md) e
-[pubblicazione](../design/ANTEPRIME_WEB.md). I riferimenti remoti di questa
-consegna vengono riportati nella chiusura dopo la verifica effettiva.
+IN01 aggiunge «Gestisci abbonamento» nella home di Cliente 01. Periodo autonomo
+sintetico, riepilogo e disattivazione del rinnovo dopo conferma. Salvataggio
+locale verificato prima del successo; annullo e reset; nessun prezzo, addebito,
+cessazione programmata, perdita dei documenti, fine locazione o revoca card.
+Campo compatibile `renewalCancelled` nel workspace v1; modello demo schema 4
+conservato. È una prova di UX, non approvazione delle condizioni del servizio.
 
-Prima di scegliere il branch di un seguito controllare la PR più recente:
-se aperta, riutilizzarla per questa consegna; dopo il merge aggiornare main e
-creare un nuovo branch. Non riutilizzare i branch integrati, non effettuare merge.
+## Stato remoto e pubblicazione
 
-## Come entrare e provare
+PR #12 verificata integrata il 14 ottobre alle 20:48:12 UTC; main di partenza
+`24eb129e35675ff8f684bc308b8202cc7735a43a`.
+Branch corrente `feat/studio-audio-incremento-locale`; PR di questa consegna
+registrata nel rapporto delle verifiche dopo la creazione. Nessun merge.
+Prima del prossimo checkout controllare il remoto: riutilizzare la PR aperta
+solo per la stessa consegna; dopo merge ripartire dal main aggiornato.
 
-`npm ci`, `npm run dev`, aprire `http://localhost:5173/`. La root e
-`/#/spazio/overview` mostrano lo spazio applicativo; `/#/prova` conserva i link
-già condivisi. Sullo stesso Sites la root apre il prodotto; `/app/` è conservato,
-`/desktop/` e `/mobile/` restano anteprime; il selettore è in `/anteprime/`.
+Nessun deploy richiesto o eseguito per questo incremento locale. Online rimane
+l'esperienza 0.5, Sites v8 da `448f3721760ec3289920f092fa919240b50be2d4`:
+[piattaforma](https://eecard-design-preview.uepacio.chatgpt.site/).
+GitHub/PR e HTML locale non equivalgono ad aggiornamento del sito. Conservare
+identità e accesso di `.openai/hosting.json` per un eventuale seguito autorizzato.
 
-1. «Completa la pratica»: dati/persona, documenti, accessi, riepilogo.
-2. «Accogli al banco»: tessera di esempio o codice `DEMO-ALFA-01`, conferma
-   persona, motivo e casa/contratto. Poi ricerca e apertura del fascicolo.
-3. Cercare impianto/documento intorno al 2019, confrontare fonti/versioni,
-   mostrare la selezione al cliente e terminare l'incontro.
-4. «Vista cliente»: tessera, documenti, case, utenze, richiesta e dichiarazione.
-   Tornare all'agenzia per vedere la richiesta e registrare un riscontro parziale.
-5. «Strumenti della demo»: scenari, attore, reset, note anonime e registro locale.
+## Come provare il nuovo intervento
 
-Il laboratorio tecnico 0.4 rimane `/#/laboratorio`; le rotte 0.3 sono conservate
-come archivio. Non riproporli come ingresso principale della piattaforma.
+`npm ci`, `npm run dev`, aprire `http://localhost:5173/`.
 
-## Stato, vincoli e limiti
+1. Completare la pratica e aprire «Vista cliente», oppure usare «Strumenti della
+   demo» → scenario «Lettore indisponibile» → «Ripristina scenario» → vista cliente.
+2. Home personale → «Gestisci abbonamento»: periodo illustrativo e rinnovo.
+3. «Disattiva rinnovo» → tornare al riepilogo oppure confermare la simulazione.
+4. Ricaricare: la scelta rimane nel browser. Documenti, affitto e tessera restano
+   distinti. «Ripristina scenario» ripristina anche il rinnovo dimostrativo.
 
-Il modello 0.4 e la chiave `eecard-functional-v4` sono conservati. Le visite e
-la vista condivisa non vengono ripristinate alla ricarica. La chiave
-`eecard-workspace-v1` aggiunge richieste, stati economici, eventi e fixture card
-proprietario; incompatibilità/corruzione produce reset con avviso. Il reset
-scenario azzera entrambe le parti dello spazio, non il prototipo 0.3.
+`/#/spazio/overview` e `/#/prova` restano ingressi; `/#/laboratorio` conserva la
+0.4 tecnica, le rotte 0.3 sono archivio. La demo usa data fissa 14 ottobre 2026.
+La gestione rinnovo riguarda solo l'adesione sintetica Cliente 01, non quella del
+proprietario o un catalogo generale. Nessuna autenticazione/server reale.
 
-C–Legame, nome provvisorio, direzione Materia/Editoriale e font locale conservati.
-Permessi per agenzia, attore, rapporto, immobile, contratto, intestazione,
-delega, incarico, scopo e tempo. La card non concede dati; proprietario senza
-bollette private del conduttore; tecnico solo incarico. Fine rapporto, adesione,
-revoca card e titolo autonomo rimangono separati. Evidenza, dichiarazione,
-incasso verificato e quietanza restano eventi distinti; il parziale conserva
-il residuo. Le due card personali di esempio hanno blocchi distinti.
+## Prossimo lavoro consigliato
 
-Tutto avviene con fixture sintetiche nel browser: nessuna sicurezza server,
-account reale, invito, pagamento, incasso bancario, NFC/wallet, firma, AI,
-telemetria o archivio reale. Il banco continuo è predisposto per Cliente 01 /
-Alfa; Beta dispone dei propri documenti e non apre Alfa. Pratica a due parti,
-nessuna creazione arbitraria di nuovi contratti/clienti. Non usare dati reali.
+1. Rivedere i passaggi privati incerti su cifre, scadenze e voci prima di fissare
+   condizioni. Chiarire preavviso, durata/unità, pro rata/downgrade e catalogo.
+2. Eseguire IN03 (importazione guidata da facsimile) e IN04 (avviso), oppure IN05
+   (prima sezione report) secondo il beneficio scelto. Criteri e dipendenze nel
+   piano; i due report non autorizzano aggregazioni di dati privati fuori titolo.
+3. Le chiamate AI restano IN06, solo anteprime senza invii finché non sono
+   definiti stato del dovuto, destinatario, titolo, preferenze e responsabilità.
+4. Prova umana N10/BF16: usare BF02 esistente, annotare nuovo supporto/commit,
+   osservare comprensione al primo impatto, percorso completo, diniego e recupero.
+   Note individuali fuori repo; sintesi anonime autorizzate. Non ricreare il kit.
 
-## Verifiche di prodotto ancora aperte (dopo la nuova analisi)
-
-Provare la comprensione del nuovo ingresso senza prima spiegare sigle o copione:
-cosa pensa di poter fare la persona, quale azione sceglie e dove si blocca.
-Poi percorso completo, un diniego e un recupero. Usare BF02 esistente senza
-rigenerarlo, annotando nuovo supporto/commit e adattamenti prima della raccolta.
-Conservare osservazioni individuali fuori repository e pubblicare solo sintesi
-anonime autorizzate. BF16 rimane aperto: il feedback qualitativo dell'utente
-non è una prova comparativa con operatori o una misura di risparmio.
-
-Raccogliere osservazioni, ordinare correzioni N11/N12 e riesaminare BF01/BF03/BF17.
-Verificare telefoni fisici, Safari/iOS, Android e screen reader: Chromium/axe
-non sostituiscono questi controlli. Prezzi, copertura, conservazione, risorse,
-responsabilità e architettura operativa restano aperti.
-
-## Riferimenti remoti della consegna
-
-[PR #12](https://github.com/av3rgfx/EECard/pull/12), aperta e non in bozza,
-branch `design/experience-0.5`, base main `0481bb1`, nessun merge.
-Frontend online al commit `448f3721760ec3289920f092fa919240b50be2d4`, Sites v8
-`succeeded` alle 20:01:30 UTC. [Apri la piattaforma](https://eecard-design-preview.uepacio.chatgpt.site/).
-La chiusura successiva è soltanto documentale e non cambia la sorgente online.
-
-Esiti osservati: 61 test passati, 60 viste senza anomalie axe/layout/immagini/JS
-o richieste esterne, 52 screenshot, build statica e autonoma, formattazione e
-audit npm (0 vulnerabilità). Root e `/app/` live identici alla build.
-Resta l'avviso Vite sul bundle unico e restano aperte le verifiche fisiche e BF16.
-
-Chiusura del 14 ottobre: aggiornati prompt e continuità per audio/appunto nella
-stessa PR #12 ancora aperta. Solo documentazione; nessun nuovo test applicativo
-o deploy. I risultati sopra sono quelli della consegna 0.5, non ripetuti ora.
+BF16 resta aperto; discussione e test automatici non sono osservazioni comparative
+o risparmio misurato. Restano N02 (telefoni fisici/Safari/Android/screen reader),
+BF01/BF03/BF17, prezzi, primo pagante, risorse, conservazione e architettura reale.
+Le proposte non rinviano automaticamente pagamenti, app, hardware o AI dal primo
+rilascio: se essenziali al beneficio, le dipendenze vanno affrontate esplicitamente.

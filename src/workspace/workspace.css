@@ -3549,3 +3549,29 @@ body:has(.ws-modal-content) .modal-backdrop {
   opacity: 1;
   color: #6f5b48;
 }
+.ws-subscription-facts {
+  margin: 1.5rem 0;
+}
+.ws-subscription-facts > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.ws-subscription-facts dt {
+  font-weight: 600;
+}
+.ws-subscription-facts dd {
+  margin: 0;
+}
+.ws-subscription-confirm {
+  margin-top: 1.5rem;
+}
+.ws-subscription-confirm button {
+  white-space: normal;
+  max-width: 100%;
+  height: auto;
+  overflow-wrap: anywhere;
+}

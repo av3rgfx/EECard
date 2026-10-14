@@ -56,6 +56,7 @@ import {
   emptyWorkspace,
   persistWorkspace,
   readWorkspace,
+  readSubscription,
   scope,
   visibleRequests,
   work,
@@ -203,6 +204,13 @@ export function Experience() {
   const [modal, setModal] = useState<string | null>(null),
     [menu, setMenu] = useState(false),
     [tools, setTools] = useState(false);
+  const [renewalConfirm, setRenewalConfirm] = useState(false);
+  const [renewalError, setRenewalError] = useState("");
+  const renewalTitleRef = useRef<HTMLHeadingElement>(null);
+  const subscription = readSubscription(s, u);
+  useEffect(() => {
+    if (modal === "subscription") renewalTitleRef.current?.focus();
+  }, [modal, renewalConfirm, u.renewalCancelled]);
   const [feedback, setFeedback] = useState<{
       text: string;
       ok: boolean;
@@ -1019,6 +1027,19 @@ export function Experience() {
                         Gestisci tessera
                         <ArrowUpRight size={16} />
                       </button>
+                      {subscription && (
+                        <button
+                          className="ws-card-manage"
+                          onClick={() => {
+                            setRenewalConfirm(false);
+                            setRenewalError("");
+                            setModal("subscription");
+                          }}
+                        >
+                          Gestisci abbonamento
+                          <ArrowUpRight size={16} />
+                        </button>
+                      )}
                     </div>
                     <div className="ws-personal-intro">
                       <span className="ws-eyebrow">
@@ -2578,31 +2599,33 @@ export function Experience() {
         title={
           tools
             ? "Strumenti della prova"
-            : modal === "navigation"
-              ? "Il tuo spazio"
-              : modal === "date"
-                ? "Quale data confermiamo?"
-                : modal === "attachment"
-                  ? "Completa il fascicolo"
-                  : modal === "document"
-                    ? d?.title.replace(" · facsimile", "") || "Documento"
-                    : modal === "workspace"
-                      ? "Scegli lo spazio da esplorare"
-                      : modal === "block-card"
-                        ? "Blocca la tessera"
-                        : modal === "card"
-                          ? "La tua tessera servizi"
-                          : modal === "search"
-                            ? "Cosa vuoi ritrovare?"
-                            : modal === "request"
-                              ? "Una nuova richiesta"
-                              : modal === "declare"
-                                ? "Dichiara un pagamento"
-                                : modal === "verify"
-                                  ? "Registra un riscontro"
-                                  : modal === "owner"
-                                    ? "Proprietario 02"
-                                    : "Cliente 01"
+            : modal === "subscription"
+              ? "Il tuo abbonamento"
+              : modal === "navigation"
+                ? "Il tuo spazio"
+                : modal === "date"
+                  ? "Quale data confermiamo?"
+                  : modal === "attachment"
+                    ? "Completa il fascicolo"
+                    : modal === "document"
+                      ? d?.title.replace(" · facsimile", "") || "Documento"
+                      : modal === "workspace"
+                        ? "Scegli lo spazio da esplorare"
+                        : modal === "block-card"
+                          ? "Blocca la tessera"
+                          : modal === "card"
+                            ? "La tua tessera servizi"
+                            : modal === "search"
+                              ? "Cosa vuoi ritrovare?"
+                              : modal === "request"
+                                ? "Una nuova richiesta"
+                                : modal === "declare"
+                                  ? "Dichiara un pagamento"
+                                  : modal === "verify"
+                                    ? "Registra un riscontro"
+                                    : modal === "owner"
+                                      ? "Proprietario 02"
+                                      : "Cliente 01"
         }
         description={
           tools
@@ -2613,6 +2636,121 @@ export function Experience() {
         }
       >
         <div className="ws-modal-content">
+          {modal === "subscription" &&
+            (subscription ? (
+              <>
+                <p className="ws-eyebrow">
+                  CLIENTE 01 · ABBONAMENTO DI ESEMPIO
+                </p>
+                <div role="status" aria-live="polite">
+                  <h3
+                    tabIndex={-1}
+                    ref={!renewalConfirm ? renewalTitleRef : undefined}
+                  >
+                    <Status tone={subscription.active ? "green" : "amber"}>
+                      {subscription.active
+                        ? subscription.renewalCancelled
+                          ? "Rinnovo disattivato nella demo"
+                          : "Periodo di esempio attivo"
+                        : "Abbonamento non attivo"}
+                    </Status>
+                  </h3>
+                </div>
+                <dl className="ws-subscription-facts">
+                  <div>
+                    <dt>Periodo simulato</dt>
+                    <dd>1 gennaio – 31 dicembre 2026</dd>
+                  </div>
+                  <div>
+                    <dt>Fine del periodo</dt>
+                    <dd>1 gennaio 2027, inizio giornata (UTC)</dd>
+                  </div>
+                  <div>
+                    <dt>Rinnovo di esempio</dt>
+                    <dd>
+                      {subscription.renewalCancelled ? "Disattivato" : "Attivo"}
+                    </dd>
+                  </div>
+                </dl>
+                <p>
+                  Disattivare il rinnovo mantiene il periodo di esempio già
+                  attivo. Tessera, locazione, documenti e relativi permessi
+                  restano separati.
+                </p>
+                <p className="ws-small">
+                  La demo è ferma al 14 ottobre 2026. Queste date sono
+                  illustrative: nessun abbonamento è stato acquistato e nessun
+                  importo sarà addebitato. Prezzi e condizioni reali restano da
+                  definire.
+                </p>
+                {renewalError && (
+                  <p role="alert" className="ws-inline-error">
+                    {renewalError}
+                  </p>
+                )}
+                {subscription.active &&
+                  !subscription.renewalCancelled &&
+                  (renewalConfirm ? (
+                    <div className="ws-subscription-confirm">
+                      <h3 tabIndex={-1} ref={renewalTitleRef}>
+                        Disattivare il prossimo rinnovo?
+                      </h3>
+                      <p>
+                        Il periodo di esempio resta attivo fino al 1 gennaio
+                        2027, escluso. Non viene inviata alcuna richiesta
+                        esterna.
+                      </p>
+                      <div className="ws-modal-actions">
+                        <Action
+                          secondary
+                          onClick={() => {
+                            setRenewalConfirm(false);
+                            setRenewalError("");
+                          }}
+                        >
+                          Torna al riepilogo
+                        </Action>
+                        <Action
+                          onClick={() => {
+                            const result = work(s, u, {
+                              type: "cancelRenewal",
+                            });
+                            if (!result.ok) {
+                              setRenewalError(result.message);
+                              return;
+                            }
+                            if (!persistWorkspace(result.state)) {
+                              setRenewalError(
+                                "Disdetta non salvata: la memoria del browser non è disponibile. Riprova, oppure torna al riepilogo.",
+                              );
+                              return;
+                            }
+                            setU(result.state);
+                            setRenewalConfirm(false);
+                            setRenewalError("");
+                          }}
+                        >
+                          Conferma disattivazione di esempio
+                        </Action>
+                      </div>
+                    </div>
+                  ) : (
+                    <Action secondary onClick={() => setRenewalConfirm(true)}>
+                      Disattiva rinnovo
+                    </Action>
+                  ))}
+                {subscription.renewalCancelled && (
+                  <p>
+                    La scelta è salvata soltanto in questo browser. Per ripetere
+                    la prova, ripristina lo scenario dagli Strumenti della demo.
+                  </p>
+                )}
+              </>
+            ) : (
+              <Empty title="Abbonamento non disponibile">
+                Controlla la sessione e il contesto del titolare.
+              </Empty>
+            ))}
           {feedback && !feedback.ok && (
             <div className="ws-feedback warning" role="alert">
               {feedback.text}

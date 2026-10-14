@@ -155,3 +155,15 @@ studio progettuale, piano incrementale e primo intervento locale chiaro. Leggere
 `docs/progetto/PROMPT_NUOVA_SESSIONE.md`, entro 4.000 caratteri. Non rieseguire
 il vecchio prompt di implementazione 0.4. BF16 resta aperto; nessuna fonte grezza
 o trascrizione integrale nella repository pubblica.
+
+## Studio audio e rinnovo locale — 15 ottobre 2026
+
+Le fonti preparate nella sezione precedente sono ora state elaborate. Leggere
+`docs/progetto/discussione-2026-10-15/` e il punto di ripresa aggiornato.
+NA01–NA16 sono proposte/candidati con provenienza; annual report cliente e agenzia
+con viste separate è conferma esplicita dell'utente. Preavviso, pro rata,
+listino, chiamate AI e condizioni operative restano aperti.
+IN01 è la gestione locale del rinnovo per Cliente 01: non rifarla né trasformarla
+in cessazione di rapporto/card. Trascrizioni e fonti restano private. Nessun
+servizio reale, nessun merge, BF02 invariato, BF16 aperto. Controllare il remoto
+prima del prossimo branch; il prompt corrente resta entro 4.000 caratteri.

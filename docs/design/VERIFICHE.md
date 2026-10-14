@@ -227,3 +227,13 @@ La nuova shell e i percorsi sono verificati nel [rapporto 0.5](../progetto/exper
 [screenshot](screenshots/experience-0.5). La navigazione mobile e i pannelli
 sono stati corretti per sovrapposizioni/focus; la verifica resta in emulazione.
 I rapporti 0.3/0.4 sopra rimangono storici e non certificano il nuovo frontend.
+
+## 15 ottobre 2026 — incremento locale rinnovo
+
+[Rapporto dedicato](../progetto/discussione-2026-10-15/VERIFICHE.md): otto nuovi
+test, overflow al testo 200% rilevato/corretto, 66 test della suite passati e
+3 timeout axe ripetuti separatamente con esito 3/3; build e HTML autonomo
+rigenerati, formattazione, screenshot 390/1440 ispezionati. Smoke dell'HTML
+locale: disattivazione riuscita, zero errori JavaScript e richieste HTTP esterne.
+Nessun deploy; nessuna prova fisica o BF16. Non estendere questi esiti ai futuri
+report, OCR, pagamento o chiamate AI, non implementati.

@@ -248,3 +248,24 @@ con `/desktop/`, `/mobile/`, `/app/` conservati. L'HTML autonomo incorpora il
 medesimo codice. `workspace-qa.mjs` e `workspace-static-qa.mjs` verificano le
 nuove viste; i rapporti storici non sono attribuiti alla 0.5.
 [Dettagli](docs/progetto/experience-2026-10-14/README.md).
+
+## Incremento locale rinnovo — 15 ottobre
+
+`readSubscription` in `src/workspace/service.ts` autorizza il titolare sintetico
+Cliente 01 per agenzia/account/sessione/servizio; il rinnovo non dipende dalla
+locazione o dalla card. `cancelRenewal` è idempotente e cambia soltanto il nuovo
+booleano `renewalCancelled` e l'evento locale. Il periodo è una fixture autonoma,
+non ricavata dalla locazione. Nessun motore di rinnovo, addebito o cessazione
+programmata: la demo usa ancora `DAY` fisso al 14 ottobre 2026.
+
+Il workspace v1 accetta salvataggi precedenti senza il campo nuovo (default
+false), mentre un tipo incompatibile produce reset con avviso. La UI salva
+prima di confermare il successo; memoria indisponibile lascia la scelta
+invariata e permette retry. Reset scenario ripristina il rinnovo.
+`tests/subscription.spec.ts` copre modello, persistenza, dinieghi, recupero,
+focus, layout/axe e testo ingrandito. Nessuna dipendenza runtime aggiunta.
+
+[Studio e piano](docs/progetto/discussione-2026-10-15/README.md),
+[verifiche osservate](docs/progetto/discussione-2026-10-15/VERIFICHE.md).
+Le trascrizioni e gli strumenti ASR sono esterni alla repository; non sono
+prerequisiti per eseguire l'app. Nessun deploy: online rimane la 0.5 già registrata.

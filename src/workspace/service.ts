@@ -1,4 +1,4 @@
-import { active, allowed, type State } from "../demo/model";
+import { active, allowed, DAY, type State } from "../demo/model";
 export const scope = {
   agency: "alfa",
   property: "casa-alfa",
@@ -22,6 +22,7 @@ export interface Ledger {
 }
 export interface WorkspaceState {
   version: 1;
+  renewalCancelled: boolean;
   ownerCardBlocked: boolean;
   notice: string;
   events: {
@@ -37,6 +38,7 @@ export interface WorkspaceState {
 export function emptyWorkspace(): WorkspaceState {
   return {
     version: 1,
+    renewalCancelled: false,
     ownerCardBlocked: false,
     notice: "",
     events: [],
@@ -55,6 +57,7 @@ export function readWorkspace(): WorkspaceState {
     const s = JSON.parse(localStorage.getItem("eecard-workspace-v1") || "null");
     if (
       s?.version === 1 &&
+      (!("renewalCancelled" in s) || typeof s.renewalCancelled === "boolean") &&
       Array.isArray(s.requests) &&
       (!("events" in s) || Array.isArray(s.events)) &&
       (!("ownerCardBlocked" in s) || typeof s.ownerCardBlocked === "boolean") &&
@@ -119,6 +122,7 @@ export function canOperate(s: State) {
   );
 }
 export type WorkCommand =
+  | { type: "cancelRenewal" }
   | { type: "blockOwnerCard" }
   | { type: "request"; subject: string; detail: string }
   | { type: "work"; id: string }
@@ -141,6 +145,25 @@ export function work(s: State, previous: WorkspaceState, c: WorkCommand) {
     record("negato");
     return { ok: false, message, state: next };
   };
+  if (c.type === "cancelRenewal") {
+    const subscription = readSubscription(s, previous);
+    if (!subscription || !subscription.active)
+      return fail("Abbonamento non disponibile per questa operazione.");
+    if (previous.renewalCancelled)
+      return {
+        ok: true,
+        message: "Rinnovo già disattivato nella demo.",
+        state: next,
+      };
+    next.renewalCancelled = true;
+    record("ammesso");
+    return {
+      ok: true,
+      message:
+        "Rinnovo disattivato nella demo. Il periodo di esempio resta attivo.",
+      state: next,
+    };
+  }
   if (c.type === "blockOwnerCard") {
     if (
       s.actor !== "owner-alfa" ||
@@ -256,6 +279,30 @@ export function work(s: State, previous: WorkspaceState, c: WorkCommand) {
             ? "Riscontro sintetico registrato. Il residuo è aggiornato."
             : "Quietanza facsimile preparata. Il residuo rimane invariato.",
     state: next,
+  };
+}
+// A named synthetic membership, not a right inherited from property ownership,
+// card status or the lease. These dates are independent demonstration fixtures.
+export function readSubscription(s: State, u: WorkspaceState, today = DAY) {
+  if (
+    s.actor !== "person-alfa" ||
+    s.agency !== "alfa" ||
+    !s.practice.account ||
+    !s.operatorAuthenticated ||
+    !s.serviceAvailable
+  )
+    return null;
+  const from = "2026-01-01",
+    until = "2027-01-01";
+  return {
+    from,
+    until,
+    today,
+    active:
+      s.practice.membership === "attiva simulata" &&
+      today >= from &&
+      today < until,
+    renewalCancelled: u.renewalCancelled,
   };
 }
 export function visibleRequests(s: State, u: WorkspaceState) {
