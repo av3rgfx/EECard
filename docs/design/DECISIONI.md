@@ -263,3 +263,16 @@ documenti e gli asset online sono allineati, registrarlo senza deploy duplicati.
 [Implementazione e criteri](../progetto/mostra-avviso-2026-10-15/README.md).
 P19 non approva schemi/canali operativi o compatibilità dei terminali: PB04
 richiede supporti e autorizzazione specifica. Naming e direzione visiva invariati.
+
+## Riallineamento dopo IN04 — risposte dirette del 15 ottobre
+
+| ID | Stato | Decisione / conseguenza |
+| --- | --- | --- |
+| C33 | Conferma esplicita dell'utente | Valore acquistato: accesso, monitoraggio, verifica, pagamento e assistenza per casa, burocrazia, documenti, tecnici, abbonamenti e bollette, con massima semplicità |
+| C34 | Conferma e riscontro espliciti | Home con card, casa, attenzione immediata e pagamento bollette semplificato. Home e struttura attuali non soddisfano ancora la visione. Riallineare prima del prossimo sviluppo |
+| P20 | Proposta dell'assistente da valutare | Home per casa/priorità/azioni/stati; navigazione Casa, Pagamenti, Assistenza, Profilo e percorsi bolletta/assistenza. Ordine e collocazione delle funzioni non sono ancora approvati |
+
+[Descrizione e conseguenze](../progetto/visione-casa-2026-10-15/README.md).
+C33 include il pagamento nel valore del prodotto; non autorizza transazioni o
+integrazioni reali nella demo né definisce canali/partner/copertura/prezzi.
+IN05 resta candidato successivo al riallineamento, nessuna nuova data assegnata.

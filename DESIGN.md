@@ -2,6 +2,18 @@
 
 Aggiornato l'8 ottobre 2026. Direzione 0.3 scelta esplicitamente dopo il confronto ad alta fedeltà: tessera e materiali di **Materia e luce**, struttura delle pagine di **Editoriale e architettura**, processi aperti a tutta larghezza. L’ultima scelta visiva esplicita dell'utente conferma questo stile e rende più compatti solo gli immobili della home quando ne sono visibili più di uno. La direzione è integrata nel frontend; verifiche e versione effettivamente online sono registrate nei rapporti dedicati.
 
+## Priorità corrente — riallineamento del prodotto
+
+Il 15 ottobre, dopo IN04, l'utente ha giudicato la home e la struttura complessiva
+vicine ma non corrispondenti all'idea desiderata. Conferma card, casa, attenzione
+immediata e pagamento semplificato come elementi centrali. La gerarchia/struttura
+attuali vanno riesaminate; i paragrafi successivi descrivono la base implementata,
+non l'approvazione della home corrente. Non dedurre un nuovo nome, simbolo o palette.
+
+[Visione e proposta di organizzazione](docs/progetto/visione-casa-2026-10-15/README.md):
+prima chiarire e mostrare l'esperienza casa → bisogno → azione; IN05 non è il
+prossimo sviluppo automatico. Nessuna nuova schermata realizzata in questo passaggio.
+
 ## Identità attuale
 
 L’utente ha scelto **C — Legame**: due elementi aperti intrecciati, simbolo autonomo dall’agenzia ƎE/Enrico Erca. Il nome del prodotto rimane da confermare; “Legame” identifica il concept, non un naming approvato. Il frontend usa il solo simbolo, mentre EECard resta una dicitura provvisoria nel footer e nei metadati.

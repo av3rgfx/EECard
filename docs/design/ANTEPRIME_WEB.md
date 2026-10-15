@@ -223,3 +223,11 @@ Build TypeScript/Vite, HTML autonomo e sito statico verificati con smoke; suite
 [PR #15](https://github.com/av3rgfx/EECard/pull/15) aperta senza merge.
 Il commit documentale di chiusura non modifica gli asset online: nessun deploy
 identico necessario.
+
+## Riallineamento della visione — sola documentazione
+
+15 ottobre, dopo IN04: lettura nativa Sites conferma v10, stesso URL e pubblico.
+Confronto Git di sorgenti, artefatti e manifest col commit online `a1223ff`
+senza differenze. La revisione della descrizione/home proposta modifica soltanto
+Markdown: nessun deploy identico, nuovo collaudo applicativo o screenshot.
+La proposta non è ancora una modifica del sito e non è dichiarata approvata.

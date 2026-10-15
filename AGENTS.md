@@ -196,3 +196,14 @@ superato e policy sui derivati. Solo facsimili testuali non scansionabili e non
 pagabili; nessuna modifica al ledger. Non rifare IN01/IN03/IN04. Per PR e Sites
 usare PROSSIMA_SESSIONE e verificare il remoto prima del branch. Prossimo
 proposto IN05; BF02 intatto, BF16/N02/PB04 fisico aperti, nessun servizio reale.
+
+## Riallineamento prodotto dopo IN04 — 15 ottobre 2026
+
+Prevale il nuovo riscontro diretto in `docs/progetto/visione-casa-2026-10-15/README.md`:
+servizio per gestire la casa con accesso, monitoraggio, verifica, pagamento e
+assistenza; home con card, casa, priorità e pagamento bollette semplice. L'utente
+non considera ancora corretti home e struttura complessiva. Prima del prossimo
+sviluppo riallineare descrizione e proposta dell'esperienza; non avviare IN05
+automaticamente. La navigazione candidata è proposta dell'assistente, non scelta
+approvata. Nessun nuovo naming/palette o servizio reale autorizzato. Per branch/PR
+leggere PROSSIMA_SESSIONE e verificare il remoto; IN01/IN03/IN04 si conservano.

@@ -589,3 +589,23 @@ e Sites; **v10 pubblicata**, `succeeded` il 15 ottobre alle 12:26:21 UTC,
 identità/accesso pubblico invariati. [PR #15](https://github.com/av3rgfx/EECard/pull/15)
 aperta e non in bozza, base main, nessun merge. Registri finali aggiornati con
 versione/deployment; commit di chiusura solo documentale, senza nuovo deploy.
+
+## 15 ottobre 2026 — riallineamento della visione dopo IN04
+
+L'utente chiede di chiarire il prodotto prima di continuare, poi precisa tre
+punti: gestione semplice della casa e dei bisogni collegati con pagamento e
+assistenza; home con card/casa/attenzione immediata e pagamento bollette facile;
+insoddisfazione per home e struttura complessiva. Registrate conferme C33/C34,
+proposta P20 e [descrizione aggiornata](visione-casa-2026-10-15/README.md).
+IN05 non è più il prossimo incremento automatico; priorità N19 di riallineamento.
+
+Aggiornati PRODUCT, DESIGN, AGENTS, decisioni, backlog, continuità e prompt.
+Home/menu candidati restano da valutare. Nessuna nuova schermata, integrazione
+o modifica di identità; IN01/IN03/IN04 si conservano. PR #15 verificata aperta,
+nuovo branch documentale `docs/visione-casa-2026-10-15` da `7446fc8`, PR dipendente
+con base sul branch IN04 per separare il diff. Nessun merge.
+
+Sites verificato v10 e pubblico, asset locali uguali alla sorgente online
+`a1223ff`; niente deploy identico. Verificati link, whitespace, limite prompt e
+diff solo Markdown. Non ripetuti test applicativi né aggiornati gli screenshot:
+le 94 prove precedenti non validano una home nuova. BF02 invariato, BF16 aperto.

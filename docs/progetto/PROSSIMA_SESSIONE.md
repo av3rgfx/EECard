@@ -2,7 +2,31 @@
 
 Aggiornato il 15 ottobre 2026. Repository: https://github.com/av3rgfx/EECard.
 
-## Consegna corrente: IN04 — Mostra avviso
+## Priorità corrente: riallineare il prodotto prima del prossimo sviluppo
+
+Leggere prima [visione casa e proposta di struttura](visione-casa-2026-10-15/README.md).
+Risposte esplicite dell'utente: il motivo d'acquisto è gestire tutto ciò che
+riguarda la casa con semplicità — accedere, monitorare, verificare, pagare e
+richiedere assistenza per burocrazia, documenti, tecnici, abbonamenti e bollette.
+La home deve mostrare card, casa, attenzione immediata e pagamento semplificato.
+Home e struttura del prototipo sono giudicate vicine ma ancora non corrispondenti.
+
+C33/C34 registrano queste conferme. P20 propone home per casa/priorità/azioni e
+navigazione Casa, Pagamenti, Assistenza, Profilo: **non ancora approvate**.
+Prima discutere e concretizzare questa esperienza, poi riprendere gli incrementi.
+Non avviare IN05 automaticamente. Conservare IN01/IN03/IN04, identità e confini
+della demo; nessun pagamento o servizio reale autorizzato.
+
+PR #15 verificata ancora aperta prima del branch. Questo riallineamento è una
+consegna documentale separata su `docs/visione-casa-2026-10-15`, derivata da
+`7446fc8`. La PR documentale ha base `feat/in04-mostra-avviso`, per non duplicare
+IN04 nel diff. Dopo l'eventuale merge della #15 verificare il remoto e aggiornare
+la base; nessun merge automatico. Riferimento remoto da registrare alla creazione.
+
+Sites verificato v10 e pubblico, asset locali identici al commit online.
+Nessuna modifica frontend o nuovo deploy in questa consegna documentale.
+
+## Ultima consegna applicativa: IN04 — Mostra avviso
 
 Leggere [implementazione/copione](mostra-avviso-2026-10-15/README.md) e
 [verifiche](mostra-avviso-2026-10-15/VERIFICHE.md), poi il
@@ -65,10 +89,10 @@ Screenshot e limiti nel rapporto. Nessuna prova fisica, umana BF16 o terminale.
 
 ## Prossimo lavoro proposto
 
-1. Seguire la nuova richiesta dell'utente; IN04 è completato come demo. In assenza
-   di diversa priorità, **IN05**: report annuali cliente e agenzia con viste
-   separate, destinatari confermati C29/USR01. Definire fonti, periodo, copertura
-   e metriche; non annualizzare fixture né aggregare bollette private senza titolo.
+1. **N19: riallineamento prodotto/home**, secondo C33/C34 e il documento sopra.
+   Descrizione preparata; proposta di home e percorsi da discutere/concretizzare
+   prima di continuare lo sviluppo. **IN05** rimane successivo: report cliente e
+   agenzia separati (C29/USR01), con fonti, periodo, copertura e metriche da definire.
 2. Chiarire preavviso, unità/durata, pro rata/downgrade, listino e condizioni.
    NA01–NA16 sono candidati, non approvazioni commerciali.
 3. IN06/chiamate AI resta studio/anteprima senza invii o provider reali.

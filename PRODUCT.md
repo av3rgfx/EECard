@@ -1,6 +1,6 @@
 # EECard — prodotto
 
-Aggiornato il 14 ottobre 2026. Questo documento orienta il lavoro di prodotto nelle sessioni successive; non costituisce un’offerta commerciale né una specifica di produzione approvata.
+Aggiornato il 15 ottobre 2026 dopo il chiarimento diretto della visione. Questo documento orienta il lavoro di prodotto nelle sessioni successive; non costituisce un’offerta commerciale né una specifica di produzione approvata.
 
 ## Identità e origine
 
@@ -8,7 +8,23 @@ EECard è un nome provvisorio. ƎE è sigla e logo dell’agenzia Enrico Erca, d
 
 ## Obiettivo e stato
 
-EECard propone uno spazio per gestire le relazioni legate a un immobile: documenti, locazione, evidenze di pagamento, assistenza e accesso ai servizi. La card rende riconoscibile l’accesso a questo spazio; non è una carta bancaria.
+EECard è una piattaforma di servizi per gestire la casa e ciò che la riguarda
+nel modo più semplice e intuitivo possibile: accedere alle informazioni,
+monitorare, verificare, pagare e richiedere assistenza per burocrazia, documenti,
+tecnici, abbonamenti e bollette. Questa motivazione d'acquisto è confermata
+direttamente dall'utente il 15 ottobre; catalogo, copertura e condizioni operative
+non sono ancora definiti.
+
+La home deve mostrare card, casa, ciò che richiede attenzione subito e un percorso
+semplificato per pagare le bollette. Il pagamento fa parte del valore desiderato;
+la sola consultazione dell'avviso IN04 non lo realizza. L'agenzia organizza il
+servizio e i professionisti intervengono nei rispettivi ambiti. La card identifica
+l'accesso al servizio e non è una carta bancaria.
+
+L'utente giudica ancora non corretti home e struttura complessiva del prototipo.
+La priorità corrente è riallineare l'esperienza prima di IN05. La
+[descrizione aggiornata e struttura candidata](docs/progetto/visione-casa-2026-10-15/README.md)
+distinguono le conferme dell'utente dalle proposte di navigazione/home.
 
 È stato realizzato un prototipo frontend navigabile desktop e smartphone, con design system e dati demo. Il prodotto operativo, il modello commerciale e il perimetro del primo rilascio restano da definire. La richiesta di chiudere la sessione e salvare il lavoro non equivale all’approvazione finale di tutte le proposte.
 

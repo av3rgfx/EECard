@@ -322,3 +322,17 @@ N07 completato per IN04: Sites **v10**, `succeeded` alle 12:26:21 UTC,
 sorgente `a1223ff657a300c47ab8cbb1771a99da8727a707`.
 [PR #15](https://github.com/av3rgfx/EECard/pull/15) aperta, pronta alla revisione,
 senza merge. Chiusura successiva solo documentale, asset già allineati.
+
+## Priorità aggiornata dopo il riscontro sulla visione
+
+**N19 — corrente, prima di N17/IN05:** riallineare struttura e home alla
+[visione esplicita dell'utente](visione-casa-2026-10-15/README.md), C33/C34.
+Descrizione e prima mappa candidate preparate; resta da valutare la struttura e
+mostrare una proposta home desktop/mobile con percorso pagamento/assistenza.
+Criterio: casa riconoscibile, attenzione immediata, azioni comprensibili e percorso
+bolletta semplificato; prova del risultato con l'utente, senza servizi reali.
+La nuova navigazione P20 non è ancora approvata né implementata.
+
+N17/IN05 resta nel piano, ma non è più il prossimo incremento automatico.
+IN01/IN03/IN04 si riutilizzano. BF02 invariato, BF16/N02 aperti. Sites resta v10:
+questa consegna modifica solo documenti e non richiede un deploy identico.
