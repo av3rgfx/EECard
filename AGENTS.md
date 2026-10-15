@@ -186,3 +186,13 @@ IN03 o IN01. Il seguito consigliato è IN04, poi IN05; prevale la nuova richiest
 Per PR/branch e commit online leggere PROSSIMA_SESSIONE e verificare il remoto.
 Nessun servizio reale o merge. La richiesta successiva autorizza il deploy e
 l’aggiornamento continuativo di Sites secondo la regola sopra. BF02 intatto, BF16 aperto.
+
+## Mostra avviso IN04 — 15 ottobre 2026
+
+IN04 è implementato nella demo: leggere `docs/progetto/mostra-avviso-2026-10-15/`.
+Avviso dall'elenco/versione, originale e testo sullo stesso telefono, stato
+ignoto/domiciliazione/pagamento indicato, codice assente/illeggibile, storico
+superato e policy sui derivati. Solo facsimili testuali non scansionabili e non
+pagabili; nessuna modifica al ledger. Non rifare IN01/IN03/IN04. Per PR e Sites
+usare PROSSIMA_SESSIONE e verificare il remoto prima del branch. Prossimo
+proposto IN05; BF02 intatto, BF16/N02/PB04 fisico aperti, nessun servizio reale.

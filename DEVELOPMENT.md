@@ -292,3 +292,19 @@ restano nell'archivio Utenze, distinto dalla ricerca/export dello schema 4;
 i dettagli dei facsimili iniziali rimandano alle versioni correnti nelle Utenze.
 [Implementazione/copione](docs/progetto/importazione-bollette-2026-10-15/README.md)
 e [verifiche](docs/progetto/importazione-bollette-2026-10-15/VERIFICHE.md).
+
+## IN04 — derivato di sola lettura
+
+`readBillNotice` in `src/workspace/bills.ts` ricontrolla permessi per oggetto e
+fonte/versione e rifiuta campi incoerenti. `BillNotice.tsx` riusa Modal;
+`BillOriginal.tsx` e `NoticeCode.tsx` condividono originale e rappresentazione
+non scansionabile. Nessuno snapshot di autorizzazione o nuovo stato persistito;
+schema 4 e workspace v1 invariati. La fixture dicembre separa codice illeggibile
+da originale interamente illeggibile.
+
+`tests/notices.spec.ts`: 11 test nuovi di policy/UI/accessibilità e invarianti.
+`scripts/verify-notice.mjs`: smoke autonomo e statico, importazione/ricarica e
+avviso/originale senza mutazioni o richieste esterne. Passare `EECARD_NOTICE_URL`
+per la build statica; senza variabile apre `docs/design/anteprima.html`.
+[Copione](docs/progetto/mostra-avviso-2026-10-15/README.md) e
+[esiti](docs/progetto/mostra-avviso-2026-10-15/VERIFICHE.md).

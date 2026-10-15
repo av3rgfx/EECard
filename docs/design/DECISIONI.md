@@ -252,3 +252,14 @@ commerciali o permessi di produzione. IN04/IN05 restano successivi; BF16 aperto.
 La richiesta supera il precedente limite locale per la pubblicazione della demo.
 Non autorizza servizi reali o modifiche del pubblico. Se cambiano soltanto i
 documenti e gli asset online sono allineati, registrarlo senza deploy duplicati.
+
+## IN04 — richiesta ed esecuzione, 15 ottobre 2026
+
+| ID | Stato | Decisione / conseguenza |
+| --- | --- | --- |
+| C32 | Richiesta esplicita corrente | Proseguire con IN04 Mostra avviso dopo IN01/IN03, verificare PR #14 prima del branch, aggiornare lo stesso Sites e preparare continuità/PR senza merge |
+| P19 | Esecuzione della demo autorizzata | Avviso/versione e originale con permessi rivalutati, alternativa testuale sul telefono, recuperi e stati distinti. Facsimile non scansionabile, nessun pagamento o servizio reale |
+
+[Implementazione e criteri](../progetto/mostra-avviso-2026-10-15/README.md).
+P19 non approva schemi/canali operativi o compatibilità dei terminali: PB04
+richiede supporti e autorizzazione specifica. Naming e direzione visiva invariati.

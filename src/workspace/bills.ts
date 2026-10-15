@@ -21,6 +21,7 @@ export interface BillSource {
   pages: number;
   schema: "avviso dimostrativo" | "senza codice" | "altro formato";
   quality: "leggibile" | "illeggibile";
+  code: "facsimile" | "assente" | "illeggibile" | "non supportato";
   debit: "ignota" | "indicata nell’originale";
   payment: "ignoto" | "pagato indicato nell’originale, non verificato";
   original: BillData;
@@ -54,6 +55,7 @@ function source(
     pages: 1,
     schema: "avviso dimostrativo",
     quality: "leggibile",
+    code: original.notice ? "facsimile" : "assente",
     debit: "ignota",
     payment: "ignoto",
     original,
@@ -116,8 +118,21 @@ const sources: BillSource[] = [
     { amount: "72,10", due: "2026-09-30", period: "2026-09", notice: "" },
     {
       schema: "altro formato",
+      code: "non supportato",
       payment: "pagato indicato nell’originale, non verificato",
     },
+  ),
+  source(
+    "luce-dic-codice-illeggibile",
+    "casa-alfa",
+    "Dicembre · codice illeggibile, testo leggibile",
+    {
+      amount: "88,30",
+      due: "2026-12-31",
+      period: "2026-12",
+      notice: "DEMO-DIC-LUCE",
+    },
+    { code: "illeggibile" },
   ),
   source(
     "luce-illeggibile",
@@ -532,4 +547,42 @@ export function validBills(value: unknown): value is Bill[] {
       return ok;
     }) && ["bolletta-alfa", "bolletta-propria"].every((id) => ids.has(id))
   );
+}
+
+// A notice is a read-only derivative. Resolve both object and immutable source
+// on every read, including historical versions; never authorize from a cached UI.
+export function readBillNotice(
+  s: State,
+  bills: Bill[],
+  property: string,
+  id: string,
+  number?: number,
+) {
+  const bill = readBill(s, bills, property, id);
+  if (!bill) return null;
+  const latest = bill.versions.at(-1);
+  const version =
+    number === undefined
+      ? latest
+      : bill.versions.find((v) => v.number === number);
+  if (!version || !latest) return null;
+  const source = readBillSource(s, property, version.sourceId);
+  if (
+    !source ||
+    source.quality !== "leggibile" ||
+    source.anchor !== bill.anchor ||
+    source.revision !== version.sourceRevision ||
+    version.amountCents !== money(source.original.amount) ||
+    (Object.keys(billFields) as BillField[]).some(
+      (k) => version.data[k] !== source.original[k],
+    )
+  )
+    return null;
+  return {
+    version,
+    source,
+    currentNumber: latest.number,
+    superseded: version.number !== latest.number,
+    pastDue: version.data.due < DAY,
+  };
 }

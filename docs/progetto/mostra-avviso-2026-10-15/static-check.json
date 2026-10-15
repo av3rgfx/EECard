@@ -1,0 +1,10 @@
+{
+  "support": "http://127.0.0.1:5174/",
+  "noticeAndOriginal": true,
+  "consultationUnchangedStorage": true,
+  "viewport": "390x900 Chromium emulato",
+  "importPersisted": true,
+  "billCount": 3,
+  "javascriptErrors": [],
+  "externalRequests": []
+}

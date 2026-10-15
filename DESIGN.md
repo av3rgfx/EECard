@@ -145,3 +145,15 @@ Letti apple-design e mobile-native allo snapshot già registrato nelle risorse;
 applicati gerarchia, feedback, input 16 px, zoom e controlli touch. Verifiche
 Chromium e testo ingrandito nel [rapporto IN03](docs/progetto/importazione-bollette-2026-10-15/VERIFICHE.md);
 telefoni fisici e screen reader restano da provare.
+
+## IN04 — avviso e ritorno alla bolletta
+
+Il dialogo esistente ospita un riepilogo essenziale: importo dominante,
+creditore/scadenza, avvertimento di stato, facsimile testuale e alternativa
+selezionabile sullo stesso telefono. Originale completo a richiesta, storico
+superato esplicito. Chiudi/Escape ripristinano il focus sul pulsante d'origine;
+passare alla rettifica porta il focus al contenuto aggiornato. Nessuna nuova
+animazione, identità o libreria. `apple-design` e `mobile-native` lette allo
+snapshot Emil già registrato; applicati gerarchia, controllo e zoom.
+[Screenshot e limiti](docs/progetto/mostra-avviso-2026-10-15/VERIFICHE.md):
+Chromium emulato, non telefoni/terminali o screen reader fisici.
