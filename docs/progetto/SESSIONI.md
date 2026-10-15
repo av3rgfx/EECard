@@ -534,4 +534,6 @@ Aggiornati prodotto/design/sviluppo/decisioni, piano IN03, backlog, istruzioni,
 continuità e prompt entro 4.000 caratteri. Prossimo consigliato IN04, poi IN05
 con due viste e fonti/metriche da definire. BF02 invariato, BF16 aperto.
 Nessun servizio reale, deploy o merge. Online rimane Sites v8 da `448f372`.
-PR della consegna da registrare dopo la creazione.
+[PR #14](https://github.com/av3rgfx/EECard/pull/14) aperta, pronta alla revisione,
+base main. Codice/artefatti `50461b8`; seguito di chiusura solo documentale,
+senza nuovi test applicativi. Nessun merge.

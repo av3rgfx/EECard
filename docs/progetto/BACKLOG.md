@@ -287,3 +287,6 @@ per le due viste report. Ricerca globale/export delle importazioni sono estensio
 future con gli stessi titoli; nessuna propagazione automatica dai grants 0.4.
 N13–N15/IN01 non ripetuti. N02, N10/BF16, N18, BF01/BF03/BF17 e condizioni
 commerciali restano aperti. BF02 invariato, nessun deploy o servizio reale.
+
+IN03 consegnato nella [PR #14](https://github.com/av3rgfx/EECard/pull/14),
+aperta senza merge; codice e artefatti `50461b8`, chiusura solo documentale.

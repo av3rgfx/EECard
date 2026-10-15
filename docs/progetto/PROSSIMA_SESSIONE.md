@@ -29,7 +29,10 @@ condivisione o esportazione 0.4. Queste estensioni richiederanno policy sui deri
 PR #13 verificata **integrata** il 14 ottobre 2026 alle 23:08:00 UTC,
 merge `be4b23ebb869c156713d3da491791b556cafbfec`. Nessuna PR aperta all'avvio.
 Creato da main remoto aggiornato il branch `feat/in03-importazione-bollette`.
-Consegna IN03: PR da registrare dopo la creazione. Nessun merge dell'assistente.
+[PR #14](https://github.com/av3rgfx/EECard/pull/14) aperta e pronta alla revisione,
+base main. Codice e artefatti al commit
+`50461b8205aeedddea195d7e5dc73fbc95807f76`; chiusura successiva solo documentale.
+Nessun merge dell'assistente.
 Prima del prossimo checkout verificare il remoto: riutilizzare una PR aperta
 solo per la stessa consegna; dopo merge partire da main aggiornato e nuovo branch.
 

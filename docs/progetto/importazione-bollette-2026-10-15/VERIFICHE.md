@@ -84,4 +84,8 @@ concorrenza multiutente, conservazione o sicurezza server è dimostrata.
 
 Nessun deploy: online resta Sites v8, sorgente
 `448f3721760ec3289920f092fa919240b50be2d4`. `.openai/hosting.json` invariato.
-PR IN03 da registrare dopo la creazione; nessun merge dell'assistente.
+[PR #14](https://github.com/av3rgfx/EECard/pull/14) creata e verificata aperta,
+non in bozza, base main, branch `feat/in03-importazione-bollette`. Codice e
+artefatti al commit `50461b8205aeedddea195d7e5dc73fbc95807f76`. Il commit di
+chiusura aggiunge soltanto i riferimenti remoti: non gli sono attribuiti nuovi
+test applicativi. Nessun merge dell'assistente.
