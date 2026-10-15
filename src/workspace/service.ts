@@ -1,4 +1,5 @@
 import { active, allowed, DAY, type State } from "../demo/model";
+import { initialBills, validBills, type Bill } from "./bills";
 export const scope = {
   agency: "alfa",
   property: "casa-alfa",
@@ -23,6 +24,7 @@ export interface Ledger {
 export interface WorkspaceState {
   version: 1;
   renewalCancelled: boolean;
+  bills: Bill[];
   ownerCardBlocked: boolean;
   notice: string;
   events: {
@@ -39,6 +41,7 @@ export function emptyWorkspace(): WorkspaceState {
   return {
     version: 1,
     renewalCancelled: false,
+    bills: initialBills(),
     ownerCardBlocked: false,
     notice: "",
     events: [],
@@ -57,6 +60,7 @@ export function readWorkspace(): WorkspaceState {
     const s = JSON.parse(localStorage.getItem("eecard-workspace-v1") || "null");
     if (
       s?.version === 1 &&
+      (!("bills" in s) || validBills(s.bills)) &&
       (!("renewalCancelled" in s) || typeof s.renewalCancelled === "boolean") &&
       Array.isArray(s.requests) &&
       (!("events" in s) || Array.isArray(s.events)) &&

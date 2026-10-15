@@ -273,3 +273,17 @@ segue l'acquisizione verificata, N17/IN05 segue la definizione delle fonti e
 della copertura. Nessuno di questi incrementi è implementato nella chiusura
 documentale. Dubbi commerciali e revisione dei passaggi audio incerti restano
 aperti in parallelo; il [prompt corrente](PROMPT_NUOVA_SESSIONE.md) prepara IN03.
+
+## IN03 completato localmente — 15 ottobre 2026
+
+N16 aggiornato: **IN03 implementato**, IN04 ancora proposto. Importazione da
+facsimili inclusi, confronto e conferma, dati/versioni per bolletta, duplicati,
+rettifica, permessi e recuperi. [Copione e confini](importazione-bollette-2026-10-15/README.md),
+[verifiche](importazione-bollette-2026-10-15/VERIFICHE.md).
+La PR #13 è integrata (14 ottobre 23:08 UTC, `be4b23e`); IN03 usa un nuovo branch.
+
+Segue IN04 «Mostra avviso», poi N17/IN05 con fonti, copertura, periodo e metriche
+per le due viste report. Ricerca globale/export delle importazioni sono estensioni
+future con gli stessi titoli; nessuna propagazione automatica dai grants 0.4.
+N13–N15/IN01 non ripetuti. N02, N10/BF16, N18, BF01/BF03/BF17 e condizioni
+commerciali restano aperti. BF02 invariato, nessun deploy o servizio reale.

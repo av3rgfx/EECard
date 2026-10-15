@@ -132,3 +132,16 @@ pertinenti di `apple-design` e `mobile-native`, snapshot Emil
 `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`, già referenziato in RISORSE_DESIGN.
 La simulazione non adotta preavvisi o condizioni di vendita; hardware e screen
 reader restano da verificare. Il sito pubblico non viene aggiornato da questa PR.
+
+## IN03 — confronto bolletta/originale
+
+[Percorso e screenshot](docs/progetto/importazione-bollette-2026-10-15/README.md):
+scelta del facsimile nel contesto della casa, confronto affiancato desktop e
+alternabile mobile, riepilogo esplicito, esito persistito e storico versioni.
+Pagine e form restano aperti; solo l'originale ha superficie da documento.
+Importi/stati sono immediati, focus segue il passo; Escape annulla la bozza.
+Componenti e token 0.5 riutilizzati, nessuna nuova libreria o identità.
+Letti apple-design e mobile-native allo snapshot già registrato nelle risorse;
+applicati gerarchia, feedback, input 16 px, zoom e controlli touch. Verifiche
+Chromium e testo ingrandito nel [rapporto IN03](docs/progetto/importazione-bollette-2026-10-15/VERIFICHE.md);
+telefoni fisici e screen reader restano da provare.

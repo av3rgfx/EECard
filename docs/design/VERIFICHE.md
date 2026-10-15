@@ -237,3 +237,11 @@ rigenerati, formattazione, screenshot 390/1440 ispezionati. Smoke dell'HTML
 locale: disattivazione riuscita, zero errori JavaScript e richieste HTTP esterne.
 Nessun deploy; nessuna prova fisica o BF16. Non estendere questi esiti ai futuri
 report, OCR, pagamento o chiamate AI, non implementati.
+
+## IN03 — 15 ottobre 2026
+
+Nuovo [rapporto dedicato](../progetto/importazione-bollette-2026-10-15/VERIFICHE.md):
+confronto e conferma accessibili a 360/390/1440 px, testo 200% sul riepilogo,
+focus/Escape, revisione screenshot, suite 83/83 e 14/14 dopo rifinitura locale.
+HTML autonomo aggiornato e verificato; nessun deploy. I rapporti storici restano
+riferiti ai rispettivi commit. N02 e BF16 aperti, BF02 intatto.

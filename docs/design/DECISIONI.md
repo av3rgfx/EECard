@@ -231,3 +231,14 @@ confronto, servizi reali o modifiche al naming. BF16 rimane aperto.
 candidati locali, non RF approvati. EA/RF/PF storici conservati, BF02 invariato,
 BF16 aperto. Le fonti sono ora disponibili e trattate privatamente: il precedente
 paragrafo C27 descrive la preparazione, non l'esito della nuova sessione.
+
+## IN03 — richiesta ed esecuzione locale, 15 ottobre 2026
+
+| ID | Stato | Decisione / conseguenza |
+| --- | --- | --- |
+| C30 | Richiesta esplicita corrente | Implementare IN03 nella demo locale con facsimile, confronto, conferma, duplicati/rettifiche, permessi, recuperi e PR senza merge; non ripetere audio o IN01, nessun servizio reale |
+| P18 | Esecuzione locale di C30 | Originali HTML sintetici e metadati/versioni nelle Utenze; titoli di acquisizione dedicati legati a intestazione/delega, salvataggio prima del successo, nuovo workspace compatibile senza migrare schema 4 |
+
+[Dettagli e limiti](../progetto/importazione-bollette-2026-10-15/README.md).
+P18 non approva OCR, acquisizione reale, conservazione, provider, condizioni
+commerciali o permessi di produzione. IN04/IN05 restano successivi; BF16 aperto.

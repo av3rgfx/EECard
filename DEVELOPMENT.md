@@ -269,3 +269,21 @@ focus, layout/axe e testo ingrandito. Nessuna dipendenza runtime aggiunta.
 [verifiche osservate](docs/progetto/discussione-2026-10-15/VERIFICHE.md).
 Le trascrizioni e gli strumenti ASR sono esterni alla repository; non sono
 prerequisiti per eseguire l'app. Nessun deploy: online rimane la 0.5 già registrata.
+
+## IN03 — bollette strutturate e acquisizione guidata
+
+`src/workspace/bills.ts`: fixture originali/proposte, policy di lettura/acquisizione,
+validazione, identità del dovuto, idempotenza e revisioni immutabili attribuite.
+`BillsPanel.tsx`: percorso in tre passi, dettaglio/storico, errori, annullo e
+invalidazione della bozza al cambio contesto/sessione/servizio. `service.ts`
+aggiunge `bills` compatibile al workspace v1; schema 4 e grants restano invariati.
+La conferma in Experience persiste prima di aggiornare lo stato o annunciare
+successo. Non è un sistema di concorrenza multiutente o di autorizzazioni server.
+
+`tests/bills.spec.ts` copre PB01–PB03 su sintetici, persistenza, permessi,
+recuperi e UX; `scripts/verify-bills-portable.mjs` prova l'HTML autonomo dopo
+`npm run preview:portable`, senza server o richieste HTTP. I documenti nuovi
+restano nell'archivio Utenze, distinto dalla ricerca/export dello schema 4;
+i dettagli dei facsimili iniziali rimandano alle versioni correnti nelle Utenze.
+[Implementazione/copione](docs/progetto/importazione-bollette-2026-10-15/README.md)
+e [verifiche](docs/progetto/importazione-bollette-2026-10-15/VERIFICHE.md).

@@ -167,3 +167,14 @@ IN01 è la gestione locale del rinnovo per Cliente 01: non rifarla né trasforma
 in cessazione di rapporto/card. Trascrizioni e fonti restano private. Nessun
 servizio reale, nessun merge, BF02 invariato, BF16 aperto. Controllare il remoto
 prima del prossimo branch; il prompt corrente resta entro 4.000 caratteri.
+
+## Importazione bollette IN03 — 15 ottobre 2026
+
+IN03 è implementato nella demo locale: leggere
+`docs/progetto/importazione-bollette-2026-10-15/README.md` e VERIFICHE.md.
+Utenze → Aggiungi bolletta: originali HTML sintetici, dati confrontabili,
+conferma, duplicati/rettifiche e titoli dedicati. Le nuove versioni stanno nel
+workspace v1, schema 4 invariato; ricerca/export globale non estesi. Non rifare
+IN03 o IN01. Il seguito consigliato è IN04, poi IN05; prevale la nuova richiesta.
+Per PR/branch e commit online leggere PROSSIMA_SESSIONE e verificare il remoto.
+Nessun servizio reale, deploy implicito o merge. BF02 intatto, BF16 aperto.

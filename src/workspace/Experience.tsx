@@ -63,6 +63,8 @@ import {
   type WorkCommand,
 } from "./service";
 import "./workspace.css";
+import { BillsPanel } from "./BillsPanel";
+import { importBill } from "./bills";
 type View =
   | "overview"
   | "practices"
@@ -2119,90 +2121,45 @@ export function Experience() {
                       </button>
                     ))}
                   </div>
-                  {search(
-                    s,
-                    { type: "bolletta" },
-                    { purpose: "utenze", property: house },
-                  ).map((doc) => (
-                    <section className="ws-bill" key={doc.id}>
-                      <div>
-                        <span className="ws-eyebrow">
-                          ENERGIA · OTTOBRE 2026
-                        </span>
-                        <h2>Energia Esempio</h2>
-                        <p>
-                          {house === "casa-propria"
-                            ? "Casa Atelier"
-                            : "Casa Luce"}{" "}
-                          · intestatario Cliente 01
-                        </p>
-                        <Status tone="amber">Incasso non verificato</Status>
-                      </div>
-                      <div className="ws-bill-amount">
-                        <span>Importo del facsimile</span>
-                        <strong>
-                          {house === "casa-propria" ? "61" : "84"},00 €
-                        </strong>
-                        <small>
-                          Scadenza {house === "casa-propria" ? "29" : "31"}{" "}
-                          ottobre 2026
-                        </small>
-                      </div>
-                      <div className="ws-bill-footer">
-                        <Action secondary onClick={() => openDocument(doc)}>
-                          Apri bolletta
-                          <ArrowUpRight size={16} />
-                        </Action>
-                        <span>
-                          <ShieldCheck size={15} />
-                          Nessun pagamento disponibile
-                        </span>
-                      </div>
-                      <details>
-                        <summary>Codice e QR di esempio</summary>
-                        <div className="ws-qr">
-                          <svg
-                            role="img"
-                            aria-label="QR facsimile non pagabile"
-                            viewBox="0 0 100 100"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M5 5h30v30H5zM65 5h30v30H65zM5 65h30v30H5zM50 46h12v14H50zM72 65h10v20H72z"
-                            />
-                            <path
-                              stroke="#a0442d"
-                              strokeWidth="12"
-                              d="M0 50h100"
-                            />
-                            <text
-                              x="50"
-                              y="53"
-                              fontSize="8"
-                              textAnchor="middle"
-                              fill="white"
-                            >
-                              FACSIMILE
-                            </text>
-                          </svg>
-                          <p>
-                            Codice dimostrativo non utilizzabile. Visualizzare o
-                            scansionare una bolletta non significa pagarla.
-                          </p>
-                        </div>
-                      </details>
-                    </section>
-                  ))}
-                  {!search(
-                    s,
-                    { type: "bolletta" },
-                    { purpose: "utenze", property: house },
-                  ).length && (
-                    <Empty title="Nessuna bolletta disponibile">
-                      La casa selezionata non concede accesso alle bollette
-                      private di un’altra persona.
-                    </Empty>
-                  )}
+                  <BillsPanel
+                    key={`${s.actor}:${s.agency}:${house}:${s.operatorAuthenticated}:${s.serviceAvailable}`}
+                    state={s}
+                    bills={u.bills}
+                    property={house}
+                    save={(draft, reason) => {
+                      const result = importBill(
+                        s,
+                        u.bills,
+                        house,
+                        draft,
+                        true,
+                        reason,
+                      );
+                      if (!result.ok || !result.changed) return result;
+                      const next = {
+                        ...u,
+                        bills: result.bills,
+                        events: [
+                          ...u.events,
+                          {
+                            sequence: u.events.length + 1,
+                            actor: s.actor,
+                            agency: s.agency,
+                            action: "importBill",
+                            outcome: "ammesso",
+                          },
+                        ],
+                      };
+                      if (!persistWorkspace(next))
+                        return {
+                          ok: false,
+                          message:
+                            "Bolletta non salvata: memoria locale indisponibile. I dati restano qui; riprova la conferma.",
+                        };
+                      setU(next);
+                      return result;
+                    }}
+                  />
                 </>
               )}
               {view === "rent" && (
@@ -3031,6 +2988,21 @@ export function Experience() {
               </Empty>
             ) : (
               <>
+                {d.type === "bolletta" && (
+                  <p>
+                    Questo è il facsimile iniziale del fascicolo.{" "}
+                    <button
+                      className="ws-text-link"
+                      onClick={() => {
+                        setHouse(d.property);
+                        go("utilities");
+                      }}
+                    >
+                      Apri Utenze per i dati correnti e lo storico delle
+                      importazioni
+                    </button>
+                  </p>
+                )}
                 <div className="ws-document-tools">
                   <div className="ws-segmented">
                     <button

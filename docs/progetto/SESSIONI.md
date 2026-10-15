@@ -510,3 +510,28 @@ Modifiche esclusivamente documentali. Controllati limite di 4.000 caratteri del
 prompt, riferimenti locali e whitespace; nessuna nuova esecuzione dei test
 applicativi, nessun servizio reale o deploy. Gli esiti precedenti restano nel
 rapporto di verifica della consegna, con i relativi limiti.
+
+## 15 ottobre 2026 — IN03, importazione guidata delle bollette
+
+Ripresa della richiesta esplicita IN03. PR #13 verificata integrata il 14 ottobre
+alle 23:08 UTC, main `be4b23e`; nessuna PR aperta. Nuovo branch
+`feat/in03-importazione-bollette`. Nessuna ripetizione di audio/studio o IN01.
+
+Implementati originali HTML sintetici e dati strutturati, confronto/correzione,
+riepilogo e conferma dopo salvataggio, duplicati anche da seconda copia,
+rettifica e storico, policy di acquisizione legate a intestazione/delega,
+annullo e recupero. Workspace v1 compatibile; schema 4 e grants invariati.
+Documenti importati consultabili nelle Utenze; archivio originale 0.4 conservato.
+
+[Copione](importazione-bollette-2026-10-15/README.md) e
+[verifiche](importazione-bollette-2026-10-15/VERIFICHE.md): suite 83/83 passata;
+14/14 test mirati dopo la rifinitura degli spazi dei campi, build/HTML autonomo,
+smoke portatile senza errori JS o rete, axe/layout/focus, screenshot e formattazione.
+Corretti contrasto mobile, etichette e overflow trovati nei tentativi iniziali.
+Controlli emulati, non prove umane o su telefono fisico.
+
+Aggiornati prodotto/design/sviluppo/decisioni, piano IN03, backlog, istruzioni,
+continuità e prompt entro 4.000 caratteri. Prossimo consigliato IN04, poi IN05
+con due viste e fonti/metriche da definire. BF02 invariato, BF16 aperto.
+Nessun servizio reale, deploy o merge. Online rimane Sites v8 da `448f372`.
+PR della consegna da registrare dopo la creazione.
