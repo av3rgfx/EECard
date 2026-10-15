@@ -13,7 +13,11 @@ Home e struttura del prototipo sono giudicate vicine ma ancora non corrispondent
 
 C33/C34 registrano queste conferme. P20 propone home per casa/priorità/azioni e
 navigazione Casa, Pagamenti, Assistenza, Profilo: **non ancora approvate**.
-Prima discutere e concretizzare questa esperienza, poi riprendere gli incrementi.
+L’utente ha confermato di proseguire con questo lavoro nella prossima sessione
+(C35): concretizzare la mappa dell’esperienza e una proposta navigabile di home
+desktop/mobile, con percorsi bolletta e assistenza. Partire dalle risposte già
+ricevute; dettagli di menu/layout restano candidati, da valutare prima della
+revisione estesa. Non ripetere la sola discussione astratta del prodotto.
 Non avviare IN05 automaticamente. Conservare IN01/IN03/IN04, identità e confini
 della demo; nessun pagamento o servizio reale autorizzato.
 
@@ -23,7 +27,11 @@ consegna documentale separata su `docs/visione-casa-2026-10-15`, derivata da
 IN04 nel diff. Dopo l'eventuale merge della #15 verificare il remoto e aggiornare
 la base; nessun merge automatico.
 [PR #16](https://github.com/av3rgfx/EECard/pull/16) aperta per questo
-riallineamento documentale, base sul branch della #15.
+riallineamento documentale e chiusura di sessione, base sul branch della #15.
+Alla ripresa verificare entrambe: se ancora aperte, la nuova proposta è una
+consegna distinta e richiede un branch dedicato da una base che comprenda questa
+continuità. Non partire da un main arretrato né aggiungere il redesign alla PR
+documentale per semplice comodità. Se integrate, partire dal main aggiornato.
 
 Sites verificato v10 e pubblico, asset locali identici al commit online.
 Nessuna modifica frontend o nuovo deploy in questa consegna documentale.

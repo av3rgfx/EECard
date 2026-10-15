@@ -276,3 +276,8 @@ richiede supporti e autorizzazione specifica. Naming e direzione visiva invariat
 C33 include il pagamento nel valore del prodotto; non autorizza transazioni o
 integrazioni reali nella demo né definisce canali/partner/copertura/prezzi.
 IN05 resta candidato successivo al riallineamento, nessuna nuova data assegnata.
+
+**C35 — conferma esplicita alla chiusura:** l’utente chiede di proseguire con il
+riallineamento nella prossima sessione e di preparare documenti, prompt e PR ora.
+Conferma il seguito di lavoro; non approva i dettagli ancora candidati di
+navigazione/layout e non autorizza servizi reali.

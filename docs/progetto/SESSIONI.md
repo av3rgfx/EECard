@@ -612,3 +612,17 @@ le 94 prove precedenti non validano una home nuova. BF02 invariato, BF16 aperto.
 
 Consegna nella [PR #16](https://github.com/av3rgfx/EECard/pull/16), aperta
 senza merge, base `feat/in04-mostra-avviso`. Proposta da valutare, frontend invariato.
+
+## Chiusura richiesta — prossima sessione di revisione casa/home
+
+L'utente conferma il seguito nella prossima sessione e chiede Markdown, prompt
+e PR. PR #15 e #16 verificate ancora aperte; riutilizzata #16 per la stessa
+consegna documentale, base `feat/in04-mostra-avviso`. Nessun merge. Registrato
+C35 e precisato il prossimo risultato: mappa dell'esperienza, home navigabile
+desktop/mobile e percorsi bolletta/assistenza, da valutare prima della revisione
+estesa. La navigazione candidata non diventa una scelta grafica definitiva.
+
+Aggiornati continuità, backlog, visione, registro decisioni e prompt sotto 4.000
+caratteri. Verificati collegamenti, whitespace e assenza di modifiche applicative.
+Sites resta v10 pubblico, sorgente `a1223ff`; asset allineati, nessun deploy
+identico o test applicativo ripetuto. IN05 non avviato, BF02 intatto, BF16 aperto.

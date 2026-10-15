@@ -131,3 +131,12 @@ Le 94 prove IN04 restano evidenze precedenti, non una verifica della nuova home.
 
 Consegna nella [PR #16](https://github.com/av3rgfx/EECard/pull/16), aperta
 senza merge, base `feat/in04-mostra-avviso`. Proposta da valutare, frontend invariato.
+
+## Chiusura e incarico per la prossima sessione
+
+L'utente ha confermato di proseguire con questo lavoro nella prossima sessione
+(C35) e ha richiesto chiusura, aggiornamento Markdown, prompt e PR. Ripartire
+con mappa dell'esperienza e proposta navigabile home desktop/mobile, collegata
+ai percorsi bolletta e assistenza. Le risposte sul valore/priorità sono già
+acquisite; non ripetere l'intera analisi. Menu/layout sono ancora candidati.
+[Prompt pronto](../PROMPT_NUOVA_SESSIONE.md), [continuità](../PROSSIMA_SESSIONE.md).

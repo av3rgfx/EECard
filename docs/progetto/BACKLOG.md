@@ -336,3 +336,8 @@ La nuova navigazione P20 non è ancora approvata né implementata.
 N17/IN05 resta nel piano, ma non è più il prossimo incremento automatico.
 IN01/IN03/IN04 si riutilizzano. BF02 invariato, BF16/N02 aperti. Sites resta v10:
 questa consegna modifica solo documenti e non richiede un deploy identico.
+
+Chiusura confermata C35: N19 è il prossimo lavoro autorizzato per la sessione
+successiva. Risultato da preparare: mappa dell'esperienza e proposta navigabile
+home desktop/mobile, con bolletta e assistenza. Niente nuova analisi integrale o
+avvio anticipato IN05. Prompt e continuità pronti; PR #16 aggiornata senza merge.
