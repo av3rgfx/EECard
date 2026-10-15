@@ -582,3 +582,10 @@ Non sono prove fisiche o umane: N02/PB04/BF16 restano aperti. Bundle unico circa
 Aggiornati prodotto/design/sviluppo, AGENTS, C32/P19, piano, backlog, continuità
 e prompt entro 4.000 caratteri. Prossimo proposto IN05 con fonti/copertura/metriche
 per le due viste. Pubblicazione e PR registrate a chiusura dopo l'esito remoto.
+
+Esito di chiusura: dopo l'interruzione verificato il processo Sites già concluso,
+senza riavvio. Sorgente `a1223ff657a300c47ab8cbb1771a99da8727a707` su GitHub
+e Sites; **v10 pubblicata**, `succeeded` il 15 ottobre alle 12:26:21 UTC,
+identità/accesso pubblico invariati. [PR #15](https://github.com/av3rgfx/EECard/pull/15)
+aperta e non in bozza, base main, nessun merge. Registri finali aggiornati con
+versione/deployment; commit di chiusura solo documentale, senza nuovo deploy.

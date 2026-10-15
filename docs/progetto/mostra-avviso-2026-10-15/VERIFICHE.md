@@ -70,3 +70,10 @@ servizio reale, OCR, pagamento, QR autentico o URL operativo. Ricerca/export e
 condivisione dei nuovi derivati non implementati, nessuna estensione implicita
 dei titoli. Schema 4, BF02 e IN01 invariati. BF16, N02 e PB04 restano aperti;
 queste verifiche automatiche non misurano beneficio umano o scansionabilità.
+
+Pubblicazione conclusa: Sites **v10**, `succeeded` alle 12:26:21 UTC del 15 ottobre,
+sorgente `a1223ff657a300c47ab8cbb1771a99da8727a707`; stesso sito e accesso
+pubblico. [PR #15](https://github.com/av3rgfx/EECard/pull/15) aperta e pronta alla
+revisione, senza merge. Controlli applicativi riferiti al codice/artefatti di
+questa sorgente; la chiusura successiva modifica solo documentazione e non
+comporta una nuova esecuzione della suite o un deploy identico.

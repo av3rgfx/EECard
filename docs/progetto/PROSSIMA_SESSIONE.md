@@ -26,13 +26,18 @@ condivisione globale non estesi. L'archivio 0.4 resta uno snapshot iniziale.
 
 PR #14 verificata **integrata** il 15 ottobre 2026 alle 06:36:01 UTC,
 merge `ad8b928c7d6cff1a8797225fe1de92716225e735`. Nuovo branch
-`feat/in04-mostra-avviso` da origin/main aggiornato. Pubblicazione e PR IN04 in
-preparazione; aggiornare questa sezione dopo l'esito remoto. Nessun merge.
+`feat/in04-mostra-avviso` da origin/main aggiornato.
+[PR #15](https://github.com/av3rgfx/EECard/pull/15) **aperta**, pronta alla
+revisione, base main. Nessun merge dell'assistente.
 
-Ultima versione online prima di IN04: Sites v9, sorgente
-`44ffb53f60d68e636a475e405b7e71e1129dfada` (IN01/IN03).
+Sites **v10 pubblicata**, `succeeded` il 15 ottobre 2026 alle **12:26:21 UTC**,
+sorgente `a1223ff657a300c47ab8cbb1771a99da8727a707`, presente su GitHub e nel
+repository sorgente Sites. Comprende IN01/IN03/IN04.
 [Stesso sito](https://eecard-design-preview.uepacio.chatgpt.site/),
-[registro Sites](../design/ANTEPRIME_WEB.md). Manifest e pubblico invariati.
+[registro Sites](../design/ANTEPRIME_WEB.md). Manifest e accesso pubblico invariati.
+La chiusura successiva aggiorna solo documenti: gli asset corrispondono alla v10,
+non serve un deploy identico. Non confondere il nuovo HEAD documentale con il
+commit effettivamente online.
 
 Regola permanente: pubblicare gli aggiornamenti verificati del prototipo sullo
 stesso Sites a ogni sessione, senza una nuova conferma. Push GitHub e deploy

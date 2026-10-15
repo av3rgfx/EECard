@@ -195,3 +195,31 @@ Il risultato nativo `succeeded` verifica la pubblicazione; non è attribuito
 a questo passaggio un nuovo collaudo browser/hardware o confronto HTTPS dei byte.
 [Verifiche IN03](../progetto/importazione-bollette-2026-10-15/VERIFICHE.md).
 PR #14 aggiornata senza merge. Il commit documentale finale non modifica gli asset.
+
+## IN04 — Sites v10, 15 ottobre 2026
+
+Mostra avviso pubblicato sullo stesso sito, con IN01/IN03 conservati. Identità,
+manifest e accesso pubblico invariati; nessun servizio applicativo reale.
+
+- [Piattaforma](https://eecard-design-preview.uepacio.chatgpt.site/).
+- Sites **v10**, esito `succeeded` il 15 ottobre alle **12:26:21 UTC**.
+- Sorgente online: `a1223ff657a300c47ab8cbb1771a99da8727a707`, salvata nei
+  repository sorgente Sites e GitHub prima del salvataggio/deploy.
+- Versione: `appgprj_6ac4c220882c8191be87c1b262306614~appgver_2c8f20e76f9481918132f617d62b1486`.
+- Deployment: `appgdep_6ad0c65bf2a48191a708eee95e1e508f`.
+- Archivio locale gzip SHA256: `e172cb99e4e997fabbabb567d4a8948bf948e40ccd494401544a09194b2606e5`.
+- Archivio normalizzato Sites SHA256: `69b9e901597b528e1e264c2e95e7dcc243b6140405c26a5d2cd1d4eb356dc296`.
+
+Helper Sites completato prima dell'interruzione; alla ripresa verificato il
+medesimo handle concluso con archivio e commit, senza ricreare o ripubblicare
+una seconda versione. Credenziale scaduta rinnovata durante la preparazione,
+senza modifiche di identità o accesso. Il risultato nativo terminale verifica
+il deploy. Nessun ulteriore collaudo browser live o confronto HTTPS dei byte
+attribuito a questo passaggio; nessuna superficie browser visibile disponibile
+per il passaggio di consegne nella sessione.
+
+Build TypeScript/Vite, HTML autonomo e sito statico verificati con smoke; suite
+94/94, screenshot e limiti nel [rapporto IN04](../progetto/mostra-avviso-2026-10-15/VERIFICHE.md).
+[PR #15](https://github.com/av3rgfx/EECard/pull/15) aperta senza merge.
+Il commit documentale di chiusura non modifica gli asset online: nessun deploy
+identico necessario.

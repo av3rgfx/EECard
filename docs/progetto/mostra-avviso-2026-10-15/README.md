@@ -85,3 +85,7 @@ futura prova autorizzata con telefoni/terminali e avvisi di test pertinenti.
 Prossimo incremento proposto: IN05, report cliente e agenzia separati, dopo la
 definizione esplicita di fonti, copertura, periodo e metriche; non annualizzare
 le poche fixture né aggregare bollette private senza titolo.
+
+Consegna pubblicata in **Sites v10**, sorgente `a1223ff657a300c47ab8cbb1771a99da8727a707`.
+[PR #15](https://github.com/av3rgfx/EECard/pull/15) aperta senza merge;
+chiusura successiva solo documentale, distinta dal commit online.

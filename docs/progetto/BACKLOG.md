@@ -317,3 +317,8 @@ cliente/agenzia separati. N18/IN06 resta studio. N02, N10/BF16, PB04 fisico,
 BF01/BF03/BF17 e condizioni commerciali restano aperti; BF02 invariato.
 Ricerca/export/condivisione delle nuove bollette restano estensioni future con
 policy sui derivati. IN01 e l'analisi audio non sono ripetuti.
+
+N07 completato per IN04: Sites **v10**, `succeeded` alle 12:26:21 UTC,
+sorgente `a1223ff657a300c47ab8cbb1771a99da8727a707`.
+[PR #15](https://github.com/av3rgfx/EECard/pull/15) aperta, pronta alla revisione,
+senza merge. Chiusura successiva solo documentale, asset già allineati.
