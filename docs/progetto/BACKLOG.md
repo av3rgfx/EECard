@@ -22,7 +22,7 @@ Aggiornato il 14 ottobre 2026 con la strategia demo-prima. Le priorità seguenti
 | N04 | Dopo N01/N03 · da definire | Scegliere il perimetro del primo rilascio operativo | Percorso prioritario, esclusioni esplicite e criteri di accettazione concordati |
 | N05 | Modello e approfondimento BF03 preliminari; aperto dopo N04 | Revisionare i contratti PF01/PF02/PF05 e completare il perimetro tecnico | [Allegato BF03](validazione-bf16-2026-10-09/CONTRATTI_PRELIMINARI.md): matrice azione/oggetto e prove future; nessuna architettura approvata o implementazione |
 | N06 | Dopo N05 · da implementare | Realizzare la prima funzionalità operativa completa | UI, server, dati, errori e test integrati secondo il perimetro scelto; demo separata dai dati reali |
-| N07 | Quando cambia il frontend | Aggiornare QA, screenshot e anteprime | Report coerenti col commit e deploy verificato sul sito esistente |
+| N07 | Ogni sessione con modifiche al prototipo, richiesta permanente | Aggiornare QA pertinente e Sites per consultazione a distanza | Report coerenti col commit e deploy verificato sul sito esistente; sole modifiche documentali con asset allineati non richiedono deploy duplicati |
 | N08 | Con architettura reale · da valutare | Prestazioni, bundle e automatizzazione dei controlli | Misure e scelta motivata; nessuna CI o suddivisione del bundle aggiunta solo per supposizione |
 | N09 | Completato come demo locale 0.4 | Realizzare la demo funzionale 0.4 secondo il [piano](demo-funzionale-2026-10-14/README.md) e il [prompt `/goal`](PROMPT_DEMO_FUNZIONALE.md) | PF01 → PF02 → PF05 continuo, due agenzie sintetiche, permessi, storico/versioni, revoche, errori, reset e modalità prova; nessun servizio reale |
 | N10 | Dopo N09 · prova umana BF16 | Far provare la demo agli operatori e raccogliere osservazioni anonime prima delle domande di approfondimento | Versione demo, compiti, esiti, blocchi, aiuti e proposte registrati; vuoto non equivale a zero, kit BF02 non rigenerato |
@@ -273,3 +273,31 @@ segue l'acquisizione verificata, N17/IN05 segue la definizione delle fonti e
 della copertura. Nessuno di questi incrementi è implementato nella chiusura
 documentale. Dubbi commerciali e revisione dei passaggi audio incerti restano
 aperti in parallelo; il [prompt corrente](PROMPT_NUOVA_SESSIONE.md) prepara IN03.
+
+## IN03 completato localmente — 15 ottobre 2026
+
+N16 aggiornato: **IN03 implementato**, IN04 ancora proposto. Importazione da
+facsimili inclusi, confronto e conferma, dati/versioni per bolletta, duplicati,
+rettifica, permessi e recuperi. [Copione e confini](importazione-bollette-2026-10-15/README.md),
+[verifiche](importazione-bollette-2026-10-15/VERIFICHE.md).
+La PR #13 è integrata (14 ottobre 23:08 UTC, `be4b23e`); IN03 usa un nuovo branch.
+
+Segue IN04 «Mostra avviso», poi N17/IN05 con fonti, copertura, periodo e metriche
+per le due viste report. Ricerca globale/export delle importazioni sono estensioni
+future con gli stessi titoli; nessuna propagazione automatica dai grants 0.4.
+N13–N15/IN01 non ripetuti. N02, N10/BF16, N18, BF01/BF03/BF17 e condizioni
+commerciali restano aperti. BF02 invariato, nessun deploy o servizio reale.
+
+IN03 consegnato nella [PR #14](https://github.com/av3rgfx/EECard/pull/14),
+aperta senza merge; codice e artefatti `50461b8`, chiusura solo documentale.
+
+## Pubblicazione IN01/IN03 e chiusura — 15 ottobre 2026
+
+N07 completato per questa consegna: Sites **v9**, `succeeded`, sorgente
+`44ffb53f60d68e636a475e405b7e71e1129dfada`, stesso sito e accesso pubblico.
+IN01 e IN03 sono ora consultabili a distanza. Regola permanente C31 registrata
+in AGENTS: pubblicare gli aggiornamenti verificati del prototipo a ogni sessione.
+[Registro](../design/ANTEPRIME_WEB.md). PR #14 aggiornata senza merge.
+
+Prossima attività invariata: N16/IN04 «Mostra avviso», poi N17/IN05.
+IN04 non implementato in questa chiusura; BF02 intatto, BF16/N02 aperti.

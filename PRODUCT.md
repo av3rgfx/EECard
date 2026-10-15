@@ -174,3 +174,14 @@ sintetico conservato; non termina locazione/adesione né revoca card o documenti
 È una prova della UX di uscita, non la definizione di condizioni commerciali.
 [Sequenza e accettazione](docs/progetto/discussione-2026-10-15/PIANO_INCREMENTALE.md).
 Fonti grezze e trascrizioni restano private. Nessun servizio reale; BF16 aperto.
+
+## IN03 — acquisizione locale delle bollette
+
+Implementato il [percorso da facsimile](docs/progetto/importazione-bollette-2026-10-15/README.md)
+nelle Utenze: confronto originale/campi, conferma prima del salvataggio,
+duplicato, seconda copia, rettifica con storico e recuperi. Importi e scadenze
+seguono la versione della bolletta. Intestazione/delega e titoli di acquisizione
+sono distinti da ruolo, mandato, livello commerciale e card.
+Le fonti sono facsimili HTML inclusi, non OCR o file reali. Nessun pagamento,
+incasso verificato o quietanza generati. IN04 e IN05 restano incrementi successivi,
+BF16 aperto. Lo studio audio e IN01 non sono ripetuti.

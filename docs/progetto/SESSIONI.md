@@ -510,3 +510,50 @@ Modifiche esclusivamente documentali. Controllati limite di 4.000 caratteri del
 prompt, riferimenti locali e whitespace; nessuna nuova esecuzione dei test
 applicativi, nessun servizio reale o deploy. Gli esiti precedenti restano nel
 rapporto di verifica della consegna, con i relativi limiti.
+
+## 15 ottobre 2026 — IN03, importazione guidata delle bollette
+
+Ripresa della richiesta esplicita IN03. PR #13 verificata integrata il 14 ottobre
+alle 23:08 UTC, main `be4b23e`; nessuna PR aperta. Nuovo branch
+`feat/in03-importazione-bollette`. Nessuna ripetizione di audio/studio o IN01.
+
+Implementati originali HTML sintetici e dati strutturati, confronto/correzione,
+riepilogo e conferma dopo salvataggio, duplicati anche da seconda copia,
+rettifica e storico, policy di acquisizione legate a intestazione/delega,
+annullo e recupero. Workspace v1 compatibile; schema 4 e grants invariati.
+Documenti importati consultabili nelle Utenze; archivio originale 0.4 conservato.
+
+[Copione](importazione-bollette-2026-10-15/README.md) e
+[verifiche](importazione-bollette-2026-10-15/VERIFICHE.md): suite 83/83 passata;
+14/14 test mirati dopo la rifinitura degli spazi dei campi, build/HTML autonomo,
+smoke portatile senza errori JS o rete, axe/layout/focus, screenshot e formattazione.
+Corretti contrasto mobile, etichette e overflow trovati nei tentativi iniziali.
+Controlli emulati, non prove umane o su telefono fisico.
+
+Aggiornati prodotto/design/sviluppo/decisioni, piano IN03, backlog, istruzioni,
+continuità e prompt entro 4.000 caratteri. Prossimo consigliato IN04, poi IN05
+con due viste e fonti/metriche da definire. BF02 invariato, BF16 aperto.
+Nessun servizio reale, deploy o merge. Online rimane Sites v8 da `448f372`.
+[PR #14](https://github.com/av3rgfx/EECard/pull/14) aperta, pronta alla revisione,
+base main. Codice/artefatti `50461b8`; seguito di chiusura solo documentale,
+senza nuovi test applicativi. Nessun merge.
+
+## 15 ottobre 2026 — pubblicazione richiesta e chiusura IN03
+
+L'utente chiede di aggiornare Sites ora e a ogni sessione, così da controllare
+il prototipo a distanza. Registrata la regola permanente in AGENTS, sviluppo,
+C31, backlog e prompt di ripresa (3.356 caratteri). La richiesta supera il limite
+locale del deploy precedente; conservati dati sintetici, sito e accesso pubblico.
+
+PR #14 verificata aperta e riutilizzata per la stessa consegna. Sorgenti aperti
+e pubblicati tramite helper della skill Sites; build TypeScript/Vite, HTML
+autonomo e sito condivisibile rigenerati. HTML autonomo identico al precedente;
+nessuna modifica applicativa o nuova esecuzione della suite UI. Rimane l'avviso
+Vite sul bundle >500 kB. Commit sorgente salvato su GitHub e Sites prima del deploy:
+`44ffb53f60d68e636a475e405b7e71e1129dfada`. Sites v9, `succeeded` alle
+06:24:44 UTC, comprende IN01 e IN03. [Dettagli](../design/ANTEPRIME_WEB.md).
+
+Aggiornati continuità, rapporto, backlog e registri; verificati whitespace,
+collegamenti e limite prompt. Chiusura successiva solo documentale, distinta
+dal commit online. Prossimo IN04, poi IN05; BF02 invariato, BF16 aperto.
+Nessun servizio reale, nuova feature o merge.

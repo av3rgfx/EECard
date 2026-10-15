@@ -2,96 +2,93 @@
 
 Aggiornato il 15 ottobre 2026. Repository: https://github.com/av3rgfx/EECard.
 
-## Consegna corrente: studio dei due audio e primo incremento locale
+## Consegna corrente: IN03 — importazione guidata locale
 
-Leggere [inventario/limiti](discussione-2026-10-15/README.md),
-[analisi NA01–NA16](discussione-2026-10-15/ANALISI.md),
-[studio progettuale](discussione-2026-10-15/STUDIO_PROGETTUALE.md),
-[piano incrementale](discussione-2026-10-15/PIANO_INCREMENTALE.md),
-[fattibilità bollette](discussione-2026-10-15/FATTIBILITA_BOLLETTE.md) e
-[verifiche](discussione-2026-10-15/VERIFICHE.md).
+Leggere [implementazione e copione](importazione-bollette-2026-10-15/README.md)
+e [verifiche](importazione-bollette-2026-10-15/VERIFICHE.md), poi il
+[piano IN01–IN10](discussione-2026-10-15/PIANO_INCREMENTALE.md).
+Lo [studio audio](discussione-2026-10-15/README.md) e IN01 sono già completati:
+non ripetere trascrizione, analisi integrale o gestione del rinnovo.
 
-I due allegati sono ora stati elaborati localmente; le trascrizioni automatiche
-integrali di lavoro, con timestamp, voci provvisorie e incertezze, restano fuori
-repository. Non ripubblicarle. Per riascolti futuri serviranno le fonti private:
-non assumere che i percorsi temporanei o i modelli ASR sopravvivano alla sessione.
-Non dedurre identità dei parlanti né cronologia dai nomi dei file.
+IN03: spazio Cliente 01 → Utenze → casa → Aggiungi bolletta → facsimile incluso
+→ confronto originale/dati → riepilogo e conferma → salvataggio locale.
+Importo incerto da correggere, annullo, duplicato anche da seconda copia,
+rettifica collegata con storico, permessi per intestazione/delega e recupero
+dopo errore di memoria. Nessun OCR, upload, codice pagabile o pagamento reale.
 
-Emersi: livelli/extra, upgrade con conguaglio ancora ambiguo, disdetta,
-supporto sul posto, scansione bollettini, avviso/QR e chiamate AI proattive.
-Contraddizione esplicita sul preavviso di disdetta: nessuna regola legale o
-commerciale adottata. L'utente ha confermato annual report **cliente e agenzia,
-con viste separate** (C29/USR01); contenuti, periodo e metriche da definire.
-
-IN01 aggiunge «Gestisci abbonamento» nella home di Cliente 01. Periodo autonomo
-sintetico, riepilogo e disattivazione del rinnovo dopo conferma. Salvataggio
-locale verificato prima del successo; annullo e reset; nessun prezzo, addebito,
-cessazione programmata, perdita dei documenti, fine locazione o revoca card.
-Campo compatibile `renewalCancelled` nel workspace v1; modello demo schema 4
-conservato. È una prova di UX, non approvazione delle condizioni del servizio.
+Originali sintetici HTML e dati strutturati in `src/workspace/bills.ts`;
+interfaccia in `BillsPanel.tsx`. Persistenza compatibile tramite `bills` nel
+workspace v1; vecchi salvataggi ricevono le due fixture, dati incompatibili
+producono ripristino con avviso. Schema 4 e grants invariati. Importazioni e
+versioni sono consultabili nelle Utenze; l'archivio 0.4 conserva gli originali
+iniziali e rimanda alle Utenze. Nuovi documenti non aggiunti alla ricerca globale,
+condivisione o esportazione 0.4. Queste estensioni richiederanno policy sui derivati.
 
 ## Stato remoto e pubblicazione
 
-PR #12 verificata integrata il 14 ottobre alle 20:48:12 UTC; main di partenza
-`24eb129e35675ff8f684bc308b8202cc7735a43a`.
-Branch corrente `feat/studio-audio-incremento-locale`;
-[PR #13](https://github.com/av3rgfx/EECard/pull/13) aperta, pronta alla revisione,
-implementazione al commit `3ce9a6b3e4f1fb8f3f22dc6e03ad35f526b7ed43`.
-La chiusura successiva aggiorna solo riferimenti documentali. Nessun merge.
-Prima del prossimo checkout controllare il remoto: riutilizzare la PR aperta
-solo per la stessa consegna; dopo merge ripartire dal main aggiornato.
+PR #13 verificata **integrata** il 14 ottobre 2026 alle 23:08:00 UTC,
+merge `be4b23ebb869c156713d3da491791b556cafbfec`. Nessuna PR aperta all'avvio.
+Creato da main remoto aggiornato il branch `feat/in03-importazione-bollette`.
+[PR #14](https://github.com/av3rgfx/EECard/pull/14) aperta e pronta alla revisione,
+base main. Codice e artefatti al commit
+`50461b8205aeedddea195d7e5dc73fbc95807f76`; chiusura successiva solo documentale.
+Nessun merge dell'assistente.
+Prima del prossimo checkout verificare il remoto: riutilizzare una PR aperta
+solo per la stessa consegna; dopo merge partire da main aggiornato e nuovo branch.
 
-Nessun deploy richiesto o eseguito per questo incremento locale. Online rimane
-l'esperienza 0.5, Sites v8 da `448f3721760ec3289920f092fa919240b50be2d4`:
-[piattaforma](https://eecard-design-preview.uepacio.chatgpt.site/).
-GitHub/PR e HTML locale non equivalgono ad aggiornamento del sito. Conservare
-identità e accesso di `.openai/hosting.json` per un eventuale seguito autorizzato.
+Sites **v9 pubblicata**, esito `succeeded` il 15 ottobre 2026 alle 06:24:44 UTC,
+sorgente `44ffb53f60d68e636a475e405b7e71e1129dfada`:
+[piattaforma aggiornata](https://eecard-design-preview.uepacio.chatgpt.site/).
+Comprende rinnovo IN01 e importazione IN03. Stesso sito e accesso pubblico;
+manifest invariato. [Registro della pubblicazione](../design/ANTEPRIME_WEB.md).
+Il commit di chiusura successivo aggiorna solo documentazione, non gli asset online.
 
-## Come provare il nuovo intervento
+**Regola permanente richiesta dall'utente:** aggiornare Sites a ogni sessione che
+modifica il prototipo, per consentire la consultazione a distanza, senza una nuova
+conferma. Se cambiano solo documenti e gli asset sono già allineati, registrarlo
+senza deploy identico. Conservare identità/accesso e annotare versione/commit
+online; esplicitare blocchi. Questa richiesta supera il precedente limite locale
+per il deploy della demo, senza autorizzare servizi reali o merge.
+
+## Come provare IN03
 
 `npm ci`, `npm run dev`, aprire `http://localhost:5173/`.
 
-1. Completare la pratica e aprire «Vista cliente», oppure usare «Strumenti della
-   demo» → scenario «Lettore indisponibile» → «Ripristina scenario» → vista cliente.
-2. Home personale → «Gestisci abbonamento»: periodo illustrativo e rinnovo.
-3. «Disattiva rinnovo» → tornare al riepilogo oppure confermare la simulazione.
-4. Ricaricare: la scelta rimane nel browser. Documenti, affitto e tessera restano
-   distinti. «Ripristina scenario» ripristina anche il rinnovo dimostrativo.
+1. Strumenti della demo → scenario Lettore indisponibile → Vista cliente → Utenze.
+   In alternativa completare la pratica esistente prima di aprire Vista cliente.
+2. Casa Luce → Aggiungi bolletta → Novembre, importo da correggere. Confrontare
+   proposta 964,00 con originale 96,40, correggere e motivare.
+3. Rivedere il riepilogo, confermare, ricaricare. Ripetere con la seconda copia:
+   aprire il documento esistente senza creare una nuova bolletta.
+4. Importare la rettifica di ottobre: 84 → 79 EUR; aprire lo storico versione 1/2.
+5. Provare copia illeggibile, Casa Atelier senza codice e cambio casa/attore.
+   Ripristina scenario elimina le importazioni. Il copione completo è nel README.
 
-`/#/spazio/overview` e `/#/prova` restano ingressi; `/#/laboratorio` conserva la
-0.4 tecnica, le rotte 0.3 sono archivio. La demo usa data fissa 14 ottobre 2026.
-La gestione rinnovo riguarda solo l'adesione sintetica Cliente 01, non quella del
-proprietario o un catalogo generale. Nessuna autenticazione/server reale.
+14 test IN03; suite completa 83/83. Dettagli, rifiniture e controlli finali nel
+rapporto, con distinzione fra emulazione Chromium e dispositivi fisici.
+Ingressi `/#/spazio/overview` e `/#/prova`; laboratorio 0.4 a `/#/laboratorio`.
+Data sintetica fissa 14 ottobre 2026. Nessuna autenticazione/server operativo.
 
 ## Prossimo lavoro consigliato
 
-1. In assenza di nuove priorità, implementare **IN03**: importazione guidata di
-   una bolletta da facsimile sintetico incluso, confronto originale/dati,
-   conferma, duplicato/rettifica, permessi e recuperi. Usare criteri e dipendenze
-   del piano; nessun OCR, upload o pagamento reale. Questo è il prossimo
-   intervento consigliato, non una nuova decisione commerciale dell'utente.
-2. Dopo IN03, affrontare IN04 (mostrare l'avviso), poi IN05 (report cliente e
-   agenzia separati). Per i report definire fonti, periodo, copertura e metriche:
-   le due viste non autorizzano aggregazioni di dati privati fuori titolo.
-3. In parallelo, chiarire preavviso, durata/unità, pro rata/downgrade e catalogo;
-   rivedere i passaggi privati incerti prima di fissare condizioni. Questi dubbi
-   non bloccano l'importazione locale di un facsimile.
-4. Le chiamate AI restano IN06, solo anteprime senza invii finché non sono
-   definiti stato del dovuto, destinatario, titolo, preferenze e responsabilità.
-5. Prova umana N10/BF16: usare BF02 esistente, annotare nuovo supporto/commit,
-   osservare comprensione al primo impatto, percorso completo, diniego e recupero.
-   Note individuali fuori repo; sintesi anonime autorizzate. Non ricreare il kit.
+1. Seguire la nuova richiesta corrente. In assenza di altra priorità: **IN04**,
+   «Mostra avviso», a partire dai dati/versioni di IN03; originale e alternativa
+   testuale, codice assente/illeggibile, stato ignoto/domiciliazione/pagato e
+   permessi. Solo facsimili non pagabili; nessuna promessa di lettura a un terminale.
+2. IN05: report annuali cliente e agenzia con viste separate, destinatari
+   confermati dall'utente (C29/USR01). Definire fonti, periodo, copertura e metriche;
+   non annualizzare fixture né aggregare bollette private senza titolo.
+3. In parallelo chiarire preavviso, unità/durata, pro rata/downgrade, listino e
+   condizioni operative. NA01–NA16 restano candidati, non approvazioni commerciali.
+4. IN06/chiamate AI resta studio/anteprima senza invii, numeri o provider reali.
+5. N10/BF16: usare BF02 esistente annotando supporto/commit; osservazioni umane
+   su comprensione, percorso, diniego e recupero. Note individuali fuori repo;
+   sintesi anonime autorizzate. Test automatici non sono misure di beneficio.
 
-BF16 resta aperto; discussione e test automatici non sono osservazioni comparative
-o risparmio misurato. Restano N02 (telefoni fisici/Safari/Android/screen reader),
-BF01/BF03/BF17, prezzi, primo pagante, risorse, conservazione e architettura reale.
-Le proposte non rinviano automaticamente pagamenti, app, hardware o AI dal primo
-rilascio: se essenziali al beneficio, le dipendenze vanno affrontate esplicitamente.
+BF16 e N02 (telefoni/Safari/Android/screen reader) restano aperti, BF02 intatto.
+Restano BF01/BF03/BF17, primo pagante, copertura, risorse, conservazione e
+architettura. Nessun rinvio automatico di pagamenti, app, hardware o AI.
 
-## Chiusura richiesta e avvio successivo
-
-Confermata sul remoto la PR #13 aperta; riutilizzata per questa chiusura della
-stessa consegna. Aggiornati priorità consigliate, backlog, registro sessioni e
-[prompt da incollare](PROMPT_NUOVA_SESSIONE.md). IN03 non è stato avviato in questa
-chiusura: il prossimo prompt ne richiede l'implementazione locale. Solo modifiche
-documentali, senza ripetere test applicativi, attivare servizi o pubblicare il sito.
+Fonti audio e trascrizioni integrali restano private e fuori repository. Percorsi
+privati temporanei non sono prerequisiti di ripresa; non inventare riascolti.
+Il [prompt corrente](PROMPT_NUOVA_SESSIONE.md) resta entro 4.000 caratteri.

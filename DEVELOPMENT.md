@@ -77,6 +77,11 @@ Il primo rigenera `docs/design/anteprima.html`; il secondo rigenera anche `.outp
 
 Seguire [ANTEPRIME_WEB.md](docs/design/ANTEPRIME_WEB.md) e la skill Sites hosting per pubblicare un aggiornamento del sito esistente. Riutilizzare il project ID nel manifest; non creare un sito sostitutivo. Salvare/deployare il commit esatto e confermare il successo prima di dichiarare online l’aggiornamento. Le credenziali temporanee di pubblicazione non vanno salvate nel repository. Il push GitHub non pubblica automaticamente il sito.
 
+Dal 15 ottobre 2026 aggiornare Sites a ogni sessione che modifica il prototipo,
+come richiesto dall'utente per seguirlo a distanza; non attendere un nuovo consenso.
+Conservare sito e pubblico. In una sessione solo documentale verificare e annotare
+l'allineamento senza ripubblicare asset identici. Eventuali blocchi vanno esplicitati.
+
 Una modifica esclusivamente alla documentazione non cambia la demo online: registrare il commit effettivamente pubblicato separatamente dal nuovo HEAD della repository.
 
 ## Limiti e futura implementazione
@@ -269,3 +274,21 @@ focus, layout/axe e testo ingrandito. Nessuna dipendenza runtime aggiunta.
 [verifiche osservate](docs/progetto/discussione-2026-10-15/VERIFICHE.md).
 Le trascrizioni e gli strumenti ASR sono esterni alla repository; non sono
 prerequisiti per eseguire l'app. Nessun deploy: online rimane la 0.5 già registrata.
+
+## IN03 — bollette strutturate e acquisizione guidata
+
+`src/workspace/bills.ts`: fixture originali/proposte, policy di lettura/acquisizione,
+validazione, identità del dovuto, idempotenza e revisioni immutabili attribuite.
+`BillsPanel.tsx`: percorso in tre passi, dettaglio/storico, errori, annullo e
+invalidazione della bozza al cambio contesto/sessione/servizio. `service.ts`
+aggiunge `bills` compatibile al workspace v1; schema 4 e grants restano invariati.
+La conferma in Experience persiste prima di aggiornare lo stato o annunciare
+successo. Non è un sistema di concorrenza multiutente o di autorizzazioni server.
+
+`tests/bills.spec.ts` copre PB01–PB03 su sintetici, persistenza, permessi,
+recuperi e UX; `scripts/verify-bills-portable.mjs` prova l'HTML autonomo dopo
+`npm run preview:portable`, senza server o richieste HTTP. I documenti nuovi
+restano nell'archivio Utenze, distinto dalla ricerca/export dello schema 4;
+i dettagli dei facsimili iniziali rimandano alle versioni correnti nelle Utenze.
+[Implementazione/copione](docs/progetto/importazione-bollette-2026-10-15/README.md)
+e [verifiche](docs/progetto/importazione-bollette-2026-10-15/VERIFICHE.md).
