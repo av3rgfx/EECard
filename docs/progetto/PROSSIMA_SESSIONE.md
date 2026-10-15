@@ -21,7 +21,9 @@ PR #15 verificata ancora aperta prima del branch. Questo riallineamento è una
 consegna documentale separata su `docs/visione-casa-2026-10-15`, derivata da
 `7446fc8`. La PR documentale ha base `feat/in04-mostra-avviso`, per non duplicare
 IN04 nel diff. Dopo l'eventuale merge della #15 verificare il remoto e aggiornare
-la base; nessun merge automatico. Riferimento remoto da registrare alla creazione.
+la base; nessun merge automatico.
+[PR #16](https://github.com/av3rgfx/EECard/pull/16) aperta per questo
+riallineamento documentale, base sul branch della #15.
 
 Sites verificato v10 e pubblico, asset locali identici al commit online.
 Nessuna modifica frontend o nuovo deploy in questa consegna documentale.

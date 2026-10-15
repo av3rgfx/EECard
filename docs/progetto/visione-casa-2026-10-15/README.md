@@ -128,3 +128,6 @@ alla v10, pubblico; asset locali identici al commit online `a1223ff`.
 Nessun deploy identico o nuova esecuzione dei test applicativi. Controlli di
 questa consegna: link Markdown, limite prompt, diff documentale e whitespace.
 Le 94 prove IN04 restano evidenze precedenti, non una verifica della nuova home.
+
+Consegna nella [PR #16](https://github.com/av3rgfx/EECard/pull/16), aperta
+senza merge, base `feat/in04-mostra-avviso`. Proposta da valutare, frontend invariato.

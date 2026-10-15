@@ -609,3 +609,6 @@ Sites verificato v10 e pubblico, asset locali uguali alla sorgente online
 `a1223ff`; niente deploy identico. Verificati link, whitespace, limite prompt e
 diff solo Markdown. Non ripetuti test applicativi né aggiornati gli screenshot:
 le 94 prove precedenti non validano una home nuova. BF02 invariato, BF16 aperto.
+
+Consegna nella [PR #16](https://github.com/av3rgfx/EECard/pull/16), aperta
+senza merge, base `feat/in04-mostra-avviso`. Proposta da valutare, frontend invariato.
