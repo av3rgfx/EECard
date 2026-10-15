@@ -242,3 +242,13 @@ paragrafo C27 descrive la preparazione, non l'esito della nuova sessione.
 [Dettagli e limiti](../progetto/importazione-bollette-2026-10-15/README.md).
 P18 non approva OCR, acquisizione reale, conservazione, provider, condizioni
 commerciali o permessi di produzione. IN04/IN05 restano successivi; BF16 aperto.
+
+## Pubblicazione continuativa — 15 ottobre 2026
+
+| ID | Stato | Decisione |
+| --- | --- | --- |
+| C31 | Richiesta esplicita dell'utente | Pubblicare ora IN01/IN03 sullo stesso Sites e mantenere il prototipo aggiornato a ogni sessione per la consultazione a distanza; registrare versione/commit online e preparare la ripresa con PR senza merge |
+
+La richiesta supera il precedente limite locale per la pubblicazione della demo.
+Non autorizza servizi reali o modifiche del pubblico. Se cambiano soltanto i
+documenti e gli asset online sono allineati, registrarlo senza deploy duplicati.

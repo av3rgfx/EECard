@@ -77,6 +77,11 @@ Il primo rigenera `docs/design/anteprima.html`; il secondo rigenera anche `.outp
 
 Seguire [ANTEPRIME_WEB.md](docs/design/ANTEPRIME_WEB.md) e la skill Sites hosting per pubblicare un aggiornamento del sito esistente. Riutilizzare il project ID nel manifest; non creare un sito sostitutivo. Salvare/deployare il commit esatto e confermare il successo prima di dichiarare online l’aggiornamento. Le credenziali temporanee di pubblicazione non vanno salvate nel repository. Il push GitHub non pubblica automaticamente il sito.
 
+Dal 15 ottobre 2026 aggiornare Sites a ogni sessione che modifica il prototipo,
+come richiesto dall'utente per seguirlo a distanza; non attendere un nuovo consenso.
+Conservare sito e pubblico. In una sessione solo documentale verificare e annotare
+l'allineamento senza ripubblicare asset identici. Eventuali blocchi vanno esplicitati.
+
 Una modifica esclusivamente alla documentazione non cambia la demo online: registrare il commit effettivamente pubblicato separatamente dal nuovo HEAD della repository.
 
 ## Limiti e futura implementazione

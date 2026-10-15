@@ -111,7 +111,14 @@ aggiornato e da un nuovo branch dedicato. Non integrare in main senza richiesta.
 Le anteprime condivisibili appartengono al sito identificato da
 `.openai/hosting.json`: conservarne l’identità e usare Sites per gli aggiornamenti.
 Il push GitHub non equivale a pubblicazione; registrare il commit effettivamente
-online. Le modifiche solo documentali non richiedono un nuovo deploy.
+online. Dal 15 ottobre 2026 l'utente richiede di mantenere Sites aggiornato in
+ogni sessione per poter controllare i progressi a distanza: pubblicare gli
+aggiornamenti del prototipo verificati sul medesimo sito, senza chiedere una
+nuova conferma, salvo istruzione successiva contraria. Le sessioni solo
+documentali verificano e registrano l'allineamento; non richiedono un deploy
+identico se gli asset online sono già aggiornati. Conservare accesso e identità,
+annotare esito, versione e commit effettivamente online. Segnalare eventuali
+blocchi senza confondere push GitHub e pubblicazione.
 
 ## Identità del prodotto (richiesta del 6 ottobre 2026)
 
@@ -177,4 +184,5 @@ conferma, duplicati/rettifiche e titoli dedicati. Le nuove versioni stanno nel
 workspace v1, schema 4 invariato; ricerca/export globale non estesi. Non rifare
 IN03 o IN01. Il seguito consigliato è IN04, poi IN05; prevale la nuova richiesta.
 Per PR/branch e commit online leggere PROSSIMA_SESSIONE e verificare il remoto.
-Nessun servizio reale, deploy implicito o merge. BF02 intatto, BF16 aperto.
+Nessun servizio reale o merge. La richiesta successiva autorizza il deploy e
+l’aggiornamento continuativo di Sites secondo la regola sopra. BF02 intatto, BF16 aperto.
