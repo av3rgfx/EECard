@@ -119,9 +119,10 @@ approvata da «tutto quello che gira attorno alla casa».
 
 PR #15 verificata aperta prima di scegliere il branch. Nuovo branch documentale
 `docs/visione-casa-2026-10-15` basato sulla sua consegna `7446fc8`, per mantenere
-separata questa revisione da IN04. PR dedicata con base `feat/in04-mostra-avviso`;
-dopo l'eventuale merge della #15 verificare il remoto e aggiornare la base della
-PR documentale. Nessun merge effettuato dall'assistente.
+separata questa revisione da IN04. La base iniziale era `feat/in04-mostra-avviso`.
+Dopo il merge della #15 da parte dell’utente (15 ottobre, 19:57:17 UTC, `7c4e503`),
+la PR documentale #16 è stata aggiornata a **main**. Verificato diff solo Markdown,
+senza duplicati IN04; nessun merge effettuato dall’assistente.
 
 Sorgenti, artefatti e manifest del prototipo invariati. Sites verificato ancora
 alla v10, pubblico; asset locali identici al commit online `a1223ff`.
@@ -130,7 +131,7 @@ questa consegna: link Markdown, limite prompt, diff documentale e whitespace.
 Le 94 prove IN04 restano evidenze precedenti, non una verifica della nuova home.
 
 Consegna nella [PR #16](https://github.com/av3rgfx/EECard/pull/16), aperta
-senza merge, base `feat/in04-mostra-avviso`. Proposta da valutare, frontend invariato.
+senza merge, base aggiornata a **main**. Proposta da valutare, frontend invariato.
 
 ## Chiusura e incarico per la prossima sessione
 

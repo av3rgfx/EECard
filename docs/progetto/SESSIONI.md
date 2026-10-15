@@ -626,3 +626,14 @@ Aggiornati continuità, backlog, visione, registro decisioni e prompt sotto 4.00
 caratteri. Verificati collegamenti, whitespace e assenza di modifiche applicative.
 Sites resta v10 pubblico, sorgente `a1223ff`; asset allineati, nessun deploy
 identico o test applicativo ripetuto. IN05 non avviato, BF02 intatto, BF16 aperto.
+
+## Dopo il merge utente della PR #15
+
+Verificato sul remoto il merge della #15 del 15 ottobre alle 19:57:17 UTC,
+commit `7c4e5034bf68ed9154d9601b6edd038a840c5962`. Aggiornata la base della
+PR #16 dal branch IN04 a **main**. Il commit precedente `7446fc8` è antenato
+di main: diff solo Markdown, nessuna duplicazione applicativa, rebase o merge
+necessario. Aggiornati ripresa, prompt, backlog e riferimenti della consegna.
+Verificati link, prompt entro 4.000 caratteri e whitespace; nessun test
+applicativo ripetuto o deploy, sorgenti e asset invariati. PR #16 lasciata aperta
+per il merge dell'utente; nessun merge effettuato dall'assistente.

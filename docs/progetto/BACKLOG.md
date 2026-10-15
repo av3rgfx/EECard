@@ -341,3 +341,8 @@ Chiusura confermata C35: N19 è il prossimo lavoro autorizzato per la sessione
 successiva. Risultato da preparare: mappa dell'esperienza e proposta navigabile
 home desktop/mobile, con bolletta e assistenza. Niente nuova analisi integrale o
 avvio anticipato IN05. Prompt e continuità pronti; PR #16 aggiornata senza merge.
+
+Aggiornamento remoto successivo: l'utente ha integrato PR #15 il 15 ottobre
+alle 19:57:17 UTC (`7c4e503`). PR #16 aggiornata a base **main**, ancora aperta:
+diff solo documentale senza duplicare IN04. Il prossimo lavoro N19 è invariato;
+prima del nuovo branch verificare l'eventuale integrazione della #16.

@@ -21,17 +21,17 @@ revisione estesa. Non ripetere la sola discussione astratta del prodotto.
 Non avviare IN05 automaticamente. Conservare IN01/IN03/IN04, identità e confini
 della demo; nessun pagamento o servizio reale autorizzato.
 
-PR #15 verificata ancora aperta prima del branch. Questo riallineamento è una
-consegna documentale separata su `docs/visione-casa-2026-10-15`, derivata da
-`7446fc8`. La PR documentale ha base `feat/in04-mostra-avviso`, per non duplicare
-IN04 nel diff. Dopo l'eventuale merge della #15 verificare il remoto e aggiornare
-la base; nessun merge automatico.
-[PR #16](https://github.com/av3rgfx/EECard/pull/16) aperta per questo
-riallineamento documentale e chiusura di sessione, base sul branch della #15.
-Alla ripresa verificare entrambe: se ancora aperte, la nuova proposta è una
-consegna distinta e richiede un branch dedicato da una base che comprenda questa
-continuità. Non partire da un main arretrato né aggiungere il redesign alla PR
-documentale per semplice comodità. Se integrate, partire dal main aggiornato.
+PR #15 **integrata dall'utente** il 15 ottobre 2026 alle 19:57:17 UTC,
+merge `7c4e5034bf68ed9154d9601b6edd038a840c5962`, verificato sul remoto.
+Il branch documentale `docs/visione-casa-2026-10-15` deriva dalla consegna IN04
+`7446fc8`, ora presente in main. La [PR #16](https://github.com/av3rgfx/EECard/pull/16)
+è aperta per riallineamento e chiusura, con base aggiornata a **main**. Il diff
+contiene solo Markdown, senza duplicare IN04; nessun rebase o merge necessario.
+
+Prima della prossima implementazione verificare la #16: se integrata, ripartire
+dal main aggiornato con nuovo branch dedicato; se ancora aperta, usare una base
+che includa questa continuità e mantenere distinta la consegna applicativa.
+Nessun merge dell'assistente.
 
 Sites verificato v10 e pubblico, asset locali identici al commit online.
 Nessuna modifica frontend o nuovo deploy in questa consegna documentale.
@@ -61,8 +61,8 @@ condivisione globale non estesi. L'archivio 0.4 resta uno snapshot iniziale.
 PR #14 verificata **integrata** il 15 ottobre 2026 alle 06:36:01 UTC,
 merge `ad8b928c7d6cff1a8797225fe1de92716225e735`. Nuovo branch
 `feat/in04-mostra-avviso` da origin/main aggiornato.
-[PR #15](https://github.com/av3rgfx/EECard/pull/15) **aperta**, pronta alla
-revisione, base main. Nessun merge dell'assistente.
+[PR #15](https://github.com/av3rgfx/EECard/pull/15) **integrata dall’utente**
+il 15 ottobre alle 19:57:17 UTC, merge `7c4e503`. Nessun merge dell’assistente.
 
 Sites **v10 pubblicata**, `succeeded` il 15 ottobre 2026 alle **12:26:21 UTC**,
 sorgente `a1223ff657a300c47ab8cbb1771a99da8727a707`, presente su GitHub e nel
