@@ -2,7 +2,10 @@
 
 15 ottobre 2026. Attuazione della richiesta corrente, da main `be4b23e`
 dopo la verifica remota della PR #13 integrata il 14 ottobre alle 23:08:00 UTC.
-Branch dedicato `feat/in03-importazione-bollette`. Nessun merge o deploy.
+Branch dedicato `feat/in03-importazione-bollette`, PR #14 senza merge.
+Su successiva richiesta dell’utente, pubblicato in Sites v9:
+[prototipo](https://eecard-design-preview.uepacio.chatgpt.site/) e
+[registro](../../design/ANTEPRIME_WEB.md). Operazioni sempre locali e sintetiche.
 
 Riferimenti: [piano IN01–IN10](../discussione-2026-10-15/PIANO_INCREMENTALE.md),
 [studio](../discussione-2026-10-15/STUDIO_PROGETTUALE.md),

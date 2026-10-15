@@ -82,10 +82,22 @@ screen reader o BF16. N02/BF16 e fondazioni operative BF01/BF03/BF17 rimangono
 aperti. La data è fissa, i titoli sono fixture nel browser; nessuna autenticazione,
 concorrenza multiutente, conservazione o sicurezza server è dimostrata.
 
-Nessun deploy: online resta Sites v8, sorgente
-`448f3721760ec3289920f092fa919240b50be2d4`. `.openai/hosting.json` invariato.
+La consegna iniziale era locale. La successiva richiesta dell’utente autorizza
+il deploy: Sites v9 pubblicata come registrato sotto. `.openai/hosting.json` invariato.
 [PR #14](https://github.com/av3rgfx/EECard/pull/14) creata e verificata aperta,
 non in bozza, base main, branch `feat/in03-importazione-bollette`. Codice e
 artefatti al commit `50461b8205aeedddea195d7e5dc73fbc95807f76`. Il commit di
 chiusura aggiunge soltanto i riferimenti remoti: non gli sono attribuiti nuovi
 test applicativi. Nessun merge dell'assistente.
+
+## Pubblicazione successiva richiesta dall'utente
+
+15 ottobre, Sites v9 da `44ffb53f60d68e636a475e405b7e71e1129dfada`,
+`succeeded` alle 06:24:44 UTC sul sito esistente,
+accesso pubblico conservato. [Registro completo](../../design/ANTEPRIME_WEB.md).
+Build TypeScript/Vite, HTML portatile e `.output/public` rigenerati; nessuna
+differenza dell'HTML portatile dal commit già verificato. Avviso Vite sul
+bundle >500 kB invariato. Non ripetuti test UI o prove fisiche; il deploy nativo
+verifica la pubblicazione, non costituisce una prova umana BF16.
+Controllati diff, link documentali e prompt entro 4.000 caratteri.
+PR #14 aggiornata per includere pubblicazione e regola permanente C31.

@@ -171,3 +171,27 @@ con smoke locale senza richieste HTTP esterne. [Verifiche e screenshot](../proge
 Nessun deploy in questa sessione: il sito pubblico conserva Sites v8 e il commit
 `448f3721760ec3289920f092fa919240b50be2d4`. Il nuovo branch/PR non identifica
 una nuova sorgente online; manifest, identità e accesso Sites invariati.
+
+## IN01 e IN03 — Sites v9, 15 ottobre 2026
+
+Su richiesta esplicita dell'utente, pubblicati rinnovo e importazione bollette.
+La richiesta include mantenere Sites aggiornato a ogni sessione con modifiche
+al prototipo, per consultazione a distanza (C31 e AGENTS.md). Stesso project ID,
+indirizzo e accesso pubblico; nessun nuovo sito o servizio applicativo reale.
+
+- [Piattaforma](https://eecard-design-preview.uepacio.chatgpt.site/) ·
+  [Spazio applicativo](https://eecard-design-preview.uepacio.chatgpt.site/#/spazio/overview).
+- Sites **v9**, `succeeded` restituito dal deploy il 15 ottobre alle 06:24:44 UTC.
+- Sorgente online: `44ffb53f60d68e636a475e405b7e71e1129dfada`, salvata su GitHub
+  e repository sorgente Sites prima del salvataggio versione.
+- Versione: `appgprj_6ac4c220882c8191be87c1b262306614~appgver_48c92f9f0fb88191a3400a012be1ed9c`.
+- Deployment: `appgdep_6ad0719bff4c81919e46dd2c4c49b0ea`.
+- Archivio locale gzip SHA256: `4519962b178634758694b842538f7d3a89bce7e57a60e9f4f58645617b6cbace`.
+- Archivio normalizzato Sites SHA256: `81837729673018bce14e6ef9c0c3a6c98ab8b1179571b3681edf7846a0b0a4ac`.
+
+Rigenerati build TypeScript/Vite, HTML autonomo e `.output/public`; nessuna
+differenza nell'HTML autonomo già verificato. Avviso bundle >500 kB invariato.
+Il risultato nativo `succeeded` verifica la pubblicazione; non è attribuito
+a questo passaggio un nuovo collaudo browser/hardware o confronto HTTPS dei byte.
+[Verifiche IN03](../progetto/importazione-bollette-2026-10-15/VERIFICHE.md).
+PR #14 aggiornata senza merge. Il commit documentale finale non modifica gli asset.

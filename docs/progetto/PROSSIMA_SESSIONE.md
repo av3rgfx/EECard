@@ -36,11 +36,19 @@ Nessun merge dell'assistente.
 Prima del prossimo checkout verificare il remoto: riutilizzare una PR aperta
 solo per la stessa consegna; dopo merge partire da main aggiornato e nuovo branch.
 
-Nessun deploy richiesto o eseguito. Online rimane Sites v8, sorgente
-`448f3721760ec3289920f092fa919240b50be2d4`:
-[piattaforma](https://eecard-design-preview.uepacio.chatgpt.site/).
-L'HTML autonomo locale è aggiornato; push e PR non pubblicano il sito.
-Conservare identità e accesso di `.openai/hosting.json`.
+Sites **v9 pubblicata**, esito `succeeded` il 15 ottobre 2026 alle 06:24:44 UTC,
+sorgente `44ffb53f60d68e636a475e405b7e71e1129dfada`:
+[piattaforma aggiornata](https://eecard-design-preview.uepacio.chatgpt.site/).
+Comprende rinnovo IN01 e importazione IN03. Stesso sito e accesso pubblico;
+manifest invariato. [Registro della pubblicazione](../design/ANTEPRIME_WEB.md).
+Il commit di chiusura successivo aggiorna solo documentazione, non gli asset online.
+
+**Regola permanente richiesta dall'utente:** aggiornare Sites a ogni sessione che
+modifica il prototipo, per consentire la consultazione a distanza, senza una nuova
+conferma. Se cambiano solo documenti e gli asset sono già allineati, registrarlo
+senza deploy identico. Conservare identità/accesso e annotare versione/commit
+online; esplicitare blocchi. Questa richiesta supera il precedente limite locale
+per il deploy della demo, senza autorizzare servizi reali o merge.
 
 ## Come provare IN03
 

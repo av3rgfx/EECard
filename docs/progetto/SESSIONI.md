@@ -537,3 +537,23 @@ Nessun servizio reale, deploy o merge. Online rimane Sites v8 da `448f372`.
 [PR #14](https://github.com/av3rgfx/EECard/pull/14) aperta, pronta alla revisione,
 base main. Codice/artefatti `50461b8`; seguito di chiusura solo documentale,
 senza nuovi test applicativi. Nessun merge.
+
+## 15 ottobre 2026 — pubblicazione richiesta e chiusura IN03
+
+L'utente chiede di aggiornare Sites ora e a ogni sessione, così da controllare
+il prototipo a distanza. Registrata la regola permanente in AGENTS, sviluppo,
+C31, backlog e prompt di ripresa (3.356 caratteri). La richiesta supera il limite
+locale del deploy precedente; conservati dati sintetici, sito e accesso pubblico.
+
+PR #14 verificata aperta e riutilizzata per la stessa consegna. Sorgenti aperti
+e pubblicati tramite helper della skill Sites; build TypeScript/Vite, HTML
+autonomo e sito condivisibile rigenerati. HTML autonomo identico al precedente;
+nessuna modifica applicativa o nuova esecuzione della suite UI. Rimane l'avviso
+Vite sul bundle >500 kB. Commit sorgente salvato su GitHub e Sites prima del deploy:
+`44ffb53f60d68e636a475e405b7e71e1129dfada`. Sites v9, `succeeded` alle
+06:24:44 UTC, comprende IN01 e IN03. [Dettagli](../design/ANTEPRIME_WEB.md).
+
+Aggiornati continuità, rapporto, backlog e registri; verificati whitespace,
+collegamenti e limite prompt. Chiusura successiva solo documentale, distinta
+dal commit online. Prossimo IN04, poi IN05; BF02 invariato, BF16 aperto.
+Nessun servizio reale, nuova feature o merge.
