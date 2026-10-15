@@ -589,3 +589,51 @@ e Sites; **v10 pubblicata**, `succeeded` il 15 ottobre alle 12:26:21 UTC,
 identità/accesso pubblico invariati. [PR #15](https://github.com/av3rgfx/EECard/pull/15)
 aperta e non in bozza, base main, nessun merge. Registri finali aggiornati con
 versione/deployment; commit di chiusura solo documentale, senza nuovo deploy.
+
+## 15 ottobre 2026 — riallineamento della visione dopo IN04
+
+L'utente chiede di chiarire il prodotto prima di continuare, poi precisa tre
+punti: gestione semplice della casa e dei bisogni collegati con pagamento e
+assistenza; home con card/casa/attenzione immediata e pagamento bollette facile;
+insoddisfazione per home e struttura complessiva. Registrate conferme C33/C34,
+proposta P20 e [descrizione aggiornata](visione-casa-2026-10-15/README.md).
+IN05 non è più il prossimo incremento automatico; priorità N19 di riallineamento.
+
+Aggiornati PRODUCT, DESIGN, AGENTS, decisioni, backlog, continuità e prompt.
+Home/menu candidati restano da valutare. Nessuna nuova schermata, integrazione
+o modifica di identità; IN01/IN03/IN04 si conservano. PR #15 verificata aperta,
+nuovo branch documentale `docs/visione-casa-2026-10-15` da `7446fc8`, PR dipendente
+con base sul branch IN04 per separare il diff. Nessun merge.
+
+Sites verificato v10 e pubblico, asset locali uguali alla sorgente online
+`a1223ff`; niente deploy identico. Verificati link, whitespace, limite prompt e
+diff solo Markdown. Non ripetuti test applicativi né aggiornati gli screenshot:
+le 94 prove precedenti non validano una home nuova. BF02 invariato, BF16 aperto.
+
+Consegna nella [PR #16](https://github.com/av3rgfx/EECard/pull/16), aperta
+senza merge, base `feat/in04-mostra-avviso`. Proposta da valutare, frontend invariato.
+
+## Chiusura richiesta — prossima sessione di revisione casa/home
+
+L'utente conferma il seguito nella prossima sessione e chiede Markdown, prompt
+e PR. PR #15 e #16 verificate ancora aperte; riutilizzata #16 per la stessa
+consegna documentale, base `feat/in04-mostra-avviso`. Nessun merge. Registrato
+C35 e precisato il prossimo risultato: mappa dell'esperienza, home navigabile
+desktop/mobile e percorsi bolletta/assistenza, da valutare prima della revisione
+estesa. La navigazione candidata non diventa una scelta grafica definitiva.
+
+Aggiornati continuità, backlog, visione, registro decisioni e prompt sotto 4.000
+caratteri. Verificati collegamenti, whitespace e assenza di modifiche applicative.
+Sites resta v10 pubblico, sorgente `a1223ff`; asset allineati, nessun deploy
+identico o test applicativo ripetuto. IN05 non avviato, BF02 intatto, BF16 aperto.
+
+## Dopo il merge utente della PR #15
+
+Verificato sul remoto il merge della #15 del 15 ottobre alle 19:57:17 UTC,
+commit `7c4e5034bf68ed9154d9601b6edd038a840c5962`. Aggiornata la base della
+PR #16 dal branch IN04 a **main**. Il commit precedente `7446fc8` è antenato
+di main: diff solo Markdown, nessuna duplicazione applicativa, rebase o merge
+necessario. Aggiornati ripresa, prompt, backlog e riferimenti della consegna.
+Verificati link, prompt entro 4.000 caratteri e whitespace; nessun test
+applicativo ripetuto o deploy, sorgenti e asset invariati. PR #16 lasciata aperta
+per il merge dell'utente; nessun merge effettuato dall'assistente.
