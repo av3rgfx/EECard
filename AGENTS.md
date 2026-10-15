@@ -207,3 +207,17 @@ sviluppo riallineare descrizione e proposta dell'esperienza; non avviare IN05
 automaticamente. La navigazione candidata è proposta dell'assistente, non scelta
 approvata. Nessun nuovo naming/palette o servizio reale autorizzato. Per branch/PR
 leggere PROSSIMA_SESSIONE e verificare il remoto; IN01/IN03/IN04 si conservano.
+
+
+## Proposta navigabile casa — 15 ottobre 2026
+
+Leggere `docs/progetto/proposta-casa-2026-10-15/README.md` e VERIFICHE.md.
+La rotta `/#/casa/home` presenta la proposta desktop/mobile: Casa, Pagamenti,
+Assistenza, Profilo candidati, con simulazione completa bolletta e richiesta.
+Sessione isolata in memoria, azzerata da reload/uscita; riuso IN01/IN03/IN04,
+nessuna migrazione della 0.5, nessun servizio reale. La root/spazio attuale conserva
+agenzia e funzioni precedenti e offre il link alla proposta. Prima di un’estesa
+revisione raccogliere il feedback: menu/layout non approvati, IN05 non avviato.
+PR #15 e #16 integrate; nuovo lavoro da main `7319587` su `feat/proposta-casa`.
+Per PR e commit realmente online leggere PROSSIMA_SESSIONE e verificare il remoto.
+BF02 intatto e BF16 aperto.

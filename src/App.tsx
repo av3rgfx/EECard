@@ -1,3 +1,4 @@
+import { CasaProposal } from "./proposal/CasaProposal";
 import { Experience } from "./workspace/Experience";
 import { DemoPage } from "./demo/DemoPage";
 import { Brand } from "./components/brand";
@@ -57,6 +58,7 @@ const navigation: { id: Route; label: string; icon: LucideIcon }[] = [
   { id: "card", label: "La tua tessera", icon: ContactRound },
 ];
 const titles: Record<Route, string> = {
+  casa: "Proposta casa",
   spazio: "Il tuo spazio casa",
   laboratorio: "Laboratorio tecnico 0.4",
   prova: "Prova il percorso · 0.4",
@@ -75,6 +77,7 @@ const titles: Record<Route, string> = {
 };
 function getRoute(): Route {
   const key = location.hash.replace("#/", "") || "spazio";
+  if (key === "casa" || key.startsWith("casa/")) return "casa";
   if (key.startsWith("spazio/")) return "spazio";
   return key in titles ? (key as Route) : "home";
 }
@@ -161,6 +164,7 @@ export default function App() {
     "card",
   ].includes(route);
   const pages: Record<Route, React.ReactNode> = {
+    casa: <CasaProposal />,
     spazio: <Experience />,
     laboratorio: <DemoPage />,
     prova: <Experience />,
@@ -183,6 +187,7 @@ export default function App() {
       : navigation.filter(
           (n) => state.role !== "agenzia" || !["home", "card"].includes(n.id),
         );
+  if (route === "casa") return <CasaProposal />;
   if (route === "spazio" || route === "prova") return <Experience />;
   return (
     <Context.Provider

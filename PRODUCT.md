@@ -26,6 +26,12 @@ La priorità corrente è riallineare l'esperienza prima di IN05. La
 [descrizione aggiornata e struttura candidata](docs/progetto/visione-casa-2026-10-15/README.md)
 distinguono le conferme dell'utente dalle proposte di navigazione/home.
 
+La [proposta navigabile del 15 ottobre](docs/progetto/proposta-casa-2026-10-15/README.md)
+è ora disponibile a `/#/casa/home`: card/casa/priorità, pagamento simulato completo
+e richiesta di assistenza. Usa una sessione isolata, riusa IN01/IN03/IN04 e conserva
+lo spazio operativo attuale. Menu e layout restano da valutare; non è una revisione
+estesa già approvata e non avvia IN05.
+
 È stato realizzato un prototipo frontend navigabile desktop e smartphone, con design system e dati demo. Il prodotto operativo, il modello commerciale e il perimetro del primo rilascio restano da definire. La richiesta di chiudere la sessione e salvare il lavoro non equivale all’approvazione finale di tutte le proposte.
 
 ## Persone e contesti rappresentati

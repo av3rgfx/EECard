@@ -346,3 +346,18 @@ Aggiornamento remoto successivo: l'utente ha integrato PR #15 il 15 ottobre
 alle 19:57:17 UTC (`7c4e503`). PR #16 aggiornata a base **main**, ancora aperta:
 diff solo documentale senza duplicare IN04. Il prossimo lavoro N19 è invariato;
 prima del nuovo branch verificare l'eventuale integrazione della #16.
+
+## N19 — proposta navigabile consegnata per valutazione
+
+15 ottobre, seguito della visione casa: mappa e home desktop/mobile implementate
+nella rotta isolata `/#/casa/home`, con percorso pagamento simulato e assistenza.
+[Mappa/copione](proposta-casa-2026-10-15/README.md), [verifiche](proposta-casa-2026-10-15/VERIFICHE.md).
+La precedente indicazione «P20 non implementata» è storica: ora esiste una
+proposta concreta P21, ancora **non approvata** nei dettagli.
+
+Residuo N19: ricevere il riscontro dell’utente, decidere menu/gerarchia e perimetro
+dell’integrazione nella piattaforma attuale. Non sostituire questa revisione con
+IN05 automatico. Stato commerciale, canali/costi reali e copertura restano aperti.
+IN01/IN03/IN04 conservati; schema 4/workspace v1 e ledger non migrati.
+BF02 invariato; BF16, N02/PB04 fisico, BF01/BF03/BF17 aperti. Test automatici e
+screenshot non costituiscono osservazioni umane né validazione del servizio.

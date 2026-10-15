@@ -637,3 +637,22 @@ necessario. Aggiornati ripresa, prompt, backlog e riferimenti della consegna.
 Verificati link, prompt entro 4.000 caratteri e whitespace; nessun test
 applicativo ripetuto o deploy, sorgenti e asset invariati. PR #16 lasciata aperta
 per il merge dell'utente; nessun merge effettuato dall'assistente.
+
+## 15 ottobre 2026 — proposta navigabile casa e bisogni
+
+Verificate sul remoto PR #15 e #16 entrambe integrate dall’utente, la seconda
+alle 19:59:34 UTC (`7319587`). Nuovo branch `feat/proposta-casa` dal main aggiornato.
+Letti visione e continuità; applicate Sites, apple-design e mobile-native senza
+nuova analisi delle fonti. Nessun merge effettuato dall’assistente.
+
+Realizzati mappa e ingresso separato `/#/casa/home`, home desktop/mobile, pagamento
+simulato completo e richiesta di assistenza. Quattro aree candidate; card/casa/
+priorità e azioni dirette. Riutilizzati IN01/IN03/IN04; sessione isolata in memoria,
+nessun cambiamento al ledger o alla persistenza precedente. Spazio agenzia conservato.
+[Copione](proposta-casa-2026-10-15/README.md), [verifiche](proposta-casa-2026-10-15/VERIFICHE.md).
+
+104/104 test passati; dopo rifinitura mobile ripetuti 3 controlli layout/axe;
+build/HTML autonomo/statico e smoke dei due percorsi a 360/390/1440 senza errori JS
+o richieste esterne. Screenshot finali e limiti documentati. BF02 intatto, BF16
+aperto, IN05 non avviato. Aggiornati prodotto/design/sviluppo, registro decisioni,
+backlog, istruzioni, continuità e prompt. Pubblicazione e PR da registrare alla chiusura.

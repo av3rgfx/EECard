@@ -741,6 +741,9 @@ export function Experience() {
           </div>
         )}
         <main id="workspace-main" tabIndex={-1}>
+          <a className="cp-entry" href="#/casa/home">
+            Esplora la nuova proposta casa <ArrowUpRight size={16} />
+          </a>
           {u.notice && (
             <div className="ws-feedback warning" role="status">
               {u.notice}

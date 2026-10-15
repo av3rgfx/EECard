@@ -2,117 +2,77 @@
 
 Aggiornato il 15 ottobre 2026. Repository: https://github.com/av3rgfx/EECard.
 
-## Priorità corrente: riallineare il prodotto prima del prossimo sviluppo
+## Priorità: valutare la proposta casa prima dell’integrazione estesa
 
-Leggere prima [visione casa e proposta di struttura](visione-casa-2026-10-15/README.md).
-Risposte esplicite dell'utente: il motivo d'acquisto è gestire tutto ciò che
-riguarda la casa con semplicità — accedere, monitorare, verificare, pagare e
-richiedere assistenza per burocrazia, documenti, tecnici, abbonamenti e bollette.
-La home deve mostrare card, casa, attenzione immediata e pagamento semplificato.
-Home e struttura del prototipo sono giudicate vicine ma ancora non corrispondenti.
+Leggere [proposta navigabile, mappa e copione](proposta-casa-2026-10-15/README.md)
+e [verifiche](proposta-casa-2026-10-15/VERIFICHE.md), poi la
+[visione confermata](visione-casa-2026-10-15/README.md). Le risposte C33/C34 sono
+acquisite: gestire casa e bisogni collegati con semplicità, accedere, monitorare,
+verificare, pagare e richiedere assistenza. Non ripetere l’analisi delle fonti.
 
-C33/C34 registrano queste conferme. P20 propone home per casa/priorità/azioni e
-navigazione Casa, Pagamenti, Assistenza, Profilo: **non ancora approvate**.
-L’utente ha confermato di proseguire con questo lavoro nella prossima sessione
-(C35): concretizzare la mappa dell’esperienza e una proposta navigabile di home
-desktop/mobile, con percorsi bolletta e assistenza. Partire dalle risposte già
-ricevute; dettagli di menu/layout restano candidati, da valutare prima della
-revisione estesa. Non ripetere la sola discussione astratta del prodotto.
-Non avviare IN05 automaticamente. Conservare IN01/IN03/IN04, identità e confini
-della demo; nessun pagamento o servizio reale autorizzato.
+La proposta è implementata a **`/#/casa/home`**, con home desktop/mobile, card,
+casa, attenzione, pagamento simulato e assistenza. Casa/Pagamenti/Assistenza/Profilo
+restano navigazione candidata; non inferire approvazione dai test o dalla pubblicazione.
+Lo spazio attuale `/#/spazio/overview` e `/#/prova` resta separato e offre un link
+alla proposta; mantiene l’agenzia operativa, i tecnici e le funzioni precedenti.
 
-PR #15 **integrata dall'utente** il 15 ottobre 2026 alle 19:57:17 UTC,
-merge `7c4e5034bf68ed9154d9601b6edd038a840c5962`, verificato sul remoto.
-Il branch documentale `docs/visione-casa-2026-10-15` deriva dalla consegna IN04
-`7446fc8`, ora presente in main. La [PR #16](https://github.com/av3rgfx/EECard/pull/16)
-è aperta per riallineamento e chiusura, con base aggiornata a **main**. Il diff
-contiene solo Markdown, senza duplicare IN04; nessun rebase o merge necessario.
+La proposta usa dati sintetici in una sessione **isolata in memoria**, azzerata
+ricaricando o uscendo verso lo spazio attuale. Non modifica localStorage 0.4/0.5,
+archivi, ledger o rinnovo della demo precedente. Nessuna migrazione di produzione.
+Riusati policy/comandi IN01, BillsPanel IN03 e BillNotice IN04: non rifarli.
 
-Prima della prossima implementazione verificare la #16: se integrata, ripartire
-dal main aggiornato con nuovo branch dedicato; se ancora aperta, usare una base
-che includa questa continuità e mantenere distinta la consegna applicativa.
-Nessun merge dell'assistente.
+## Come valutarla
 
-Sites verificato v10 e pubblico, asset locali identici al commit online.
-Nessuna modifica frontend o nuovo deploy in questa consegna documentale.
+[Apri la proposta](https://eecard-design-preview.uepacio.chatgpt.site/#/casa/home).
 
-## Ultima consegna applicativa: IN04 — Mostra avviso
+1. Home: tessera, azione «Paga una bolletta», priorità con stato ignoto, casa,
+   documenti e richieste. Confrontare gerarchia e raggiungibilità desktop/mobile.
+2. «Verifica e paga»: originale IN04, controllo preliminare, conferma simulata,
+   riscontro. «Esplora un esito» permette positivo, ignoto ed errore. Incasso e
+   quietanza restano assenti; esito ignoto blocca la ripetizione del tentativo.
+3. Pagamenti → Aggiungi / apri bollette: importazione/rettifica IN03, 84 → 79,
+   versioni e originali; niente duplicato del dovuto o aggiramento del replay.
+4. «Chiedi assistenza» o richiesta di verifica dalla bolletta: descrizione,
+   riepilogo modificabile, riferimento, stato e prossimo passo. Nessun invio.
+   Casa Atelier non riceve un titolo richieste inesistente: limite esplicito.
+5. «Proposta · simulazione» apre scenari: una/più case, nessuna urgenza con
+   richiesta in corso, domiciliazione, pagamento indicato, rettifica, diniego.
+   Con filtro singolo la casa torna espansa; Vedi immobili è sempre espanso.
+6. Profilo → Gestisci abbonamento riusa IN01; non è fine rapporto/card.
 
-Leggere [implementazione/copione](mostra-avviso-2026-10-15/README.md) e
-[verifiche](mostra-avviso-2026-10-15/VERIFICHE.md), poi il
-[piano IN01–IN10](discussione-2026-10-15/PIANO_INCREMENTALE.md).
-IN01, IN03 e studio audio sono già conclusi: non ripeterli.
-
-Utenze → Mostra avviso apre il riepilogo della versione corrente; dal dettaglio
-apre quella selezionata. Importo/creditore/scadenza, riferimento testuale sullo
-stesso telefono e originale completo. Rettifica 84 → 79 EUR, storico superato
-esplicito e passaggio alla corrente. Codice assente/illeggibile/formato non
-supportato con recupero; ignoto, domiciliazione e pagamento indicato distinti.
-Facsimili testuali non scansionabili/non pagabili, nessun canale operativo.
-
-`readBillNotice` rivaluta permessi e fonte/versione a ogni lettura. Dialogo
-esistente con Escape/focus; revoca/cambio contesto rimuovono dati non autorizzati.
-Nessuna scrittura economica o evento dalla consultazione. Schema 4 e workspace
-v1 invariati; nuove bollette/versioni restano nelle Utenze, ricerca/export e
-condivisione globale non estesi. L'archivio 0.4 resta uno snapshot iniziale.
+Il prossimo lavoro dipende dal feedback dell’utente su mappa/home/percorsi,
+poi dall’eventuale autorizzazione a integrarli. **Non avviare IN05 automaticamente**.
+C–Legame, naming provvisorio e Materia/Editoriale conservati. P20/P21 candidati.
 
 ## Remoto e pubblicazione
 
-PR #14 verificata **integrata** il 15 ottobre 2026 alle 06:36:01 UTC,
-merge `ad8b928c7d6cff1a8797225fe1de92716225e735`. Nuovo branch
-`feat/in04-mostra-avviso` da origin/main aggiornato.
-[PR #15](https://github.com/av3rgfx/EECard/pull/15) **integrata dall’utente**
-il 15 ottobre alle 19:57:17 UTC, merge `7c4e503`. Nessun merge dell’assistente.
+PR #15 verificata integrata alle 19:57:17 UTC, merge `7c4e503`.
+PR #16 verificata integrata alle 19:59:34 UTC, merge
+`731958709e6ea5ed133112e523f7747672c9fcdc`. Nuovo branch **`feat/proposta-casa`**
+da `origin/main` aggiornato che contiene la continuità. Nessun merge dell’assistente.
+PR applicativa in preparazione, da registrare alla chiusura.
 
-Sites **v10 pubblicata**, `succeeded` il 15 ottobre 2026 alle **12:26:21 UTC**,
-sorgente `a1223ff657a300c47ab8cbb1771a99da8727a707`, presente su GitHub e nel
-repository sorgente Sites. Comprende IN01/IN03/IN04.
-[Stesso sito](https://eecard-design-preview.uepacio.chatgpt.site/),
-[registro Sites](../design/ANTEPRIME_WEB.md). Manifest e accesso pubblico invariati.
-La chiusura successiva aggiorna solo documenti: gli asset corrispondono alla v10,
-non serve un deploy identico. Non confondere il nuovo HEAD documentale con il
-commit effettivamente online.
+Ultima versione pubblicata prima della proposta: Sites v10, sorgente
+`a1223ff657a300c47ab8cbb1771a99da8727a707`. Nuova pubblicazione in preparazione;
+il [registro Sites](../design/ANTEPRIME_WEB.md) sarà aggiornato con l’esito reale.
+Stesso project ID, URL e accesso pubblico; push GitHub non equivale a deploy.
 
-Regola permanente: pubblicare gli aggiornamenti verificati del prototipo sullo
-stesso Sites a ogni sessione, senza una nuova conferma. Push GitHub e deploy
-sono distinti; annotare versione/commit online. Solo documenti con asset già
-allineati non richiedono deploy identico. Prima del branch verificare sempre
-la PR: riuso solo se aperta per la stessa consegna, dopo merge nuovo branch da
-main aggiornato. Non integrare in main senza richiesta.
+Prima di scegliere un prossimo branch verificare la PR sul remoto. Riutilizzarla
+solo per la stessa consegna se aperta; dopo merge ripartire da main aggiornato
+su branch dedicato. Nessun merge senza richiesta. Aggiornare Sites per modifiche
+verificate; sessioni solo documentali verificano l’allineamento senza deploy identico.
 
-## Come provare e verifiche
+## Verifiche eseguite e confini
 
-Avvio locale: `npm ci`, `npm run dev`. Ingresso `/#/spazio/overview`;
-`/#/prova` equivalente, `/#/laboratorio` conserva la 0.4.
-Strumenti della demo → Lettore indisponibile → Vista cliente → Utenze.
+**104/104 test** passati, inclusi 10 nuovi; dopo la rifinitura mobile ripetuti
+3 controlli di layout/axe a 360/390/1440. Build/HTML autonomo/statico generati;
+smoke dei due percorsi ai tre viewport senza errori JS o richieste esterne.
+Formattazione mirata e whitespace passati. Screenshot, copertura e limiti nel
+rapporto. Avviso Vite bundle >500 kB conservato (~702 kB JS non compresso).
 
-- Casa Luce → Mostra avviso; originale completo, testo e chiusura/Escape.
-- Importare rettifica ottobre, poi aprire avvisi v1/v2 dal dettaglio.
-- Importare dicembre con codice illeggibile; settembre con pagamento indicato;
-  Casa Atelier novembre senza codice/domiciliazione/due pagine.
-- Ripristina scenario elimina importazioni e ripristina fixture. Dati sintetici
-  con data fissa 14 ottobre 2026, nessuna autenticazione/server operativo.
-
-**94/94 test**, inclusi 11 IN04; axe/layout/tastiera a 360/390/1440 e testo 200%,
-build, HTML autonomo, smoke autonomo/statico senza errori JS o richieste esterne.
-Screenshot e limiti nel rapporto. Nessuna prova fisica, umana BF16 o terminale.
-
-## Prossimo lavoro proposto
-
-1. **N19: riallineamento prodotto/home**, secondo C33/C34 e il documento sopra.
-   Descrizione preparata; proposta di home e percorsi da discutere/concretizzare
-   prima di continuare lo sviluppo. **IN05** rimane successivo: report cliente e
-   agenzia separati (C29/USR01), con fonti, periodo, copertura e metriche da definire.
-2. Chiarire preavviso, unità/durata, pro rata/downgrade, listino e condizioni.
-   NA01–NA16 sono candidati, non approvazioni commerciali.
-3. IN06/chiamate AI resta studio/anteprima senza invii o provider reali.
-4. BF16/N10: kit BF02 esistente, supporto/commit annotati, osservazioni umane su
-   comprensione, percorso, diniego e recupero. Nessuna misura AI sostitutiva.
-5. N02/PB04: telefoni fisici, screen reader e terminali richiedono prove dedicate;
-   per terminali solo avvisi di prova e autorizzazione specifica.
-
-BF02 intatto, BF16/N02/BF01/BF03/BF17 aperti. Prezzi, primo pagante, copertura,
-risorse, conservazione e architettura non risolti. Nessun rinvio automatico di
-pagamenti, app, hardware o AI. Fonti audio e trascrizioni integrali restano
-private e fuori repository; nessun riascolto nuovo attribuito alla sessione.
-[Prompt corrente](PROMPT_NUOVA_SESSIONE.md) entro 4.000 caratteri.
+Nessuna osservazione umana sostitutiva: **BF02 invariato, BF16 aperto**.
+N02/PB04 fisico e BF01/BF03/BF17 restano aperti. Non risolti prezzi, primo pagante,
+copertura, budget, conservazione, partner/costi di pagamento o architettura.
+Nessun pagamento, notifica, account, OCR, QR autentico, chiamata o hardware reale.
+Fonti audio, trascrizioni integrali e dati personali restano privati fuori repo.
+[Prompt corrente](PROMPT_NUOVA_SESSIONE.md), entro 4.000 caratteri.
