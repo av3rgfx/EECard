@@ -185,3 +185,14 @@ sono distinti da ruolo, mandato, livello commerciale e card.
 Le fonti sono facsimili HTML inclusi, non OCR o file reali. Nessun pagamento,
 incasso verificato o quietanza generati. IN04 e IN05 restano incrementi successivi,
 BF16 aperto. Lo studio audio e IN01 non sono ripetuti.
+
+## IN04 — avviso consultabile
+
+Implementato [Mostra avviso](docs/progetto/mostra-avviso-2026-10-15/README.md)
+dall'elenco Utenze e dal dettaglio/versione. Importo, creditore, scadenza,
+originale completo e riferimenti testuali sullo stesso telefono; recuperi per
+codice assente/illeggibile e formato non supportato. Stato ignoto, domiciliazione
+e pagamento indicato non certificano il dovuto o un incasso. Versione superata
+esplicita e passaggio alla corrente; consultazione senza modifiche economiche.
+Solo facsimili testuali non scansionabili/non pagabili, nessun canale operativo.
+IN01/IN03 conservati; prossimo proposto IN05, BF16 ancora aperto.

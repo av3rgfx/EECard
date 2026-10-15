@@ -3771,3 +3771,62 @@ body:has(.ws-modal-content) .modal-backdrop {
     flex-wrap: wrap;
   }
 }
+
+/* IN04: the notice keeps only the information needed for consultation. */
+.modal:has(.bill-notice) {
+  width: min(720px, calc(100vw - 2rem));
+}
+.bill-notice {
+  margin-top: 0;
+}
+.bill-notice .notice-total {
+  display: block;
+  margin: 1rem 0 0;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+  font-variant-numeric: tabular-nums;
+}
+.bill-notice .notice-due {
+  margin: 0.5rem 0 1.5rem;
+}
+.notice-status {
+  border-left: 3px solid #997648;
+  padding: 0.8rem 1rem;
+  margin: 1.5rem 0;
+  background: #f5eee3;
+  color: #503b26;
+}
+.notice-status p:last-child {
+  margin-bottom: 0;
+}
+.notice-code {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border: 2px solid #171717;
+  background: #fff;
+  color: #171717;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.notice-code span {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+.notice-code strong {
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+.bill-notice section {
+  margin: 2rem 0;
+}
+.bill-notice summary {
+  min-height: 44px;
+}
+@media (max-width: 700px) {
+  .modal:has(.bill-notice) {
+    width: 100%;
+  }
+}

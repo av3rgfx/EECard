@@ -301,3 +301,19 @@ in AGENTS: pubblicare gli aggiornamenti verificati del prototipo a ogni sessione
 
 Prossima attività invariata: N16/IN04 «Mostra avviso», poi N17/IN05.
 IN04 non implementato in questa chiusura; BF02 intatto, BF16/N02 aperti.
+
+## IN04 completato — 15 ottobre 2026
+
+N16 ora comprende IN03 e **IN04 implementati**. Avviso corrente/storico,
+originale e alternativa testuale, recuperi, stati economici non certificati,
+permessi rivalutati e lettura senza mutazioni.
+[Copione e accettazione](mostra-avviso-2026-10-15/README.md),
+[verifiche](mostra-avviso-2026-10-15/VERIFICHE.md). PR #14 integrata prima del
+nuovo branch `feat/in04-mostra-avviso`. Stato della nuova PR e Sites in
+[PROSSIMA_SESSIONE](PROSSIMA_SESSIONE.md).
+
+Segue N17/IN05: definire fonti, copertura, periodo e metriche prima dei report
+cliente/agenzia separati. N18/IN06 resta studio. N02, N10/BF16, PB04 fisico,
+BF01/BF03/BF17 e condizioni commerciali restano aperti; BF02 invariato.
+Ricerca/export/condivisione delle nuove bollette restano estensioni future con
+policy sui derivati. IN01 e l'analisi audio non sono ripetuti.

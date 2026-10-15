@@ -2,93 +2,78 @@
 
 Aggiornato il 15 ottobre 2026. Repository: https://github.com/av3rgfx/EECard.
 
-## Consegna corrente: IN03 — importazione guidata locale
+## Consegna corrente: IN04 — Mostra avviso
 
-Leggere [implementazione e copione](importazione-bollette-2026-10-15/README.md)
-e [verifiche](importazione-bollette-2026-10-15/VERIFICHE.md), poi il
+Leggere [implementazione/copione](mostra-avviso-2026-10-15/README.md) e
+[verifiche](mostra-avviso-2026-10-15/VERIFICHE.md), poi il
 [piano IN01–IN10](discussione-2026-10-15/PIANO_INCREMENTALE.md).
-Lo [studio audio](discussione-2026-10-15/README.md) e IN01 sono già completati:
-non ripetere trascrizione, analisi integrale o gestione del rinnovo.
+IN01, IN03 e studio audio sono già conclusi: non ripeterli.
 
-IN03: spazio Cliente 01 → Utenze → casa → Aggiungi bolletta → facsimile incluso
-→ confronto originale/dati → riepilogo e conferma → salvataggio locale.
-Importo incerto da correggere, annullo, duplicato anche da seconda copia,
-rettifica collegata con storico, permessi per intestazione/delega e recupero
-dopo errore di memoria. Nessun OCR, upload, codice pagabile o pagamento reale.
+Utenze → Mostra avviso apre il riepilogo della versione corrente; dal dettaglio
+apre quella selezionata. Importo/creditore/scadenza, riferimento testuale sullo
+stesso telefono e originale completo. Rettifica 84 → 79 EUR, storico superato
+esplicito e passaggio alla corrente. Codice assente/illeggibile/formato non
+supportato con recupero; ignoto, domiciliazione e pagamento indicato distinti.
+Facsimili testuali non scansionabili/non pagabili, nessun canale operativo.
 
-Originali sintetici HTML e dati strutturati in `src/workspace/bills.ts`;
-interfaccia in `BillsPanel.tsx`. Persistenza compatibile tramite `bills` nel
-workspace v1; vecchi salvataggi ricevono le due fixture, dati incompatibili
-producono ripristino con avviso. Schema 4 e grants invariati. Importazioni e
-versioni sono consultabili nelle Utenze; l'archivio 0.4 conserva gli originali
-iniziali e rimanda alle Utenze. Nuovi documenti non aggiunti alla ricerca globale,
-condivisione o esportazione 0.4. Queste estensioni richiederanno policy sui derivati.
+`readBillNotice` rivaluta permessi e fonte/versione a ogni lettura. Dialogo
+esistente con Escape/focus; revoca/cambio contesto rimuovono dati non autorizzati.
+Nessuna scrittura economica o evento dalla consultazione. Schema 4 e workspace
+v1 invariati; nuove bollette/versioni restano nelle Utenze, ricerca/export e
+condivisione globale non estesi. L'archivio 0.4 resta uno snapshot iniziale.
 
-## Stato remoto e pubblicazione
+## Remoto e pubblicazione
 
-PR #13 verificata **integrata** il 14 ottobre 2026 alle 23:08:00 UTC,
-merge `be4b23ebb869c156713d3da491791b556cafbfec`. Nessuna PR aperta all'avvio.
-Creato da main remoto aggiornato il branch `feat/in03-importazione-bollette`.
-[PR #14](https://github.com/av3rgfx/EECard/pull/14) aperta e pronta alla revisione,
-base main. Codice e artefatti al commit
-`50461b8205aeedddea195d7e5dc73fbc95807f76`; chiusura successiva solo documentale.
-Nessun merge dell'assistente.
-Prima del prossimo checkout verificare il remoto: riutilizzare una PR aperta
-solo per la stessa consegna; dopo merge partire da main aggiornato e nuovo branch.
+PR #14 verificata **integrata** il 15 ottobre 2026 alle 06:36:01 UTC,
+merge `ad8b928c7d6cff1a8797225fe1de92716225e735`. Nuovo branch
+`feat/in04-mostra-avviso` da origin/main aggiornato. Pubblicazione e PR IN04 in
+preparazione; aggiornare questa sezione dopo l'esito remoto. Nessun merge.
 
-Sites **v9 pubblicata**, esito `succeeded` il 15 ottobre 2026 alle 06:24:44 UTC,
-sorgente `44ffb53f60d68e636a475e405b7e71e1129dfada`:
-[piattaforma aggiornata](https://eecard-design-preview.uepacio.chatgpt.site/).
-Comprende rinnovo IN01 e importazione IN03. Stesso sito e accesso pubblico;
-manifest invariato. [Registro della pubblicazione](../design/ANTEPRIME_WEB.md).
-Il commit di chiusura successivo aggiorna solo documentazione, non gli asset online.
+Ultima versione online prima di IN04: Sites v9, sorgente
+`44ffb53f60d68e636a475e405b7e71e1129dfada` (IN01/IN03).
+[Stesso sito](https://eecard-design-preview.uepacio.chatgpt.site/),
+[registro Sites](../design/ANTEPRIME_WEB.md). Manifest e pubblico invariati.
 
-**Regola permanente richiesta dall'utente:** aggiornare Sites a ogni sessione che
-modifica il prototipo, per consentire la consultazione a distanza, senza una nuova
-conferma. Se cambiano solo documenti e gli asset sono già allineati, registrarlo
-senza deploy identico. Conservare identità/accesso e annotare versione/commit
-online; esplicitare blocchi. Questa richiesta supera il precedente limite locale
-per il deploy della demo, senza autorizzare servizi reali o merge.
+Regola permanente: pubblicare gli aggiornamenti verificati del prototipo sullo
+stesso Sites a ogni sessione, senza una nuova conferma. Push GitHub e deploy
+sono distinti; annotare versione/commit online. Solo documenti con asset già
+allineati non richiedono deploy identico. Prima del branch verificare sempre
+la PR: riuso solo se aperta per la stessa consegna, dopo merge nuovo branch da
+main aggiornato. Non integrare in main senza richiesta.
 
-## Come provare IN03
+## Come provare e verifiche
 
-`npm ci`, `npm run dev`, aprire `http://localhost:5173/`.
+Avvio locale: `npm ci`, `npm run dev`. Ingresso `/#/spazio/overview`;
+`/#/prova` equivalente, `/#/laboratorio` conserva la 0.4.
+Strumenti della demo → Lettore indisponibile → Vista cliente → Utenze.
 
-1. Strumenti della demo → scenario Lettore indisponibile → Vista cliente → Utenze.
-   In alternativa completare la pratica esistente prima di aprire Vista cliente.
-2. Casa Luce → Aggiungi bolletta → Novembre, importo da correggere. Confrontare
-   proposta 964,00 con originale 96,40, correggere e motivare.
-3. Rivedere il riepilogo, confermare, ricaricare. Ripetere con la seconda copia:
-   aprire il documento esistente senza creare una nuova bolletta.
-4. Importare la rettifica di ottobre: 84 → 79 EUR; aprire lo storico versione 1/2.
-5. Provare copia illeggibile, Casa Atelier senza codice e cambio casa/attore.
-   Ripristina scenario elimina le importazioni. Il copione completo è nel README.
+- Casa Luce → Mostra avviso; originale completo, testo e chiusura/Escape.
+- Importare rettifica ottobre, poi aprire avvisi v1/v2 dal dettaglio.
+- Importare dicembre con codice illeggibile; settembre con pagamento indicato;
+  Casa Atelier novembre senza codice/domiciliazione/due pagine.
+- Ripristina scenario elimina importazioni e ripristina fixture. Dati sintetici
+  con data fissa 14 ottobre 2026, nessuna autenticazione/server operativo.
 
-14 test IN03; suite completa 83/83. Dettagli, rifiniture e controlli finali nel
-rapporto, con distinzione fra emulazione Chromium e dispositivi fisici.
-Ingressi `/#/spazio/overview` e `/#/prova`; laboratorio 0.4 a `/#/laboratorio`.
-Data sintetica fissa 14 ottobre 2026. Nessuna autenticazione/server operativo.
+**94/94 test**, inclusi 11 IN04; axe/layout/tastiera a 360/390/1440 e testo 200%,
+build, HTML autonomo, smoke autonomo/statico senza errori JS o richieste esterne.
+Screenshot e limiti nel rapporto. Nessuna prova fisica, umana BF16 o terminale.
 
-## Prossimo lavoro consigliato
+## Prossimo lavoro proposto
 
-1. Seguire la nuova richiesta corrente. In assenza di altra priorità: **IN04**,
-   «Mostra avviso», a partire dai dati/versioni di IN03; originale e alternativa
-   testuale, codice assente/illeggibile, stato ignoto/domiciliazione/pagato e
-   permessi. Solo facsimili non pagabili; nessuna promessa di lettura a un terminale.
-2. IN05: report annuali cliente e agenzia con viste separate, destinatari
-   confermati dall'utente (C29/USR01). Definire fonti, periodo, copertura e metriche;
-   non annualizzare fixture né aggregare bollette private senza titolo.
-3. In parallelo chiarire preavviso, unità/durata, pro rata/downgrade, listino e
-   condizioni operative. NA01–NA16 restano candidati, non approvazioni commerciali.
-4. IN06/chiamate AI resta studio/anteprima senza invii, numeri o provider reali.
-5. N10/BF16: usare BF02 esistente annotando supporto/commit; osservazioni umane
-   su comprensione, percorso, diniego e recupero. Note individuali fuori repo;
-   sintesi anonime autorizzate. Test automatici non sono misure di beneficio.
+1. Seguire la nuova richiesta dell'utente; IN04 è completato come demo. In assenza
+   di diversa priorità, **IN05**: report annuali cliente e agenzia con viste
+   separate, destinatari confermati C29/USR01. Definire fonti, periodo, copertura
+   e metriche; non annualizzare fixture né aggregare bollette private senza titolo.
+2. Chiarire preavviso, unità/durata, pro rata/downgrade, listino e condizioni.
+   NA01–NA16 sono candidati, non approvazioni commerciali.
+3. IN06/chiamate AI resta studio/anteprima senza invii o provider reali.
+4. BF16/N10: kit BF02 esistente, supporto/commit annotati, osservazioni umane su
+   comprensione, percorso, diniego e recupero. Nessuna misura AI sostitutiva.
+5. N02/PB04: telefoni fisici, screen reader e terminali richiedono prove dedicate;
+   per terminali solo avvisi di prova e autorizzazione specifica.
 
-BF16 e N02 (telefoni/Safari/Android/screen reader) restano aperti, BF02 intatto.
-Restano BF01/BF03/BF17, primo pagante, copertura, risorse, conservazione e
-architettura. Nessun rinvio automatico di pagamenti, app, hardware o AI.
-
-Fonti audio e trascrizioni integrali restano private e fuori repository. Percorsi
-privati temporanei non sono prerequisiti di ripresa; non inventare riascolti.
-Il [prompt corrente](PROMPT_NUOVA_SESSIONE.md) resta entro 4.000 caratteri.
+BF02 intatto, BF16/N02/BF01/BF03/BF17 aperti. Prezzi, primo pagante, copertura,
+risorse, conservazione e architettura non risolti. Nessun rinvio automatico di
+pagamenti, app, hardware o AI. Fonti audio e trascrizioni integrali restano
+private e fuori repository; nessun riascolto nuovo attribuito alla sessione.
+[Prompt corrente](PROMPT_NUOVA_SESSIONE.md) entro 4.000 caratteri.

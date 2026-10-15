@@ -557,3 +557,28 @@ Aggiornati continuità, rapporto, backlog e registri; verificati whitespace,
 collegamenti e limite prompt. Chiusura successiva solo documentale, distinta
 dal commit online. Prossimo IN04, poi IN05; BF02 invariato, BF16 aperto.
 Nessun servizio reale, nuova feature o merge.
+
+## 15 ottobre 2026 — IN04 Mostra avviso
+
+Verificata PR #14 integrata alle 06:36:01 UTC, merge `ad8b928`; nuovo branch
+`feat/in04-mostra-avviso` da origin/main aggiornato. Letti continuità, documenti
+prodotto/design/sviluppo, IN03 e piano/studio bollette; nessuna ripetizione di
+IN01, analisi audio o kit BF02. Skill Sites e indicazioni pertinenti di
+apple-design/mobile-native allo snapshot Emil già registrato.
+
+Implementati avviso corrente/storico, originale condiviso e alternativa testuale
+sullo stesso telefono, codice assente/illeggibile/formato non supportato, stati
+ignoto/domiciliazione/pagamento indicato e versioni superate. Lettura derivata
+con permessi e coerenza rivalutati; nessuna mutazione di ledger o eventi.
+Facsimili testuali non scansionabili/non pagabili, nessun servizio reale.
+
+Verifiche finali: 94/94 test (11 nuovi IN04), zero skipped/flaky; axe, layout,
+tastiera, testo 200% e reduced motion a 360/390/1440, build e HTML autonomo,
+smoke autonomo/statico senza errori JS o richieste esterne. Screenshot ispezionati,
+formattazione e controlli documentali. [Rapporto](mostra-avviso-2026-10-15/VERIFICHE.md).
+Non sono prove fisiche o umane: N02/PB04/BF16 restano aperti. Bundle unico circa
+669 kB JS, avviso Vite noto. Nessuna dipendenza nuova o migrazione.
+
+Aggiornati prodotto/design/sviluppo, AGENTS, C32/P19, piano, backlog, continuità
+e prompt entro 4.000 caratteri. Prossimo proposto IN05 con fonti/copertura/metriche
+per le due viste. Pubblicazione e PR registrate a chiusura dopo l'esito remoto.

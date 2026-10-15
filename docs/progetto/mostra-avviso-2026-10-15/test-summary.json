@@ -1,0 +1,14 @@
+{
+  "command": "npx playwright test --workers=3 --reporter=list,json",
+  "stats": {
+    "startTime": "2026-10-15T06:45:57.050Z",
+    "duration": 70892.452,
+    "expected": 94,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "noticeTests": 11,
+  "scope": "Chromium emulato; suite completa 0.3/0.4/0.5, IN01, IN03 e IN04"
+}

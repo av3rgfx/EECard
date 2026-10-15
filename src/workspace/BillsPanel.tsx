@@ -1,3 +1,5 @@
+import { BillOriginal } from "./BillOriginal";
+import { BillNotice } from "./BillNotice";
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, FileText, Plus, Check } from "lucide-react";
 import type { State } from "../demo/model";
@@ -15,60 +17,12 @@ import {
   type BillData,
   type BillDraft,
   type BillField,
-  type BillSource,
 } from "./bills";
 
 const currency = (amount: string) =>
   new Intl.NumberFormat("it-IT", { style: "currency", currency: "EUR" }).format(
     money(amount) / 100,
   );
-function Original({ source }: { source: BillSource }) {
-  return (
-    <article className="bill-original" aria-label="Originale sintetico">
-      <span className="ws-eyebrow">FACSIMILE · NON PAGABILE</span>
-      <h3>{source.original.creditor}</h3>
-      <p>
-        Documento di esempio · fonte {source.id} · revisione {source.revision}
-      </p>
-      {source.quality === "illeggibile" ? (
-        <p role="alert">
-          Copia illeggibile. I campi non possono essere confermati.
-        </p>
-      ) : (
-        <>
-          <strong className="bill-original-total">
-            {currency(source.original.amount)}
-          </strong>
-          <dl>
-            {(Object.keys(billFields) as BillField[]).map((key) => (
-              <div key={key}>
-                <dt>{billFields[key]}</dt>
-                <dd>{source.original[key] || "Assente"}</dd>
-              </div>
-            ))}
-          </dl>
-          <p>
-            Domiciliazione: {source.debit}.<br />
-            Pagamento: {source.payment}.
-          </p>
-          {Array.from({ length: source.pages }, (_, i) => (
-            <p key={i}>
-              Pagina {i + 1} di {source.pages} ·{" "}
-              {i === 0
-                ? "Riepilogo e importo"
-                : `Dettaglio fornitura ${source.original.supply}; nessun codice presente`}
-              .
-            </p>
-          ))}
-        </>
-      )}
-      <p className="bill-source-note">
-        {source.schema}. Solo dati inventati. Nessun codice utilizzabile,
-        collegamento esterno o istruzione di pagamento.
-      </p>
-    </article>
-  );
-}
 function DataRows({ data }: { data: BillData }) {
   return (
     <dl className="bill-data-rows">
@@ -98,6 +52,9 @@ export function BillsPanel({
   const [mode, setMode] = useState<
     "list" | "choose" | "compare" | "confirm" | "detail"
   >("list");
+  const [notice, setNotice] = useState<{ id: string; number: number } | null>(
+    null,
+  );
   const [draft, setDraft] = useState<BillDraft | null>(null);
   const [reason, setReason] = useState("");
   const [error, setError] = useState("");
@@ -142,14 +99,14 @@ export function BillsPanel({
   };
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && mode !== "list") {
+      if (e.key === "Escape" && mode !== "list" && !notice) {
         e.preventDefault();
         cancel();
       }
     };
     document.addEventListener("keydown", listener);
     return () => document.removeEventListener("keydown", listener);
-  }, [mode]);
+  }, [mode, notice]);
   const choose = () => {
     setMode("choose");
     setError("");
@@ -192,6 +149,14 @@ export function BillsPanel({
     return renderDenied;
   return (
     <div className="bill-panel">
+      <BillNotice
+        state={s}
+        bills={bills}
+        property={property}
+        selection={notice}
+        onClose={() => setNotice(null)}
+        onCurrent={(number) => setNotice(notice && { ...notice, number })}
+      />
       {mode !== "list" && (
         <button className="ws-btn ws-quiet" onClick={cancel}>
           <ArrowLeft size={16} />
@@ -257,6 +222,12 @@ export function BillsPanel({
                 </div>
                 <div className="ws-bill-footer">
                   <button
+                    className="ws-btn ws-primary"
+                    onClick={() => setNotice({ id: b.id, number: v.number })}
+                  >
+                    Mostra avviso
+                  </button>
+                  <button
                     className="ws-btn ws-secondary"
                     onClick={() => open(b)}
                   >
@@ -315,7 +286,7 @@ export function BillsPanel({
           </p>
           {source.quality === "illeggibile" ? (
             <>
-              <Original source={source} />
+              <BillOriginal source={source} />
               <button className="ws-btn ws-primary" onClick={choose}>
                 Scegli una copia leggibile
               </button>
@@ -342,7 +313,7 @@ export function BillsPanel({
                 className={`bill-compare ${originalTab ? "show-original" : "show-data"}`}
               >
                 <div className="bill-original-column">
-                  <Original source={source} />
+                  <BillOriginal source={source} />
                 </div>
                 <form
                   className="bill-fields"
@@ -448,7 +419,7 @@ export function BillsPanel({
           <DataRows data={draft.data} />
           <details>
             <summary>Rivedi l’originale</summary>
-            <Original source={source} />
+            <BillOriginal source={source} />
           </details>
           <p>
             Domiciliazione: {source.debit}. Pagamento: {source.payment}.
@@ -502,6 +473,14 @@ export function BillsPanel({
           <h2 ref={titleRef} tabIndex={-1}>
             {version.data.creditor} · {version.data.period}
           </h2>
+          <button
+            className="ws-btn ws-primary"
+            onClick={() =>
+              setNotice({ id: selected.id, number: version.number })
+            }
+          >
+            Mostra avviso
+          </button>
           <label className="bill-version">
             Versione
             <select
@@ -530,7 +509,7 @@ export function BillsPanel({
             {version.reason}.
           </p>
           <div className="bill-detail">
-            <Original source={detailSource} />
+            <BillOriginal source={detailSource} />
             <div>
               <h3>Dati confermati · versione {version.number}</h3>
               <DataRows data={version.data} />
