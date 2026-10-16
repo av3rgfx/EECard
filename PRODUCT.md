@@ -1,5 +1,11 @@
 # EECard — prodotto
 
+## Nuova base del prodotto reale — 16 ottobre 2026
+
+L'utente sceglie un avvio autonomo in un nuovo repository, con codice da zero e contesto pulito. Il [brief trasferibile](docs/progetto/nuovo-repository-2026-10-16/starter/docs/PRODUCT.md) conserva la visione e separa decisioni da ipotesi; il [pacchetto](docs/progetto/nuovo-repository-2026-10-16/README.md) prepara la sessione con Claude. Nessuna approvazione implicita di menu, prezzi, copertura o architettura. Questa repository conserva studi/prototipo; il prodotto reale non è ancora implementato.
+
+## Stato precedente conservato
+
 Aggiornato il 15 ottobre 2026 dopo il chiarimento diretto della visione. Questo documento orienta il lavoro di prodotto nelle sessioni successive; non costituisce un’offerta commerciale né una specifica di produzione approvata.
 
 ## Identità e origine

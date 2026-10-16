@@ -1,5 +1,11 @@
 # EECard — sviluppo e manutenzione
 
+## Preparazione del prodotto da zero — 16 ottobre 2026
+
+Il [pacchetto autonomo](docs/progetto/nuovo-repository-2026-10-16/README.md) è una consegna documentale per un nuovo repository, senza codice demo, Git, credenziali o identità Sites ereditati. Stack, backend e provider saranno studiati nel nuovo ambiente. `package.py` rigenera ZIP/manifest e verifica l'autonomia del pacchetto. Nessuna dipendenza applicativa aggiunta o test UI ripetuto; vecchio frontend e hosting invariati.
+
+## Stato precedente conservato
+
 Aggiornato il 14 ottobre 2026. Repository di riferimento: https://github.com/av3rgfx/EECard. Stack del prototipo: React, TypeScript e Vite; le versioni riproducibili sono in `package-lock.json`.
 
 ## Ripresa e avvio

@@ -293,3 +293,9 @@ P20/P21 restano candidati: la pubblicazione non approva menu/layout, provider,
 commissioni, copertura o architettura. [Mappa e copione](../progetto/proposta-casa-2026-10-15/README.md).
 PR #15/#16 risultano integrate dall’utente prima del nuovo branch `feat/proposta-casa`
 da `origin/main` `7319587`. Nessun merge dell’assistente.
+
+## Avvio autonomo del prodotto — 16 ottobre 2026
+
+**C37 — richiesta esplicita:** l'utente intende partire da un nuovo repository pulito per il prodotto reale e provare la costruzione con Claude; dopo il confronto chiede di preparare tutto per il nuovo repository e il prompt. Autorizzata la preparazione del [pacchetto](../progetto/nuovo-repository-2026-10-16/README.md). Nessun repository remoto creato senza nome/destinazione; nessuna scelta automatica di stack, provider o condizioni commerciali.
+
+Conservati visione, C–Legame, naming provvisorio, Materia/Editoriale e invarianti; non imposto il riuso del codice demo. Menu/layout precedenti restano proposte. Nuovo prompt: studio mirato, eventuali soluzioni migliori, cura UX/UI, proposta navigabile e sviluppo incrementale verso il prodotto operativo. Nessun servizio reale o merge.
