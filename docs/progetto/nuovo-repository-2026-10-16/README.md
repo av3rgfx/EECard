@@ -2,7 +2,13 @@
 
 L'utente sceglie di preparare un nuovo repository per il prodotto reale e una nuova sessione con Claude, senza dipendere dal codice o dalla cronologia di EECard. Questa consegna prepara il materiale trasferibile; **non crea ancora un repository remoto e non implementa il nuovo prodotto**.
 
-## Consegna da usare
+## Avvio corrente: copia locale automatica in EECard2
+
+L'utente ha scelto il nome tecnico **EECard2** e chiede che il nuovo agente recuperi i file direttamente dal disco, senza ZIP o download dal remoto. Incollare [PROMPT_EECARD2_LOCALE.md](PROMPT_EECARD2_LOCALE.md) nella sessione del nuovo repository: verifica e copia `starter/` dal percorso assoluto `/home/uepacio/orca/EECard/docs/progetto/nuovo-repository-2026-10-16/starter/`, senza modificare EECard e preservando i file già presenti nella destinazione. La sessione deve avere accesso a quel filesystem. I merge delle PR non sono un prerequisito.
+
+Il prompt ha 3.843 caratteri. Manifest verificato sui 27 file sorgenti; nessuna modifica al pacchetto originale o allo ZIP. Nome del prodotto e visibilità del nuovo repository non sono determinati dal nome EECard2.
+
+## Consegna alternativa da copiare o scaricare
 
 - [Pacchetto ZIP](avvio-prodotto.zip): estrarre il contenuto nella radice del nuovo repository vuoto, inclusi i file nascosti.
 - [Cartella pronta da copiare](starter/README.md): stessi contenuti dello ZIP, leggibili qui e autonomi dopo la copia.

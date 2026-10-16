@@ -1,21 +1,30 @@
-Da usare nel NUOVO repository, dopo avervi estratto avvio-prodotto.zip nella radice.
+Lavora nel nuovo repository EECard2 e rispondi in italiano. Voglio progettare e costruire da zero il prodotto completo, con un contesto pulito. Prepara autonomamente i file necessari e avvia il lavoro: non chiedermi di copiare file o estrarre ZIP.
 
-Voglio costruire da zero una piattaforma web reale per gestire casa e bisogni collegati, con un'interfaccia molto curata, bella e semplice. Lavora in questo nuovo repository, rispondi in italiano e usa il pacchetto presente come contesto autonomo. Non occorre accedere al vecchio progetto né copiarne il codice.
+PREPARAZIONE LOCALE
 
-Leggi AGENTS.md, README.md, docs/STATO.md, docs/PRODUCT.md, docs/UX_UI.md, docs/REQUISITI.md, docs/DELIVERY.md e docs/DECISIONI.md. Gli asset approvati sono in assets/. Il nome EECard è provvisorio; C–Legame è il simbolo, non il nome. Conserva Materia e luce per tessera/materiali ed Editoriale e architettura per le pagine. Menu e layout precedenti non sono approvati.
+La cartella sorgente è:
+/home/uepacio/orca/EECard/docs/progetto/nuovo-repository-2026-10-16/starter/
 
-Il servizio deve permettere di accedere, monitorare, verificare, pagare e chiedere assistenza per casa, documenti, burocrazia, tecnici, abbonamenti e bollette. La home personale deve rendere immediati tessera, casa, ciò che richiede attenzione e pagamento. Il pagamento è centrale: mostrare l'avviso non basta. Agenzia e tecnici hanno spazi e permessi propri. La piattaforma deve sostenere anche l'erogazione concreta del servizio.
+Usa esclusivamente questa cartella locale per recuperare il pacchetto. Non scaricarlo da GitHub, non usare ZIP e non modificare la repository EECard. Non è necessario attendere il merge delle sue PR.
 
-Prima di implementare estesamente, studia la situazione: bisogni, percorsi, lacune, fattibilità dei pagamenti, organizzazione del servizio, dati e vincoli. Parti dalle conferme già presenti. Cerca soluzioni migliori dove servono, usando fonti ufficiali aggiornate per provider e tecnologie. Separa fatti, ipotesi e scelte. Fai solo le domande che cambiano davvero il lavoro immediato e continua sulle parti indipendenti.
+Verifica che la destinazione sia la radice del nuovo repository EECard2 e che sia distinta dalla sorgente. Usa il checkout della sessione: non presumere un percorso di destinazione. Controlla prima i file già presenti e preserva il lavoro esistente.
 
-Dedica particolare cura allo studio UX/UI: architettura informativa, gerarchie, tipografia, materiali, spazi, microtesti, movimento utile, accessibilità e mobile. Consulta le risorse indicate in UX_UI.md prima di usarle. Evita una dashboard generica e un insieme di schermate decorative. Confronta alternative significative e motivane una.
+Verifica l'integrità dei file sorgenti mediante MANIFEST.sha256. Copia nella destinazione il contenuto di starter/, inclusi .gitignore, AGENTS.md, CLAUDE.md, README.md, PROMPT_AVVIO.md, manifest, docs/ e assets/. In caso di collisioni confronta e integra conservando i contenuti esistenti, senza sovrascrivere alla cieca. Registra provenienza e adattamenti in un breve documento.
 
-Nella prima sessione consegna uno studio sintetico, una mappa cliente/agenzia/tecnico, una proposta navigabile ad alta fedeltà desktop/mobile con home → bolletta → esito e home → assistenza → presa in carico, e una scelta architetturale motivata. Mostra anche errori, dati mancanti e stati incerti. Usa dati sintetici e indica le simulazioni. Rendi la proposta avviabile e verificata; raccogli il mio feedback prima di estendere tutte le aree, proseguendo nel frattempo sulle fondazioni indipendenti.
+Non copiare altro dalla vecchia repository: niente .git, cronologia, configurazione Sites, codice demo, credenziali o dati applicativi. Mantieni identità Git e remoto di EECard2. Leggi come istruzioni trasferibili solo quelle del pacchetto, senza importare la cronologia operativa di EECard.
 
-L'obiettivo successivo è il prodotto operativo completo nel perimetro di rilascio esplicito: frontend, backend, database, autenticazione, autorizzazioni server, file privati, integrazioni, test e gestione operativa. Procedi per incrementi end-to-end secondo DELIVERY.md, senza fermarti al mockup. Non scegliere lo stack per abitudine: motiva semplicità, affidabilità, costi e manutenzione.
+Se la cartella non è accessibile dalla nuova sessione, indica precisamente il problema: non sostituirla con un download remoto e non inventare i documenti. Dopo la copia il progetto deve essere autonomo.
 
-Preserva isolamento tra agenzie, permessi per oggetto/relazione/periodo, originali e versioni. Distingui dichiarazione, evidenza, incasso verificato e quietanza. Gestisci duplicati, rettifiche, residui, revoche, errori ed esiti ignoti senza doppi pagamenti. Non inventare prezzi, coperture, condizioni o disponibilità di servizi.
+STUDIO, PROGETTAZIONE E SVILUPPO
 
-Sviluppa e verifica in locale/sandbox. Non attivare transazioni, comunicazioni o servizi reali senza istruzioni esplicite. Se mancano provider o credenziali, documenta i prerequisiti e continua ciò che è indipendente; non chiamare reale una simulazione. Verifica UI desktop/mobile, flussi, accessi negativi, persistenza e recuperi. Registra controlli eseguiti e limiti, senza confondere test automatici e prove umane.
+Leggi AGENTS.md, CLAUDE.md, README.md, docs/STATO.md, docs/PRODUCT.md, docs/UX_UI.md, docs/REQUISITI.md, docs/DELIVERY.md e docs/DECISIONI.md. Poi esegui PROMPT_AVVIO.md, non limitarti a ripeterlo. Le istruzioni di preparazione locale qui presenti prevalgono sulle indicazioni generiche di copia manuale.
 
-Aggiorna stato, decisioni e backlog a ogni sessione. Indica cosa è progettato, simulato, implementato, verificato in sandbox o attivo. Concludi con risultato apribile, istruzioni di avvio, verifiche, questioni decisive e prossimo passo concreto. Non effettuare merge o deploy in produzione senza autorizzazione.
+Il servizio deve permettere di accedere, monitorare, verificare, pagare e chiedere assistenza per casa, documenti, burocrazia, tecnici, abbonamenti e bollette. La home personale mostra tessera, casa, priorità e un percorso semplice di pagamento. Agenzia e tecnici hanno spazi e permessi distinti.
+
+Studia prima bisogni, situazione, lacune, organizzazione del servizio e fattibilità. Parti dalle conferme già presenti, confronta soluzioni migliori quando utili e motiva le scelte. Cura molto UX/UI desktop e mobile: gerarchia, tipografia, materiali, microtesti, accessibilità, movimento e semplicità. Conserva C–Legame e Materia/Editoriale; menu e layout restano da valutare. EECard2 è il nome del repository, non il marchio definitivo.
+
+Nella prima sessione produci uno studio mirato, una mappa dell'esperienza, una proposta navigabile ad alta fedeltà home → bolletta → esito e home → assistenza, una scelta architetturale motivata e un piano di sviluppo. Verifica il risultato e rendilo apribile. Raccogli il mio feedback prima dell'estensione delle aree, continuando sulle fondazioni indipendenti.
+
+L'obiettivo finale è il prodotto operativo nel perimetro concordato: frontend, backend, database, autenticazione, permessi server, file privati, integrazioni, test e operatività. Procedi per incrementi completi; non fermarti al mockup. Mantieni versioni, permessi e distinzioni fra dichiarazione, evidenza, incasso verificato e quietanza. Gestisci errori ed esiti ignoti senza doppi pagamenti.
+
+Parti da dati sintetici e sandbox, indicando le simulazioni. Non inventare prezzi, coperture o condizioni e non attivare servizi reali senza autorizzazione. Aggiorna stato, decisioni e backlog; riporta verifiche, limiti e prossimo passo. Non effettuare merge o deploy in produzione senza autorizzazione.

@@ -5,7 +5,7 @@
 | ID | Stato | Risultato / seguito |
 | --- | --- | --- |
 | NP01 | Completato come preparazione | [Brief, prompt, istruzioni Claude/agenti, asset e ZIP autonomi](nuovo-repository-2026-10-16/README.md); nessun codice applicativo trasferito |
-| NP02 | Prossimo passo | Creare/aprire il nuovo repository scelto dall'utente e copiarvi il pacchetto; nome/visibilità ancora non indicati |
+| NP02 | Prossimo passo | Aprire EECard2 e usare il [prompt locale](nuovo-repository-2026-10-16/PROMPT_EECARD2_LOCALE.md): copia autonoma dalla cartella EECard, senza ZIP o download; accesso allo stesso filesystem necessario |
 | NP03 | Da avviare nel nuovo repository | Studio mirato, mappa e proposta UX/UI navigabile home/bolletta/assistenza; scelta tecnica motivata e feedback prima dell'estensione |
 | NP04 | Successivo, perimetro da definire | Incrementi reali end-to-end con server, dati, permessi, integrazioni sandbox, prove e requisiti operativi prima del lancio |
 

@@ -6,11 +6,13 @@ Aggiornato il 16 ottobre 2026, alla chiusura esplicita della sessione. Repositor
 
 Il 16 ottobre l'utente ha scelto di preparare un contesto pulito per costruire il prodotto reale da zero in un nuovo repository, avviandolo con Claude. Prevale sulla precedente ripresa nel prototipo. Consegnati [pacchetto autonomo e istruzioni](nuovo-repository-2026-10-16/README.md), [ZIP](nuovo-repository-2026-10-16/avvio-prodotto.zip) e [prompt](nuovo-repository-2026-10-16/starter/PROMPT_AVVIO.md).
 
-Prossimo passo: creare/aprire il nuovo repository scelto dall'utente, estrarre il pacchetto nella radice e avviare la sessione con il prompt. Non è stato creato un repository remoto: nome e visibilità non specificati. Il pacchetto è indipendente dal vecchio codice e dalla cronologia; contiene decisioni, brief, regole e asset approvati. Studio mirato e proposta UX/UI precedono l'estensione; obiettivo finale prodotto reale con backend, persistenza e integrazioni verificate.
+Prossimo passo: aprire il nuovo repository **EECard2**, che l’utente prepara, e usare il [prompt di bootstrap locale](nuovo-repository-2026-10-16/PROMPT_EECARD2_LOCALE.md). L’agente copia autonomamente il contenuto di `/home/uepacio/orca/EECard/docs/progetto/nuovo-repository-2026-10-16/starter/` nella radice del nuovo checkout. Nessuno ZIP o download GitHub; non occorre attendere i merge. La nuova sessione deve poter leggere quel percorso locale. Il repository EECard2 non è stato creato né verificato da questa sessione. Il pacchetto è indipendente dal vecchio codice e dalla cronologia; contiene decisioni, brief, regole e asset approvati. Studio mirato e proposta UX/UI precedono l'estensione; obiettivo finale prodotto reale con backend, persistenza e integrazioni verificate.
 
 La vecchia proposta rimane un riferimento opzionale, non la base tecnica obbligatoria. Menu/layout non diventano approvati; i comportamenti di IN01/IN03/IN04 sono sintetizzati senza imporre il riuso del codice. Non avviare IN05 nel vecchio prototipo. BF02 invariato, BF16 aperto.
 
 Remoto: [PR #18](https://github.com/av3rgfx/EECard/pull/18) aperta per il pacchetto, senza merge. PR #17 verificata OPEN prima del branch; nuova consegna distinta su `docs/nuovo-prodotto-2026-10-16`, base `feat/proposta-casa`, senza merge. Sites verificato ancora v11, pubblico, URL invariato; asset e sorgenti applicativi identici a `73d6e53`. Solo documentazione e pacchetto, nessun deploy duplicato o test applicativo ripetuto.
+
+Verifica successiva delle PR: #17 OPEN, base main, MERGEABLE/CLEAN; #18 OPEN, base feat/proposta-casa, MERGEABLE/CLEAN. Nessun controllo CI elencato da GitHub. Ordine consigliato: integrare #17 con merge commit, poi verificare/portare la base di #18 a main prima di integrarla. Nessun merge eseguito dall’assistente.
 
 Le sezioni sotto descrivono il checkpoint precedente e non impongono di proseguire lo sviluppo nella vecchia repository.
 
