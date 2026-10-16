@@ -266,3 +266,7 @@ sorgente `73d6e53` e deployment sopra. Confronto Git di frontend, asset, script,
 artefatto autonomo e manifest senza differenze rispetto al commit online.
 Aggiornamento soltanto documentale per la prossima sessione; nessun deploy
 identico, nuova build o test applicativo attribuito alla chiusura.
+
+## 16 ottobre 2026 — pacchetto per nuovo repository
+
+Sessione documentale: verifica nativa `get_site` conferma sito attivo, pubblico, v11 e URL invariato. Sorgenti/asset del prototipo confrontati con `73d6e53ed1876ab113d2a50521061552e1583a5e` senza differenze; il nuovo pacchetto non entra negli asset pubblicati. Nessun deploy identico e nessun test applicativo ripetuto. La nuova piattaforma non eredita `.openai/hosting.json`; hosting e accesso saranno configurati nel nuovo progetto.

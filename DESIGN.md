@@ -1,5 +1,11 @@
 # EECard — guida al design
 
+## Brief per il nuovo repository — 16 ottobre 2026
+
+Il [brief UX/UI autonomo](docs/progetto/nuovo-repository-2026-10-16/starter/docs/UX_UI.md) trasferisce C–Legame, Materia/Editoriale e requisiti di usabilità, con simbolo/font in un pacchetto pulito. Home/menu restano candidati: nuovo studio mirato e percorsi verificabili prima dell'estensione. Nessuna modifica al frontend o alla palette in questa sessione.
+
+## Stato precedente conservato
+
 Aggiornato l'8 ottobre 2026. Direzione 0.3 scelta esplicitamente dopo il confronto ad alta fedeltà: tessera e materiali di **Materia e luce**, struttura delle pagine di **Editoriale e architettura**, processi aperti a tutta larghezza. L’ultima scelta visiva esplicita dell'utente conferma questo stile e rende più compatti solo gli immobili della home quando ne sono visibili più di uno. La direzione è integrata nel frontend; verifiche e versione effettivamente online sono registrate nei rapporti dedicati.
 
 ## Priorità corrente — riallineamento del prodotto

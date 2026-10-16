@@ -689,3 +689,25 @@ versione legata al deployment già riuscito e alla sorgente `73d6e53`. Confronto
 Git dei sorgenti/asset con il commit online senza differenze: nessun deploy
 identico e nessun test applicativo ripetuto. Controllati link locali, whitespace
 e prompt entro 4.000 caratteri. BF02 invariato, BF16 aperto; nessun merge.
+
+
+## 16 ottobre 2026 — preparazione del nuovo repository e avvio con Claude
+
+L'utente richiede un nuovo contesto pulito per costruire il prodotto reale da zero e autorizza la preparazione di tutto il materiale di avvio. PR #17 verificata aperta; creata consegna distinta su `docs/nuovo-prodotto-2026-10-16`, basata sul branch della #17 per conservare continuità, senza merge.
+
+Preparato [pacchetto autonomo](nuovo-repository-2026-10-16/README.md): prodotto e servizio, UX/UI, invarianti e accettazione, fasi di consegna, decisioni, stato iniziale, AGENTS/CLAUDE, simbolo e font con licenza. Prompt di avvio 3.835 caratteri; prompt di continuità 3.921. Archivio con 28 file, senza codice demo, dati personali, credenziali, metadati Git o identità di hosting. Nuovo repository remoto non creato: nome/destinazione e visibilità da indicare nell'ambiente di avvio.
+
+Controllati link interni, autonomia dei percorsi, contenuto ZIP identico ai sorgenti, manifest SHA-256, asset identici agli originali, limite prompt e whitespace. Nessun test applicativo ripetuto. Sites verificato nativamente attivo/v11/pubblico; diff sorgenti/asset rispetto a `73d6e53` vuoto, nessun deploy duplicato. Aggiornati continuità, prodotto, design, sviluppo, decisioni, backlog e prompt.
+
+Prossimo passo: copiare il pacchetto nella radice del nuovo repository e usare il prompt. Prima studio mirato e proposta UX/UI navigabile, poi incrementi end-to-end verso il prodotto reale; niente rinnovo automatico della cronologia del vecchio prototipo. IN05 non avviato, BF02 intatto, BF16 aperto.
+
+Consegna salvata sul remoto nella [PR #18](https://github.com/av3rgfx/EECard/pull/18), aperta con base `feat/proposta-casa`, senza merge.
+
+
+## 16 ottobre 2026 — avvio locale EECard2 e ordine dei merge
+
+L'utente sceglie EECard2 e richiede copia autonoma dal checkout locale, senza ZIP né recupero remoto. Verificata la cartella `starter/` e i 27 hash del manifest. Preparato [prompt locale](nuovo-repository-2026-10-16/PROMPT_EECARD2_LOCALE.md) di 3.843 caratteri, riportato nel prompt corrente; aggiornati ripresa e backlog. Non modificati pacchetto, asset o applicazione.
+
+GitHub: #17 OPEN/MERGEABLE/CLEAN verso main; #18 OPEN/MERGEABLE/CLEAN verso feat/proposta-casa, nessun controllo CI elencato. Consigliato merge commit della #17, poi base della #18 verificata/portata a main. Nessun merge o modifica di base eseguiti. Consegna nella stessa PR #18; avvio locale indipendente dai merge. Nessun test applicativo ripetuto, sorgenti/asset online invariati.
+
+Sites verificato nativamente ancora v11/pubblico, URL invariato; nessun deploy identico.

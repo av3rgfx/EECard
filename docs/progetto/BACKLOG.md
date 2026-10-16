@@ -1,5 +1,18 @@
 # Backlog di continuità EECard
 
+## Priorità corrente — nuovo prodotto autonomo, 16 ottobre 2026
+
+| ID | Stato | Risultato / seguito |
+| --- | --- | --- |
+| NP01 | Completato come preparazione | [Brief, prompt, istruzioni Claude/agenti, asset e ZIP autonomi](nuovo-repository-2026-10-16/README.md); nessun codice applicativo trasferito |
+| NP02 | Prossimo passo | Aprire EECard2 e usare il [prompt locale](nuovo-repository-2026-10-16/PROMPT_EECARD2_LOCALE.md): copia autonoma dalla cartella EECard, senza ZIP o download; accesso allo stesso filesystem necessario |
+| NP03 | Da avviare nel nuovo repository | Studio mirato, mappa e proposta UX/UI navigabile home/bolletta/assistenza; scelta tecnica motivata e feedback prima dell'estensione |
+| NP04 | Successivo, perimetro da definire | Incrementi reali end-to-end con server, dati, permessi, integrazioni sandbox, prove e requisiti operativi prima del lancio |
+
+Questa direzione supera la priorità di estendere il vecchio prototipo. IN05 non avviato, BF02 invariato, BF16 e prove fisiche aperti. Nessun test precedente prova la nuova implementazione.
+
+## Stato precedente conservato
+
 Aggiornato il 14 ottobre 2026 con la strategia demo-prima. Le priorità seguenti sono una proposta di sequenza, non un impegno di rilascio. Nessuna persona, costo o data è stata assegnata; BF propone ruoli responsabili. PR #8 integrata alle 06:49:01 UTC; piano demo da main `adacdab` sul branch `docs/piano-demo-funzionale-2026-10-14`.
 
 ## Completato nella sessione

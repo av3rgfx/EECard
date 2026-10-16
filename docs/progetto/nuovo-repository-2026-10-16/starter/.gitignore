@@ -1,0 +1,20 @@
+# Segreti e dati privati
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+private/
+uploads/
+backups/
+# Dipendenze e artefatti generati: adattare allo stack scelto
+node_modules/
+dist/
+build/
+.next/
+.output/
+coverage/
+playwright-report/
+test-results/
+*.log
+.DS_Store

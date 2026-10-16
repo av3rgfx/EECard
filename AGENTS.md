@@ -221,3 +221,7 @@ revisione raccogliere il feedback: menu/layout non approvati, IN05 non avviato.
 PR #15 e #16 integrate; nuovo lavoro da main `7319587` su `feat/proposta-casa`.
 Per PR e commit realmente online leggere PROSSIMA_SESSIONE e verificare il remoto.
 BF02 intatto e BF16 aperto.
+
+## Nuovo prodotto autonomo — 16 ottobre 2026
+
+Prevale la richiesta di preparare un nuovo repository per il prodotto reale, con contesto pulito e avvio con Claude. Leggere `docs/progetto/nuovo-repository-2026-10-16/README.md`: pacchetto trasferibile, prompt e asset; il nuovo repository non è ancora creato. EECard conserva studi e prototipo. Il riuso delle decisioni non obbliga al riuso del codice IN01/IN03/IN04. Il prompt corrente è destinato alla radice del nuovo repository dopo la copia. Nessun nuovo servizio, merge o modifica della demo; BF02 invariato e BF16 aperto. Per stato remoto leggere PROSSIMA_SESSIONE.
