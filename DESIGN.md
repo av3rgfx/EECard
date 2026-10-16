@@ -12,7 +12,10 @@ non l'approvazione della home corrente. Non dedurre un nuovo nome, simbolo o pal
 
 [Visione e proposta di organizzazione](docs/progetto/visione-casa-2026-10-15/README.md):
 prima chiarire e mostrare l'esperienza casa → bisogno → azione; IN05 non è il
-prossimo sviluppo automatico. Nessuna nuova schermata realizzata in questo passaggio.
+prossimo sviluppo automatico. La consegna documentale iniziale non modificava le
+schermate; la successiva [proposta navigabile](docs/progetto/proposta-casa-2026-10-15/README.md)
+aggiunge `/#/casa/home`, con home desktop/mobile e percorsi bolletta/assistenza.
+Menu/layout sono candidati. La 0.5 operativa resta separata per il confronto.
 
 ## Identità attuale
 
@@ -169,3 +172,18 @@ animazione, identità o libreria. `apple-design` e `mobile-native` lette allo
 snapshot Emil già registrato; applicati gerarchia, controllo e zoom.
 [Screenshot e limiti](docs/progetto/mostra-avviso-2026-10-15/VERIFICHE.md):
 Chromium emulato, non telefoni/terminali o screen reader fisici.
+
+## Proposta casa — 15 ottobre 2026
+
+`src/proposal/proposal.css` applica gli stessi token alla nuova rotta isolata:
+sidebar/barra inferiore Casa, Pagamenti, Assistenza, Profilo; tessera dominante,
+priorità con stato/importo/azione, casa e accessi diretti ai bisogni. Casa singola
+espansa, più case visibili compatte, pagina immobili sempre espansa. Sul telefono
+la parte introduttiva è ridotta per avvicinare la prima azione alla tessera.
+Nessun nuovo simbolo, font, palette, wordmark o animazione decorativa.
+
+Letti `apple-design` e `mobile-native` allo snapshot Emil già indicato in
+RISORSE_DESIGN; riusati Modal/IN03/IN04 e asset locali. Percorsi aperti con annullo,
+ritorno al contesto e riscontri distinti dagli incassi. Screenshot e controlli
+Chromium sono nel [rapporto](docs/progetto/proposta-casa-2026-10-15/VERIFICHE.md).
+Nessuna osservazione umana o verifica su telefono fisico viene dedotta dai test.

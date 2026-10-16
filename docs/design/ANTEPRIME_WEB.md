@@ -231,3 +231,38 @@ Confronto Git di sorgenti, artefatti e manifest col commit online `a1223ff`
 senza differenze. La revisione della descrizione/home proposta modifica soltanto
 Markdown: nessun deploy identico, nuovo collaudo applicativo o screenshot.
 La proposta non è ancora una modifica del sito e non è dichiarata approvata.
+
+## Proposta casa — Sites v11, 16 ottobre 2026
+
+[Proposta navigabile desktop/mobile](https://eecard-design-preview.uepacio.chatgpt.site/#/casa/home),
+con pagamento simulato e assistenza. Lo spazio attuale e l’agenzia sono conservati.
+Identità, manifest e accesso **pubblico** invariati. Nessun servizio reale.
+
+- Sites **v11**, esito nativo `succeeded` il **16 ottobre 2026, 06:38:11 UTC**
+  (08:38:11 Europe/Rome).
+- Sorgente effettivamente online: `73d6e53ed1876ab113d2a50521061552e1583a5e`,
+  presente nei repository GitHub e sorgente Sites prima del salvataggio della versione.
+- Versione: `appgprj_6ac4c220882c8191be87c1b262306614~appgver_b27a38d589248191b8255a25aa52a622`.
+- Deployment: `appgdep_6ad1c63f53c08191b82e5c97aaf1ec2d`.
+- Archivio locale gzip SHA256: `fe953c395f2002eee26a8fc02e37abb67bdaec5fdc10e34ebf88853b6875f4fe`.
+- Archivio normalizzato Sites SHA256: `afbd4df99e6427e357352c8b655de0be85147117e439475b40b96b1414afdcae`.
+
+Alla ripresa verificata la v11 già salvata il 15 ottobre, con archivio e sorgente
+corrispondenti e nessun deployment. Pubblicata quella stessa versione, senza
+nuovo packaging o salvataggio duplicato. PR #17 verificata aperta senza merge.
+Il risultato terminale nativo verifica il deploy: nessun ulteriore collaudo browser
+live o confronto HTTPS dei byte dichiarato.
+
+[Verifiche e screenshot](../progetto/proposta-casa-2026-10-15/VERIFICHE.md):
+104 test passati il 15 ottobre, tre controlli layout ripetuti dopo rifinitura e
+smoke autonomo/statico dei percorsi. Alla ripresa non ripetuti test o build:
+modificati solo documenti di chiusura. Il nuovo HEAD documentale non è un nuovo
+commit frontend online e non richiede un deploy identico.
+[PR #17](https://github.com/av3rgfx/EECard/pull/17).
+
+
+Chiusura esplicita del 16 ottobre: letture Sites confermano v11, pubblico,
+sorgente `73d6e53` e deployment sopra. Confronto Git di frontend, asset, script,
+artefatto autonomo e manifest senza differenze rispetto al commit online.
+Aggiornamento soltanto documentale per la prossima sessione; nessun deploy
+identico, nuova build o test applicativo attribuito alla chiusura.

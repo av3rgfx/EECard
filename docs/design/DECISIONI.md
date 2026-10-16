@@ -281,3 +281,15 @@ IN05 resta candidato successivo al riallineamento, nessuna nuova data assegnata.
 riallineamento nella prossima sessione e di preparare documenti, prompt e PR ora.
 Conferma il seguito di lavoro; non approva i dettagli ancora candidati di
 navigazione/layout e non autorizza servizi reali.
+
+## Proposta navigabile casa — 15 ottobre 2026
+
+| ID | Stato | Decisione / conseguenza |
+| --- | --- | --- |
+| C36 | Richiesta esplicita corrente | Realizzare mappa ed esperienza navigabile desktop/mobile con bolletta e assistenza, verificare PR #15/#16, pubblicare sullo stesso Sites e preparare PR senza merge. Non avviare IN05 |
+| P21 | Proposta implementata per valutazione | Ingresso isolato `/#/casa/home`, quattro aree candidate, priorità contestuale, simulazione di pagamento completa e assistenza con prossimo passo. Riusa IN01/IN03/IN04, senza migrare la 0.5 |
+
+P20/P21 restano candidati: la pubblicazione non approva menu/layout, provider,
+commissioni, copertura o architettura. [Mappa e copione](../progetto/proposta-casa-2026-10-15/README.md).
+PR #15/#16 risultano integrate dall’utente prima del nuovo branch `feat/proposta-casa`
+da `origin/main` `7319587`. Nessun merge dell’assistente.

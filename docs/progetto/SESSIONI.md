@@ -637,3 +637,55 @@ necessario. Aggiornati ripresa, prompt, backlog e riferimenti della consegna.
 Verificati link, prompt entro 4.000 caratteri e whitespace; nessun test
 applicativo ripetuto o deploy, sorgenti e asset invariati. PR #16 lasciata aperta
 per il merge dell'utente; nessun merge effettuato dall'assistente.
+
+## 15 ottobre 2026 — proposta navigabile casa e bisogni
+
+Verificate sul remoto PR #15 e #16 entrambe integrate dall’utente, la seconda
+alle 19:59:34 UTC (`7319587`). Nuovo branch `feat/proposta-casa` dal main aggiornato.
+Letti visione e continuità; applicate Sites, apple-design e mobile-native senza
+nuova analisi delle fonti. Nessun merge effettuato dall’assistente.
+
+Realizzati mappa e ingresso separato `/#/casa/home`, home desktop/mobile, pagamento
+simulato completo e richiesta di assistenza. Quattro aree candidate; card/casa/
+priorità e azioni dirette. Riutilizzati IN01/IN03/IN04; sessione isolata in memoria,
+nessun cambiamento al ledger o alla persistenza precedente. Spazio agenzia conservato.
+[Copione](proposta-casa-2026-10-15/README.md), [verifiche](proposta-casa-2026-10-15/VERIFICHE.md).
+
+104/104 test passati; dopo rifinitura mobile ripetuti 3 controlli layout/axe;
+build/HTML autonomo/statico e smoke dei due percorsi a 360/390/1440 senza errori JS
+o richieste esterne. Screenshot finali e limiti documentati. BF02 intatto, BF16
+aperto, IN05 non avviato. Aggiornati prodotto/design/sviluppo, registro decisioni,
+backlog, istruzioni, continuità e prompt. PR #17 aperta; la pubblicazione è stata completata nella ripresa del 16 ottobre sotto.
+
+
+## 16 ottobre 2026 — ripresa e chiusura della pubblicazione
+
+Ripresa dal checkpoint senza rifare implementazione o verifiche. PR #17 verificata
+aperta su `feat/proposta-casa`, commit `73d6e53`. Sites v11 già salvata con archivio
+e sorgente corrispondenti, nessun deployment precedente: pubblicata la stessa
+versione, `succeeded` alle 06:38:11 UTC, con identità e accesso pubblico invariati.
+[Proposta online](https://eecard-design-preview.uepacio.chatgpt.site/#/casa/home),
+[PR #17](https://github.com/av3rgfx/EECard/pull/17),
+[registro](../design/ANTEPRIME_WEB.md). Nessun merge.
+
+Chiusura solo documentale: continuità, backlog, prompt e registri allineati;
+controllati link locali, limite di 4.000 caratteri e whitespace. I 104 test e gli
+smoke restano quelli eseguiti il 15 ottobre, non ripetuti o attribuiti alla ripresa.
+Asset identici alla sorgente online, nessun ulteriore deploy duplicato. BF02
+invariato, BF16 aperto, IN05 non avviato. Attendere il feedback sulla proposta.
+
+
+## 16 ottobre 2026 — chiusura esplicita e prompt per la valutazione
+
+Dopo la sintesi di differenze, residui e prossimo passo, l’utente richiede la
+chiusura, i Markdown di ripresa, il prompt e la PR. PR #17 ricontrollata **aperta**
+e riutilizzata per la stessa consegna. Nessun feedback puntuale o approvazione
+di menu/layout attribuito al semplice accordo di chiusura.
+
+Aggiornati PROSSIMA_SESSIONE, BACKLOG e prompt: partire dalle osservazioni
+sulla proposta o guidare la breve prova home → bolletta → assistenza; definire
+poi una revisione mirata, senza IN05 automatico. Sites confermato v11/pubblico,
+versione legata al deployment già riuscito e alla sorgente `73d6e53`. Confronto
+Git dei sorgenti/asset con il commit online senza differenze: nessun deploy
+identico e nessun test applicativo ripetuto. Controllati link locali, whitespace
+e prompt entro 4.000 caratteri. BF02 invariato, BF16 aperto; nessun merge.

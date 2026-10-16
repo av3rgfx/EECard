@@ -308,3 +308,22 @@ avviso/originale senza mutazioni o richieste esterne. Passare `EECARD_NOTICE_URL
 per la build statica; senza variabile apre `docs/design/anteprima.html`.
 [Copione](docs/progetto/mostra-avviso-2026-10-15/README.md) e
 [esiti](docs/progetto/mostra-avviso-2026-10-15/VERIFICHE.md).
+
+## Proposta casa isolata — 15 ottobre 2026
+
+`/#/casa/home` e sottorotte usano `src/proposal/CasaProposal.tsx`, con stato React
+inizializzato dalle fixture autorizzate dello schema 4, senza scrivere localStorage.
+Uscita verso lo spazio attuale o reload azzerano solo la proposta. La 0.5 riceve
+un link d’ingresso e resta invariata nelle funzioni. Nessuna migrazione o nuovo
+schema; IN01/IN03/IN04 sono riusati tramite i loro comandi/letture e componenti.
+
+`payment.ts` rilegge fonte, versione corrente e autorizzazioni prima del tentativo;
+esito incerto/positivo blocca un replay sullo stesso oggetto anche dopo rettifica.
+Il risultato è un riscontro in memoria, mai ledger, incasso o quietanza. Una
+richiesta su Casa Atelier è negata: la fixture richieste copre solo Casa Luce.
+
+`tests/proposal.spec.ts` copre i nuovi percorsi/policy e tre viewport.
+`scripts/verify-proposal.mjs` prova pagamento e assistenza sull’HTML autonomo o
+sull’URL `EECARD_PROPOSAL_URL`; output tramite `EECARD_PROPOSAL_QA`.
+[Architettura, mappa e limiti](docs/progetto/proposta-casa-2026-10-15/README.md),
+[verifiche](docs/progetto/proposta-casa-2026-10-15/VERIFICHE.md).

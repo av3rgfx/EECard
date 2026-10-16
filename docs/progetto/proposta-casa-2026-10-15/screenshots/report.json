@@ -1,0 +1,28 @@
+{
+  "base": "http://127.0.0.1:5174",
+  "checks": [
+    {
+      "width": 360,
+      "homeFit": true,
+      "flowFit": true,
+      "payment": true,
+      "assistance": true
+    },
+    {
+      "width": 390,
+      "homeFit": true,
+      "flowFit": true,
+      "payment": true,
+      "assistance": true
+    },
+    {
+      "width": 1440,
+      "homeFit": true,
+      "flowFit": true,
+      "payment": true,
+      "assistance": true
+    }
+  ],
+  "errors": [],
+  "external": []
+}

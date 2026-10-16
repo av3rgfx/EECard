@@ -89,3 +89,12 @@ Non rinominati gli identificativi demo `EE · …` già salvati: sono riferiment
 Il [laboratorio delle tre direzioni](esplorazioni/README.md) conserva il confronto precedente alla scelta. Picker, controlli di riproduzione e selezione libera delle fasi appartengono a quell’area dimostrativa; non autorizzano azioni nel prodotto. L’implementazione 0.3 conserva la macchina di stato, i dati e la persistenza esistenti. Un incasso parziale rimane aperto anche dopo la quietanza dei soli importi verificati.
 
 La scelta non conferma il nome, prezzi, coperture, servizi, autorizzazioni server o architettura di produzione. Prove su iPhone/Android fisici, Safari/WebKit e tecnologie assistive restano distinte dai controlli Chromium emulati. Per controlli effettivamente eseguiti e limiti consultare [VERIFICHE.md](VERIFICHE.md); per il commit realmente online consultare [ANTEPRIME_WEB.md](ANTEPRIME_WEB.md).
+
+## Applicazione candidata alla proposta casa
+
+Il 15 ottobre la rotta separata `/#/casa/home` riusa il sistema 0.3 e gli asset,
+con composizione in `src/proposal/proposal.css`. Sidebar desktop e barra inferiore
+mobile a quattro voci, priorità e percorsi aperti, controlli da almeno 44 px,
+input da 16 px, safe area e reduced motion. Densità delle case segue il numero
+visibile dopo filtro; pagina immobili espansa. La gerarchia è da valutare,
+non sostituisce le decisioni visive approvate. [Proposta e verifiche](../progetto/proposta-casa-2026-10-15/README.md).
