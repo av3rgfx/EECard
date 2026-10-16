@@ -28,3 +28,5 @@ Eseguire `python docs/progetto/nuovo-repository-2026-10-16/package.py` dalla rep
 Consegna documentale separata dal prototipo, su `docs/nuovo-prodotto-2026-10-16`, basata sulla continuità della PR #17 ancora aperta. PR dedicata con base `feat/proposta-casa` per mostrare solo il nuovo pacchetto e gli aggiornamenti di continuità. Dopo l'integrazione della #17, riallineare la base senza perdere questa consegna; nessun merge effettuato qui.
 
 BF02 invariato, BF16 e prove fisiche aperti. Il nuovo avvio non trasforma prove automatiche in osservazioni umane o decisioni commerciali.
+
+Salvato sul remoto nella [PR #18](https://github.com/av3rgfx/EECard/pull/18), aperta senza merge, con base `feat/proposta-casa`.

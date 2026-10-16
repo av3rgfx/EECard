@@ -10,7 +10,7 @@ Prossimo passo: creare/aprire il nuovo repository scelto dall'utente, estrarre i
 
 La vecchia proposta rimane un riferimento opzionale, non la base tecnica obbligatoria. Menu/layout non diventano approvati; i comportamenti di IN01/IN03/IN04 sono sintetizzati senza imporre il riuso del codice. Non avviare IN05 nel vecchio prototipo. BF02 invariato, BF16 aperto.
 
-Remoto: PR #17 verificata OPEN prima del branch; nuova consegna distinta su `docs/nuovo-prodotto-2026-10-16`, base `feat/proposta-casa`, senza merge. Sites verificato ancora v11, pubblico, URL invariato; asset e sorgenti applicativi identici a `73d6e53`. Solo documentazione e pacchetto, nessun deploy duplicato o test applicativo ripetuto.
+Remoto: [PR #18](https://github.com/av3rgfx/EECard/pull/18) aperta per il pacchetto, senza merge. PR #17 verificata OPEN prima del branch; nuova consegna distinta su `docs/nuovo-prodotto-2026-10-16`, base `feat/proposta-casa`, senza merge. Sites verificato ancora v11, pubblico, URL invariato; asset e sorgenti applicativi identici a `73d6e53`. Solo documentazione e pacchetto, nessun deploy duplicato o test applicativo ripetuto.
 
 Le sezioni sotto descrivono il checkpoint precedente e non impongono di proseguire lo sviluppo nella vecchia repository.
 

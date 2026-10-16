@@ -700,3 +700,5 @@ Preparato [pacchetto autonomo](nuovo-repository-2026-10-16/README.md): prodotto 
 Controllati link interni, autonomia dei percorsi, contenuto ZIP identico ai sorgenti, manifest SHA-256, asset identici agli originali, limite prompt e whitespace. Nessun test applicativo ripetuto. Sites verificato nativamente attivo/v11/pubblico; diff sorgenti/asset rispetto a `73d6e53` vuoto, nessun deploy duplicato. Aggiornati continuità, prodotto, design, sviluppo, decisioni, backlog e prompt.
 
 Prossimo passo: copiare il pacchetto nella radice del nuovo repository e usare il prompt. Prima studio mirato e proposta UX/UI navigabile, poi incrementi end-to-end verso il prodotto reale; niente rinnovo automatico della cronologia del vecchio prototipo. IN05 non avviato, BF02 intatto, BF16 aperto.
+
+Consegna salvata sul remoto nella [PR #18](https://github.com/av3rgfx/EECard/pull/18), aperta con base `feat/proposta-casa`, senza merge.
