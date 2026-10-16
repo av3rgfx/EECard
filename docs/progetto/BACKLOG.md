@@ -366,3 +366,10 @@ screenshot non costituiscono osservazioni umane né validazione del servizio.
 Chiusura del 16 ottobre: proposta online in Sites v11, sorgente `73d6e53`,
 [PR #17](https://github.com/av3rgfx/EECard/pull/17) aperta senza merge. N19 resta
 in attesa di valutazione dell’utente; la pubblicazione non approva menu o layout.
+
+
+Alla chiusura esplicita del 16 ottobre, l’utente conferma il seguito con valutazione
+della proposta; nessun feedback specifico di approvazione home/menu ancora ricevuto.
+Primo passo della prossima sessione: partire dalle osservazioni dell’utente oppure
+guidare una breve prova home → bolletta → assistenza, quindi delimitare la revisione.
+PR #17 ancora aperta e aggiornata; nessuna nuova attività applicativa avviata.

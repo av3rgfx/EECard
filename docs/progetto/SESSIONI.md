@@ -673,3 +673,19 @@ controllati link locali, limite di 4.000 caratteri e whitespace. I 104 test e gl
 smoke restano quelli eseguiti il 15 ottobre, non ripetuti o attribuiti alla ripresa.
 Asset identici alla sorgente online, nessun ulteriore deploy duplicato. BF02
 invariato, BF16 aperto, IN05 non avviato. Attendere il feedback sulla proposta.
+
+
+## 16 ottobre 2026 — chiusura esplicita e prompt per la valutazione
+
+Dopo la sintesi di differenze, residui e prossimo passo, l’utente richiede la
+chiusura, i Markdown di ripresa, il prompt e la PR. PR #17 ricontrollata **aperta**
+e riutilizzata per la stessa consegna. Nessun feedback puntuale o approvazione
+di menu/layout attribuito al semplice accordo di chiusura.
+
+Aggiornati PROSSIMA_SESSIONE, BACKLOG e prompt: partire dalle osservazioni
+sulla proposta o guidare la breve prova home → bolletta → assistenza; definire
+poi una revisione mirata, senza IN05 automatico. Sites confermato v11/pubblico,
+versione legata al deployment già riuscito e alla sorgente `73d6e53`. Confronto
+Git dei sorgenti/asset con il commit online senza differenze: nessun deploy
+identico e nessun test applicativo ripetuto. Controllati link locali, whitespace
+e prompt entro 4.000 caratteri. BF02 invariato, BF16 aperto; nessun merge.

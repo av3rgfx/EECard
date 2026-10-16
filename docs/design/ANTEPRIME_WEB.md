@@ -259,3 +259,10 @@ smoke autonomo/statico dei percorsi. Alla ripresa non ripetuti test o build:
 modificati solo documenti di chiusura. Il nuovo HEAD documentale non è un nuovo
 commit frontend online e non richiede un deploy identico.
 [PR #17](https://github.com/av3rgfx/EECard/pull/17).
+
+
+Chiusura esplicita del 16 ottobre: letture Sites confermano v11, pubblico,
+sorgente `73d6e53` e deployment sopra. Confronto Git di frontend, asset, script,
+artefatto autonomo e manifest senza differenze rispetto al commit online.
+Aggiornamento soltanto documentale per la prossima sessione; nessun deploy
+identico, nuova build o test applicativo attribuito alla chiusura.

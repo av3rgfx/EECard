@@ -1,6 +1,6 @@
 # EECard — punto di ripresa
 
-Aggiornato il 16 ottobre 2026, dopo la ripresa della pubblicazione interrotta. Repository: https://github.com/av3rgfx/EECard.
+Aggiornato il 16 ottobre 2026, alla chiusura esplicita della sessione. Repository: https://github.com/av3rgfx/EECard.
 
 ## Priorità: valutare la proposta casa prima dell’integrazione estesa
 
@@ -20,6 +20,17 @@ La proposta usa dati sintetici in una sessione **isolata in memoria**, azzerata
 ricaricando o uscendo verso lo spazio attuale. Non modifica localStorage 0.4/0.5,
 archivi, ledger o rinnovo della demo precedente. Nessuna migrazione di produzione.
 Riusati policy/comandi IN01, BillsPanel IN03 e BillNotice IN04: non rifarli.
+
+## Accordo di chiusura e avvio della prossima sessione
+
+L’utente ha chiesto una sintesi delle differenze e dei residui, poi ha confermato
+la chiusura e richiesto documenti, prompt e PR. Non ha ancora fornito un riscontro
+puntuale sulla home né approvato menu/layout o l’integrazione estesa.
+
+Ripartire dal suo feedback sulla proposta. Se non è ancora disponibile, guidare
+una breve prova home → bolletta → assistenza e raccogliere osservazioni concrete,
+senza riaprire l’intera analisi o avviare IN05. Poi definire la revisione mirata.
+PR #17 ricontrollata aperta e riutilizzata per questa stessa consegna.
 
 ## Come valutarla
 
