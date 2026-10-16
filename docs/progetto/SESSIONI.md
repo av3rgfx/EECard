@@ -655,4 +655,21 @@ nessun cambiamento al ledger o alla persistenza precedente. Spazio agenzia conse
 build/HTML autonomo/statico e smoke dei due percorsi a 360/390/1440 senza errori JS
 o richieste esterne. Screenshot finali e limiti documentati. BF02 intatto, BF16
 aperto, IN05 non avviato. Aggiornati prodotto/design/sviluppo, registro decisioni,
-backlog, istruzioni, continuità e prompt. Pubblicazione e PR da registrare alla chiusura.
+backlog, istruzioni, continuità e prompt. PR #17 aperta; la pubblicazione è stata completata nella ripresa del 16 ottobre sotto.
+
+
+## 16 ottobre 2026 — ripresa e chiusura della pubblicazione
+
+Ripresa dal checkpoint senza rifare implementazione o verifiche. PR #17 verificata
+aperta su `feat/proposta-casa`, commit `73d6e53`. Sites v11 già salvata con archivio
+e sorgente corrispondenti, nessun deployment precedente: pubblicata la stessa
+versione, `succeeded` alle 06:38:11 UTC, con identità e accesso pubblico invariati.
+[Proposta online](https://eecard-design-preview.uepacio.chatgpt.site/#/casa/home),
+[PR #17](https://github.com/av3rgfx/EECard/pull/17),
+[registro](../design/ANTEPRIME_WEB.md). Nessun merge.
+
+Chiusura solo documentale: continuità, backlog, prompt e registri allineati;
+controllati link locali, limite di 4.000 caratteri e whitespace. I 104 test e gli
+smoke restano quelli eseguiti il 15 ottobre, non ripetuti o attribuiti alla ripresa.
+Asset identici alla sorgente online, nessun ulteriore deploy duplicato. BF02
+invariato, BF16 aperto, IN05 non avviato. Attendere il feedback sulla proposta.

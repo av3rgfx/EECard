@@ -70,3 +70,13 @@ Nessun annual report/IN05, servizio reale o nuova analisi delle fonti audio.
 
 Pubblicazione effettiva e sorgente online sono nel [registro Sites](../../design/ANTEPRIME_WEB.md).
 Un esito di deploy non costituisce un ulteriore test del browser live.
+
+
+## Ripresa del 16 ottobre — sola pubblicazione e chiusura
+
+PR #17 verificata aperta; Sites v11 già salvata e coerente con `73d6e53`, senza
+deployment. Pubblicata la stessa versione: `succeeded` alle 06:38:11 UTC,
+identità/accesso pubblico invariati. Nessun nuovo test applicativo, build o
+screenshot: i risultati sopra sono del 15 ottobre. Verificati link Markdown,
+limite del prompt e diff documentale; sorgenti/artefatti coincidono con il commit
+online. Nessun nuovo collaudo browser live o prova fisica dichiarata.

@@ -8,6 +8,8 @@ Menu, ordine, testi e layout sono **una proposta da valutare**, non scelte defin
 Il layout segue la larghezza dello schermo. Lo [spazio attuale](https://eecard-design-preview.uepacio.chatgpt.site/#/spazio/overview)
 resta separato e contiene la vista operativa dell’agenzia. La sua home offre
 un collegamento alla proposta; l’ingresso preesistente non è sostituito.
+Pubblicata in Sites v11 il 16 ottobre 2026, sorgente `73d6e53`.
+[PR #17](https://github.com/av3rgfx/EECard/pull/17) aperta senza merge.
 Stato di pubblicazione e commit effettivo: [registro Sites](../../design/ANTEPRIME_WEB.md).
 
 ## Cosa cambia nella proposta

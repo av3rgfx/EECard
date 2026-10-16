@@ -361,3 +361,8 @@ IN05 automatico. Stato commerciale, canali/costi reali e copertura restano apert
 IN01/IN03/IN04 conservati; schema 4/workspace v1 e ledger non migrati.
 BF02 invariato; BF16, N02/PB04 fisico, BF01/BF03/BF17 aperti. Test automatici e
 screenshot non costituiscono osservazioni umane né validazione del servizio.
+
+
+Chiusura del 16 ottobre: proposta online in Sites v11, sorgente `73d6e53`,
+[PR #17](https://github.com/av3rgfx/EECard/pull/17) aperta senza merge. N19 resta
+in attesa di valutazione dell’utente; la pubblicazione non approva menu o layout.

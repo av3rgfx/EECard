@@ -1,6 +1,6 @@
 # EECard — punto di ripresa
 
-Aggiornato il 15 ottobre 2026. Repository: https://github.com/av3rgfx/EECard.
+Aggiornato il 16 ottobre 2026, dopo la ripresa della pubblicazione interrotta. Repository: https://github.com/av3rgfx/EECard.
 
 ## Priorità: valutare la proposta casa prima dell’integrazione estesa
 
@@ -50,12 +50,17 @@ PR #15 verificata integrata alle 19:57:17 UTC, merge `7c4e503`.
 PR #16 verificata integrata alle 19:59:34 UTC, merge
 `731958709e6ea5ed133112e523f7747672c9fcdc`. Nuovo branch **`feat/proposta-casa`**
 da `origin/main` aggiornato che contiene la continuità. Nessun merge dell’assistente.
-PR applicativa in preparazione, da registrare alla chiusura.
+[PR #17](https://github.com/av3rgfx/EECard/pull/17) **aperta**, verificata alla
+ripresa del 16 ottobre; base main, branch `feat/proposta-casa`. Nessun merge.
 
-Ultima versione pubblicata prima della proposta: Sites v10, sorgente
-`a1223ff657a300c47ab8cbb1771a99da8727a707`. Nuova pubblicazione in preparazione;
-il [registro Sites](../design/ANTEPRIME_WEB.md) sarà aggiornato con l’esito reale.
-Stesso project ID, URL e accesso pubblico; push GitHub non equivale a deploy.
+**Sites v11 pubblicata**, esito nativo `succeeded` il 16 ottobre 2026 alle
+**06:38:11 UTC** (08:38:11 Europe/Rome). Sorgente effettivamente online:
+`73d6e53ed1876ab113d2a50521061552e1583a5e`, presente su GitHub e nel repository
+sorgente Sites. Stesso project ID, URL e accesso pubblico conservati.
+La v11 era già salvata prima dell’interruzione: alla ripresa verificato che non
+avesse deployment, poi pubblicata senza creare una nuova versione.
+[Registro Sites](../design/ANTEPRIME_WEB.md). Il commit documentale di chiusura
+aggiorna soltanto Markdown: non cambia gli asset e non richiede deploy identico.
 
 Prima di scegliere un prossimo branch verificare la PR sul remoto. Riutilizzarla
 solo per la stessa consegna se aperta; dopo merge ripartire da main aggiornato
@@ -67,7 +72,8 @@ verificate; sessioni solo documentali verificano l’allineamento senza deploy i
 **104/104 test** passati, inclusi 10 nuovi; dopo la rifinitura mobile ripetuti
 3 controlli di layout/axe a 360/390/1440. Build/HTML autonomo/statico generati;
 smoke dei due percorsi ai tre viewport senza errori JS o richieste esterne.
-Formattazione mirata e whitespace passati. Screenshot, copertura e limiti nel
+Formattazione mirata e whitespace passati. Alla ripresa del 16 ottobre non
+sono stati ripetuti test applicativi o build: sorgenti e artefatti invariati. Screenshot, copertura e limiti nel
 rapporto. Avviso Vite bundle >500 kB conservato (~702 kB JS non compresso).
 
 Nessuna osservazione umana sostitutiva: **BF02 invariato, BF16 aperto**.
